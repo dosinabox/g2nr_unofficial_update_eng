@@ -118,7 +118,7 @@ func void B_BalthasarLostHisSheeps()
 {
 	AI_WaitTillEnd(self,other);
 	AI_PlayAni(self,"T_SEARCH");
-	AI_Output(self,other,"DIA_Balthasar_PERMKAP1_05_02_add");	//Я не могу найти моих овец!@@@
+	AI_Output(self,other,"DIA_Balthasar_PERMKAP1_05_02_add");	//I can't find my sheep!
 	AI_StopProcessInfos(self);
 	MIS_Balthasar_BengarsWeide = LOG_OBSOLETE;
 	B_CheckLog();
@@ -175,7 +175,7 @@ func int DIA_Balthasar_WOBENGAR_Condition()
 	};
 	if(Npc_KnowsInfo(other,DIA_Rosi_BENGAR))
 	{
-		DIA_Balthasar_WOBENGAR.description = "Как я могу попасть на ферму Бенгара?";
+		DIA_Balthasar_WOBENGAR.description = "How can I find Bengar's farm?";
 		return TRUE;
 	};
 };
@@ -188,7 +188,7 @@ func void DIA_Balthasar_WOBENGAR_Info()
 	}
 	else if(Npc_KnowsInfo(other,DIA_Rosi_BENGAR))
 	{
-		AI_Output(other,self,"DIA_Balthasar_WOBENGAR_15_00_add");	//Как я могу попасть на ферму Бенгара?@@@
+		AI_Output(other,self,"B_Torlof_BengarMilizKlatschen_15_03");	//How can I find Bengar's farm?
 	};
 	AI_Output(self,other,"DIA_Balthasar_WOBENGAR_05_01");	//Follow this path and cross the big crossroad.
 	AI_Output(self,other,"DIA_Balthasar_WOBENGAR_05_02");	//If you stick to the right, you'll see a big outcropping of rock. Behind that to the right are the high pastures and the pass.

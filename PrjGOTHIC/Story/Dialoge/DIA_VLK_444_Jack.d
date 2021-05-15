@@ -307,7 +307,7 @@ func void DIA_Jack_BEMYCAPTAIN_seaman()
 	B_LogEntry(Topic_Captain,"Jack, the old sailor from the harbor, would make a good captain. But first I'd have to find someone to guard his lighthouse.");
 	Info_ClearChoices(DIA_Jack_BEMYCAPTAIN);
 	Info_AddChoice(DIA_Jack_BEMYCAPTAIN,"Never mind. It was just an idea.",DIA_Jack_BEMYCAPTAIN_no);
-	Info_AddChoice(DIA_Jack_BEMYCAPTAIN,What if I brought you someone...?",DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer);
+	Info_AddChoice(DIA_Jack_BEMYCAPTAIN,"What if I brought you someone...?",DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer);
 };
 
 func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer()
@@ -323,7 +323,7 @@ func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer()
 
 func void DIA_Jack_BEMYCAPTAIN_no()
 {
-	AI_Output(other,self,"DIA_Jack_BEMYCAPTAIN_no_15_00");	//Забудь. Это я просто так сказал.
+	AI_Output(other,self,"DIA_Jack_BEMYCAPTAIN_no_15_00");	//Never mind. It was just an idea.
 	Info_ClearChoices(DIA_Jack_BEMYCAPTAIN);
 };
 

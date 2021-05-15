@@ -1,4 +1,4 @@
-@@@
+//@@@
 var int FH_SkinTexture;
 
 var string FH_HeadMesh;

@@ -334,10 +334,6 @@ func void DIA_Onar_HowMuch_Info()
 	};
 	AI_Output(self,other,"DIA_Onar_HowMuch_14_06");	//Let me think ...
 	B_Say_Gold(self,other,Onar_SOLD_Gold);
-	if(Onar_SOLD_Gold <= 30)
-	{
-		AI_Output(self,other,"DIA_Onar_HowMuch_14_06_add");	//That should be enough for you!
-	};
 	Onar_SOLD_Day = Wld_GetDay();
 	Onar_SOLD_XP = other.exp;
 	AI_Output(self,other,"DIA_Onar_HowMuch_14_07");	//What do you say?
@@ -350,21 +346,15 @@ func void DIA_Onar_HowMuch_Info()
 func void DIA_Onar_HowMuch_PerDay()
 {
 	AI_Output(other,self,"DIA_Onar_HowMuch_PerDay_15_00");	//Per day?
-	//AI_Output(self,other,"DIA_Onar_HowMuch_PerDay_14_01");	//What did you think? Per week? You're really none too bright.
-	AI_Output(self,other,"DIA_Onar_HowMuch_PerDay_14_01_add");	//What did you think? Per week? (laughs)
+	AI_Output(self,other,"DIA_Onar_HowMuch_PerDay_14_01");	//What did you think? Per week? You're really none too bright.
+	AI_Output(self,other,"DIA_Onar_HowMuch_PerDay_14_02");	//So move your butt over here and come get your money.
+	AI_Output(self,other,"DIA_Onar_HowMuch_PerDay_14_03");	//I'm not going to carry it after you.
 };
 
 func void DIA_Onar_HowMuch_More()
 {
 	AI_Output(other,self,"DIA_Onar_HowMuch_More_15_00");	//That's not a whole lot ...
-	if(Onar_SOLD_Gold >= 50)
-	{
-		AI_Output(self,other,"DIA_Onar_HowMuch_More_14_01_add");	//Кем ты себя возомнил? @@@
-	}
-	else
-	{
-		AI_Output(self,other,"DIA_Onar_HowMuch_More_14_01");	//Of course, you're welcome to work for me for free instead.
-	};
+	AI_Output(self,other,"DIA_Onar_HowMuch_More_14_01");	//Of course, you're welcome to work for me for free instead.
 	AI_Output(self,other,"DIA_Onar_HowMuch_More_14_02");	//Anyway, this is all you'll get!
 	Log_CreateTopic(Topic_Bonus,LOG_NOTE);
 	B_LogEntry(Topic_Bonus,"I can collect my pay from Onar every day");
@@ -446,8 +436,6 @@ func void DIA_Onar_CollectGold_Info()
 		if(other.exp > (Onar_SOLD_XP + 200))
 		{
 			AI_Output(self,other,"DIA_Onar_CollectGold_14_13");	//(contritely) Oh well. Here's your pay.
-			AI_Output(self,other,"DIA_Onar_HowMuch_PerDay_14_02");	//So move your butt over here and come get your money.
-			AI_Output(self,other,"DIA_Onar_HowMuch_PerDay_14_03");	//I'm not going to carry it after you.
 			B_GiveInvItems(self,other,ItMi_Gold,Onar_SOLD_Gold);
 			B_Say_Gold(self,other,Onar_SOLD_Gold);
 		}

@@ -430,7 +430,7 @@ func void DIA_Jarvis_HowManyLeft_Info()
 					Log_SetTopicStatus(TOPIC_SLDRespekt,LOG_Running);
 				};
 				SCKnowsSLDVotes = TRUE;
-				B_LogEntry(TOPIC_SLDRespekt,"Jarvis will vote for me if I want to join the mercenaries."");
+				B_LogEntry(TOPIC_SLDRespekt,"Jarvis will vote for me if I want to join the mercenaries.");
 			};
 			MIS_Jarvis_SldKO = LOG_SUCCESS;
 			self.aivar[AIV_IGNORE_Murder] = FALSE;

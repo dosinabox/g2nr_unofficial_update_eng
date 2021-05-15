@@ -1427,7 +1427,7 @@ func void DIA_Lord_Hagen_NeedShip_Info()
 	AI_Output(self,other,"DIA_Lord_Hagen_NeedShip_04_03");	//You do not even have a captain, to say nothing of a crew.
 	if((SCGotCaptain == TRUE) && (Crewmember_Count >= Min_Crew))
 	{
-		AI_Output(other,self,"DIA_Hanna_AnyNews_Yes_15_00");	//Yeah, sure.
+		AI_Output(other,self,"DIA_Hanna_AnyNews_Yes_15_00");	//Yeah, sure I do.
 	};
 	AI_Output(other,self,"DIA_Lord_Hagen_NeedShip_15_04");	//What about the ship in the harbor?
 	AI_Output (self, other, "DIA_Lord_Hagen_NeedShip_04_05");	//It belongs to me, and that's that. We shall transport the ore with this ship.

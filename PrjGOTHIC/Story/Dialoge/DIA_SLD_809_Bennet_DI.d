@@ -382,7 +382,7 @@ instance DIA_Bennet_DI_DJG_ARMOR_H(C_Info)
 	condition = DIA_Bennet_DJG_ARMOR_H_Condition;
 	information = DIA_Bennet_DJG_ARMOR_H_Info;
 	permanent = TRUE;
-	description = "Heavy Dragon Hunter Armor. Prot. 150/150/100/50 (20000 gold);
+	description = "Heavy Dragon Hunter Armor. Prot. 150/150/100/50 (20000 gold)";
 };
 
 

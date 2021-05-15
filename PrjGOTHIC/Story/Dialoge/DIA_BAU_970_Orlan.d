@@ -127,7 +127,7 @@ func void DIA_Orlan_WERBISTDU_Info()
 	AI_Output (self, other, "DIA_Orlan_WERBISTDU_05_03");	//A good swig from the country stills, or just some information?
 	AI_Output (self, other, "DIA_Orlan_WERBISTDU_05_04");	//I can give you all that and more, if your coins ring.
 	Log_CreateTopic(TOPIC_OutTrader,LOG_NOTE);
-	B_LogEntry(TOPIC_OutTrader,"Orlan is the keeper of the "Dead Harpy" tavern. He can sell me some weapons and provisions.");
+	B_LogEntry(TOPIC_OutTrader,"Orlan is the keeper of the 'Dead Harpy' tavern. He can sell me some weapons and provisions.");
 };
 
 
@@ -252,7 +252,7 @@ func void DIA_Addon_Orlan_Teleportstein_sehen()
 	B_GiveInvItems(self,other,ItKe_Orlan_TeleportStation,1);
 	Log_CreateTopic(TOPIC_Addon_TeleportsNW,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_TeleportsNW,LOG_Running);
-	B_LogEntry(TOPIC_Addon_TeleportsNW,""Orlan has locked up a teleporter stone in a cave southwest of his tavern.");
+	B_LogEntry(TOPIC_Addon_TeleportsNW,"Orlan has locked up a teleporter stone in a cave southwest of his tavern.");
 };
 
 func void DIA_Addon_Orlan_Teleportstein_wo()
@@ -423,7 +423,7 @@ func void DIA_Orlan_TRADE_Info()
 {
 	AI_Output (other, self, "DIA_Orlan_TRADE_15_00");	//Show me your wares.
 	B_GiveTradeInv (self);
-	if ((SC_IsRanger == TRUE) || (Orlan_KnowsSCAsRanger == TRUE) || (SCIsWearingRangerRing == TRUE))
+	if((SC_IsRanger == TRUE) || (Orlan_KnowsSCAsRanger == TRUE))
 	{
 		AI_Output(self,other,"DIA_Addon_Orlan_TRADE_05_00");	//Certainly, Brother of the Ring.
 	}

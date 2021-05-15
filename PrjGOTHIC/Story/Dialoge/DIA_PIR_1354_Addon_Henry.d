@@ -715,7 +715,7 @@ func void DIA_Addon_Henry_Entercrew_Info()
 			else
 			{
 				AI_Output (self, other, "DIA_Addon_Henry_Entercrew_Add_04_06");	//Grab one of the boys and make short shrift of those bandits in the tower.
-				Henry_GetPartyMember = TRUE;
+//				Henry_GetPartyMember = TRUE;
 				B_LogEntry (TOPIC_Addon_BanditsTower, "Henry wants me to drive the bandits out of the tower. I am to take one of his boys with me.");
 			};
 			B_Henry_WhereIsTower ();

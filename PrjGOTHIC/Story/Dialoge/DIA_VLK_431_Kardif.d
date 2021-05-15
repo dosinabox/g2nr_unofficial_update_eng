@@ -712,10 +712,9 @@ func int DIA_Kardif_SENDATTILA_Condition()
 func void DIA_Kardif_SENDATTILA_Info()
 {
 	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_00");	//Hey you, come over here. I've got something for you.
-	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_01_add");	//Один парень очень хочет поговорить с тобой. За рыбной лавкой Халвора.@@@
-//	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_01");	//Один парень очень хочет поговорить с тобой.
-//	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_02");	//Так как он не нашел тебя здесь, он попросил меня передать тебе записку.
-//	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_03");	//Он хочет встретиться с тобой. За рыбной лавкой Халвора.
+	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_01");	//There was a fellow here who insisted on talking to you.
+	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_02");	//Since you weren't here, he told me to give you a message.
+	AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_03");	//He wants to meet you. Behind Halvor's fish shop.
 	if(Kardif_Deal > 0)
 	{
 		AI_Output(self,other,"DIA_Kardif_SENDATTILA_14_04");	//This piece of information is free - but that's an exception, kid! Anything beyond that will cost you.

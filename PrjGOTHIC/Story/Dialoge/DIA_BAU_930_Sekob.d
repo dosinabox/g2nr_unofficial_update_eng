@@ -342,11 +342,11 @@ func void DIA_Sekob_DMT_Info()
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 	{
 		AI_Output (self, other, "DIA_Sekob_DMT_01_02");	//You royal guard people are supposed to take care of everyone's well-being, right?
-	};
+	}
 	else if((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
 		AI_Output (self, other, "DIA_Sekob_DMT_01_03");	//I know you mercenaries aren't big on charity, but I would pay you.
-	};
+	}
 	else if(hero.guild == GIL_KDF)
 	{
 		AI_Output (self, other, "DIA_Sekob_DMT_01_04");	//You have to help me, worthy Sir Magician.
@@ -382,8 +382,7 @@ func void DIA_Sekob_DMTWEG_Info()
 	AI_Output (other, self, "DIA_Sekob_DMTWEG_15_00");	//Your house is empty. The black hoods have left.
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 	{
-//		AI_Output(self,other,"DIA_Sekob_DMTWEG_01_01");	//I knew that the guard could be counted on.
-		AI_Output(self,other,"DIA_Sekob_DMTWEG_01_01_add");	//Я знал! Огромное спасибо!@@@
+		AI_Output(self,other,"DIA_Sekob_DMTWEG_01_01");	//I knew that the guard could be counted on.
 	}
 	else if((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{

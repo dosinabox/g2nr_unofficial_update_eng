@@ -250,7 +250,7 @@ func void DIA_Addon_Bill_FoundFriends_Info()
 	{
 		if(SC_Knows_JuanMurderedAngus == TRUE)
 		{
-			B_LogEntry(TOPIC_Addon_KillJuan,"A fellow named Juan stole the delivery (a package of lock picks) from Fisk, breaking the deal between bandits and pirates. He is hiding somewhere in the swamp.);
+			B_LogEntry(TOPIC_Addon_KillJuan,"A fellow named Juan stole the delivery (a package of lock picks) from Fisk, breaking the deal between bandits and pirates. He is hiding somewhere in the swamp.");
 		}
 		else
 		{

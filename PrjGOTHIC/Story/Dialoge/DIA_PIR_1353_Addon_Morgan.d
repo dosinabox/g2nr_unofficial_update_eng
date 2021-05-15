@@ -371,7 +371,7 @@ func void DIA_Addon_Morgan_Auftrag2_Info()
 		AI_Output (self, other, "DIA_Addon_Morgan_Auftrag2_07_02");	//Go find yourself a bunk and have a decent bottle of rum!
 		CreateInvItems(self,ItFo_Addon_Rum,1);
 		B_UseItem(self,ItFo_Addon_Rum);
-		AI_Output(self,other,"DIA_Addon_Morgan_Auftrag2_07_03");	/Aaah. This is good stuff.
+		AI_Output(self,other,"DIA_Addon_Morgan_Auftrag2_07_03");	//Aaah. This is good stuff.
 	}
 	else
 	{
@@ -543,7 +543,6 @@ func void B_BuildLearnDialog_Morgan()
 		{
 			PrintScreen(ConcatStrings(PRINT_NoLearnMAXReached,IntToString(TeachLimit_1H_Morgan)),-1,53,FONT_Screen,2);
 			AI_Output(self,other,"DIA_Addon_Morgan_Teach_Back_07_00");	//If you want to get even better, you'll have to learn from somebody else.
-	};
 		}
 		else
 		{

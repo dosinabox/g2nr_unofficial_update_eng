@@ -230,7 +230,7 @@ func void DIA_Hakon_WoWaffen_Info()
 	AI_Output(other,self,"DIA_Hakon_Add_15_12");	//Where do you get your weapons from?
 	if(Npc_KnowsInfo(other,DIA_Hakon_Kapitel2) && !Npc_IsDead(Harad))
 	{
-		AI_Output(self,other,"DIA_Hakon_Add_12_21_add");	//Старый добрый Гарад.@@@
+		AI_Output(self,other,"DIA_Hakon_Add_12_21_add");	//Good old Harad.
 	}
 	else if(Npc_KnowsInfo(other,DIA_Hakon_HaradBandits))
 	{
@@ -282,7 +282,7 @@ func void DIA_Hakon_HaradBandits_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Hakon_Add_12_27_add");	//Правда?@@@
+		AI_Output(self,other,"DIA_Hakon_Add_12_27_add");	//Really?
 	};
 };
 

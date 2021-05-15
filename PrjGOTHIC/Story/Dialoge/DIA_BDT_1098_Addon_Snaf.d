@@ -294,12 +294,12 @@ func void DIA_Addon_Snaf_Abrechnung_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_Snaf_Abrechnung_01_13");	//Ќу, хот€ вр€д ли можно говорить об этом с уверенностью.
+		AI_Output(self,other,"DIA_Addon_Snaf_Abrechnung_01_13");	//So far everything is still open.
 	};
-	if (Snaf_Rechnung == FALSE)
+	if (Snaf_Einmal == FALSE)
 	{
-			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14");	//Thanks.
-			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15");	//(curtly) Hey! I didn't tell you anything you didn't already know, got it?!
+		AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14");	//Thanks.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15");	//(curtly) Hey! I didn't tell you anything you didn't already know, got it?!
 		Snaf_Einmal = TRUE;
 	}
 	else

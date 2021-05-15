@@ -106,7 +106,6 @@ func void B_BuildLearnDialog_Cedric()
 		};
 		PrintScreen(ConcatStrings(PRINT_NoLearnMAXReached,IntToString(TeachLimit_1H_Cedric)),-1,53,FONT_Screen,2);
 		AI_Output(self,other,"DIA_DIA_Cedric_Teach_12_01");	//You have learned everything about sword fighting. I cannot show more.
-	}
 		AI_StopProcessInfos(self);
 	};
 };

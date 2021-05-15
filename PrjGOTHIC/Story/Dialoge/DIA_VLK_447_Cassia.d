@@ -81,7 +81,7 @@ func void DIA_Cassia_Gilde_Info()
 	{
 		AI_Output (self, other, "DIA_Cassia_Gilde_16_00");	//I see you've become a fighter for law and order.
 		AI_Output (self, other, "DIA_Cassia_Gilde_16_01");	//It doesn't matter that you're in the service of Innos. You're one of us. And I hope that's the way you see it, too.
-	};
+	}
 	else if(other.guild == GIL_KDF)
 	{
 		AI_Output (self, other, "DIA_Cassia_Gilde_16_02");	//So now you belong to the church of Innos. Fine, but you're still one of us - I hope you won't forget that.
@@ -266,7 +266,6 @@ func int DIA_Cassia_Lernen_Condition()
 };
 
 func void DIA_Cassia_Lernen_Info()
-{
 {
 	AI_Output (other, self, "DIA_Cassia_Lernen_15_00");	//What can I learn from you?
 	AI_Output (self, other, "DIA_Cassia_Lernen_16_01");	//Jesper is the master of stealth. He will show you how to move without making a sound.

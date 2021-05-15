@@ -114,8 +114,7 @@ func int DIA_Addon_Rhademes_Hebel_Condition()
 func void DIA_Addon_Rhademes_Hebel_Info()
 {
 	AI_Output(other,self,"DIA_Addon_Rhademes_Hebel_15_00");	//Not all of the levers trigger the trap, right?
-//	AI_Output(self,other,"DIA_Addon_Rhademes_Hebel_03_01");	//Yes, they do!
-	AI_Output(self,other,"DIA_Addon_Rhademes_Hebel_03_01_add");	//Да...@@@
+	AI_Output(self,other,"DIA_Addon_Rhademes_Hebel_03_01");	//Yes, they do!
 };
 
 

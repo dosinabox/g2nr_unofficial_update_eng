@@ -405,6 +405,7 @@ var int DIA_Hokurn_TeachState_2H;
 func void B_Hokurn_TeachedEnough()
 {
 	AI_Output(self,other,"B_Hokurn_TeachedEnough_01_00");	//You don't need a teacher for this discipline any more.
+};
 
 func void B_BuildLearnDialog_Hokurn()
 {

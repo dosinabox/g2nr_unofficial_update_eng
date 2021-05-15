@@ -256,7 +256,7 @@ func void DIA_Karras_Trade_Info()
 	if(Npc_HasItems(other,Holy_Hammer_MIS))
 	{
 		AI_Output(self,other,"DIA_Karras_Success_10_01");	//Well done, my young friend.
-		AI_Output(self,other,"DIA_Serpentes_SUCCESS_10_05");	/And I had best take the hammer myself.
+		AI_Output(self,other,"DIA_Serpentes_SUCCESS_10_05");	//And I had best take the hammer myself.
 		Npc_RemoveInvItems(other,Holy_Hammer_MIS,1);
 		AI_PrintScreen("Given: Holy Hammer",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 		Wld_InsertItem(Holy_Hammer_MIS,"FP_HAMMER");

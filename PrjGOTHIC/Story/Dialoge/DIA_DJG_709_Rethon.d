@@ -190,7 +190,7 @@ func void DIA_Rethon_ANGST_Info()
 		Info_AddChoice(DIA_Rethon_ANGST,"You don't seem to like him.",DIA_Rethon_ANGST_sylviomoegen);
 		if(!Npc_KnowsInfo(other,DIA_SylvioDJG_HelloAgain) && !Npc_KnowsInfo(other,DIA_SylvioDJG_WHATNEXT))
 		{
-			Info_AddChoice(DIA_Rethon_ANGST,So where is Sylvio now?",DIA_Rethon_ANGST_woSylvio);
+			Info_AddChoice(DIA_Rethon_ANGST,"So where is Sylvio now?",DIA_Rethon_ANGST_woSylvio);
 		};
 		Info_AddChoice(DIA_Rethon_ANGST,"Sylvio was here?",DIA_Rethon_ANGST_sylviohier);
 	};

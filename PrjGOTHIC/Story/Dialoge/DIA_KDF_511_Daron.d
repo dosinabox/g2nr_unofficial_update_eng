@@ -365,12 +365,12 @@ func int DIA_Addon_Daron_GuildHelp_Condition()
 	{
 		if(other.guild == GIL_NOV)
 		{
-			DIA_Addon_Daron_GuildHelp.description = "У тебя есть какое-нибудь задание для меня?@@@";
+			DIA_Addon_Daron_GuildHelp.description = "Do you have an assignment for me?";
 			return TRUE;
 		}
 		else if(other.guild != GIL_NONE)
 		{
-			DIA_Addon_Daron_GuildHelp.description = "У тебя такой расстроенный вид...@@@";
+			DIA_Addon_Daron_GuildHelp.description = "You're pulling such a long face.";
 			return TRUE;
 		};
 	}

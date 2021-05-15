@@ -1115,7 +1115,7 @@ func void DIA_Andre_DGRunning_Info()
 	Info_AddChoice(DIA_Andre_DGRunning,"I'm working on it...",DIA_Andre_DGRunning_BACK);
 	if(Npc_IsDead(Cassia) && Npc_IsDead(Jesper) && Npc_IsDead(Ramirez))
 	{
-		Info_AddChoice(DIA_Andre_DGRunning,"I hunted them all down!,DIA_Andre_DGRunning_Success);
+		Info_AddChoice(DIA_Andre_DGRunning,"I hunted them all down!",DIA_Andre_DGRunning_Success);
 	};
 	if((DG_gefunden == TRUE) && (Andre_FoundThieves_Reported == FALSE))
 	{
@@ -2090,7 +2090,7 @@ func void DIA_Andre_PERM_Info()
 	if (other.guild == GIL_MIL)
 	{
 		AI_Output (self, other, "DIA_Andre_PERM_08_02");	//Carry out your assignments.
-	};
+	}
 	else if(other.guild == GIL_PAL)
 	{
 		B_ReportToHagenNow();

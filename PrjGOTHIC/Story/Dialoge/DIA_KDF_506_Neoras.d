@@ -48,7 +48,7 @@ func void DIA_Neoras_Hallo_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Neoras_Hallo_01_00_add");	//Что... что-то случилось? Зачем ты беспокоишь меня?@@@
+		AI_Output(self,other,"DIA_Neoras_Hallo_01_00_add");	//What ... what's wrong? Why are you bothering me?
 	};
 	AI_Output(other,self,"DIA_Neoras_Hallo_15_01");	//I didn't mean to disturb you.
 	AI_Output(self,other,"DIA_Neoras_Hallo_01_02");	//You already have. -sigh- Well, what do you want?
@@ -472,7 +472,7 @@ func void DIA_Neoras_BrewForMe_Health()
 	Info_ClearChoices(DIA_Neoras_BrewForMe);
 	Info_AddChoice(DIA_Neoras_BrewForMe,Dialog_Back,DIA_Neoras_BrewForMe_Back);
 	Info_AddChoice(DIA_Neoras_BrewForMe,"Brew me a potion of great speed.",DIA_Neoras_BrewForMe_Speed);
-	Info_AddChoice(DIA_Neoras_BrewForMe,""Brew me a mana extract.",DIA_Neoras_BrewForMe_Mana);
+	Info_AddChoice(DIA_Neoras_BrewForMe,"Brew me a mana extract.",DIA_Neoras_BrewForMe_Mana);
 	Info_AddChoice(DIA_Neoras_BrewForMe,"Brew me an elixir of healing.",DIA_Neoras_BrewForMe_Health);
 };
 

@@ -599,7 +599,7 @@ func void DIA_Addon_Lares_GetRangerArmor_Info()
 	AI_Output (self, other, "DIA_Addon_Lares_GetRangerArmor_09_04");	//Here, take the armor of our community.
 	if(Lares_ArmorComment == FALSE)
 	{
-		AI_Output(self,other,"DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03_add");	//Члены общества Кольца Воды носили такую броню еще до войны с орками.@@@
+		AI_Output(self,other,"DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03_add");	//The members of the Ring of Water have been wearing such armor since before the orc wars.
 		Lares_ArmorComment = TRUE;
 	};
 	AI_WaitTillEnd(other,self);
@@ -1271,7 +1271,7 @@ func void DIA_Lares_AboutSld_Info()
 	Info_AddChoice(DIA_Lares_AboutSld,"Tell me more about the mercenaries...",DIA_Lares_AboutSld_Sld);
 	if(Lares_WayToOnar == FALSE)
 	{
-		Info_AddChoice(DIA_Lares_AboutSld,""How do I find the landowner's farm?",DIA_Lares_AboutSld_WayToOnar);
+		Info_AddChoice(DIA_Lares_AboutSld,"How do I find the landowner's farm?",DIA_Lares_AboutSld_WayToOnar);
 	};
 };
 

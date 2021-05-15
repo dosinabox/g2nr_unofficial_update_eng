@@ -181,7 +181,7 @@ func void DIA_Peck_WEAPON_Info()
 	{
 		AI_Output(self,other,"DIA_Peck_WEAPON_12_02");	//Well, look who's here. Our new comrade. And he wants a sword.
 		AI_Output(self,other,"DIA_Peck_WEAPON_12_03");	//You didn't tell Andre I was in the Red Lantern. You seem to be okay. Here, take your sword.
-		AI_Output(self,other,"DIA_Peck_Add_12_00");	/It's the best that I have.
+		AI_Output(self,other,"DIA_Peck_Add_12_00");	//It's the best that I have.
 		B_GiveInvItems(self,other,ItMw_Schwert1,1);
 		DIA_Peck_WEAPON_perm = TRUE;
 	}

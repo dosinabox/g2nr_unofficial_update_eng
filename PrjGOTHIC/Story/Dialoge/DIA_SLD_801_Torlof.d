@@ -1017,7 +1017,7 @@ func void DIA_Torlof_BEMYCAPTAIN_Info()
 	AI_Output (self, other, "DIA_Torlof_BEMYCAPTAIN_01_03");	//(laughs) To an island? You don't even have a ship, let alone a crew to man her.
 	if((MIS_ShipIsFree == TRUE) && (Crewmember_Count >= Min_Crew))
 	{
-		AI_Output(other,self,"DIA_Hanna_AnyNews_Yes_15_00");	//Ты ошибаешься.@@@
+		AI_Output(other,self,"DIA_Hanna_AnyNews_Yes_15_00");	//Yeah, sure I do.
 	};
 	AI_Output (self, other, "DIA_Torlof_BEMYCAPTAIN_01_04");	//No, my boy. If you want to engage my services as a captain and strength teacher, then first you'll have to prove to me that you know what you're talking about.
 	AI_Output (self, other, "DIA_Torlof_BEMYCAPTAIN_01_05");	//Besides which, I already have other worries. The paladins haven't pulled out of the city as expected.
@@ -1190,7 +1190,7 @@ func void DIA_Torlof_LOSFAHREN_Info()
 	AI_Output(other,self,"DIA_Torlof_LOSFAHREN_15_00");	//Let's set out for the island.
 	if(B_CaptainConditions(self))
 	{
-		AI_Output(self,other,"DIA_Torlof_LOSFAHREN_01_01");	/All right. Give me the chart and we're off.
+		AI_Output(self,other,"DIA_Torlof_LOSFAHREN_01_01");	//All right. Give me the chart and we're off.
 		B_GiveInvItems(other,self,ItWr_Seamap_Irdorath,1);
 		AI_Output (self, other, "DIA_Torlof_LOSFAHREN_01_02");	//(calls) All hands on board.
 		AI_Output (self, other, "DIA_Torlof_LOSFAHREN_01_03");	//Make sure you really have everything you might need with you. There's no way back.

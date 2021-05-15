@@ -283,7 +283,7 @@ func void DIA_Hanna_AnyNews_Depends()
 
 func void DIA_Hanna_AnyNews_Yes()
 {
-	AI_Output (other, self, "DIA_Hanna_AnyNews_Yes_15_00");	//Yeah, sure.
+	AI_Output (other, self, "DIA_Hanna_AnyNews_Yes_15_00");	//Yeah, sure I do.
 	AI_Output (self, other, "DIA_Hanna_AnyNews_Yes_17_01");	//What do you know, the world is full of surprises. I cleared out some of my stuff recently and sold a stack of old maps to Brahim, the cartographer down by the harbor.
 	AI_Output (self, other, "DIA_Hanna_AnyNews_Yes_17_02");	//Unfortunately, I noticed that I'm missing a document.
 	AI_Output (self, other, "DIA_Hanna_AnyNews_Yes_17_03");	//I assume it must have slipped in among the papers.

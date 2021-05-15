@@ -145,7 +145,7 @@ func void DIA_Edda_Suppe_Info()
 	}
 	else if(Wld_IsTime(22,0,8,0))
 	{
-		AI_Output(self,other,"DIA_Edda_Suppe_17_03_add");	//Заходи попозже.@@@
+		AI_Output(self,other,"DIA_Edda_Suppe_17_03_add");	//Come back later.
 	}
 	else if(Edda_Day != Wld_GetDay())
 	{

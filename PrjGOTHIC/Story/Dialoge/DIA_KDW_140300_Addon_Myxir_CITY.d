@@ -44,7 +44,7 @@ func void DIA_Addon_Myxir_CITY_HelloCITY_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00");	//Will you stay in the city now?
 	AI_Output (self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01");	//One of us has to be HERE if Vatras leaves the city.
-	VatrasAbloeseIstDa = TRUE;
+//	VatrasAbloeseIstDa = TRUE;
 	if ((RavenIsDead == TRUE) && (DIA_Addon_Myxir_CITY_HelloCITY_OneTime == FALSE))
 	{
 		AI_Output (self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02");	//One more thing I wanted to say to you.

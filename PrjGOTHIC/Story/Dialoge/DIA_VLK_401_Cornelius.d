@@ -236,7 +236,7 @@ func void DIA_Cornelius_DontBelieveYou_Perjury()
 	AI_Output (other, self, "DIA_Cornelius_DontBelieveYou_Perjury_15_00");	//Perjury will land you in the slammer - for a long time!
 	AI_Output (self, other, "DIA_Cornelius_DontBelieveYou_Perjury_13_01");	//You're trying to threaten me? A little guardsman is threatening me, the secretary to the governor?
 	AI_Output (self, other, "DIA_Cornelius_DontBelieveYou_Perjury_13_02");	//If you don't get lost right now, I'll see to it that you are demoted.
-	Cornelius_ThreatenByMilSC = TRUE;
+//	Cornelius_ThreatenByMilSC = TRUE;
 	AI_StopProcessInfos (self);
 };
 

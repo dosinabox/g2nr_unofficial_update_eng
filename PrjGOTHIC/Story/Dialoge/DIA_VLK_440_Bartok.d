@@ -152,7 +152,7 @@ func void DIA_Addon_Bartok_MissingPeople_Info()
 	AI_Output (self, other, "DIA_Addon_Bartok_MissingPeople_04_02");	//Only a few days ago, we were both standing at the bar in Coragon's tavern, discussing the hunt.
 	AI_Output (self, other, "DIA_Addon_Bartok_MissingPeople_04_03");	//Don't ask me what happened next. I had had a few by then.
 	AI_Output (self, other, "DIA_Addon_Bartok_MissingPeople_04_04");	//I vaguely remember Trokar saying that he was going out to get a few swampweed reefers. He never came back.
-	MIS_Bartok_MissingTrokar = LOG_Running;
+//	MIS_Bartok_MissingTrokar = LOG_Running;
 	Info_ClearChoices (DIA_Addon_Bartok_MissingPeople);
 	Info_AddChoice (DIA_Addon_Bartok_MissingPeople, "Didn't you go looking for him?", DIA_Addon_Bartok_MissingPeople_such);
 	Info_AddChoice (DIA_Addon_Bartok_MissingPeople, "So where can I get some swampweed reefers?", DIA_Addon_Bartok_MissingPeople_wo);

@@ -289,7 +289,7 @@ func void DIA_Buster_WannaJoin_Info()
 		else
 		{
 			AI_Output(self,other,"DIA_Buster_WannaJoin_13_02");	//You're not the best of fighters, but a coward you're not.
-			B_LogEntry(TOPIC_SLDRespekt,""Buster doesn't mind me joining the mercenaries.");
+			B_LogEntry(TOPIC_SLDRespekt,"Buster doesn't mind me joining the mercenaries.");
 		};
 		AI_Output(self,other,"DIA_Buster_WannaJoin_13_03");	//My vote doesn't count much since I haven't been here for long, but when Lee asks me I'll vote for you.
 		SCKnowsSLDVotes = TRUE;

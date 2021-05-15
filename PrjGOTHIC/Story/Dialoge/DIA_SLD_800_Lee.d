@@ -984,7 +984,7 @@ func void DIA_Lee_Report_Info()
 			AI_Output(self,other,"DIA_Lee_Add_04_25");	//The fewer paladins stay here, the better.
 		};
 	};
-	AI_Output(self,other,"DIA_Lee_Add_04_23");	//А если нет... (жестко) Тогда мы найдем другой способ вырваться отсюда...@@@
+	AI_Output(self,other,"DIA_Lee_Add_04_23");	//And if not... (hard) Then we'll find another way to get out of here...
 };
 
 

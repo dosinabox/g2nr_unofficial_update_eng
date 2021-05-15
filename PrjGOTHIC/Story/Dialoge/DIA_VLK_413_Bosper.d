@@ -186,7 +186,6 @@ func void DIA_Bosper_LEHRLING_Info()
 			{
 				AI_Output(self,other,"DIA_Bosper_LEHRLING_11_06");	//Thorben will only give you his approval with the blessing of the gods.
 			};
-			};
 		}
 		else
 		{

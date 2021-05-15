@@ -314,7 +314,7 @@ func void Use_Pirates_01()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Get the last delivery meant for us.");
 	Doc_PrintLines(nDocID,0,"Then bring it to your cave. We'll meet there.");
-	Doc_PrintLines(nDocID,0,""I will pay double the value in gold.");
+	Doc_PrintLines(nDocID,0,"I will pay double the value in gold.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"That's the way to do it.");
 	Doc_PrintLine(nDocID,0,"Tom");

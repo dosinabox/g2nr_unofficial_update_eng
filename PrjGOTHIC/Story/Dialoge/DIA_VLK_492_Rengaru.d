@@ -143,16 +143,9 @@ instance DIA_Rengaru_GOTYOU(C_Info)
 
 func int DIA_Rengaru_GOTYOU_Condition()
 {
-	if(Npc_KnowsInfo(other,DIA_Rengaru_HALLODIEB))
+	if(C_RengaruIsReadyToTalk() && Npc_KnowsInfo(other,DIA_Rengaru_HALLODIEB))
 	{
-		if(Npc_GetDistToWP(self,"NW_CITY_HABOUR_KASERN_05_01") <= 1000)
-		{
-			return TRUE;
-		};
-		if(Npc_GetDistToWP(self,"NW_CITY_HABOUR_POOR_AREA_PATH_01_03") <= 1000)
-		{
-			return TRUE;
-		};
+		return TRUE;
 	};
 };
 

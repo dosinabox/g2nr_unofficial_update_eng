@@ -930,7 +930,7 @@ func void DIA_Constantino_NewRecipes_Info()
 			if(Npc_GetTalentSkill(other,NPC_TALENT_ALCHEMY))
 			{
 				AI_Output(other,self,"DIA_Constantino_NewRecipes_15_02");	//Yes, I do.
-				AI_Output(self,other,"DIA_Constantino_NewRecipes_10_03");	/Yet you are still alive... those aren't bad qualifications.
+				AI_Output(self,other,"DIA_Constantino_NewRecipes_10_03");	//Yet you are still alive... those aren't bad qualifications.
 				AI_Output(self,other,"DIA_Constantino_NewRecipes_10_04");	//I think I can tell you a few formulations. It depends, of course, on what you want to know.
 				B_Constantino_TeachAlchemy();
 			}

@@ -838,7 +838,7 @@ instance DIA_Pyrokar_TEACH(C_Info)
 	information = DIA_Pyrokar_TEACH_Info;
 	permanent = TRUE;
 //	description = B_BuildLearnString("Teach me the last Circle of Magic.",B_GetLearnCostTalent(other,NPC_TALENT_MAGE,6));
-	description = B_BuildLearnString("Sixth Circle of Magic",B_GetLearnCostTalent(other,NPC_TALENT_MAGE,6));@@@
+	description = B_BuildLearnString("Sixth Circle of Magic",B_GetLearnCostTalent(other,NPC_TALENT_MAGE,6));//@@@
 };
 
 
@@ -1332,7 +1332,7 @@ func void DIA_Pyrokar_FOUNDINNOSEYE_was()
 	AI_Output (self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_03");	//I cannot begin to imagine what is now going to become of us all. Without the protection of the Eye, we are helplessly at the mercy of the enemy.
 	AI_Output (self, other, "DIA_Pyrokar_FOUNDINNOSEYE_was_11_04");	//Go to Vatras, the Water Mage in town. In this terrible situation, only he will know what is to be done. Take the Eye to him, and hurry.
 	Info_AddChoice (DIA_Pyrokar_FOUNDINNOSEYE, Dialog_Back, DIA_Pyrokar_FOUNDINNOSEYE_weiter);
-	Info_AddChoice(DIA_Pyrokar_FOUNDINNOSEYE,""Why Vatras?",DIA_Pyrokar_FOUNDINNOSEYE_was_vatras);
+	Info_AddChoice(DIA_Pyrokar_FOUNDINNOSEYE,"Why Vatras?",DIA_Pyrokar_FOUNDINNOSEYE_was_vatras);
 	Info_AddChoice(DIA_Pyrokar_FOUNDINNOSEYE,"What is the Circle of the Sun?",DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis);
 	B_LogEntry (TOPIC_INNOSEYE, "Pyrokar wants me to ask the Water Mage Vatras in town for advice on what to do with the damaged Eye.");
 	MIS_Pyrokar_GoToVatrasInnoseye = LOG_Running;

@@ -173,7 +173,7 @@ func void DIA_Biff_WASHIERIMTAL_Info()
 		B_LogEntry(TOPIC_Dragonhunter,"The prospect of rich pickings has persuaded Biff to accompany me. As long as he gets enough gold, I can count on him.");
 	};
 	Info_AddChoice(DIA_Biff_WASHIERIMTAL,"Well, then, I wish you luck.",DIA_Biff_WASHIERIMTAL_vielglueck);
-	Info_AddChoice(DIA_Biff_WASHIERIMTAL,Either that, or you'll be dead!",DIA_Biff_WASHIERIMTAL_ihrtot);
+	Info_AddChoice(DIA_Biff_WASHIERIMTAL,"Either that, or you'll be dead!",DIA_Biff_WASHIERIMTAL_ihrtot);
 };
 
 func void DIA_Biff_WASHIERIMTAL_ihrtot()

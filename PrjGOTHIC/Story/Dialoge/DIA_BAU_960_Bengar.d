@@ -43,6 +43,7 @@ func void DIA_Bengar_HALLO_Info()
 	if((other.guild == GIL_NONE) || (other.guild == GIL_NOV) || (other.guild == GIL_PAL))
 	{
 		AI_Output(self,other,"DIA_Bengar_HALLO_10_02");	//All the land here is owned by one big farmer.
+	};
 };
 
 
@@ -588,7 +589,7 @@ func int DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition()
 		}
 		else if(Npc_KnowsInfo(other,DIA_Bengar_SLDDA) || Npc_KnowsInfo(other,DIA_Bengar_MALAKWIEDERDA) || Npc_KnowsInfo(other,DIA_Addon_Bengar_ReturnPardos))
 		{
-			DIA_Bengar_BALTHASARDARFAUFWEIDE.description = "Бальтазар может опять использовать твои пастбища.@@@";
+			DIA_Bengar_BALTHASARDARFAUFWEIDE.description = "Balthasar can use your land again.";
 			return TRUE;
 		};
 	};
@@ -602,7 +603,7 @@ func void DIA_Bengar_BALTHASARDARFAUFWEIDE_Info()
 	}
 	else
 	{
-		AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00_add");	//Бальтазар может опять использовать твои пастбища.@@@
+		AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00_add");	//Balthasar can use your land again.
 	};
 	AI_Output(self,other,"DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01");	//Why?
 	AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02");	//(threatening) Because I said so.

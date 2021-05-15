@@ -425,12 +425,12 @@ func int DIA_Addon_Cavalorn_Banditen_Condition()
 		return TRUE;
 	};
 };
-//@@@Why are those disabled?
+
 func void DIA_Addon_Cavalorn_Banditen_Info()
 {
 	AI_Output(other,self,"DIA_Addon_Cavalorn_Banditen_15_00");	//What was that about bandits?
-//	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_01");	//Have you slept through the last few weeks?
-//	AI_Output(other,self,"DIA_Addon_Cavalorn_Banditen_15_02");	//Eh...
+	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_01");	//Have you slept through the last few weeks?
+	AI_Output(other,self,"DIA_Addon_Cavalorn_Banditen_15_02");	//Eh...
 	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_03");	//I'm talking about all the riff-raff from the penal colony that are making themselves at home here in the area. Plundering and murdering for all
 	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_04");	//(sighs) I guess I'm lucky they didn't kill me. I let down my guard for one moment, and they clubbed me from behind.
 	if(!C_BragoBanditsDead())

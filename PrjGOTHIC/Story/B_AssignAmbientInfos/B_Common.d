@@ -226,12 +226,12 @@ func void DIA_Common_WhatAreYouDoingHere()
 
 func void DIA_Common_AnyMissionForMe()
 {
-	AI_Output(other,self,"DIA_Gorax_Aufgabe_15_00");	//У тебя есть какое-нибудь задание для меня?
+	AI_Output(other,self,"DIA_Gorax_Aufgabe_15_00");	//Do you have an assignment for me?
 };
 
 func void DIA_Common_YouLookSoSad()
 {
-	AI_Output(other,self,"DIA_Keroloth_KAP4_HELLO_15_00");	//У тебя такой расстроенный вид...
+	AI_Output(other,self,"DIA_Keroloth_KAP4_HELLO_15_00");	//You're pulling such a long face.
 };
 
 func void DIA_Common_WhatCanYouTeachMe()

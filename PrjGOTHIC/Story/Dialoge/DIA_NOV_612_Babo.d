@@ -270,7 +270,7 @@ func void DIA_Babo_Wurst_Info()
 	{
 		Info_AddChoice(DIA_Babo_Wurst,"All right, here, take another.",DIA_Babo_Wurst_JA);
 	};
-	Info_AddChoice(DIA_Babo_Wurst,""No, I won't do that.",DIA_Babo_Wurst_NEIN);
+	Info_AddChoice(DIA_Babo_Wurst,"No, I won't do that.",DIA_Babo_Wurst_NEIN);
 };
 
 func void DIA_Babo_Wurst_JA()

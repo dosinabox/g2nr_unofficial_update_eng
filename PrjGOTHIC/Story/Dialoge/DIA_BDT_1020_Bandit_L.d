@@ -198,7 +198,7 @@ func void DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon()
 	AI_Output(other,self,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon_15_00");	//Here, take my weapon.
 	if(!Npc_HasReadiedWeapon(other))
 	{
-		AI_Output(self,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney_06_01");	/Ah, now you're talking.
+		AI_Output(self,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney_06_01");	//Ah, now you're talking.
 		AI_EquipBestMeleeWeapon(self);
 		self.aivar[AIV_PASSGATE] = TRUE;
 		if(Wegelagerer_Surprise == TRUE)

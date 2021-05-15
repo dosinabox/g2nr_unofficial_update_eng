@@ -111,7 +111,7 @@ func void DIA_BDT_1013_BANDIT_WHERE_Who()
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_02");	//Ah! I see! You just don't want to talk to me about it, hm? All right - it's your business.
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_03");	//So, you coming or not?
 	Info_ClearChoices(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,""Maybe later...",DIA_BDT_1013_BANDIT_WHERE_Later);
+	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,"Maybe later...",DIA_BDT_1013_BANDIT_WHERE_Later);
 	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,"Who should I talk to?",DIA_BDT_1013_BANDIT_WHERE_TalkPartner);
 	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,"Fine! You go first!",DIA_BDT_1013_BANDIT_WHERE_Yes);
 };
