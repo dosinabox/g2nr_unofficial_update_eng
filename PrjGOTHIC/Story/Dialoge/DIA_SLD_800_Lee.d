@@ -405,7 +405,7 @@ func void DIA_Lee_LeesPlan_Info()
 			}
 			else
 			{
-				AI_Output(self,other,"DIA_Lee_LeesPlan_04_07_add");	//Естественно, условием будет наше помилование и свободный путь на материк.@@@
+				AI_Output(self,other,"DIA_Lee_LeesPlan_04_07_add");	//Essentially, it will be about our pardons and free passage to the mainland.
 			};
 		};
 	};

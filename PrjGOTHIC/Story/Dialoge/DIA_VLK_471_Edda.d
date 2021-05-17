@@ -51,14 +51,7 @@ func void DIA_Edda_Hallo_Info()
 
 func void B_Edda_AboutStolenStatue()
 {
-	if(Wld_IsTime(8,0,22,0))
-	{
-		AI_Output(self,other,"DIA_Edda_Stadt_17_02");	//But if you're looking for a place to stay overnight, you're welcome to sleep in my hut. There's an extra bed that you can have.
-	}
-	else
-	{
-		AI_Output(self,other,"DIA_Edda_Stadt_17_02_add");	//≈сли ты ищешь, где остановитьс€ на ночь, можешь поспать в моей хижине. ≈сть еще одна кровать.@@@
-	};
+	AI_Output(self,other,"DIA_Edda_Stadt_17_02");	//But if you're looking for a place to stay overnight, you're welcome to sleep in my hut. There's an extra bed that you can have.
 	AI_Output (other, self, "DIA_Edda_Stadt_15_03");	//Aren't you afraid of thieves?
 	AI_Output (self, other, "DIA_Edda_Stadt_17_04");	//The only valuable thing I ever owned has already been taken.
 	AI_Output (self, other, "DIA_Edda_Stadt_17_05");	//Someone stole my statue of Innos.

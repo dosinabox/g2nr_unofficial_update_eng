@@ -27,7 +27,7 @@ func void Use_BookstandAnimals1_S1()
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine (nDocID, 1, "Skinning");
 		Doc_PrintLines (nDocID, 1, "A talent experienced hunters value greatly, for many animals have pelts - sheep, wolves and shadowbeats, for example.");
-		Doc_PrintLines (nDocID, 1, "A hunter with this skill can also skin swampsharks and lurkers.");;
+		Doc_PrintLines (nDocID, 1, "A hunter with this skill can also skin swampsharks and lurkers.");
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"Extract Claws");

@@ -888,11 +888,11 @@ func int DIA_Lord_Hagen_EyeBroken_Condition()
 	{
 		if(Npc_HasItems(other,ItMi_InnosEye_Broken_Mis))
 		{
-			DIA_Lord_Hagen_EyeBroken.description = "Глаз у меня, но он поврежден.";
+			DIA_Lord_Hagen_EyeBroken.description = "I have the Eye - it is broken.";
 		}
 		else
 		{
-			DIA_Lord_Hagen_EyeBroken.description = "Глаз Инноса поврежден.";
+			DIA_Lord_Hagen_EyeBroken.description = "The Eye of Innos is broken.";
 		};
 		return TRUE;
 	};

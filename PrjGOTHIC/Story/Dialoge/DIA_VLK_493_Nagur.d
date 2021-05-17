@@ -280,7 +280,7 @@ func void DIA_Nagur_Auftrag_Wann()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Andre_Add_08_11");	//Тебе лучше отправиться прямо к нему.@@@
+		AI_Output(self,other,"DIA_Andre_Add_08_11");	//You had better go directly to him.
 	};
 };
 

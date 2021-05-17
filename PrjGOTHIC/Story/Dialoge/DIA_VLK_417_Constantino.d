@@ -540,7 +540,6 @@ func void DIA_Constantino_LEHRLING_Info()
 			}
 			else
 			{
-//				AI_Output(self,other,"DIA_Constantino_LEHRLING_10_18");	//Маттео говорит, что еще не разговаривал с тобой по этому поводу.
 				AI_Output(self,other,"DIA_Constantino_LEHRLING_10_18");	//Matteo says he has not yet talked to you about this.
 			};
 		}
@@ -884,12 +883,12 @@ func void DIA_Constantino_Alchemy_Info()
 	AI_Output(other,self,"DIA_Constantino_Alchemy_15_00");	//Instruct me in the art of alchemy!
 	if(B_GetGreatestPetzCrime(self) == CRIME_NONE)
 	{
-	AI_Output (self, other, "DIA_Constantino_Alchemy_10_01");	//All right. Basics first.
-	AI_Output (self, other, "DIA_Constantino_Alchemy_10_02");	//Each potion is made of plants - they possess all kinds of powers.
-	AI_Output (self, other, "DIA_Constantino_Alchemy_10_03");	//They do nothing but put all their power into growth - and modifying this power is what the art of alchemy is about.
+		AI_Output (self, other, "DIA_Constantino_Alchemy_10_01");	//All right. Basics first.
+		AI_Output (self, other, "DIA_Constantino_Alchemy_10_02");	//Each potion is made of plants - they possess all kinds of powers.
+		AI_Output (self, other, "DIA_Constantino_Alchemy_10_03");	//They do nothing but put all their power into growth - and modifying this power is what the art of alchemy is about.
 		B_Constantino_TeachAlchemyBasics();
-	AI_Output (self, other, "DIA_Constantino_Alchemy_10_07");	//Potions which restore your lost strength, and even potions which affect your strength permanently.
-	AI_Output (self, other, "DIA_Constantino_Alchemy_10_08");	//You cannot learn everything at once.
+		AI_Output (self, other, "DIA_Constantino_Alchemy_10_07");	//Potions which restore your lost strength, and even potions which affect your strength permanently.
+		AI_Output (self, other, "DIA_Constantino_Alchemy_10_08");	//You cannot learn everything at once.
 		B_Constantino_TeachAlchemy();
 	}
 	else
@@ -1071,7 +1070,6 @@ func void DIA_Constantino_TEACH_Health03()
 	if(B_TeachPlayerTalentAlchemy(self,other,POTION_Health_03))
 	{
 		AI_Output(self,other,"DIA_Constantino_TEACH_Health03_10_00");	//Creating an elixir of healing takes quite a bit of experience.
-		AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_15_00");	//What ingredients do I need for an elixir of healing?
 		AI_Output(self,other,"DIA_Constantino_TEACH_Health03_10_01");	//You need healing roots and meadow knotweed. Take special care when heating it this time.
 	};
 };

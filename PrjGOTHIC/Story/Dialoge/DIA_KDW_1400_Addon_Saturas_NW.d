@@ -275,7 +275,7 @@ func void DIA_Addon_Saturas_Ornament_Info()
 	AI_Output(other,self,"DIA_Addon_Saturas_Ornament_15_00");	//I brought your ornament.
 	B_GiveInvItems(other,self,ItMi_Ornament_Addon_Vatras,1);
 	Npc_RemoveInvItem(self,ItMi_Ornament_Addon_Vatras);
-	AI_Output(self,other,"DIA_Addon_Saturas_Ornament_ADD_14_00");	//¬о им€ сути всего сущего, что это все должно значить?@@@
+	AI_Output(self,other,"DIA_Addon_Saturas_Ornament_ADD_14_00");	//What in all the world is that supposed to mean?
 	if(Lares_Angekommen == TRUE)
 	{
 		AI_Output(self,other,"DIA_Addon_Saturas_Ornament_14_01");	//Who gave you that? Don't tell me that Lares simply handed it over to you.

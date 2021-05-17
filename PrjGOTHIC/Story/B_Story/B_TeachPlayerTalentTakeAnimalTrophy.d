@@ -60,7 +60,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy(var C_Npc slf,var C_Npc oth,var int
 		Npc_SetTalentSkill(hero,NPC_TALENT_TAKEANIMALTROPHY,1);
 		PrintScreen(PRINT_LearnTakeAnimalTrophy,-1,-1,FONT_Screen,2);
 		B_LogEntry(TOPIC_TalentAnimalTrophy,"....remove horn from dead shadowbeasts.");
-	}
+	};
 	if(trophy == TROPHY_FireTongue)
 	{
 		PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_FireTongue] = TRUE;

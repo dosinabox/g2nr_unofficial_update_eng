@@ -149,7 +149,7 @@ func void DIA_MIL_7_STANDARD_Info()
 	else if(Kapitel == 2)
 	{
 		AI_Output (self, other, "DIA_MIL_7_STANDARD_07_02");	//It's time the paladins ended the farmers' rebellion. He who breaks the law must be punished. Especially now, when we're at war.
-	};
+	}
 	else if(Kapitel == 3)
 	{
 		if(MIS_RescueBennet == LOG_SUCCESS)
@@ -164,7 +164,7 @@ func void DIA_MIL_7_STANDARD_Info()
 	else if(Kapitel == 4)
 	{
 		AI_Output (self, other, "DIA_MIL_7_STANDARD_07_05");	//Some of the mercenaries have already left Onar's farm. Some problems solve themselves.
-	};
+	}
 	else if(Kapitel >= 5)
 	{
 		AI_Output (self, other, "DIA_MIL_7_STANDARD_07_06");	//The dragons are finished, but it isn't over. The orcs are next. We'll clean things up properly!

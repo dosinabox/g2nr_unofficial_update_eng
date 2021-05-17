@@ -318,7 +318,7 @@ instance ItKe_Rune_MIS(C_Item)
 	material = MAT_METAL;
 	description = name;
 	text[0] = "The chest this key belongs to";
-	text[1] = ""is under a bridge.";
+	text[1] = "is under a bridge.";
 	text[2] = "It contains a runestone.";
 	inv_rotz = -45;
 	inv_rotx = -25;

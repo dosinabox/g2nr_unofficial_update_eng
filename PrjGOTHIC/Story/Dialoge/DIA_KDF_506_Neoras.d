@@ -318,7 +318,7 @@ func void DIA_Neoras_BrewPotion_Info()
 	AI_Output (other, self, "DIA_Neoras_BrewPotion_15_00");	//Could you brew me a potion?
 	if (hero.guild == GIL_NOV)
 	{
-	AI_Output (self, other, "DIA_Neoras_BrewPotion_01_01");	//For a novice, you are certainly impertinent. Go about your duties.
+		AI_Output (self, other, "DIA_Neoras_BrewPotion_01_01");	//For a novice, you are certainly impertinent. Go about your duties.
 		AI_Output (self, other, "DIA_Neoras_BrewPotion_01_02");	//You can buy everything you need from Gorax.
 		if(Gorax_Trade == FALSE)
 		{
@@ -399,7 +399,9 @@ func void DIA_Neoras_BrewForMe_Speed()
 		if(Neoras_Ingrediences_Advice == FALSE)
 		{
 			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Speed_15_00");	//What ingredients do I need for a potion of great speed?
+			//AI_Output(self,other,"DIA_Neoras_INGREDIENCES_Speed_01_01");	//For a potion to make you faster I need five so called snapperweeds and one king's sorrel.
 			AI_Output(self,other,"DIA_Hyglas_FIREBOLT_14_01");	//Read up on it - it's right there in the books.
+			AI_Output(self,other,"DIA_Neoras_INGREDIENCES_Speed_01_02");	//And don't forget the gold!
 			Neoras_Ingrediences_Advice = TRUE;
 		};
 	};
@@ -431,11 +433,14 @@ func void DIA_Neoras_BrewForMe_Mana()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Neoras_BrewForMe_Mana_01_04");	//You don't have the necessary ingredients. Come back when you've got them all
+		AI_Output(self,other,"DIA_Neoras_BrewForMe_Mana_01_04");	//You don't have the necessary ingredients. Come back when you've got them all.
 		if(Neoras_Ingrediences_Advice == FALSE)
 		{
 			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Mana_15_00");	//What ingredients do I need for a mana extract?
+			AI_Output(self,other,"DIA_Neoras_INGREDIENCES_Mana_01_01");	//A mana potion is not terribly complicated.
+			//AI_Output(self,other,"DIA_Neoras_INGREDIENCES_Mana_01_02");	//You must bring me five fire weeds and one Meadow Knotweed.
 			AI_Output(self,other,"DIA_Hyglas_FIREBOLT_14_01");	//Read up on it - it's right there in the books.
+			AI_Output(self,other,"DIA_Neoras_INGREDIENCES_Mana_01_03");	//And don't forget the gold!
 			Neoras_Ingrediences_Advice = TRUE;
 		};
 	};
@@ -468,6 +473,15 @@ func void DIA_Neoras_BrewForMe_Health()
 	else
 	{
 		AI_Output (self, other, "DIA_Neoras_BrewForMe_Health_01_04");	//You don't have the necessary ingredients. Come back when you've got them all together.
+		if(Neoras_Ingrediences_Advice == FALSE)
+		{
+			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_15_00");	//What ingredients do I need for an elixir of healing?
+			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_01_01");	//A potion like that is not especially complicated.
+			//AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_01_02");	//You only need to bring me five healing herbs and one Meadow Knotweed.
+			AI_Output(self,other,"DIA_Hyglas_FIREBOLT_14_01");	//Read up on it - it's right there in the books.
+			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_01_03");	//And don't forget the gold!
+			Neoras_Ingrediences_Advice = TRUE;
+		};
 	};
 	Info_ClearChoices(DIA_Neoras_BrewForMe);
 	Info_AddChoice(DIA_Neoras_BrewForMe,Dialog_Back,DIA_Neoras_BrewForMe_Back);

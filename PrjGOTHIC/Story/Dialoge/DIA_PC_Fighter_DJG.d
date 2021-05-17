@@ -120,8 +120,8 @@ func void DIA_GornDJG_WHATSUP_Lester()
 	AI_Output(self,other,"DIA_GornDJG_WHATSUP_Lester_12_01");	//Can't be. As far as I know, Lester doesn't live up there any more.
 	if(!Npc_KnowsInfo(other,DIA_Lester_Hello) && !Npc_KnowsInfo(other,DIA_Lester_BACKINTOWN))
 	{
-		AI_Output(other,self,"Extro_Tempel_15_04");	//Хм, где же он?@@@
-		AI_Output(self,other,"INTRO_DiegoGorn_12_00");	//(вздыхает) Конечно же, он еще жив. А ты как думал?@@@
+		AI_Output(other,self,"Extro_Tempel_15_04");	//Where is he?
+		AI_Output(self,other,"INTRO_DiegoGorn_12_00");	//Of course he's still alive. What did you think?
 	};
 };
 

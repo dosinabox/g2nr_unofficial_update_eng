@@ -507,7 +507,7 @@ func void DIA_Addon_Vatras_WannaBeRanger_Info()
 	};
 	if((Vatras_First == TRUE) && (Vatras_Second == TRUE) && (Vatras_Third == TRUE))
 	{
-		AI_Output(self,other,"DIA_Vatras_INFLUENCE_REPEAT_05_01");	//Хорошо, давай подытожим:@@@
+		AI_Output(self,other,"DIA_Vatras_INFLUENCE_REPEAT_05_01");	//Good. Let us summarize:
 		AI_Output(self,other,"DIA_Vatras_INFLUENCE_REPEAT_05_02");	//You are a former prisoner, ...
 		AI_Output(self,other,"DIA_Vatras_INFLUENCE_REPEAT_05_04");	//... who has been told by Xardas the necromancer ...
 		AI_Output(self,other,"DIA_Vatras_INFLUENCE_REPEAT_05_06");	//... that dragons have come to conquer the country.
@@ -603,7 +603,7 @@ func void B_Vatras_Third_Lie()
 
 func void B_Vatras_REPEAT()
 {
-	AI_Output(self,other,"DIA_Vatras_INFLUENCE_REPEAT_05_01");	//Хорошо, давай подытожим:@@@
+	AI_Output(self,other,"DIA_Vatras_INFLUENCE_REPEAT_05_01");	//Good. Let us summarize:
 	if(Vatras_Third == TRUE)
 	{
 		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_02");	//You are a former prisoner, ...
@@ -2119,7 +2119,7 @@ func void DIA_Vatras_MESSAGE_SUCCESS_Info()
 
 func void DIA_Vatras_MESSAGE_SUCCESS_Plant()
 {
-	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Plant_Add");	//Я возьму царский щавель.@@@
+	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Plant_add");	//Give me king's sorrel.
 	AI_WaitTillEnd(self,other);
 	B_GiveInvItems(self,other,ItPl_Perm_Herb,1);
 	Info_ClearChoices(DIA_Vatras_MESSAGE_SUCCESS);
@@ -2135,7 +2135,7 @@ func void DIA_Vatras_MESSAGE_SUCCESS_Ring()
 
 func void DIA_Vatras_MESSAGE_SUCCESS_Ore()
 {
-	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Ore_Add");	//Я возьму руду. @@@
+	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Ore_add");	//Give me the ore.
 	AI_WaitTillEnd(self,other);
 	B_GiveInvItems(self,other,ItMi_Nugget,1);
 	Info_ClearChoices(DIA_Vatras_MESSAGE_SUCCESS);

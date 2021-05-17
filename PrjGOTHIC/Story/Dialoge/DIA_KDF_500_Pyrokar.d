@@ -1292,7 +1292,7 @@ func int DIA_Pyrokar_FOUNDINNOSEYE_Condition()
 		}
 		else
 		{
-			DIA_Pyrokar_FOUNDINNOSEYE.description = "Глаз Инноса поврежден.@@@";
+			DIA_Pyrokar_FOUNDINNOSEYE.description = "The Eye of Innos is broken.";
 		};
 		return TRUE;
 	};

@@ -376,7 +376,7 @@ func void DIA_Addon_Eremit_PERM_Info()
 		if(MIS_Eremit_Klamotten != LOG_SUCCESS)
 		{
 			AI_Output(self,other,"DIA_Addon_Eremit_Add_04_17");	//Even without clothes.
-			AI_Output(self,other,"DIA_Addon_Eremit_Add_04_18");	//Но зиму пережить без одежды мне будет довольно сложно...@@@
+			AI_Output(self,other,"DIA_Addon_Eremit_Add_04_18");	//With clothes, I could get through the winter! After that... we'll see...
 		};
 	};
 };

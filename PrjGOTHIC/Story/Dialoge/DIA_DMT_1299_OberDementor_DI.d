@@ -28,8 +28,7 @@ func void DIA_Schwarzmagier_HELLO_Info()
 	Info_ClearChoices (DIA_Schwarzmagier_HELLO);
 	Info_AddChoice (DIA_Schwarzmagier_HELLO, "Take me to your master.", DIA_Schwarzmagier_HELLO_meister);
 	Info_AddChoice (DIA_Schwarzmagier_HELLO, "Just how many more of your kind will I have to kill?", DIA_Schwarzmagier_HELLO_dmt);
-//	Info_AddChoice(DIA_Schwarzmagier_HELLO,"What's hidden behind that huge portal over there?",DIA_Schwarzmagier_HELLO_hinterTor);
-	Info_AddChoice(DIA_Schwarzmagier_HELLO,"What's hidden behind the huge doors over there?@@@",DIA_Schwarzmagier_HELLO_hinterTor);
+	Info_AddChoice(DIA_Schwarzmagier_HELLO,"What's hidden behind that huge portal over there?",DIA_Schwarzmagier_HELLO_hinterTor);
 	Info_AddChoice(DIA_Schwarzmagier_HELLO,"Who's your master?",DIA_Schwarzmagier_HELLO_wer);
 	if(SC_KnowsMadPsi == TRUE)
 	{
@@ -48,8 +47,7 @@ func void DIA_Schwarzmagier_HELLO_wer()
 
 func void DIA_Schwarzmagier_HELLO_hinterTor()
 {
-//	AI_Output(other,self,"DIA_Schwarzmagier_HELLO_hinterTor_15_00");	//What's hidden behind that huge portal over there?
-	AI_Output(other,self,"DIA_Schwarzmagier_HELLO_hinterTor_15_00_add");	//ј что скрываетс€ за этой закрытой дверью, вон там?@@@
+	AI_Output(other,self,"DIA_Schwarzmagier_HELLO_hinterTor_15_00");	//What's hidden behind that huge portal over there?
 	AI_Output(self,other,"DIA_Schwarzmagier_HELLO_hinterTor_09_01");	//(laughs) My lord's chambers remain inaccessible to you. I shall give you no opportunity to open the gate.
 };
 

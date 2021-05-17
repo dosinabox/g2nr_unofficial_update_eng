@@ -71,7 +71,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsADW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsADW,""I managed to activate a teleporter stone in the upper part of the bandit camp.");
+				B_LogEntry(TOPIC_Addon_TeleportsADW,"I managed to activate a teleporter stone in the upper part of the bandit camp.");
 				B_GivePlayerXP(XP_Ambient);
 				SCUsed_ADW_TELEPORTSTATION_ADANOSTEMPEL = TRUE;
 			};

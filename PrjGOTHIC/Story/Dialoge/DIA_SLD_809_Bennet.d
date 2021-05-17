@@ -95,7 +95,7 @@ func void DIA_Bennet_SmithComment2()
 
 func void DIA_Bennet_SmithComment3()
 {
-	AI_Output(self,other,"DIA_Bennet_TeachSmith_06_03_add");	//ћои новые магические клинки! Ёто лучшее, что € умею ковать сейчас.@@@
+	AI_Output(self,other,"DIA_Bennet_TeachSmith_06_03");	//I think I've outdone myself this time. I've designed two battle blades. That's the best thing I've seen so far.
 };
 
 func void DIA_Bennet_SmithComment4()
@@ -500,7 +500,7 @@ func void DIA_Bennet_WannaSmithORE_Info()
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Bennet_WannaSmithORE_06_03_add");	//“ы не один из нас - будь € прокл€т, если научу теб€ секретам изготовлени€ магического оружи€.@@@
+			AI_Output(self,other,"DIA_Bennet_WannaSmithORE_06_03_add");	//You aren't one of us - I'll be damned if I tell you the secret of the magic ore weapons.
 		};
 		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_04");	//Only very few blacksmiths know it at all, and I believe that not even the smiths in town know anything about it.
 		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_05");	//And that's a good thing, too. Otherwise, those boozers of the city guard would all be wielding magic swords next.

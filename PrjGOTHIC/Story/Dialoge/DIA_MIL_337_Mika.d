@@ -106,7 +106,7 @@ func void DIA_Mika_WOHIN_Info()
 {
 	if(VisibleGuild(other) == GIL_MIL)
 	{
-		AI_Output(self,other,"DIA_Mika_WOHIN_Bauern_12_01_add");	//Не стоит бродить по этим опасным тропам совсем одному. Если тебе понадобится моя помощь, ты знаешь, где найти меня.@@@
+		AI_Output(self,other,"DIA_Mika_WOHIN_Bauern_12_01_add");	//Strolling about alone out here is dangerous. If you need my help, you know where to find me.
 	}
 	else
 	{
@@ -142,7 +142,7 @@ func void DIA_Mika_WOHIN_Bauern()
 func void DIA_Mika_WOHIN_Kloster()
 {
 	AI_Output(other,self,"DIA_Mika_WOHIN_Kloster_15_00_add");	//Из монастыря.@@@
-	AI_Output(self,other,"DIA_Mika_WOHIN_Kloster_12_01_add");	//Тогда тебе не стоит бродить по этим опасным тропам совсем одному. Кто знает, что там может поджидать тебя.@@@
+	AI_Output(self,other,"DIA_Mika_WOHIN_Kloster_12_01_add");	//Then you shouldn't be walking along these dangerous paths all by yourself. Who knows who might be lying in wait for you.
 	Info_ClearChoices(DIA_Mika_WOHIN);
 };
 
@@ -304,7 +304,7 @@ func void DIA_Mika_HILFE_Info()
 	AI_Output(other,self,"DIA_Mika_HILFE_15_00");	//I need your help.
 	if(C_Mika_FreeHelp())
 	{
-		AI_Output(self,other,"DIA_Mika_HILFE_12_01_add");	//Что случилось?@@@
+		AI_Output(self,other,"DIA_Mika_HILFE_12_01_add");	//What's wrong?
 	}
 	else
 	{
@@ -453,7 +453,7 @@ func void DIA_Mika_Kap3u4u5_PERM_Info()
 	AI_Output(other,self,"DIA_Mika_Kap3u4u5_PERM_15_00");	//All quiet?
 	if(C_Mika_FreeHelp())
 	{
-		AI_Output(self,other,"DIA_Mika_WOHIN_weg_12_01_add");	//Удачной прогулки!@@@
+		AI_Output(self,other,"DIA_Mika_WOHIN_weg_12_01_add");	//Have a nice day.
 	}
 	else
 	{

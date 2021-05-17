@@ -84,7 +84,7 @@ func void Use_Heilrezept_04()
 	{
 		if((PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE) && (PLAYER_TALENT_ALCHEMY[POTION_Health_04] == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'PURE HEALING': 1 meadow knotweed and 3 essences of healing.");");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'PURE HEALING': 1 meadow knotweed and 3 essences of healing.");
 			PLAYER_TALENT_ALCHEMY[POTION_Health_04] = TRUE;
 		};
 	};
@@ -631,7 +631,7 @@ func void UseAxtAnleitung()
 	{
 		if((Npc_GetTalentSkill(self,NPC_TALENT_SMITH) > 0) && (Knows_Banditenaxt == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentSmith,"To forge a "Bandit AXE" I need 1 lump of ore, 3 teeth and 1 additional steel billet.");
+			B_LogEntry(TOPIC_TalentSmith,"To forge a 'Bandit AXE' I need 1 lump of ore, 3 teeth and 1 additional steel billet.");
 			Knows_Banditenaxt = TRUE;
 		};
 		Opened_Banditenaxt = TRUE;

@@ -485,7 +485,7 @@ func void DIA_Jora_AlriksSchwert_Info()
 	{
 		B_Say(self,other,"$WHYAREYOUINHERE");
 	};
-	AI_Output(other,self,"DIA_Jora_BUYAlriksSchwert_15_02");	//Минутку! Я хотел купить меч.@@@
+	AI_Output(other,self,"DIA_Jora_BUYAlriksSchwert_15_02");	//Just a minute! I wanted to buy the sword.
 	AI_Output (self, other, "DIA_Jora_AlriksSchwert_08_01");	//Do you mean that ragged fellow who traded his weapon to me for a few torches and chunks of meat?
 	AI_Output (other, self, "DIA_Jora_AlriksSchwert_15_02");	//That's him.
 	if(Npc_HasItems(self,ItMw_AlriksSword_Mis))
@@ -543,6 +543,7 @@ func void DIA_Jora_BUYAlriksSchwert_Info()
 	else
 	{
 		AI_Output(self,other,"DIA_Jora_BUYAlriksSchwert_08_05");	//You don't have enough gold. But don't worry - I'll keep the sword for a while. Come back later, then...
+		AI_Output(self,other,"DIA_Jora_BUYAlriksSchwert_08_03");	//You can always do that - for 50 gold pieces it's yours.
 	};
 };
 

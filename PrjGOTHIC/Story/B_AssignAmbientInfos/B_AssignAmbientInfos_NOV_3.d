@@ -79,6 +79,7 @@ func void DIA_NOV_3_Fegen_Info()
 	if(Hlp_GetInstanceID(Feger2) == Hlp_GetInstanceID(self))
 	{
 		if(Feger2_Permanent == FALSE)
+		{
 			AI_Output (self, other, "DIA_NOV_3_Fegen_03_08");	//Sure, I'll help. We novices have to stick together. One hand washes the other.
 			AI_Output (self, other, "DIA_NOV_3_Fegen_03_09");	//I only need 50 gold pieces because I still have to pay Parlan.
 			if(Feger2_Once == FALSE)

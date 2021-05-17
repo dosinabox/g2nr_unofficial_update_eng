@@ -229,7 +229,7 @@ func void DIA_Urshak_HOSHPAKDEAD_Info()
 	AI_Output (self, other, "DIA_Urshak_HOSHPAKDEAD_18_04");	//Ur-Shak now must carry burden of grief, must give Hosh-Pak last rites. Ur-Shak must go.
 	AI_Output (self, other, "DIA_Urshak_HOSHPAKDEAD_18_05");	//Friend better go over pass. Too dangerous here.
 	AI_Output (self, other, "DIA_Urshak_HOSHPAKDEAD_18_06");	//Ur-Shak sad if friend human also die.
-	B_LogEntry (TOPIC_Urshak, "Hosh-Pak is dead. My orcish friend is headed for Hosh-Pak's tents. He grieves for his mentor. I should let him go.");;
+	B_LogEntry (TOPIC_Urshak, "Hosh-Pak is dead. My orcish friend is headed for Hosh-Pak's tents. He grieves for his mentor. I should let him go.");
 	AI_StopProcessInfos(self);
 	Npc_SetRefuseTalk(self,20);
 	Npc_ExchangeRoutine(self,"Start");

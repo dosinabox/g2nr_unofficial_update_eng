@@ -555,7 +555,7 @@ func void B_HaradCommentAnvilUses()
 {
 	if(HaradsAnvilUsed < 10)
 	{
-		AI_Output(self,other,"DIA_Harad_AlsLehrling_12_04_02_add");	//Даже хотя ты и не проводил много времени за наковальней.@@@
+		AI_Output(self,other,"DIA_Harad_AlsLehrling_12_04_02_add");	//Even if you didn't spend a lot of time behind the anvil.
 	}
 	else
 	{
@@ -598,7 +598,7 @@ func void DIA_Harad_AlsLehrling_Info()
 	else if((other.guild == GIL_PAL) && (Harad_StartGuild != GIL_PAL) && (Harad_PALKommentar == FALSE))
 	{
 		AI_Output(self,other,"DIA_Harad_AlsLehrling_12_03");	//You managed to get accepted with the paladins!
-		AI_Output(self,other,"DIA_Harad_AlsLehrling_12_04_01_add");	//I'm glad I took you on as an apprentice. Even if you didn't spend a lot of time behind the anvil.
+		AI_Output(self,other,"DIA_Harad_AlsLehrling_12_04_01_add");	//I'm glad I took you on as an apprentice.
 		B_HaradCommentAnvilUses();
 		Harad_PALKommentar = TRUE;
 	}

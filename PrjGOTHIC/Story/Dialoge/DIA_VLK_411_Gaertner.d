@@ -218,7 +218,7 @@ instance DIA_Gaertner_FreeLockpicks(C_Info)
 	condition = DIA_Gaertner_FreeLockpicks_Condition;
 	information = DIA_Gaertner_FreeLockpicks_Info;
 	permanent = FALSE;
-	description = "У меня больше нет отмычек...@@@";
+	description = "No more lock picks...";
 };
 
 

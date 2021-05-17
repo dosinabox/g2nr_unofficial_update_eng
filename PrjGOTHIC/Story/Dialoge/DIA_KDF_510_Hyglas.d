@@ -513,7 +513,7 @@ func void DIA_Hyglas_Kap4_PERM_Info()
 		AI_Output (other, self, "DIA_Hyglas_Kap4_PERM_15_02");	//What kind of dangers?
 		AI_Output (self, other, "DIA_Hyglas_Kap4_PERM_14_03");	//Well, the structure between the worlds seems to be very weak. It only takes a small portion of the power that would be necessary otherwise to tear a hole into this structure.
 		AI_Output (self, other, "DIA_Hyglas_Kap4_PERM_14_04");	//Demons could use those portals to enter our world without encountering resistance.
-		Hyglas_SendsToKarras = TRUE;
+//		Hyglas_SendsToKarras = TRUE;
 	}
 	else if(MIS_HyglasBringBook == LOG_Running)
 	{

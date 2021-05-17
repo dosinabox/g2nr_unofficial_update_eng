@@ -206,7 +206,7 @@ func void Use_Bookstand_Kreise_03_S1()
 		Doc_PrintLine(nDocID,0,"Fear:");
 		Doc_PrintLine(nDocID,0,"- Black Pearl");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLine(nDocID,0,"Ice Block":");
+		Doc_PrintLine(nDocID,0,"Ice Block:");
 		Doc_PrintLine(nDocID,0,"- Glacier Quartz");
 		Doc_PrintLine(nDocID,0,"- Aquamarine");
 		Doc_PrintLine(nDocID,0,"");

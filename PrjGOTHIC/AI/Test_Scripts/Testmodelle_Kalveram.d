@@ -1501,7 +1501,7 @@ instance MobsiBrief(C_Item)
 	material = MAT_STONE;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Исправить блокировку состояния@@@.";
+	text[0] = "Fix player's state.";
 	on_state[0] = UseMobsiBrief;
 	inv_rotz = 180;
 	inv_rotx = 90;

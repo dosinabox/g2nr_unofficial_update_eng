@@ -54,7 +54,7 @@ func void Bookstand_Milten_02_S1()
 		Doc_PrintLines (nDocID, 1, "He's not likely to swing a pickaxe anyhow.");
 		Doc_PrintLines (nDocID, 1, "Well, I'll use the time to learn a bit about the art of alchemy.");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLine(nDocID,1,Milten");
+		Doc_PrintLine(nDocID,1,"Milten");
 		Doc_Show(nDocID);
 		if(Knows_Diego == TRUE)
 		{

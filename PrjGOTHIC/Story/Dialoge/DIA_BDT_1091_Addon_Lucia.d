@@ -102,11 +102,11 @@ func int DIA_Addon_Lucia_was_Condition()
 
 func void DIA_Addon_Lucia_was_Info()
 {
-		AI_Output (other, self, "DIA_Addon_Lucia_was_15_00");	//What do you drink here then?
-		AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");	//We only have a little beer. The only beer on the island was brought by the paladins.
-		AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");	//Just about the only good thing those fellows brought with them...
-		AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");	//Otherwise we drink booze. I've got moonshine, grog and white rum -
-		AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");	//(appreciatively) hmmm... you should try THAT - I got the recipe from Samuel. The old boy really knows his trade.
+	AI_Output (other, self, "DIA_Addon_Lucia_was_15_00");	//What do you drink here then?
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");	//We only have a little beer. The only beer on the island was brought by the paladins.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");	//Just about the only good thing those fellows brought with them...
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");	//Otherwise we drink booze. I've got moonshine, grog and white rum -
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");	//(appreciatively) hmmm... you should try THAT - I got the recipe from Samuel. The old boy really knows his trade.
 	CreateInvItems(self,ItFo_Addon_Liquor,1);
 	B_GiveInvItems(self,other,ItFo_Addon_Liquor,1);
 	if(!Npc_KnowsInfo(other,DIA_Addon_Scatty_Trinken))
@@ -158,7 +158,7 @@ instance DIA_Addon_Lucia_SadElvrich(C_Info)
 	condition = DIA_Addon_Lucia_SadElvrich_Condition;
 	information = DIA_Addon_Lucia_SadElvrich_Info;
 	permanent = FALSE;
-	description = "What are you planning to do?";
+	description = "А как же Элврих?@@@";
 };
 
 
@@ -187,7 +187,7 @@ instance DIA_Addon_Lucia_Jetzt(C_Info)
 	condition = DIA_Addon_Lucia_Jetzt_Condition;
 	information = DIA_Addon_Lucia_Jetzt_Info;
 	permanent = FALSE;
-	description = "You're not very fond of the paladins, are you?";
+	description = "What are you planning to do?";
 };
 
 

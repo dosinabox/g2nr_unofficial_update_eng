@@ -282,7 +282,7 @@ func void DIA_Rosi_Miliz_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Rosi_Miliz_17_02_add");	//Король далеко...@@@
+		AI_Output(self,other,"DIA_Rosi_Miliz_17_02_add");	//The king is far away...
 	};
 };
 

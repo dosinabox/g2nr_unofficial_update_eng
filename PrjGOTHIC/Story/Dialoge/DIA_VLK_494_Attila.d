@@ -150,7 +150,7 @@ func void DIA_Attila_Hallo_Warum()
 	}
 	else if(Betrayal_Halvor == TRUE)
 	{
-		AI_Output(self,other,"DIA_Attila_Hallo_Warum_09_01_add");	//Ты сдал Халвора. Так не пойдет.@@@
+		AI_Output(self,other,"DIA_Attila_Hallo_Warum_09_01_add");	//You blew the whistle on Halvor. That was not part of the plan.
 	};
 	if(Rengaru_InKnast == TRUE)
 	{

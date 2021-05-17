@@ -886,6 +886,7 @@ func void B_XardasGivesProofForPyrokar()
 	AI_Output (self, other, "DIA_Xardas_PYROWILLNICHT_14_02");	//Ah really. Pyrokar. How interesting.
 	AI_Output (self, other, "DIA_Xardas_PYROWILLNICHT_14_03");	//That old geezer is getting to be a nuisance. But I think I've got something for you that will be useful.
 	AI_Output (self, other, "DIA_Xardas_PYROWILLNICHT_14_04");	//Back when I left the Order of the Fire Magicians, I took a few things with me from the monastery.
+	AI_Output (self, other, "DIA_Xardas_PYROWILLNICHT_14_05");	//Now that I've built my tower so close to town, I have to be prepared. Someone could come here and look for them at anytime.
 	AI_Output (self, other, "DIA_Xardas_PYROWILLNICHT_14_06");	//I didn't want a troop of paladins or Fire Magicians to turn my tower upside down at some point, and find all those things.
 	AI_Output (self, other, "DIA_Xardas_PYROWILLNICHT_14_07");	//So I hid them in safe places where the magicians would certainly never look for them.
 	AI_Output (other, self, "DIA_Xardas_PYROWILLNICHT_15_08");	//And where?

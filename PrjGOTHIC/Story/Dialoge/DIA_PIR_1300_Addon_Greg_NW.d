@@ -389,7 +389,7 @@ func void DIA_Addon_Greg_NW_was_UnNun()
 	Info_AddChoice(DIA_Addon_Greg_NW_was,"Weapons? The mercenaries have weapons.",DIA_Addon_Greg_NW_was_SLD);
 	if(Npc_HasItems(other,ItMi_Gold) < 10)
 	{
-		Info_AddChoice(DIA_Addon_Greg_NW_was,"Я только что понял, что у меня не осталось даже десяти монет.@@@",DIA_Addon_Greg_NW_was_HierGold);
+		Info_AddChoice(DIA_Addon_Greg_NW_was,"I just realized I haven't got ten gold pieces left.",DIA_Addon_Greg_NW_was_HierGold);
 	}
 	else
 	{

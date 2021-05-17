@@ -170,7 +170,7 @@ func void Use_BookstandMaya()
 		Doc_PrintLine(StPl_nDocID,1,"");
 		Doc_PrintLines(StPl_nDocID,1,"...");
 		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"... отправились в путь, чтобы навечно закрыть ...@@@");
+		Doc_PrintLines(StPl_nDocID,1,"... to seal the only entrance to our valley forever ...");
 	};
 };
 

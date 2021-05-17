@@ -38,8 +38,8 @@ func void Use_StatsBook()
 	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Shell_Opener)," clams"));
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"Given:");
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalStoneplatesForVatras)," табличек Ватрасу"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(OldCoinCounter)," монет Василию"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalStoneplatesForVatras)," tablets to Vatras"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(OldCoinCounter)," coins to Wasili"));
 	if((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(BusterTrophyCounter)," рогов Бастеру"));

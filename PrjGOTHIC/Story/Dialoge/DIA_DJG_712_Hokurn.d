@@ -677,7 +677,7 @@ func void DIA_Hokurn_WhereDragon_GiveDrink()
 		}
 		else
 		{
-			AI_Output(other,self,"DIA_Hokurn_WhereDragon_Booze_15_00_add");	//У меня есть бутылочка джина!@@@
+			AI_Output(other,self,"DIA_Hokurn_WhereDragon_Booze_15_00_add");	//I've got a bottle of gin!
 		};
 		B_HokurnGiveMeThat();
 		B_GiveInvItems(other,self,ItFo_Booze,1);

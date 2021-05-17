@@ -48,7 +48,7 @@ func void DIA_PAL_4_JOIN_Info()
 	}
 	else if(other.guild == GIL_MIL)
 	{
-		AI_Output(self,other,"DIA_PAL_4_JOIN_04_02_add");	//Иди в казармы и поговори с лордом Андрэ.@@@
+		AI_Output(self,other,"DIA_PAL_4_JOIN_04_02_add");	//Go to the barracks and talk to Lord Andre.
 	};
 	AI_Output(self,other,"DIA_PAL_4_JOIN_04_03");	//Perhaps you will get a chance then to prove yourself worthy.
 };

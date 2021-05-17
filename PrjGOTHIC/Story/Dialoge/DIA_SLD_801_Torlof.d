@@ -338,7 +338,7 @@ func void DIA_Torlof_RUF_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Torlof_RUF_01_15_add");	//Рауль ничего не имеет против тебя.@@@
+		AI_Output(self,other,"DIA_Torlof_RUF_01_15_add");	//Raoul says he has nothing against you joining.
 		Points_Sld += 1;
 	};
 	if(Npc_IsDead(Bullco))

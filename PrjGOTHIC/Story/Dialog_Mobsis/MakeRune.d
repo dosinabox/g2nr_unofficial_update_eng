@@ -427,7 +427,7 @@ instance PC_SPL_PalTeleportSecret(C_Info)
 	condition = PC_SPL_PalTeleportSecret_Condition;
 	information = PC_SPL_PalTeleportSecret_Info;
 	permanent = TRUE;
-	description = "Секрет библиотеки!@@@";
+	description = "The secret of the library!";
 };
 
 

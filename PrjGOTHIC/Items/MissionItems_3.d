@@ -536,7 +536,7 @@ func void Use_BabosLetter()
 	Doc_PrintLines (nDocID, 0, "No doubt you're wondering how we came to write you this letter. We took all our savings to Master Marlas and asked him to write these lines for you. We wish you all the best for the future and are sending you a picture as a farewell gift, so that you'll always remember us during those long nights at the monastery.");
 	Doc_PrintLines (nDocID, 0, "Good luck. Hope you like the picture.");
 	Doc_PrintLine (nDocID, 0, "");
-	Doc_PrintLiness (nDocID, 0, "Feht and Bonka");
+	Doc_PrintLines (nDocID, 0, "Feht and Bonka");
 	Doc_Show(nDocID);
 };
 
@@ -708,7 +708,7 @@ instance ItSe_Golemchest_Mis(C_Item)
 	description = name;
 	text[0] = PRINT_Pocket_50;
 	text[1] = "It seems that it contains something";
-	text[1] = "besides gold.
+	text[1] = "besides gold.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };

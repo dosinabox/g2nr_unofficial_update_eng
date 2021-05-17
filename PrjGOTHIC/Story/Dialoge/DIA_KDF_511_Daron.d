@@ -131,7 +131,7 @@ func void DIA_Daron_Paladine_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Daron_Paladine_10_05_add");	//Путь долог, полон тяжелой работы и утомительного обучения.@@@
+		AI_Output(self,other,"DIA_Daron_Paladine_10_05_add");	//The path to acceptance is long and full of work and study.
 	};
 };
 

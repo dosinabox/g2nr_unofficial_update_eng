@@ -33,7 +33,7 @@ func void B_Say_GuildGreetings(var C_Npc slf,var C_Npc oth)
 	if(Hlp_GetInstanceID(slf) == Hlp_GetInstanceID(Koch))
 	{
 //		B_Koch_Hackebeil();
-		B_Say_Overlay(slf,oth,"Hackebeil_01_00");
+		B_Say_Overlay(slf,oth,"Hackebeil");
 		return;
 	};
 	zufall = Hlp_Random(100);

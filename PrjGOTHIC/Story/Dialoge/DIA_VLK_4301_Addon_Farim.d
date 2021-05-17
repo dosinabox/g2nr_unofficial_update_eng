@@ -196,7 +196,7 @@ func void DIA_Addon_Farim_MartinHelps_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_Farim_MartinHelps_11_07_add");	//Отлично! Мне нечем тебе заплатить... Спасибо тебе...@@@
+		AI_Output(self,other,"DIA_Addon_Farim_MartinHelps_11_07_add");	//Great. I cannot give you much. Thank you.
 		B_GivePlayerXP(XP_Addon_Farim_PaladinFisch / 2);
 	};
 };

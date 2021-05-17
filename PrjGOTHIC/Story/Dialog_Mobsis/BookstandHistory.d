@@ -75,7 +75,7 @@ func void Use_BookstandHistory3_S1()
 		Doc_PrintLine(nDocID,0,"The Law of the Island");
 		Doc_PrintLine(nDocID,0,"");
 		Doc_PrintLines(nDocID,0,"Wherever men come together, ways must be found to keep the peace - be it in the monastery, the city or on the landowner's farm.");
-		Doc_PrintLines(nDocID,0,"Any crime against the community is punished. The community forbids starting fights or joining brawls."");
+		Doc_PrintLines(nDocID,0,"Any crime against the community is punished. The community forbids starting fights or joining brawls.");
 		Doc_PrintLines(nDocID,0,"Theft is also a crime that has consequences. The sheep are also protected by law.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLines(nDocID,1,"If a man strikes down another or murders him, he must expect to be judged on the spot. To evade this fate he must pay a heavy fine.");

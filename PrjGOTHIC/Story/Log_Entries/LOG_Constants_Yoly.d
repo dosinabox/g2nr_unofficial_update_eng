@@ -132,7 +132,7 @@ const string TOPIC_MalethsGehstock = "Maleth's Walking Stick";
 var int TOPIC_END_MalethsGehstock;
 
 const string TOPIC_BengarALLEIN = "Alone and Helpless";
-const string TOPIC_BengarMALAK = "Куда глаза глядят@@@";
+const string TOPIC_BengarMALAK = "For the hills";
 const string TOPIC_MinenAnteileKDF = "Forged Mine Shares";
 const string TOPIC_MinenAnteileSLD = "Unknown transgressions";
 

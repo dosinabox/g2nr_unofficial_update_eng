@@ -1195,7 +1195,7 @@ func void UseFrancisAbrechnung_Mis()
 	Doc_PrintLine (nDocID, 1, "Captain: 1000");
 	Doc_PrintLine(nDocID,1,"----------------------");
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLine(nDocID,1,""Personal share: 1860.");
+	Doc_PrintLine(nDocID,1,"Personal share: 1860.");
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"Merchantman 'Maria'");

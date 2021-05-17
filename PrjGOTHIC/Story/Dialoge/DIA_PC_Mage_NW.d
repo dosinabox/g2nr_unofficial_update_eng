@@ -258,7 +258,7 @@ func void DIA_MiltenNW_FourFriends_Info()
 		}
 		else
 		{
-			AI_Output(other,self,"Extro_Tempel_15_04");	//(to himself) Where is he?
+			AI_Output(other,self,"Extro_Tempel_15_04");	//Where is he?
 		};
 	};
 };

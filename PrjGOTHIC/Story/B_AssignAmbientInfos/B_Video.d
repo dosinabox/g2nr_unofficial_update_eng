@@ -1,5 +1,5 @@
 
-func void B_Video()
+/*func void B_Video()
 {
 	AI_Output (self, other, "INTRO_Xardas_Speech_14_00");	//A single prisoner altered the fate of hundreds.
 	AI_Output (self, other, "INTRO_Xardas_Speech_14_01");	//But he paid a high price for it...
@@ -116,6 +116,6 @@ func void B_Video()
 	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_06");	//Beliar's henchmen are desecrating the oldest shrines of the gods.
 	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_07");	//The guardians of these holy places have awakened. And their wrath - makes the earth tremble!
 	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_08");	//Every powerful magician on this island can sense this wrath.
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_09");	//And some of them have certainly begun to face the threat.*/
-};
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_09");	//And some of them have certainly begun to face the threat.
+};*/
 

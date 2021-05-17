@@ -153,7 +153,7 @@ func void DIA_Addon_10023_Wache_go_Blood()
 func void DIA_Addon_10023_Wache_go_Threat()
 {
 	B_YouBetterLetSlavesGo();
-	AI_Output(self,other,"DIA_Addon_10023_Wache_go_Blood_11_03_add");	//Пока у меня не будет приказа от Торуса, я никого не отпущу.@@@
+	AI_Output(self,other,"DIA_Addon_10023_Wache_go_Blood_11_03_add");	//So long as I don't have an order from Thorus, no one will be set free.
 	AI_Output(self,other,"DIA_Addon_10023_Wache_go_Blood_11_07");	//Yes, but I also said...
 	AI_Output(other,self,"DIA_Addon_10023_Wache_go_Blood_15_08");	//...all right, spare me the rest.
 	Info_ClearChoices(DIA_Addon_10023_Wache_go);

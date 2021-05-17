@@ -20,7 +20,7 @@ func void enter_di_firsttime_trigger()
 			{
 				Wld_InsertItem(ItSe_XardasNotfallBeutel_MIS,"FP_ITEM_SHIP_12");
 				SC_InnosEyeVergessen_DI = TRUE;
-				B_LogEntry(TOPIC_HallenVonIrdorath,""Last night I had a dream. Xardas was talking to me, he asked me to go to the alchemist's bench on the ship to collect something there. This was very strange, but I actually hadn't drunk anything last night.");
+				B_LogEntry(TOPIC_HallenVonIrdorath,"Last night I had a dream. Xardas was talking to me, he asked me to go to the alchemist's bench on the ship to collect something there. This was very strange, but I actually hadn't drunk anything last night.");
 			};
 			Wld_InsertItem(ItMi_Flask,"FP_ITEM_SHIP_06");
 			if(!Npc_HasItems(hero,ItAt_IcedragonHeart) && !Npc_HasItems(hero,ItAt_RockdragonHeart) && !Npc_HasItems(hero,ItAt_FiredragonHeart) && !Npc_HasItems(hero,ItAt_SwampdragonHeart))
