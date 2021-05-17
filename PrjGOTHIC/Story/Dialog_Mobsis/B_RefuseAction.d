@@ -18,7 +18,7 @@ func void player_mob_missing_key()
 	};
 	if(rnd == 1)
 	{
-		Print("Здесь мне нужен ключ...");
+		Print("I need a key for this...");
 		B_Say_Overlay(self,self,"$NEEDKEY");
 	};
 };
@@ -43,7 +43,7 @@ func void player_mob_missing_lockpick()
 		};
 		if(rnd == 1)
 		{
-			Print("У меня больше нет отмычек!");
+			Print("No more lock picks!");
 			B_Say_Overlay(self,self,"$NOMOREPICKS");
 		};
 	};

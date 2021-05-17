@@ -26,7 +26,7 @@ instance DIA_VLK_17_JOIN(C_Info)
 	condition = DIA_VLK_17_JOIN_Condition;
 	information = DIA_VLK_17_JOIN_Info;
 	permanent = TRUE;
-	description = "Что нужно для того, чтобы стать гражданином этого города?";
+	description = "What do I have to do to become a citizen of this town?";
 };
 
 
@@ -40,8 +40,8 @@ func int DIA_VLK_17_JOIN_Condition()
 
 func void DIA_VLK_17_JOIN_Info()
 {
-	AI_Output(other,self,"DIA_VLK_17_JOIN_15_00");	//Что нужно для того, чтобы стать гражданином этого города?
-	AI_Output(self,other,"DIA_VLK_17_JOIN_17_01");	//Мастера-ремесленники из нижней части города имеют очень большое влияние здесь, в Хоринисе. Тебе стоит поговорить с одним из них.
+	AI_Output (other, self, "DIA_VLK_17_JOIN_15_00");	//What do I have to do to become a citizen of this town?
+	AI_Output (self, other, "DIA_VLK_17_JOIN_17_01");	//The master craftsmen in the lower part of town have great influence here in Khorinis. You should go talk to one of them.
 };
 
 
@@ -51,7 +51,7 @@ instance DIA_VLK_17_PEOPLE(C_Info)
 	condition = DIA_VLK_17_PEOPLE_Condition;
 	information = DIA_VLK_17_PEOPLE_Info;
 	permanent = TRUE;
-	description = "А кто имеет наибольшее влияние в этом городе?";
+	description = "Who are the most important figures in this town?";
 };
 
 
@@ -62,10 +62,10 @@ func int DIA_VLK_17_PEOPLE_Condition()
 
 func void DIA_VLK_17_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_VLK_17_PEOPLE_15_00");	//А кто имеет наибольшее влияние в этом городе?
-	AI_Output(self,other,"DIA_VLK_17_PEOPLE_17_01");	//С тех пор, как в город пришли паладины, они взяли в свои руки всю власть.
-	AI_Output(self,other,"DIA_VLK_17_PEOPLE_17_02");	//Лорд Андрэ представляет закон. Ты найдешь его в казармах.
-	AI_Output(self,other,"DIA_VLK_17_PEOPLE_17_03");	//Но тебе нужно идти к нему, только если ты нарушил закон или хочешь вступить в ополчение.
+	AI_Output (other, self, "DIA_VLK_17_PEOPLE_15_00");	//Who are the most important figures in this town?
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_01");	//Since the paladins came here, they have taken over control of the entire city.
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_02");	//Lord Andre represents the law. You will find him in the barracks.
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_03");	//But you only need to go to him if you have trespassed against the law, or to join the militia.
 };
 
 
@@ -75,7 +75,7 @@ instance DIA_VLK_17_LOCATION(C_Info)
 	condition = DIA_VLK_17_LOCATION_Condition;
 	information = DIA_VLK_17_LOCATION_Info;
 	permanent = TRUE;
-	description = "В Хоринисе есть интересные места?";
+	description = "What are the most interesting places here in Khorinis?";
 };
 
 
@@ -86,9 +86,9 @@ func int DIA_VLK_17_LOCATION_Condition()
 
 func void DIA_VLK_17_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_VLK_17_LOCATION_15_00");	//В Хоринисе есть интересные места?
-	AI_Output(self,other,"DIA_VLK_17_LOCATION_17_01");	//(смеется) Вероятно, тебе лучше спросить об этом мужчин. Если тебе нужны развлечения, попытай счастья в порту.
-	AI_Output(self,other,"DIA_VLK_17_LOCATION_17_02");	//Но если ты хочешь что-нибудь купить, иди на рыночную площадь у восточных ворот, или в нижнюю часть города.
+	AI_Output (other, self, "DIA_VLK_17_LOCATION_15_00");	//What are the most interesting places here in Khorinis?
+	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_01");	//(laughs) Maybe you had better ask that of a man. If it's entertainment you want, try the harbor.
+	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_02");	//But if you want to buy something, go to the marketplace at the east gate, or to the lower part of town.
 };
 
 
@@ -98,7 +98,7 @@ instance DIA_VLK_17_STANDARD(C_Info)
 	condition = DIA_VLK_17_STANDARD_Condition;
 	information = DIA_VLK_17_STANDARD_Info;
 	permanent = TRUE;
-	description = "Что новенького?";
+	description = "What's new?";
 };
 
 
@@ -109,23 +109,23 @@ func int DIA_VLK_17_STANDARD_Condition()
 
 func void DIA_VLK_17_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_VLK_17_STANDARD_15_00");	//Что новенького?
-	if((Kapitel == 1) || (Kapitel == 2))
+	AI_Output (other, self, "DIA_VLK_17_STANDARD_15_00");	//What's new?
+	if ((Kapitel == 1) || (Kapitel == 2))
 	{
-		AI_Output(self,other,"DIA_VLK_17_STANDARD_17_01");	//Интересно, зачем сюда прибыли паладины? Они заняли городскую ратушу, казармы и гавань, но пока не сделали ровным счетом ничего.
-		AI_Output(self,other,"DIA_VLK_17_STANDARD_17_02");	//Если бы они прибыли сюда защищать нас от орков или бандитов, они бы давным-давно расправились с ними. Должно быть, у них какая-то другая причина...
+		AI_Output (self, other, "DIA_VLK_17_STANDARD_17_01");	//I wonder why the paladins are here at all. They are holding the town hall, the barracks and the harbor, but they haven't actually done anything so far.
+		AI_Output (self, other, "DIA_VLK_17_STANDARD_17_02");	//If they were here about the orcs or the bandits, they would have done something ages ago. There must be another reason ...
 	};
 	if(Kapitel == 3)
 	{
-		AI_Output(self,other,"DIA_VLK_17_STANDARD_17_03");	//Я только что поняла, что делают здесь паладины. Это все из-за руды. Уж лучше бы они вместо этого защищали город.
+		AI_Output (self, other, "DIA_VLK_17_STANDARD_17_03");	//I just realized why the paladins are here. It's all about the ore. Those guys had better defend our city instead.
 	};
 	if(Kapitel == 4)
 	{
-		AI_Output(self,other,"DIA_VLK_17_STANDARD_17_04");	//Надеюсь, эти слухи о драконах окажутся правдой. Тогда лорду Хагену придется что-то предпринимать. Не может же он вот так просто отдать нас на съедение драконам.
+		AI_Output (self, other, "DIA_VLK_17_STANDARD_17_04");	//I hope that there is some truth to those dragon stories. Then Lord Hagen will be forced to do something. He can't just turn us over to the dragons here.
 	};
 	if(Kapitel == 5)
 	{
-		AI_Output(self,other,"DIA_VLK_17_STANDARD_17_05");	//Теперь, когда драконы мертвы, паладины быстро расправятся с оставшимся сбродом.
+		AI_Output (self, other, "DIA_VLK_17_STANDARD_17_05");	//Now that the dragons are dead, the paladins will make short work of the remaining riffraff.
 	};
 };
 

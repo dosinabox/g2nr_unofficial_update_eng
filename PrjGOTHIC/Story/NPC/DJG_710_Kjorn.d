@@ -1,7 +1,7 @@
 
 instance DJG_710_Kjorn(Npc_Default)
 {
-	name[0] = "Êימנם";
+	name[0] = "Kjorn";
 	guild = GIL_DJG;
 	id = 710;
 	voice = 6;

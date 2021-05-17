@@ -1,7 +1,7 @@
 
 instance VLK_4007_Agon(Npc_Default)
 {
-	name[0] = "Агон";
+	name[0] = "Agon";
 	guild = GIL_VLK;
 	id = 4007;
 	voice = 7;

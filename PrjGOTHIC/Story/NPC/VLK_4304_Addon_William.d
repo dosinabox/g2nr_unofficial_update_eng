@@ -1,7 +1,7 @@
 
 instance VLK_4304_Addon_William(Npc_Default)
 {
-	name[0] = "Вильям";
+	name[0] = "William";
 	guild = GIL_VLK;
 	id = 4304;
 	voice = 6;

@@ -1,7 +1,7 @@
 
 instance KDF_504_Parlan(Npc_Default)
 {
-	name[0] = "Парлан";
+	name[0] = "Parlan";
 	guild = GIL_KDF;
 	id = 504;
 	voice = 5;

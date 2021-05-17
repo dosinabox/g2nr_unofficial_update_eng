@@ -146,7 +146,7 @@ func void DIA_Attila_Hallo_Warum()
 	AI_Output(other,self,"DIA_Attila_Hallo_Warum_15_00");	//Why do you want to kill me?
 	if(Halvor_Ausgeliefert == TRUE)
 	{
-		AI_Output(self,other,"DIA_Attila_Hallo_Warum_09_01");	//Ты сдал Халвора. Теперь он сидит в тюрьме. Так не пойдет.
+		AI_Output(self,other,"DIA_Attila_Hallo_Warum_09_01");	//You blew the whistle on Halvor. Now he's sitting in jail. That was not part of the plan.
 	}
 	else if(Betrayal_Halvor == TRUE)
 	{

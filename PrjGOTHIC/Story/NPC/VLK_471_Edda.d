@@ -1,7 +1,7 @@
 
 instance VLK_471_Edda(Npc_Default)
 {
-	name[0] = "Ýההא";
+	name[0] = "Edda";
 	guild = GIL_VLK;
 	id = 471;
 	voice = 17;

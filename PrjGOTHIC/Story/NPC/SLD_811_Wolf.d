@@ -1,7 +1,7 @@
 
 instance SLD_811_Wolf(Npc_Default)
 {
-	name[0] = "Вольф";
+	name[0] = "Wolf";
 	guild = GIL_SLD;
 	id = 811;
 	voice = 8;

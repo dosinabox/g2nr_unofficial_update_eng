@@ -1,7 +1,7 @@
 
 instance PAL_203_Lothar(Npc_Default)
 {
-	name[0] = "Лотар";
+	name[0] = "Lothar";
 	guild = GIL_PAL;
 	id = 203;
 	voice = 1;

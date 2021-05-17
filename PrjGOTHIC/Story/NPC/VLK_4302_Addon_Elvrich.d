@@ -1,7 +1,7 @@
 
 instance VLK_4302_Addon_Elvrich(Npc_Default)
 {
-	name[0] = "Элврих";
+	name[0] = "Elvrich";
 	guild = GIL_VLK;
 	id = 4302;
 	voice = 4;

@@ -26,7 +26,7 @@ instance DIA_MIL_7_JOIN(C_Info)
 	condition = DIA_MIL_7_JOIN_Condition;
 	information = DIA_MIL_7_JOIN_Info;
 	permanent = TRUE;
-	description = "Я хочу вступить в ополчение!";
+	description = "I want to join the militia!";
 };
 
 
@@ -40,14 +40,14 @@ func int DIA_MIL_7_JOIN_Condition()
 
 func void DIA_MIL_7_JOIN_Info()
 {
-	AI_Output(other,self,"DIA_MIL_7_JOIN_15_00");	//Я хочу вступить в ополчение!
-	if(Player_IsApprentice == APP_NONE)
+	AI_Output (other, self, "DIA_MIL_7_JOIN_15_00");	//I want to join the militia!
+	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output(self,other,"DIA_MIL_7_JOIN_07_01");	//Ты даже не гражданин Хориниса! С чего ты взял, что лорд Андрэ возьмет тебя?
-		AI_Output(self,other,"DIA_MIL_7_JOIN_07_02");	//Так каждый мог бы вступить, получить оружие и доспехи бесплатно, а затем исчезнуть с ними!
-		AI_Output(other,self,"DIA_MIL_7_JOIN_15_03");	//Но у меня серьезные намерения!
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01");	//You're not even a citizen of Khorinis! Why do you think Lord Andre should accept you?
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02");	//Anyone could come along  - get issued a weapon and some armor in passing, and then disappear with it!
+		AI_Output(other,self,"DIA_MIL_7_JOIN_15_03");	//But I'm serious!
 	};
-	AI_Output(self,other,"DIA_MIL_7_JOIN_07_04");	//Не надо объяснять это мне, попробуй объяснить это лорду Андрэ. Ты найдешь его в казармах.
+	AI_Output(self,other,"DIA_MIL_7_JOIN_07_04");	//Don't explain that to me, explain it to Lord Andre. You'll find him in the barracks.
 };
 
 
@@ -57,7 +57,7 @@ instance DIA_MIL_7_PEOPLE(C_Info)
 	condition = DIA_MIL_7_PEOPLE_Condition;
 	information = DIA_MIL_7_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Что ты знаешь о паладинах?";
+	description = "What do you know about the paladins?";
 };
 
 
@@ -71,10 +71,10 @@ func int DIA_MIL_7_PEOPLE_Condition()
 
 func void DIA_MIL_7_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_MIL_7_PEOPLE_15_00");	//Что ты знаешь о паладинах?
-	AI_Output(self,other,"DIA_MIL_7_PEOPLE_07_01");	//Немногое. Никто точно не знает, зачем они здесь. Даже те, кто входит в городскую стражу.
-	AI_Output(self,other,"DIA_MIL_7_PEOPLE_07_02");	//Они взяли всю власть в городе в свои руки. Выгнали губернатора из зала заседаний и судью из его палаты.
-	AI_Output(self,other,"DIA_MIL_7_PEOPLE_07_03");	//Если тебя интересует мое мнение - то это даже хорошо. Этим напыщенным ослам стоило преподать урок.
+	AI_Output (other, self, "DIA_MIL_7_PEOPLE_15_00");	//What do you know about the paladins?
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_01");	//Not much. Nobody knows exactly why they're here. Not even those of us in the city guard.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_02");	//They've taken control of the city, chased the governor out of his council chamber and relieved the judge of his office.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_03");	//If you ask me, it's a good thing. Those pompous asses bitterly needed a lesson in humility.
 };
 
 
@@ -84,7 +84,7 @@ instance DIA_MIL_7_LOCATION(C_Info)
 	condition = DIA_MIL_7_LOCATION_Condition;
 	information = DIA_MIL_7_LOCATION_Info;
 	permanent = TRUE;
-	description = "А чем я могу заняться в городе?";
+	description = "What are my options here in town?";
 };
 
 
@@ -95,17 +95,17 @@ func int DIA_MIL_7_LOCATION_Condition()
 
 func void DIA_MIL_7_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_MIL_7_LOCATION_15_00");	//А чем я могу заняться в городе?
+	AI_Output(other,self,"DIA_MIL_7_LOCATION_15_00");	//What are my options here in town?
 	if(((hero.guild == GIL_NONE) || (hero.guild == GIL_NOV)) && (Player_IsApprentice == APP_NONE))
 	{
-		AI_Output(self,other,"DIA_MIL_7_LOCATION_07_01");	//Если ты не хочешь закончить жизнь в сточной канаве в порту, найди постоянную работу. Поспрашивай в нижней части города - возможно, тебе повезет.
+		AI_Output(self,other,"DIA_MIL_7_LOCATION_07_01");	//If you don't want to end up in the gutter in the harbor district, find a regular job. Ask around in the lower part of town - maybe you'll get lucky.
 	};
 	if(hero.guild == GIL_NONE)
 	{
-		AI_Output(self,other,"DIA_MIL_7_LOCATION_07_02");	//Если ты планируешь остаться в городе надолго, тебе стоит подумать о вступлении в ополчение или, по крайней мере, потренироваться в боевых искусствах.
-		AI_Output(self,other,"DIA_MIL_7_LOCATION_07_03");	//Инструкторы боя в казармах тренируют и гражданских.
+		AI_Output(self,other,"DIA_MIL_7_LOCATION_07_02");	//If you're planning on staying longer here in the city, you should join the militia or at least get trained in combat.
+		AI_Output(self,other,"DIA_MIL_7_LOCATION_07_03");	//The combat instructors in the barracks also train civilians.
 	};
-	AI_Output(self,other,"DIA_MIL_7_LOCATION_07_04");	//Скоро придут орки, и тогда ты будешь рад каждому часу, проведенному на плацу.
+	AI_Output(self,other,"DIA_MIL_7_LOCATION_07_04");	//The orcs will come soon, and then you'll be glad of every hour you spent on the drill ground.
 };
 
 
@@ -115,7 +115,7 @@ instance DIA_MIL_7_STANDARD(C_Info)
 	condition = DIA_MIL_7_STANDARD_Condition;
 	information = DIA_MIL_7_STANDARD_Info;
 	permanent = TRUE;
-	description = "Что новенького?";
+	description = "What's new?";
 };
 
 
@@ -126,10 +126,10 @@ func int DIA_MIL_7_STANDARD_Condition()
 
 func void DIA_MIL_7_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_MIL_7_STANDARD_15_00");	//Что новенького?
+	AI_Output(other,self,"DIA_MIL_7_STANDARD_15_00");	//What's new?
 	if((SC_HearedAboutMissingPeople == FALSE) && (MissingPeopleReturnedHome == FALSE))
 	{
-		AI_Output(self,other,"DIA_Addon_MIL_7_STANDARD_07_00");	//Горожане исчезают один за одним. Пока что нам не удалось выяснить, в чем дело. Может быть, виноваты орки?
+		AI_Output(self,other,"DIA_Addon_MIL_7_STANDARD_07_00");	//Citizens are disappearing from here one by one. Up to now, we haven't been able to find out what's happening to them. Could the orcs be behind it?
 		Log_CreateTopic(TOPIC_Addon_WhoStolePeople,LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople,LOG_Running);
 		B_LogEntry(TOPIC_Addon_WhoStolePeople,LogText_Addon_SCKnowsMisspeapl);
@@ -139,35 +139,35 @@ func void DIA_MIL_7_STANDARD_Info()
 	{
 		if(hero.guild == GIL_MIL)
 		{
-			AI_Output(self,other,"DIA_SLD_7_JOIN_07_01");	//Я слышал, ты вступил в ополчение. Такие люди, как ты, нужны нам...
+			AI_Output(self,other,"DIA_SLD_7_JOIN_07_01");	//I heard you really gave it to the militia. We could use someone like you here!
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_MIL_7_STANDARD_07_01");	//Говорят, что фермеры взбунтовались. Только этого нам еще не хватало. Как раз в самый разгар войны с орками!
+			AI_Output (self, other, "DIA_MIL_7_STANDARD_07_01");	//They say the farmers have rebelled. We can't use crap like that now, when we're in the middle of a war with the orcs!
 		};
 	}
 	else if(Kapitel == 2)
 	{
-		AI_Output(self,other,"DIA_MIL_7_STANDARD_07_02");	//Паладины должны подавить восстание фермеров. Тот, кто нарушает закон, должен быть наказан. Особенно сейчас, когда идет война.
-	}
+		AI_Output (self, other, "DIA_MIL_7_STANDARD_07_02");	//It's time the paladins ended the farmers' rebellion. He who breaks the law must be punished. Especially now, when we're at war.
+	};
 	else if(Kapitel == 3)
 	{
 		if(MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output(self,other,"DIA_MIL_7_STANDARD_07_03");	//Наемник, которого обвиняли в убийстве Лотара, оказался невиновным. Кто-то смог доказать, что его оклеветали.
+			AI_Output (self, other, "DIA_MIL_7_STANDARD_07_03");	//The mercenary who was accused of murdering Lothar is supposedly innocent. Someone found proof that he was being framed.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_MIL_7_STANDARD_07_04");	//Один из наемников Онара убил благородного паладина Лотара. Но этого ублюдка удалось схватить и бросить за решетку.
+			AI_Output (self, other, "DIA_MIL_7_STANDARD_07_04");	//One of Onar's mercenaries murdered the honorable paladin Lothar. But the bastard was caught and tossed in prison.
 		};
 	}
 	else if(Kapitel == 4)
 	{
-		AI_Output(self,other,"DIA_MIL_7_STANDARD_07_05");	//Часть наемников уже покинула ферму Онара. Некоторые проблемы решаются сами собой.
-	}
+		AI_Output (self, other, "DIA_MIL_7_STANDARD_07_05");	//Some of the mercenaries have already left Onar's farm. Some problems solve themselves.
+	};
 	else if(Kapitel >= 5)
 	{
-		AI_Output(self,other,"DIA_MIL_7_STANDARD_07_06");	//С драконами покончено, но это еще не все. Следующие на очереди орки. Их мы тоже скоро уничтожим!
+		AI_Output (self, other, "DIA_MIL_7_STANDARD_07_06");	//The dragons are finished, but it isn't over. The orcs are next. We'll clean things up properly!
 	};
 };
 

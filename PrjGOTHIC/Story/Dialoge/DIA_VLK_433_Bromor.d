@@ -241,7 +241,7 @@ func void DIA_Addon_Bromor_LuciaGold_geben()
 
 func void B_Bromor_NoServiceForYou()
 {
-	AI_Output(self,other,"DIA_Addon_Bromor_LuciaGold_mehr_07_01_add");	//Можешь здесь больше не показываться!
+	AI_Output(self,other,"DIA_Addon_Bromor_LuciaGold_mehr_07_01_add");	//Можешь здесь больше не показываться!@@@
 };
 
 var int DIA_Bromor_Pay_OneTime;
@@ -272,7 +272,7 @@ func void DIA_Bromor_Pay_Info()
 	{
 		if(DIA_Bromor_Pay_OneTime == FALSE)
 		{
-			AI_Output(self,other,"DIA_Bromor_GIRLS_07_01");	//Ну да, все сюда за этим приходят.
+			AI_Output(self,other,"DIA_Bromor_GIRLS_07_01");	//That's why you came here for, after all!
 			DIA_Bromor_Pay_OneTime = TRUE;
 		};
 		if(B_GiveInvItems(other,self,ItMi_Gold,50))

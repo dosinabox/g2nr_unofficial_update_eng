@@ -131,8 +131,8 @@ func int DIA_Bronko_KEINBAUER_Condition()
 
 func void DIA_Bronko_KEINBAUER_Info()
 {
-	AI_Output(other,self,"DIA_Bronko_KEINBAUER_15_00");	//Ты?! Фермер?! Не смеши меня. Да ты вообще никто.
-	AI_Output(self,other,"DIA_Bronko_KEINBAUER_06_01");	//Чтоооо? Хочешь получить по морде?
+	AI_Output(other,self,"DIA_Bronko_KEINBAUER_15_00");	//You, the farmer? Don't make me laugh. You're nobody, really.
+	AI_Output(self,other,"DIA_Bronko_KEINBAUER_06_01");	//Whaaat? Want me to smash your face in?
 	Info_ClearChoices(DIA_Bronko_KEINBAUER);
 	if(Babera_BronkoKeinBauer == TRUE)
 	{

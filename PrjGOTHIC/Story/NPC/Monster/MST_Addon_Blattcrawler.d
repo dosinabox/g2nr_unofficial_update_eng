@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Blattcrawler(C_Npc)
 {
-	name[0] = "Богомол";
+	name[0] = "Mantis";
 	guild = GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID] = ID_BLATTCRAWLER;
 	level = 15;

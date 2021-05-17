@@ -276,7 +276,7 @@ instance DIA_Jack_BEMYCAPTAIN(C_Info)
 	condition = DIA_Jack_BEMYCAPTAIN_Condition;
 	information = DIA_Jack_BEMYCAPTAIN_Info;
 	permanent = TRUE;
-	description = "Ты бы не хотел опять выйти в море?";
+	description = "Wouldn't you like to go back to sea?";
 };
 
 

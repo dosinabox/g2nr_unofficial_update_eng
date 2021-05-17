@@ -1,7 +1,7 @@
 
 instance PC_Mage_OW(Npc_Default)
 {
-	name[0] = "Милтен";
+	name[0] = "Milten";
 	guild = GIL_KDF;
 	id = 2;
 	voice = 3;

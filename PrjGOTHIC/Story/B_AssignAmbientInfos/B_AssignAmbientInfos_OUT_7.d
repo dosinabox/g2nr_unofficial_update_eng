@@ -44,15 +44,15 @@ func void DIA_OUT_7_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_OUT_7_STANDARD_07_00");	//Последнее время жить здесь стало значительно опаснее. А полевые хищники так вообще житья не дают.
+		AI_Output (self, other, "DIA_OUT_7_STANDARD_07_00");	//Lately it has gotten a lot more dangerous out here. And the field raiders are becoming a real plague.
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_OUT_7_STANDARD_07_01");	//Мы должны отдавать долю городу. Если мы не будем делать этого, у нас будут проблемы с паладинами.
+		AI_Output (self, other, "DIA_OUT_7_STANDARD_07_01");	//We have to pay our contribution to the city. If we don't, we'll end up having trouble with the paladins.
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_OUT_7_STANDARD_07_02");	//Бунт Онара будет иметь серьезные последствия. Я лучше не буду принимать в нем участия.
+		AI_Output (self, other, "DIA_OUT_7_STANDARD_07_02");	//Onar's rebellion will have serious consequences. I prefer to keep out of it.
 	};
 	AI_StopProcessInfos(self);
 };

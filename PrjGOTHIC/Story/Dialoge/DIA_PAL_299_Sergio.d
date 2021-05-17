@@ -184,7 +184,7 @@ func void DIA_Sergio_Babo_Info()
 	AI_Output (other, self, "DIA_Sergio_Babo_15_00");	//Can you go through a few exercises with Babo?
 	AI_Output (self, other, "DIA_Sergio_Babo_04_01");	//Why doesn't he ask me himself?
 	AI_Output (other, self, "DIA_Sergio_Babo_15_02");	//I think he's shy.
-	AI_Output (self, other, "DIA_Sergio_Babo_04_03");	//I see. Good, if it means so much to him, I shall train with him every morning for two hours. We begin at 5 o'clock. Tell him that. Можешь передать ему это.
+	AI_Output (self, other, "DIA_Sergio_Babo_04_03");	//I see. Good, if it means so much to him, I shall train with him every morning for two hours. We begin at 5 o'clock. Tell him that.
 	Babo_Training = TRUE;
 	Npc_ExchangeRoutine(self,"TRAIN");
 	B_StartOtherRoutine(Babo,"TRAIN");

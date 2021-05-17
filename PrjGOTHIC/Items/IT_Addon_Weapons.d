@@ -1,7 +1,7 @@
 
 instance ItMW_Addon_Knife01(C_Item)
 {
-	name = "Волчий нож";
+	name = "Wolf Knife";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -27,7 +27,7 @@ instance ItMW_Addon_Knife01(C_Item)
 
 instance ItMW_Addon_Stab01(C_Item)
 {
-	name = "Посох мага Огня";
+	name = "Magician's Wand";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -55,7 +55,7 @@ instance ItMW_Addon_Stab01(C_Item)
 
 instance ItMW_Addon_Stab02(C_Item)
 {
-	name = "Магический посох";
+	name = "Magic wand";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -93,7 +93,7 @@ func void UnEquip_Zauberstab()
 
 instance ItMW_Addon_Stab03(C_Item)
 {
-	name = "Посох мага Воды";
+	name = "Wand of Water";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -121,7 +121,7 @@ instance ItMW_Addon_Stab03(C_Item)
 
 instance ItMW_Addon_Stab04(C_Item)
 {
-	name = "Посох Ультара";
+	name = "Ulthar's Wand";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -137,7 +137,7 @@ instance ItMW_Addon_Stab04(C_Item)
 	visual = "ItMW_MageStaff_Ball_2H_01.3DS";
 	effect = "SPELLFX_MAGESTAFF4";
 	description = name;
-	text[0] = "Ультар наделил этот посох магической силой.";
+	text[0] = "Ulthar enchanted this wand.";
 	text[2] = NAME_Damage;
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
@@ -150,7 +150,7 @@ instance ItMW_Addon_Stab04(C_Item)
 
 instance ItMW_Addon_Stab05(C_Item)
 {
-	name = "Тайфун";
+	name = "Typhoon";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -177,7 +177,7 @@ instance ItMW_Addon_Stab05(C_Item)
 
 instance ItMW_Addon_Hacker_1h_01(C_Item)
 {
-	name = "Мачете";
+	name = "Machete";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -203,7 +203,7 @@ instance ItMW_Addon_Hacker_1h_01(C_Item)
 
 instance ItMW_Addon_Hacker_1h_02(C_Item)
 {
-	name = "Старое мачете";
+	name = "Old Machete";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -229,7 +229,7 @@ instance ItMW_Addon_Hacker_1h_02(C_Item)
 
 instance ItMW_Addon_Hacker_2h_01(C_Item)
 {
-	name = "Гигантское мачете";
+	name = "Giant Machete";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -255,7 +255,7 @@ instance ItMW_Addon_Hacker_2h_01(C_Item)
 
 instance ItMW_Addon_Hacker_2h_02(C_Item)
 {
-	name = "Старое гигантское мачете";
+	name = "Old Giant Machete";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -281,7 +281,7 @@ instance ItMW_Addon_Hacker_2h_02(C_Item)
 
 instance ItMW_Addon_Keule_1h_01(C_Item)
 {
-	name = "Дубинка ветра";
+	name = "Wind Cudgel";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -309,7 +309,7 @@ instance ItMW_Addon_Keule_1h_01(C_Item)
 
 instance ItMW_Addon_Keule_2h_01(C_Item)
 {
-	name = "Дубинка бури";
+	name = "Storm Cudgel";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -337,7 +337,7 @@ instance ItMW_Addon_Keule_2h_01(C_Item)
 
 instance ItMw_1h_Pir_Dagger(C_Item)
 {
-	name = "Хороший кинжал";
+	name = "Good Dagger";
 	mainflag = ITEM_KAT_NF;
 //	flags = ITEM_SWD | ITEM_MISSION;
 	flags = ITEM_SWD;
@@ -366,7 +366,7 @@ instance ItMw_1h_Pir_Dagger(C_Item)
 
 instance ItMw_RangerStaff_Addon(C_Item)
 {
-	name = "Посох 'Кольца Воды'";
+	name = "Ring of Water' Quarterstaff";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -390,7 +390,7 @@ instance ItMw_RangerStaff_Addon(C_Item)
 
 instance ItMw_Addon_PIR2hAxe(C_Item)
 {
-	name = "Крушитель досок";
+	name = "Plank Breaker";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -414,7 +414,7 @@ instance ItMw_Addon_PIR2hAxe(C_Item)
 
 instance ItMw_Addon_PIR2hSword(C_Item)
 {
-	name = "Ятаган";
+	name = "Cutlass";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -438,7 +438,7 @@ instance ItMw_Addon_PIR2hSword(C_Item)
 
 instance ItMw_Addon_PIR1hAxe(C_Item)
 {
-	name = "Абордажный топор";
+	name = "Boarding Pike";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -462,7 +462,7 @@ instance ItMw_Addon_PIR1hAxe(C_Item)
 
 instance ItMw_Addon_PIR1hSword(C_Item)
 {
-	name = "Абордажная сабля";
+	name = "Boarding Knife";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -485,7 +485,7 @@ instance ItMw_Addon_PIR1hSword(C_Item)
 
 instance ItMw_Addon_BanditTrader(C_Item)
 {
-	name = "Шпага бандита";
+	name = "Bandits' Rapier";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -498,7 +498,7 @@ instance ItMw_Addon_BanditTrader(C_Item)
 //	visual = "ItMw_018_1h_SwordCane_01.3ds";
 	visual = "ItMw_018_1h_SwordCane_02.3ds";
 	description = name;
-	text[0] = "На эфесе нацарапана буква 'Ф.'";
+	text[0] = "The letter 'F.' is scratched in the pommel.";
 	text[2] = NAME_Damage;
 	count[2] = damageTotal;
 	text[3] = NAME_Dex_needed;
@@ -510,7 +510,7 @@ instance ItMw_Addon_BanditTrader(C_Item)
 
 instance ItMw_Addon_Betty(C_Item)
 {
-	name = "Бетти";
+	name = "Betty";
 	mainflag = ITEM_KAT_NF;
 //	flags = ITEM_AXE | ITEM_MISSION;
 	flags = ITEM_SWD;
@@ -535,7 +535,7 @@ instance ItMw_Addon_Betty(C_Item)
 
 instance ItMw_Addon_Becky(C_Item)
 {
-	name = "Бекки";
+	name = "Becky";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -561,7 +561,7 @@ instance ItMw_Addon_Becky(C_Item)
 
 instance ItRw_Addon_MagicArrow(C_Item)
 {
-	name = "Магическая стрела";
+	name = "Magic arrow";
 	mainflag = ITEM_KAT_MUN;
 	flags = ITEM_BOW | ITEM_MULTI;
 	wear = WEAR_EFFECT;
@@ -578,7 +578,7 @@ instance ItRw_Addon_MagicArrow(C_Item)
 
 instance ItRw_Addon_FireArrow(C_Item)
 {
-	name = "Огненная стрела";
+	name = "Fire Arrow";
 	mainflag = ITEM_KAT_MUN;
 	flags = ITEM_BOW | ITEM_MULTI;
 	wear = WEAR_EFFECT;
@@ -595,7 +595,7 @@ instance ItRw_Addon_FireArrow(C_Item)
 
 instance ItRw_Addon_MagicBow(C_Item)
 {
-	name = "Магический лук";
+	name = "Magic bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -619,7 +619,7 @@ instance ItRw_Addon_MagicBow(C_Item)
 
 instance ItRw_Addon_FireBow(C_Item)
 {
-	name = "Огненный лук";
+	name = "Firebow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -637,7 +637,7 @@ instance ItRw_Addon_FireBow(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Dex_needed;
 	count[3] = cond_value[2];
-	text[4] = "Дополнительный урон огнем по площади:";
+	text[4] = "Additional splash fire damage:";
 	count[4] = SpecialDamage_FireBow;
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -645,7 +645,7 @@ instance ItRw_Addon_FireBow(C_Item)
 
 instance ItRw_Addon_MagicBolt(C_Item)
 {
-	name = "Магический болт";
+	name = "Magic Quarrel";
 	mainflag = ITEM_KAT_MUN;
 	flags = ITEM_CROSSBOW | ITEM_MULTI;
 //	value = Value_Bolzen;
@@ -663,7 +663,7 @@ instance ItRw_Addon_MagicBolt(C_Item)
 
 instance ItRw_Addon_MagicCrossbow(C_Item)
 {
-	name = "Магический арбалет";
+	name = "Magic Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;

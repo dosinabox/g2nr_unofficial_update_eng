@@ -1,7 +1,7 @@
 
 instance VLK_457_Brian(Npc_Default)
 {
-	name[0] = "ֱנאיאם";
+	name[0] = "Brian";
 	guild = GIL_VLK;
 	id = 457;
 	voice = 4;

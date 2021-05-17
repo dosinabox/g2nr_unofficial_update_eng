@@ -1,7 +1,7 @@
 
 instance VLK_444_Jack_DI(Npc_Default)
 {
-	name[0] = "Джек";
+	name[0] = "Jack";
 	guild = GIL_VLK;
 	id = 4440;
 	voice = 14;

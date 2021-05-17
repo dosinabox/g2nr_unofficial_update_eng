@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Sheep(C_Npc)
 {
-	name[0] = "Овца";
+	name[0] = "Sheep";
 	guild = GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID] = ID_SHEEP;
 	level = 1;
@@ -58,7 +58,7 @@ instance Hammel(Mst_Default_Sheep)
 
 instance Follow_Sheep(Mst_Default_Sheep)
 {
-	name[0] = "Бетси";
+	name[0] = "Betsy";
 	level = 0;
 	id = 167;
 	aivar[AIV_ToughGuy] = TRUE;

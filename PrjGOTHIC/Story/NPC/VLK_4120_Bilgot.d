@@ -1,7 +1,7 @@
 
 instance VLK_4120_Bilgot(Npc_Default)
 {
-	name[0] = "Билгот";
+	name[0] = "Bilgot";
 	guild = GIL_OUT;
 	id = 4120;
 	voice = 5;

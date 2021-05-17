@@ -1,7 +1,7 @@
 
 instance KDW_1405_Addon_Merdarion_NW(Npc_Default)
 {
-	name[0] = "Мердарион";
+	name[0] = "Merdarion";
 	guild = GIL_KDW;
 	id = 1405;
 	voice = 6;

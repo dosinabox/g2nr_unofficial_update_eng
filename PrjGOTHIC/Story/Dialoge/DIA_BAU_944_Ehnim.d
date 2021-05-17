@@ -27,7 +27,7 @@ instance DIA_Ehnim_HALLO(C_Info)
 	nr = 3;
 	condition = DIA_Ehnim_HALLO_Condition;
 	information = DIA_Ehnim_HALLO_Info;
-	description = "Кто ты?";
+	description = "Who are you?";
 };
 
 
@@ -43,7 +43,7 @@ func void DIA_Ehnim_HALLO_Info()
 	if (Hlp_IsValidNpc (Egill) && !C_NpcIsDown (Egill))
 	{
 		AI_Output(self,other,"DIA_Ehnim_HALLO_12_02");	//And the half-pint over there is my brother Egill.
-		AI_Output(self,other,"DIA_Ehnim_HALLO_12_03");	///We've been working here on the farm for Akil for several years.
+		AI_Output(self,other,"DIA_Ehnim_HALLO_12_03");	//We've been working here on the farm for Akil for several years.
 	};
 };
 
@@ -54,7 +54,7 @@ instance DIA_Ehnim_FELDARBEIT(C_Info)
 	nr = 4;
 	condition = DIA_Ehnim_FELDARBEIT_Condition;
 	information = DIA_Ehnim_FELDARBEIT_Info;
-	description = "Как идет работа?";
+	description = "How's the field work going?";
 };
 
 

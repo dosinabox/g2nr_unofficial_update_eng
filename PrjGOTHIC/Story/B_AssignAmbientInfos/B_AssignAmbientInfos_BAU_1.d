@@ -26,7 +26,7 @@ instance DIA_BAU_1_JOIN(C_Info)
 	condition = DIA_BAU_1_JOIN_Condition;
 	information = DIA_BAU_1_JOIN_Info;
 	permanent = TRUE;
-	description = "Расскажи мне подробнее об этих наемниках.";
+	description = "Tell me more about those mercenaries.";
 };
 
 
@@ -40,10 +40,10 @@ func int DIA_BAU_1_JOIN_Condition()
 
 func void DIA_BAU_1_JOIN_Info()
 {
-	AI_Output(other,self,"DIA_BAU_1_JOIN_15_00");	//Расскажи мне подробнее об этих наемниках.
-	AI_Output(self,other,"DIA_BAU_1_JOIN_01_01");	//Я могу только посоветовать держаться от них подальше.
-	AI_Output(self,other,"DIA_BAU_1_JOIN_01_02");	//Если одному из них не понравится твое лицо, он может не раздумывая заехать тебе по носу.
-	AI_Output(self,other,"DIA_BAU_1_JOIN_01_03");	//Конечно, после этого ты можешь пожаловаться Ли, но нос-то уже будет сломан.
+	AI_Output (other, self, "DIA_BAU_1_JOIN_15_00");	//Tell me more about those mercenaries.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_01");	//I can only advise you to give them a wide berth.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_02");	//If one of them doesn't like your face, he just might punch you in the nose.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_03");	//You can complain to Lee afterwards, but your nose will still be broken.
 };
 
 
@@ -53,7 +53,7 @@ instance DIA_BAU_1_PEOPLE(C_Info)
 	condition = DIA_BAU_1_PEOPLE_Condition;
 	information = DIA_BAU_1_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Кто заправляет здесь?";
+	description = "Who's in charge here?";
 };
 
 
@@ -64,10 +64,10 @@ func int DIA_BAU_1_PEOPLE_Condition()
 
 func void DIA_BAU_1_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_BAU_1_PEOPLE_15_00");	//Кто заправляет здесь?
-	AI_Output(self,other,"DIA_BAU_1_PEOPLE_01_01");	//Это ферма Онара. Здесь он принимает все решения.
-	AI_Output(self,other,"DIA_BAU_1_PEOPLE_01_02");	//Позволь мне дать тебе совет: не ввязывайся в драку с его наемниками. С этими парнями шутить не стоит.
-	AI_Output(self,other,"DIA_BAU_1_PEOPLE_01_03");	//Сильвио - это вообще отъявленный бандит. Но их предводитель, Ли, вполне нормальный парень.
+	AI_Output (other, self, "DIA_BAU_1_PEOPLE_15_00");	//Who's in charge here?
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_01");	//This is Onar's farm. He makes all the decisions around here.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_02");	//Let me give you a tip: don't pick a fight with his mercenaries. The boys aren't to be trifled with.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_03");	//Sylvio in particular is an underhanded rogue. But their leader, Lee, is all right.
 };
 
 
@@ -77,7 +77,7 @@ instance DIA_BAU_1_LOCATION(C_Info)
 	condition = DIA_BAU_1_LOCATION_Condition;
 	information = DIA_BAU_1_LOCATION_Info;
 	permanent = TRUE;
-	description = "А что здесь есть интересного?";
+	description = "So what is there here in this area?";
 };
 
 
@@ -88,10 +88,10 @@ func int DIA_BAU_1_LOCATION_Condition()
 
 func void DIA_BAU_1_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_BAU_1_LOCATION_15_00");	//А что здесь есть интересного?
-	AI_Output(self,other,"DIA_BAU_1_LOCATION_01_01");	//Здесь только поля и фермы. И горстка наемников. Но почти все они находятся на востоке, на ферме Онара.
-	AI_Output(self,other,"DIA_BAU_1_LOCATION_01_02");	//К северу располагается ферма Секоба, но туда они заглядывают, только чтобы собрать ренту.
-	AI_Output(self,other,"DIA_BAU_1_LOCATION_01_03");	//На юге находится проход к ферме Бенгара.
+	AI_Output (other, self, "DIA_BAU_1_LOCATION_15_00");	//So what is there here in this area?
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_01");	//Just fields and farms. And a bunch of mercenaries. But almost all of them are in the east on Onar's farm.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_02");	//To the north is Sekob's farm, but they only go there to collect the rent.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_03");	//To the southwest is the path to Bengar's farm.
 };
 
 
@@ -101,7 +101,7 @@ instance DIA_BAU_1_STANDARD(C_Info)
 	condition = DIA_BAU_1_STANDARD_Condition;
 	information = DIA_BAU_1_STANDARD_Info;
 	permanent = TRUE;
-	description = "Что новенького?";
+	description = "What's new?";
 };
 
 
@@ -112,26 +112,26 @@ func int DIA_BAU_1_STANDARD_Condition()
 
 func void DIA_BAU_1_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_BAU_1_STANDARD_15_00");	//Что новенького?
-	if(Kapitel == 1)
+	AI_Output (other, self, "DIA_BAU_1_STANDARD_15_00");	//What's new?
+	if (Kapitel == 1)
 	{
-		AI_Output(self,other,"DIA_BAU_1_STANDARD_01_01");	//Онар нанял наемников, чтобы те защищали его от городского ополчения. Если бы не наемники, они отняли бы у нас все, до последней овцы!
+		AI_Output (self, other, "DIA_BAU_1_STANDARD_01_01");	//Onar has hired mercenaries to keep the militia from the city off his back. Otherwise, they would even take our last sheep!
 	};
 	if(Kapitel == 2)
 	{
-		AI_Output(self,other,"DIA_BAU_1_STANDARD_01_02");	//Немного. Как всегда, одни и те же проблемы. Ополчение, орки и полевые хищники.
+		AI_Output (self, other, "DIA_BAU_1_STANDARD_01_02");	//Not much. It's always the same problems. Militia, orcs, and field raiders.
 	};
 	if(Kapitel == 3)
 	{
-		AI_Output(self,other,"DIA_BAU_1_STANDARD_01_03");	//Странные дела творятся здесь. Несколько дней назад я видел фигуру в черном. Это был не человек.
+		AI_Output (self, other, "DIA_BAU_1_STANDARD_01_03");	//Strange things are going on here. A few nights ago I saw a black figure. It wasn't human.
 	};
 	if(Kapitel == 4)
 	{
-		AI_Output(self,other,"DIA_BAU_1_STANDARD_01_04");	//Здесь все чаще и чаще появляются орки. Иногда мне кажется, что вместо каждого убитого орка появляются еще двое.
+		AI_Output (self, other, "DIA_BAU_1_STANDARD_01_04");	//You see orcs more and more often. Sometimes I think two new orcs show up for every dead one.
 	};
 	if(Kapitel >= 5)
 	{
-		AI_Output(self,other,"DIA_BAU_1_STANDARD_01_05");	//Паладины идут в Долину Рудников. Что все это означает? Здесь никого не останется, кто держал бы ополчение в узде.
+		AI_Output (self, other, "DIA_BAU_1_STANDARD_01_05");	//The paladins are going into the Valley of Mines. What's it all about? There won't be anyone left to hold back the militia.
 	};
 };
 

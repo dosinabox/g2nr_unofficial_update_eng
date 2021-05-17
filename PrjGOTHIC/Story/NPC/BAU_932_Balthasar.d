@@ -1,7 +1,7 @@
 
 instance BAU_932_Balthasar(Npc_Default)
 {
-	name[0] = "Бальтазар";
+	name[0] = "Balthasar";
 	guild = GIL_OUT;
 	id = 932;
 	voice = 5;

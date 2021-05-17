@@ -1,7 +1,7 @@
 
 instance Itemhoshi(Npc_Default)
 {
-	name[0] = "Мистер Вещь Хоша";
+	name[0] = "Itemhoshi";
 	guild = GIL_MIL;
 	id = 1500;
 	voice = 3;
@@ -1493,7 +1493,7 @@ func void UseTimeDemo()
 
 instance MobsiBrief(C_Item)
 {
-	name = "Руна MobsiBrief";
+	name = "Rune MobsiBrief";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -1501,7 +1501,7 @@ instance MobsiBrief(C_Item)
 	material = MAT_STONE;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Исправить блокировку состояния.";
+	text[0] = "Исправить блокировку состояния@@@.";
 	on_state[0] = UseMobsiBrief;
 	inv_rotz = 180;
 	inv_rotx = 90;
@@ -1528,14 +1528,14 @@ instance Gold(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = UseGold;
 	description = name;
-	text[0] = "Целый мешок золота!";
+	text[0] = "Bag full of gold!!";
 };
 
 
 func void UseGold()
 {
 	B_PlayerFindItem(ItMi_Gold,1000);
-	PrintScreen("Наказание за читерство",-1,50,FONT_Screen,2);
+	PrintScreen("Malus for cheating!",-1,50,FONT_Screen,2);
 	B_GivePlayerXP(XP_EXPLOITBONUS);
 };
 

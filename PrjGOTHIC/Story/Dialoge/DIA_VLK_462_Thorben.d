@@ -344,7 +344,7 @@ func void DIA_Thorben_GiveBook_Info()
 	DIA_Common_HereIsYourBook();
 	if(ClassicLehmarBook == FALSE)
 	{
-		AI_PrintScreen("Долговая книга отдано",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Book of Debts",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 		Npc_RemoveInvItem(other,ItWr_Schuldenbuch);
 	}
 	else
@@ -353,7 +353,7 @@ func void DIA_Thorben_GiveBook_Info()
 	};
 	if(Thorben_TeachPlayer == TRUE)
 	{
-		AI_Output(self,other,"DIA_Thorben_PleaseTeach_06_01");	//Если бы не ты, я бы платил Лемару до конца своих дней.
+		AI_Output(self,other,"DIA_Thorben_PleaseTeach_06_01");	//If it weren't for you, I'd be paying Lehmar for the rest of my life.
 	}
 	else
 	{
@@ -369,7 +369,7 @@ instance DIA_Thorben_PleaseTeach(C_Info)
 	condition = DIA_Thorben_PleaseTeach_Condition;
 	information = DIA_Thorben_PleaseTeach_Info;
 	permanent = TRUE;
-	description = "Ты можешь научить меня вскрывать замки отмычками?";
+	description = "Can you teach me how to pick locks?";
 };
 
 
@@ -383,7 +383,7 @@ func int DIA_Thorben_PleaseTeach_Condition()
 
 func void DIA_Thorben_PleaseTeach_Info()
 {
-	AI_Output(other,self,"DIA_Thorben_PleaseTeach_15_00");	//Ты можешь научить меня вскрывать замки отмычками?
+	AI_Output(other,self,"DIA_Thorben_PleaseTeach_15_00");	//Can you teach me how to pick locks?
 	if(Npc_KnowsInfo(other,DIA_Thorben_GiveBook) || Npc_KnowsInfo(other,DIA_Addon_Thorben_ElvrichIsBack))
 	{
 		if(Npc_KnowsInfo(other,DIA_Thorben_GiveBook))
@@ -870,13 +870,13 @@ func void DIA_Thorben_PICKPOCKET_Book_DoIt()
 		CreateInvItem(other,ItWr_Schuldenbuch);
 		AI_PrintScreen("Stolen: Book of Debts",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
 		B_GiveThiefXP();
-		B_LogEntry(Topic_PickPocket,ConcatStrings("Торбен",PRINT_PickPocketSuccess));
+		B_LogEntry(Topic_PickPocket,ConcatStrings("Thorben",PRINT_PickPocketSuccess));
 		SchuldBuch_Stolen_Thorben = TRUE;
 	}
 	else
 	{
 		B_ResetThiefLevel();
-		B_LogEntry(Topic_PickPocket,ConcatStrings("Торбен",PRINT_PickPocketFailed));
+		B_LogEntry(Topic_PickPocket,ConcatStrings("Thorben",PRINT_PickPocketFailed));
 		AI_StopProcessInfos(self);
 		B_Attack(self,other,AR_Theft,1);
 	};

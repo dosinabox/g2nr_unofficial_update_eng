@@ -22,7 +22,7 @@ instance Fakescroll(C_Item)
 
 instance Fakeheroface(C_Item)
 {
-	name = "Объявление о розыске";
+	name = "Wanted Note";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -37,7 +37,7 @@ instance Fakeheroface(C_Item)
 
 instance Fakemap(C_Item)
 {
-	name = "Карта";
+	name = "Map";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -52,7 +52,7 @@ instance Fakemap(C_Item)
 
 instance Openbook1(C_Item)
 {
-	name = "Открытая книга 1";
+	name = "Open Book 1";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;

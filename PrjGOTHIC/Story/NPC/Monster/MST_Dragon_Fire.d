@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Dragon_Fire(C_Npc)
 {
-	name[0] = "Огненный дракон";
+	name[0] = "Fire Dragon";
 	guild = GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID] = ID_DRAGON_FIRE;
 	level = 500;
@@ -40,7 +40,7 @@ func void B_SetVisuals_Dragon_Fire()
 
 instance Dragon_Fire(Mst_Default_Dragon_Fire)
 {
-	name[0] = "Феоматар";
+	name[0] = "Feomathar";
 	flags = NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Fire();
 	Npc_SetToFistMode(self);
@@ -48,7 +48,7 @@ instance Dragon_Fire(Mst_Default_Dragon_Fire)
 
 instance Dragon_Fire_Island(Mst_Default_Dragon_Fire)
 {
-	name[0] = "Феодарон";
+	name[0] = "Feodaron";
 	flags = NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Fire();
 	Npc_SetToFistMode(self);

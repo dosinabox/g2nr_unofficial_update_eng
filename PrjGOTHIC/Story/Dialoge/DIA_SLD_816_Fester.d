@@ -222,8 +222,8 @@ func void DIA_Fester_TogetherNOW_Info()
 
 func void DIA_Fester_TogetherNOW_NOW()
 {
-	AI_Output(other,self,"DIA_Fester_TogetherNOW_Now_15_00");	//Лучшей возможности, чем сейчас, не будет.
-	AI_Output(self,other,"DIA_Fester_TogetherNOW_Now_08_01");	//Хорошо, давай посмотрим, на что ты способен.
+	AI_Output (other, self, "DIA_Fester_TogetherNOW_Now_15_00");	//There's no time like the present.
+	AI_Output (self, other, "DIA_Fester_TogetherNOW_Now_08_01");	//Good, then let's see what you've got.
 	self.npcType = NPCTYPE_FRIEND;
 	Npc_ExchangeRoutine(self,"GUIDE");
 	Fester_Losgeh_Day = B_GetDayPlus();
@@ -267,7 +267,7 @@ func void DIA_Fester_InCave_Info()
 {
 	if (Wld_GetDay () > Fester_Losgeh_Day)
 	{
-		AI_Output(self,other,"DIA_Fester_InCave_08_00");	//Где ты шлялся, черт тебя побери?
+		AI_Output (self, other, "DIA_Fester_InCave_08_00");	//Where the devil have you been?
 	}
 	else
 	{

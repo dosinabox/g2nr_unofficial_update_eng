@@ -1,7 +1,7 @@
 
 instance MIL_313_Boltan(Npc_Default)
 {
-	name[0] = "Болтан";
+	name[0] = "Boltan";
 	guild = GIL_MIL;
 	id = 313;
 	voice = 5;

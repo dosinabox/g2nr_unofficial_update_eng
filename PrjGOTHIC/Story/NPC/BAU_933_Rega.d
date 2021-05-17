@@ -1,7 +1,7 @@
 
 instance BAU_933_Rega(Npc_Default)
 {
-	name[0] = "ахур";
+	name[0] = "Rega";
 	guild = GIL_OUT;
 	id = 933;
 	voice = 17;

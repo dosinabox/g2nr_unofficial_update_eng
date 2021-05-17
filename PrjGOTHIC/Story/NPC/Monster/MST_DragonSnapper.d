@@ -1,7 +1,7 @@
 
 prototype Mst_Default_DragonSnapper(C_Npc)
 {
-	name[0] = "Драконий снеппер";
+	name[0] = "Dragon Snapper";
 	guild = GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID] = ID_DRAGONSNAPPER;
 	level = 40;
@@ -44,7 +44,7 @@ instance DragonSnapper(Mst_Default_DragonSnapper)
 
 instance Gaans_Snapper(Mst_Default_DragonSnapper)
 {
-	name[0] = "Фыркающий драконий снеппер";
+	name[0] = "Snorting Dragon Snapper";
 	B_SetVisuals_DragonSnapper();
 	Npc_SetToFistMode(self);
 };

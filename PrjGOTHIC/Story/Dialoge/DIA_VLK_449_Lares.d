@@ -33,7 +33,7 @@ instance DIA_Addon_Lares_Patch(C_Info)
 	nr = 99;
 	condition = DIA_Addon_Lares_Patch_Condition;
 	information = DIA_Addon_Lares_Patch_Info;
-	description = "Я могу отнести орнамент!";
+	description = "I can take the ornament there for you!";
 };
 
 
@@ -54,8 +54,8 @@ func void DIA_Addon_Lares_Patch_Info()
 	if(LaresToldAboutKDW1 == FALSE)
 	{
 		Info_ClearChoices(DIA_Addon_Lares_Patch);
-		Info_AddChoice(DIA_Addon_Lares_Patch,"Конечно.",DIA_Addon_Lares_Patch_ja);
-		Info_AddChoice(DIA_Addon_Lares_Patch,"Сатурас? Кто это такой?",DIA_Addon_Lares_Patch_wer);
+		Info_AddChoice(DIA_Addon_Lares_Patch,"Sure.",DIA_Addon_Lares_Patch_ja);
+		Info_AddChoice(DIA_Addon_Lares_Patch,"Saturas? Who is that?",DIA_Addon_Lares_Patch_wer);
 	}
 	else
 	{
@@ -1152,7 +1152,7 @@ instance DIA_Addon_Lares_Gilde(C_Info)
 	condition = DIA_Addon_Lares_Gilde_Condition;
 	information = DIA_Addon_Lares_Gilde_Info;
 	permanent = TRUE;
-	description = "Ватрас сказал, что ты можешь помочь мне присоединиться к одному из сообществ.";
+	description = "Vatras said you could help me join a community.";
 };
 
 

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Draconian(C_Npc)
 {
-	name[0] = "Человек-ящер";
+	name[0] = "Lizard Man";
 	guild = GIL_DRACONIAN;
 	aivar[AIV_MM_REAL_ID] = ID_DRACONIAN;
 	level = 35;

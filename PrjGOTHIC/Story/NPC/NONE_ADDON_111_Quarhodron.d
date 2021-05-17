@@ -1,7 +1,7 @@
 
 instance NONE_ADDON_111_Quarhodron(Npc_Default)
 {
-	name[0] = "Куарходрон";
+	name[0] = "Quarhodron";
 	guild = GIL_NONE;
 	id = 111;
 	voice = 11;

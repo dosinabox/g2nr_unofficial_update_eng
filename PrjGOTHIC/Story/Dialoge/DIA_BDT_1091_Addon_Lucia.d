@@ -215,7 +215,7 @@ instance DIA_Addon_Lucia_Paladine(C_Info)
 	condition = DIA_Addon_Lucia_Paladine_Condition;
 	information = DIA_Addon_Lucia_Paladine_Info;
 	permanent = FALSE;
-	description = "“ы не очень-то любишь паладинов, верно?";
+	description = "You're not very fond of the paladins, are you?";
 };
 
 

@@ -1,7 +1,7 @@
 
 instance BDT_10017_Addon_Juan(Npc_Default)
 {
-	name[0] = "Хуан";
+	name[0] = "Juan";
 	guild = GIL_BDT;
 	id = 10017;
 	voice = 13;

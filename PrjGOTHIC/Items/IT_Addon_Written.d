@@ -84,7 +84,7 @@ func void Use_Heilrezept_04()
 	{
 		if((PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE) && (PLAYER_TALENT_ALCHEMY[POTION_Health_04] == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЧИСТОГО ЗДОРОВЬЯ': 1 луговой горец и 3 лечебные эссенции.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'PURE HEALING': 1 meadow knotweed and 3 essences of healing.");");
 			PLAYER_TALENT_ALCHEMY[POTION_Health_04] = TRUE;
 		};
 	};
@@ -132,7 +132,7 @@ func void Use_Manarezept_04()
 	{
 		if((PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE) && (PLAYER_TALENT_ALCHEMY[POTION_Mana_04] == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЧИСТОЙ МАНЫ': 1 луговой горец и 3 эссенции маны.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'PURE MANA': 1 meadow knotweed and 3 mana essences.");
 			PLAYER_TALENT_ALCHEMY[POTION_Mana_04] = TRUE;
 		};
 	};
@@ -184,7 +184,7 @@ func void Use_Hinweis_01()
 
 instance ITWr_Addon_William_01(C_Item)
 {
-	name = "Записка";
+	name = "Note";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -227,7 +227,7 @@ func void Use_William_01()
 			Log_CreateTopic(TOPIC_Addon_MissingPeople,LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_MissingPeople,LOG_Running);
 		};
-		B_LogEntry(TOPIC_Addon_MissingPeople,"Рыбак из Хориниса Вильям мертв. Я нашел его тело в Яркендаре.");
+		B_LogEntry(TOPIC_Addon_MissingPeople,"Wiliam the fisherman is dead. I found his dead body in Jharkendar.");
 		FoundDeadWilliam = TRUE;
 	};
 };
@@ -272,7 +272,7 @@ func void Use_MCELIXIER_01()
 		if(Knows_MCELIXIER == FALSE)
 		{
 			Log_CreateTopic(TOPIC_TalentAlchemy,LOG_NOTE);
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА ИЗМЕНЕНИЯ СОЗНАНИЯ': 2 жала кровавой мухи, 1 экстракт маны, 1 лечебная эссенция и 1 красный жгучий перец.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'ELIXIR OF MENTAL ALTERATION': 2 bloodfly stingers, 1 extract of mana, 1 essence of healing and 1 red pepper.");
 			Knows_MCELIXIER = TRUE;
 		};
 	};
@@ -363,7 +363,7 @@ func void Use_Joint_Rezept_01()
 		if(Green_Extrem == FALSE)
 		{
 			Log_CreateTopic(TOPIC_TalentAlchemy,LOG_NOTE);
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЗЕЛЕНОГО ПОСЛУШНИКА': 2 болотных травы и 1 луговой горец.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'GREEN NOVICE': 2 swampweed plants and 1 meadow knotweed.");
 			EnteredBanditsCamp = TRUE;
 			Green_Extrem = TRUE;
 		};
@@ -415,7 +415,7 @@ func void UseLouRezept()
 	{
 		if(Npc_GetTalentSkill(hero,NPC_TALENT_ALCHEMY) && (Knows_LousHammer == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'МОЛОТА ЛУ': 1 вода, 2 репы, 1 болотная трава, 1 зуб болотной акулы и 1 ром.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'LOU's HAMMER': 1 water, 2 turnips, 1 swampweed plant, 1 swampshark tooth and 1 rom.");
 			Knows_LousHammer = TRUE;
 		};
 		Opened_LousHammer = TRUE;
@@ -462,7 +462,7 @@ func void UseLouRezept2()
 	{
 		if(Npc_GetTalentSkill(hero,NPC_TALENT_ALCHEMY) && (Knows_Schlafhammer == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для двойного 'МОЛОТА ЛУ': 1 'Молот Лу' и 1 ром.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'LOU's DOUBLE HAMMER': 1 'Lou's Hammeer' and 1 rum.");
 			Knows_Schlafhammer = TRUE;
 		};
 		Opened_Schlafhammer = TRUE;
@@ -510,7 +510,7 @@ func void UseRezeptPiratentod()
 	{
 		if(Npc_GetTalentSkill(hero,NPC_TALENT_ALCHEMY) && (Knows_SchnellerHering == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'БЫСТРОЙ СЕЛЕДКИ': 1 вода, 1 ром, 1 рыба и 1 снеппер-трава.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'HASTY HERRING': 1 water, 1 rum, 1 fish and 1 snapperweed.");
 			Knows_SchnellerHering = TRUE;
 		};
 		Opened_SchnellerHering = TRUE;
@@ -520,7 +520,7 @@ func void UseRezeptPiratentod()
 
 instance ItWr_MushroomMana(C_Item)
 {
-	name = "Рецепт грибного экстракта";
+	name = "Mushroom Extract Recipe";
 	mainflag = ITEM_KAT_DOCS;
 	flags = 0;
 	value = 50;
@@ -545,19 +545,19 @@ func void UseMushroomManaRecipe()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Создание грибного экстракта:");
+	Doc_PrintLines(nDocID,0,"Creating extract from mushrooms.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Черные грибы полезны сами по себе, но нехитрая обработка позволит усилить их свойства и создать более эффективный жидкий концентрат.");
-	Doc_PrintLines(nDocID,0,"Необходимо 50 черных грибов и одна луговая ягода.");
-	Doc_PrintLines(nDocID,0,"Грибы очищаются от грязи и варятся около часа. Полученный отвар охлаждается и в него добавляется высушенная и измельченная луговая ягода.");
+	Doc_PrintLines(nDocID,0,"Dark mushrooms on their own are quite useful, but a much greater effect is achieved when processed and turned into a more effective liquid concentrate.");
+	Doc_PrintLines(nDocID,0,"For that you will need 50 dark mushrooms and one meadow berry.");
+	Doc_PrintLines(nDocID,0,"Mushrooms must be cleaned of the dirt and be boiled for about an hour. Once ready, the broth must be cooled and have dried, chopped meadow berries added to it.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Если после добавления ягоды в емкости не выпал осадок, то все сделано правильно.");
+	Doc_PrintLines(nDocID,0,"After you added the berries, and no sediment has settled in your liquid container, then everything has been done correctly.");
 	Doc_Show(nDocID);
 	if(Npc_IsPlayer(self))
 	{
 		if(Npc_GetTalentSkill(hero,NPC_TALENT_ALCHEMY) && (Knows_MushroomMana == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ГРИБНОГО ЭКСТРАКТА': 50 черных грибов и 1 луговая ягода.");
+			B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'MUSHROOM EXTRACT': 50 dark mushrooms and 1 meadow berry.");
 			Knows_MushroomMana = TRUE;
 		};
 		Opened_MushroomMana = TRUE;
@@ -567,7 +567,7 @@ func void UseMushroomManaRecipe()
 
 instance Fakescroll_Addon(C_Item)
 {
-	name = "Клочок бумаги";
+	name = "A piece of paper";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 /*	hp = 5;
@@ -588,7 +588,7 @@ instance Fakescroll_Addon(C_Item)
 
 instance ItWr_Addon_AxtAnleitung(C_Item)
 {
-	name = "Схема бандитского топора";
+	name = "Instructions for a Bandit Axe";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -599,8 +599,8 @@ instance ItWr_Addon_AxtAnleitung(C_Item)
 	on_state[0] = UseAxtAnleitung;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Для его изготовления нужно";
-	text[1] = "знание основ кузнечного дела.";
+	text[0] = "Requires elementary forging skills.";
+	text[1] = "";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -619,19 +619,19 @@ func void UseAxtAnleitung()
 //	Doc_PrintLine(nDocID,0,"Легкий боевой топор");
 //	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Этот топор может выковать любой, знакомый с основами кузнечного дела.");
-	Doc_PrintLines(nDocID,0,"Необходимы два куска раскаленной сырой стали, один кусок руды и три зуба волка, снеппера или подобного им зверя.");
+	Doc_PrintLines(nDocID,0,"Anyone who knows the basics of forging can make a special axe.");
+	Doc_PrintLines(nDocID,0,"You need two pieces of hot raw iron, one lump of ore and three teeth from wolves, snappers or similar beasts.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Перекуйте на наковальне руду и зубы вместе со сталью.");
+	Doc_PrintLines(nDocID,0,"Hammer the ore and teeth together with the iron on an anvil.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Такой топор очень легок и наносит значительный урон.");
+	Doc_PrintLines(nDocID,0,"An axe like this is very easy to use and does significant damage.");
 	Doc_Show(nDocID);
 	if(Npc_IsPlayer(self))
 	{
 		if((Npc_GetTalentSkill(self,NPC_TALENT_SMITH) > 0) && (Knows_Banditenaxt == FALSE))
 		{
-			B_LogEntry(TOPIC_TalentSmith,"Для бандитского топора мне нужен 1 кусок руды, 3 зуба и 1 дополнительная стальная заготовка.");
+			B_LogEntry(TOPIC_TalentSmith,"To forge a "Bandit AXE" I need 1 lump of ore, 3 teeth and 1 additional steel billet.");
 			Knows_Banditenaxt = TRUE;
 		};
 		Opened_Banditenaxt = TRUE;
@@ -641,7 +641,7 @@ func void UseAxtAnleitung()
 
 instance ItWr_Addon_SUMMONANCIENTGHOST(C_Item)
 {
-	name = "Вызов Куарходрона";
+	name = "Summoning 'Quarhodron'";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 //	value = 250;
@@ -652,7 +652,7 @@ instance ItWr_Addon_SUMMONANCIENTGHOST(C_Item)
 	on_state[0] = UseSummonAncientGhost;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "С помощью этого свитка можно вызвать Куарходрона.";
+	text[0] = "This spell scroll can be used to summon Quarhodron.";
 //	text[5] = NAME_Value;
 //	count[5] = value;
 };
@@ -685,7 +685,7 @@ func void UseSummonAncientGhost()
 
 instance ItWr_Map_AddonWorld(C_Item)
 {
-	name = "Забытая долина зодчих";
+	name = "The forgotten Valley of the Builders.";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = 250;

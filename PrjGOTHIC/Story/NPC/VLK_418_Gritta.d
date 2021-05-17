@@ -1,7 +1,7 @@
 
 instance VLK_418_Gritta(Npc_Default)
 {
-	name[0] = "Гритта";
+	name[0] = "Gritta";
 	guild = GIL_VLK;
 	id = 418;
 	voice = 16;

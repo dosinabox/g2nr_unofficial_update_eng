@@ -142,7 +142,7 @@ func void DIA_Mika_WOHIN_Bauern()
 func void DIA_Mika_WOHIN_Kloster()
 {
 	AI_Output(other,self,"DIA_Mika_WOHIN_Kloster_15_00_add");	//Из монастыря.@@@
-	AI_Output(self,other,"DIA_Mika_WOHIN_Kloster_12_01_add");	//Тогда тебе не стоит бродить по этим опасным тропам совсем одному. Кто знает, что там может поджидать тебя.
+	AI_Output(self,other,"DIA_Mika_WOHIN_Kloster_12_01_add");	//Тогда тебе не стоит бродить по этим опасным тропам совсем одному. Кто знает, что там может поджидать тебя.@@@
 	Info_ClearChoices(DIA_Mika_WOHIN);
 };
 
@@ -436,7 +436,7 @@ instance DIA_Mika_Kap3u4u5_PERM(C_Info)
 	condition = DIA_Mika_Kap3u4u5_PERM_Condition;
 	information = DIA_Mika_Kap3u4u5_PERM_Info;
 	permanent = TRUE;
-	description = "Все тихо?";
+	description = "All quiet?";
 };
 
 

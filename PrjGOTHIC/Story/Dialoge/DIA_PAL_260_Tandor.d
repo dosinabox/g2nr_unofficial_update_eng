@@ -178,7 +178,7 @@ func void DIA_Tandor_Equipment_Bow()
 	CreateInvItems(self,ItRw_Bow_L_03,1);
 	B_GiveInvItems(self,other,ItRw_Bow_L_03,1);
 	CreateInvItems(other,ItRw_Arrow,50);
-	AI_PrintScreen("50 предметов получено (Стрела)",-1,43,FONT_ScreenSmall,2);
+	AI_PrintScreen("Received: Arrows (50)",-1,43,FONT_ScreenSmall,2);
 	Info_ClearChoices(DIA_Tandor_Equipment);
 };
 
@@ -189,7 +189,7 @@ func void DIA_Tandor_Equipment_Crossbow()
 	CreateInvItems(self,ItRw_Crossbow_L_02,1);
 	B_GiveInvItems(self,other,ItRw_Crossbow_L_02,1);
 	CreateInvItems(other,ItRw_Bolt,50);
-	AI_PrintScreen("50 предметов получено (Болт)",-1,43,FONT_ScreenSmall,2);
+	AI_PrintScreen("Received: Bolts (50)",-1,43,FONT_ScreenSmall,2);
 	Info_ClearChoices(DIA_Tandor_Equipment);
 };
 

@@ -1,7 +1,7 @@
 
 instance BAU_936_Rosi(Npc_Default)
 {
-	name[0] = "Рози";
+	name[0] = "Rosi";
 	guild = GIL_BAU;
 	id = 936;
 	voice = 17;

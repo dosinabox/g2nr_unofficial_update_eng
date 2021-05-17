@@ -1,7 +1,7 @@
 
 instance BDT_1060_Dexter(Npc_Default)
 {
-	name[0] = "Декстер";
+	name[0] = "Dexter";
 	guild = GIL_BDT;
 	id = 1060;
 	voice = 9;

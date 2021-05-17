@@ -57,7 +57,7 @@ instance PC_Circle_01(C_Info)
 	condition = PC_Circle_01_Condition;
 	information = PC_Circle_01_Info;
 	permanent = TRUE;
-	description = "Создать руну 1-го круга";
+	description = "Create 1st Circle runes";
 };
 
 
@@ -107,7 +107,7 @@ instance PC_Circle_02(C_Info)
 	condition = PC_Circle_02_Condition;
 	information = PC_Circle_02_Info;
 	permanent = TRUE;
-	description = "Создать руну 2-го круга";
+	description = "Create 2nd Circle runes";
 };
 
 
@@ -165,7 +165,7 @@ instance PC_Circle_03(C_Info)
 	condition = PC_Circle_03_Condition;
 	information = PC_Circle_03_Info;
 	permanent = TRUE;
-	description = "Создать руну 3-го круга";
+	description = "Create 3rd Circle runes";
 };
 
 
@@ -227,7 +227,7 @@ instance PC_Circle_04(C_Info)
 	condition = PC_Circle_04_Condition;
 	information = PC_Circle_04_Info;
 	permanent = TRUE;
-	description = "Создать руну 4-го круга";
+	description = "Create 4th Circle runes";
 };
 
 
@@ -277,7 +277,7 @@ instance PC_Circle_05(C_Info)
 	condition = PC_Circle_05_Condition;
 	information = PC_Circle_05_Info;
 	permanent = TRUE;
-	description = "Создать руну 5-го круга";
+	description = "Create 5th Circle runes";
 };
 
 
@@ -327,7 +327,7 @@ instance PC_Circle_06(C_Info)
 	condition = PC_Circle_06_Condition;
 	information = PC_Circle_06_Info;
 	permanent = TRUE;
-	description = "Создать руну 6-го круга";
+	description = "Create 6th Circle runes";
 };
 
 
@@ -377,7 +377,7 @@ instance PC_SPL_MasterOfDisaster(C_Info)
 	condition = PC_SPL_MasterOfDisaster_Condition;
 	information = PC_SPL_MasterOfDisaster_Info;
 	permanent = TRUE;
-	description = "Секрет библиотеки!";
+	description = "The secret of the library!";
 };
 
 
@@ -427,7 +427,7 @@ instance PC_SPL_PalTeleportSecret(C_Info)
 	condition = PC_SPL_PalTeleportSecret_Condition;
 	information = PC_SPL_PalTeleportSecret_Info;
 	permanent = TRUE;
-	description = "Секрет библиотеки!";
+	description = "Секрет библиотеки!@@@";
 };
 
 

@@ -1,7 +1,7 @@
 
 instance SLD_816_Fester(Npc_Default)
 {
-	name[0] = "Фестер";
+	name[0] = "Fester";
 	guild = GIL_SLD;
 	id = 816;
 	voice = 8;

@@ -1,7 +1,7 @@
 
 instance NONE_101_Mario_DI(Npc_Default)
 {
-	name[0] = "Марио";
+	name[0] = "Mario";
 	guild = GIL_NONE;
 	id = 1010;
 	voice = 7;

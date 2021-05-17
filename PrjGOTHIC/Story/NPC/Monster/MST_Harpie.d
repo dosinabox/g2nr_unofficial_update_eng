@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Harpie(C_Npc)
 {
-	name[0] = "Γΰποθÿ";
+	name[0] = "Harpy";
 	guild = GIL_HARPY;
 	aivar[AIV_MM_REAL_ID] = ID_HARPY;
 	level = 18;

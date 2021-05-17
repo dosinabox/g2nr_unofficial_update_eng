@@ -118,7 +118,7 @@ instance DIA_Sarah_Bauern(C_Info)
 	condition = DIA_Sarah_Bauern_Condition;
 	information = DIA_Sarah_Bauern_Info;
 	permanent = FALSE;
-	description = "А что за проблема с фермерами?";
+	description = "What's the problem with the farmers?";
 };
 
 
@@ -148,7 +148,7 @@ func void DIA_Sarah_Bauern_Info()
 			{
 				Log_CreateTopic(TOPIC_AkilsSLDStillthere,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_AkilsSLDStillthere,LOG_Running);
-				B_LogEntry(TOPIC_AkilsSLDStillthere,"Фермеру Акилу угрожают наемники.");
+				B_LogEntry(TOPIC_AkilsSLDStillthere,"Akil's farm is threatened by mercenaries.");
 				Akils_SLDStillthere = TRUE;
 			};
 		};

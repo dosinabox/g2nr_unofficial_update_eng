@@ -1,7 +1,7 @@
 
 instance PIR_1362_Addon_Bones(Npc_Default)
 {
-	name[0] = "Бонес";
+	name[0] = "Bones";
 	guild = GIL_PIR;
 	id = 1362;
 	voice = 1;

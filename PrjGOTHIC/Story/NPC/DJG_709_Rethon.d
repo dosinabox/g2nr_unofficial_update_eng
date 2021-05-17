@@ -1,7 +1,7 @@
 
 instance DJG_709_Rethon(Npc_Default)
 {
-	name[0] = "Ретон";
+	name[0] = "Rethon";
 	guild = GIL_DJG;
 	id = 709;
 	voice = 12;

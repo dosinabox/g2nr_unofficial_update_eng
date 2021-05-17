@@ -1,7 +1,7 @@
 
 instance BAU_931_Till(Npc_Default)
 {
-	name[0] = "Тилл";
+	name[0] = "Till";
 	guild = GIL_OUT;
 	id = 931;
 	voice = 3;

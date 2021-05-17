@@ -170,9 +170,9 @@ func void DIA_Grom_PayTeacher_Info()
 	CreateInvItem(self,ItFo_Milk);
 	CreateInvItem(self,ItFo_Bread);
 	CreateInvItem(self,ItFo_Bacon);
-	AI_PrintScreen("Молоко отдано",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
-	AI_PrintScreen("Хлеб отдано",-1,40,FONT_ScreenSmall,2);
-	AI_PrintScreen("Окорок отдано",-1,43,FONT_ScreenSmall,2);
+	AI_PrintScreen("Given: Milk",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("Given: Bread",-1,40,FONT_ScreenSmall,2);
+	AI_PrintScreen("Given: Ham",-1,43,FONT_ScreenSmall,2);
 	AI_Output(self,other,"DIA_Grom_PayTeacher_08_01");	//Fantastic. And now?
 	Grom_TeachAnimalTrophy = TRUE;
 	B_GivePlayerXP(XP_Ambient);

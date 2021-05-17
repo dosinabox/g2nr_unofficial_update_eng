@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Bloodhound(C_Npc)
 {
-	name[0] = "Ищейка";
+	name[0] = "Bloodhound";
 	guild = GIL_SHADOWBEAST;
 	aivar[AIV_MM_REAL_ID] = ID_Bloodhound;
 	level = 22;

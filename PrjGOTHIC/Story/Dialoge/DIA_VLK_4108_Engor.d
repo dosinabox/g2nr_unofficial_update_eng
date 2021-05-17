@@ -372,14 +372,14 @@ func void DIA_Engor_BRINGMEAT_Info()
 	{
 		Meat_Counter += 1;
 		Npc_RemoveInvItems(other,ItFo_NiclasBacon,1);
-		AI_PrintScreen("1 нога крысокрота отдано",-1,info_ypos,FONT_ScreenSmall,3);
+		AI_PrintScreen("Given: Molerat Leg",-1,info_ypos,FONT_ScreenSmall,3);
 		info_ypos += 3;
 	};
 	if(Meat_Amount > Meat_Counter)
 	{
 		AI_Output(self,other,"DIA_Engor_BRINGMEAT_13_01");	//That's not bad for starters, but I need more.
 		GesamtFleisch = IntToString(Meat_Counter);
-		GesamtFleisch = ConcatStrings("Всего отдано мяса: ",GesamtFleisch);
+		GesamtFleisch = ConcatStrings("Total meat given: ",GesamtFleisch);
 		AI_PrintScreen(GesamtFleisch,-1,info_ypos,FONT_ScreenSmall,3);
 	};
 	if(Meat_Counter >= Meat_Amount)

@@ -1,7 +1,7 @@
 
 instance PIR_1367_Addon_Owen(Npc_Default)
 {
-	name[0] = "Ξσύν";
+	name[0] = "Owen";
 	guild = GIL_PIR;
 	id = 1367;
 	voice = 13;

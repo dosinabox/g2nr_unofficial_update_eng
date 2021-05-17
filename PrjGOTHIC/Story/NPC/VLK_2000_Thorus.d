@@ -1,7 +1,7 @@
 
 /*instance VLK_2000_Thorus(Npc_Default)
 {
-	name[0] = "Торус";
+	name[0] = "Thorus";
 	guild = GIL_NONE;
 	id = 2000;
 	voice = 9;

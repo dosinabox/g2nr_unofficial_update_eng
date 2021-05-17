@@ -1,7 +1,7 @@
 
 instance KDF_500_Pyrokar(Npc_Default)
 {
-	name[0] = "Пирокар";
+	name[0] = "Pyrokar";
 	guild = GIL_KDF;
 	id = 500;
 	voice = 11;

@@ -1,7 +1,7 @@
 
 instance NOV_612_Babo(Npc_Default)
 {
-	name[0] = "Бабо";
+	name[0] = "Babo";
 	guild = GIL_NOV;
 	id = 612;
 	voice = 3;

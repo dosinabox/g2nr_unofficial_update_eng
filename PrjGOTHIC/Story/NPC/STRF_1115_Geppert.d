@@ -1,7 +1,7 @@
 
 instance STRF_1115_Geppert(Npc_Default)
 {
-	name[0] = "Гепперт";
+	name[0] = "Geppert";
 	guild = GIL_STRF;
 	id = 1115;
 	voice = 10;

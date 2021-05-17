@@ -49,7 +49,7 @@ func void B_OpenShell()
 
 instance ItMi_Addon_Shell_01(C_Item)
 {
-	name = "Створчатый моллюск";
+	name = "Gaper clam";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Shell_01;
@@ -65,7 +65,7 @@ instance ItMi_Addon_Shell_01(C_Item)
 
 instance ItMi_Addon_Shell_02(C_Item)
 {
-	name = "Спиральный моллюск";
+	name = "Spiny clam";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Shell_02;

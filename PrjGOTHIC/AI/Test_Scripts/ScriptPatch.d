@@ -1,7 +1,7 @@
 
 instance StatsBook(C_Item)
 {
-	name = " нига статистики";
+	name = "Stats Book";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -22,22 +22,22 @@ func void Use_StatsBook()
 	Doc_SetPage(nDocID,1,"Book_Blue_R.tga",0);
 	Doc_SetFont(nDocID,-1,FONT_Book);
 	Doc_SetMargins(nDocID,0,270,20,30,20,1);
-	Doc_PrintLine(nDocID,0,"”бито:");
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Draconian)," людей-€щеров"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Dementor)," ищущих"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcElite)," элитных орков"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcCommander)," предводителей орков"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(MadKillerCount)," невинных людей"));
+	Doc_PrintLine(nDocID,0,"Killed:");
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Draconian)," Lizard Men"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Dementor)," Seekers"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcElite)," Orc Elites"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcCommander)," Orc Commanders"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(MadKillerCount)," innocent people"));
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"»спользовано:");
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalApplesEaten)," €блок"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalMushroomsEaten)," черных грибов"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalDexEaten)," гоблинских €год"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalStrEaten)," драконьих корней"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalPermEaten)," царских щавелей"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Shell_Opener)," моллюсков"));
+	Doc_PrintLine(nDocID,0,"Used:");
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalApplesEaten)," apples"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalMushroomsEaten)," dark mushrooms"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalDexEaten)," goblin berries"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalStrEaten)," dragon roots"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalPermEaten)," king's sorrels"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Shell_Opener)," clams"));
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"ќтдано:");
+	Doc_PrintLine(nDocID,0,"Given:");
 	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(TotalStoneplatesForVatras)," табличек ¬атрасу"));
 	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(OldCoinCounter)," монет ¬асилию"));
 	if((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))

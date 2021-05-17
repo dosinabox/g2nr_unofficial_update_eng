@@ -1,7 +1,7 @@
 
 instance BDT_1085_Addon_Bloodwyn(Npc_Default)
 {
-	name[0] = "Бладвин";
+	name[0] = "Bloodwyn";
 	guild = GIL_BDT;
 	id = 1085;
 	voice = 4;

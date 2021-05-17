@@ -1,7 +1,7 @@
 
 instance BAU_908_Hodges(Npc_Default)
 {
-	name[0] = "Ходжес";
+	name[0] = "Hodges";
 	guild = GIL_BAU;
 	id = 908;
 	voice = 3;

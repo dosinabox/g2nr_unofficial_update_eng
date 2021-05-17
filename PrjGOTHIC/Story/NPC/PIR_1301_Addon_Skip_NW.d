@@ -1,7 +1,7 @@
 
 instance PIR_1301_Addon_Skip_NW(Npc_Default)
 {
-	name[0] = "Скип";
+	name[0] = "Skip";
 	guild = GIL_PIR;
 	id = 1301;
 	voice = 8;

@@ -106,7 +106,7 @@ func void DIA_MiltenNW_KAP3_Hello_FirstMeet_YES()
 
 func void DIA_MiltenNW_KAP3_Hello_FirstMeet_NO()
 {
-	//AI_Output(other,self,"DIA_MiltenOW_Hello_NO_15_00");	//Я должен знать тебя?
+	//AI_Output(other,self,"DIA_MiltenOW_Hello_NO_15_00");	//Am I supposed to know them?
 	AI_Output(other,self,"DIA_Addon_Skip_NW_WerBistDu_keineAhnung_15_00");	//Should I know you?
 	AI_Output(self,other,"DIA_MiltenOW_Hello_Forget_03_01");	//You have forgotten a great deal, haven't you? Well, let's leave the past in peace and devote ourselves to the here and now.
 	AI_Output(self,other,"DIA_MiltenOW_Hello_Forget_03_02");	//Even if there isn't anything pleasant to report.

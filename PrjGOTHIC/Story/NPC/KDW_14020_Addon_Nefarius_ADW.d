@@ -1,7 +1,7 @@
 
 instance KDW_14020_Addon_Nefarius_ADW(Npc_Default)
 {
-	name[0] = "Нефариус";
+	name[0] = "Nefarius";
 	guild = GIL_KDW;
 	id = 14020;
 	voice = 5;

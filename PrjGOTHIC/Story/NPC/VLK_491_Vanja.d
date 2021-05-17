@@ -1,7 +1,7 @@
 
 instance VLK_491_Vanja(Npc_Default)
 {
-	name[0] = "Ваня";
+	name[0] = "Vanja";
 	guild = GIL_VLK;
 	id = 491;
 	voice = 17;

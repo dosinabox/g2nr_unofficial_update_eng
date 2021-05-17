@@ -1,7 +1,7 @@
 
 instance BDT_1074_Addon_Edgor(Npc_Default)
 {
-	name[0] = "Ýהדמנ";
+	name[0] = "Edgor";
 	guild = GIL_BDT;
 	id = 1074;
 	voice = 6;

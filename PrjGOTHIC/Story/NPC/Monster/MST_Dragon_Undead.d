@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Dragon_Undead(C_Npc)
 {
-	name[0] = "Дракон-нежить";
+	name[0] = "Undead Dragon";
 	guild = GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID] = ID_DRAGON_UNDEAD;
 	level = 1000;

@@ -1,7 +1,7 @@
 
 instance MIL_317_Ruga(Npc_Default)
 {
-	name[0] = "Руга";
+	name[0] = "Ruga";
 	guild = GIL_MIL;
 	id = 317;
 	voice = 11;

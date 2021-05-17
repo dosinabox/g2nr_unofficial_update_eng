@@ -1,7 +1,7 @@
 
 instance BDT_1072_Addon_Logan(Npc_Default)
 {
-	name[0] = "Логан";
+	name[0] = "Logan";
 	guild = GIL_BDT;
 	id = 1072;
 	voice = 10;

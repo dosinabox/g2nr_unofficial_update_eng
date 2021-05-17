@@ -27,7 +27,7 @@ instance DIA_Till_HALLO(C_Info)
 	nr = 3;
 	condition = DIA_Till_HALLO_Condition;
 	information = DIA_Till_HALLO_Info;
-	description = "Привет.";
+	description = "Hi.";
 };
 
 
@@ -246,7 +246,7 @@ func void DIA_Till_BRONKOZURARBEIT_Info()
 	Info_ClearChoices(DIA_Till_BRONKOZURARBEIT);
 	if(Till_IchMachsNurEinmal == TRUE)
 	{
-		Info_AddChoice(DIA_Till_BRONKOZURARBEIT,"Я хочу больше.@@@",DIA_Till_BRONKOZURARBEIT_mehr);
+		Info_AddChoice(DIA_Till_BRONKOZURARBEIT,"I want more.",DIA_Till_BRONKOZURARBEIT_mehr);
 	}
 	else
 	{

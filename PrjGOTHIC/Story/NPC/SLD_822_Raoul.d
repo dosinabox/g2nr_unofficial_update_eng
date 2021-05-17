@@ -1,7 +1,7 @@
 
 instance SLD_822_Raoul(Npc_Default)
 {
-	name[0] = "Рауль";
+	name[0] = "Raoul";
 	guild = GIL_SLD;
 	id = 822;
 	voice = 1;

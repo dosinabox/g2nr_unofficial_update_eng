@@ -1,7 +1,7 @@
 
 instance PIR_1371_Addon_Hank(Npc_Default)
 {
-	name[0] = "Хэнк";
+	name[0] = "Hank";
 	guild = GIL_PIR;
 	id = 1371;
 	voice = 6;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Bloodfly(C_Npc)
 {
-	name[0] = "Кровавая муха";
+	name[0] = "Bloodfly";
 	guild = GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID] = ID_BLOODFLY;
 	level = 4;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Razor(C_Npc)
 {
-	name[0] = "Бритвозуб";
+	name[0] = "Razor";
 	guild = GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID] = ID_Razor;
 	level = 18;

@@ -16,7 +16,7 @@ const int HP_Shellflesh = 20;
 
 instance ItFo_Addon_Shellflesh(C_Item)
 {
-	name = "Мясо моллюска";
+	name = "Clam Meat";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Shellflesh;
@@ -25,7 +25,7 @@ instance ItFo_Addon_Shellflesh(C_Item)
 	scemeName = "FOODHUGE";
 	on_state[0] = Use_Shellflesh;
 	description = name;
-	text[0] = "Сочное мясо моллюска. Можно есть сырым.";
+	text[0] = "Juicy clam meat. Can be eaten raw.";
 	text[1] = NAME_Bonus_HP;
 	count[1] = HP_Shellflesh;
 	text[5] = NAME_Value;
@@ -51,7 +51,7 @@ instance ItFo_Addon_Rum(C_Item)
 	on_state[0] = UseRum;
 	scemeName = "POTIONFAST";
 	description = name;
-	text[0] = "Белый ром.";
+	text[0] = "White Rum.";
 	text[1] = NAME_Bonus_Mana;
 	count[1] = Mana_Rum;
 	text[5] = NAME_Value;
@@ -68,7 +68,7 @@ func void UseRum()
 
 instance ItFo_Addon_Grog(C_Item)
 {
-	name = "Грог";
+	name = "Grog";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Grog;
@@ -77,7 +77,7 @@ instance ItFo_Addon_Grog(C_Item)
 	on_state[0] = UseGrog;
 	scemeName = "POTIONFAST";
 	description = name;
-	text[0] = "Настоящий грог моряков.";
+	text[0] = "Genuine seaman's grog.";
 	text[1] = NAME_Bonus_HP;
 	count[1] = HP_Grog;
 	text[5] = NAME_Value;
@@ -96,7 +96,7 @@ var int Hammer_Once;
 
 instance ItFo_Addon_LousHammer(C_Item)
 {
-	name = "Молот Лу";
+	name = "Lou's Hammer";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_LousHammer;
@@ -128,7 +128,7 @@ func void UseLouHammer()
 
 instance ItFo_Addon_SchlafHammer(C_Item)
 {
-	name = "Двойной Молот Лу";
+	name = "Double Hammer";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_SchlafHammer;
@@ -137,7 +137,7 @@ instance ItFo_Addon_SchlafHammer(C_Item)
 	on_state[0] = UseSchlafHammer;
 	scemeName = "POTIONFAST";
 	description = name;
-	text[0] = "Свалит с ног даже бывалого пьяницу...";
+	text[0] = "Makes the toughest drinker sleepy...";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -160,7 +160,7 @@ const int Time_SchnellerHering = 120000;
 
 instance ItFo_Addon_SchnellerHering(C_Item)
 {
-	name = "Быстрая селедка";
+	name = "Hasty Herring";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_SchnellerHering;
@@ -169,9 +169,9 @@ instance ItFo_Addon_SchnellerHering(C_Item)
 	on_state[0] = UseSchnellerHering;
 	scemeName = "POTIONFAST";
 	description = name;
-//	text[1] = "Выглядит подозрительно!";
-//	text[2] = "Эффект неизвестен.";
-//	text[3] = "Возможны побочные эффекты.";
+//	text[1] = "Looks dangerous!";
+//	text[2] = "Effects unknown.";
+//	text[3] = "Probable side-effects.";
 	text[0] = PRINT_Speed;
 	text[1] = NAME_Duration;
 	count[1] = Time_SchnellerHering / 60000;
@@ -192,7 +192,7 @@ func void UseSchnellerHering()
 
 instance ItFo_Addon_Liquor(C_Item)
 {
-	name = "Ликер";
+	name = "Liquor";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Rum;
@@ -201,7 +201,7 @@ instance ItFo_Addon_Liquor(C_Item)
 	on_state[0] = UseLiquor;
 	scemeName = "POTIONFAST";
 	description = name;
-	text[0] = "Сладкий и крепкий.";
+	text[0] = "Sweet and strong.";
 	text[1] = NAME_Bonus_HP;
 	count[1] = HP_Grog;
 	text[5] = NAME_Value;
@@ -218,16 +218,16 @@ func void UseLiquor()
 
 instance ItFo_Addon_Pfeffer_01(C_Item)
 {
-	name = "Мешочек с перцем";
+	name = "Pepper Bag";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = 100;
 	visual = "ItMi_RedPepper.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "Красный жгучий перец";
-	text[1] = "с южных островов.";
-	text[3] = "ОСТОРОЖНО, ЖГУЧИЙ!";
+	text[0] = "Red tear-pepper";
+	text[1] = "From the southern islands.";
+	text[3] = "CAREFUL, HOT!";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_zbias = 190;
@@ -235,7 +235,7 @@ instance ItFo_Addon_Pfeffer_01(C_Item)
 
 instance ItFo_Addon_FireStew(C_Item)
 {
-	name = "Пламенная нарезка";
+	name = "Fire Strips";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_BonusFood;
@@ -269,7 +269,7 @@ func void Use_FireStew()
 
 instance ItFo_Addon_Meatsoup(C_Item)
 {
-	name = "Мясная похлебка";
+	name = "Meat Stew";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_BonusFood;
@@ -278,7 +278,7 @@ instance ItFo_Addon_Meatsoup(C_Item)
 	scemeName = "RICE";
 	on_state[0] = Use_MeatSoup;
 	description = name;
-	text[0] = "Дымящаяся мясная похлебка.";
+	text[0] = "Steaming meat stew.";
 	text[1] = NAME_Bonus_HP;
 	count[1] = HP_Stew;
 	text[2] = NAME_Bonus_Str;

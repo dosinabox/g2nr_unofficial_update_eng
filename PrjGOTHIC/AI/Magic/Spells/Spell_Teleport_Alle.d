@@ -334,7 +334,7 @@ func int Spell_Logic_Teleport_Maya(var int manaInvested)
 {
 	if(Npc_GetDistToWP(hero,"ADW_VALLEY_SHOWCASE1_04") > 3200)
 	{
-		AI_PrintScreen("Заклинание здесь не работает.",-1,YPOS_GoldGiven,FONT_ScreenSmall,2);
+		AI_PrintScreen("Does not work here.",-1,YPOS_GoldGiven,FONT_ScreenSmall,2);
 		B_Say_Overlay(self,self,"$DOESNTWORK");
 		return SPL_SENDSTOP;
 	}

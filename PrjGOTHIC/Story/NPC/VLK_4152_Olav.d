@@ -1,7 +1,7 @@
 
 instance VLK_4152_Olav(Npc_Default)
 {
-	name[0] = "Юырт";
+	name[0] = "Olav";
 	guild = GIL_MIL;
 	id = 4152;
 	voice = 4;

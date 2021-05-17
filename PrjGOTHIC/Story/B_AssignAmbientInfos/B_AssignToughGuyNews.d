@@ -50,9 +50,9 @@ func void DIA_ToughGuy_NEWS_Info()
 	self.aivar[AIV_LastFightComment] = TRUE;
 	if(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Skinner))
 	{
-		AI_Output(self,other,"DIA_Addon_Skinner_ToughguyNews_08_00");	//...но я не хочу говорить с тобой...
-		AI_StopProcessInfos(self);
-		B_Attack(self,other,AR_NONE,1);
+		AI_Output (self, other, "DIA_Addon_Skinner_ToughguyNews_08_00");	//... but I don't want to talk to you...
+		AI_StopProcessInfos (self);
+		B_Attack (self, other, AR_NONE, 1);
 	};
 };
 

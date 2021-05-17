@@ -1,7 +1,7 @@
 
 instance VLK_470_Sarah(Npc_Default)
 {
-	name[0] = "Сара";
+	name[0] = "Sarah";
 	guild = GIL_VLK;
 	id = 470;
 	voice = 16;

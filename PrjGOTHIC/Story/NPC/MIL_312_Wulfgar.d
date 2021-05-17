@@ -1,7 +1,7 @@
 
 instance MIL_312_Wulfgar(Npc_Default)
 {
-	name[0] = "Âףכüפדאנ";
+	name[0] = "Wulfgar";
 	guild = GIL_MIL;
 	id = 312;
 	voice = 4;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_OrcShaman(C_Npc)
 {
-	name[0] = "Орк-шаман";
+	name[0] = "Orc Shaman";
 	guild = GIL_ORC;
 	aivar[AIV_MM_REAL_ID] = ID_ORCSHAMAN;
 	voice = 18;
@@ -52,7 +52,7 @@ instance OrcShaman_Sit(Mst_Default_OrcShaman)
 
 instance OrcShaman_Hosh_Pak(Mst_Default_OrcShaman)
 {
-	name[0] = "Хош-Пак";
+	name[0] = "Hosh-Pak";
 	level = 40;
 	attribute[ATR_STRENGTH] = 105;
 	attribute[ATR_HITPOINTS_MAX] = 400;
@@ -67,7 +67,7 @@ instance OrcShaman_Hosh_Pak(Mst_Default_OrcShaman)
 
 instance OrcShaman_Sit_CanyonLibraryKey(Mst_Default_OrcShaman)
 {
-	name[0] = "Главарь орды";
+	name[0] = "Leader of the Horde";
 	level = 40;
 	attribute[ATR_STRENGTH] = 105;
 	attribute[ATR_HITPOINTS_MAX] = 400;

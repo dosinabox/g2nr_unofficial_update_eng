@@ -1,7 +1,7 @@
 
 instance MIL_306_Tuerwache(Npc_Default)
 {
-	name[0] = "Стражник судьи";
+	name[0] = "Judge's House Guard";
 	guild = GIL_MIL;
 	id = 306;
 	voice = 7;

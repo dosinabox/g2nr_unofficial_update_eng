@@ -1,7 +1,7 @@
 
 instance BDT_10022_Addon_Miguel(Npc_Default)
 {
-	name[0] = "Мигель";
+	name[0] = "Miguel";
 	guild = GIL_BDT;
 	id = 10022;
 	voice = 11;

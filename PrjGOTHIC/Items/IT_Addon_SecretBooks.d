@@ -36,7 +36,7 @@ func void UseXPBook(var int constanze)
 
 prototype ItWr_Addon_XPBook(C_Item)
 {
-	name = "ќпыт поколений";
+	name = "Collected experiences";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	visual = "ItWr_Book_02_01.3ds";
@@ -94,7 +94,7 @@ func void UseBookXP1000()
 
 prototype ItWr_Addon_LPBook(C_Item)
 {
-	name = " нига знаний";
+	name = "Book of Knowledge";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	visual = "ItWr_Book_02_02.3ds";

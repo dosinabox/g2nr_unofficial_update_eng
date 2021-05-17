@@ -51,7 +51,7 @@ const int Mana_Milk = 1;
 
 instance ItFo_Apple(C_Item)
 {
-	name = "Яблоко";
+	name = "Apple";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Apple;
@@ -60,7 +60,7 @@ instance ItFo_Apple(C_Item)
 	scemeName = "FOOD";
 	on_state[0] = Use_Apple;
 	description = name;
-	text[0] = "Свежее яблоко, твердое и сочное.";
+	text[0] = "A fresh apple, firm and juicy.";
 	text[1] = NAME_Bonus_HP;
 	count[1] = HP_Apple;
 	text[5] = NAME_Value;
@@ -96,7 +96,7 @@ func void Use_Apple()
 
 instance ItFo_Cheese(C_Item)
 {
-	name = "Сыр";
+	name = "Cheese";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Cheese;
@@ -120,7 +120,7 @@ func void Use_Cheese()
 
 instance ItFo_Bacon(C_Item)
 {
-	name = "Окорок";
+	name = "Ham";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Bacon;
@@ -144,7 +144,7 @@ func void Use_Bacon()
 
 instance ItFo_NiclasBacon(C_Item)
 {
-	name = "Нога крысокрота";
+	name = "Leg of Molerat";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_NiclasBacon;
@@ -168,7 +168,7 @@ func void Use_NiclasBacon()
 
 instance ItFo_Bread(C_Item)
 {
-	name = "Хлеб";
+	name = "Bread";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Bread;
@@ -192,7 +192,7 @@ func void Use_Bread()
 
 instance ItFo_Fish(C_Item)
 {
-	name = "Рыба";
+	name = "Fish";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Fish;
@@ -216,7 +216,7 @@ func void Use_Fish()
 
 instance ItFo_SmellyFish(C_Item)
 {
-	name = "Селедка";
+	name = "Herring";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Hering;
@@ -240,7 +240,7 @@ func void Use_SmellyFish()
 
 instance ItFoMuttonRaw(C_Item)
 {
-	name = "Сырое мясо";
+	name = "Raw Meat";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Rawmeat;
@@ -264,7 +264,7 @@ func void Use_RawMeat()
 
 instance ItFoMutton(C_Item)
 {
-	name = "Жареное мясо";
+	name = "Fried Meat";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Meat;
@@ -288,7 +288,7 @@ func void Use_Meat()
 
 instance ItFo_Stew(C_Item)
 {
-	name = "Похлебка";
+	name = "Stew";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Stew;
@@ -312,7 +312,7 @@ func void Use_Stew()
 
 instance ItFo_XPStew(C_Item)
 {
-	name = "Похлебка Теклы";
+	name = "Thekla's Stew";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_BonusFood;
@@ -339,7 +339,7 @@ func void Use_XPStew()
 
 instance ItFo_CoragonsBeer(C_Item)
 {
-	name = "Пиво";
+	name = "Beer";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_CoragonsBeer;
@@ -348,7 +348,7 @@ instance ItFo_CoragonsBeer(C_Item)
 	scemeName = "POTIONFAST";
 	on_state[0] = Use_CoragonsBeer;
 	description = name;
-	text[0] = "Особое пиво Корагона.";
+	text[0] = "Coragon's Special Beer";
 	text[1] = NAME_Bonus_HpMax;
 	count[1] = HP_CoragonsBeer;
 	text[2] = NAME_Bonus_ManaMax;
@@ -372,7 +372,7 @@ func void Use_CoragonsBeer()
 
 instance ItFo_FishSoup(C_Item)
 {
-	name = "Уха";
+	name = "Fish Soup";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_FishSoup;
@@ -396,7 +396,7 @@ func void Use_FishSoup()
 
 instance ItFo_EddasFishSoup(C_Item)
 {
-	name = "Уха Эдды";
+	name = "Edda's Fish Soup";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_EddasFishSoup;
@@ -420,7 +420,7 @@ func void Use_EddasFishSoup()
 
 instance ItFo_Sausage(C_Item)
 {
-	name = "Колбаса";
+	name = "Sausage";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Sausage;
@@ -444,7 +444,7 @@ func void Use_Sausage()
 
 instance ItFo_Honey(C_Item)
 {
-	name = "Мед";
+	name = "Honey";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Honey;
@@ -468,7 +468,7 @@ func void Use_Honey()
 
 instance ItFo_Water(C_Item)
 {
-	name = "Вода";
+	name = "Water";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Water;
@@ -492,7 +492,7 @@ func void Use_Water()
 
 instance ItFo_Beer(C_Item)
 {
-	name = "Пиво";
+	name = "Beer";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Beer;
@@ -501,7 +501,7 @@ instance ItFo_Beer(C_Item)
 	scemeName = "POTIONFAST";
 	on_state[0] = Use_Beer;
 	description = name;
-	text[0] = "Темное паладинское.";
+	text[0] = "Dark paladin.";
 	text[1] = NAME_Bonus_HP;
 	count[1] = HP_Beer;
 	text[2] = NAME_Bonus_Mana;
@@ -536,7 +536,7 @@ func void Use_Beer()
 
 instance ItFo_Booze(C_Item)
 {
-	name = "Джин";
+	name = "Gin";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Booze;
@@ -564,7 +564,7 @@ func void Use_Booze()
 
 instance ItFo_Wine(C_Item)
 {
-	name = "Вино";
+	name = "Wine";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Wine;
@@ -592,7 +592,7 @@ func void Use_Wine()
 
 instance ItFo_DarkWine(C_Item)
 {
-	name = "Темное вино";
+	name = "Dark Wine";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_DarkWine;
@@ -624,7 +624,7 @@ func void Use_DarkWine()
 
 instance ItFo_Milk(C_Item)
 {
-	name = "Молоко";
+	name = "Milk";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Milk;

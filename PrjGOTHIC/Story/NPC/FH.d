@@ -1,7 +1,7 @@
 
 instance FH(Npc_Default)
 {
-	name[0] = "Помощник по лицам";
+	name[0] = "Face Helper";
 	npcType = NPCTYPE_FRIEND;
 	aivar[AIV_IgnoresArmor] = TRUE;
 	guild = GIL_NONE;

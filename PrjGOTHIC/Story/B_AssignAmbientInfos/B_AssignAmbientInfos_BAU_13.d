@@ -26,7 +26,7 @@ instance DIA_BAU_13_JOIN(C_Info)
 	condition = DIA_BAU_13_JOIN_Condition;
 	information = DIA_BAU_13_JOIN_Info;
 	permanent = TRUE;
-	description = "Расскажи мне подробнее об этих наемниках!";
+	description = "Tell me more about those mercenaries!";
 };
 
 
@@ -40,9 +40,9 @@ func int DIA_BAU_13_JOIN_Condition()
 
 func void DIA_BAU_13_JOIN_Info()
 {
-	AI_Output(other,self,"DIA_BAU_13_JOIN_15_00");	//Расскажи мне подробнее об этих наемниках!
-	AI_Output(self,other,"DIA_BAU_13_JOIN_13_01");	//Если у тебя с ними какие-то проблемы, иди к Ли. Мы, фермеры, всегда так делаем. Он держит своих людей в ежовых рукавицах.
-	AI_Output(self,other,"DIA_BAU_13_JOIN_13_02");	//Если кто-то из них ведет себя неправильно, он рискует нарваться на неприятности.
+	AI_Output (other, self, "DIA_BAU_13_JOIN_15_00");	//Tell me more about those mercenaries!
+	AI_Output (self, other, "DIA_BAU_13_JOIN_13_01");	//If you ever have trouble with them, go to Lee. That's what we farmers do. He's really strict with his people.
+	AI_Output (self, other, "DIA_BAU_13_JOIN_13_02");	//If one of them misbehaves, he really lets him have it.
 };
 
 
@@ -52,7 +52,7 @@ instance DIA_BAU_13_PEOPLE(C_Info)
 	condition = DIA_BAU_13_PEOPLE_Condition;
 	information = DIA_BAU_13_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Кто заправляет здесь?";
+	description = "Who's in charge here?";
 };
 
 
@@ -63,9 +63,9 @@ func int DIA_BAU_13_PEOPLE_Condition()
 
 func void DIA_BAU_13_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_BAU_13_PEOPLE_15_00");	//Кто заправляет здесь?
-	AI_Output(self,other,"DIA_BAU_13_PEOPLE_13_01");	//Если тебе интересно мое мнение - то наемники. Онар платит им, но только Иннос знает, сколько еще они будут повиноваться его приказам.
-	AI_Output(self,other,"DIA_BAU_13_PEOPLE_13_02");	//Я не хотел бы оказаться в его шкуре, если до наемников вдруг дойдет, что без него можно обойтись.
+	AI_Output (other, self, "DIA_BAU_13_PEOPLE_15_00");	//Who's in charge here?
+	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_01");	//If you ask me, it's the mercenaries. Sure, Onar pays them, but Innos knows how long they'll take orders from him.
+	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_02");	//If the mercenaries ever get it into their heads that he's useless around here, I wouldn't want to be in his shoes.
 };
 
 
@@ -75,7 +75,7 @@ instance DIA_BAU_13_LOCATION(C_Info)
 	condition = DIA_BAU_13_LOCATION_Condition;
 	information = DIA_BAU_13_LOCATION_Info;
 	permanent = TRUE;
-	description = "Что ты можешь сказать об этом районе?";
+	description = "What can you tell me about this area?";
 };
 
 
@@ -86,9 +86,9 @@ func int DIA_BAU_13_LOCATION_Condition()
 
 func void DIA_BAU_13_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_BAU_13_LOCATION_15_00");	//Что ты можешь сказать об этом районе?
-	AI_Output(self,other,"DIA_BAU_13_LOCATION_13_01");	//Здесь есть три фермы. Ферма Онара к востоку и Секоба к северу в конце долины.
-	AI_Output(self,other,"DIA_BAU_13_LOCATION_13_02");	//На юго-западе есть проход на высокогорное плато. Там находится ферма Бенгара.
+	AI_Output (other, self, "DIA_BAU_13_LOCATION_15_00");	//What can you tell me about this area?
+	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_01");	//There are three farms here. Onar's to the east and Sekob's at the north end of the valley.
+	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_02");	//There's a path up to the high plain in the southwest. That's where Bengar's farm is.
 };
 
 
@@ -98,7 +98,7 @@ instance DIA_BAU_13_STANDARD(C_Info)
 	condition = DIA_BAU_13_STANDARD_Condition;
 	information = DIA_BAU_13_STANDARD_Info;
 	permanent = TRUE;
-	description = "Что новенького?";
+	description = "What's new?";
 };
 
 
@@ -109,26 +109,26 @@ func int DIA_BAU_13_STANDARD_Condition()
 
 func void DIA_BAU_13_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_BAU_13_STANDARD_15_00");	//Что новенького?
-	if(Kapitel == 1)
+	AI_Output (other, self, "DIA_BAU_13_STANDARD_15_00");	//What's new?
+	if (Kapitel == 1)
 	{
-		AI_Output(self,other,"DIA_BAU_13_STANDARD_13_01");	//Войска из города больше не забирают наш урожай и скот! Они не хотят играть в эту игру, когда мы начали защищаться!
+		AI_Output (self, other, "DIA_BAU_13_STANDARD_13_01");	//The troops from the city don't take away our livestock and harvest anymore! They don't want to play that game, now that we can defend ourselves!
 	};
 	if(Kapitel == 2)
 	{
-		AI_Output(self,other,"DIA_BAU_13_STANDARD_13_02");	//Паладинов из города не волнует судьба фермеров. Если нападут орки, мы будем брошены на произвол судьбы.
+		AI_Output (self, other, "DIA_BAU_13_STANDARD_13_02");	//The paladins in the city don't care about us farmers. If the orcs attack, we're on our own.
 	};
 	if(Kapitel == 3)
 	{
-		AI_Output(self,other,"DIA_BAU_13_STANDARD_13_03");	//Драконы! Ходят слухи, что в Долине Рудников появились драконы. Они скоро доберутся до Прохода!
+		AI_Output (self, other, "DIA_BAU_13_STANDARD_13_03");	//Dragons! There's a rumor there are dragons in the Valley of Mines. They're bound to come over the pass soon!
 	};
 	if(Kapitel == 4)
 	{
-		AI_Output(self,other,"DIA_BAU_13_STANDARD_13_04");	//Говорят даже, что бандиты с гор направились в Долину Рудников. Ну, по мне - так это слишком опасно.
+		AI_Output (self, other, "DIA_BAU_13_STANDARD_13_04");	//They even say some bandits from the mountains are headed for the Valley of Mines. Well, that would be too dangerous for me.
 	};
 	if(Kapitel >= 5)
 	{
-		AI_Output(self,other,"DIA_BAU_13_STANDARD_13_05");	//Когда налоги будут снижены и нам будут достойно платить за нашу работу, тогда мы опять будем торговать с городом.
+		AI_Output (self, other, "DIA_BAU_13_STANDARD_13_05");	//When the taxes go down again and we get paid reasonably for our work, then we'll trade with the city again.
 	};
 };
 

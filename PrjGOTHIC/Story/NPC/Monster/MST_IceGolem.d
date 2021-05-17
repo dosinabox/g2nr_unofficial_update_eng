@@ -1,7 +1,7 @@
 
 prototype Mst_Default_IceGolem(C_Npc)
 {
-	name[0] = "Ледяной голем";
+	name[0] = "Ice Golem";
 	guild = GIL_ICEGOLEM;
 	aivar[AIV_MM_REAL_ID] = ID_ICEGOLEM;
 	level = 45;

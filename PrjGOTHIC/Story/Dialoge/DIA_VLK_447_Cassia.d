@@ -419,7 +419,7 @@ func int DIA_Cassia_Beitreten_Condition()
 func void DIA_Cassia_Beitreten_Info()
 {
 	AI_Output (other, self, "DIA_Cassia_Beitreten_15_00");	//OK, I'm in.
-	AI_Output (self, other, "DIA_Cassia_Beitreten_16_01");	//Great. You'll be given an opportunity to prove yourself. And if you want to learn from us, you're welcome. А если ты захочешь чему-нибудь научиться у нас - всегда пожалуйста.
+	AI_Output (self, other, "DIA_Cassia_Beitreten_16_01");	//Great. You'll be given an opportunity to prove yourself. And if you want to learn from us, you're welcome.
 	B_AgreedToJoinThiefs();
 };
 

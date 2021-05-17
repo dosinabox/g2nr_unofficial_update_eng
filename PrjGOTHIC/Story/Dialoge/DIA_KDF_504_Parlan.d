@@ -1003,7 +1003,7 @@ func void DIA_Parlan_TEACH_Info()
 	};
 	if(abletolearn < 1)
 	{
-		AI_Output(self,other,"DIA_Parlan_TEACH_05_01");	//Пока я ничему не могу научить тебя.
+		AI_Output(self,other,"DIA_Parlan_TEACH_05_01");	//I cannot teach you more formulas at the moment.
 		if(Npc_GetTalentSkill(other,NPC_TALENT_MAGE) == 0)
 		{
 			PrintScreen(PRINT_MAGCIRCLES_NEEDFIRST,-1,-1,FONT_ScreenSmall,2);

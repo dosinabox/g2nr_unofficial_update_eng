@@ -61,7 +61,7 @@ instance ItRi_Prot_Fire_01(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Fire_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо защиты от пламени";
+	description = "Flame Protection Ring";
 	text[2] = NAME_Prot_Fire;
 	count[2] = Ri_ProtFire;
 	text[5] = NAME_Value;
@@ -96,7 +96,7 @@ instance ItRi_Prot_Fire_02(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Fire_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо огня";
+	description = "Fire Ring";
 	text[2] = NAME_Prot_Fire;
 	count[2] = Ri_ProtFire02;
 	text[5] = NAME_Value;
@@ -131,7 +131,7 @@ instance ItRi_Prot_Point_01(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Point_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо деревянной кожи";
+	description = "Ring of Wooden Skin";
 	text[2] = NAME_Prot_Point;
 	count[2] = Ri_ProtPoint;
 	text[5] = NAME_Value;
@@ -166,7 +166,7 @@ instance ItRi_Prot_Point_02(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Point_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо каменной кожи";
+	description = "Ring of Stone Skin";
 	text[2] = NAME_Prot_Point;
 	count[2] = Ri_ProtPoint02;
 	text[5] = NAME_Value;
@@ -201,7 +201,7 @@ instance ItRi_Prot_Edge_01(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Edge_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо железной кожи";
+	description = "Ring of Iron Skin";
 	text[2] = NAME_Prot_Edge;
 	count[2] = Ri_ProtEdge;
 	text[5] = NAME_Value;
@@ -238,7 +238,7 @@ instance ItRi_Prot_Edge_02(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Edge_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо рудной кожи";
+	description = "Ring of Ore Skin";
 	text[2] = NAME_Prot_Edge;
 	count[2] = Ri_ProtEdge02;
 	text[5] = NAME_Value;
@@ -275,7 +275,7 @@ instance ItRi_Prot_Mage_01(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Mage_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо силы духа";
+	description = "Ring of Spirit";
 	text[2] = NAME_Prot_Magic;
 	count[2] = Ri_ProtMage;
 	text[5] = NAME_Value;
@@ -310,7 +310,7 @@ instance ItRi_Prot_Mage_02(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Mage_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо защиты";
+	description = "Ring of Defense";
 	text[2] = NAME_Prot_Magic;
 	count[2] = Ri_ProtMage02;
 	text[5] = NAME_Value;
@@ -345,7 +345,7 @@ instance ItRi_Prot_Mage_03(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Mage_03;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо оберега";
+	description = "Ring of Care";
 	text[2] = NAME_Prot_Fire;
 	count[2] = 3;
 	text[3] = NAME_Prot_Magic;
@@ -384,7 +384,7 @@ instance ItRi_Prot_Total_00(C_Item)
 	on_unequip = UnEquip_Fernando;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо мореплавателя";
+	description = "Seaman's ring.";
 	text[1] = NAME_Prot_Edge;
 	count[1] = 2;
 	text[2] = NAME_Prot_Point;
@@ -433,7 +433,7 @@ instance ItRi_Prot_Total_01(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Total_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо непобедимости";
+	description = "Ring of Inconquerability";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Ri_TProtEdge;
 	text[2] = NAME_Prot_Point;
@@ -482,7 +482,7 @@ instance ItRi_Prot_Total_02(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Total_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо неуязвимости";
+	description = "Ring of Invincibility";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Ri_TProtEdge02;
 	text[2] = NAME_Prot_Point;
@@ -531,7 +531,7 @@ instance ItRi_Dex_01(C_Item)
 	on_unequip = UnEquip_ItRi_Dex_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо мастерства";
+	description = "Ring of Skill";
 	text[2] = NAME_Bonus_Dex;
 	count[2] = Ri_Dex;
 	text[5] = NAME_Value;
@@ -566,7 +566,7 @@ instance ItRi_Dex_02(C_Item)
 	on_unequip = UnEquip_ItRi_Dex_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо ловкости";
+	description = "Ring of Dexterity";
 	text[2] = NAME_Bonus_Dex;
 	count[2] = Ri_Dex02;
 	text[5] = NAME_Value;
@@ -636,7 +636,7 @@ instance ItRi_HP_02(C_Item)
 	on_unequip = UnEquip_ItRi_Hp_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо живости";
+	description = "Ring of Liveliness";
 	text[2] = NAME_Bonus_HpMax;
 	count[2] = Ri_Hp02;
 	text[5] = NAME_Value;
@@ -671,7 +671,7 @@ instance ItRi_Str_01(C_Item)
 	on_unequip = UnEquip_ItRi_Str_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо могущества";
+	description = "Ring of Force";
 	text[2] = NAME_Bonus_Str;
 	count[2] = Ri_Strg;
 	text[5] = NAME_Value;
@@ -706,7 +706,7 @@ instance ItRi_Str_02(C_Item)
 	on_unequip = UnEquip_ItRi_Str_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо силы";
+	description = "Ring of Strength";
 	text[2] = NAME_Bonus_Str;
 	count[2] = Ri_Strg02;
 	text[5] = NAME_Value;
@@ -741,7 +741,7 @@ instance ItRi_Mana_01(C_Item)
 	on_unequip = UnEquip_ItRi_Mana_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо магии";
+	description = "Ring of Magic";
 	text[2] = NAME_Bonus_ManaMax;
 	count[2] = Ri_Mana;
 	text[5] = NAME_Value;
@@ -776,7 +776,7 @@ instance ItRi_Mana_02(C_Item)
 	on_unequip = UnEquip_ItRi_Mana_02;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо астральной силы";
+	description = "Ring of Astral Power";
 	text[2] = NAME_Bonus_ManaMax;
 	count[2] = Ri_Mana02;
 	text[5] = NAME_Value;
@@ -811,7 +811,7 @@ instance ItRi_Hp_Mana_01(C_Item)
 	on_unequip = UnEquip_ItRi_Hp_Mana_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо просвещения";
+	description = "Ring of Enlightenment";
 	text[2] = NAME_Bonus_HpMax;
 	count[2] = Ri_HpMana_Hp;
 	text[3] = NAME_Bonus_ManaMax;
@@ -850,7 +850,7 @@ instance ItRi_Dex_Strg_01(C_Item)
 	on_unequip = UnEquip_ItRi_Dex_Strg_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо мощи";
+	description = "Ring of Power";
 	text[2] = NAME_Bonus_Str;
 	count[2] = 4;
 	text[3] = NAME_Bonus_Dex;

@@ -1,7 +1,7 @@
 
 instance NONE_ADDON_114_Lance_ADW(Npc_Default)
 {
-	name[0] = "Ланс";
+	name[0] = "Lance";
 	guild = GIL_NONE;
 	id = 114;
 	voice = 3;

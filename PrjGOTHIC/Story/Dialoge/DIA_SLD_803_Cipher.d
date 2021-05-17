@@ -439,8 +439,8 @@ func void DIA_Cipher_KrautPaket_Info()
 	Npc_RemoveInvItems(self,ItMi_Joint,10);
 	CreateInvItems(other,ItMi_Joint,10);
 	CreateInvItems(other,ItMi_Gold,200);
-	AI_PrintScreen("10 косяков получено",-1,43,FONT_ScreenSmall,3);
-	AI_PrintScreen("200 золотых получено",-1,40,FONT_ScreenSmall,3);
+	AI_PrintScreen("Received: 10 stalks of swampweed",-1,43,FONT_ScreenSmall,3);
+	AI_PrintScreen("Received: 200 gold",-1,40,FONT_ScreenSmall,3);
 	AI_Output(self,other,"DIA_Cipher_KrautPaket_07_05");	//First let me roll a few...
 	Npc_RemoveInvItems(self,ItMi_HerbPaket,1);
 	CreateInvItems(self,ItMi_Joint,40);

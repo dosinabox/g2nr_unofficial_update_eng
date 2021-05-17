@@ -1,7 +1,7 @@
 
 instance BDT_10014_Addon_Thorus(Npc_Default)
 {
-	name[0] = "Торус";
+	name[0] = "Thorus";
 	guild = GIL_BDT;
 	id = 10014;
 	voice = 12;

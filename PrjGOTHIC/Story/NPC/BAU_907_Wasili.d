@@ -1,7 +1,7 @@
 
 instance BAU_907_Wasili(Npc_Default)
 {
-	name[0] = "Василий";
+	name[0] = "Wasili";
 	guild = GIL_BAU;
 	id = 907;
 	voice = 1;

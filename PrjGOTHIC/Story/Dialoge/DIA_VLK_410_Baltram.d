@@ -527,8 +527,8 @@ func void DIA_Baltram_HaveYourWarez_Info()
 		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_04");	//Hmm, it isn't the best quality, but in these times you can't be too picky.
 		Npc_RemoveInvItems(other,ItFo_Bacon,10);
 		Npc_RemoveInvItems(other,ItFo_Wine,10);
-		AI_PrintScreen("10 предметов отдано (Окорок)",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
-		AI_PrintScreen("10 предметов отдано (Вино)",-1,40,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Ham (10)",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Wine (10)",-1,40,FONT_ScreenSmall,2);
 		MIS_BaltramTrade = LOG_SUCCESS;
 		B_GivePlayerXP (XP_BaltramTrade);
 		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_05");	//Now there's nothing that keeps us from doing business together.

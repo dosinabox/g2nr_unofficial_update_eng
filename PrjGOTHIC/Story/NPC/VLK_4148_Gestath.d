@@ -1,7 +1,7 @@
 
 instance VLK_4148_Gestath(Npc_Default)
 {
-	name[0] = "Гестат";
+	name[0] = "Gestath";
 	guild = GIL_OUT;
 	id = 4148;
 	voice = 9;

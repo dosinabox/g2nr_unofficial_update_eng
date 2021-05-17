@@ -502,8 +502,8 @@ func void DIA_Raoul_TROLLFELL_ja()
 	AI_Output (self, other, "DIA_Raoul_TROLLFELL_ja_01_01");	//It was a pleasure.
 	CreateInvItems(other,ItPo_Health_03,3);
 	CreateInvItems(other,ItMi_Gold,500);
-	AI_PrintScreen("3 предметов получено (Лечебный эликсир)",-1,40,FONT_ScreenSmall,4);
-	AI_PrintScreen("500 золотых получено",-1,43,FONT_ScreenSmall,4);
+	AI_PrintScreen("Received: Elixir of Healing (3)",-1,40,FONT_ScreenSmall,4);
+	AI_PrintScreen("Received: 500 gold",-1,43,FONT_ScreenSmall,4);
 	Info_ClearChoices(DIA_Raoul_TROLLFELL);
 };
 

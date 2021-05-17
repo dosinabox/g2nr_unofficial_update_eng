@@ -1,7 +1,7 @@
 
 instance BAU_941_Kati(Npc_Default)
 {
-	name[0] = "Кати";
+	name[0] = "Kati";
 	guild = GIL_OUT;
 	id = 941;
 	voice = 16;

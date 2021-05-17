@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Addon_Alligator(C_Npc)
 {
-	name[0] = "Аллигатор";
+	name[0] = "Alligator";
 	guild = GIL_ALLIGATOR;
 	aivar[AIV_MM_REAL_ID] = ID_ALLIGATOR;
 	level = 42;

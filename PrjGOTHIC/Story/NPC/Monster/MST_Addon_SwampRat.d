@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Swamprat(C_Npc)
 {
-	name[0] = "Болотная крыса";
+	name[0] = "Swamp Rat";
 	guild = GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID] = ID_Swamprat;
 	level = 12;

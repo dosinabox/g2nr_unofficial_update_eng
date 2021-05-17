@@ -1,7 +1,7 @@
 
 instance VLK_436_Sonja(Npc_Default)
 {
-	name[0] = "Соня";
+	name[0] = "Sonja";
 	guild = GIL_VLK;
 	id = 436;
 	voice = 16;

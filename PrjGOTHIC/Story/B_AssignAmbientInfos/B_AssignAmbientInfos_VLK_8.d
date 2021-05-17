@@ -26,7 +26,7 @@ instance DIA_VLK_8_JOIN(C_Info)
 	condition = DIA_VLK_8_JOIN_Condition;
 	information = DIA_VLK_8_JOIN_Info;
 	permanent = TRUE;
-	description = "Я хочу стать гражданином этого города!";
+	description = "I want to become a citizen of this town!";
 };
 
 
@@ -40,11 +40,11 @@ func int DIA_VLK_8_JOIN_Condition()
 
 func void DIA_VLK_8_JOIN_Info()
 {
-	AI_Output(other,self,"DIA_VLK_8_JOIN_15_00");	//Я хочу стать гражданином этого города!
-	AI_Output(self,other,"DIA_VLK_8_JOIN_08_01");	//А мне ты зачем об этом говоришь? Иди к одному из мастеров-ремесленников в нижней части города. Может быть, если тебе повезет, кому-нибудь из них нужен ученик.
-	AI_Output(self,other,"DIA_VLK_8_JOIN_08_02");	//В противном случае, тебе придется обратиться к губернатору, чтобы он зарегистрировал тебя как гражданина.
-	AI_Output(self,other,"DIA_VLK_8_JOIN_08_03");	//Но сейчас ты можешь забыть об этом. С тех пор, как пришли паладины, губернатор больше ничего не решает.
-	AI_Output(self,other,"DIA_VLK_8_JOIN_08_04");	//А у их главы, лорда Хагена, уж точно нет времени на такие пустяки.
+	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00");	//I want to become a citizen of this town!
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01");	//And why are you telling me that? Go to one of the master craftsmen in the lower part of the city. Maybe, if you're lucky, one of them is looking for an apprentice.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02");	//Otherwise, you'll have to go to the governor and have yourself registered as a citizen.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03");	//But right now, you can forget that. The governor isn't in charge any more, since the paladins came.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04");	//And their leader, Lord Hagen, is guaranteed not to have time for things like that.
 };
 
 
@@ -54,7 +54,7 @@ instance DIA_VLK_8_PEOPLE(C_Info)
 	condition = DIA_VLK_8_PEOPLE_Condition;
 	information = DIA_VLK_8_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Кто самые влиятельные граждане этого города?";
+	description = "Who are the most important citizens in this town?";
 };
 
 
@@ -65,8 +65,8 @@ func int DIA_VLK_8_PEOPLE_Condition()
 
 func void DIA_VLK_8_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_VLK_8_PEOPLE_15_00");	//Кто самые влиятельные граждане этого города?
-	AI_Output(self,other,"DIA_VLK_8_PEOPLE_08_01");	//Кроме паладинов... мастера-ремесленники из нижней части города. Они очень влиятельны.
+	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00");	//Who are the most important citizens in this town?
+	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01");	//Besides the paladins... the master craftsmen in the lower part of town. They are all very important.
 };
 
 
@@ -76,7 +76,7 @@ instance DIA_VLK_8_LOCATION(C_Info)
 	condition = DIA_VLK_8_LOCATION_Condition;
 	information = DIA_VLK_8_LOCATION_Info;
 	permanent = TRUE;
-	description = "Что интересного здесь можно увидеть?";
+	description = "What interesting things are there to see here?";
 };
 
 
@@ -87,10 +87,10 @@ func int DIA_VLK_8_LOCATION_Condition()
 
 func void DIA_VLK_8_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_VLK_8_LOCATION_15_00");	//Что интересного здесь можно увидеть?
-	AI_Output(self,other,"DIA_VLK_8_LOCATION_08_01");	//Большой корабль, на котором паладины приплыли в гавань. Это огромное судно! Тебе обязательно нужно взглянуть на него.
-	AI_Output(self,other,"DIA_VLK_8_LOCATION_08_02");	//Но я сомневаюсь, что они пустят тебя на борт. Паладины охраняют этот корабль лучше, чем королевские бриллианты.
-	AI_Output(self,other,"DIA_VLK_8_LOCATION_08_03");	//Что неудивительно. Это единственное морское судно на многие мили вокруг.
+	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00");	//What interesting things are there to see here?
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01");	//The big ship that the paladins came in is in the harbor. It's an enormous boat! You have to take a look at it.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02");	//But I can't imagine that they'll let you on board. The paladins guard the ship like the crown jewels.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03");	//No wonder. It's also the only sea-worthy vessel anchored anywhere far and wide.
 };
 
 
@@ -100,7 +100,7 @@ instance DIA_VLK_8_STANDARD(C_Info)
 	condition = DIA_VLK_8_STANDARD_Condition;
 	information = DIA_VLK_8_STANDARD_Info;
 	permanent = TRUE;
-	description = "Что новенького?";
+	description = "What's new?";
 };
 
 
@@ -111,13 +111,13 @@ func int DIA_VLK_8_STANDARD_Condition()
 
 func void DIA_VLK_8_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_VLK_8_STANDARD_15_00");	//Что новенького?
-	if(Kapitel == 1)
+	AI_Output (other, self, "DIA_VLK_8_STANDARD_15_00");	//What's new?
+	if (Kapitel == 1)
 	{
-		AI_Output(self,other,"DIA_Addon_VLK_8_STANDARD_08_00");	//Все обеспокоены.
-		AI_Output(self,other,"DIA_Addon_VLK_8_STANDARD_08_01");	//Мало было того, что паладины обосновались здесь, как дома, теперь еще постоянно пропадают люди самым странным образом.
-		AI_Output(self,other,"DIA_Addon_VLK_8_STANDARD_08_02");	//Пора бы ополчению, наконец, сделать с этим что-нибудь.
-		if(SC_HearedAboutMissingPeople == FALSE)
+		AI_Output (self, other, "DIA_Addon_VLK_8_STANDARD_08_00");	//Everyone has been worried lately.
+		AI_Output (self, other, "DIA_Addon_VLK_8_STANDARD_08_01");	//It's not enough that the paladins have made themselves at home here, now people are constantly disappearing in the strangest fashion.
+		AI_Output (self, other, "DIA_Addon_VLK_8_STANDARD_08_02");	//It's about time the militia finally did something about it.
+		if (SC_HearedAboutMissingPeople == FALSE)
 		{
 			Log_CreateTopic(TOPIC_Addon_WhoStolePeople,LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople,LOG_Running);
@@ -127,22 +127,22 @@ func void DIA_VLK_8_STANDARD_Info()
 	};
 	if(Kapitel == 2)
 	{
-		AI_Output(self,other,"DIA_VLK_8_STANDARD_08_01");	//Все ждут, когда паладины объявят, зачем они сюда прибыли. Я полагаю, что из-за орков. Они, наверняка, скоро нападут на нас!
-		AI_Output(self,other,"DIA_VLK_8_STANDARD_08_02");	//Паладины, может быть, и благословлены Инносом, но когда орды орков появятся здесь, я думаю, нам всем несдобровать.
+		AI_Output (self, other, "DIA_VLK_8_STANDARD_08_01");	//Everyone is waiting for the paladins to announce why they're really here. I suspect it's because of the orcs. They're sure to attack soon!
+		AI_Output (self, other, "DIA_VLK_8_STANDARD_08_02");	//The paladins may have the blessing of Innos, but when the orc hordes show up here, that's it for us.
 	};
 	if(Kapitel == 3)
 	{
-		AI_Output(self,other,"DIA_VLK_8_STANDARD_08_03");	//Говорят, что паладины здесь только затем, чтобы выковырять из острова всю руду. Для войны на материке, как они говорят.
-		AI_Output(self,other,"DIA_VLK_8_STANDARD_08_04");	//Ты понимаешь, что это означает? Король даже пальцем не пошевелит, если мы все тут погибнем во время атаки орков.
-		AI_Output(self,other,"DIA_VLK_8_STANDARD_08_05");	//Я попробую попасть на корабль, когда паладины будут поднимать якорь.
+		AI_Output (self, other, "DIA_VLK_8_STANDARD_08_03");	//They say the paladins are only here to get all the ore on the island. For the war on the mainland, they say.
+		AI_Output (self, other, "DIA_VLK_8_STANDARD_08_04");	//Do you know what that means? The king doesn't give a damn if we all die miserably when the orcs attack.
+		AI_Output (self, other, "DIA_VLK_8_STANDARD_08_05");	//I'll make sure that I'm on the ship when the paladins weigh anchor.
 	};
 	if(Kapitel == 4)
 	{
-		AI_Output(self,other,"DIA_VLK_8_STANDARD_08_06");	//Говорят, что орки прилетят сюда на огромных драконах, размером с половину города! У нас нет ни единого шанса!
+		AI_Output (self, other, "DIA_VLK_8_STANDARD_08_06");	//They say the orcs are riding here on dragons that are as big as half the city! We don't stand a chance!
 	};
 	if(Kapitel >= 5)
 	{
-		AI_Output(self,other,"DIA_VLK_8_STANDARD_08_07");	//Говорят, что все драконы уничтожены. Неужели это правда?
+		AI_Output (self, other, "DIA_VLK_8_STANDARD_08_07");	//People are saying that the dragons have been defeated. Could it be true?
 	};
 };
 

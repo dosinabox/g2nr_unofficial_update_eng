@@ -10,29 +10,29 @@ func void Use_Bookstand_Addon_BL_S1()
 		Doc_SetPage(nDocID,1,"Book_Wood_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Шахта:");
+		Doc_PrintLine(nDocID,0,"Mine");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Кримсон: получено и переплавлено 79 золотых самородков");
+		Doc_PrintLines(nDocID,0,"Crimson: 79 gold nuggets received and melted down");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Скатти: получено товаров на 250 золотых");
+		Doc_PrintLines(nDocID,0,"Scatty: Goods received for 250 gold");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Гараз: получено 6 золотых самородков");
+		Doc_PrintLines(nDocID,0,"Garaz: 6 gold nuggets received");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Все стражники: получено 9 золотых самородков");
+		Doc_PrintLines(nDocID,0,"All guards: 9 gold nuggets received");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
-		Doc_PrintLine(nDocID,1,"Лагерь:");
+		Doc_PrintLine(nDocID,1,"Camp:");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Стража Ворона: 25 золотых");
+		Doc_PrintLines(nDocID,1,"Raven's guards: 25 gold pieces");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Финн: 60 золотых");
-		Doc_PrintLines(nDocID,1,"Леннар: 40 золотых");
-		Doc_PrintLines(nDocID,1,"Эмилио: 50 золотых");
+		Doc_PrintLines (nDocID, 1, "Finn: 60 gold pieces");
+		Doc_PrintLines (nDocID, 1, "Lennar: 40 gold pieces");
+		Doc_PrintLines (nDocID, 1, "Emilio: 50 gold pieces");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Остальные: 20 золотых");
-		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Хуно, Фиск, Снаф: каждому выдано в соответствии с товарами");
-		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Охотники: на усмотрение начальника! Франко получил 7 золотых");
+		Doc_PrintLines (nDocID, 1, "Others: 20 gold pieces");
+		Doc_PrintLine (nDocID, 1, "");
+		Doc_PrintLines (nDocID, 1, "Huno, Fisk, Snaf: each according to goods");
+		Doc_PrintLine (nDocID, 1, "");
+		Doc_PrintLines (nDocID, 1, "Hunters: Let the leader handle this! Franco received 7 gold pieces");
 		Doc_Show(nDocID);
 	};
 };
@@ -58,48 +58,48 @@ func void Use_BookstandMaya()
 {
 	if(BookstandMayaArt == 1)
 	{
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"... так как только СТРАЖИ МЕРТВЫХ могут вызывать предков.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Их отсутствие - большая потеря для нас. Без совета предков нам придется полагаться только на себя.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"ЦЕЛИТЕЛЯМ было поручено закрыть портал и уничтожить ключ. Одному Аданосу ведомо, что случилось с ними и удалось ли им достичь своей цели.");
-		Doc_SetMargins(StPl_nDocID,-1,30,20,275,20,1);
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"КАСТА ВОИНОВ уничтожена гневом Аданоса. Сердце принца-воина разбито.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Только оставшиеся ЖРЕЦЫ вселяют в нас надежду и постоянно проповедуют о возрождении нашего когда-то великого города.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Но мы, УЧЕНЫЕ, знаем горькую правду. ЯРКЕНДАР пал и скоро растворится в реке времени.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "...because only the GUARDIANS OF THE DEAD could call the ancestors.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "Their abscence hurts deeply. Without the counsel of the ancestors, we are at the mercy of our people.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "The HEALERS were sent to seal the portal and destroy the key. Only Adanos knows what happened to them or if they even achieved their goal.");
+		Doc_SetMargins (StPl_nDocID, -1, 30, 20, 275, 20, 1);
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "The WARRIOR CASTE has been destroyed by the wrath of Adanos. The heart of the old warrior prince is broken.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "Only the remaining PRIESTS raise hopes and preach constantly of the rebirth of our once magnificent city.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "However, we SCHOLARS know the bitter truth. JHARKENDAR has fallen and will fade in the river of time.");
 	}
 	else if(BookstandMayaArt == 2)
 	{
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"РАДЕМЕС заточен навеки в храме АДАНОСА, но меч не лишен своей силы.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Его влияние стало слишком велико. Убийства на улицах не остановить.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Гнев АДАНОСА положил конец всему. Море поднялось и затопило ЯРКЕНДАР.");
-		Doc_SetMargins(StPl_nDocID,-1,30,20,275,20,1);
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Почти не пострадали только храмы и сооружения, находившиеся на возвышенностях.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"У тех немногих, кому удалось выжить в этой катастрофе, недостаточно сил, чтобы восстановить город.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Судьба ЯРКЕНДАРА предрешена.");
-		if(SC_Knows_WeaponInAdanosTempel == FALSE)
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "RHADEMES was imprisoned forever in the temple of ADANOS, but the power of the sword was not broken.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "Its influence had become too great. The killings in the streets would not stop.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "The wrath of ADANOS ended everything. The sea raised itself over JHARKENDAR and flooded the whole city.");
+		Doc_SetMargins (StPl_nDocID, -1, 30, 20, 275, 20, 1);
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "Only the temples and structures in higher places were left almost untouched.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "The few who survived this catastrophe no longer had the strength to rebuild the city.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "And thus the fate of JHARKENDAR was sealed.");
+		if (SC_Knows_WeaponInAdanosTempel == FALSE)
 		{
 			B_GivePlayerXP(XP_Ambient);
 			SC_Knows_WeaponInAdanosTempel = TRUE;
@@ -107,57 +107,57 @@ func void Use_BookstandMaya()
 	}
 	else if(BookstandMayaArt == 3)
 	{
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Возраст КУАРХОДРОНА не позволял ему возглавлять нашу армию. И жрецы настояли на своем праве приказывать ему.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Они повелели ему покинуть свой штаб и передать меч преемнику.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Преемника должен был определить Совет Пяти. Однако каста воинов лишила совет права выбора.");
-		Doc_SetMargins(StPl_nDocID,-1,30,20,275,20,1);
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Воины больше не прислушивались к Совету Пяти, и их новым лидером был выбран его сын РАДЕМЕС.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Опозоренный и лишенный уверенности в своих силах, КУАРХОДРОН решил подчиниться им.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Он передал меч своему сыну в надежде, что тот сможет держать его такой же твердой рукой, как когда-то он сам.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "QUARHODRON's age made it impossible for him to lead our army. And so the priests insisted on their right of command over him.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "They instructed him to resign his office and pass on the sword.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "The Council of Five was to determine his successor. However, the warrior caste denied the council a choice.");
+		Doc_SetMargins (StPl_nDocID, -1, 30, 20, 275, 20, 1);
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "The warriors would no longer submit to the Council of Five and selected his son RHADEMES as their new leader.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "Out of pride and confidence in his own flesh and blood, QUARHODRON decided to give in to them.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "He delivered the sword to his son in the hope that he would wield it with the same strong hand that he had himself.");
 	}
 	else if(BookstandMayaArt == 4)
 	{
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Но РАДЕМЕС был слаб. Воля меча взяла верх над ним и сделала его своим рабом.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Даже целители не смогли облегчить боль и страдания, которые он принес своему народу, ослепленный мечом.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Меч быстро осознал, что этот народ слишком слаб, чтобы помешать его планам.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Только сила наших предков еще могла противостоять ему.");
-		Doc_PrintLine(StPl_nDocID,0,"");
-		Doc_SetMargins(StPl_nDocID,-1,30,20,275,20,1);
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Но так как РАДЕМЕС изгнал или убил всех стражей мертвых, он лишил нас надежды избавления от этого Зла.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"И тогда, когда не стало ни одного стража мертвых, оставшиеся четыре предводителя нашего народа, лишенные своей былой власти, приняли горькое решение сдать ЯРКЕНДАР.");
-		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"На улицах шла резня, когда целители отправились в путь, чтобы навечно закрыть единственный вход в нашу долину.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "RHADEMES was weak. The will of the sword overcame him and made him its tool.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "Not even the healers could alleviate the suffering and the atrocities he brought upon our people in his blindness.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "The sword quickly recognized that the people were too weak to thwart its plans.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_PrintLines (StPl_nDocID, 0, "Only the power of our ancestors could still withstand it.");
+		Doc_PrintLine (StPl_nDocID, 0, "");
+		Doc_SetMargins (StPl_nDocID, -1, 30, 20, 275, 20, 1);
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "And so it had RHADEMES banish or execute all of the guardians of the dead, thus shattering all hope of release from this Evil.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "Thus, not a single guardian of the dead was left when the remaining four disempowered leaders of our people made the bitter decision to surrender JHARKENDAR.");
+		Doc_PrintLine (StPl_nDocID, 1, "");
+		Doc_PrintLines (StPl_nDocID, 1, "War raged in the streets as the healers set out to seal the only entrance to our valley forever.");
 	}
 	else if(BookstandMayaArt == 5)
 	{
-		Doc_PrintLines(StPl_nDocID,0,"В этих залах КУАРХОДРОН, верховный жрец КАРДИМОН и я обсуждали способы уничтожить РАДЕМЕСА и меч.");
+		Doc_PrintLines(StPl_nDocID,0,"In these halls QUARHODRON, the high priest KHARDIMON and I myself discussed a way to defeat RHADEMES and the sword.");
 		Doc_PrintLines(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"КУАРХОДРОН и КАРДИМОН считали, что РАДЕМЕСА можно победить в бою, если объединить все оставшиеся силы. Но я слишком хорошо знал силу этого меча, и понимал, что это невозможно.");
+		Doc_PrintLines(StPl_nDocID,0,"QUARHODRON and KHARDIMON were of the opinion that RHADEMES could be defeated in battle with united strength. But I knew the power of the sword too well to believe that possible.");
 		Doc_PrintLines(StPl_nDocID,0,"");
-		Doc_PrintLines(StPl_nDocID,0,"Поэтому я использовал свое право вето на решения остальных. Я решил, что РАДЕМЕСА нужно заманить в ловушку.");
+		Doc_PrintLines(StPl_nDocID,0,"So I made use of my right to veto the decision of the others. I decided instead to overcome RHADAMES with a ruse.");
 		Doc_SetMargins(StPl_nDocID,-1,30,20,275,20,1);
-		Doc_PrintLines(StPl_nDocID,1,"КУАРХОДРОН подчинился этому решению Совета. Он вошел в храм Аданоса и послал за своим сыном.");
+		Doc_PrintLines(StPl_nDocID,1,"QUARHODRON obeyed the decison of the Council. He proceeded to the temple of Adanos and sent for his son.");
 		Doc_PrintLines(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Ненависть его сына приняла такие формы, что РАДЕМЕС ворвался в храм в дикой ярости, чтобы убить своего отца.");
+		Doc_PrintLines(StPl_nDocID,1,"His son's hatred had taken such form that RHADEMES stormed the temple in a wild frenzy to execute his father.");
 		Doc_PrintLines(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"Он понял наши планы, когда было уже слишком поздно.");
+		Doc_PrintLines(StPl_nDocID,1,"He only recognized our plans when it was too late for him.");
 		Doc_PrintLines(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"КУАРХОДРОН закрыл за ним священные покои нашего храма и РАДЕМЕС оказался навечно заперт в этой ловушке.");
+		Doc_PrintLines(StPl_nDocID,1,"QUARHODRON closed the holy chambers of the temple behind him and RHADEMES was trapped in the temple for all time.");
 	}
 	else if(BookstandMayaArt == 6)
 	{
@@ -170,7 +170,7 @@ func void Use_BookstandMaya()
 		Doc_PrintLine(StPl_nDocID,1,"");
 		Doc_PrintLines(StPl_nDocID,1,"...");
 		Doc_PrintLine(StPl_nDocID,1,"");
-		Doc_PrintLines(StPl_nDocID,1,"... отправились в путь, чтобы навечно закрыть ...");
+		Doc_PrintLines(StPl_nDocID,1,"... отправились в путь, чтобы навечно закрыть ...@@@");
 	};
 };
 

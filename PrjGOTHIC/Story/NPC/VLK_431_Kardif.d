@@ -1,7 +1,7 @@
 
 instance VLK_431_Kardif(Npc_Default)
 {
-	name[0] = "Кардиф";
+	name[0] = "Kardif";
 	guild = GIL_VLK;
 	id = 431;
 	voice = 14;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Dragon_Swamp(C_Npc)
 {
-	name[0] = "Болотный дракон";
+	name[0] = "Swamp Dragon";
 	guild = GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID] = ID_DRAGON_SWAMP;
 	level = 300;
@@ -41,7 +41,7 @@ func void B_SetVisuals_Dragon_Swamp()
 
 instance Dragon_Swamp(Mst_Default_Dragon_Swamp)
 {
-	name[0] = "Пандродор";
+	name[0] = "Pandrodor";
 	flags = NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Swamp();
 	Npc_SetToFistMode(self);

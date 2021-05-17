@@ -1,7 +1,7 @@
 
 instance SLD_808_Jarvis(Npc_Default)
 {
-	name[0] = "Джарвис";
+	name[0] = "Jarvis";
 	guild = GIL_SLD;
 	id = 808;
 	voice = 4;

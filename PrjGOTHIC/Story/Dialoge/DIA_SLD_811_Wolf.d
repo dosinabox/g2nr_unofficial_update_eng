@@ -171,7 +171,7 @@ func void B_BuildLearnDialog_Wolf()
 
 func void B_Wolf_YouAreBetterNow()
 {
-	AI_Output(self,other,"DIA_Wolf_Teach_BACK_08_00");	//here you go. Your aim is more accurate already.
+	AI_Output(self,other,"DIA_Wolf_Teach_BACK_08_00");	//Here you go. Your aim is more accurate already.
 };
 
 func void B_Wolf_TeachComment(var int skill)
@@ -606,7 +606,7 @@ func int DIA_Wolf_KAP5_EXIT_Condition()
 
 func void DIA_Wolf_KAP5_EXIT_Info()
 {
-	AI_Output(self,other,"DIA_Wolf_PERMKAP3_08_01");	//Мой работодатель мертв. Пусть земля ему будет пухом. Кстати, я всегда хотел иметь свою собственную ферму.
+	AI_Output(self,other,"DIA_Wolf_PERMKAP3_08_01");	//My employer is dead. Oh well. I always wanted to have my own farm.
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self,"BengarDead");
 	Wolf_SaidNo = FALSE;

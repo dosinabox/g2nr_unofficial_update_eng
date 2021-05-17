@@ -1,7 +1,7 @@
 
 instance BAU_944_Ehnim(Npc_Default)
 {
-	name[0] = "Ёним";
+	name[0] = "Ehnim";
 	guild = GIL_NONE;
 	id = 944;
 	voice = 12;

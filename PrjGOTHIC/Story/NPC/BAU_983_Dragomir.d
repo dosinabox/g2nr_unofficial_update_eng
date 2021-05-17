@@ -1,7 +1,7 @@
 
 instance BAU_983_Dragomir(Npc_Default)
 {
-	name[0] = "Драгомир";
+	name[0] = "Dragomir";
 	guild = GIL_OUT;
 	id = 983;
 	voice = 12;

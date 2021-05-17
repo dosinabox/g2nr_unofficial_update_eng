@@ -46,21 +46,21 @@ func int DIA_Dragon_Fire_Island_Hello_Condition()
 
 func void DIA_Dragon_Fire_Island_Hello_Info()
 {
-	AI_Output(self,other,"DIA_Dragon_Fire_Island_Hello_20_00");	//Стой, человек. Все мои чувства говорят мне, что убийца моей плоти и крови стоит передо мной.
-	AI_Output(other,self,"DIA_Dragon_Fire_Island_Hello_15_01");	//Да? Кого ты назвал убийцей, ты, порождение ада?
-	if((hero.guild == GIL_DJG) && (DragonEggCounter >= 7))
+	AI_Output (self, other, "DIA_Dragon_Fire_Island_Hello_20_00");	//Stay, human. All of my senses tell me that the murderer of my own flesh and blood stands before me.
+	AI_Output (other, self, "DIA_Dragon_Fire_Island_Hello_15_01");	//Really? Who are you calling a murderer, you hellspawn?
+	if ((hero.guild == GIL_DJG) && (DragonEggCounter >= 7))
 	{
-		AI_Output(self,other,"DIA_Dragon_Fire_Island_Hello_20_02");	//Тебе недостаточно того, что ты уничтожил почти всех наших отпрысков?
+		AI_Output (self, other, "DIA_Dragon_Fire_Island_Hello_20_02");	//Was it not enough for you that you destroyed almost all of our offspring?
 	};
-	AI_Output(self,other,"DIA_Dragon_Fire_Island_Hello_20_03");	//На твоей совести также мой брат Феоматар, и ты заплатишь за это.
-	if((hero.guild == GIL_DJG) && (DragonEggCounter >= 7))
+	AI_Output (self, other, "DIA_Dragon_Fire_Island_Hello_20_03");	//You have my brother Feomathar on your conscience, and you will pay for that.
+	if ((hero.guild == GIL_DJG) && (DragonEggCounter >= 7))
 	{
-		AI_Output(other,self,"DIA_Dragon_Fire_Island_Hello_15_04");	//Я также собираюсь добраться до остальных из вашего проклятого племени.
-		AI_Output(self,other,"DIA_Dragon_Fire_Island_Hello_20_05");	//Ах-х. Я с огромным удовольствием сожгу тебя заживо.
+		AI_Output (other, self, "DIA_Dragon_Fire_Island_Hello_15_04");	//I'll get to the rest of your disgusting brood as well.
+		AI_Output (self, other, "DIA_Dragon_Fire_Island_Hello_20_05");	//Arrh. It will be a pleasure for me to burn you alive.
 	};
-	AI_Output(other,self,"DIA_Dragon_Fire_Island_Hello_15_06");	//Хватит попусту сотрясать воздух. Давай перейдем к делу.
-	AI_Output(self,other,"DIA_Dragon_Fire_Island_Hello_20_07");	//Ты зашел слишком далеко, жалкий человечишка, но тебе не уйти отсюда живым.
-	B_LogEntry(TOPIC_HallenVonIrdorath,"Еще один огненный дракон. Я уже по горло сыт этими тварями. Мне всего лишь нужно перебраться через пропасть, что лежит за этим огненным драконом.");
+	AI_Output (other, self, "DIA_Dragon_Fire_Island_Hello_15_06");	//Stop making so much noise. Let's get down to business.
+	AI_Output (self, other, "DIA_Dragon_Fire_Island_Hello_20_07");	//You have come far, little human, but you will never leave these halls alive.
+	B_LogEntry(TOPIC_HallenVonIrdorath,"Another fire dragon. I'm getting fed to the teeth with those beasts. All I want is to get across the chasm that's opening behind the fire dragon.");
 	B_EndDragonTalk();
 };
 

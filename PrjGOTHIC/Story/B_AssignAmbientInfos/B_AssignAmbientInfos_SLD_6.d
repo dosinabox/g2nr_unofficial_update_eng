@@ -26,7 +26,7 @@ instance DIA_SLD_6_JOIN(C_Info)
 	condition = DIA_SLD_6_JOIN_Condition;
 	information = DIA_SLD_6_JOIN_Info;
 	permanent = TRUE;
-	description = "Я хочу присоединиться к вам!";
+	description = "I want to join you!";
 };
 
 
@@ -40,18 +40,18 @@ func int DIA_SLD_6_JOIN_Condition()
 
 func void DIA_SLD_6_JOIN_Info()
 {
-	AI_Output(other,self,"DIA_SLD_6_JOIN_15_00");	//Я хочу присоединиться к вам!
-	if(MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
+	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00");	//I want to join you!
+	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output(self,other,"DIA_SLD_6_JOIN_06_01");	//Я слышал об этом деле с ополчением. Торлоф говорит, что ты прошел испытание. Ты получишь мой голос.
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_01");	//I have heard of that matter regarding the militia. Torlof says you have passed the test. You've got my vote.
 	}
 	else if(MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
-		AI_Output(self,other,"DIA_SLD_6_JOIN_06_02");	//Обирать фермеров - это одно, но вступать в бой с ополчением - это совсем другое. Если Онар найдет место для тебя, я буду не против.
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_02");	//Fleecing the farmers is one thing, but picking a fight with the militia is another. But if Onar can use you, that's fine with me.
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_SLD_6_JOIN_06_03");	//Поговори с Торлофом. Он покажет тебе... (смеется)
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_03");	//Talk to Torlof. He'll show you... (laughs)
 	};
 };
 
@@ -62,7 +62,7 @@ instance DIA_SLD_6_PEOPLE(C_Info)
 	condition = DIA_SLD_6_PEOPLE_Condition;
 	information = DIA_SLD_6_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Кто заправляет здесь?";
+	description = "Who's in charge here?";
 };
 
 
@@ -80,10 +80,10 @@ func int DIA_SLD_6_PEOPLE_Condition()
 
 func void DIA_SLD_6_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_SLD_6_PEOPLE_15_00");	//Кто заправляет здесь?
-	AI_Output(self,other,"DIA_SLD_6_PEOPLE_06_01");	//Эта ферма принадлежит Онару, если ты это имеешь в виду. Но нами командует Ли.
-	AI_Output(self,other,"DIA_SLD_6_PEOPLE_06_02");	//Он был генералом в королевской армии. Но он больше не на дружеской ноге с королем. (смеется)
-	AI_Output(self,other,"DIA_SLD_6_PEOPLE_06_03");	//Запомни его имя. Если у тебя возникнут проблемы здесь, он, пожалуй, единственный, кто может решить их. Все остальные просто снимут с тебя шкуру.
+	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00");	//Who's in charge here?
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01");	//The farm belongs to Onar, if that's what you mean. But Lee is our leader.
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02");	//He used to be a general in the royal army. But he's not all that chummy with the king any more. (laughs)
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03");	//Remember his name. If you get into trouble here, he's probably the only one who can take care of it. Anyone else will simply have your hide.
 };
 
 
@@ -93,7 +93,7 @@ instance DIA_SLD_6_LOCATION(C_Info)
 	condition = DIA_SLD_6_LOCATION_Condition;
 	information = DIA_SLD_6_LOCATION_Info;
 	permanent = TRUE;
-	description = "Вы охраняете фермеров?";
+	description = "Are you guarding the farmers?";
 };
 
 
@@ -107,9 +107,9 @@ func int DIA_SLD_6_LOCATION_Condition()
 
 func void DIA_SLD_6_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_SLD_6_LOCATION_15_00");	//Вы охраняете фермеров?
-	AI_Output(self,other,"DIA_SLD_6_LOCATION_06_01");	//Мы охраняем не только ферму Онара, но и всю эту долину.
-	AI_Output(self,other,"DIA_SLD_6_LOCATION_06_02");	//Онар хочет, чтобы мы жестко пресекали любые беспорядки. Так что постарайся вести себя как положено.
+	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00");	//Are you guarding the farmers?
+	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_01");	//We guard not only Onar's farm, but the entire valley here.
+	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_02");	//Onar wants us to come down hard on anyone who causes trouble here. So behave yourself.
 };
 
 
@@ -119,7 +119,7 @@ instance DIA_SLD_6_STANDARD(C_Info)
 	condition = DIA_SLD_6_STANDARD_Condition;
 	information = DIA_SLD_6_STANDARD_Info;
 	permanent = TRUE;
-	description = "В чем дело?";
+	description = "What's up?";
 };
 
 
@@ -130,46 +130,46 @@ func int DIA_SLD_6_STANDARD_Condition()
 
 func void DIA_SLD_6_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_SLD_6_STANDARD_15_00");	//В чем дело?
-	if(Kapitel <= 2)
+	AI_Output (other, self, "DIA_SLD_6_STANDARD_15_00");	//What's up?
+	if (Kapitel <= 2)
 	{
 		if(EnterOW_Kapitel2 == FALSE)
 		{
 			if(other.guild == GIL_SLD)
 			{
-				AI_Output(self,other,"DIA_SLD_6_STANDARD_06_01");	//Ты теперь один из нас, парень!
+				AI_Output (self, other, "DIA_SLD_6_STANDARD_06_01");	//You're one of us now, kid!
 			}
 			else
 			{
-				AI_Output(self,other,"DIA_SLD_6_STANDARD_06_02");	//Чего тебе нужно?
+				AI_Output (self, other, "DIA_SLD_6_STANDARD_06_02");	//What do you want?
 			};
 		}
 		else if(other.guild == GIL_SLD)
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_03");	//Когда я услышал о драконах, я сначала даже не поверил.
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_04");	//Дракон - вот это настоящий противник. Это не то, что какая-то там овца или полусонный ополченец.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_03");	//When I heard that about the dragons, I could barely believe it at first.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_04");	//A dragon - now that's what I'd call a fight. No more sheep or dopey militiamen, but a real opponent for once.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_05");	//Как там лорд Хаген, он еще не обгадил штаны от страха перед драконами?
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_06");	//Похоже, теперь ему придется оторвать свою вельможную задницу от кресла и выползти из города.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_05");	//Well, has your Lord Hagen shit his pants yet for fear of the dragons?
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_06");	//Looks like now he'll have to budge his noble backside from the city after all.
 		};
 	};
 	if(Kapitel == 3)
 	{
 		if(MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_07");	//Лорд Хаген может считать себя везунчиком. Еще несколько дней - и мы бы ворвались в город и освободили Беннета сами.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_07");	//Lord Hagen can count himself lucky. A few more days, and we would have busted Bennet out of there ourselves.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_08");	//Если Беннета не выпустят из тюрьмы, мы сами пойдем туда и освободим его.
+			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_08");	//If they don't let Bennet out of jail soon, we're going to go in and get him.
 			if(MIS_RescueBennet != LOG_Running)
 			{
 				MIS_RescueBennet = LOG_Running;
 				Log_CreateTopic(TOPIC_RescueBennet,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_RescueBennet,LOG_Running);
-				B_LogEntry(TOPIC_RescueBennet,"У кузнеца Беннета серьезные проблемы. Говорят, что он был арестован.");
+				B_LogEntry(TOPIC_RescueBennet,"Bennet the smith is in serious trouble. They say he was arrested by the paladins in the city.");
 			};
 		};
 	};
@@ -177,24 +177,24 @@ func void DIA_SLD_6_STANDARD_Info()
 	{
 		if(hero.guild == GIL_DJG)
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_09");	//Что ты все ошиваешься здесь? Разве ты не отправился в долину вместе с остальными?
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_10");	//Чтобы вы там все и остались.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_09");	//What are you still doing here? Weren't you headed for the valley with the others?
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_10");	//None of you needs to return for all I care.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_11");	//Ты должен идти в Долину Рудников. Я слышал, что этим беднягам там необходима помощь.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_11");	//You should go to the Valley of Mines. I've heard those poor bastards can use all the help they can get.
 		};
 	};
 	if(Kapitel >= 5)
 	{
 		if(hero.guild == GIL_DJG)
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_12");	//Когда ты появился здесь, я сразу понял, что ты все здесь перевернешь вверх дном.
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_13");	//Но драконы? Это что-то! Теперь вряд ли кто-то рискнет связываться с тобой.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_12");	//When you showed up here I knew at once that you would turn this place upside down.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_13");	//But dragons? That's quite something. No one will pick a fight with you any time soon.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_SLD_6_STANDARD_06_14");	//Я поражен. Ты не на нашей стороне, но победа над драконами - это великий подвиг.
+			AI_Output (self, other, "DIA_SLD_6_STANDARD_06_14");	//I'm impressed. You're on the wrong side, but killing dragons is still no mean feat.
 		};
 	};
 };

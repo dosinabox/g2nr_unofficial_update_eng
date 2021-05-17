@@ -209,7 +209,7 @@ instance DIA_Ulthar_PermAbKap3(C_Info)
 	condition = DIA_Ulthar_PermAbKap3_Condition;
 	information = DIA_Ulthar_PermAbKap3_Info;
 	permanent = TRUE;
-	description = "Есть новости?";
+	description = "Any news?";
 };
 
 

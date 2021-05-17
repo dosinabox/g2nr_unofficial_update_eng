@@ -1,7 +1,7 @@
 
 instance VLK_2001_Syra(Npc_Default)
 {
-	name[0] = "Сира";
+	name[0] = "Syra";
 	guild = GIL_VLK;
 	id = 2001;
 	voice = 16;

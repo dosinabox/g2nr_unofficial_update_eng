@@ -1,7 +1,7 @@
 
 prototype Mst_Default_SwampZombie(C_Npc)
 {
-	name[0] = "Болотный труп";
+	name[0] = "Swamp Corpse";
 	guild = GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID] = ID_SWAMPZOMBIE;
 	level = 25;

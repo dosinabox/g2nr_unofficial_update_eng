@@ -1,7 +1,7 @@
 
 instance MIL_324_Peck(Npc_Default)
 {
-	name[0] = "Пек";
+	name[0] = "Peck";
 	guild = GIL_MIL;
 	id = 324;
 	voice = 12;

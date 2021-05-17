@@ -1,7 +1,7 @@
 
 instance BAU_952_Vino(Npc_Default)
 {
-	name[0] = "Вино";
+	name[0] = "VINO";
 	guild = GIL_OUT;
 	id = 952;
 	voice = 5;

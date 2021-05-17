@@ -171,13 +171,13 @@ func void DIA_Pedro_DI_ArrivedAtShip_Monster()
 
 func void DIA_Pedro_DI_ArrivedAtShip_Innere()
 {
-	AI_Output(other,self,"DIA_Pedro_DI_ArrivedAtShip_Innere_15_00");	//Как мне попасть внутрь этого острова?
-	AI_Output(self,other,"DIA_Pedro_DI_ArrivedAtShip_Innere_09_01");	//В тронном зале полковника орков есть секретный проход.
-	AI_Output(self,other,"DIA_Pedro_DI_ArrivedAtShip_Innere_09_02");	//Меня тащили через него каждый раз, когда хотели допросить. Я видел, как он работает.
-	AI_Output(self,other,"DIA_Pedro_DI_ArrivedAtShip_Innere_09_03");	//Один из шаманов запускал механизм, поворачивая факелы, висящие на стенах этого холла.
-	AI_Output(self,other,"DIA_Pedro_DI_ArrivedAtShip_Innere_09_04");	//М-м-м. Мне кажется, он сначала поворачивал левый факел, а затем правый, но я точно не помню.
-	AI_Output(self,other,"DIA_Pedro_DI_ArrivedAtShip_Innere_09_05");	//И тогда внезапно открывался секретный проход, ведущий глубоко в горы.
-	AI_Output(self,other,"DIA_Pedro_DI_ArrivedAtShip_Innere_09_06");	//Где кончается этот проход, я не знаю.
+	AI_Output (other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00");	//How can I get to the interior of the island?
+	AI_Output (self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01");	//There is a secret passage in the orcish colonel's throne room.
+	AI_Output (self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02");	//They dragged me there every time he wanted to question me. I saw it there.
+	AI_Output (self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03");	//One of the shamans started a mechanism by pulling on the torches that hang on the walls of the hall.
+	AI_Output (self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04");	//Mmh. I think he first pulled on the left torch and then the right, but I can' remember it exactly.
+	AI_Output (self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05");	//In the rear area, a secret passage suddenly opened that led deep into the mountain.
+	AI_Output (self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06");	//Where this passage ends, I don't know.
 	B_LogEntry(TOPIC_HallenVonIrdorath,"Pedro told me about the secret passage leading into the island, I need to pull the two torches in Orc Colonel's throne room.");
 };
 

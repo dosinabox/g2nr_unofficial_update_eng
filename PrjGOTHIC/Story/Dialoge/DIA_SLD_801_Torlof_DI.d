@@ -140,7 +140,7 @@ instance DIA_Torlof_DI_UndeadDragonDead(C_Info)
 	condition = DIA_Torlof_DI_UndeadDragonDead_Condition;
 	information = DIA_Torlof_DI_UndeadDragonDead_Info;
 	permanent = TRUE;
-	description = "Я уничтожил врагов.";
+	description = "I've eliminated the enemy.";
 };
 
 

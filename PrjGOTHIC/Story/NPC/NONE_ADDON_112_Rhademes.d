@@ -1,7 +1,7 @@
 
 instance NONE_ADDON_112_Rhademes(Npc_Default)
 {
-	name[0] = "Радемес";
+	name[0] = "Rhademes";
 	guild = GIL_NONE;
 	id = 112;
 	voice = 3;

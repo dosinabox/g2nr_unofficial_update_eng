@@ -245,7 +245,7 @@ instance DIA_Addon_Cavalorn_Beutel(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Cavalorn_Beutel_Condition;
 	information = DIA_Addon_Cavalorn_Beutel_Info;
-	description = "Я был в твоей хижине в Долине Рудников.";
+	description = "I was at your hut in the Valley of Mines.";
 };
 
 

@@ -333,7 +333,7 @@ func void DIA_Buster_OtherSld_Info()
 	AI_Output (self, other, "DIA_Buster_OtherSld_13_01");	//I can't tell you much about this region. You had better ask the farmers.
 	if(hero.guild == GIL_NONE)
 	{
-		AI_Output(self,other,"DIA_Buster_OtherSld_13_02");	//ј что касаетс€ наемников - то правила у нас просты: если можешь посто€ть за себ€ - добро пожаловать к нам.
+		AI_Output(self,other,"DIA_Buster_OtherSld_13_02");	//And as for us mercenaries - we have a very simple rule: If you can stand your ground, you're in.
 	};
 	if(self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
@@ -501,7 +501,7 @@ func void DIA_Buster_PreTeach_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Buster_Teach_13_02");	//“ы не так уж глуп, как кажешьс€. ’орошо, € научу теб€ тому, что знаю сам. “огда, может быть, у теб€ по€в€тс€ шансы против мен€...
+		AI_Output (self, other, "DIA_Buster_Teach_13_02");	//You're not nearly as dumb as you look. All right, I'll teach you what I know. Then maybe you'll even stand a fair chance against me ...
 	};
 	Log_CreateTopic(TOPIC_SoldierTeacher,LOG_NOTE);
 	B_LogEntry(TOPIC_SoldierTeacher,"Buster can teach me one-handed combat.");
@@ -552,7 +552,7 @@ func int DIA_Buster_Teach_Condition()
 
 func void DIA_Buster_Teach_Info()
 {
-	AI_Output(other,self,"DIA_Pyrokar_SPELLS_15_00");	//ќбучи мен€.
+	AI_Output(other,self,"DIA_Pyrokar_SPELLS_15_00");	//Teach me.
 	B_BuildLearnDialog_Buster();
 };
 
@@ -723,7 +723,7 @@ instance DIA_Buster_BringTrophyShadowbeast(C_Info)
 	condition = DIA_Buster_BringTrophyShadowbeast_Condition;
 	information = DIA_Buster_BringTrophyShadowbeast_Info;
 	permanent = TRUE;
-	description = "я принес тебе рог мракориса.";
+	description = "I've got some horns for you.";
 };
 
 

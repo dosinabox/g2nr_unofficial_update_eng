@@ -6,7 +6,7 @@ func void B_GaanTeachHornComment()
 {
 	if((MIS_Gaan_Snapper == LOG_SUCCESS) && (Gaan_TeachPlayer == TRUE) && (GaanTeachHornOneTime == FALSE))
 	{
-		AI_Output(self,other,"DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00");	//“еперь, когда этот огромный снеппер мертв, € могу показать тебе, как вырезать его рог.
+		AI_Output(self,other,"DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00");	//Now that this slightly oversized snapper is dead, I can show you how to remove its horn.
 		GaanTeachHornOneTime = TRUE;
 	};
 };

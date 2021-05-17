@@ -1,7 +1,7 @@
 
 instance KDF_505_Marduk(Npc_Default)
 {
-	name[0] = "Мардук";
+	name[0] = "Marduk";
 	guild = GIL_KDF;
 	id = 505;
 	voice = 5;

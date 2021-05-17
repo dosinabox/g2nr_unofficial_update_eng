@@ -1,7 +1,7 @@
 
 instance KDF_510_Hyglas(Npc_Default)
 {
-	name[0] = "Хиглас";
+	name[0] = "Hyglas";
 	guild = GIL_KDF;
 	id = 510;
 	voice = 14;

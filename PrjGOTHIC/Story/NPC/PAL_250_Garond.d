@@ -1,7 +1,7 @@
 
 instance PAL_250_Garond(Npc_Default)
 {
-	name[0] = "Гаронд";
+	name[0] = "Garond";
 	guild = GIL_PAL;
 	id = 250;
 	voice = 10;

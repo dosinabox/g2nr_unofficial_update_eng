@@ -226,7 +226,7 @@ func void DIA_Constantino_Trade_Info()
 
 func void B_Constantino_NoYouAreWanted()
 {
-	AI_Output(self,other,"DIA_Constantino_LEHRLING_10_25");	//(сердито) Ни за что! До меня дошли слухи, что ты обвиняешься в преступлении здесь, в Хоринисе!
+	AI_Output(self,other,"DIA_Constantino_LEHRLING_10_25");	//(irritated) No way! I have heard rumors that you stand accused as a criminal here in Khorinis!
 };
 
 instance DIA_Constantino_NoTrade(C_Info)
@@ -617,7 +617,7 @@ var int Constantino_INNOSKommentar;
 
 func void B_Constantino_NoLearnYouAreWanted()
 {
-	AI_Output(self,other,"DIA_Constantino_AlsLehrling_10_00");	//(сердито) Я отказываюсь обучать тебя, пока ты обвиняешься в преступлении в городе.
+	AI_Output(self,other,"DIA_Constantino_AlsLehrling_10_00");	//(irritated) I refuse to instruct you any further as long as you are accused of a crime in town.
 };
 
 instance DIA_Constantino_AlsLehrling(C_Info)
@@ -745,7 +745,7 @@ instance DIA_Constantino_MushroomsRunning(C_Info)
 	condition = DIA_Constantino_MushroomsRunning_Condition;
 	information = DIA_Constantino_MushroomsRunning_Info;
 	permanent = TRUE;
-	description = "You wanted mushrooms ...";
+	description = "You wanted mushrooms...";
 };
 
 

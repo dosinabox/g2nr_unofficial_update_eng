@@ -1,7 +1,7 @@
 
 prototype Mst_Default_StonePuma(C_Npc)
 {
-	name[0] = "Пантера";
+	name[0] = "Panther";
 	guild = GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID] = ID_Gargoyle;
 	level = 20;

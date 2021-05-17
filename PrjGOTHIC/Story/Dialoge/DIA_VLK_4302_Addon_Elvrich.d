@@ -392,7 +392,7 @@ instance DIA_Addon_Elvrich_WasNun(C_Info)
 	condition = DIA_Addon_Elvrich_WasNun_Condition;
 	information = DIA_Addon_Elvrich_WasNun_Info;
 	permanent = FALSE;
-	description = "Ты должен вернуться в город!";
+	description = "You should get yourself back to town in a hurry!";
 };
 
 

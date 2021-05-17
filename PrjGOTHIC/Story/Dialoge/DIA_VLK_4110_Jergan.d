@@ -149,7 +149,7 @@ instance DIA_Jergan_Hilfe(C_Info)
 	condition = DIA_Jergan_Hilfe_Condition;
 	information = DIA_Jergan_Hilfe_Info;
 	permanent = FALSE;
-	description = "Как мне попасть в замок?";
+	description = "How can I get into the castle?";
 };
 
 

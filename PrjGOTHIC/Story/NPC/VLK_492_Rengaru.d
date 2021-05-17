@@ -1,7 +1,7 @@
 
 instance VLK_492_Rengaru(Npc_Default)
 {
-	name[0] = "Ренгару";
+	name[0] = "Rengaru";
 	guild = GIL_VLK;
 	id = 492;
 	voice = 7;

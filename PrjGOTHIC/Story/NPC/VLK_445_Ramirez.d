@@ -1,7 +1,7 @@
 
 instance VLK_445_Ramirez(Npc_Default)
 {
-	name[0] = "Рамирез";
+	name[0] = "Ramirez";
 	guild = GIL_OUT;
 	id = 445;
 	voice = 14;

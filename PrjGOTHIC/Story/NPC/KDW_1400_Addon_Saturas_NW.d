@@ -1,7 +1,7 @@
 
 instance KDW_1400_Addon_Saturas_NW(Npc_Default)
 {
-	name[0] = "Сатурас";
+	name[0] = "Saturas";
 	guild = GIL_KDW;
 	id = 1400;
 	voice = 14;

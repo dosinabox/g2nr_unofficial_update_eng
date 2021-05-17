@@ -44,15 +44,15 @@ func void DIA_OUT_1_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_OUT_1_STANDARD_01_00");	//— тех пор, как барьер вокруг исправительной колонии исчез, мы испытываем посто€нные проблемы с бандитами.
+		AI_Output (self, other, "DIA_OUT_1_STANDARD_01_00");	//Since the Barrier around the penal colony disappeared, we've had constant trouble with bandits.
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_OUT_1_STANDARD_01_01");	//Ќа ополчение нельз€ положитьс€. ћы должны защищать себ€ сами.
+		AI_Output (self, other, "DIA_OUT_1_STANDARD_01_01");	//The militia can't be relied on. We have to defend ourselves.
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_OUT_1_STANDARD_01_02");	//я никому не позволю помыкать собой. Ќи королю, ни этому жирному ќнару. я сражаюсь только за себ€.
+		AI_Output (self, other, "DIA_OUT_1_STANDARD_01_02");	//I won't let myself be used by anybody. Neither the king, nor fat Onar. I fight only for myself.
 	};
 	AI_StopProcessInfos(self);
 };

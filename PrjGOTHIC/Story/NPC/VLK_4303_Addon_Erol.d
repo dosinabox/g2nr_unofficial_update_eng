@@ -1,7 +1,7 @@
 
 instance VLK_4303_Addon_Erol(Npc_Default)
 {
-	name[0] = "Ёрол";
+	name[0] = "Erol";
 	guild = GIL_NONE;
 	id = 4303;
 	voice = 10;

@@ -62,7 +62,7 @@ var int Addon_zuerst;
 
 func void B_Xardas_SoLittleTime()
 {
-	AI_Output(self,other,"DIA_Xardas_Hello_14_15");	//(задумчиво) У нас очень мало времени.
+	AI_Output(self,other,"DIA_Xardas_Hello_14_15");	//(pensively) We do not have much time left.
 };
 
 instance DIA_Xardas_Hello(C_Info)
@@ -729,7 +729,7 @@ func int DIA_Xardas_HelloKap3_Condition()
 
 func void DIA_Xardas_HelloKap3_Info()
 {
-	AI_Output(self,other,"DIA_Xardas_Hello_14_00");	//Наконец-то! Я много дней пытался вызвать тебя сюда.
+	AI_Output(self,other,"DIA_Xardas_Hello_14_00");	//Finally! I've been trying to bring you here for days.
 };
 
 

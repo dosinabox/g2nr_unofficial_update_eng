@@ -537,8 +537,8 @@ func void DIA_Andre_Paladine_Info()
 
 func void B_Andre_PaladinsReason()
 {
-	AI_Output(self,other,"DIA_Andre_PaladineAgain_08_04");	//Мы прибыли по поручению короля Робара. С разрушением Барьера поставки руды прекратились.
-	AI_Output(self,other,"DIA_Andre_PaladineAgain_08_05");	//Поэтому теперь мы добываем руду и доставляем ее на материк. При помощи этой руды мы выкуем новое оружие и победим орков.
+	AI_Output(self,other,"DIA_Andre_PaladineAgain_08_04");	//We have come on a mission from King Rhobar. With the collapse of the Barrier, the deliveries of ore have failed.
+	AI_Output(self,other,"DIA_Andre_PaladineAgain_08_05");	//Therefore, we are getting the ore and bringing it to the mainland. With the ore, we shall forge new weapons and drive the orcs back.
 	KnowsPaladins_Ore = TRUE;
 };
 
@@ -719,7 +719,7 @@ instance DIA_Andre_Alternative(C_Info)
 	condition = DIA_Andre_Alternative_Condition;
 	information = DIA_Andre_Alternative_Info;
 	permanent = FALSE;
-	description = "А нет более быстрого способа присоединиться к вам?";
+	description = "Isn't there a faster way to join you?";
 };
 
 
@@ -921,7 +921,7 @@ func void DIA_Andre_Auslieferung_Info()
 	{
 		if(Bote_Killed == TRUE)
 		{
-			Info_AddChoice(DIA_Andre_Auslieferung,"Нагур убил посыльного Бальтрама.",DIA_Andre_Auslieferung_Nagur);
+			Info_AddChoice(DIA_Andre_Auslieferung,"Nagur has killed Baltram's messenger.",DIA_Andre_Auslieferung_Nagur);
 		}
 		else
 		{
@@ -938,7 +938,7 @@ func void DIA_Andre_Auslieferung_Info()
 	};
 	/*if((Fernando_ImKnast == TRUE) && (Fernando_Ausgeliefert == FALSE) && !Npc_IsDead(Fernando))
 	{
-		Info_AddChoice(DIA_Andre_Auslieferung,"Я знаю торговца, который продает оружие бандитам!",DIA_Andre_Auslieferung_Fernando);
+		Info_AddChoice(DIA_Andre_Auslieferung,"I know the dealer who's been selling weapons to the bandits!",DIA_Andre_Auslieferung_Fernando);
 	};*/
 };
 
@@ -997,7 +997,7 @@ func void DIA_Andre_Auslieferung_Nagur()
 	}
 	else
 	{
-		AI_Output(other,self,"DIA_Andre_Auslieferung_Nagur_15_00_add");	//Нагур пытался использовать меня, чтобы перехватить товар с фермы Акила.
+		AI_Output(other,self,"DIA_Andre_Auslieferung_Nagur_15_00_add");	//Нагур пытался использовать меня, чтобы перехватить товар с фермы Акила.@@@
 	};
 	AI_Output(self,other,"DIA_Andre_Auslieferung_Nagur_08_01");	//That fellow will get his just punishment. I shall have him locked up immediately.
 	AI_Output(self,other,"DIA_Andre_Auslieferung_Nagur_08_02");	//Here, take the bounty that you are entitled to.
@@ -1444,14 +1444,14 @@ func void DIA_Andre_FOUND_PECK_Info()
 	if(Npc_IsDead(Peck))
 	{
 		DIA_Common_HeIsDead();
-		AI_Output(self,other,"DIA_Maleth_GEHSTOCK_08_01");	//Это невероятно! Я...
-		AI_Output(self,other,"DIA_Maleth_BanditsDEAD_08_04");	//Я расскажу остальным об этом!
+		AI_Output(self,other,"DIA_Maleth_GEHSTOCK_08_01");	//That's terrific. I ...
+		AI_Output(self,other,"DIA_Maleth_BanditsDEAD_08_04");	//I'll tell the others about this!
 		MIS_Andre_Peck = LOG_OBSOLETE;
 		B_GivePlayerXP(XP_FoundPeck / 2);
 	}
 	else if(Kapitel < 3)
 	{
-		AI_Output(self,other,"DIA_Andre_FOUND_PECK_08_01");	//Да, он уже вернулся на свой пост и приступил к выполнению своих обязанностей. Где ты нашел его?
+		AI_Output(self,other,"DIA_Andre_FOUND_PECK_08_01");	//Yes, he is already back at his post and going about his duty. Where did you find him?
 		Info_ClearChoices(DIA_Andre_FOUND_PECK);
 		Info_AddChoice(DIA_Andre_FOUND_PECK,"He crossed my path...",DIA_Andre_FOUND_PECK_SOMEWHERE);
 		Info_AddChoice(DIA_Andre_FOUND_PECK,"In the 'Red Lantern'...",DIA_Andre_FOUND_PECK_REDLIGHT);

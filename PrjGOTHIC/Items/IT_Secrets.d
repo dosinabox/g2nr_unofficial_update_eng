@@ -1,7 +1,7 @@
 
 instance ItSe_ErzFisch(C_Item)
 {
-	name = "Круглая рыба";
+	name = "Ball-shaped Fish";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = 25;
@@ -25,7 +25,7 @@ func void Use_ErzFisch()
 
 instance ItSe_GoldFisch(C_Item)
 {
-	name = "Тяжелая рыба";
+	name = "Heavy Fish";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = 25;
@@ -50,7 +50,7 @@ func void Use_GoldFisch()
 
 instance ItSe_RingFisch(C_Item)
 {
-	name = "Маленькая рыбка";
+	name = "Small Fish";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = 25;
@@ -75,7 +75,7 @@ func void Use_Ringfisch()
 
 instance ItSe_LockpickFisch(C_Item)
 {
-	name = "Легкая рыба";
+	name = "Light Fish";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = 25;
@@ -177,7 +177,7 @@ instance ItSe_HannasBeutel(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = HannasBeutel;
 	description = name;
-	text[0] = "Его дала мне Ханна.";
+	text[0] = "Hanna gave it to me.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };

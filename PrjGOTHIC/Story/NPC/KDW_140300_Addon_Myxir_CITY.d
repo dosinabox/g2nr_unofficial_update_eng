@@ -1,7 +1,7 @@
 
 instance KDW_140300_Addon_Myxir_CITY(Npc_Default)
 {
-	name[0] = "Миксир";
+	name[0] = "Myxir";
 	guild = GIL_VLK;
 	id = 140300;
 	voice = 12;

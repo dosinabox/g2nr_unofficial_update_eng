@@ -324,7 +324,7 @@ instance DIA_Angar_SCTellsAngarAboutMadPsi2_DI(C_Info)
 	nr = 8;
 	condition = DIA_Angar_SCTellsAngarAboutMadPsi2_DI_Condition;
 	information = DIA_Angar_SCTellsAngarAboutMadPsi2_DI_Info;
-	description = "Братство Спящего было порабощено Злом.";
+	description = "The Brotherhood of the Sleeper has been enslaved by evil.";
 };
 
 

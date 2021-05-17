@@ -1,7 +1,7 @@
 
 instance BDT_1080_Addon_Tom(Npc_Default)
 {
-	name[0] = "Том";
+	name[0] = "Tom";
 	guild = GIL_BDT;
 	id = 1080;
 	voice = 11;

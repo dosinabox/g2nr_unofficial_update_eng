@@ -1,7 +1,7 @@
 
 instance VLK_4250_Jorgen_DI(Npc_Default)
 {
-	name[0] = "Йорген";
+	name[0] = "Jorgen";
 	guild = GIL_NONE;
 	id = 42500;
 	voice = 7;

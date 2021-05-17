@@ -1,7 +1,7 @@
 
 instance BAU_982_Grimbald(Npc_Default)
 {
-	name[0] = "ֳנטלבאכüה";
+	name[0] = "Grimbald";
 	guild = GIL_OUT;
 	id = 982;
 	voice = 7;

@@ -1,7 +1,7 @@
 
 instance PAL_200_Hagen(Npc_Default)
 {
-	name[0] = "Лорд Хаген";
+	name[0] = "Lord Hagen";
 	guild = GIL_PAL;
 	id = 200;
 	voice = 4;

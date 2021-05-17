@@ -1,7 +1,7 @@
 
 instance ITWR_Addon_Runemaking_KDW_CIRC1(C_Item)
 {
-	name = "Книга рун магов Воды";
+	name = "Runebook of the Water Mages";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -20,7 +20,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC1(C_Item)
 
 /*instance ITWR_Addon_Runemaking_KDW_CIRC2(C_Item)
 {
-	name = "Книга рун Воды II";
+	name = "Runebook of the Water Mages II";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 100;
@@ -35,7 +35,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC1(C_Item)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC3(C_Item)
 {
-	name = "Книга рун Воды III";
+	name = "Runebook of the Water Mages III";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 100;
@@ -50,7 +50,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC3(C_Item)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC4(C_Item)
 {
-	name = "Книга рун Воды IV";
+	name = "Runebook of the Water Mages IV";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 100;
@@ -65,7 +65,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC4(C_Item)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC5(C_Item)
 {
-	name = "Книга рун Воды V";
+	name = "Runebook of the Water Mages V";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 100;
@@ -80,7 +80,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC5(C_Item)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC6(C_Item)
 {
-	name = "Книга рун Воды VI";
+	name = "Runebook of the Water Mages VI";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 100;
@@ -95,7 +95,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC6(C_Item)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC1(C_Item)
 {
-	name = "Книга рун Огня I";
+	name = "Fire Runebook I";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -103,7 +103,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC1(C_Item)
 	visual = "ItWr_Book_Runemaking_KDF.3ds";
 	material = MAT_LEATHER;
 	scemeName = "MAP";
-	description = "Книга рун магов Огня (1-й круг)";
+	description = "Runebook of the Fire Magicians (1st Circle)";
 	text[5] = NAME_Value;
 	count[5] = value;
 	on_state[0] = Use_Bookstand_Kreise_01_S1;
@@ -114,7 +114,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC1(C_Item)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC2(C_Item)
 {
-	name = "Книга рун Огня II";
+	name = "Fire Runebook II";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -122,7 +122,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC2(C_Item)
 	visual = "ItWr_Book_Runemaking_KDF.3ds";
 	material = MAT_LEATHER;
 	scemeName = "MAP";
-	description = "Книга рун магов Огня (2-й круг)";
+	description = "Runebook of the Fire Magicians (2nd Circle)";
 	text[5] = NAME_Value;
 	count[5] = value;
 	on_state[0] = Use_Bookstand_Kreise_02_S1;
@@ -133,7 +133,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC2(C_Item)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC3(C_Item)
 {
-	name = "Книга рун Огня III";
+	name = "Fire Runebook III";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -141,7 +141,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC3(C_Item)
 	visual = "ItWr_Book_Runemaking_KDF.3ds";
 	material = MAT_LEATHER;
 	scemeName = "MAP";
-	description = "Книга рун магов Огня (3-й круг)";
+	description = "Runebook of the Fire Magicians (3rd Circle)";
 	text[5] = NAME_Value;
 	count[5] = value;
 	on_state[0] = Use_Bookstand_Kreise_03_S1;
@@ -152,7 +152,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC3(C_Item)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC4(C_Item)
 {
-	name = "Книга рун Огня IV";
+	name = "Fire Runebook IV";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -160,7 +160,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC4(C_Item)
 	visual = "ItWr_Book_Runemaking_KDF.3ds";
 	material = MAT_LEATHER;
 	scemeName = "MAP";
-	description = "Книга рун магов Огня (4-й круг)";
+	description = "Runebook of the Fire Magicians (4th Circle)";
 	text[5] = NAME_Value;
 	count[5] = value;
 	on_state[0] = Use_Bookstand_Kreise_04_S1;
@@ -171,7 +171,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC4(C_Item)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC5(C_Item)
 {
-	name = "Книга рун Огня V";
+	name = "Fire Runebook V";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -179,7 +179,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC5(C_Item)
 	visual = "ItWr_Book_Runemaking_KDF.3ds";
 	material = MAT_LEATHER;
 	scemeName = "MAP";
-	description = "Книга рун магов Огня (5-й круг)";
+	description = "Runebook of the Fire Magicians (5th Circle)";
 	text[5] = NAME_Value;
 	count[5] = value;
 	on_state[0] = Use_Bookstand_Kreise_05_S1;
@@ -190,7 +190,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC5(C_Item)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC6(C_Item)
 {
-	name = "Книга рун Огня VI";
+	name = "Fire Runebook VI";
 	mainflag = ITEM_KAT_DOCS;
 //	flags = ITEM_MISSION;
 	flags = 0;
@@ -198,7 +198,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC6(C_Item)
 	visual = "ItWr_Book_Runemaking_KDF.3ds";
 	material = MAT_LEATHER;
 	scemeName = "MAP";
-	description = "Книга рун магов Огня (6-й круг)";
+	description = "Runebook of the Fire Magicians (6th Circle)";
 	text[5] = NAME_Value;
 	count[5] = value;
 	on_state[0] = Use_Bookstand_Kreise_06_S1;

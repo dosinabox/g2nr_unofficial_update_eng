@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Shadowbeast_Addon_Fire(C_Npc)
 {
-	name[0] = "Огненный дьявол";
+	name[0] = "Fire Devil";
 	guild = GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID] = ID_Gargoyle;
 	level = 30;

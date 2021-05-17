@@ -175,7 +175,7 @@ instance ItRu_SuckEnergy(C_Item)
 	count[0] = mag_circle;
 	text[1] = NAME_Manakosten;
 	count[1] = SPL_Cost_SuckEnergy;
-	text[2] = "Чистый урон в секунду:";
+	text[2] = "Damage/sec:";
 	count[2] = SPL_SuckEnergy_Damage;
 	text[3] = NAME_Sec_Duration;
 	count[3] = 8;
@@ -224,7 +224,7 @@ instance ItRu_Swarm(C_Item)
 	count[0] = mag_circle;
 	text[1] = NAME_Manakosten;
 	count[1] = SPL_Cost_Swarm;
-	text[2] = "Чистый урон в секунду:";
+	text[2] = "Damage/sec:";
 	count[2] = SPL_Swarm_Damage;
 	text[3] = NAME_Sec_Duration;
 	count[3] = SPL_TIME_Swarm;
@@ -316,7 +316,7 @@ instance ItRu_Inflate(C_Item)
 	count[0] = mag_circle;
 	text[1] = NAME_Manakosten;
 	count[1] = SPL_Cost_Inflate;
-	text[2] = "Чистый урон в секунду:";
+	text[2] = "Damage/sec:";
 	count[2] = SPL_Inflate_Damage;
 	text[3] = NAME_Sec_Duration;
 	count[3] = SPL_TIME_Inflate;

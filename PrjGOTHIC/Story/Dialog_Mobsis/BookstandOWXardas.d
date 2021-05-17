@@ -11,9 +11,9 @@ func void Use_BookstandOWXardas1_S1()
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLine(nDocID,0,"ћаги€ телепортации");
+		Doc_PrintLine(nDocID,0,"Magic of Teleportation");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"ќсобенностью данных магических формул €вл€етс€ то, что хот€ они также заключены в рунах, использовать их может любой человек, обладающий магическими больше силами. ‘ормула может быть активирована мгновенно. Ќикаких ограничений дл€ магии телепортации нет.");
+		Doc_PrintLines(nDocID,0,"Although these magical formulas are enclosed in runes, anyone with minimal magical powers can use them. They are not restricted by Circles of Magic.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
 		Doc_Show(nDocID);
@@ -32,12 +32,12 @@ func void Use_BookstandOWXardas2_S1()
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLine(nDocID,0,"Ќасто€ща€ —ила");
+		Doc_PrintLine(nDocID,0,"True Power");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"ћаг не похож на обычных людей. ќн обладает способностью вли€ть на божественную силу, а посему и неподвластен законам природы, которым подчин€етс€ каждый смертный.  огда маг достигает того уровн€, позвол€ющего ему подн€тьс€ над рамками обычного существовани€, он может войти в другой мир, неведомый простым смертным.");
+		Doc_PrintLines(nDocID,0,"It is power that distinguishes a magus from his fellow men. Equipped with the ability to influence the divine power, he is a being independent of the laws of nature which apply to mortal man.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"ћаг может прорватьс€ через границы времени и пространства, и даже смерть, основа всего сущего, не сумеет остановить его.");
+		Doc_PrintLines(nDocID,1,"Once a magus has reached a stage which enables him to rise above the limits of his existence, he can place himself on a higher plane than that in which mortal man lives. He can break through the boundaries of time and space, and not even death, the eve of existence, can stop him.");
 		Doc_Show(nDocID);
 	};
 };

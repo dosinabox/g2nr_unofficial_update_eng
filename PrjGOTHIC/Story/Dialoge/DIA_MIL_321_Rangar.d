@@ -123,8 +123,8 @@ func int DIA_Rangar_Ork_Condition()
 
 func void DIA_Rangar_Ork_Info()
 {
-	AI_Output(other,self,"DIA_Rangar_Ork_15_00");	//А как ситуация с орками?
-	AI_Output(self,other,"DIA_Rangar_Ork_07_01");	//Нет причин для беспокойства - городская стража и паладины держат ситуацию под контролем.
+	AI_Output(other,self,"DIA_Rangar_Ork_15_00");	//How are things with the orcs?
+	AI_Output(self,other,"DIA_Rangar_Ork_07_01");	//No reason to worry - we in the city guard and the paladins have everything under control.
 	if((other.guild != GIL_MIL) && (other.guild != GIL_PAL))
 	{
 		AI_Output(self,other,"DIA_Rangar_Ork_07_02");	//Go home and let us do our work. We're watching over the town and its citizens. -HIC-

@@ -220,7 +220,7 @@ func void DIA_Addon_Huno_Armor_Info()
 		BDT_Armor_H_Value = 1000;
 	};
 	Info_AddChoice(DIA_Addon_Huno_Armor,Dialog_Back,DIA_Addon_Huno_Armor_BACK);
-	Info_AddChoice(DIA_Addon_Huno_Armor,B_BuildPriceString("Купить тяжелые доспехи бандита. Защита: 50/50/0/0.",BDT_Armor_H_Value),DIA_Addon_Huno_Armor_BUY);
+	Info_AddChoice(DIA_Addon_Huno_Armor,B_BuildPriceString("Buy Heavy Bandit Armor. Protection: 50/50/0/0.",BDT_Armor_H_Value),DIA_Addon_Huno_Armor_BUY);
 };
 
 func void DIA_Addon_Huno_Armor_BACK()

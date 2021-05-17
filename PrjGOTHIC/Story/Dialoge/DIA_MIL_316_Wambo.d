@@ -154,7 +154,7 @@ instance DIA_Wambo_Deal(C_Info)
 	condition = DIA_Wambo_Deal_Condition;
 	information = DIA_Wambo_Deal_Info;
 	permanent = TRUE;
-	description = "У меня есть деньги...";
+	description = "I've got your money... (pay 250 gold)";
 };
 
 

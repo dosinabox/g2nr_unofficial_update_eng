@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Zombie(C_Npc)
 {
-	name[0] = "Зомби";
+	name[0] = "Zombie";
 	guild = GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID] = ID_ZOMBIE;
 	level = 20;
@@ -85,7 +85,7 @@ instance Zombie04(Mst_Default_Zombie)
 
 instance Zombie_Addon_Knecht(Mst_Default_Zombie)
 {
-	name[0] = "Приспешник Ворона";
+	name[0] = "Raven's Henchman";
 	protection[PROT_FIRE] = 0;
 	Mdl_SetVisual(self,"Zombie.mds");
 	Mdl_SetVisualBody(self,"Zom_Body",0,0,"Zom_Head",0,DEFAULT,ITAR_Thorus_Addon);
@@ -94,7 +94,7 @@ instance Zombie_Addon_Knecht(Mst_Default_Zombie)
 
 instance Zombie_Addon_Bloodwyn(Mst_Default_Zombie)
 {
-	name[0] = "Пробудившийся Бладвин";
+	name[0] = "Bloodwyn Awakened";
 	level = 25;
 	attribute[ATR_HITPOINTS_MAX] = 1600;
 	attribute[ATR_HITPOINTS] = 1600;
@@ -106,7 +106,7 @@ instance Zombie_Addon_Bloodwyn(Mst_Default_Zombie)
 
 /*instance Zombie_Addon_Bloodwyn_Headless(Mst_Default_Zombie)
 {
-	name[0] = "Пробудившийся Бладвин";
+	name[0] = "Bloodwyn Awakened";
 	level = 25;
 	attribute[ATR_HITPOINTS_MAX] = 1600;
 	attribute[ATR_HITPOINTS] = 1600;

@@ -1,7 +1,7 @@
 
 instance NOV_601_Igaraz(Npc_Default)
 {
-	name[0] = "Игарац";
+	name[0] = "Igaraz";
 	guild = GIL_NOV;
 	id = 601;
 	voice = 13;

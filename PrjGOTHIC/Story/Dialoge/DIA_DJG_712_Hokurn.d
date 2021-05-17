@@ -600,11 +600,11 @@ func void DIA_Hokurn_WhereDragon_Info()
 	{
 		if(Hokurn_BoozeGiven == TRUE)
 		{
-			Info_AddChoice(DIA_Hokurn_WhereDragon,"У меня есть еще одна бутылочка джина!",DIA_Hokurn_WhereDragon_GiveDrink);
+			Info_AddChoice(DIA_Hokurn_WhereDragon,"I've still got a bottle of gin!",DIA_Hokurn_WhereDragon_GiveDrink);
 		}
 		else
 		{
-			Info_AddChoice(DIA_Hokurn_WhereDragon,"У меня есть бутылочка джина!",DIA_Hokurn_WhereDragon_GiveDrink);
+			Info_AddChoice(DIA_Hokurn_WhereDragon,"I've got a bottle of gin!",DIA_Hokurn_WhereDragon_GiveDrink);
 		};
 	};
 };

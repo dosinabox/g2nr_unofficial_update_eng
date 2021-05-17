@@ -222,7 +222,7 @@ func int DIA_Niclas_Teach_Condition()
 
 func void DIA_Niclas_Teach_Info()
 {
-	AI_Output(other,self,"DIA_Niclas_Teach_15_00");	//ѕокажи мне, как правильно держать лук.
+	AI_Output(other,self,"DIA_Niclas_Teach_15_00");	//Show me how to handle a bow.
 	B_BuildLearnDialog_Niclas();
 };
 

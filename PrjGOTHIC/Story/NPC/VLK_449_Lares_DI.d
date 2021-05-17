@@ -1,7 +1,7 @@
 
 instance VLK_449_Lares_DI(Npc_Default)
 {
-	name[0] = "Ларес";
+	name[0] = "Lares";
 	guild = GIL_VLK;
 	id = 4490;
 	voice = 9;

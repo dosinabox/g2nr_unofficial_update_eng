@@ -403,8 +403,8 @@ func void DIA_Addon_Thorus_Speech_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_Thorus_Add_12_01");	//Давай я объясню тебе кое-что. Ты знаешь, почему я до сих пор жив?
-		AI_Output(self,other,"DIA_Addon_Thorus_Add_12_02");	//Потому что я всегда был верен своим людям.
+		AI_Output(self,other,"DIA_Addon_Thorus_Add_12_01");	//Let me explain something to you. Do you know why I'm still alive?
+		AI_Output(self,other,"DIA_Addon_Thorus_Add_12_02");	//Because I've always been loyal to my people.
 	};
 	if(!Npc_IsDead(Torwache2))
 	{

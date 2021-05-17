@@ -584,28 +584,28 @@ func void DIA_Addon_Skip_Grog_geben()
 		B_GiveInvItems(other,self,ItMi_Grog_Crate,4);
 		Npc_RemoveInvItems(other,ItFo_Addon_Grog,4);
 		CreateInvItems(self,ItFo_Addon_Grog,4);
-		AI_PrintScreen("4 предметов отдано (Грог)",-1,40,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Grog (4)",-1,40,FONT_ScreenSmall,2);
 	}
 	else if((Npc_HasItems(other,ItMi_Grog_Crate) == 3) && (Npc_HasItems(other,ItFo_Addon_Grog) >= 8))
 	{
 		B_GiveInvItems(other,self,ItMi_Grog_Crate,3);
 		Npc_RemoveInvItems(other,ItFo_Addon_Grog,8);
 		CreateInvItems(self,ItFo_Addon_Grog,8);
-		AI_PrintScreen("8 предметов отдано (Грог)",-1,40,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Grog (8)",-1,40,FONT_ScreenSmall,2);
 	}
 	else if((Npc_HasItems(other,ItMi_Grog_Crate) == 2) && (Npc_HasItems(other,ItFo_Addon_Grog) >= 12))
 	{
 		B_GiveInvItems(other,self,ItMi_Grog_Crate,2);
 		Npc_RemoveInvItems(other,ItFo_Addon_Grog,12);
 		CreateInvItems(self,ItFo_Addon_Grog,12);
-		AI_PrintScreen("12 предметов отдано (Грог)",-1,40,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Grog (12)",-1,40,FONT_ScreenSmall,2);
 	}
 	else if((Npc_HasItems(other,ItMi_Grog_Crate) == 1) && (Npc_HasItems(other,ItFo_Addon_Grog) >= 16))
 	{
 		B_GiveInvItems(other,self,ItMi_Grog_Crate,1);
 		Npc_RemoveInvItems(other,ItFo_Addon_Grog,16);
 		CreateInvItems(self,ItFo_Addon_Grog,16);
-		AI_PrintScreen("16 предметов отдано (Грог)",-1,40,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Grog (16)",-1,40,FONT_ScreenSmall,2);
 	}
 	else if(Npc_HasItems(other,ItFo_Addon_Grog) >= 20)
 	{

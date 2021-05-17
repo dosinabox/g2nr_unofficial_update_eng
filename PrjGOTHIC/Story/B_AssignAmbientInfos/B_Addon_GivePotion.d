@@ -5,7 +5,7 @@ instance DIA_Addon_GivePotion(C_Info)
 	condition = DIA_Addon_GivePotion_Condition;
 	information = DIA_Addon_GivePotion_Info;
 	permanent = TRUE;
-	description = "(дать лечебное зелье)";
+	description = "(give healing potion)";
 };
 
 
@@ -26,25 +26,25 @@ func void DIA_Addon_GivePotion_Info()
 	Info_AddChoice(DIA_Addon_GivePotion,Dialog_Back,DIA_Addon_GivePotion_BACK);
 	if(Npc_HasItems(other,ItPo_Health_Addon_04))
 	{
-		Info_AddChoice(DIA_Addon_GivePotion,"(дать чистое здоровье)",DIA_Addon_GivePotion_ItPo_Health_Addon_04);
+		Info_AddChoice(DIA_Addon_GivePotion,"(give pure healing)",DIA_Addon_GivePotion_ItPo_Health_Addon_04);
 	};
 	if(Npc_HasItems(other,ItPo_Health_03))
 	{
-		Info_AddChoice(DIA_Addon_GivePotion,"(дать лечебный эликсир)",DIA_Addon_GivePotion_ItPo_Health_03);
+		Info_AddChoice(DIA_Addon_GivePotion,"(give elixir of healing))",DIA_Addon_GivePotion_ItPo_Health_03);
 	};
 	if(Npc_HasItems(other,ItPo_Health_02))
 	{
-		Info_AddChoice(DIA_Addon_GivePotion,"(дать лечебный экстракт)",DIA_Addon_GivePotion_ItPo_Health_02);
+		Info_AddChoice(DIA_Addon_GivePotion,"(give extract of healing)",DIA_Addon_GivePotion_ItPo_Health_02);
 	};
 	if(Npc_HasItems(other,ItPo_Health_01))
 	{
-		Info_AddChoice(DIA_Addon_GivePotion,"(дать лечебную эссенцию)",DIA_Addon_GivePotion_ItPo_Health_01);
+		Info_AddChoice(DIA_Addon_GivePotion,"(give essence of healing)",DIA_Addon_GivePotion_ItPo_Health_01);
 	};
 };
 
 func void B_Addon_DrinkPotion()
 {
-	AI_Output(other,self,"DIA_Addon_Brandon_GivePotion_15_00");	//Вот, возьми это лечебное зелье.
+	AI_Output(other,self,"DIA_Addon_Brandon_GivePotion_15_00");	//Here, take the healing potion.
 	if(self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX])
 	{
 		if(Npc_HasItems(self,ItPo_Health_Addon_04))

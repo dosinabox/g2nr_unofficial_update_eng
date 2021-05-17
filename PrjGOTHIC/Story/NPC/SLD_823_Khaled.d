@@ -1,7 +1,7 @@
 
 instance SLD_823_Khaled(Npc_Default)
 {
-	name[0] = "Халед";
+	name[0] = "Khaled";
 	guild = GIL_SLD;
 	id = 823;
 	voice = 11;

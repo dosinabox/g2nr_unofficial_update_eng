@@ -26,7 +26,7 @@ instance DIA_Addon_TAL_BDT_1_Hi(C_Info)
 	condition = DIA_Addon_TAL_BDT_1_Hi_Condition;
 	information = DIA_Addon_TAL_BDT_1_Hi_Info;
 	permanent = TRUE;
-	description = " ак дела?";
+	description = "How's it going?";
 };
 
 
@@ -37,15 +37,15 @@ func int DIA_Addon_TAL_BDT_1_Hi_Condition()
 
 func void DIA_Addon_TAL_BDT_1_Hi_Info()
 {
-	AI_Output(other,self,"DIA_Addon_TAL_BDT_1_Hi_15_00");	// ак дела?
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Hi_01_01");	//я жду, пока им не понадобитс€ кто-нибудь новый и не придет мо€ очередь.
-	if(!Npc_IsDead(Franco))
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");	//How's it going?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");	//I'm waiting until they ask for someone new and it's my turn.
+	if (!Npc_IsDead (Franco))
 	{
-		AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Hi_01_02");	//»з всех людей, кто снаружи, только ‘ранко мог войти сюда.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");	//Of all the people that are out here, only Franco can get in.
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Hi_01_03");	//ј теперь ‘ранко мертв, и, может быть, у мен€ по€витс€ шанс.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");	//Now that Franco is dead, hopefully I have a better chance.
 	};
 };
 
@@ -56,7 +56,7 @@ instance DIA_Addon_TAL_BDT_1_Lager(C_Info)
 	condition = DIA_Addon_TAL_BDT_1_Lager_Condition;
 	information = DIA_Addon_TAL_BDT_1_Lager_Info;
 	permanent = TRUE;
-	description = "ћожешь рассказать мне что-нибудь о лагере?";
+	description = "What can you tell me about the camp?";
 };
 
 
@@ -67,9 +67,9 @@ func int DIA_Addon_TAL_BDT_1_Lager_Condition()
 
 func void DIA_Addon_TAL_BDT_1_Lager_Info()
 {
-	AI_Output(other,self,"DIA_Addon_TAL_BDT_1_Lager_15_00");	//ћожешь рассказать мне что-нибудь о лагере?
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Lager_01_01");	//—мотри, с кем св€зываешьс€! ≈сли ты начнешь дратьс€ без причины, они все очень быстро наброс€тс€ на теб€!
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Lager_01_02");	//Ѕольшинство из них чересчур пекутс€ о своем золоте и некоторые внимательно след€т за другими.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");	//What can you tell me about the camp?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");	//Watch out who you tangle with! If you start a fight for no reason, you'll have them all against you, fast!
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");	//Most of them are nervous about their gold and some of the boys are watching out for each other.
 };
 
 
@@ -79,7 +79,7 @@ instance DIA_Addon_TAL_BDT_1_Raven(C_Info)
 	condition = DIA_Addon_TAL_BDT_1_Raven_Condition;
 	information = DIA_Addon_TAL_BDT_1_Raven_Info;
 	permanent = TRUE;
-	description = "„то тебе известно про ¬орона?";
+	description = "What do you know about Raven?";
 };
 
 
@@ -90,13 +90,13 @@ func int DIA_Addon_TAL_BDT_1_Raven_Condition()
 
 func void DIA_Addon_TAL_BDT_1_Raven_Info()
 {
-	AI_Output(other,self,"DIA_Addon_TAL_BDT_1_Raven_15_00");	//„то тебе известно про ¬орона?
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Raven_01_01");	//Ётот человек первым оказалс€ здесь со своими реб€тами.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");	//What do you know about Raven?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");	//He's the guy who first showed up here with his boys.
 	if(RavenIsDead == FALSE)
 	{
-		AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Raven_01_02");	//ќн - командир лагер€. я тебе советую не крутитьс€ вокруг него.
+		AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Raven_01_02");	//He's the leader of the camp. You don't mess around with him, let me tell you.
 	};
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Raven_01_03");	//ќднажды им потребовались п€ть новых бойцов, потому что он сорвал свою злость на своих же люд€х.
+	AI_Output(self,other,"DIA_Addon_TAL_BDT_1_Raven_01_03");	//Once they needed five new men because he had taken out his anger on some of his own people.
 };
 
 func void B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_Npc slf)

@@ -1,7 +1,7 @@
 
 instance PIR_1354_Addon_Henry(Npc_Default)
 {
-	name[0] = "Генри";
+	name[0] = "Henry";
 	guild = GIL_PIR;
 	id = 1354;
 	voice = 4;

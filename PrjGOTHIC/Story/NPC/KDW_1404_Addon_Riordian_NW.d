@@ -1,7 +1,7 @@
 
 instance KDW_1404_Addon_Riordian_NW(Npc_Default)
 {
-	name[0] = "Риордиан";
+	name[0] = "Riordian";
 	guild = GIL_KDW;
 	id = 1404;
 	voice = 10;

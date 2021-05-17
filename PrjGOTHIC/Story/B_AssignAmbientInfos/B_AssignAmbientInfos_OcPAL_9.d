@@ -26,7 +26,7 @@ instance DIA_OCPAL_9_PEOPLE(C_Info)
 	condition = DIA_OCPAL_9_PEOPLE_Condition;
 	information = DIA_OCPAL_9_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Кто командует здесь?";
+	description = "Who's in command here?";
 };
 
 
@@ -37,8 +37,8 @@ func int DIA_OCPAL_9_PEOPLE_Condition()
 
 func void DIA_OCPAL_9_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_OCPAL_9_PEOPLE_15_00");	//Кто командует здесь?
-	AI_Output(self,other,"DIA_OCPAL_9_PEOPLE_09_01");	//Гаронд. Но его работе не позавидуешь.
+	AI_Output (other, self, "DIA_OCPAL_9_PEOPLE_15_00");	//Who's in command here?
+	AI_Output (self, other, "DIA_OCPAL_9_PEOPLE_09_01");	//Garond is the commander of the castle. You can't exactly envy him his job.
 };
 
 
@@ -48,7 +48,7 @@ instance DIA_OCPAL_9_LOCATION(C_Info)
 	condition = DIA_OCPAL_9_LOCATION_Condition;
 	information = DIA_OCPAL_9_LOCATION_Info;
 	permanent = TRUE;
-	description = "Что ты знаешь об этой долине?";
+	description = "What do you know about this valley?";
 };
 
 
@@ -59,9 +59,9 @@ func int DIA_OCPAL_9_LOCATION_Condition()
 
 func void DIA_OCPAL_9_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_OCPAL_9_LOCATION_15_00");	//Что ты знаешь об этой долине?
-	AI_Output(self,other,"DIA_OCPAL_9_LOCATION_09_01");	//Ну, то что орки построили большую защитную стену. За этой стеной есть место, где они могут швартовать свои корабли.
-	AI_Output(self,other,"DIA_OCPAL_9_LOCATION_09_02");	//Надеюсь, что орки не подтянут основные силы слишком быстро. По мне, так и тех, что уже есть, хватает с избытком.
+	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00");	//What do you know about this valley?
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01");	//In the east, the orcs have built a huge protective wall - to protect their supplies, I suppose. Behind the wall, there's a place where they can dock their ships.
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_02");	//I hope the orcs don't get their supplies too quickly. What we have to deal with NOW is enough for me.
 };
 
 
@@ -71,7 +71,7 @@ instance DIA_OCPAL_9_STANDARD(C_Info)
 	condition = DIA_OCPAL_9_STANDARD_Condition;
 	information = DIA_OCPAL_9_STANDARD_Info;
 	permanent = TRUE;
-	description = "Как дела?";
+	description = "How are things?";
 };
 
 
@@ -85,28 +85,28 @@ func void DIA_OCPAL_9_STANDARD_Info()
 	DIA_Common_HowsItGoing();
 	if(Kapitel <= 3)
 	{
-		AI_Output(self,other,"DIA_OCPAL_4_STANDARD_09_01");	//Драконы опять напали на нас! Но Иннос защитил нас в этом бою. Создания Белиара дорого заплатят за это!
+		AI_Output (self, other, "DIA_OCPAL_4_STANDARD_09_01");	//The dragons have attacked again! But Innos will protect us in battle. The creatures of Beliar will pay a high toll in blood!
 	};
 	if(Kapitel == 4)
 	{
 		if(!Npc_KnowsInfo(other,DIA_Garond_AllDragonDead))
 		{
-			AI_Output(self,other,"DIA_OCPAL_4_STANDARD_09_02");	//Охотники на драконов! Нужно было послать нас, паладинов!
+			AI_Output (self, other, "DIA_OCPAL_4_STANDARD_09_02");	//Dragon hunters! They should have sent us paladins!
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_OCPAL_4_STANDARD_09_03");	//Теперь, когда мы избавились от этих драконов, мы можем разобраться с орками!
+			AI_Output (self, other, "DIA_OCPAL_4_STANDARD_09_03");	//Now that we're rid of those dragons, we can take care of the orcs!
 		};
 	};
 	if(Kapitel >= 5)
 	{
 		if(MIS_OCGateOpen == FALSE)
 		{
-			AI_Output(self,other,"DIA_OCPAL_4_STANDARD_09_04");	//Нам нужно доставить руду на корабль и убираться с этой проклятой земли.
+			AI_Output (self, other, "DIA_OCPAL_4_STANDARD_09_04");	//We need to get the ore onto the ship and then get the hell out of this accursed land.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_OCPAL_4_STANDARD_09_05");	//Предательство! Ворота нельзя было открывать! Смерть предателям!
+			AI_Output (self, other, "DIA_OCPAL_4_STANDARD_09_05");	//Treason! The gate should never have been opened. Death to all traitors!
 		};
 	};
 };

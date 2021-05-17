@@ -1,7 +1,7 @@
 
 instance PIR_1351_Addon_Samuel(Npc_Default)
 {
-	name[0] = "Ñýìþýëü";
+	name[0] = "Samuel";
 	guild = GIL_PIR;
 	id = 1351;
 	voice = 14;

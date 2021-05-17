@@ -1,7 +1,7 @@
 
 instance MIL_314_Mortis(Npc_Default)
 {
-	name[0] = "Мортис";
+	name[0] = "Mortis";
 	guild = GIL_MIL;
 	id = 314;
 	voice = 13;

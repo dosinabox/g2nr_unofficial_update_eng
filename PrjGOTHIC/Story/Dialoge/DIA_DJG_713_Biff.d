@@ -623,7 +623,7 @@ instance DIA_Biff_HEILUNG(C_Info)
 	condition = DIA_Biff_HEILUNG_Condition;
 	information = DIA_Biff_HEILUNG_Info;
 	permanent = TRUE;
-	description = "Тебе нужно лечебное зелье?";
+	description = "Do you need a healing potion?";
 };
 
 

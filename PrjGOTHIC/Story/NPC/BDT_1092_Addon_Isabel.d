@@ -1,7 +1,7 @@
 
 instance BDT_1092_Addon_Isabel(Npc_Default)
 {
-	name[0] = "Изабель";
+	name[0] = "Isabel";
 	guild = GIL_BDT;
 	id = 1092;
 	voice = 17;

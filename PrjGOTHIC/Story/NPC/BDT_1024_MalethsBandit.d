@@ -1,7 +1,7 @@
 
 instance BDT_1024_MalethsBandit(Npc_Default)
 {
-	name[0] = "Главарь бандитов";
+	name[0] = "Rogue Leader";
 	guild = GIL_BDT;
 	id = 1024;
 	voice = 9;

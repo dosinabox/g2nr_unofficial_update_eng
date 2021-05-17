@@ -1,7 +1,7 @@
 
 prototype Mst_Default_StoneGolem(C_Npc)
 {
-	name[0] = "Каменный голем";
+	name[0] = "Stone Golem";
 	guild = GIL_STONEGOLEM;
 	aivar[AIV_MM_REAL_ID] = ID_STONEGOLEM;
 	level = 25;
@@ -42,7 +42,7 @@ instance StoneGolem(Mst_Default_StoneGolem)
 
 instance Summoned_Golem(Mst_Default_StoneGolem)
 {
-	name[0] = "Вызванный голем";
+	name[0] = "Summoned Golem";
 	guild = GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID] = ID_SUMMONED_GOLEM;
 	level = 0;
@@ -84,7 +84,7 @@ func void B_GolemRise()
 		Snd_Play("GOL_AMBIENT_A2");
 		AI_PlayAni(self,"T_RISE");
 		self.noFocus = FALSE;
-		self.name[0] = "Каменный голем";
+		self.name[0] = "Stone Golem";
 		self.flags = 0;
 		AI_StartState(self,ZS_MM_Attack,0,"");
 		self.bodyStateInterruptableOverride = FALSE;
@@ -140,7 +140,7 @@ instance StoneGolem_Dead4(Mst_Default_StoneGolem)
 
 instance MagicGolem(Mst_Default_StoneGolem)
 {
-	name[0] = "Магический голем";
+	name[0] = "Magic Golem";
 	level = 10;
 	protection[PROT_BLUNT] = IMMUNE;
 	protection[PROT_EDGE] = IMMUNE;

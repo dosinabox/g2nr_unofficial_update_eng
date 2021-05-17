@@ -90,7 +90,7 @@ instance DIA_Addon_Eremit_Teach(C_Info)
 	condition = DIA_Addon_Eremit_Teach_Condition;
 	information = DIA_Addon_Eremit_Teach_Info;
 	permanent = TRUE;
-	description = "Насчет каменных табличек...";
+	description = "About the stone tablets ...";
 };
 
 
@@ -209,7 +209,7 @@ func void DIA_Addon_Eremit_Klamotten_Info()
 	};
 	if(Npc_HasItems(other,ITAR_Vlk_M))
 	{
-		Info_AddChoice(DIA_Addon_Eremit_Klamotten,"(Give Citizen's Clothes)",DIA_Addon_Eremit_Klamotten_VLK_M);
+		Info_AddChoice(DIA_Addon_Eremit_Klamotten,"(Give Decent Citizen's Clothes)",DIA_Addon_Eremit_Klamotten_VLK_M);
 	};
 	if(Npc_HasItems(other,ITAR_Vlk_H))
 	{
@@ -251,7 +251,7 @@ func void B_Eremit_Tatsache()
 	AI_WaitTillEnd(other,self);
 	CreateInvItem(other,ItWr_DexStonePlate3_Addon);
 	CreateInvItem(other,ItWr_StonePlateCommon_Addon);
-	AI_PrintScreen("2 предмета получено (Каменная табличка)",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
+	AI_PrintScreen("Received: 2 Stone Tablets",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
 	MIS_Eremit_Klamotten = LOG_SUCCESS;
 	B_GivePlayerXP(200);
 	Info_ClearChoices(DIA_Addon_Eremit_Klamotten);

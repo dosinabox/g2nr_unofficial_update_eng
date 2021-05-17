@@ -44,15 +44,15 @@ func void DIA_BDT_13_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_BDT_13_STANDARD_13_00");	//Что уставился, как идиот?!
+		AI_Output (self, other, "DIA_BDT_13_STANDARD_13_00");	//What are you gawking at like an idiot!
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_BDT_13_STANDARD_13_01");	//Проваливай!
+		AI_Output(self,other,"DIA_BDT_13_STANDARD_13_01");	//Beat it!
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_BDT_13_STANDARD_13_02");	//Оставь меня в покое, придурок.
+		AI_Output (self, other, "DIA_BDT_13_STANDARD_13_02");	//Just leave me alone, you bum.
 	};
 	AI_StopProcessInfos(self);
 };

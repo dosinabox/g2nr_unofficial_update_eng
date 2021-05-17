@@ -1,7 +1,7 @@
 
 instance VLK_435_Nadja(Npc_Default)
 {
-	name[0] = "Надя";
+	name[0] = "Nadja";
 	guild = GIL_VLK;
 	id = 435;
 	voice = 16;

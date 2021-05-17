@@ -67,7 +67,7 @@ func void DIA_Addon_Saturas_Nefarius_Info()
 		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_03");	//(sighs) Do you at least know what you are looking for?
 		AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_04");	//Nefarius gave me this map...
 		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_05");	//Show me!
-		AI_PrintScreen("Карта Нефариуса отдано",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Nefarius' Map",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 		B_UseFakeMap(2);
 		AI_Output(self,other,"DIA_ADDON_Saturas_Nefarius_14_06");	//Hmmm. It is very dangerous in the big forest. You should not go alone.
 		if(Kapitel < 3)
@@ -81,7 +81,7 @@ func void DIA_Addon_Saturas_Nefarius_Info()
 		};
 		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_08");	//I do not want you eaten by monsters - and the ornament with you.
 		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_09");	//Here is your map back...
-		AI_PrintScreen("Карта Нефариуса получено",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
+		AI_PrintScreen("Received: Nefarius' Map",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
 	};
 };
 

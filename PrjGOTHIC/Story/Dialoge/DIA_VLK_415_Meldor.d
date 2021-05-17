@@ -76,11 +76,11 @@ func void DIA_Meldor_Interessantes_Info()
 	if(!Npc_KnowsInfo(other,DIA_Kardif_Hallo))
 	{
 		Log_CreateTopic(TOPIC_CityTrader,LOG_NOTE);
-		B_LogEntry(TOPIC_CityTrader,"Кардиф, владелец кабака в гавани, приторговывает информацией.");
+		B_LogEntry(TOPIC_CityTrader,"Kardif, the landlord of the harbor pub, trades information.");
 	};
 	if(!Npc_IsDead(Lehmar) && (Lehmar_GeldGeliehen == 0))
 	{
-		AI_Output(self,other,"DIA_Meldor_Interessantes_07_02");	//Тебе, кстати, не нужны деньги?
+		AI_Output(self,other,"DIA_Meldor_Interessantes_07_02");	//Do you need money, by the way?
 	AI_Output (other, self, "DIA_Meldor_Lehmar_15_00");	//Are you giving it away?
 	AI_Output (self, other, "DIA_Meldor_Lehmar_07_01");	//(bored) No. But right across the street here is the house of Lehmar, the moneylender.
 	AI_Output (self, other, "DIA_Meldor_Lehmar_07_02");	//I'm sure he'll give you a few gold pieces, just go ahead.

@@ -1027,12 +1027,12 @@ func void DIA_Addon_Greg_NW_RavensLetter_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Greg_NW_RavensLetter_15_00");	//Dexter carried nothing but this letter.
 	AI_Output (self, other, "DIA_Addon_Greg_NW_RavensLetter_01_01");	//Show me that thing.
-	AI_PrintScreen("Приказы отдано",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("Given: Orders",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 	B_UseFakeScroll();
 	AI_Output (self, other, "DIA_Addon_Greg_NW_RavensLetter_01_02");	//Aw, damnit. That doesn't help me at all.
 	AI_Output (self, other, "DIA_Addon_Greg_NW_RavensLetter_01_03");	//We shouldn't have just let him croak like that.
 	B_GregTalksAboutPortal();
-	AI_PrintScreen("Приказы получено",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("Received: Orders",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 };
 
 

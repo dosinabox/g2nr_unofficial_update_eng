@@ -72,7 +72,7 @@ func void DIA_Isgaroth_Segen_Info()
 	AI_Output (self, other, "DIA_Isgaroth_Segen_01_01");	//I bless you in the name of Innos. May the Lord's fire burn in your heart and give you the strength to act according to his justice.
 	if((MIS_Thorben_GetBlessings == LOG_Running) && (GotInnosBlessingForThorben == FALSE))
 	{
-		B_LogEntry(TOPIC_Thorben,"Маг Огня Исгарот благословил меня.");
+		B_LogEntry(TOPIC_Thorben,"Isgaroth the Fire Magician has given me his blessing.");
 	};
 	GotInnosBlessingForThorben = TRUE;
 };
@@ -151,7 +151,7 @@ instance DIA_Isgaroth_Job(C_Info)
 	condition = DIA_Isgaroth_Job_Condition;
 	information = DIA_Isgaroth_Job_Info;
 	permanent = FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "What are you doing here?";
 };
 
 

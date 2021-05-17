@@ -1,7 +1,7 @@
 
 instance PAL_267_Sengrath(Npc_Default)
 {
-	name[0] = "Сенграт";
+	name[0] = "Sengrath";
 	guild = GIL_PAL;
 	id = 267;
 	voice = 3;

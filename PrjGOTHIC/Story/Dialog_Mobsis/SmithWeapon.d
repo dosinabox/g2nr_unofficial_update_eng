@@ -9,7 +9,7 @@ func int C_PlayerHasHotRawSwords()
 	{
 		return TRUE;
 	};
-	AI_PrintScreen("Закончилась раскаленная сталь!",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("No more hot steel!",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 	return FALSE;
 };
 
@@ -51,7 +51,7 @@ func int smithweapon_cond()
 		{
 			AI_UseMob(self,"BSANVIL",0);
 			AI_UseMob(self,"BSANVIL",-1);
-			AI_PrintScreen("нужен молот",-1,YPOS_GoldGiven,FONT_ScreenSmall,2);
+			AI_PrintScreen("I need a hammer!",-1,YPOS_GoldGiven,FONT_ScreenSmall,2);
 			AI_PlayAni(self,"T_DONTKNOW");
 		};
 	};
@@ -129,7 +129,7 @@ instance PC_Common(C_Info)
 	condition = PC_Common_Condition;
 	information = PC_Common_Info;
 	permanent = TRUE;
-	description = "Выковать обычное оружие";
+	description = "Forge regular weapons";
 };
 
 
@@ -154,7 +154,7 @@ instance PC_Ore(C_Info)
 	condition = PC_Ore_Condition;
 	information = PC_Ore_Info;
 	permanent = TRUE;
-	description = "Выковать рудное оружие";
+	description = "Forge ore weapons";
 };
 
 

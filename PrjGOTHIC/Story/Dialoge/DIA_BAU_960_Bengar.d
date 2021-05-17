@@ -181,12 +181,12 @@ func void DIA_Addon_Bengar_MissingPeople_back()
 
 func void B_BengarIThoughtNoOneWouldCome()
 {
-	AI_Output(self,other,"DIA_Bengar_MILIZ_10_04");	//я уж думал, что никто не придет.
+	AI_Output(self,other,"DIA_Bengar_MILIZ_10_04");	//Here I was thinking no one would come now.
 };
 
 func void B_BengarToldOnarFewDaysAgo()
 {
-	AI_Output(self,other,"DIA_Bengar_MILIZ_10_05");	//я сказал об этом ќнару еще пару дней назад. » за что € плачу свою ренту?!
+	AI_Output(self,other,"DIA_Bengar_MILIZ_10_05");	//I already told Onar days ago. What am I paying my rent for?
 };
 
 instance DIA_Addon_Bengar_ReturnPardos(C_Info)

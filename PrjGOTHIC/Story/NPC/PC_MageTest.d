@@ -1,7 +1,7 @@
 
 instance PC_MageTest(Npc_Default)
 {
-	name[0] = "Магический чувак";
+	name[0] = "Magic Dude";
 	npcType = npctype_main;
 	guild = GIL_NONE;
 	level = 30;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_FireGolem(C_Npc)
 {
-	name[0] = "Огненный голем";
+	name[0] = "Fire Golem";
 	guild = GIL_FIREGOLEM;
 	aivar[AIV_MM_REAL_ID] = ID_FIREGOLEM;
 	level = 40;

@@ -1,7 +1,7 @@
 
 instance PAL_261_Gerold(Npc_Default)
 {
-	name[0] = "ֳונמכüה";
+	name[0] = "Gerold";
 	guild = GIL_PAL;
 	id = 261;
 	voice = 12;

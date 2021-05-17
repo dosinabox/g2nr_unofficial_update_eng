@@ -1,7 +1,7 @@
 
 instance VLK_441_Garvell(Npc_Default)
 {
-	name[0] = "Гарвелл";
+	name[0] = "Garvell";
 	guild = GIL_VLK;
 	id = 441;
 	voice = 4;

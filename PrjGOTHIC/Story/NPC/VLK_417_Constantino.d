@@ -1,7 +1,7 @@
 
 instance VLK_417_Constantino(Npc_Default)
 {
-	name[0] = "Константино";
+	name[0] = "Constantino";
 	guild = GIL_VLK;
 	id = 417;
 	voice = 10;

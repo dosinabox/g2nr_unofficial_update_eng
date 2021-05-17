@@ -1,7 +1,7 @@
 
 instance VLK_498_Ignaz(Npc_Default)
 {
-	name[0] = "Игнац";
+	name[0] = "Ignaz";
 	guild = GIL_VLK;
 	id = 498;
 	voice = 14;

@@ -1,7 +1,7 @@
 
 instance STRF_1126_Addon_Telbor_NW(Npc_Default)
 {
-	name[0] = "Телбор";
+	name[0] = "Telbor";
 	guild = GIL_OUT;
 	id = 1126;
 	voice = 12;

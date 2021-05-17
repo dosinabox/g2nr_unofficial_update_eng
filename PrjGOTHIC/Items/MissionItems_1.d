@@ -428,8 +428,8 @@ func void UseHalvorMessage()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"    Keep your heads low, guys!");
 	Doc_PrintLines(nDocID,0,"    The militia's getting suspicious.");
-	Doc_PrintLines(nDocID,0,"    Не предпринимайте ничего,");
-	Doc_PrintLines(nDocID,0,"    Don't do anything until you hear from me again!");
+	Doc_PrintLines(nDocID,0,"    Don't do anything until you hear from me again!,");
+	Doc_PrintLines(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"    Halvor");
 	Doc_Show(nDocID);
@@ -805,16 +805,16 @@ func void UsePassage()
 	Doc_SetFont(nDocID,-1,FONT_Book);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Глубокоуважаемый лорд Хаген,");
+	Doc_PrintLine(nDocID,0,"Honored Lord Hagen,");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Мы оба прекрасно знаем, в какой ситуации вы находитесь. И, учитывая обстоятельства, я предлагаю следующее соглашение:");
-	Doc_PrintLines(nDocID,0,"Вы даруете моим людям полное отпущение грехов перед Инносом и королем.");
-	Doc_PrintLines(nDocID,0,"Взамен мы предлагаем вам свою помощь в обороне города и прилегающих земель.");
-	Doc_PrintLines(nDocID,0,"Кроме того, я лично прослежу за тем, чтобы мои люди держались подальше от местных ферм - за исключением, естественно, фермы Онара, где мы расквартированы.");
-	Doc_PrintLines(nDocID,0,"Я знаю, что на корабле, на котором вы собираетесь отправиться на материк, вполне достаточно места, как для меня, так и для моих избранных людей. Когда вы поднимете паруса, я хочу тоже быть на борту.");
-	Doc_PrintLines(nDocID,0,"Я умоляю вас: примите решение со всей присущей вам мудростью.");
+	Doc_PrintLines(nDocID,0,"We are both aware of your situation. I therefore propose the following arrangement:");
+	Doc_PrintLines(nDocID,0,"Grant my men and myself total absolution before Innos and before the King.");
+	Doc_PrintLines(nDocID,0,"In return, we offer to assist you in the defense of the town and the surrounding lands.");
+	Doc_PrintLines(nDocID,0,"Moreover, I personally shall see to it that my men steer clear of the surrounding farms - except, of course, that of Onar, where we will continue to be stationed.");
+	Doc_PrintLines(nDocID,0,"I am aware that there is enough room for myself and some of my men on the ship aboard which you will depart to the mainland. When you set sail, I want to be on board.");
+	Doc_PrintLines(nDocID,0,"I beseech you: Make your decision with all the wisdom given to you.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Подпись:   Генерал Ли");
+	Doc_PrintLine(nDocID,0,"Signed   General Lee");
 	Doc_SetMargins(nDocID,-1,200,50,50,50,1);
 	Doc_Show(nDocID);
 };
@@ -822,7 +822,7 @@ func void UsePassage()
 
 instance ItWr_BanditLetter_MIS(C_Item)
 {
-	name = "Сообщение";
+	name = "Message";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -831,7 +831,7 @@ instance ItWr_BanditLetter_MIS(C_Item)
 	on_state[0] = UseBanditLetter;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Я забрал его у одного из бандитов Браго.";
+	text[0] = "I took it from one of Brago's bandits.";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;
@@ -848,24 +848,24 @@ func void UseBanditLetter()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Задерживайте всех, спустившихся с гор.");
-	Doc_PrintLines(nDocID,0,"Вполне вероятно, что через проход");
-	Doc_PrintLines(nDocID,0," попытается пройти старик.");
-	Doc_PrintLines(nDocID,0,"Не дайте ему обмануть вас -");
-	Doc_PrintLines(nDocID,0,"    это очень опасный колдун.");
-	Doc_PrintLines(nDocID,0,"Присматривайте за ним.");
+	Doc_PrintLines(nDocID,0,"Stop all men who come from the mountains.");
+	Doc_PrintLines(nDocID,0,"If someone comes along the pass,");
+	Doc_PrintLines(nDocID,0," it will probably be an old man.");
+	Doc_PrintLines(nDocID,0,"Don't let him fool you -");
+	Doc_PrintLines(nDocID,0,"    he is a dangerous sorcerer.   ");
+	Doc_PrintLines(nDocID,0,"Keep an eye on him.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Возможно, человек, которого мы ищем,");
-	Doc_PrintLines(nDocID,0,"    выйдет с ним на связь.");
-	Doc_PrintLines(nDocID,0,"С этим письмом я посылаю вам");
-	Doc_PrintLines(nDocID,0,"    тридцать золотых самородков.");
-	Doc_PrintLines(nDocID,0,"Я дам еще тридцать любому,");
-	Doc_PrintLines(nDocID,0,"    кто убьет этого человека.");
+	Doc_PrintLines(nDocID,0,"It's possible the guy we're looking for");
+	Doc_PrintLines(nDocID,0,"    will contact him.");
+	Doc_PrintLines(nDocID,0,"With this letter I'm sending you");
+	Doc_PrintLines(nDocID,0,"    thirty pieces of gold.");
+	Doc_PrintLines(nDocID,0,"I will give another thirty to anyone");
+	Doc_PrintLines(nDocID,0,"    who kills the man.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Принесите его голову к старой шахте");
-	Doc_PrintLines(nDocID,0,"    около поместья землевладельца.");
+	Doc_PrintLines(nDocID,0,"Bring his head to the old mine near the landowner.");
+	Doc_PrintLines(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Д.");
+	Doc_PrintLine(nDocID,0,"D.");
 //	Doc_PrintLine(nDocID,0,"");
 	Doc_SetMargins(nDocID,-1,200,50,50,50,1);
 	Doc_Show(nDocID);
@@ -874,7 +874,7 @@ func void UseBanditLetter()
 
 instance ItWr_Poster_MIS(C_Item)
 {
-	name = "Объявление о розыске";
+	name = "Wanted Note";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MULTI | ITEM_MISSION;
 	value = 0;
@@ -883,7 +883,7 @@ instance ItWr_Poster_MIS(C_Item)
 	on_state[0] = UsePoster;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Мое изображение!";
+	text[0] = "A picture of me!";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;
@@ -909,7 +909,7 @@ instance ItKe_Bandit(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Этот ключ принадлежал бандиту.";
+	text[0] = "The key belonged to a bandit.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -918,7 +918,7 @@ instance ItKe_Bandit(C_Item)
 
 instance ItRw_Bow_L_03_MIS(C_Item)
 {
-	name = "Охотничий лук";
+	name = "Hunting Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW | ITEM_MISSION;
 	material = MAT_WOOD;
@@ -930,7 +930,7 @@ instance ItRw_Bow_L_03_MIS(C_Item)
 	cond_value[2] = Condition_Jagdbogen;
 	visual = "ItRw_Bow_L_03.mms";
 	description = name;
-	text[0] = "Этот лук принадлежит Босперу.";
+	text[0] = "Bosper's hunting bow.";
 	text[2] = NAME_Damage;
 	count[2] = damageTotal;
 	text[3] = NAME_Dex_needed;
@@ -952,8 +952,8 @@ instance ItRi_Prot_Point_01_MIS(C_Item)
 	on_unequip = UnEquip_ItRi_Prot_Point_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Кольцо деревянной кожи";
-	text[0] = "Это кольцо принадлежит Константино.";
+	description = "Ring of Wooden Skin";
+	text[0] = "It belongs to Constantino.";
 	text[2] = NAME_Prot_Point;
 	count[2] = Ri_ProtPoint;
 	text[5] = NAME_Value;
@@ -965,17 +965,17 @@ instance ItRi_Prot_Point_01_MIS(C_Item)
 
 instance ItMi_EddasStatue(C_Item)
 {
-	name = "Статуэтка Инноса";
+	name = "Statue of Innos";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_MISSION;
 	value = Value_InnosStatue;
 	visual = "ItMi_InnosStatue.3DS";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "На задней стороне нацарапаны слова:";
-	text[1] = "'Иннос, бог правосудия,";
-	text[2] = "благослови и сохрани меня,";
-	text[3] = "и защити меня от боли'.";
+	text[0] = "Inscription:";
+	text[1] = "'Innos, Lord of Justice";
+	text[2] = "bless and guard me,";
+	text[3] = "and spare me from harm.'.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -989,7 +989,7 @@ instance ItKe_EVT_CRYPT_01(C_Item)
 	visual = "ItKe_Key_05.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Это ключ скелета из первой комнаты.";
+	text[0] = "The key from the skeleton in the first room.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1005,7 +1005,7 @@ instance ItKe_EVT_CRYPT_02(C_Item)
 	visual = "ItKe_Key_05.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Это ключ скелета из второй комнаты.";
+	text[0] = "The key from the skeleton in the second room.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1021,7 +1021,7 @@ instance ItKe_EVT_CRYPT_03(C_Item)
 	visual = "ItKe_Key_05.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Это ключ скелета из третьей комнаты.";
+	text[0] = "The key from the skeleton in the third room.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1033,7 +1033,7 @@ const int Value_ITAR_PAL_Skel = 500;
 
 instance ITAR_PAL_Skel(C_Item)
 {
-	name = "Старые доспехи паладина";
+	name = "Old Knight's Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 100;
@@ -1070,8 +1070,8 @@ instance ItKe_Valentino(C_Item)
 	visual = "ItKe_Key_03.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Это ключ от сундука,";
-	text[1] = "принадлежащего Валентино.";
+	text[0] = "The key to a chest";
+	text[1] = "belonging to Valentino.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1087,7 +1087,7 @@ instance ItKe_Buerger(C_Item)
 	visual = "ItKe_Key_04.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Он лежал на камине.";
+	text[0] = "It was lying around on a windowsill.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1103,8 +1103,8 @@ instance ItKe_Richter(C_Item)
 	visual = "ItKe_Key_04.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Это ключ от сундука,";
-	text[1] = "принадлежащего судье.";
+	text[0] = "The key to a chest";
+	text[1] = "belonging to the judge.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1120,8 +1120,8 @@ instance ItKe_Salandril(C_Item)
 	visual = "ItKe_Key_03.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Ключ от сундука, принадлежащего";
-	text[1] = "алхимику Саландрилу.";
+	text[0] = "Belonging to Salandril the Alchemist.";
+	text[1] = "";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1137,8 +1137,8 @@ instance ItKe_PaladinTruhe(C_Item)
 	visual = "ItKe_Key_04.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Маленький латунный ключик";
-	text[1] = "из дома паладинов.";
+	text[0] = "A small brass key from";
+	text[1] = "the house of the paladins.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1154,7 +1154,7 @@ instance ItKe_ThiefTreasure(C_Item)
 	visual = "ItKe_Key_04.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Маленький ключик.";
+	text[0] = "Small Key.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1170,8 +1170,8 @@ instance ItKe_Fingers(C_Item)
 	visual = "ItKe_Key_05.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Ржавый ключ от двери";
-	text[1] = "в канализации.";
+	text[0] = "A rusty door key";
+	text[1] = "from the sewers.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1180,7 +1180,7 @@ instance ItKe_Fingers(C_Item)
 
 instance ItWr_Schuldenbuch(C_Item)
 {
-	name = "Долговая книга";
+	name = "Book of Debts";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 200;
@@ -1188,7 +1188,7 @@ instance ItWr_Schuldenbuch(C_Item)
 	material = MAT_LEATHER;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Принадлежит ростовщику Лемару.";
+	text[0] = "Lehmar's book of debts.";
 	text[5] = NAME_Value;
 	count[5] = value;
 	on_state[0] = UseSchuldBuch;
@@ -1205,25 +1205,25 @@ func void UseSchuldBuch()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Сделки и долги");
+	Doc_PrintLines(nDocID,0,"Deals and Debts");
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Я, мастер Торбен, плотник Хориниса, должен глубокоуважаемому Лемару 200 золотых монет.");
+	Doc_PrintLines(nDocID,0,"I, Master Thorben, carpenter of Khorinis, owe to the honorable Lehmar a debt of 200 gold coins.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"             Торбен");
+	Doc_PrintLine(nDocID,0,"             Thorben");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Я, Корагон, трактирщик Хориниса, должен глубокоуважаемому Лемару 150 золотых монет.");
+	Doc_PrintLines(nDocID,0,"I, Coragon, innkeeper of Khorinis, owe the honorable Lehmar a debt of 150 in gold.");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"             Корагон");
+	Doc_PrintLine(nDocID,0,"             Coragon");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_SetFont(nDocID,1,FONT_Book);
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Я, Ханна, владелица отеля Хориниса, должна глубокоуважаемому Лемару 250 золотых монет.");
+	Doc_PrintLines(nDocID,1,"I, Hanna, hotelier of Khorinis, owe the honorable Lehmar a debt of 250 gold coins.");
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLine(nDocID,1,"               Ханна");
+	Doc_PrintLine(nDocID,1,"               Hanna");
 	Doc_Show(nDocID);
 	SchuldBuchNamesKnown = TRUE;
 };
@@ -1231,7 +1231,7 @@ func void UseSchuldBuch()
 
 instance ItPl_Sagitta_Herb_MIS(C_Item)
 {
-	name = "Солнечное алоэ";
+	name = "Sun Aloe";
 	mainflag = ITEM_KAT_FOOD;
 //	flags = ITEM_MULTI;
 	flags = ITEM_MISSION;
@@ -1253,8 +1253,8 @@ instance ItKe_Orlan_HotelZimmer(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Ключ от комнаты";
-	text[1] = "в таверне 'Мертвая гарпия'.";
+	text[0] = "From the tavern 'The Dead Harpy";
+	text[1] = "";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -1263,7 +1263,7 @@ instance ItKe_Orlan_HotelZimmer(C_Item)
 
 instance ItRw_DragomirsArmbrust_MIS(C_Item)
 {
-	name = "Арбалет Драгомира";
+	name = "Dragomir's Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -1285,7 +1285,7 @@ instance ItRw_DragomirsArmbrust_MIS(C_Item)
 
 instance ItMi_GregsSilverPlate(C_Item)
 {
-	name = "Серебряное блюдо";
+	name = "Silver Dish";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MISSION;
 	value = 130;

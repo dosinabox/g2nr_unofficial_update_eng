@@ -1,7 +1,7 @@
 
 instance VLK_414_Hanna(Npc_Default)
 {
-	name[0] = "Ханна";
+	name[0] = "Hanna";
 	guild = GIL_VLK;
 	id = 414;
 	voice = 17;

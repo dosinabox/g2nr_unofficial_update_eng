@@ -14,16 +14,16 @@ func void Use_BookstandHistory1_S1()
 		Doc_SetPage(nDocID,1,"Book_Red_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Путь воина");
+		Doc_PrintLine(nDocID,0,"The Way of Battle");
 		Doc_PrintLine(nDocID,0,"");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Лучшая защита - это хорошее нападение, по крайней мере, когда дело касается зверей. Бесполезно парировать атаки зверей или монстров.");
-		Doc_PrintLines(nDocID,0,"Лучше всего держать врага на расстоянии при помощи точных, выверенных ударов, а затем нанести неожиданную комбинационную атаку.");
+		Doc_PrintLines (nDocID, 0, "The best defense is a good offense, at least against anything non-human. It's useless to parry animals' or monsters' attacks.");
+		Doc_PrintLines (nDocID, 0, "It's better to keep the foe at bay with well-aimed blows and then launch a surprise combination attack.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Конечно, только опытные бойцы могут пользоваться комбинациями. Если вы станете мастером боя, вы даже сможете использовать несколько комбинаций.");
+		Doc_PrintLines(nDocID,1,"Of course, only experienced fighters can combine their moves. If you become a master in the art of battle, you can even use several combinations.");
 		Doc_Show(nDocID);
 		if(History_1_permanent == FALSE)
 		{
@@ -44,14 +44,14 @@ func void Use_BookstandHistory2_S1()
 		Doc_SetPage(nDocID,1,"Book_Red_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Остров");
+		Doc_PrintLine(nDocID,0,"The Island");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Портовый город Хоринис находится на острове у побережья королевства Миртана.");
-		Doc_PrintLines(nDocID,0,"Этот остров известен, прежде всего, своей Долиной Рудников. О ней ходят разные слухи, много лет она была закрыта магическим барьером и служила тюрьмой для всех осужденных королевства.");
-		Doc_PrintLines(nDocID,0,"Таким образом, эта долина стала тюремной колонией, где каторжники глубоко под землей добывали магическую руду.");
+		Doc_PrintLines (nDocID, 0, "The harbor city of Khorinis lies on an island off the coast of the Kingdom Myrtana.");
+		Doc_PrintLines (nDocID, 0, "The island owes much of its fame to the Valley of Mines. Its reputation is dubious, as for many years a magic barrier spanned the entire valley, which served as a prison for all convicts of the Realm.");
+		Doc_PrintLines (nDocID, 0, "Thus the valley became a prison colony where the convicts mined the magic ore far below the ground.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
-		Doc_PrintLines(nDocID,1,"Неподалеку от Хориниса находятся несколько ферм, где крестьяне на плодородной почве выращивают пшеницу и репу, а также разводят овец. Уже многие поколения самая большая ферма принадлежит лендлорду, который сдает в аренду прилежащие земли другим фермерам.");
-		Doc_PrintLines(nDocID,1,"В центре острова находится древний монастырь Инноса, возглавляемый магами Огня. Они проводят там исследования в области магии и алхимии, а также делают неплохое вино.");
+		Doc_PrintLines(nDocID,1,"Outside of Khorinis lie a series of farms which use the good soil to plant wheat and turnips and breed sheep. For generations the largest farm has belonged to a landowner who rents the surrounding lands to other farmers.");
+		Doc_PrintLines(nDocID,1,"On the middle of the island is an ancient monastery of Innos, led by the Magicians of Fire. There they conduct research of magic and alchemy and press wine.");
 		Doc_Show(nDocID);
 		if(History_2_permanent == FALSE)
 		{
@@ -72,14 +72,14 @@ func void Use_BookstandHistory3_S1()
 		Doc_SetPage(nDocID,1,"Book_Red_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Закон на острове");
+		Doc_PrintLine(nDocID,0,"The Law of the Island");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Когда люди живут вместе, приходится искать способы поддержания мира - будь это монастырь, город или ферма лендлорда.");
-		Doc_PrintLines(nDocID,0,"Любое преступление против сообщества подлежит наказанию. Сообщество запрещает нападать на других, а также ввязываться в уже идущую схватку.");
-		Doc_PrintLines(nDocID,0,"Воровство также подлежит наказанию. Кроме того, под защитой закона также находятся священные животные - овцы.");
+		Doc_PrintLines(nDocID,0,"Wherever men come together, ways must be found to keep the peace - be it in the monastery, the city or on the landowner's farm.");
+		Doc_PrintLines(nDocID,0,"Any crime against the community is punished. The community forbids starting fights or joining brawls."");
+		Doc_PrintLines(nDocID,0,"Theft is also a crime that has consequences. The sheep are also protected by law.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
-		Doc_PrintLines(nDocID,1,"Если кто-либо ударит другого или убьет его, правосудие обычно вершится на месте. Чтобы избежать подобной судьбы, виновный должен заплатить высокий штраф.");
-		Doc_PrintLines(nDocID,1,"Во всех местах скопления народа спокойствие поддерживают судьи. До них доходят сведения обо всех преступлениях, и в их обязанность входит вынесение приговора и восстановление порядка. Жертвы или свидетели обязаны сообщить о преступлении властям.");
+		Doc_PrintLines(nDocID,1,"If a man strikes down another or murders him, he must expect to be judged on the spot. To evade this fate he must pay a heavy fine.");
+		Doc_PrintLines(nDocID,1,"In all large places, men of justice keep the peace. They will hear of any crime, and it is their duty to effect punishment and restore order. For whoever suffers from crime or witnesses such will not have a high opinion of the culprit.");
 		Doc_Show(nDocID);
 		if(History_3_permanent == FALSE)
 		{
@@ -100,33 +100,33 @@ func void Use_BookstandKaserne_S1()
 		Doc_SetPage(nDocID,1,"Book_Red_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Дежурства");
+		Doc_PrintLine(nDocID,0,"Guard posts");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Пабло:");
-		Doc_PrintLines(nDocID,0,"рыночная площадь (вечер)");
+		Doc_PrintLines(nDocID,0,"Pablo");
+		Doc_PrintLines(nDocID,0,"market square (evening) ");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Рагнар:");
-		Doc_PrintLines(nDocID,0,"площадь правосудия (день)");
+		Doc_PrintLines(nDocID,0,"Rangar:");
+		Doc_PrintLines(nDocID,0,"gallows square (day)");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Мика:");
-		Doc_PrintLines(nDocID,0,"восточные ворота (день)");
+		Doc_PrintLines(nDocID,0,"Mika:");
+		Doc_PrintLines(nDocID,0,"eastern gate (day)");
 		if(RickReturnedToCity == TRUE)
 		{
 			Doc_PrintLine(nDocID,0,"");
-			Doc_PrintLines(nDocID,0,"Рик:");
-			Doc_PrintLines(nDocID,0,"казармы (ночь)");
+			Doc_PrintLines(nDocID,0,"Rick:");
+			Doc_PrintLines(nDocID,0,"barracks (night)");
 			if(RumboldReturnedToCity == TRUE)
 			{
 				Doc_PrintLine(nDocID,0,"");
-				Doc_PrintLines(nDocID,0,"Румболд:");
-				Doc_PrintLines(nDocID,0,"южные ворота (ночь)");
+				Doc_PrintLines(nDocID,0,"Rumbold:");
+				Doc_PrintLines(nDocID,0,"southern gate (night)");
 			};
 		}
 		else if(RumboldReturnedToCity == TRUE)
 		{
 			Doc_PrintLine(nDocID,0,"");
-			Doc_PrintLines(nDocID,0,"Румболд:");
-			Doc_PrintLines(nDocID,0,"южные ворота (ночь)");
+			Doc_PrintLines(nDocID,0,"Rumbold:");
+			Doc_PrintLines(nDocID,0,"southern gate (night)");
 		};
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");

@@ -836,7 +836,7 @@ func void DIA_Torlof_Teach_Info()
 		if(Log_TorlofTeach == FALSE)
 		{
 			Log_CreateTopic(TOPIC_SoldierTeacher,LOG_NOTE);
-			B_LogEntry(TOPIC_SoldierTeacher,"Торлоф может повысить мою ловкость и силу.");
+			B_LogEntry(TOPIC_SoldierTeacher,"Torlof can help me improve my dexterity and strength.");
 			Log_TorlofTeach = TRUE;
 		};
 		Torlof_Merke_STR = other.aivar[REAL_STRENGTH];
@@ -968,7 +968,7 @@ instance DIA_Torlof_WOISTSYLVIO(C_Info)
 	nr = 40;
 	condition = DIA_Torlof_WOISTSYLVIO_Condition;
 	information = DIA_Torlof_WOISTSYLVIO_Info;
-	description = "Что, часть наемников ушла отсюда?";
+	description = "Some of the mercenaries have left?";
 };
 
 

@@ -1,7 +1,7 @@
 
 instance VLK_413_Bosper(Npc_Default)
 {
-	name[0] = "Боспер";
+	name[0] = "Bosper";
 	guild = GIL_VLK;
 	id = 413;
 	voice = 11;

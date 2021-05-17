@@ -1,7 +1,7 @@
 
 instance PAL_258_Keroloth(Npc_Default)
 {
-	name[0] = "Керолот";
+	name[0] = "Keroloth";
 	guild = GIL_PAL;
 	id = 258;
 	voice = 7;

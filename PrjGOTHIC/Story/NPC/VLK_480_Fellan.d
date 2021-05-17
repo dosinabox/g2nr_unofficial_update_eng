@@ -1,7 +1,7 @@
 
 instance VLK_480_Fellan(Npc_Default)
 {
-	name[0] = "Феллан";
+	name[0] = "Fellan";
 	guild = GIL_VLK;
 	id = 480;
 	voice = 6;

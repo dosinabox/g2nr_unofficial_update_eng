@@ -1,7 +1,7 @@
 
 instance BAU_960_Bengar(Npc_Default)
 {
-	name[0] = "Бенгар";
+	name[0] = "Bengar";
 	guild = GIL_OUT;
 	id = 960;
 	voice = 10;

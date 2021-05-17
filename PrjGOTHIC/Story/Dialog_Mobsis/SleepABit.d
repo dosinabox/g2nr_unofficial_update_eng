@@ -83,7 +83,7 @@ instance PC_SleepTime_Morning(C_Info)
 	information = PC_SleepTime_Morning_Info;
 	important = FALSE;
 	permanent = TRUE;
-	description = "Спать до утра";
+	description = "Sleep till next morning";
 };
 
 
@@ -109,7 +109,7 @@ instance PC_SleepTime_Noon(C_Info)
 	information = PC_SleepTime_Noon_Info;
 	important = FALSE;
 	permanent = TRUE;
-	description = "Спать до полудня";
+	description = "Sleep till midday";
 };
 
 
@@ -135,7 +135,7 @@ instance PC_SleepTime_Evening(C_Info)
 	information = PC_SleepTime_Evening_Info;
 	important = FALSE;
 	permanent = TRUE;
-	description = "Спать до вечера";
+	description = "Sleep till next evening";
 };
 
 
@@ -161,7 +161,7 @@ instance PC_SleepTime_Midnight(C_Info)
 	information = PC_SleepTime_Midnight_Info;
 	important = FALSE;
 	permanent = TRUE;
-	description = "Спать до полуночи";
+	description = "Sleep till midnight";
 };
 
 
@@ -187,7 +187,7 @@ instance PC_SleepTime_Dawn(C_Info)
 	information = PC_SleepTime_Dawn_Info;
 	important = FALSE;
 	permanent = TRUE;
-	description = "Спать до рассвета";
+	description = "Sleep till dawn";
 };
 
 

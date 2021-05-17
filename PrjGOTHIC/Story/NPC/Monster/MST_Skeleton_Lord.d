@@ -1,7 +1,7 @@
 
 prototype Mst_Skeleton_Lord(C_Npc)
 {
-	name[0] = "Теневой воин";
+	name[0] = "Shadow Warrior";
 	guild = GIL_SKELETON;
 	aivar[AIV_MM_REAL_ID] = ID_SKELETON;
 	level = 40;
@@ -46,16 +46,16 @@ instance Skeleton_Lord(Mst_Skeleton_Lord)
 
 instance Crypt_Skeleton_Lord(Mst_Skeleton_Lord)
 {
-	name[0] = "Теневой лорд Инубис";
-	B_SetVisuals_Skeleton_Lord();
-	CreateInvItems(self,ItMi_Gold,500);
-	CreateInvItems(self,ItPo_Mana_03,2);
-	CreateInvItems(self,ItPo_Health_03,2);
+	name[0] = "Shadow Lord Inubis";
+	B_SetVisuals_Skeleton_Lord ();
+	CreateInvItems (self, ItMi_Gold, 500);
+	CreateInvItems (self, ItPo_Mana_03, 2);
+	CreateInvItems (self, ItPo_Health_03, 2);
 };
 
 instance Skeleton_Lord_Archol(Mst_Skeleton_Lord)
 {
-	name[0] = "Теневой лорд Архол";
+	name[0] = "Shadow Lord Archol";
 	level = 60;
 	attribute[ATR_STRENGTH] = 150;
 	attribute[ATR_DEXTERITY] = 150;

@@ -12,7 +12,7 @@ func int C_PlayerHasFlasks()
 	{
 		return TRUE;
 	};
-	AI_PrintScreen("Закончились чистые мензурки!",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("No more flasks!",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 	return FALSE;
 };
 
@@ -80,7 +80,7 @@ instance PC_Booze_Start(C_Info)
 	condition = PC_Booze_Start_Condition;
 	information = PC_Booze_Start_Info;
 	permanent = TRUE;
-	description = "Перегнать алкоголь";
+	description = "Distill booze";
 };
 
 
@@ -141,7 +141,7 @@ instance PC_Booze_Lou(C_Info)
 	condition = PC_Booze_Lou_Condition;
 	information = PC_Booze_Lou_Info;
 	permanent = TRUE;
-	description = "'Молот Лу' (1 вода, 2 репы, 1 болотная трава, 1 зуб болотной акулы и 1 ром)";
+	description = "'Lou's Hammer' (1 water, 2 turnips, 1 swampweed, 1 swampshark tooth and 1 rum)";
 };
 
 
@@ -182,7 +182,7 @@ instance PC_Booze_Schlaf(C_Info)
 	condition = PC_Booze_Schlaf_Condition;
 	information = PC_Booze_Schlaf_Info;
 	permanent = TRUE;
-	description = "Двойной 'Молот Лу' (1 'Молот Лу' и 1 ром)";
+	description = "'Lou's Double Hammer' (1 'Lou's Hammer' and 1 rom)";
 };
 
 
@@ -220,7 +220,7 @@ instance PC_Booze_SchnellerHering(C_Info)
 	condition = PC_Booze_SchnellerHering_Condition;
 	information = PC_Booze_SchnellerHering_Info;
 	permanent = TRUE;
-	description = "'Быстрая селедка' (1 вода, 1 ром, 1 рыба и 1 снеппер-трава)";
+	description = "'Hasty Herring' (1 water, 1 rum, 1 fish and 1 snapperweed)";
 };
 
 
@@ -267,7 +267,7 @@ instance PC_Charge_InnosEye(C_Info)
 	condition = PC_Charge_InnosEye_Condition;
 	information = PC_Charge_InnosEye_Info;
 	permanent = TRUE;
-	description = "Зарядить Глаз Инноса";
+	description = "Recharge the Eye of Innos";
 };
 
 
@@ -323,7 +323,7 @@ instance PC_Mana_Start(C_Info)
 	condition = PC_Mana_Start_Condition;
 	information = PC_Mana_Start_Info;
 	permanent = TRUE;
-	description = "Изготовить зелье маны";
+	description = "Brew mana potions";
 };
 
 
@@ -388,7 +388,7 @@ instance PC_ItPo_Mana_01(C_Info)
 	condition = PC_ItPo_Mana_01_Condition;
 	information = PC_ItPo_Mana_01_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_Mana_Essenz," (2 огненных крапивы и 1 луговой горец)");
+	description = ConcatStrings(NAME_Mana_Essenz," (2 fire nettles, 1 meadow knotweed");
 };
 
 
@@ -426,7 +426,7 @@ instance PC_ItPo_Mana_02(C_Info)
 	condition = PC_ItPo_Mana_02_Condition;
 	information = PC_ItPo_Mana_02_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_Mana_Extrakt," (2 огненных травы и 1 луговой горец)");
+	description = ConcatStrings(NAME_Mana_Extrakt," (2 fireweeds, 1 meadow knotweed)");
 };
 
 
@@ -464,7 +464,7 @@ instance PC_ItPo_Mana_03(C_Info)
 	condition = PC_ItPo_Mana_03_Condition;
 	information = PC_ItPo_Mana_03_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_Mana_Elixier," (2 огненных корня, 1 луговой горец)");
+	description = ConcatStrings(NAME_Mana_Elixier," (2 fire roots, 1 meadow knotweed)");
 };
 
 
@@ -502,7 +502,7 @@ instance PC_ItPo_Mana_04(C_Info)
 	condition = PC_ItPo_Mana_04_Condition;
 	information = PC_ItPo_Mana_04_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_Mana_Full," (3 эссенции маны, 1 луговой горец)");
+	description = ConcatStrings(NAME_Mana_Full," (3 Mana essences, 1 meadow knotweed)");
 };
 
 
@@ -540,7 +540,7 @@ instance PC_Health_Start(C_Info)
 	condition = PC_Health_Start_Condition;
 	information = PC_Health_Start_Info;
 	permanent = TRUE;
-	description = "Изготовить лечебное зелье";
+	description = "Brew healing potions";
 };
 
 
@@ -605,7 +605,7 @@ instance PC_ItPo_Health_01(C_Info)
 	condition = PC_ItPo_Health_01_Condition;
 	information = PC_ItPo_Health_01_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_HP_Essenz," (2 лечебные травы, 1 луговой горец)");
+	description = ConcatStrings(NAME_HP_Essenz," (2 healing plants, 1 meadow knotweed)");
 };
 
 
@@ -643,7 +643,7 @@ instance PC_ItPo_Health_02(C_Info)
 	condition = PC_ItPo_Health_02_Condition;
 	information = PC_ItPo_Health_02_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_HP_Extrakt," (2 лечебных растения, 1 луговой горец)");
+	description = ConcatStrings(NAME_HP_Extrakt," (2 healing herbs, 1 meadow knotweed)");
 };
 
 
@@ -681,7 +681,7 @@ instance PC_ItPo_Health_03(C_Info)
 	condition = PC_ItPo_Health_03_Condition;
 	information = PC_ItPo_Health_03_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_HP_Elixier," (2 лечебных корня, 1 луговой горец)");
+	description = ConcatStrings(NAME_HP_Elixier," (2 healing roots, 1 meadow knotweed)");
 };
 
 
@@ -719,7 +719,7 @@ instance PC_ItPo_Health_04(C_Info)
 	condition = PC_ItPo_Health_04_Condition;
 	information = PC_ItPo_Health_04_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_HP_Full," (3 лечебные эссенции, 1 луговой горец)");
+	description = ConcatStrings(NAME_HP_Full," (3 essences of healing, 1 meadow knotweed)");
 };
 
 
@@ -757,7 +757,7 @@ instance PC_Special_Start(C_Info)
 	condition = PC_Special_Start_Condition;
 	information = PC_Special_Start_Info;
 	permanent = TRUE;
-	description = "Изготовить особое зелье";
+	description = "Brew special potions";
 };
 
 
@@ -838,7 +838,7 @@ instance PC_ItPo_Perm_Health(C_Info)
 	condition = PC_ItPo_Perm_Health_Condition;
 	information = PC_ItPo_Perm_Health_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_HPMax_Elixier," (1 лечебный корень, 1 царский щавель)");
+	description = ConcatStrings(NAME_HPMax_Elixier," (1 healing root, 1 king's sorrel)");
 };
 
 
@@ -877,7 +877,7 @@ instance PC_ItPo_Perm_Mana(C_Info)
 	condition = PC_ItPo_Perm_Mana_Condition;
 	information = PC_ItPo_Perm_Mana_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_ManaMax_Elixier," (1 огненный корень, 1 царский щавель)");
+	description = ConcatStrings(NAME_ManaMax_Elixier," (1 healing root, 1 king's sorrel)");
 };
 
 
@@ -916,7 +916,7 @@ instance PC_ItPo_Perm_MushroomMana(C_Info)
 	condition = PC_ItPo_Perm_MushroomMana_Condition;
 	information = PC_ItPo_Perm_MushroomMana_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_MushroomMana," (50 черных грибов, 1 луговая ягода)");
+	description = ConcatStrings(NAME_MushroomMana," (50 dark mushrooms, 1 meadow berry)");
 };
 
 
@@ -955,7 +955,7 @@ instance PC_ItPo_Dex(C_Info)
 	condition = PC_ItPo_Dex_Condition;
 	information = PC_ItPo_Dex_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_DEX_Elixier," (1 гоблинская ягода, 1 царский щавель)");
+	description = ConcatStrings(NAME_DEX_Elixier," (1 goblin berry, 1 king's sorrel)");
 };
 
 
@@ -995,7 +995,7 @@ instance PC_ItPo_Strg(C_Info)
 	condition = PC_ItPo_Strg_Condition;
 	information = PC_ItPo_Strg_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_STR_Elixier," (1 драконий корень, 1 царский щавель)");
+	description = ConcatStrings(NAME_STR_Elixier," (1 dragonroot, 1 king's sorrel)");
 };
 
 
@@ -1035,7 +1035,7 @@ instance PC_ItPo_Speed(C_Info)
 	condition = PC_ItPo_Speed_Condition;
 	information = PC_ItPo_Speed_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_Speed_Elixier," (1 снеппер-трава, 1 луговой горец)");
+	description = ConcatStrings(NAME_Speed_Elixier," (1 snapperweed, 1 meadow knotweed)");
 };
 
 
@@ -1073,7 +1073,7 @@ instance PC_ItPo_Addon_Geist(C_Info)
 	condition = PC_ItPo_Addon_Geist_Condition;
 	information = PC_ItPo_Addon_Geist_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_Geist," (2 жала кровавой мухи, 1 экстракт маны, 1 лечебная эссенция и 1 красный жгучий перец)");
+	description = ConcatStrings(NAME_Geist," (2 bloodfly stings, 1 mana extract, 1 healing essence and 1 red pepper)");
 };
 
 
@@ -1120,7 +1120,7 @@ instance PC_ItPo_MegaDrink(C_Info)
 	condition = PC_ItPo_MegaDrink_Condition;
 	information = PC_ItPo_MegaDrink_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_MegaDrink," (10 драконьих яиц, 1 черная жемчужина, 1 сера)");
+	description = ConcatStrings(NAME_MegaDrink," (10 dragon eggs, 1 black pearl, 1 sulfur)");
 };
 
 
@@ -1159,7 +1159,7 @@ instance PC_Tabak_Start(C_Info)
 	condition = PC_Tabak_Start_Condition;
 	information = PC_Tabak_Start_Info;
 	permanent = TRUE;
-	description = "Смешать табак или свернуть косяк";
+	description = "Blend tobacco and roll reefers";
 };
 
 
@@ -1209,7 +1209,7 @@ instance PC_ItMi_Joint(C_Info)
 	condition = PC_ItMi_Joint_Condition;
 	information = PC_ItMi_Joint_Info;
 	permanent = TRUE;
-	description = "Косяк из болотной травы (1 болотная трава)";
+	description = "Process swampweed (1 stalk)";
 };
 
 
@@ -1249,7 +1249,7 @@ instance PC_ItMi_Addon_Joint_01(C_Info)
 	condition = PC_ItMi_Addon_Joint_01_Condition;
 	information = PC_ItMi_Addon_Joint_01_Info;
 	permanent = TRUE;
-	description = "'Зеленый послушник' (2 болотных травы, 1 луговой горец)";
+	description = "'Green Novice' (2 swampweed herbs, 1 meadow knotweed)";
 };
 
 
@@ -1290,7 +1290,7 @@ instance PC_ItMi_Tabak(C_Info)
 	condition = PC_ItMi_Tabak_Condition;
 	information = PC_ItMi_Tabak_Info;
 	permanent = TRUE;
-	description = "Смешать табак...";
+	description = "Blend tobacco...";
 };
 
 
@@ -1308,19 +1308,19 @@ func void PC_ItMi_Tabak_Info()
 	Info_AddChoice(PC_ItMi_Tabak,Dialog_Back,PC_ItMi_Tabak_BACK);
 	if(Npc_HasItems(self,ItFo_Honey))
 	{
-		Info_AddChoice(PC_ItMi_Tabak,"... с медом",PC_ItMi_Tabak_Honey);
+		Info_AddChoice (PC_ItMi_Tabak, "... with honey", PC_ItMi_Tabak_Honey);
 	};
 	if(Npc_HasItems(self,ItPl_SwampHerb))
 	{
-		Info_AddChoice(PC_ItMi_Tabak,"... с болотной травой",PC_ItMi_Tabak_Swampherb);
+		Info_AddChoice (PC_ItMi_Tabak, "... with swampweed", PC_ItMi_Tabak_Swampherb);
 	};
 	if(Npc_HasItems(self,ItPl_Mushroom_01))
 	{
-		Info_AddChoice(PC_ItMi_Tabak,"... с черным грибом",PC_ItMi_Tabak_Mushroom_01);
+		Info_AddChoice(PC_ItMi_Tabak,"... with murky mushroom",PC_ItMi_Tabak_Mushroom_01);
 	};
 	if(Npc_HasItems(self,ItFo_Apple))
 	{
-		Info_AddChoice(PC_ItMi_Tabak,"... с яблоком",PC_ItMi_Tabak_Double);
+		Info_AddChoice(PC_ItMi_Tabak,"... with an apple",PC_ItMi_Tabak_Double);
 	};
 };
 

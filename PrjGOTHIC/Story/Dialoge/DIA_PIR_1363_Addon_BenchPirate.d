@@ -113,7 +113,7 @@ instance DIA_Addon_BenchPirate_ComeOn(C_Info)
 	condition = DIA_Addon_BenchPirate_ComeOn_Condition;
 	information = DIA_Addon_BenchPirate_ComeOn_Info;
 	permanent = TRUE;
-	description = "Нас ждет каньон.";
+	description = "The canyon awaits.";
 };
 
 

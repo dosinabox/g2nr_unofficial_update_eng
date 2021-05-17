@@ -485,7 +485,7 @@ func void DIA_Addon_Garett_ArmorM_Back()
 	condition = DIA_Addon_Garett_StonePlate_Condition;
 	information = DIA_Addon_Garett_StonePlate_Info;
 	permanent = FALSE;
-	description = "У меня с собой есть каменная табличка. Сколько ты готов дать за это?";
+	description = "У меня с собой есть каменная табличка. Сколько ты готов дать за это?@@@";
 };
 
 

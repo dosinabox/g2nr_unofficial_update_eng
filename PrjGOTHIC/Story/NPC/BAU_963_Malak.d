@@ -1,7 +1,7 @@
 
 instance BAU_963_Malak(Npc_Default)
 {
-	name[0] = "Малак";
+	name[0] = "Malak";
 	guild = GIL_OUT;
 	id = 963;
 	voice = 8;

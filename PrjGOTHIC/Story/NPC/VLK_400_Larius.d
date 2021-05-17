@@ -1,7 +1,7 @@
 
 instance VLK_400_Larius(Npc_Default)
 {
-	name[0] = "Лариус";
+	name[0] = "Larius";
 	guild = GIL_VLK;
 	id = 400;
 	voice = 1;

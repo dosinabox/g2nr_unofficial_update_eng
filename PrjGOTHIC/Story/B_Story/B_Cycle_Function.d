@@ -22,12 +22,12 @@ func void B_Cycle_Function()
 				{
 					if(Pedro_Traitor == TRUE)
 					{
-						B_LogEntries(TOPIC_INNOSEYE,"Эти жуткие ребята действуют мне на нервы. Они испортили Глаз Инноса. И теперь я не знаю, как мне починить его.");
-						B_LogNextEntry(TOPIC_TraitorPedro,"Я нашел Глаз Инноса. Но что-то нигде не видно Педро. Эти черные маги в сговоре с ним.");
+						B_LogEntries(TOPIC_INNOSEYE,"Those creepy guys are getting on my nerves. They destroyed the Eye of Innos. Now I have to figure out how to fix it.");
+						B_LogNextEntry(TOPIC_TraitorPedro,"I retrieved the Eye of Innos, but Pedro was nowhere to be found. He must be in league with those black magicians.");
 					}
 					else
 					{
-						B_LogEntry(TOPIC_INNOSEYE,"Эти жуткие ребята действуют мне на нервы. Они испортили Глаз Инноса. И теперь я не знаю, как мне починить его.");
+						B_LogEntry(TOPIC_INNOSEYE,"Those creepy guys are getting on my nerves. They destroyed the Eye of Innos. Now I have to figure out how to fix it.");
 					};
 					B_GivePlayerXP(XP_SCKnowsInnosEyeIsBroken);
 					MIS_SCKnowsInnosEyeIsBroken = TRUE;

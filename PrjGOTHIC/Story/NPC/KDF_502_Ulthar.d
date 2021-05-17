@@ -1,7 +1,7 @@
 
 instance KDF_502_Ulthar(Npc_Default)
 {
-	name[0] = "Ультар";
+	name[0] = "Ulthar";
 	guild = GIL_KDF;
 	id = 502;
 	voice = 5;

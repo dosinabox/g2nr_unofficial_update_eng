@@ -504,7 +504,7 @@ instance DIA_Hanna_GiveSchuldenbuch(C_Info)
 	condition = DIA_Hanna_GiveSchuldenbuch_Condition;
 	information = DIA_Hanna_GiveSchuldenbuch_Info;
 	permanent = FALSE;
-	description = "Вот - возьми эту книгу.";
+	description = "Here - take the book.";
 };
 
 
@@ -536,7 +536,7 @@ instance DIA_Hanna_Blubb(C_Info)
 	condition = DIA_Hanna_Blubb_Condition;
 	information = DIA_Hanna_Blubb_Info;
 	permanent = TRUE;
-	description = "В логове все в порядке?";
+	description = "Everything all right in the hideout?";
 };
 
 func int DIA_Hanna_Blubb_Condition()
@@ -569,7 +569,7 @@ instance DIA_Hanna_Blubb2(C_Info)
 	condition = DIA_Hanna_Blubb2_Condition;
 	information = DIA_Hanna_Blubb2_Info;
 	permanent = TRUE;
-	description = "Ты знала о логове воров?";
+	description = "Did you know about the thieves' hideout?";
 };
 
 func int DIA_Hanna_Blubb2_Condition()
@@ -682,7 +682,7 @@ func void DIA_Hanna_PICKPOCKET_Book_DoIt()
 	{
 		Npc_RemoveInvItem(self,ItWr_Schuldenbuch);
 		CreateInvItem(other,ItWr_Schuldenbuch);
-		AI_PrintScreen("Book of Debts received",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
+		AI_PrintScreen("Received: Book of Debts",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
 		B_GiveThiefXP();
 		B_LogEntry(Topic_PickPocket,ConcatStrings("Hanna",PRINT_PickPocketSuccess));
 	}

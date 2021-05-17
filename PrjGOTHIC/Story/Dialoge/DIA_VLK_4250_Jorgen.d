@@ -358,11 +358,11 @@ func void DIA_Jorgen_BEMYCAPTAIN2_Info()
 	else if(SCGotCaptain == FALSE)
 	{
 		DIA_Common_MaybeICanOfferYouCaptainJob();
-		AI_Output(self,other,"DIA_Jorgen_BEMYCAPTAIN_07_01");	//Ты не издеваешься надо мной, парень? Если ты скажешь, что это правда, я всегда готов.
+		AI_Output(self,other,"DIA_Jorgen_BEMYCAPTAIN_07_01");	//You're not having me on, mate? If what you say is really true, I'm definitely in on it.
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Jorgen_BEMYCAPTAIN2_07_05");	//Отлично. Теперь я могу убраться отсюда!
+		AI_Output(self,other,"DIA_Jorgen_BEMYCAPTAIN2_07_05");	//Great. And now we're out of here!
 		AI_StopProcessInfos(self);
 		Npc_ExchangeRoutine(self,"RausAusKloster");
 		B_StartOtherRoutine(Nov610,"Start");
@@ -377,7 +377,7 @@ instance DIA_Jorgen_BEMYCAPTAIN3(C_Info)
 	nr = 53;
 	condition = DIA_Jorgen_BEMYCAPTAIN3_Condition;
 	information = DIA_Jorgen_BEMYCAPTAIN3_Info;
-	description = "Будь моим капитаном.";
+	description = "Be my captain.";
 };
 
 

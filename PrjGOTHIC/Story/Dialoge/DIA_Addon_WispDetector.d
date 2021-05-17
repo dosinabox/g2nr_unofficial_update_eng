@@ -1,7 +1,7 @@
 
 func void B_FollowMe_Wisp()
 {
-	AI_Output(other,self,"DIA_Addon_WispDetector_FollowMe_Wisp_15_00");	//Следуй за мной.
+	AI_Output (other, self, "DIA_Addon_WispDetector_FollowMe_Wisp_15_00");	//Just follow me.
 };
 
 

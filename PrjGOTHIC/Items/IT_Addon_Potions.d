@@ -12,9 +12,9 @@ instance ItPo_Addon_Geist_01(C_Item)
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
 	description = NAME_Geist;
-	text[0] = "ѕримен€ть с осторожностью!";
-	text[1] = "—ильно воздействует на сознание и";
-	text[2] = "может оказать летальное действие.";
+	text[0] = "Take PRECAUTIONS before using!";
+	text[1] = "Can strongly influence the mind";
+	text[2] = "or kill the user";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -40,9 +40,9 @@ instance ItPo_Addon_Geist_02(C_Item)
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
 	description = NAME_Geist;
-	text[0] = "ѕримен€ть с осторожностью!";
-	text[1] = "—ильно воздействует на сознание и";
-	text[2] = "может оказать летальное действие.";
+	text[0] = "Take PRECAUTIONS before using!";
+	text[1] = "Can strongly influence the mind";
+	text[2] = "or kill the user";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -70,7 +70,7 @@ instance ItPo_Health_Addon_04(C_Item)
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_HEALTHPOTION";
 	description = NAME_HP_Full;
-	text[1] = "ѕолное восстановление здоровь€.";
+	text[1] = "Complete regeneration.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -95,7 +95,7 @@ instance ItPo_Mana_Addon_04(C_Item)
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_MANAPOTION";
 	description = NAME_Mana_Full;
-	text[1] = "ѕолное восстановление маны.";
+	text[1] = "Complete mana regeneration";
 	text[5] = NAME_Value;
 	count[5] = value;
 };

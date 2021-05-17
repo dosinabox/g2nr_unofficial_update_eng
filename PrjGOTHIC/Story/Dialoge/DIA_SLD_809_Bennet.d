@@ -1624,11 +1624,11 @@ func int DIA_Bennet_StillNeedYou_Condition()
 	{
 		if(Bennet_WasOnBoard == TRUE)
 		{
-			DIA_Bennet_StillNeedYou.description = "Возвращайся, я не могу найти другого кузнеца.";
+			DIA_Bennet_StillNeedYou.description = "Come back. I can't find another smith.";
 		}
 		else
 		{
-			DIA_Bennet_StillNeedYou.description = "Будь моим кузнецом. Увидимся в гавани.";
+			DIA_Bennet_StillNeedYou.description = "Be my smith, then. See you at the harbor.";
 		};
 		return TRUE;
 	};

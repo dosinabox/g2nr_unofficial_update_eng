@@ -1,7 +1,7 @@
 
 instance VLK_4108_Engor(Npc_Default)
 {
-	name[0] = "Ёнгор";
+	name[0] = "Engor";
 	guild = GIL_MIL;
 	id = 4108;
 	voice = 13;

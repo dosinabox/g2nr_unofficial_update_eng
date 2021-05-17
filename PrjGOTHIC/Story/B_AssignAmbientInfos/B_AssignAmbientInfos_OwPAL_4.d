@@ -44,15 +44,15 @@ func void DIA_OWPAL_4_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_00");	//Иннос - моя честь, а моя честь - моя жизнь.
+		AI_Output (self, other, "DIA_OWPAL_4_STANDARD_04_00");	//Innos is my honor and my honor is my life.
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_01");	//Мы будем стоять здесь насмерть, пока Иннос дарует нам свой святой свет.
+		AI_Output (self, other, "DIA_OWPAL_4_STANDARD_04_01");	//We shall stand firm here as long as Innos holds his light over us.
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_OWPAL_4_STANDARD_04_02");	//С помощью Инноса мы изгоним отсюда всех этих дьявольских созданий.
+		AI_Output (self, other, "DIA_OWPAL_4_STANDARD_04_02");	//With the help of Innos we shall keep the evil creatures away from here.
 	};
 	AI_StopProcessInfos(self);
 };

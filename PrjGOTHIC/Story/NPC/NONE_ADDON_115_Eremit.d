@@ -1,7 +1,7 @@
 
 instance NONE_ADDON_115_Eremit(Npc_Default)
 {
-	name[0] = "Отшельник";
+	name[0] = "Hermit";
 	guild = GIL_NONE;
 	id = 115;
 	voice = 4;

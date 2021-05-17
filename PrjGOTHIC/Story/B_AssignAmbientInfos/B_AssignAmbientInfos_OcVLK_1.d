@@ -26,7 +26,7 @@ instance DIA_OCVLK_1_PEOPLE(C_Info)
 	condition = DIA_OCVLK_1_PEOPLE_Condition;
 	information = DIA_OCVLK_1_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Кто командует здесь?";
+	description = "Who's in command here?";
 };
 
 
@@ -37,8 +37,8 @@ func int DIA_OCVLK_1_PEOPLE_Condition()
 
 func void DIA_OCVLK_1_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_OCVLK_1_PEOPLE_15_00");	//Кто командует здесь?
-	AI_Output(self,other,"DIA_OCVLK_1_PEOPLE_01_01");	//Командующий Гаронд. Но с тех пор, как ситуация ухудшилась, он не выходил из тронного зала. Боюсь, что это все плохо кончится.
+	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00");	//Who's in command here?
+	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01");	//Commander Garond. But since the situation here has become worse, he has not been seen outside the throne room. I'm afraid that will come to a bad end.
 };
 
 
@@ -48,7 +48,7 @@ instance DIA_OCVLK_1_LOCATION(C_Info)
 	condition = DIA_OCVLK_1_LOCATION_Condition;
 	information = DIA_OCVLK_1_LOCATION_Info;
 	permanent = TRUE;
-	description = "Что тебе известно о Долине Рудников?";
+	description = "What do you know about the Valley of Mines?";
 };
 
 
@@ -59,11 +59,11 @@ func int DIA_OCVLK_1_LOCATION_Condition()
 
 func void DIA_OCVLK_1_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_OCVLK_1_LOCATION_15_00");	//Что тебе известно о Долине Рудников?
-	AI_Output(self,other,"DIA_OCVLK_1_LOCATION_01_01");	//Насколько я знаю, несколько наших парней находятся в шахтах и все еще добывают руду.
+	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00");	//What do you know about the Valley of Mines?
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01");	//A few of our boys are at the mines and still prospecting, as far as I know.
 	if(!Npc_KnowsInfo(other,DIA_Garond_AllDragonDead) && (Kapitel <= 4))
 	{
-		AI_Output(self,other,"DIA_OCVLK_1_LOCATION_01_02");	//Я бы не хотел поменяться с ними местами. Вся долина кишит орками. Не говоря уже о драконах.
+		AI_Output(self,other,"DIA_OCVLK_1_LOCATION_01_02");	//I wouldn't want to trade with them. The whole valley is swarming with orcs. Not to mention the dragons.
 	};
 };
 
@@ -74,7 +74,7 @@ instance DIA_OCVLK_1_STANDARD(C_Info)
 	condition = DIA_OCVLK_1_STANDARD_Condition;
 	information = DIA_OCVLK_1_STANDARD_Info;
 	permanent = TRUE;
-	description = "Как дела?";
+	description = "How are things?";
 };
 
 
@@ -85,31 +85,31 @@ func int DIA_OCVLK_1_STANDARD_Condition()
 
 func void DIA_OCVLK_1_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_OCVLK_1_STANDARD_15_00");	//Как дела?
-	if(Kapitel <= 3)
+	AI_Output (other, self, "DIA_OCVLK_1_STANDARD_15_00");	//How are things?
+	if (Kapitel <= 3)
 	{
-		AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_01");	//Орки загнали нас в угол, как и хотели! Без подкрепления никому из нас не выжить! Я удивлен, что драконы все еще не прикончили нас.
+		AI_Output (self, other, "DIA_OCVLK_1_STANDARD_01_01");	//The orcs have us right where they want us! Without reinforcements, none of us here will survive! I'm amazed the dragons haven't finished us off completely.
 	};
 	if(Kapitel == 4)
 	{
 		if(!Npc_KnowsInfo(other,DIA_Garond_AllDragonDead))
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_02");	//По крайней мере, скоро мы, наконец, получим подкрепление.
+			AI_Output (self, other, "DIA_OCVLK_1_STANDARD_01_02");	//At least we'll finally get some reinforcements.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_03");	//Я слышал, что драконы были уничтожены? Слава Инносу!
+			AI_Output (self, other, "DIA_OCVLK_1_STANDARD_01_03");	//I heard that all the dragons have been slain? Thank Innos!
 		};
 	};
 	if(Kapitel >= 5)
 	{
 		if(MIS_OCGateOpen == FALSE)
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_04");	//Все эта проклятая руда. Нам нужно было сбросить все наши запасы руды со стен крепости. Может быть, тогда орки оставили бы нас в покое.
+			AI_Output (self, other, "DIA_OCVLK_1_STANDARD_01_04");	//This accursed ore. We should throw our entire ore supply down from the battlements. Maybe the orcs will leave us in peace then.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_OCVLK_1_STANDARD_01_05");	//Эти идиотские ящики, что они второпях навалили перед входом, не смогут остановить орков!
+			AI_Output (self, other, "DIA_OCVLK_1_STANDARD_01_05");	//Those ridiculous boxes which they have piled up haphazardly in front of the entrance will do nothing to deter the orcs!
 		};
 	};
 };

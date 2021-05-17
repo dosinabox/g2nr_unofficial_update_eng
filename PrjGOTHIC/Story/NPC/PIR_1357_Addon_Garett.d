@@ -1,7 +1,7 @@
 
 instance PIR_1357_Addon_Garett(Npc_Default)
 {
-	name[0] = "Гаретт";
+	name[0] = "Garett";
 	guild = GIL_PIR;
 	id = 1357;
 	voice = 9;

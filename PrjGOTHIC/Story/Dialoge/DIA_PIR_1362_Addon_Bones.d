@@ -57,8 +57,8 @@ func void DIA_Addon_Bones_PICKPOCKET_BACK()
 
 func void B_Addon_Bones_KeineZeit()
 {
-	AI_Output(self,other,"DIA_Addon_Bones_Train_01_01");	//Извини, у меня сейчас совсем нет времени.
-	AI_Output(self,other,"DIA_Addon_Bones_Train_01_02");	//Мне нужно тренироваться.
+	AI_Output (self, other, "DIA_Addon_Bones_Train_01_01");	//I'm sorry. I've got no time right now.
+	AI_Output (self, other, "DIA_Addon_Bones_Train_01_02");	//I've got some training to do.
 };
 
 
@@ -68,7 +68,7 @@ instance DIA_Addon_Bones_Anheuern(C_Info)
 	nr = 1;
 	condition = DIA_Addon_Bones_Anheuern_Condition;
 	information = DIA_Addon_Bones_Anheuern_Info;
-	description = "Нас ждет каньон.";
+	description = "The canyon awaits.";
 };
 
 
@@ -82,8 +82,8 @@ func int DIA_Addon_Bones_Anheuern_Condition()
 
 func void DIA_Addon_Bones_Anheuern_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Bones_Anheuern_15_01");	//Нас ждет каньон.
-	B_Addon_Bones_KeineZeit();
+	AI_Output (other, self, "DIA_Addon_Bones_Anheuern_15_01");	//The canyon awaits.
+	B_Addon_Bones_KeineZeit ();
 };
 
 
@@ -94,7 +94,7 @@ instance DIA_Addon_Bones_Hello(C_Info)
 	condition = DIA_Addon_Bones_Hello_Condition;
 	information = DIA_Addon_Bones_Hello_Info;
 	permanent = FALSE;
-	description = "Как дела?";
+	description = "How's it going?";
 };
 
 
@@ -105,13 +105,13 @@ func int DIA_Addon_Bones_Hello_Condition()
 
 func void DIA_Addon_Bones_Hello_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Bones_Hello_15_00");	//Как дела?
-	AI_Output(self,other,"DIA_Addon_Bones_Hello_01_01");	//Грех жаловаться. Немного скучновато, но зато работать не приходится.
-	AI_Output(self,other,"DIA_Addon_Bones_Work_01_01");	//Я готовлюсь к новому заданию, которое дал мне Грег.
-	AI_Output(other,self,"DIA_Addon_Bones_Work_15_02");	//Что это за задание?
-	AI_Output(self,other,"DIA_Addon_Bones_Work_01_03");	//Я не могу тебе сказать.
-	AI_Output(self,other,"DIA_Addon_Bones_Work_01_04");	//Не обижайся, приятель, но я тяжело трудился, чтобы получить это задание, и не хочу снова его потерять.
-	Npc_ExchangeRoutine(self,"START");
+	AI_Output (other, self, "DIA_Addon_Bones_Hello_15_00");	//How's it going?
+	AI_Output (self, other, "DIA_Addon_Bones_Hello_01_01");	//I can't complain. It's a bit boring, but at least I don't have to work.
+	AI_Output (self, other, "DIA_Addon_Bones_Work_01_01");	//I'm preparing for the next task that Greg has given me.
+	AI_Output (other, self, "DIA_Addon_Bones_Work_15_02");	//What task?
+	AI_Output (self, other, "DIA_Addon_Bones_Work_01_03");	//I mustn't say.
+	AI_Output (self, other, "DIA_Addon_Bones_Work_01_04");	//No offense, kid. But I've worked hard for the privilege and I don't want to lose it again.
+	Npc_ExchangeRoutine (self, "START");
 };
 
 
@@ -122,7 +122,7 @@ instance DIA_Addon_Bones_Train(C_Info)
 	condition = DIA_Addon_Bones_Train_Condition;
 	information = DIA_Addon_Bones_Train_Info;
 	permanent = FALSE;
-	description = "Ты можешь меня чему-нибудь научить?";
+	description = "Can you teach me something?";
 };
 
 
@@ -136,8 +136,8 @@ func int DIA_Addon_Bones_Train_Condition()
 
 func void DIA_Addon_Bones_Train_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Bones_Train_15_00");	//Ты можешь меня чему-нибудь научить?
-	B_Addon_Bones_KeineZeit();
+	AI_Output (other, self, "DIA_Addon_Bones_Train_15_00");	//Can you teach me something?
+	B_Addon_Bones_KeineZeit ();
 };
 
 
@@ -148,7 +148,7 @@ instance DIA_Addon_Bones_Teacher(C_Info)
 	condition = DIA_Addon_Bones_Teacher_Condition;
 	information = DIA_Addon_Bones_Teacher_Info;
 	permanent = FALSE;
-	description = "Кто здесь может чему-нибудь меня научить?";
+	description = "Who around here can teach me something?";
 };
 
 
@@ -162,14 +162,14 @@ func int DIA_Addon_Bones_Teacher_Condition()
 
 func void DIA_Addon_Bones_Teacher_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Bones_Teacher_15_00");	//Кто здесь может чему-нибудь меня научить?
-	AI_Output(self,other,"DIA_Addon_Bones_Teacher_01_04");	//Генри и Морган командуют нашими боевыми группами.
-	AI_Output(self,other,"DIA_Addon_Bones_Teacher_01_05");	//Они могут научить тебя лучше сражаться.
-	AI_Output(self,other,"DIA_Addon_Bones_Teacher_01_07");	//Люди Генри используют двуручное оружие.
-	AI_Output(self,other,"DIA_Addon_Bones_Teacher_01_08");	//Морган же предпочитает более быстрые одноручные клинки.
-	AI_Output(other,self,"DIA_Addon_Bones_Teacher_15_09");	//А еще?
-	AI_Output(self,other,"DIA_Addon_Bones_Teacher_01_10");	//Знаешь, честно говоря, я больше ничем не интересовался.
-	AI_Output(self,other,"DIA_Addon_Bones_Teacher_01_11");	//Но думаю, Аллигатору Джеку и Сэмюэлю найдется, чем с тобой поделиться.
+	AI_Output (other, self, "DIA_Addon_Bones_Teacher_15_00");	//Who around here can teach me something?
+	AI_Output (self, other, "DIA_Addon_Bones_Teacher_01_04");	//Henry and Morgan are leading our raiding troops.
+	AI_Output (self, other, "DIA_Addon_Bones_Teacher_01_05");	//They can teach you how to be a better fighter.
+	AI_Output (self, other, "DIA_Addon_Bones_Teacher_01_07");	//Henry's people all use two-handed weapons.
+	AI_Output (self, other, "DIA_Addon_Bones_Teacher_01_08");	//Morgan prefers the faster one-handed weapons.
+	AI_Output (other, self, "DIA_Addon_Bones_Teacher_15_09");	//Who else?
+	AI_Output (self, other, "DIA_Addon_Bones_Teacher_01_10");	//Beats me, I've never been interested in anything else.
+	AI_Output (self, other, "DIA_Addon_Bones_Teacher_01_11");	//But I'm sure that Alligator Jack or Samuel could still show you a trick or two.
 	Knows_HenrysEntertrupp = TRUE;
 	if(Henry_Addon_TeachPlayer == FALSE)
 	{
@@ -191,7 +191,7 @@ instance DIA_Addon_Bones_Francis(C_Info)
 	condition = DIA_Addon_Bones_Francis_Condition;
 	information = DIA_Addon_Bones_Francis_Info;
 	permanent = FALSE;
-	description = "Что ты скажешь о Фрэнсисе?";
+	description = "Can you tell me something about Francis?";
 };
 
 
@@ -208,10 +208,10 @@ func int DIA_Addon_Bones_Francis_Condition()
 
 func void DIA_Addon_Bones_Francis_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Bones_Francis_15_00");	//Что ты скажешь о Фрэнсисе?
-	AI_Output(self,other,"DIA_Addon_Bones_Francis_01_03");	//Посмотри вокруг. Работает только Генри и его люди.
-	AI_Output(self,other,"DIA_Addon_Bones_Francis_01_04");	//Морган целыми днями либо спит, либо пьет самогон.
-	AI_Output(self,other,"DIA_Addon_Bones_Francis_01_05");	//При Греге такого не бывает. Если ты бездельничаешь, ты получаешь по шее. Вот и все.
+	AI_Output (other, self, "DIA_Addon_Bones_Francis_15_00");	//Can you tell me something about Francis?
+	AI_Output (self, other, "DIA_Addon_Bones_Francis_01_03");	//Look around you. The only ones working are Henry and his boys.
+	AI_Output (self, other, "DIA_Addon_Bones_Francis_01_04");	//Morgan spends all day in bed, or guzzling booze.
+	AI_Output (self, other, "DIA_Addon_Bones_Francis_01_05");	//No such nonsense with Greg. If you don't toe the line, he'll kick you in the butt, and that's that.
 };
 
 
@@ -224,7 +224,7 @@ instance DIA_Addon_Bones_WantArmor(C_Info)
 	condition = DIA_Addon_Bones_WantArmor_Condition;
 	information = DIA_Addon_Bones_WantArmor_Info;
 	permanent = TRUE;
-	description = "Отдай мне бандитские доспехи.";
+	description = "Give me that bandit's armor.";
 };
 
 
@@ -238,16 +238,16 @@ func int DIA_Addon_Bones_WantArmor_Condition()
 
 func void DIA_Addon_Bones_WantArmor_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Bones_WantArmor_15_00");	//Отдай мне бандитские доспехи.
-	AI_Output(self,other,"DIA_Addon_Bones_WantArmor_01_01");	//Я еще не свихнулся. Грег мне голову оторвет.
-	AI_Output(self,other,"DIA_Addon_Bones_WantArmor_01_02");	//Он сказал мне, что без его приказа я не должен никому их отдавать.
-	if(GregIsBack == TRUE)
+	AI_Output (other, self, "DIA_Addon_Bones_WantArmor_15_00");	//Give me that bandit's armor.
+	AI_Output (self, other, "DIA_Addon_Bones_WantArmor_01_01");	//I'm not that crazy. Greg will have my head.
+	AI_Output (self, other, "DIA_Addon_Bones_WantArmor_01_02");	//He explicitly stated that no-one will get that armor unless he orders it.
+	if (GregIsBack == TRUE)
 	{
-		AI_Output(self,other,"DIA_Addon_Bones_WantArmor_01_03");	//Нет, я не могу дать их тебе. Тем более, когда Грег здесь.
+		AI_Output (self, other, "DIA_Addon_Bones_WantArmor_01_03");	//I can't give it to you. Especially not now that he's come back.
 	};
 	if(DIA_Addon_Bones_WantArmor_Once == FALSE)
 	{
-		B_LogEntry(TOPIC_Addon_BDTRuestung,"Бонес не отдаст мне доспехи, пока я не получу разрешение Грега.");
+		B_LogEntry(TOPIC_Addon_BDTRuestung,"Bones won't give me the armor without permission from Greg.");
 		DIA_Addon_Bones_WantArmor_Once = TRUE;
 	};
 };
@@ -260,7 +260,7 @@ instance DIA_Addon_Bones_GiveArmor(C_Info)
 	condition = DIA_Addon_Bones_GiveArmor_Condition;
 	information = DIA_Addon_Bones_GiveArmor_Info;
 	permanent = FALSE;
-	description = "Ты должен отдать мне доспехи бандитов. Приказ Грега.";
+	description = "You're supposed to give me the bandit's armor. Orders from Greg.";
 };
 
 
@@ -274,17 +274,17 @@ func int DIA_Addon_Bones_GiveArmor_Condition()
 
 func void DIA_Addon_Bones_GiveArmor_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Bones_GiveArmor_15_00");	//Ты должен отдать мне доспехи бандитов. Приказ Грега.
-	AI_Output(self,other,"DIA_Addon_Bones_GiveArmor_01_01");	//Приказ Грега? Фу, а я-то думал мне действительно придется идти на это задание.
-	AI_Output(self,other,"DIA_Addon_Bones_GiveArmor_01_02");	//Разведка в лагере бандитов - это просто самоубийство.
-	AI_Output(self,other,"DIA_Addon_Bones_GiveArmor_01_03");	//Пусть уж лучше Грег взвалит на меня какую-нибудь скучную работу...
-	AI_Output(other,self,"DIA_Addon_Bones_GiveArmor_15_04");	//(раздраженно) Доспехи.
-	AI_Output(self,other,"DIA_Addon_Bones_GiveArmor_01_05");	//Да, конечно, вот они.
+	AI_Output (other, self, "DIA_Addon_Bones_GiveArmor_15_00");	//You're supposed to give me the bandit's armor. Orders from Greg.
+	AI_Output (self, other, "DIA_Addon_Bones_GiveArmor_01_01");	//From Greg? Whew, I already thought I'd have to go after all.
+	AI_Output (self, other, "DIA_Addon_Bones_GiveArmor_01_02");	//This spy job in the bandits' camp is nothing short of a suicide mission.
+	AI_Output (self, other, "DIA_Addon_Bones_GiveArmor_01_03");	//I'd rather have Greg heap his chores on me than get myself killed by those bandits.
+	AI_Output (other, self, "DIA_Addon_Bones_GiveArmor_15_04");	//(irritated) The armor.
+	AI_Output (self, other, "DIA_Addon_Bones_GiveArmor_01_05");	//Oh yeah, right, here it is.
 	B_GiveArmor(ITAR_BDT_M);
-	AI_Output(self,other,"DIA_Addon_Bones_GiveArmor_01_06");	//Будь осторожнее. С этими бандитами шутки плохи.
+	AI_Output(self,other,"DIA_Addon_Bones_GiveArmor_01_06");	//Just be careful. Those bandits are a bad lot.
 	self.flags = 0;
 	Greg.flags = 0;
-	B_LogEntry(TOPIC_Addon_BDTRuestung,"Приказ Грега возымел свое действие. Доспехи у меня!");
+	B_LogEntry(TOPIC_Addon_BDTRuestung,"The order from Greg seems to work wonders. I have the bandit armor!");
 	B_GivePlayerXP(XP_Bones_GetBDTArmor);
 };
 

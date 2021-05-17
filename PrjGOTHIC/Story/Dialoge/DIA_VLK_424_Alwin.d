@@ -236,7 +236,7 @@ func int DIA_Alwin_Endlos_Condition()
 
 func void DIA_Alwin_Endlos_Info()
 {
-	AI_Output(other,self,"DIA_Alwin_Endlos_15_00");	//Как твои овцы?
+	AI_Output(other,self,"DIA_Alwin_Endlos_15_00");	//And, how are the sheep?
 	if(Npc_IsDead(Alwin_Sheep1) && Npc_IsDead(Alwin_Sheep2) && Npc_IsDead(Alwin_Sheep3))
 	{
 		B_AlwinAboutDeadSheeps();

@@ -240,7 +240,7 @@ func int DIA_BDT_1020_Wegelagerer_SecondWarn_Condition()
 
 func void DIA_BDT_1020_Wegelagerer_SecondWarn_Info()
 {
-	AI_Output(self,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_06_00");	//Ты действительно хочешь испытать судьбу? Как знаешь.
+	AI_Output(self,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_06_00");	//You really want to take your chances? It's your call.
 	Info_ClearChoices(DIA_BDT_1020_Wegelagerer_SecondWarn);
 	if(Npc_HasItems(other,ItMi_Gold) >= 20)
 	{

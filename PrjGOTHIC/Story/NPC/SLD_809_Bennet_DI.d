@@ -1,7 +1,7 @@
 
 instance SLD_809_Bennet_DI(Npc_Default)
 {
-	name[0] = "Беннет";
+	name[0] = "Bennet";
 	guild = GIL_SLD;
 	id = 8090;
 	voice = 6;

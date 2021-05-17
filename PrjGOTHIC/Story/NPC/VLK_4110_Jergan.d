@@ -1,7 +1,7 @@
 
 instance VLK_4110_Jergan(Npc_Default)
 {
-	name[0] = "Джерган";
+	name[0] = "Jergan";
 	guild = GIL_NONE;
 	id = 4110;
 	voice = 13;

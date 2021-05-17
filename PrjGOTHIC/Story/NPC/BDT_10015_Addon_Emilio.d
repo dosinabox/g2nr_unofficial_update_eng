@@ -1,7 +1,7 @@
 
 instance BDT_10015_Addon_Emilio(Npc_Default)
 {
-	name[0] = "Ёмилио";
+	name[0] = "Emilio";
 	guild = GIL_BDT;
 	id = 10015;
 	voice = 10;

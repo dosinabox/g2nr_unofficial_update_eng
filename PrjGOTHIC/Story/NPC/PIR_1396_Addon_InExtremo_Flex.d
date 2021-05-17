@@ -1,7 +1,7 @@
 
 instance PIR_1396_Addon_InExtremo_Flex(Npc_Default)
 {
-	name[0] = "Флекс";
+	name[0] = "Flex";
 	npcType = npctype_main;
 	guild = GIL_NONE;
 	level = 4;

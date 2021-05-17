@@ -1,7 +1,7 @@
 
 instance VLK_425_Regis(Npc_Default)
 {
-	name[0] = "Регис";
+	name[0] = "Regis";
 	guild = GIL_VLK;
 	id = 425;
 	voice = 13;

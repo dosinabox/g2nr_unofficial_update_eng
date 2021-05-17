@@ -296,7 +296,7 @@ instance DIA_Addon_Brandon_Anheuern(C_Info)
 	condition = DIA_Addon_Brandon_Anheuern_Condition;
 	information = DIA_Addon_Brandon_Anheuern_Info;
 	permanent = FALSE;
-	description = "Ты должен мне помочь.";
+	description = "You're supposed to help me.";
 };
 
 

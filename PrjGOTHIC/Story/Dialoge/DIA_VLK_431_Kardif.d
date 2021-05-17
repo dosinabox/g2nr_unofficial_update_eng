@@ -217,7 +217,7 @@ func int DIA_Kardif_TRADE_Condition()
 
 func void DIA_Kardif_TRADE_Info()
 {
-	AI_Output(other,self,"DIA_Kardif_TRADE_15_00");	//Дай мне что-нибудь выпить.
+	AI_Output(other,self,"DIA_Kardif_TRADE_15_00");	//Give me something to drink.
 	B_GiveTradeInv(self);
 	Trade_IsActive = TRUE;
 };
@@ -374,7 +374,7 @@ instance DIA_Addon_Kardif_MissingPeople(C_Info)
 	condition = DIA_Addon_Kardif_MissingPeople_Condition;
 	information = DIA_Addon_Kardif_MissingPeople_Info;
 	permanent = TRUE;
-	description = "Что ты знаешь о пропавших горожанах?";
+	description = "What do you know about the missing citizens?";
 };
 
 

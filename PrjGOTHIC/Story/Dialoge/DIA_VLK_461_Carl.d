@@ -296,7 +296,7 @@ instance DIA_Carl_RepairNecklace(C_Info)
 	condition = DIA_Carl_RepairNecklace_Condition;
 	information = DIA_Carl_RepairNecklace_Info;
 	permanent = FALSE;
-	description = "Ты можешь чинить драгоценности?";
+	description = "Can you repair jewlery?";
 };
 
 

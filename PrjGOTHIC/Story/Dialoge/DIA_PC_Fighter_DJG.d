@@ -68,7 +68,7 @@ instance DIA_GornDJG_HALLO(C_Info)
 	npc = PC_Fighter_DJG;
 	condition = DIA_GornDJG_HALLO_Condition;
 	information = DIA_GornDJG_HALLO_Info;
-	description = "Так вот ты куда забился!";
+	description = "So this is where you're holed up!";
 };
 
 
@@ -121,7 +121,7 @@ func void DIA_GornDJG_WHATSUP_Lester()
 	if(!Npc_KnowsInfo(other,DIA_Lester_Hello) && !Npc_KnowsInfo(other,DIA_Lester_BACKINTOWN))
 	{
 		AI_Output(other,self,"Extro_Tempel_15_04");	//Хм, где же он?@@@
-		AI_Output(self,other,"INTRO_DiegoGorn_12_00");	//(вздыхает) Конечно же, он еще жив. А ты как думал?
+		AI_Output(self,other,"INTRO_DiegoGorn_12_00");	//(вздыхает) Конечно же, он еще жив. А ты как думал?@@@
 	};
 };
 

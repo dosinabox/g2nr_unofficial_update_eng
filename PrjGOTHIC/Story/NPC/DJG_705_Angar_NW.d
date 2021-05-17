@@ -1,7 +1,7 @@
 
 instance DJG_705_Angar_NW(Npc_Default)
 {
-	name[0] = "Ангар";
+	name[0] = "Angar";
 	guild = GIL_DJG;
 	id = 7050;
 	voice = 4;

@@ -10,7 +10,7 @@ func void b_ravensescapeintotempelavi()
 		RavenIsInTempel = TRUE;
 		Log_CreateTopic(TOPIC_Addon_RavenKDW,LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RavenKDW,LOG_Running);
-		B_LogEntry(TOPIC_Addon_RavenKDW,"я вошел в покои ¬орона, но он скрылс€ от мен€ за большими вратами. я не могу последовать за ним. ћне кажетс€, что эти врата ведут в храм јданоса. я должен доложить об этом —атурасу.");
+		B_LogEntry(TOPIC_Addon_RavenKDW,"I entered Raven's rooms, only to see him disappear behind a large door. I could not follow him. I assume that the door must lead to the temple of Adanos. I need to report this to Saturas.");
 		B_RAVENSESCAPEINTOTEMPELAVI_OneTime = TRUE;
 	};
 };

@@ -1,7 +1,7 @@
 
 instance BAU_913_Thekla(Npc_Default)
 {
-	name[0] = "Текла";
+	name[0] = "Thekla";
 	guild = GIL_BAU;
 	id = 913;
 	voice = 17;

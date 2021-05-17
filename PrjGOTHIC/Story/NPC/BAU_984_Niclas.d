@@ -1,7 +1,7 @@
 
 instance BAU_984_Niclas(Npc_Default)
 {
-	name[0] = "Никлас";
+	name[0] = "Niclas";
 	guild = GIL_OUT;
 	id = 984;
 	voice = 3;

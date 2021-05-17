@@ -1,7 +1,7 @@
 
 instance PIR_1353_Addon_Morgan(Npc_Default)
 {
-	name[0] = "Морган";
+	name[0] = "Morgan";
 	guild = GIL_PIR;
 	id = 1353;
 	voice = 7;

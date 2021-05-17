@@ -1,7 +1,7 @@
 
 instance MIL_350_Addon_Martin(Npc_Default)
 {
-	name[0] = "Мартин";
+	name[0] = "Martin";
 	guild = GIL_MIL;
 	id = 350;
 	voice = 7;

@@ -1,7 +1,7 @@
 
 instance KDF_506_Neoras(Npc_Default)
 {
-	name[0] = "Неорас";
+	name[0] = "Neoras";
 	guild = GIL_KDF;
 	id = 506;
 	voice = 1;

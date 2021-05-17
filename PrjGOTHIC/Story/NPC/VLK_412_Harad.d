@@ -1,7 +1,7 @@
 
 instance VLK_412_Harad(Npc_Default)
 {
-	name[0] = "Гарад";
+	name[0] = "Harad";
 	guild = GIL_VLK;
 	id = 412;
 	voice = 12;

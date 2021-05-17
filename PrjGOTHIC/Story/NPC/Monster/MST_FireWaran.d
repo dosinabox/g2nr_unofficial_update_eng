@@ -1,7 +1,7 @@
 
 prototype Mst_Default_FireWaran(C_Npc)
 {
-	name[0] = "Огненный ящер";
+	name[0] = "Fire Lizard";
 	guild = GIL_WARAN;
 	aivar[AIV_MM_REAL_ID] = ID_FIREWARAN;
 	level = 30;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Snapper(C_Npc)
 {
-	name[0] = "Снеппер";
+	name[0] = "Snapper";
 	guild = GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID] = ID_SNAPPER;
 	level = 12;
@@ -92,7 +92,7 @@ instance NewMine_Snapper8(Mst_Default_Snapper)
 
 instance NewMine_LeadSnapper(Mst_Default_Snapper)
 {
-	name[0] = "Вожак стаи";
+	name[0] = "Pack Leader";
 	level = 13;
 	B_SetVisuals_Snapper();
 	Npc_SetToFistMode(self);

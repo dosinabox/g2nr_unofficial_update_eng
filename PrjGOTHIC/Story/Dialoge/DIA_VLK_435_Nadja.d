@@ -256,7 +256,7 @@ func void DIA_Addon_Nadja_LuciaInfo_Elvrich()
 	AI_Output (other, self, "DIA_Addon_Nadja_LuciaInfo_Elvrich_15_00");	//Where could the two of them have gone?
 	AI_Output (self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_01");	//If the wolves didn't eat them, I suppose they went to stay with the farmers.
 	AI_Output (self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_02");	//Where else would they go?
-	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Что еще ты знаешь?",DIA_Addon_Nadja_LuciaInfo_sonst);
+	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"What else do you know?",DIA_Addon_Nadja_LuciaInfo_sonst);
 };
 
 func void B_Nadja_WhatsNextHoney()
@@ -267,8 +267,8 @@ func void B_Nadja_WhatsNextHoney()
 
 func void B_Nadja_Poppen_Start()
 {
-	AI_Output(self,other,"DIA_Nadja_Poppen_16_00");	//Следующая пара часов принадлежит только нам.
-	AI_Output(self,other,"DIA_Nadja_Poppen_16_01");	//Расслабься. Ложись и получай удовольствие.
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_00");	//The next couple of hours belong to us.
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_01");	//It's time for you to relax. Lie back and enjoy..
 };
 
 func void DIA_Addon_Nadja_LuciaInfo_sonst()
@@ -284,15 +284,15 @@ func void DIA_Addon_Nadja_LuciaInfo_sonst()
 	{
 		if(Nadja_Money == FALSE)
 		{
-			Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Могу я здесь купить травки?",DIA_Addon_Nadja_WAIT);
+			Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Where can I buy weed around here?",DIA_Addon_Nadja_WAIT);
 		}
 		else if(Npc_HasItems(other,ItMi_Gold) >= 50)
 		{
-			Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"А теперь скажи мне, где можно купить травки.",DIA_Addon_Nadja_WAIT_GiveGold2);
+			Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Now tell me where I can buy weed.",DIA_Addon_Nadja_WAIT_GiveGold2);
 		};
 	};
-	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Спасибо, но мне нужно идти.",DIA_Addon_Nadja_LuciaInfo_weiter);
-	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Почему бы и нет?",DIA_Nadja_Poppen_Start1);
+	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Thanks, but I've got to go now.",DIA_Addon_Nadja_LuciaInfo_weiter);
+	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"(Have fun)",DIA_Nadja_Poppen_Start1);
 };
 
 func void DIA_Nadja_Poppen_Start1()
@@ -300,13 +300,13 @@ func void DIA_Nadja_Poppen_Start1()
 	DIA_Common_WhyNot();
 	B_Nadja_Poppen_Start();
 	Info_ClearChoices(DIA_Addon_Nadja_LuciaInfo);
-	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Хорошо...",DIA_Nadja_Poppen_Start);
+	Info_AddChoice(DIA_Addon_Nadja_LuciaInfo,"Here...",DIA_Nadja_Poppen_Start);
 };
 
 func void DIA_Addon_Nadja_LuciaInfo_weiter()
 {
-	AI_Output(other,self,"DIA_Addon_Nadja_LuciaInfo_weiter_15_00");	//Спасибо, но мне нужно идти.
-	AI_Output(self,other,"DIA_Addon_Nadja_LuciaInfo_weiter_16_01");	//Очень жаль. Ну что ж, тогда в другой раз.
+	AI_Output (other, self, "DIA_Addon_Nadja_LuciaInfo_weiter_15_00");	//Thanks, but I've got to go now.
+	AI_Output (self, other, "DIA_Addon_Nadja_LuciaInfo_weiter_16_01");	//Too bad. Well, maybe next time.
 	Bromor_Pay = 0;
 	Nadja_Nacht += 1;
 	AI_StopProcessInfos(self);
@@ -345,7 +345,7 @@ func void B_Nadja_WANT_HERB()
 	{
 		if(B_GiveInvItems(other,self,ItMi_Gold,50))
 		{
-			AI_Output(self,other,"DIA_Nadja_WANT_HERB_16_02");	//v
+			AI_Output(self,other,"DIA_Nadja_WANT_HERB_16_02");	//Talk to Borka, baby. He'll have some weed for you.
 			Knows_Borka_Dealer = TRUE;
 		}
 		else

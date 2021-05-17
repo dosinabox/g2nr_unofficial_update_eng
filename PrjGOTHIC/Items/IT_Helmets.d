@@ -1,7 +1,7 @@
 
 INSTANCE ITHE_OHT(C_Item)
 {
-	name = "Шлем охотника на орков";
+	name = "Orc Hunter's Helmet";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 5;
@@ -30,7 +30,7 @@ INSTANCE ITHE_OHT(C_Item)
 
 INSTANCE ITHE_DHT(C_Item)
 {
-	name = "Шлем охотника на демонов";
+	name = "Demon Hunter's Helmet";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 5;
@@ -59,7 +59,7 @@ INSTANCE ITHE_DHT(C_Item)
 
 INSTANCE ITHE_DJG_M(C_Item)
 {
-	name = "Шлем охотника на драконов";
+	name = "Dragon Hunter's Helmet";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 5;
@@ -88,7 +88,7 @@ INSTANCE ITHE_DJG_M(C_Item)
 
 INSTANCE ITHE_DJG_H(C_Item)
 {
-	name = "Крепкий шлем охотника на драконов";
+	name = "Robust Dragon Hunter's Helmet";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 10;
@@ -117,7 +117,7 @@ INSTANCE ITHE_DJG_H(C_Item)
 
 INSTANCE ITHE_PAL_M(C_Item)
 {
-	name = "Кольчужный капюшон";
+	name = "Chain Hood";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 5;
@@ -147,7 +147,7 @@ INSTANCE ITHE_PAL_M(C_Item)
 
 INSTANCE ITHE_PAL_H(C_Item)
 {
-	name = "Шлем паладина";
+	name = "Paladin's Helmet";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 10;

@@ -1,7 +1,7 @@
 
 instance NOV_602_Ulf(Npc_Default)
 {
-	name[0] = "Σλότ";
+	name[0] = "Ulf";
 //	guild = GIL_NOV;
 	guild = GIL_VLK;
 	id = 602;

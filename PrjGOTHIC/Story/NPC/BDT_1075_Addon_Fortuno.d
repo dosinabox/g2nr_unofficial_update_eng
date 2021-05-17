@@ -1,7 +1,7 @@
 
 instance BDT_1075_Addon_Fortuno(Npc_Default)
 {
-	name[0] = "Фортуно";
+	name[0] = "Fortuno";
 	guild = GIL_BDT;
 	id = 1075;
 	voice = 13;

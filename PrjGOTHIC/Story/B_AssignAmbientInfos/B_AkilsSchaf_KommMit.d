@@ -28,7 +28,7 @@ instance DIA_AkilsSchaf_KommMit(C_Info)
 	condition = DIA_AkilsSchaf_KommMit_Condition;
 	information = DIA_AkilsSchaf_KommMit_Info;
 	permanent = TRUE;
-	description = "Иди за мной!";
+	description = "Come with me!";
 };
 
 
@@ -72,7 +72,7 @@ instance DIA_AkilsSchaf_Wartehier(C_Info)
 	condition = DIA_AkilsSchaf_WarteHier_Condition;
 	information = DIA_AkilsSchaf_WarteHier_Info;
 	permanent = TRUE;
-	description = "Подожди здесь!";
+	description = "Wait here!";
 };
 
 
@@ -86,7 +86,7 @@ func int DIA_AkilsSchaf_WarteHier_Condition()
 
 func void DIA_AkilsSchaf_WarteHier_Info()
 {
-	AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Подожди здесь!
+	AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Wait here!
 	B_LieselMaeh();
 	Npc_ExchangeRoutine(self,"Cave");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

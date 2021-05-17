@@ -1,7 +1,7 @@
 
 instance BDT_1098_Addon_Snaf(Npc_Default)
 {
-	name[0] = "Снаф";
+	name[0] = "Snaf";
 	guild = GIL_BDT;
 	id = 1098;
 	voice = 1;

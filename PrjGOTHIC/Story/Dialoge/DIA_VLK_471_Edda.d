@@ -28,7 +28,7 @@ instance DIA_Edda_Hallo(C_Info)
 	condition = DIA_Edda_Hallo_Condition;
 	information = DIA_Edda_Hallo_Info;
 	permanent = FALSE;
-	description = "Что ты варишь?";
+	description = "What are you cooking there?";
 };
 
 

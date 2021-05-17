@@ -23,12 +23,12 @@ instance ItLsTorchburning(C_Item)
 	visual = "ITLSTORCHBURNING.ZEN";
 	material = MAT_WOOD;
 	description = name;
-	text[0] = "Горящий факел.";
+	text[0] = "Burning Torch.";
 };
 
 instance ItLsTorchburned(C_Item)
 {
-	name = "Сгоревший факел";
+	name = "Burned Torch";
 	mainflag = ITEM_KAT_NONE;
 //	flags = ITEM_TORCH | ITEM_MULTI;
 	flags = ITEM_MULTI;
@@ -48,6 +48,6 @@ instance ItLsTorchFirespit(C_Item)
 	material = MAT_WOOD;
 	scemeName = "FIRESPIT";
 	description = name;
-	text[0] = "Факел In Extremo.";
+	text[0] = "Used for fire spitting.";
 };
 

@@ -26,7 +26,7 @@ instance DIA_Addon_BL_BDT_1_Chef(C_Info)
 	condition = DIA_Addon_BL_BDT_1_Chef_Condition;
 	information = DIA_Addon_BL_BDT_1_Chef_Info;
 	permanent = TRUE;
-	description = "Кто здесь главный?";
+	description = "Who's in charge here?";
 };
 
 
@@ -37,22 +37,22 @@ func int DIA_Addon_BL_BDT_1_Chef_Condition()
 
 func void DIA_Addon_BL_BDT_1_Chef_Info()
 {
-	AI_Output(other,self,"DIA_Addon_BL_BDT_1_Chef_15_00");	//Кто здесь главный?
-	if(RavenIsDead == TRUE)
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Chef_15_00");	//Who's in charge here?
+	if (RavenIsDead == TRUE)
 	{
 		if(Npc_IsDead(Thorus))
 		{
-			AI_Output(self,other,"DIA_Addon_BL_BDT_1_Chef_01_01");	//Так много командиров приходит и уходит... Через некоторое время ты теряешь их из виду...
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");	//So many leaders come and go... after a while you lose an overview.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Addon_BL_BDT_1_Chef_01_02");	//Я думаю, Торус сейчас за главного...
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_02");	//I think Thorus is our boss now...
 		};
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_BL_BDT_1_Chef_01_03");	//Ворон сейчас наш командир. Он привел нас сюда и построил лагерь.
-		AI_Output(self,other,"DIA_Addon_BL_BDT_1_Chef_01_04");	//Он контролирует шахту, без него все давным-давно поубивали бы друг друга за золото.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");	//Raven is our leader. He led us here and built the camp.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");	//He controls the mine, otherwise the dogs would have killed each other over the gold a long time ago.
 	};
 };
 
@@ -63,7 +63,7 @@ instance DIA_Addon_BL_BDT_1_Lager(C_Info)
 	condition = DIA_Addon_BL_BDT_1_Lager_Condition;
 	information = DIA_Addon_BL_BDT_1_Lager_Info;
 	permanent = FALSE;
-	description = "Что вы знаете про лагерь?";
+	description = "What do you know about the camp?";
 };
 
 
@@ -77,11 +77,11 @@ func int DIA_Addon_BL_BDT_1_Lager_Condition()
 
 func void DIA_Addon_BL_BDT_1_Lager_Info()
 {
-	AI_Output(other,self,"DIA_Addon_BL_BDT_1_Lager_15_00");	//Что вы знаете про лагерь?
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_Lager_01_01");	//После того, как стало известно о золотой шахте, эти бродяги, должно быть, все перегрызлись.
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_Lager_01_02");	//Ворон убил худших из них, а остальных вышвырнул из шахты.
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_Lager_01_03");	//С тех пор никто не допускается в верхнюю часть. Он даже притащил заключенных, чтобы работать в шахте.
-	if(SC_KnowsRavensGoldmine == FALSE)
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");	//What do you know about the camp?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");	//After it became known that there was a goldmine here, these bums must have raised quite a ruckus.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");	//Raven killed the worst of them and threw the rest out of the mine.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");	//Since then, no one is allowed in the upper area any more. He's even had prisoners dragged here to dig in the mine.
+	if (SC_KnowsRavensGoldmine == FALSE)
 	{
 		B_LogEntries(TOPIC_Addon_RavenKDW,LogText_Addon_RavensGoldmine);
 		B_LogNextEntry(TOPIC_Addon_Sklaven,LogText_Addon_RavensGoldmine);
@@ -97,7 +97,7 @@ instance DIA_Addon_BL_BDT_1_Lager2(C_Info)
 	condition = DIA_Addon_BL_BDT_1_Lager2_Condition;
 	information = DIA_Addon_BL_BDT_1_Lager2_Info;
 	permanent = TRUE;
-	description = "Что вы знаете про лагерь?";
+	description = "What do you know about the camp?";
 };
 
 
@@ -111,9 +111,9 @@ func int DIA_Addon_BL_BDT_1_Lager2_Condition()
 
 func void DIA_Addon_BL_BDT_1_Lager2_Info()
 {
-	AI_Output(other,self,"DIA_Addon_BL_BDT_1_Lager2_15_00");	//Что вы знаете про лагерь?
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_Lager2_01_01");	//Если ты на кого-нибудь нападешь, они ВСЕ набросятся на тебя.
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_Lager2_01_02");	//Если у тебя нет хорошего повода разобраться с кем-то, конечно. Тогда никто не будет вмешиваться.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");	//What do you know about the camp?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");	//If you attack anyone, they'll ALL pounce on you.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");	//Unless you have a good reason to tangle with someone. Then no one will get involved.
 };
 
 
@@ -123,7 +123,7 @@ instance DIA_Addon_BL_BDT_1_News(C_Info)
 	condition = DIA_Addon_BL_BDT_1_News_Condition;
 	information = DIA_Addon_BL_BDT_1_News_Info;
 	permanent = TRUE;
-	description = "Какие новости?";
+	description = "Anything new?";
 };
 
 
@@ -134,13 +134,13 @@ func int DIA_Addon_BL_BDT_1_News_Condition()
 
 func void DIA_Addon_BL_BDT_1_News_Info()
 {
-	AI_Output(other,self,"DIA_Addon_BL_BDT_1_News_15_00");	//Какие новости?
-	if(RavenIsDead == TRUE)
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_News_15_00");	//Anything new?
+	if (RavenIsDead == TRUE)
 	{
-		AI_Output(self,other,"DIA_Addon_BL_BDT_1_News_01_01");	//Ворон мертв. Что же нам теперь делать?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");	//Raven is dead. What are we going to do now?
 	};
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_News_01_02");	//Пираты не захотят везти нас на материк, потому что им так и не заплатили за несколько последних перевозок.
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_News_01_03");	//Нам следует зарезать одного или двух, тогда остальным придется взять нас.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");	//The pirates won't take us back to the mainland because they haven't been paid for the last few transports.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");	//We ought to skewer one or two of them, then the rest would be guaranteed to take us over.
 };
 
 
@@ -150,7 +150,7 @@ instance DIA_Addon_BL_BDT_1_Sklaven(C_Info)
 	condition = DIA_Addon_BL_BDT_1_Sklaven_Condition;
 	information = DIA_Addon_BL_BDT_1_Sklaven_Info;
 	permanent = TRUE;
-	description = "Что вы знаете про заключенных?";
+	description = "What do you know about the prisoners?";
 };
 
 
@@ -164,13 +164,13 @@ func int DIA_Addon_BL_BDT_1_Sklaven_Condition()
 
 func void DIA_Addon_BL_BDT_1_Sklaven_Info()
 {
-	AI_Output(other,self,"DIA_Addon_BL_BDT_1_Sklaven_15_00");	//Что вы знаете про заключенных?
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_Sklaven_01_01");	//Ворон хочет что-то выкопать. Сначала это делали разбойники, но слишком многие погибли.
-	AI_Output(self,other,"DIA_Addon_BL_BDT_1_Sklaven_01_02");	//Поэтому он и привел заключенных - если они откинут копыта, ничего страшного.
-	if(BDT_1_Ausbuddeln == FALSE)
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");	//What do you know about the prisoners?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");	//Raven wants to dig something up. At first he had the bandits doing it, but too many dropped dead.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");	//That's why he brought the prisoners - if they snuff it, it doesn't matter.
+	if (BDT_1_Ausbuddeln == FALSE)
 	{
-		AI_Output(other,self,"DIA_Addon_BL_BDT_1_Sklaven_15_03");	//А что хочет выкопать Ворон?
-		AI_Output(self,other,"DIA_Addon_BL_BDT_1_Sklaven_01_04");	//Без понятия, но явно дело не только в золоте.
+		AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_03");	//What does Raven want to dig up?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_04");	//No idea, but it sure has to do with more than gold.
 		BDT_1_Ausbuddeln = TRUE;
 	};
 };

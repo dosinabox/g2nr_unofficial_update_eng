@@ -1,7 +1,7 @@
 
 instance PIR_1389_Addon_Tom(Npc_Default)
 {
-	name[0] = "Том";
+	name[0] = "Tom";
 	guild = GIL_PIR;
 	id = 1389;
 	voice = 11;

@@ -40,7 +40,7 @@ instance ItAm_Prot_Fire_01(C_Item)
 	on_unequip = UnEquip_ItAm_Prot_Fire_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет огня";
+	description = "Amulet of Fire";
 	text[2] = NAME_Prot_Fire;
 	count[2] = Am_ProtFire;
 	text[5] = NAME_Value;
@@ -73,7 +73,7 @@ instance ItAm_Prot_Edge_01(C_Item)
 	on_unequip = UnEquip_ItAm_Prot_Edge_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет брони";
+	description = "Harness Amulet";
 	text[2] = NAME_Prot_Edge;
 	count[2] = Am_ProtEdge;
 	text[5] = NAME_Value;
@@ -108,7 +108,7 @@ instance ItAm_Prot_Point_01(C_Item)
 	on_unequip = UnEquip_ItAm_Prot_Point_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет дубовой кожи";
+	description = "Amulet of Oak Skin";
 	text[2] = NAME_Prot_Point;
 	count[2] = Am_ProtPoint;
 	text[5] = NAME_Value;
@@ -141,7 +141,7 @@ instance ItAm_Prot_Mage_01(C_Item)
 	on_unequip = UnEquip_ItAm_Prot_Mage_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет силы духа";
+	description = "Amulet of Spiritual Power";
 	text[2] = NAME_Prot_Magic;
 	count[2] = Am_ProtMage;
 	text[5] = NAME_Value;
@@ -174,7 +174,7 @@ instance ItAm_Prot_Total_01(C_Item)
 	on_unequip = UnEquip_Value_Am_ProtTotal;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет рудной кожи";
+	description = "Amulet of Ore Skin";
 	text[1] = NAME_Prot_Edge;
 	count[1] = AM_TProtEdge;
 	text[2] = NAME_Prot_Point;
@@ -221,7 +221,7 @@ instance ItAm_Dex_01(C_Item)
 	on_unequip = UnEquip_ItAm_Dex_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет ловкости";
+	description = "Amulet of Agility";
 	text[2] = NAME_Bonus_Dex;
 	count[2] = Am_Dex;
 	text[5] = NAME_Value;
@@ -254,7 +254,7 @@ instance ItAm_Strg_01(C_Item)
 	on_unequip = UnEquip_ItAm_Strg_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет силы";
+	description = "Amulet of Strength";
 	text[2] = NAME_Bonus_Str;
 	count[2] = Am_Strg;
 	text[5] = NAME_Value;
@@ -287,7 +287,7 @@ instance ItAm_Hp_01(C_Item)
 	on_unequip = UnEquip_ItAm_Hp_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет жизни";
+	description = "Amulet of Life";
 	text[2] = NAME_Bonus_HpMax;
 	count[2] = Am_Hp;
 	text[5] = NAME_Value;
@@ -320,7 +320,7 @@ instance ItAm_Mana_01(C_Item)
 	on_unequip = UnEquip_ItAm_Mana_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет магии";
+	description = "Amulet of Magic";
 	text[2] = NAME_Bonus_ManaMax;
 	count[2] = Am_Mana;
 	text[5] = NAME_Value;
@@ -353,7 +353,7 @@ instance ItAm_Dex_Strg_01(C_Item)
 	on_unequip = UnEquip_ItAm_Dex_Strg_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет мощи";
+	description = "Amulet of Power";
 	text[2] = NAME_Bonus_Dex;
 	count[2] = Am_DexStrg_Dex;
 	text[3] = NAME_Bonus_Str;
@@ -390,7 +390,7 @@ instance ItAm_Hp_Mana_01(C_Item)
 	on_unequip = UnEquip_ItAm_Hp_Mana_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет просвещения";
+	description = "Amulet of Enlightenment";
 	text[2] = NAME_Bonus_HpMax;
 	count[2] = Am_HpMana_Hp;
 	text[3] = NAME_Bonus_ManaMax;

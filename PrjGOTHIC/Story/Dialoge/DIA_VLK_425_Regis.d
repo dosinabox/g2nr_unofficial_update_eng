@@ -208,10 +208,10 @@ func void DIA_Regis_ValDefeat_Info()
 
 func void B_Regis_AboutThief()
 {
-	AI_Output(self,other,"DIA_Regis_PERM_13_01");	//Можно сказать и так.
-	AI_Output(self,other,"DIA_Regis_PERM_13_02");	//Говорят, Боспер, мастер-лучник, был ограблен. Причем самым наглым образом!
-	AI_Output(self,other,"DIA_Regis_PERM_13_03");	//Вор вломился в его лавку средь бела дня и схватил лук.
-	AI_Output(self,other,"DIA_Regis_PERM_13_04");	//Боспер побежал за ним, вопя 'Держи вора!'. Но вор оказался очень проворным.
+		AI_Output (self, other, "DIA_Regis_PERM_13_01");	//You could say that.
+		AI_Output (self, other, "DIA_Regis_PERM_13_02");	//They robbed Bosper the bowyer. What a brazen thing to do, I tell you!
+		AI_Output (self, other, "DIA_Regis_PERM_13_03");	//The fellow just ambled into the shop in broad daylight and grabbed himself a bow.
+		AI_Output (self, other, "DIA_Regis_PERM_13_04");	//And Bosper right after him, hollering 'Stop right there, you rogue!' But the thief was too fast.
 };
 
 var int Regis_Bogendieb;

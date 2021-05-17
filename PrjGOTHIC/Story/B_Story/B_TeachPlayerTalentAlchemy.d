@@ -11,85 +11,85 @@ func int B_TeachPlayerTalentAlchemy(var C_Npc slf,var C_Npc oth,var int potion)
 	};
 	oth.lp -= kosten;
 	Log_CreateTopic(TOPIC_TalentAlchemy,LOG_NOTE);
-	B_LogEntry(TOPIC_TalentAlchemy,"Чтобы сварить зелье, мне нужна пустая мензурка и необходимые для этого зелья ингредиенты. Из этих ингредиентов я могу приготовить зелье на алхимическом столе.");
+	B_LogEntry(TOPIC_TalentAlchemy,"To brew a potion I need an empty laboratory flask and the ingredients required to make the potion. Using these ingredients on the alchemist's bench I can prepare the desired potion.");
 	if(potion == POTION_Health_01)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Health_01] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЛЕЧЕБНОЙ ЭССЕНЦИИ': 2 лечебные травы и 1 луговой горец.");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'ESSENCE OF HEALING':2 Healing Plants and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Health_02)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Health_02] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЛЕЧЕБНОГО ЭКСТРАКТА': 2 лечебных растения и 1 луговой горец.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'EXTRACT OF HEALING':2 Healing Herbs and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Health_03)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Health_03] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЛЕЧЕБНОГО ЭЛИКСИРА': 2 лечебных корня и 1 луговой горец.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'ELIXIR OF HEALINGґ:2 Healing Roots and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Mana_01)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Mana_01] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭССЕНЦИИ МАНЫ': 2 огненных крапивы и 1 луговой горец.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'MANA ESSENCE': 2 Fire Nettles and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Mana_02)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Mana_02] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭКСТРАКТА МАНЫ': 2 огненных травы и 1 луговой горец.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'MANA EXTRACT': 2 Fireweed and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Mana_03)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Mana_03] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА МАНЫ': 2 огненных корня и 1 луговой горец");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'MANA ELIXIR':2 Fire Roots and 1 Meadow Knotweed");
 	};
 	if(potion == POTION_Speed)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Speed] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЗЕЛЬЯ УСКОРЕНИЯ': 1 снеппер-трава и 1 луговой горец");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'SPEED POTION': 1 Snapperweed and 1 Meadow Knotweed");
 	};
 	if(potion == POTION_Perm_STR)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА СИЛЫ': 1 драконий корень и 1 царский щавель.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'ELIXIR OF STRENGTH':1 Dragonroot and 1 King's Sorrel.");
 	};
 	if(potion == POTION_Perm_DEX)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА ЛОВКОСТИ': 1 гоблинская ягода и 1 царский щавель.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'ELIXIR OF DEXTERITY': 1 Goblin Berries and 1 King's Sorrel.");
 	};
 	if(potion == POTION_Perm_Mana)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА ДУХА': 1 огненный корень и 1 царский щавель.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'ELIXIR OF SPIRIT':1 Fire Root and 1 King's Sorrel.");
 	};
 	if(potion == POTION_Perm_Health)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА ЖИЗНИ': 1 лечебный корень и 1 царский щавель.");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'ELIXIR OF LIFE': 1 Healing Root and 1 King's Sorrel");
 	};
 	if((Opened_LousHammer == TRUE) && (Knows_LousHammer == FALSE))
 	{
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'МОЛОТА ЛУ': 1 вода, 2 репы, 1 болотная трава, 1 зуб болотной акулы и 1 ром.");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'LOU's Hammer': 1 Water, 2 Turnips, 1 Swampweed, 1 Tooth from Swampshark and 1 rum.");
 		Knows_LousHammer = TRUE;
 	};
 	if((Opened_Schlafhammer == TRUE) && (Knows_Schlafhammer == FALSE))
 	{
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для двойного 'МОЛОТА ЛУ': 1 'Молот Лу' и 1 ром.");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'LOU's DOUBLE HAMMER': 1 'LOU's Hammer' and 1 rum.");
 		Knows_Schlafhammer = TRUE;
 	};
 	if((Opened_SchnellerHering == TRUE) && (Knows_SchnellerHering == FALSE))
 	{
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'БЫСТРОЙ СЕЛЕДКИ': 1 вода, 1 ром, 1 рыба и 1 снеппер-трава.");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'HASTY HERRING': 1 Water, 1 Rum, 1 Fish and 1 Snapperweed.");
 		Knows_SchnellerHering = TRUE;
 	};
 	if((Opened_MushroomMana == TRUE) && (Knows_MushroomMana == FALSE))
 	{
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ГРИБНОГО ЭКСТРАКТА': 50 черных грибов и 1 луговая ягода.");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'MUSHROOM EXTRACT': 50 Dark Mushrooms and 1 Meadow Berry.");
 		Knows_MushroomMana = TRUE;
 	};
 	if((Opened_MegaDrink == TRUE) && (PLAYER_TALENT_ALCHEMY[POTION_MegaDrink] == FALSE))
 	{
-		B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭМБАРЛА ФИРГАСТО': 10 драконьих яиц, 1 черная жемчужина и 1 сера.");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'EMBARLA FIGASTRO': 10 Dragon Eggs, 1 Black Peark and 1 Sulfur.");
 		PLAYER_TALENT_ALCHEMY[POTION_MegaDrink] = TRUE;
 	};
 	PrintScreen(PRINT_LearnAlchemy,-1,-1,FONT_Screen,2);

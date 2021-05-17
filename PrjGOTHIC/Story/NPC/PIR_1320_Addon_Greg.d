@@ -1,7 +1,7 @@
 
 instance PIR_1320_Addon_Greg(Npc_Default)
 {
-	name[0] = "Грег";
+	name[0] = "Greg";
 	guild = GIL_PIR;
 	id = 1320;
 	voice = 1;

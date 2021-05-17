@@ -1,7 +1,7 @@
 
 instance BDT_1091_Addon_Lucia(Npc_Default)
 {
-	name[0] = "Люсия";
+	name[0] = "Lucia";
 	guild = GIL_BDT;
 	id = 1091;
 	voice = 16;

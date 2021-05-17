@@ -5,7 +5,7 @@ instance DIA_Union_GiveItem(C_Info)
 	condition = DIA_Union_GiveItem_Condition;
 	information = DIA_Union_GiveItem_Info;
 	permanent = TRUE;
-	description = "(дать оружие)";
+	description = "(give weapon)";
 };
 
 

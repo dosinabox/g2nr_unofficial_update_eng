@@ -57,7 +57,7 @@ func void DIA_Nagur_PICKPOCKET_BACK()
 
 func void B_Kardif_LeaveMeAlone()
 {
-	AI_Output(self,other,"DIA_Nagur_Hallo_08_01");	//Послушай, оставь меня в покое, хорошо?
+	AI_Output(self,other,"DIA_Nagur_Hallo_08_01");	//Man, just leave me alone, okay?
 };
 
 instance DIA_Nagur_Hallo(C_Info)

@@ -1,7 +1,7 @@
 
 instance PAL_252_Parcival(Npc_Default)
 {
-	name[0] = "Парсиваль";
+	name[0] = "Parcival";
 	guild = GIL_PAL;
 	id = 252;
 	voice = 13;

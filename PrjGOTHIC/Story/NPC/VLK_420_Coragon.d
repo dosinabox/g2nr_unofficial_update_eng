@@ -1,7 +1,7 @@
 
 instance VLK_420_Coragon(Npc_Default)
 {
-	name[0] = "Корагон";
+	name[0] = "Coragon";
 	guild = GIL_VLK;
 	id = 420;
 	voice = 9;

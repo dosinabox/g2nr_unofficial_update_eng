@@ -987,7 +987,7 @@ func void B_BuildLearnDialog_Pyrokar()
 {
 	if(other.aivar[REAL_MANA_MAX] >= T_MEGA)
 	{
-		AI_Output(self,other,"DIA_Pyrokar_TEACH_MANA_11_00");	//Я чувствую, как магическая энергия течет через тебя, не зная преград. Даже я не могу показать тебе, как повысить ее еще больше.
+		AI_Output(self,other,"DIA_Pyrokar_TEACH_MANA_11_00");	//I can feel that the magic power flows through you well and truly. Even I cannot show you how you could increase it further.
 		Pyrokar_TeachMANA_NoPerm = TRUE;
 	}
 	else
@@ -1288,11 +1288,11 @@ func int DIA_Pyrokar_FOUNDINNOSEYE_Condition()
 	{
 		if(Npc_HasItems(hero,ItMi_InnosEye_Broken_Mis))
 		{
-			DIA_Pyrokar_FOUNDINNOSEYE.description = "Я нашел Глаз Инноса. Он поврежден.";
+			DIA_Pyrokar_FOUNDINNOSEYE.description = "I have found the Eye of Innos. It's broken.";
 		}
 		else
 		{
-			DIA_Pyrokar_FOUNDINNOSEYE.description = "Глаз Инноса поврежден.";
+			DIA_Pyrokar_FOUNDINNOSEYE.description = "Глаз Инноса поврежден.@@@";
 		};
 		return TRUE;
 	};
@@ -1321,7 +1321,7 @@ func void DIA_Pyrokar_FOUNDINNOSEYE_Info()
 	MIS_NovizenChase = LOG_SUCCESS;
 	B_GivePlayerXP(XP_AmbientKap3);
 	Info_ClearChoices(DIA_Pyrokar_FOUNDINNOSEYE);
-	Info_AddChoice(DIA_Pyrokar_FOUNDINNOSEYE,"Что мы теперь можем сделать?",DIA_Pyrokar_FOUNDINNOSEYE_was);
+	Info_AddChoice(DIA_Pyrokar_FOUNDINNOSEYE,"What can we do now?",DIA_Pyrokar_FOUNDINNOSEYE_was);
 };
 
 func void DIA_Pyrokar_FOUNDINNOSEYE_was()
@@ -1649,7 +1649,7 @@ instance DIA_Pyrokar_SCOBSESSED_KDF(C_Info)
 	condition = DIA_Pyrokar_SCOBSESSED_KDF_Condition;
 	information = DIA_Pyrokar_SCOBSESSED_KDF_Info;
 	permanent = TRUE;
-	description = "Исцели меня, Мастер, ибо я одержим.";
+	description = "Heal me, Master, for I am possessed.";
 };
 
 
@@ -1968,11 +1968,11 @@ func void DIA_Pyrokar_IRDORATHBOOKOPEN_Info()
 
 func void DIA_Pyrokar_IRDORATHBOOKOPEN_glueck()
 {
-	AI_Output(other,self,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_15_00");	//Просто слепая удача, я думаю.
-	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_01");	//Не говори чепухи. Удача!
-	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_02");	//Если даже я не смог открыть эту книгу, а затем приходит кто-то вроде тебя и играючи открывает ее...
-	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_03");	//... это наводит меня на грустные размышления...
-	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_04");	//Ладно. Так как ты, очевидно, единственный, кто смог открыть эту книгу, то я, пожалуй, позволю тебе держать ее у себя. По крайней мере, пока мы не разрешили этот кризис.
+	AI_Output (other, self, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_15_00");	//Just dumb luck, I suppose.
+	AI_Output (self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_01");	//Don't talk nonsense. Luck!
+	AI_Output (self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_02");	//When not even I succeed in opening the book, and then someone like you comes waltzing in...
+	AI_Output (self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_03");	//... that gives me something to ponder about.
+	AI_Output (self, other, "DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_04");	//Anyway. Since you were obviously the only one who was able to open the book, then may it be granted unto you to carry it. At least until we have weathered this crisis.
 	B_GivePlayerXP(XP_AmbientKap5);
 	Info_ClearChoices(DIA_Pyrokar_IRDORATHBOOKOPEN);
 };

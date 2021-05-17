@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Giant_DesertRat(C_Npc)
 {
-	name[0] = "Пустынная крыса";
+	name[0] = "Desert Rat";
 	guild = GIL_Giant_Rat;
 	aivar[AIV_MM_REAL_ID] = ID_Giant_Rat;
 	level = 10;

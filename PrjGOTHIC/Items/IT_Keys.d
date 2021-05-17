@@ -4,7 +4,7 @@ const int Value_Key_01 = 0;
 
 instance ItKe_Lockpick(C_Item)
 {
-	name = "Отмычка";
+	name = "Lockpick";
 	//mainflag = ITEM_KAT_KEYS;
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
@@ -74,7 +74,7 @@ instance ItKe_City_Tower_01(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = NAME_TowerKey;
-	text[0] = "Этот ключ был у Пабло.";
+	text[0] = "This one belonged to Pablo.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -90,7 +90,7 @@ instance ItKe_City_Tower_02(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = NAME_TowerKey;
-	text[0] = "Этот ключ был у Рагнара.";
+	text[0] = "This one belonged to Ranger.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -106,7 +106,7 @@ instance ItKe_City_Tower_03(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = NAME_TowerKey;
-	text[0] = "Этот ключ был у Руги.";
+	text[0] = "This one belonged to Ruga.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -122,7 +122,7 @@ instance ItKe_City_Tower_04(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = NAME_TowerKey;
-	text[0] = "Этот ключ был у Вамбо.";
+	text[0] = "This one belonged to Wambo.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -138,7 +138,7 @@ instance ItKe_City_Tower_05(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = NAME_TowerKey;
-	text[0] = "Этот ключ был у Пека.";
+	text[0] = "This one belonged to Peck.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -154,8 +154,8 @@ instance ItKe_City_Tower_06(C_Item)
 	visual = "ItKe_Key_01.3ds";
 	material = MAT_METAL;
 	description = NAME_TowerKey;
-	text[0] = "Этот ключ был в сундуке";
-	text[1] = "в казармах ополчения.";
+	text[0] = "This key was inside a chest";
+	text[1] = "in the barracks.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -170,9 +170,9 @@ instance ItKe_Orlan_BackDoor(C_Item)
 	value = 0;
 	visual = "ItKe_Key_03.3ds";
 	material = MAT_METAL;
-	description = "Ключ Орлана";
-	text[0] = "Открывает заднюю дверь";
-	text[1] = "таверны 'Мертвая гарпия'.";
+	description = "Orlan's Key";
+	text[0] = "Fits the back door";
+	text[1] = "of the 'Dead Harpy' tavern.";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;

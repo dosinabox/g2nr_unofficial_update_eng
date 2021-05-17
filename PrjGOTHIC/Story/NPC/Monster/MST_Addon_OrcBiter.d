@@ -1,7 +1,7 @@
 
 prototype Mst_Default_OrcBiter(C_Npc)
 {
-	name[0] = "Кусач";
+	name[0] = "Chomper";
 	guild = GIL_SCAVENGER;
 	aivar[AIV_MM_REAL_ID] = ID_OrcBiter;
 	level = 12;
@@ -52,7 +52,7 @@ instance OrcBiter(Mst_Default_OrcBiter)
 
 instance Zerk(Mst_Default_OrcBiter)
 {
-	name[0] = "Болотный кусач";
+	name[0] = "Swamp Chomper";
 //	fight_tactic = FAI_MOLERAT;
 //	senses_range = PERC_DIST_MONSTER_ACTIVE_MAX;
 //	aivar[AIV_MM_FollowTime] = FOLLOWTIME_SHORT;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_OrcElite(C_Npc)
 {
-	name[0] = "Ёлитный орк";
+	name[0] = "Orc Elite";
 	guild = GIL_ORC;
 	aivar[AIV_MM_REAL_ID] = ID_ORCELITE;
 	voice = 18;

@@ -1,7 +1,7 @@
 
 instance VLK_4112_Den(Npc_Default)
 {
-	name[0] = "Δεν";
+	name[0] = "Den";
 	guild = GIL_MIL;
 	id = 4112;
 	voice = 5;

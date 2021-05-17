@@ -57,7 +57,7 @@ func void Use_Weed()
 
 instance ItPl_Beet(C_Item)
 {
-	name = "Репа";
+	name = "Turnip";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Beet;
@@ -81,7 +81,7 @@ func void Use_Beet()
 
 instance ItPl_SwampHerb(C_Item)
 {
-	name = "Болотная трава";
+	name = "Swampweed";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_SwampHerb;
@@ -107,7 +107,7 @@ func void Use_SwampHerb()
 
 instance ItPl_Mana_Herb_01(C_Item)
 {
-	name = "Огненная крапива";
+	name = "Fire Nettle";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Mana_Herb_01;
@@ -131,7 +131,7 @@ func void Use_Mana_Herb_01()
 
 instance ItPl_Mana_Herb_02(C_Item)
 {
-	name = "Огненная трава";
+	name = "Fireweed";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Mana_Herb_02;
@@ -155,7 +155,7 @@ func void Use_Mana_Herb_02()
 
 instance ItPl_Mana_Herb_03(C_Item)
 {
-	name = "Огненный корень";
+	name = "Fire Root";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Mana_Herb_03;
@@ -179,7 +179,7 @@ func void Use_Mana_Herb_03()
 
 instance ItPl_Health_Herb_01(C_Item)
 {
-	name = "Лечебная трава";
+	name = "Healing Plant";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Health_Herb_01;
@@ -203,7 +203,7 @@ func void Use_Health_Herb_01()
 
 instance ItPl_Health_Herb_02(C_Item)
 {
-	name = "Лечебное растение";
+	name = "Healing Herb";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Health_Herb_02;
@@ -227,7 +227,7 @@ func void Use_Health_Herb_02()
 
 instance ItPl_Health_Herb_03(C_Item)
 {
-	name = "Лечебный корень";
+	name = "Healing Root";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Health_Herb_03;
@@ -251,7 +251,7 @@ func void Use_Health_Herb_03()
 
 instance ItPl_Dex_Herb_01(C_Item)
 {
-	name = "Гоблинская ягода";
+	name = "Goblin Berries";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Dex_Herb_01;
@@ -276,7 +276,7 @@ func void Use_Dex_Herb_01()
 
 instance ItPl_Strength_Herb_01(C_Item)
 {
-	name = "Драконий корень";
+	name = "Dragonroot";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Strength_Herb_01;
@@ -301,7 +301,7 @@ func void Use_Strength_Herb_01()
 
 instance ItPl_Speed_Herb_01(C_Item)
 {
-	name = "Снеппер-трава";
+	name = "Snapperweed";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Speed_Herb_01;
@@ -326,7 +326,7 @@ func void Use_Speed_Herb_01()
 
 instance ItPl_Mushroom_01(C_Item)
 {
-	name = "Черный гриб";
+	name = "Dark Mushroom";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Mushroom_01;
@@ -361,7 +361,7 @@ func void Use_Mushroom_01()
 
 instance ItPl_Mushroom_02(C_Item)
 {
-	name = "Пища рудокопа";
+	name = "Digger Meat";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Mushroom_02;
@@ -385,7 +385,7 @@ func void Use_Mushroom_02()
 
 instance ItPl_Blueplant(C_Item)
 {
-	name = "Синяя бузина";
+	name = "Blue Elder";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Blueplant;
@@ -412,7 +412,7 @@ func void Use_Blueplant()
 
 instance ItPl_Forestberry(C_Item)
 {
-	name = "Лесная ягода";
+	name = "Woodland Berry";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Forestberry;
@@ -436,7 +436,7 @@ func void Use_Forestberry()
 
 instance ItPl_Planeberry(C_Item)
 {
-	name = "Луговая ягода";
+	name = "Meadow Berry";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Planeberry;
@@ -462,7 +462,7 @@ func void Use_Planeberry()
 
 instance ItPl_Temp_Herb(C_Item)
 {
-	name = "Луговой горец";
+	name = "Meadow Knotweed";
 	mainflag = ITEM_KAT_FOOD;
 //	flags = ITEM_MULTI | ITEM_MISSION;
 	flags = ITEM_MULTI;
@@ -487,7 +487,7 @@ func void Use_Temp_Herb()
 
 instance ItPl_Perm_Herb(C_Item)
 {
-	name = "Царский щавель";
+	name = "King's Sorrel";
 	mainflag = ITEM_KAT_FOOD;
 //	flags = ITEM_MULTI | ITEM_MISSION;
 	flags = ITEM_MULTI;

@@ -1,7 +1,7 @@
 
 instance NONE_100_Xardas(Npc_Default)
 {
-	name[0] = "Ксардас";
+	name[0] = "Xardas";
 	guild = GIL_NONE;
 	id = 100;
 	voice = 14;

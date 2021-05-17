@@ -242,7 +242,7 @@ func void DIA_Addon_Cord_YouAreRanger_Info()
 		{
 			Info_AddChoice(DIA_Addon_Cord_YouAreRanger,"Will you vote for me?",DIA_Addon_Cord_YouAreRanger_vote);
 		};
-		Info_AddChoice(DIA_Addon_Cord_YouAreRanger,"”ходи отсюда. я хочу зан€ть твое место на этой ферме.",DIA_Addon_Cord_YouAreRanger_weg);
+		Info_AddChoice(DIA_Addon_Cord_YouAreRanger,"Clear out. I want to take your place on this farm.",DIA_Addon_Cord_YouAreRanger_weg);
 		Info_AddChoice(DIA_Addon_Cord_YouAreRanger,"You could help me join the mercenaries.",DIA_Addon_Cord_YouAreRanger_SLDAufnahme);
 	};
 	if(MIS_Addon_Lares_ComeToRangerMeeting != LOG_SUCCESS)

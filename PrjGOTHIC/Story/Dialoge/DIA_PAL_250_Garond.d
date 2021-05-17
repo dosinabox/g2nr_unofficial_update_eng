@@ -1024,7 +1024,7 @@ instance DIA_Garond_JanBecomeSmith(C_Info)
 	condition = DIA_Garond_JanBecomeSmith_Condition;
 	information = DIA_Garond_JanBecomeSmith_Info;
 	permanent = TRUE;
-	description = "Я хочу поговорить о кузнеце.";
+	description = "There is a problem with the smith.";
 };
 
 

@@ -44,15 +44,15 @@ func void DIA_STRF_1_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_STRF_1_STANDARD_01_00");	//Если бы мне удалось вырваться отсюда, когда у меня был шанс, мне бы сейчас не пришлось гнуть спину на эту свинью!
+		AI_Output (self, other, "DIA_STRF_1_STANDARD_01_00");	//If I had taken off when I had the chance back then, I wouldn't have to slave away for the swine now!
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_STRF_1_STANDARD_01_01");	//Это все из-за этой руды. Всегда все одно и то же. Всем позарез нужна эта проклятая руда.
+		AI_Output (self, other, "DIA_STRF_1_STANDARD_01_01");	//It's all about ore. Always the same. They all just want that damned ore.
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_STRF_1_STANDARD_01_02");	//Если бы ты попробовал это дерьмо, которым нас снабжают, ты бы тоже стал подумывать о бунте!
+		AI_Output (self, other, "DIA_STRF_1_STANDARD_01_02");	//If you had to eat the grub they toss us, you'd start thinking about rebellion too!
 	};
 	AI_StopProcessInfos(self);
 };

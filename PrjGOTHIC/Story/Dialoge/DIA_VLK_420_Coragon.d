@@ -305,7 +305,7 @@ func void DIA_Coragon_GiveBook_Info()
 	DIA_Common_HereIsYourBook();
 	if(ClassicLehmarBook == FALSE)
 	{
-		AI_PrintScreen("Долговая книга отдано",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Book of Debts",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 		Npc_RemoveInvItem(other,ItWr_Schuldenbuch);
 	}
 	else
@@ -400,7 +400,7 @@ func void DIA_Coragon_News_Info()
 {
 	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_33");	//Valentino was unable to pay his bar tab last night.
 	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_35");	//And right before that, he had been crowing about how much money he had.
-	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_36");	//И тут он запускает руку в карман, делает глупое лицо и говорит, что его обокрали...
+	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_36");	//Then he put his hand in his pocket and made a funny face. He said he had been robbed...
 	AI_Output(other,self,"DIA_Coragon_Add_15_37");	//And? What did you do?
 	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_38");	//Well, I gave him a good thrashing, what else?
 	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_34");	//Then he put his hand in his pocket and made a funny face. He said he had been robbed...
@@ -472,15 +472,15 @@ func void DIA_Coragon_PICKPOCKET_Book_DoIt()
 	if(other.attribute[ATR_DEXTERITY] >= 40)
 	{
 		CreateInvItem(other,ItWr_Schuldenbuch);
-		AI_PrintScreen("Book of Debts received",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
+		AI_PrintScreen("Received: Book of Debts",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
 		B_GiveThiefXP();
-		B_LogEntry(Topic_PickPocket,ConcatStrings("Корагон",PRINT_PickPocketSuccess));
+		B_LogEntry(Topic_PickPocket,ConcatStrings("Coragon",PRINT_PickPocketSuccess));
 		SchuldBuch_Stolen_Coragon = TRUE;
 	}
 	else
 	{
 		B_ResetThiefLevel();
-		B_LogEntry(Topic_PickPocket,ConcatStrings("Корагон",PRINT_PickPocketFailed));
+		B_LogEntry(Topic_PickPocket,ConcatStrings("Coragon",PRINT_PickPocketFailed));
 		AI_StopProcessInfos(self);
 		B_Attack(self,other,AR_Theft,1);
 	};

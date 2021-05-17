@@ -1,7 +1,7 @@
 
 instance SLD_814_Sentenza(Npc_Default)
 {
-	name[0] = "Сентенза";
+	name[0] = "Sentenza";
 	guild = GIL_SLD;
 	id = 814;
 	voice = 9;

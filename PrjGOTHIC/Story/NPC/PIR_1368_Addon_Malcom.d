@@ -1,7 +1,7 @@
 
 instance PIR_1368_Addon_Malcom(Npc_Default)
 {
-	name[0] = "Мальком";
+	name[0] = "Malcom";
 	guild = GIL_PIR;
 	id = 1368;
 	voice = 4;

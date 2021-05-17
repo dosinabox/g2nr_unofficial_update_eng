@@ -296,7 +296,7 @@ func void DIA_Addon_Fortuno_Trade_1()
 	B_GivePlayerXP(10);
 	if(Npc_HasItems(other,ItPl_SwampHerb))
 	{
-		AI_PrintScreen(ConcatStrings("Осталось болотной травы: ",IntToString(Npc_HasItems(other,ItPl_SwampHerb))),-1,-1,FONT_ScreenSmall,2);
+		AI_PrintScreen(ConcatStrings("Swampweed left: ",IntToString(Npc_HasItems(other,ItPl_SwampHerb))),-1,-1,FONT_ScreenSmall,2);
 		B_Fortuno_InfoManager();
 	}
 	else

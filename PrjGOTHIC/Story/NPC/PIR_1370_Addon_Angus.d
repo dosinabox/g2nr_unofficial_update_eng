@@ -1,7 +1,7 @@
 
 instance PIR_1370_Addon_Angus(Npc_Default)
 {
-	name[0] = "Ангус";
+	name[0] = "Angus";
 	guild = GIL_PIR;
 	id = 1370;
 	voice = 6;

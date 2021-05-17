@@ -50,7 +50,7 @@ const int Value_Sextant = 1500;
 
 instance ItMi_Stomper(C_Item)
 {
-	name = "Давилка";
+	name = "Weed Masher";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Stomper;
@@ -63,7 +63,7 @@ instance ItMi_Stomper(C_Item)
 
 instance ItMi_RuneBlank(C_Item)
 {
-	name = "Рунный камень";
+	name = "Rune";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_RuneBlank;
@@ -76,7 +76,7 @@ instance ItMi_RuneBlank(C_Item)
 
 instance ItMi_Pliers(C_Item)
 {
-	name = "Щипцы";
+	name = "Mandible";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Hammer;
@@ -89,7 +89,7 @@ instance ItMi_Pliers(C_Item)
 
 instance ItMi_Flask(C_Item)
 {
-	name = "Мензурка";
+	name = "Lab Water Bottle";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Flask;
@@ -102,7 +102,7 @@ instance ItMi_Flask(C_Item)
 
 instance ItMi_Hammer(C_Item)
 {
-	name = "Молоток";
+	name = "Hammer";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Hammer;
@@ -115,7 +115,7 @@ instance ItMi_Hammer(C_Item)
 
 instance ItMi_Scoop(C_Item)
 {
-	name = "Ложка";
+	name = "Spoon";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Scoop;
@@ -128,7 +128,7 @@ instance ItMi_Scoop(C_Item)
 
 instance ItMi_Pan(C_Item)
 {
-	name = "Сковорода";
+	name = "Pan";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Pan;
@@ -141,7 +141,7 @@ instance ItMi_Pan(C_Item)
 
 instance ItMi_PanFull(C_Item)
 {
-	name = "Сковорода";
+	name = "Pan";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Pan;
@@ -154,7 +154,7 @@ instance ItMi_PanFull(C_Item)
 
 instance ItMi_Saw(C_Item)
 {
-	name = "Пила";
+	name = "Saw";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Saw;
@@ -167,7 +167,7 @@ instance ItMi_Saw(C_Item)
 
 instance ItMiSwordraw(C_Item)
 {
-	name = "Сырая сталь";
+	name = "Raw Steel";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SwordRaw;
@@ -180,7 +180,7 @@ instance ItMiSwordraw(C_Item)
 
 instance ItMiSwordrawhot(C_Item)
 {
-	name = "Раскаленная сталь";
+	name = "Red Hot Steel";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SwordRawHot;
@@ -193,7 +193,7 @@ instance ItMiSwordrawhot(C_Item)
 
 instance ItMiSwordbladehot(C_Item)
 {
-	name = "Раскаленный клинок";
+	name = "Red Hot Blade";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SwordBladeHot;
@@ -206,7 +206,7 @@ instance ItMiSwordbladehot(C_Item)
 
 instance ItMiSwordblade(C_Item)
 {
-	name = "Клинок";
+	name = "Blade";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SwordBlade;
@@ -219,7 +219,7 @@ instance ItMiSwordblade(C_Item)
 
 instance ItMi_Broom(C_Item)
 {
-	name = "Метла";
+	name = "Broom";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Broom;
@@ -245,7 +245,7 @@ func void Use_Broom()
 
 instance ItMi_Lute(C_Item)
 {
-	name = "Лютня";
+	name = "Lute";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Lute;
@@ -259,7 +259,7 @@ instance ItMi_Lute(C_Item)
 
 instance ItMi_Brush(C_Item)
 {
-	name = "Щетка";
+	name = "Brush";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Brush;
@@ -281,7 +281,7 @@ instance ItMi_Joint(C_Item)
 	material = MAT_LEATHER;
 	scemeName = "JOINT";
 	on_state[0] = Use_Joint;
-	description = "Косяк из болотной травы";
+	description = "A stalk of swampweed";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_zbias = 200;
@@ -300,7 +300,7 @@ func void Use_Joint()
 
 /*instance ItMi_Packet(C_Item)
 {
-	name = "Пакет";
+	name = "Packet";
 	mainflag = ITEM_KAT_NONE;
 	flags = 0;
 	value = 0;
@@ -321,7 +321,8 @@ instance ItMi_Pocket(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = UsePocket;
 	description = name;
-	text[0] = "Легкий мешочек.";
+	text[0] = "A narrow bag,";
+	text[1] =  "not very heavy.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -335,7 +336,7 @@ func void UsePocket()
 
 instance ItMi_Nugget(C_Item)
 {
-	name = "Кусок руды";
+	name = "Lump of Ore";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Nugget;
@@ -351,7 +352,7 @@ instance ItMi_Nugget(C_Item)
 
 instance ItMi_Gold(C_Item)
 {
-	name = "Золото";
+	name = "Gold";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Gold;
@@ -365,7 +366,7 @@ instance ItMi_Gold(C_Item)
 
 instance ItMi_OldCoin(C_Item)
 {
-	name = "Старая монета";
+	name = "Old Coin";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_MISSION;
 	value = 0;
@@ -377,7 +378,7 @@ instance ItMi_OldCoin(C_Item)
 
 instance ItMi_GoldCandleHolder(C_Item)
 {
-	name = "Золотой подсвечник";
+	name = "Gold Candlestick";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_GoldCandleHolder;
@@ -390,7 +391,7 @@ instance ItMi_GoldCandleHolder(C_Item)
 
 instance ItMi_GoldNecklace(C_Item)
 {
-	name = "Золотое ожерелье";
+	name = "Gold Necklace";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_AMULET;
 	value = Value_GoldNecklace;
@@ -404,7 +405,7 @@ instance ItMi_GoldNecklace(C_Item)
 
 instance ItMi_SilverRing(C_Item)
 {
-	name = "Серебряное кольцо";
+	name = "Silver Ring";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_RING;
 	value = Value_SilverRing;
@@ -420,7 +421,7 @@ instance ItMi_SilverRing(C_Item)
 
 instance ItMi_SilverCup(C_Item)
 {
-	name = "Серебряный кубок";
+	name = "Silver Chalice";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SilverCup;
@@ -433,7 +434,7 @@ instance ItMi_SilverCup(C_Item)
 
 instance ItMi_SilverPlate(C_Item)
 {
-	name = "Серебряная тарелка";
+	name = "Silver Plate";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SilverPlate;
@@ -446,7 +447,7 @@ instance ItMi_SilverPlate(C_Item)
 
 instance ItMi_GoldPlate(C_Item)
 {
-	name = "Золотая тарелка";
+	name = "Gold Plate";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_GoldPlate;
@@ -459,7 +460,7 @@ instance ItMi_GoldPlate(C_Item)
 
 instance ItMi_GoldCup(C_Item)
 {
-	name = "Золотой кубок";
+	name = "Gold Chalice";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_GoldCup;
@@ -472,7 +473,7 @@ instance ItMi_GoldCup(C_Item)
 
 instance ItMi_BloodCup_MIS(C_Item)
 {
-	name = "Кровавый кубок";
+	name = "Blood Chalice";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_MISSION;
 	value = Value_BloodCup;
@@ -485,7 +486,7 @@ instance ItMi_BloodCup_MIS(C_Item)
 
 instance ItMi_GoldRing(C_Item)
 {
-	name = "Золотое кольцо";
+	name = "Gold Ring";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_RING;
 	value = Value_GoldRing;
@@ -501,7 +502,7 @@ instance ItMi_GoldRing(C_Item)
 
 instance ItMi_SilverChalice(C_Item)
 {
-	name = "Серебряная чаша";
+	name = "Silver Dish";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SilverChalice;
@@ -514,7 +515,7 @@ instance ItMi_SilverChalice(C_Item)
 
 instance ItMi_JeweleryChest(C_Item)
 {
-	name = "Шкатулка с драгоценностями";
+	name = "Jewel Casket";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_JeweleryChest;
@@ -527,7 +528,7 @@ instance ItMi_JeweleryChest(C_Item)
 
 instance ItMi_GoldChalice(C_Item)
 {
-	name = "Золотая чаша";
+	name = "Gold Dish";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_GoldChalice;
@@ -540,7 +541,7 @@ instance ItMi_GoldChalice(C_Item)
 
 instance ItMi_GoldChest(C_Item)
 {
-	name = "Шкатулка";
+	name = "Casket";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_GoldChest;
@@ -553,7 +554,7 @@ instance ItMi_GoldChest(C_Item)
 
 instance ItMi_InnosStatue(C_Item)
 {
-	name = "Статуэтка Инноса";
+	name = "Statue of Innos";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_InnosStatue;
@@ -566,7 +567,7 @@ instance ItMi_InnosStatue(C_Item)
 
 instance ItMi_Sextant(C_Item)
 {
-	name = "Секстант";
+	name = "Sextant";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Sextant;
@@ -579,7 +580,7 @@ instance ItMi_Sextant(C_Item)
 
 instance ItMi_SilverCandleHolder(C_Item)
 {
-	name = "Серебряный подсвечник";
+	name = "Silver Candlestick";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_SilverCandleHolder;
@@ -592,7 +593,7 @@ instance ItMi_SilverCandleHolder(C_Item)
 
 instance ItMi_SilverNecklace(C_Item)
 {
-	name = "Серебряное ожерелье";
+	name = "Silver Necklace";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_AMULET;
 	value = Value_SilverNecklace;
@@ -606,7 +607,7 @@ instance ItMi_SilverNecklace(C_Item)
 
 instance ItMi_Sulfur(C_Item)
 {
-	name = "Сера";
+	name = "Sulfur";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Sulfur;
@@ -620,7 +621,7 @@ instance ItMi_Sulfur(C_Item)
 
 instance ItMi_Quartz(C_Item)
 {
-	name = "Ледяной кварц";
+	name = "Glacier Quartz";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Quartz;
@@ -635,7 +636,7 @@ instance ItMi_Quartz(C_Item)
 
 instance ItMi_Pitch(C_Item)
 {
-	name = "Смола";
+	name = "Pitch";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Pitch;
@@ -648,7 +649,7 @@ instance ItMi_Pitch(C_Item)
 
 instance ItMi_Rockcrystal(C_Item)
 {
-	name = "Горный хрусталь";
+	name = "Rock Crystal";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Rockcrystal;
@@ -661,7 +662,7 @@ instance ItMi_Rockcrystal(C_Item)
 
 instance ItMi_Aquamarine(C_Item)
 {
-	name = "Аквамарин";
+	name = "Aquamarine";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Aquamarine;
@@ -675,7 +676,7 @@ instance ItMi_Aquamarine(C_Item)
 
 instance ItMi_HolyWater(C_Item)
 {
-	name = "Святая вода";
+	name = "Holy Water";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_HolyWater;
@@ -688,7 +689,7 @@ instance ItMi_HolyWater(C_Item)
 
 instance ItMi_Coal(C_Item)
 {
-	name = "Уголь";
+	name = "Coal";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = 1;
@@ -702,7 +703,7 @@ instance ItMi_Coal(C_Item)
 
 instance ItMi_DarkPearl(C_Item)
 {
-	name = "Черная жемчужина";
+	name = "Black Pearl";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_DarkPearl;
@@ -716,14 +717,14 @@ instance ItMi_DarkPearl(C_Item)
 
 instance ItMi_ApfelTabak(C_Item)
 {
-	name = "Яблочный табак";
+	name = "Apple tobacco";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = VALUE_ItMi_ApfelTabak;
 	visual = "ItMi_TabakPocket.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "Кисет с яблочным табаком.";
+	text[0] = "A bag of apple tobacco.";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_zbias = 190;
@@ -731,14 +732,14 @@ instance ItMi_ApfelTabak(C_Item)
 
 instance ItMi_PilzTabak(C_Item)
 {
-	name = "Грибной табак";
+	name = "Mushroom tobacco";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = VALUE_ItMi_PilzTabak;
 	visual = "ItMi_TabakPocket.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "Темный яблочно-грибной табак.";
+	text[0] = "Dark apple-mushroom tobacco";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_zbias = 190;
@@ -746,14 +747,14 @@ instance ItMi_PilzTabak(C_Item)
 
 instance ItMi_DoppelTabak(C_Item)
 {
-	name = "Двойное яблоко";
+	name = "Double Apple";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = VALUE_ItMi_DoppelTabak;
 	visual = "ItMi_TabakPocket.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "На вкус похоже на яблоко...";
+	text[0] = "Tastes a lot like apple...";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_zbias = 190;
@@ -761,14 +762,14 @@ instance ItMi_DoppelTabak(C_Item)
 
 instance ItMi_Honigtabak(C_Item)
 {
-	name = "Медовый табак";
+	name = "Honey Tobacco";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = VALUE_ItMi_HonigTabak;
 	visual = "ItMi_TabakPocket.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "Сладкий яблочный табак.";
+	text[0] = "Sweet apple tobacco";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_zbias = 190;
@@ -776,14 +777,14 @@ instance ItMi_Honigtabak(C_Item)
 
 instance ItMi_SumpfTabak(C_Item)
 {
-	name = "Травяной табак";
+	name = "Herb tobacco";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = VALUE_ItMi_SumpfTabak;
 	visual = "ItMi_TabakPocket.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "Смесь из болотной травы.";
+	text[0] = "Swampweed blend.";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_zbias = 190;
@@ -791,7 +792,7 @@ instance ItMi_SumpfTabak(C_Item)
 
 instance ItMi_AlarmHorn(C_Item)
 {
-	name = "Сигнальный рог";
+	name = "Alarm Horn";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Alarmhorn;
@@ -805,7 +806,7 @@ instance ItMi_AlarmHorn(C_Item)
 
 instance ItMi_ArrowPack(C_Item)
 {
-	name = "Колчан стрел";
+	name = "Quiver";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Pfeil * 50;

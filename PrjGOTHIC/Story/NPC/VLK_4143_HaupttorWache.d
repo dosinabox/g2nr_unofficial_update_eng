@@ -1,7 +1,7 @@
 
 instance VLK_4143_HaupttorWache(Npc_Default)
 {
-	name[0] = "Стражник у главных ворот";
+	name[0] = "Main Gate Guard";
 	guild = GIL_VLK;
 	id = 4143;
 	voice = 13;

@@ -1,7 +1,7 @@
 
 instance BAU_954_Maleth(Npc_Default)
 {
-	name[0] = "Малет";
+	name[0] = "Maleth";
 	guild = GIL_OUT;
 	id = 954;
 	voice = 8;

@@ -27,7 +27,7 @@ instance DIA_Addon_Myxir_Hallo(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Myxir_Hallo_Condition;
 	information = DIA_Addon_Myxir_Hallo_Info;
-	description = "Все в порядке?";
+	description = "Everything all right?";
 };
 
 
@@ -38,8 +38,8 @@ func int DIA_Addon_Myxir_Hallo_Condition()
 
 func void DIA_Addon_Myxir_Hallo_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Myxir_Hallo_15_00");	//Все в порядке?
-	AI_Output(self,other,"DIA_Addon_Myxir_Hallo_12_01");	//Заявиться сюда было с твоей стороны очень смелым поступком.
+	AI_Output (other, self, "DIA_Addon_Myxir_Hallo_15_00");	//Everything all right?
+	AI_Output (self, other, "DIA_Addon_Myxir_Hallo_12_01");	//It's very brave of you to just walk in here.
 };
 
 
@@ -49,7 +49,7 @@ instance DIA_Addon_Myxir_WasMachstDu(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Myxir_WasMachstDu_Condition;
 	information = DIA_Addon_Myxir_WasMachstDu_Info;
-	description = "Чем ты здесь занимаешься?";
+	description = "What are you doing here?";
 };
 
 
@@ -63,11 +63,11 @@ func int DIA_Addon_Myxir_WasMachstDu_Condition()
 
 func void DIA_Addon_Myxir_WasMachstDu_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Myxir_WasMachstDu_15_00");	//Чем ты здесь занимаешься?
-	AI_Output(self,other,"DIA_Addon_Myxir_WasMachstDu_12_01");	//Я изучаю язык зодчих.
-	AI_Output(self,other,"DIA_Addon_Myxir_WasMachstDu_12_02");	//Язык - это ключ к тому, чтобы понять этих людей.
-	AI_Output(self,other,"DIA_Addon_Myxir_WasMachstDu_12_03");	//Каждый из нас должен выучить этот язык, иначе экспедиция закончится, даже не начавшись.
-	AI_Output(self,other,"DIA_Addon_Myxir_WasMachstDu_12_04");	//Зодчие выбивали свои тексты на каменных табличках. К сожалению, многие из них давно разбиты или украдены.
+	AI_Output (other, self, "DIA_Addon_Myxir_WasMachstDu_15_00");	//What are you doing here?
+	AI_Output (self, other, "DIA_Addon_Myxir_WasMachstDu_12_01");	//I'm studying the language of the builders.
+	AI_Output (self, other, "DIA_Addon_Myxir_WasMachstDu_12_02");	//The language is the key to understanding the ancient people.
+	AI_Output (self, other, "DIA_Addon_Myxir_WasMachstDu_12_03");	//Each one of us must learn it, or this expedition will be over before it even begins.
+	AI_Output (self, other, "DIA_Addon_Myxir_WasMachstDu_12_04");	//The builders used stone tablets to pass on their knowledge. Unfortunately, many of them are broken or were stolen long ago.
 };
 
 
@@ -77,7 +77,7 @@ instance DIA_Addon_Myxir_Steintafeln(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Myxir_Steintafeln_Condition;
 	information = DIA_Addon_Myxir_Steintafeln_Info;
-	description = "Что же можно узнать из этих табличек?";
+	description = "What's on these stone tablets, then?";
 };
 
 
@@ -91,16 +91,16 @@ func int DIA_Addon_Myxir_Steintafeln_Condition()
 
 func void DIA_Addon_Myxir_Steintafeln_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Myxir_Steintafeln_15_00");	//Что же можно узнать из этих табличек?
-	AI_Output(self,other,"DIA_Addon_Myxir_Steintafeln_12_01");	//На них записаны знания древнего народа.
-	AI_Output(self,other,"DIA_Addon_Myxir_Steintafeln_12_02");	//Некоторые из них волшебным образом увеличивают магические или боевые способности.
-	AI_Output(self,other,"DIA_Addon_Myxir_Steintafeln_12_03");	//Для тех, кто способен их прочесть, они являются настоящим сокровищем.
+	AI_Output (other, self, "DIA_Addon_Myxir_Steintafeln_15_00");	//What's on these stone tablets, then?
+	AI_Output (self, other, "DIA_Addon_Myxir_Steintafeln_12_01");	//They contain the collected knowledge of the ancient people.
+	AI_Output (self, other, "DIA_Addon_Myxir_Steintafeln_12_02");	//Some of them increase knowledge of combat and magic by magical means.
+	AI_Output (self, other, "DIA_Addon_Myxir_Steintafeln_12_03");	//For someone who can read the tablets, they are a real treasure.
 	if(TOPIC_End_Stoneplates == FALSE)
 	{
 		Log_CreateTopic(TOPIC_Addon_Stoneplates,LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_Stoneplates,LOG_Running);
 	};
-	B_LogEntry(TOPIC_Addon_Stoneplates,"На каменных табличках записаны древние знания зодчих. Некоторые из них могут волшебным образом увеличить познания в области сражений или магии. Однако их нужно еще суметь прочитать.");
+	B_LogEntry(TOPIC_Addon_Stoneplates,"The stone tablets contain the knowledge of the old people of the builders. Some of them magically increase knowledge of combat and magic. However, one has to be able to read them.");
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_Addon_Myxir_WillYouTeachMe(C_Info)
 	nr = 10;
 	condition = DIA_Addon_Myxir_WillYouTeachMe_Condition;
 	information = DIA_Addon_Myxir_WillYouTeachMe_Info;
-	description = "Ты можешь научить меня языку зодчих?";
+	description = "Can you teach me to read the language?";
 };
 
 
@@ -124,8 +124,8 @@ func int DIA_Addon_Myxir_WillYouTeachMe_Condition()
 
 func void DIA_Addon_Myxir_WillYouTeachMe_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Myxir_WillYouTeachMe_15_00");	//Ты можешь научить меня языку зодчих?
-	AI_Output(self,other,"DIA_Addon_Myxir_WillYouTeachMe_12_01");	//Конечно, почему нет? Я с радостью поделюсь с тобой своими знаниями.
+	AI_Output (other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00");	//Can you teach me to read the language?
+	AI_Output (self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01");	//Well. Why not? I'll gladly pass on my knowledge to you.
 	Log_CreateTopic(TOPIC_Addon_Stoneplates,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates,LOG_Running);
 	B_LogEntries(TOPIC_Addon_Stoneplates,LogText_Addon_MyxirTeach);
@@ -142,7 +142,7 @@ instance DIA_Addon_Myxir_Teach(C_Info)
 	condition = DIA_Addon_Myxir_Teach_Condition;
 	information = DIA_Addon_Myxir_Teach_Info;
 	permanent = TRUE;
-	description = "Научи меня этому языку.";
+	description = "Teach me that language.";
 };
 
 

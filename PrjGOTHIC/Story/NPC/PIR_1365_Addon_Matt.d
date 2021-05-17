@@ -1,7 +1,7 @@
 
 instance PIR_1365_Addon_Matt(Npc_Default)
 {
-	name[0] = "Мэтт";
+	name[0] = "Matt";
 	guild = GIL_PIR;
 	id = 1365;
 	voice = 10;

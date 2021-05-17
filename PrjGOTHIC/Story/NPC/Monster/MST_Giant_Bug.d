@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Giant_Bug(C_Npc)
 {
-	name[0] = "Полевой хищник";
+	name[0] = "Field Raider";
 	guild = GIL_GIANT_BUG;
 	aivar[AIV_MM_REAL_ID] = ID_GIANT_BUG;
 	level = 8;

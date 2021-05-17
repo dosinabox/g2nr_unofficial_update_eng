@@ -1,7 +1,7 @@
 
 instance BAU_940_Akil(Npc_Default)
 {
-	name[0] = "Акил";
+	name[0] = "Akil";
 	guild = GIL_OUT;
 	id = 940;
 	voice = 13;

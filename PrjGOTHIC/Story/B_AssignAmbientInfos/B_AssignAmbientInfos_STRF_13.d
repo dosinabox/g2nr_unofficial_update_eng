@@ -44,15 +44,15 @@ func void DIA_STRF_13_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_STRF_13_STANDARD_13_00");	//Оставь меня в покое!
+		AI_Output (self, other, "DIA_STRF_13_STANDARD_13_00");	//Leave me alone, man!
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_STRF_13_STANDARD_13_01");	//Что тебе нужно от меня? Оставь меня в покое!
+		AI_Output (self, other, "DIA_STRF_13_STANDARD_13_01");	//What do you want from me? Leave me in peace!
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_STRF_13_STANDARD_13_02");	//Мы все умрем здесь!
+		AI_Output (self, other, "DIA_STRF_13_STANDARD_13_02");	//We're all going to die here!
 	};
 	AI_StopProcessInfos(self);
 };

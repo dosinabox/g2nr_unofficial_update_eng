@@ -1,7 +1,7 @@
 
 instance KDW_14010_Addon_Cronos_ADW(Npc_Default)
 {
-	name[0] = "Кронос";
+	name[0] = "Cronos";
 	guild = GIL_KDW;
 	id = 14010;
 	voice = 4;

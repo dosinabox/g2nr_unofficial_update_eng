@@ -1,7 +1,7 @@
 
 instance SLD_800_Lee_DI(Npc_Default)
 {
-	name[0] = "ห่";
+	name[0] = "Lee";
 	guild = GIL_SLD;
 	id = 8000;
 	voice = 4;

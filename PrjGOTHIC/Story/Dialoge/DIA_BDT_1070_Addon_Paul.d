@@ -305,18 +305,18 @@ func int DIA_Addon_Paul_PERM_Condition()
 
 func void DIA_Addon_Paul_PERM_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Paul_PERM_15_00");	//С тобой все в порядке?
-	if(Npc_GetDistToWP(self,"ADW_MINE_PICK_07") <= 500)
+	AI_Output (other, self, "DIA_Addon_Paul_PERM_15_00");	//Everything else all right with you?
+	if (Npc_GetDistToWP (self, "ADW_MINE_PICK_07") <= 500)
 	{
-		AI_Output(self,other,"DIA_Addon_Paul_PERM_03_01");	//Да, я получу кучу золота из этой скалы!
+		AI_Output (self, other, "DIA_Addon_Paul_PERM_03_01");	//Yes, I'll get a heap of gold out of this rock!
 	}
 	else if((Paul_TellAll == TRUE) && (Huno_zuSnaf == FALSE))
 	{
-		AI_Output(self,other,"DIA_Addon_Paul_PERM_03_02");	//Я рассказал тебе все, что я знаю!
+		AI_Output (self, other, "DIA_Addon_Paul_PERM_03_02");	//I told you everything I know!
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_Paul_PERM_03_03");	//Я просто хочу делать свою работу, приятель!
+		AI_Output (self, other, "DIA_Addon_Paul_PERM_03_03");	//I just want to do my job, man!
 	};
 };
 

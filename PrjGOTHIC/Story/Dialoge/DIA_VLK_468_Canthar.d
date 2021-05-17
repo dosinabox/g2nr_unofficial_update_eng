@@ -252,7 +252,7 @@ func void DIA_Canthar_WhatOffer_Info()
 	AI_Output(other,self,"DIA_Canthar_WhatOffer_15_00");	//What do you have to offer?
 	AI_Output(self,other,"DIA_Canthar_WhatOffer_09_07");	//I am a traveling merchant. I sell a bit of everything.
 	Log_CreateTopic(TOPIC_CityTrader,LOG_NOTE);
-	B_LogEntry(TOPIC_CityTrader,"Кантар торгует различным оружием.");
+	B_LogEntry(TOPIC_CityTrader,"Canthar trades in all kinds of weapons.");
 	if((Canthar_GotMe == TRUE) && (PlayerEnteredCity == FALSE))
 	{
 		if(!Npc_HasEquippedArmor(other))
@@ -460,7 +460,7 @@ instance DIA_Canthar_SARAHERLEDIGT(C_Info)
 	condition = DIA_Canthar_SARAHERLEDIGT_Condition;
 	information = DIA_Canthar_SARAHERLEDIGT_Info;
 	permanent = TRUE;
-	description = "Так что нужно сделать?";
+	description = "So, what needs to be done?";
 };
 
 

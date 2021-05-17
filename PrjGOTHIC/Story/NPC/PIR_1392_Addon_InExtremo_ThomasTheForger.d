@@ -1,7 +1,7 @@
 
 instance PIR_1392_Addon_InExtremo_ThomasTheForger(Npc_Default)
 {
-	name[0] = "Ланг";
+	name[0] = "Thomas the forger";
 	npcType = npctype_main;
 	guild = GIL_NONE;
 	level = 4;

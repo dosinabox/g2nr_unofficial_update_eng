@@ -1,7 +1,7 @@
 
 instance SLD_801_Torlof(Npc_Default)
 {
-	name[0] = "Торлоф";
+	name[0] = "Torlof";
 	guild = GIL_SLD;
 	id = 801;
 	voice = 1;

@@ -1,7 +1,7 @@
 
 instance BDT_1097_Addon_Fisk(Npc_Default)
 {
-	name[0] = "Фиск";
+	name[0] = "Fisk";
 	guild = GIL_BDT;
 	id = 1097;
 	voice = 12;

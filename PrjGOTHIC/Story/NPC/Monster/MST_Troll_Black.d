@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Troll_Black(C_Npc)
 {
-	name[0] = "Черный тролль";
+	name[0] = "Black Troll";
 	guild = GIL_TROLL;
 	aivar[AIV_MM_REAL_ID] = ID_TROLL_BLACK;
 	level = 100;

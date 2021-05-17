@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Giant_Rat(C_Npc)
 {
-	name[0] = "Гигантская крыса";
+	name[0] = "Giant Rat";
 	guild = GIL_Giant_Rat;
 	aivar[AIV_MM_REAL_ID] = ID_Giant_Rat;
 	level = 3;
@@ -45,7 +45,7 @@ instance Giant_Rat(Mst_Default_Giant_Rat)
 
 instance YGiant_Rat(Mst_Default_Giant_Rat)
 {
-	name[0] = "Молодая гигантская крыса";
+	name[0] = "Young Giant Rat";
 	level = 2;
 	attribute[ATR_STRENGTH] = 5;
 	attribute[ATR_DEXTERITY] = 5;

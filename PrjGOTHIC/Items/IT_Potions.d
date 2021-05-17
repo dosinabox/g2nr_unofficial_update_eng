@@ -369,7 +369,7 @@ instance ItPo_Perm_MushroomMana(C_Item)
 	description = NAME_MushroomMana;
 	text[1] = NAME_Bonus_ManaMax;
 	count[1] = ManaMax_Mushrooms;
-	text[2] = "Полное восстановление маны.";
+	text[2] = "Complete mana restoration.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };

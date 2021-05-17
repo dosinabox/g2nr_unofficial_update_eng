@@ -221,7 +221,7 @@ instance DIA_Ignaz_Danach(C_Info)
 	condition = DIA_Ignaz_Danach_Condition;
 	information = DIA_Ignaz_Danach_Info;
 	permanent = FALSE;
-	description = "я использовал свиток.";
+	description = "I used the spell scroll.";
 };
 
 
@@ -348,7 +348,7 @@ func void DIA_Ignaz_Teach_Info()
 			AI_Output (self, other, "DIA_Ignaz_Teach_14_02");	//And you're going to need different plants or other ingredients for each potion.
 			Alchemy_Explain = TRUE;
 		};
-		AI_Output(self,other,"DIA_Ignaz_Teach_14_04");	//„то ты хочешь узнать?
+		AI_Output(self,other,"DIA_Ignaz_Teach_14_04");	//What do you want to know?
 	}
 	else
 	{

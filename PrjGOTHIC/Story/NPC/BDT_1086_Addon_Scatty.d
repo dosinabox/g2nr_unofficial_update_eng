@@ -1,7 +1,7 @@
 
 instance BDT_1086_Addon_Scatty(Npc_Default)
 {
-	name[0] = "Скатти";
+	name[0] = "Scatty";
 	guild = GIL_BDT;
 	id = 1086;
 	voice = 1;

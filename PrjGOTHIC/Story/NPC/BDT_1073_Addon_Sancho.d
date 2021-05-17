@@ -1,7 +1,7 @@
 
 instance BDT_1073_Addon_Sancho(Npc_Default)
 {
-	name[0] = "Санчо";
+	name[0] = "Sancho";
 	guild = GIL_BDT;
 	id = 1073;
 	voice = 6;

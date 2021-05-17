@@ -1,7 +1,7 @@
 
 instance NOV_600_Pedro(Npc_Default)
 {
-	name[0] = "Педро";
+	name[0] = "Pedro";
 	guild = GIL_NOV;
 	id = 600;
 	voice = 9;

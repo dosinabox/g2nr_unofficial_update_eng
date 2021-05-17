@@ -1,7 +1,7 @@
 
 instance PAL_299_Sergio(Npc_Default)
 {
-	name[0] = "Сержио";
+	name[0] = "Sergio";
 	guild = GIL_PAL;
 	id = 299;
 	voice = 4;

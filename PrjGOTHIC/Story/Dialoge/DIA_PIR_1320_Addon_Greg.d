@@ -124,7 +124,7 @@ func void DIA_Addon_Greg_ImNew_Info()
 	Info_AddChoice(DIA_Addon_Greg_ImNew,"Not much so far.",DIA_Addon_Greg_ImNew_nich);
 	if((C_NorthBeachMonstersDead() && (MIS_Addon_MorganLurker != FALSE)) || C_TowerBanditsDead())
 	{
-		Info_AddChoice(DIA_Addon_Greg_ImNew,"Я работал.",DIA_Addon_Greg_ImNew_turm);
+		Info_AddChoice (DIA_Addon_Greg_ImNew, "I've been working.", DIA_Addon_Greg_ImNew_turm);
 	};
 };
 
@@ -198,7 +198,7 @@ func void B_GregHints_Followers()
 {
 	if(GregHints_Followers == FALSE)
 	{
-		B_LogEntry(TOPIC_Addon_ClearCanyon,"Грег сказал, что я могу взять с собой нескольких ребят.");
+		B_LogEntry(TOPIC_Addon_ClearCanyon,"Greg says I can take a couple of the boys with me.");
 		GregHints_Followers = TRUE;
 	};
 };
@@ -207,7 +207,7 @@ func void B_GregHints_Razors()
 {
 	if(GregHints_Razors == FALSE)
 	{
-		B_LogEntry(TOPIC_Addon_ClearCanyon,"Охотиться я должен на бритвозубов.");
+		B_LogEntry(TOPIC_Addon_ClearCanyon,"It seems to be all about razors.");
 		GregHints_Razors = TRUE;
 	};
 };

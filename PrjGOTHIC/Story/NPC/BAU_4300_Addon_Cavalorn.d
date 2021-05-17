@@ -1,7 +1,7 @@
 
 instance BAU_4300_Addon_Cavalorn(Npc_Default)
 {
-	name[0] = "Кавалорн";
+	name[0] = "Cavalorn";
 	guild = GIL_BAU;
 	id = 4300;
 	voice = 8;

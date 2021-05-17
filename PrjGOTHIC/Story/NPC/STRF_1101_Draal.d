@@ -1,7 +1,7 @@
 
 instance STRF_1101_Draal(Npc_Default)
 {
-	name[0] = "Драал";
+	name[0] = "Draal";
 	guild = GIL_STRF;
 	id = 1101;
 	voice = 3;

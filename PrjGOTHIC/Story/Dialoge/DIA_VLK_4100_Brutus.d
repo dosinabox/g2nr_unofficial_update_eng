@@ -292,7 +292,7 @@ instance DIA_Brutus_DUSCHONWIEDER(C_Info)
 	condition = DIA_Brutus_DUSCHONWIEDER_Condition;
 	information = DIA_Brutus_DUSCHONWIEDER_Info;
 	permanent = TRUE;
-	description = "ѕытал кого-нибудь сегодн€?";
+	description = "Tortured anyone today?";
 };
 
 

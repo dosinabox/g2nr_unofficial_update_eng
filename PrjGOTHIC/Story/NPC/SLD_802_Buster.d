@@ -1,7 +1,7 @@
 
 instance SLD_802_Buster(Npc_Default)
 {
-	name[0] = "Бастер";
+	name[0] = "Buster";
 	guild = GIL_SLD;
 	id = 802;
 	voice = 13;

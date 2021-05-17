@@ -1,7 +1,7 @@
 
 instance VLK_4100_Brutus(Npc_Default)
 {
-	name[0] = "Брутус";
+	name[0] = "Brutus";
 	guild = GIL_MIL;
 	id = 4100;
 	voice = 6;

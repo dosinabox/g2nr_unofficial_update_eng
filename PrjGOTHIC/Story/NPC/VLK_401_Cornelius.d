@@ -1,7 +1,7 @@
 
 instance VLK_401_Cornelius(Npc_Default)
 {
-	name[0] = "Корнелиус";
+	name[0] = "Cornelius";
 //	guild = GIL_NONE;
 	guild = GIL_VLK;
 	id = 401;

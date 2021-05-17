@@ -116,7 +116,7 @@ instance ItMw_1H_Mace_L_03(C_Item)
 
 instance ItMw_1h_Bau_Mace(C_Item)
 {
-	name = "Тяжелый сук";
+	name = "Heavy Branch";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -1636,7 +1636,7 @@ instance ItMw_Zweihaender2(C_Item)
 
 instance ItMw_Runenschwert(C_Item)
 {
-	name = "Рунный меч";
+	name = "Rune Sword";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;
@@ -1659,7 +1659,7 @@ instance ItMw_Runenschwert(C_Item)
 
 instance ItMw_Rabenschnabel(C_Item)
 {
-	name = "Клюв ворона";
+	name = "Raven's Beak";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;
@@ -1729,7 +1729,7 @@ instance ItMw_Inquisitor(C_Item)
 
 instance ItMw_Streitaxt2(C_Item)
 {
-	name = "Боевой топор";
+	name = "Battleaxe";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_AXE;
 	material = MAT_WOOD;
@@ -1752,7 +1752,7 @@ instance ItMw_Streitaxt2(C_Item)
 
 instance ItMw_Zweihaender3(C_Item)
 {
-	name = "Сила рун";
+	name = "Rune Power";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -2094,7 +2094,7 @@ instance ItMw_Barbarenstreitaxt(C_Item)
 
 instance ItMw_Sturmbringer(C_Item)
 {
-	name = "Несущий бурю";
+	name = "Stormbringer";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;

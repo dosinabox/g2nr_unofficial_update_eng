@@ -1,7 +1,7 @@
 
 instance BDT_10023_Addon_Wache(Npc_Default)
 {
-	name[0] = "Охранник рабов";
+	name[0] = "Slave Guard";
 	guild = GIL_BDT;
 	id = 10023;
 	voice = 11;

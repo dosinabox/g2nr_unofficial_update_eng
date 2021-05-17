@@ -143,7 +143,7 @@ func void B_BuildLearnDialog_Babo()
 			DIA_Morgan_Teacher_permanent = TRUE;
 		};
 		PrintScreen(ConcatStrings(PRINT_NoLearnMAXReached,IntToString(TeachLimit_2H_Babo)),-1,53,FONT_Screen,2);
-		AI_Output(self,other,"DIA_DIA_Babo_Teach_Back_03_00");	//Ты знаешь больше о двуручном оружии, чем я мог бы научить тебя.
+		AI_Output(self,other,"DIA_DIA_Babo_Teach_Back_03_00");	//You've learned everything about two-handed combat that I can teach you.
 		AI_StopProcessInfos(self);
 	};
 };
@@ -718,7 +718,7 @@ func void B_GiveBaboDocs()
 		B_GiveInvItems(other,self,ItWr_BabosPinUp_MIS,1);
 		Npc_RemoveInvItem(other,ItWr_BabosLetter_MIS);
 		CreateInvItem(self,ItWr_BabosLetter_MIS);
-		AI_PrintScreen("Письмо Бабо отдано",-1,43,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Babo's Letter",-1,43,FONT_ScreenSmall,2);
 	};
 	B_UseFakeScroll();
 	MIS_BabosDocs = LOG_SUCCESS;

@@ -1,7 +1,7 @@
 
 instance PAL_260_Tandor(Npc_Default)
 {
-	name[0] = "Тандор";
+	name[0] = "Tandor";
 	guild = GIL_PAL;
 	id = 260;
 	voice = 8;

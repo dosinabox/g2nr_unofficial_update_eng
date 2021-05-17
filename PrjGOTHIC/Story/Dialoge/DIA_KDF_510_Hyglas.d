@@ -28,7 +28,7 @@ instance DIA_Hyglas_Feuer(C_Info)
 	condition = DIA_Hyglas_Feuer_Condition;
 	information = DIA_Hyglas_Feuer_Info;
 	permanent = FALSE;
-	description = "Мне необходимо пройти Испытание Огнем.";
+	description = "I demand the Test of Fire.";
 };
 
 
@@ -42,9 +42,9 @@ func int DIA_Hyglas_Feuer_Condition()
 
 func void DIA_Hyglas_Feuer_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_Feuer_15_00");	//Мне необходимо пройти Испытание Огнем.
-	AI_Output(self,other,"DIA_Hyglas_Feuer_14_01");	//Испытание Огнем - это обряд из древних времен, он давно не проводился.
-	AI_Output(self,other,"DIA_Hyglas_Feuer_14_02");	//То, чего ты требуешь, очень опасно. Даже и не думай об этом.
+	AI_Output (other, self, "DIA_Hyglas_Feuer_15_00");	//I demand the Test of Fire.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01");	//The Test of Fire is from the olden days and has not been held for a long time.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02");	//What you are demanding is far too dangerous. So just don't think about it any more.
 };
 
 
@@ -69,11 +69,11 @@ func int DIA_Hyglas_Hallo_Condition()
 
 func void DIA_Hyglas_Hallo_Info()
 {
-	AI_Output(self,other,"DIA_Hyglas_Hallo_14_00");	//Я мастер Хиглас, Страж Огня и Хранитель Знаний.
-	if(other.guild == GIL_NOV)
+	AI_Output (self, other, "DIA_Hyglas_Hallo_14_00");	//I am Master Hyglas, Guardian of the Fire and Keeper of Knowledge.
+	if (other.guild == GIL_NOV)
 	{
-		AI_Output(self,other,"DIA_Hyglas_Hallo_14_01");	//Итак, мастер Парлан дал тебе разрешение изучать священные книги.
-		AI_Output(self,other,"DIA_Hyglas_Hallo_14_02");	//Тогда бери их и изучай. Может быть, ты найдешь просвещение в этих писаниях.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01");	//So Master Parlan has given you permission to study the scriptures.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02");	//Then it's up to you now to do exactly that. Study, so that you may find enlightenment in the scriptures.
 	};
 };
 
@@ -85,7 +85,7 @@ instance DIA_Hyglas_JOB(C_Info)
 	condition = DIA_Hyglas_JOB_Condition;
 	information = DIA_Hyglas_JOB_Info;
 	permanent = FALSE;
-	description = "Что ты изучаешь, Мастер?";
+	description = "What are you studying, Master?";
 };
 
 
@@ -96,20 +96,20 @@ func int DIA_Hyglas_JOB_Condition()
 
 func void DIA_Hyglas_JOB_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_JOB_15_00");	//Что ты изучаешь, Мастер?
-	AI_Output(self,other,"DIA_Hyglas_JOB_14_01");	//Я посвятил себя изучению огня - силы Инноса.
-	AI_Output(self,other,"DIA_Hyglas_JOB_14_02");	//Это его дар, и в то же время, могучее оружие - я создаю руны, содержащие частицу его силы.
-	if(other.guild == GIL_NOV)
+	AI_Output (other, self, "DIA_Hyglas_JOB_15_00");	//What are you studying, Master?
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_01");	//My research focuses on fire - the power of Innos.
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_02");	//It is his gift and, at the same time, a mighty weapon - and I create runes which contain this power.
+	if (other.guild == GIL_NOV)
 	{
-		AI_Output(other,self,"DIA_Hyglas_JOB_15_03");	//Как это интересно! А не мог бы ты научить и меня этому?
-		AI_Output(self,other,"DIA_Hyglas_JOB_14_04");	//Магию дарует Иннос. И только его слугам, магам Огня, дано познать, как пользоваться этой силой.
+		AI_Output(other,self,"DIA_Hyglas_JOB_15_03");	//Very enlightening. Can you teach me that?
+		AI_Output(self,other,"DIA_Hyglas_JOB_14_04");	//It is Innos who grants the magic. Only to his servants, the Magicians of Fire, is it given to learn how to wield this power.
 		Log_CreateTopic(Topic_KlosterTeacher,LOG_NOTE);
-		B_LogEntry(Topic_KlosterTeacher,"Мастер Хиглас может посвятить меня в тайны огня. Но для этого я должен быть магом Огня.");
+		B_LogEntry(Topic_KlosterTeacher,"Master Hyglas can introduce me into the arcana of fire. But for that I need to be a Magician of Fire.");
 	};
 	if((other.guild == GIL_KDF) && !Npc_KnowsInfo(other,DIA_Pyrokar_Lernen))
 	{
 		Log_CreateTopic(Topic_KlosterTeacher,LOG_NOTE);
-		B_LogEntry(Topic_KlosterTeacher,"Брат Хиглас может посвятить меня в тайны огня.");
+		B_LogEntry(Topic_KlosterTeacher,"Master Hyglas can introduce me into the arcana of fire.");
 	};
 };
 
@@ -121,7 +121,7 @@ instance DIA_Hyglas_CONTEST(C_Info)
 	condition = DIA_Hyglas_CONTEST_Condition;
 	information = DIA_Hyglas_CONTEST_Info;
 	permanent = FALSE;
-	description = "Я должен пройти Испытание Огнем.";
+	description = "I have demanded the Test of Fire.";
 };
 
 
@@ -135,12 +135,12 @@ func int DIA_Hyglas_CONTEST_Condition()
 
 func void DIA_Hyglas_CONTEST_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_CONTEST_15_00");	//Я должен пройти Испытание Огнем. Ультар дал мне задание создать руну огненной стрелы.
-	AI_Output(self,other,"DIA_Hyglas_CONTEST_14_01");	//И ты хочешь, чтобы я обучил тебя этому?
-	AI_Output(other,self,"DIA_Hyglas_CONTEST_15_02");	//Я не знаю другого способа выполнить это задание.
-	AI_Output(self,other,"DIA_Hyglas_CONTEST_14_03");	//Хмм...
-	AI_Output(self,other,"DIA_Hyglas_CONTEST_14_04");	//Хорошо, я научу тебя. Но сначала ты должен найти все необходимые ингредиенты.
-	B_LogEntry(TOPIC_Rune,"Хиглас готов обучить меня создавать руну огненной стрелы, если я принесу ему все необходимые ингредиенты.");
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_00");	//I have demanded the Test of Fire. Ulthar gave me the task to create a fire arrow rune.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01");	//And now you want me to teach you the formula?
+	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02");	//I don't know how else I could do it.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_03");	//Hmm ...
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04");	//All right, I shall teach you the formula. But first you need to find all the necessary ingredients.
+	B_LogEntry (TOPIC_Rune, "Hyglas is willing to teach me the formula for the Fire Arrow rune once I've got all the ingredients.");
 };
 
 
@@ -151,7 +151,7 @@ instance DIA_Hyglas_TALENT_FIREBOLT(C_Info)
 	condition = DIA_Hyglas_TALENT_FIREBOLT_Condition;
 	information = DIA_Hyglas_TALENT_FIREBOLT_Info;
 	permanent = TRUE;
-	description = B_BuildLearnString("Руна огненной стрелы",B_GetLearnCostTalent(other,NPC_TALENT_RUNES,SPL_Firebolt));
+	description = B_BuildLearnString("Fire Arrow rune",B_GetLearnCostTalent(other,NPC_TALENT_RUNES,SPL_Firebolt));
 };
 
 
@@ -167,33 +167,33 @@ var int Firebolt_Scroll_Once;
 
 func void DIA_Hyglas_TALENT_FIREBOLT_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_TALENT_FIREBOLT_15_00");	//Научи меня создавать руну огненной стрелы.
+	AI_Output(other,self,"DIA_Hyglas_TALENT_FIREBOLT_15_00");	//Teach me to create the FIRE ARROW rune.
 	if(Npc_HasItems(other,ItSc_Firebolt) && Npc_HasItems(other,ItMi_RuneBlank) && Npc_HasItems(other,ItMi_Sulfur))
 	{
 		if(B_TeachPlayerTalentRunes(self,other,SPL_Firebolt))
 		{
-			AI_Output(self,other,"DIA_Hyglas_TALENT_FIREBOLT_14_01");	//Чтобы создать руну огненной стрелы, ты должен объединить на рунном столе серу с рунным камнем.
-			AI_Output(self,other,"DIA_Hyglas_TALENT_FIREBOLT_14_02");	//Сила свитка огненной стрелы перетечет в эту руну, и ты станешь обладателем оружия Инноса.
-			AI_Output(self,other,"DIA_Hyglas_TALENT_FIREBOLT_14_03");	//Когда у тебя будет все необходимое, подойди к рунному столу и создай свою руну.
+			AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01");	//In order to create a fire arrow rune, you need to join the sulphur with the runestone at the rune table.
+			AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02");	//The power of the fire arrow spell scroll will flow into the rune, and you will possess a tool of Innos.
+			AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03");	//So, once you have all the raw materials, walk over to the rune table and create your rune.
 		};
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Hyglas_CONTEST_14_04");	//Хорошо, я научу тебя. Но сначала ты должен найти все необходимые ингредиенты.
+		AI_Output(self,other,"DIA_Hyglas_CONTEST_14_04");	//All right, I shall teach you the formula. But first you need to find all the necessary ingredients.
 		if(Firebolt_Scroll_Once == FALSE)
 		{
 			if(!Npc_HasItems(other,ItSc_Firebolt))
 			{
-				B_LogEntry(TOPIC_Rune,"Пока у меня нет свитка огненной стрелы, Хиглас не сможет обучить меня созданию руны.");
+				B_LogEntry(TOPIC_Rune,"I don't have a fire arrow scroll, Hyglas will not teach me until I get one.+");
 				if(!Npc_IsDead(Gorax))
 				{
 					CreateInvItem(Gorax,ItSc_Firebolt);
-					B_LogEntry(TOPIC_Rune,"Возможно, я смогу купить такой свиток у Горакса.");
+					B_LogEntry(TOPIC_Rune,"I can probably but the scroll from Gorax.");
 				}
 				else
 				{
 					Wld_InsertItem(ItSc_Firebolt,"FP_ITEM_KLOSTER_01");
-					B_LogEntry(TOPIC_Rune,"Похоже, что мне придется искать этот свиток по всему монастырю.");
+					B_LogEntry(TOPIC_Rune,"It looks like I will have to scour the entire monastery for this scroll.");
 				};
 				Firebolt_Scroll_Once = TRUE;
 			};
@@ -210,7 +210,7 @@ instance DIA_Hyglas_FIREBOLT(C_Info)
 	condition = DIA_Hyglas_FIREBOLT_Condition;
 	information = DIA_Hyglas_FIREBOLT_Info;
 	permanent = TRUE;
-	description = "Какие ингредиенты нужны для создания руны огненной стрелы?";
+	description = "What ingredients do I need for a fire arrow rune?";
 };
 
 
@@ -224,8 +224,8 @@ func int DIA_Hyglas_FIREBOLT_Condition()
 
 func void DIA_Hyglas_FIREBOLT_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_FIREBOLT_15_00");	//Какие ингредиенты нужны для создания руны огненной стрелы?
-	AI_Output(self,other,"DIA_Hyglas_FIREBOLT_14_01");	//Прочти об этом - ты найдешь эту информацию здесь, в книгах.
+	AI_Output(other,self,"DIA_Hyglas_FIREBOLT_15_00");	//What ingredients do I need for a fire arrow rune?
+	AI_Output(self,other,"DIA_Hyglas_FIREBOLT_14_01");	//Read up on it - it's right there in the books.
 };
 
 
@@ -236,7 +236,7 @@ instance DIA_Hyglas_BLANK_RUNE(C_Info)
 	condition = DIA_Hyglas_BLANK_RUNE_Condition;
 	information = DIA_Hyglas_BLANK_RUNE_Info;
 	permanent = FALSE;
-	description = "Где я могу найти рунный камень?";
+	description = "Where can I find a runestone?";
 };
 
 
@@ -253,8 +253,8 @@ func int DIA_Hyglas_BLANK_RUNE_Condition()
 
 func void DIA_Hyglas_BLANK_RUNE_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_BLANK_RUNE_15_00");	//Где я могу найти рунный камень?
-	AI_Output(self,other,"DIA_Hyglas_BLANK_RUNE_14_01");	//Послушай, ведь тебе необходимо пройти Испытание Огнем - не мне. Поиски входят в это испытание.
+	AI_Output (other, self, "DIA_Hyglas_BLANK_RUNE_15_00");	//Where can I find a runestone?
+	AI_Output (self, other, "DIA_Hyglas_BLANK_RUNE_14_01");	//Hey, it's you who demanded the test of the Fire - not I. Finding that out is part of the test.
 };
 
 
@@ -265,7 +265,7 @@ instance DIA_Hyglas_GOTRUNE(C_Info)
 	condition = DIA_Hyglas_GOTRUNE_Condition;
 	information = DIA_Hyglas_GOTRUNE_Info;
 	permanent = FALSE;
-	description = "Я создал руну.";
+	description = "I've created the rune.";
 };
 
 
@@ -279,10 +279,10 @@ func int DIA_Hyglas_GOTRUNE_Condition()
 
 func void DIA_Hyglas_GOTRUNE_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_GOTRUNE_15_00");	//Я создал руну.
-	AI_Output(self,other,"DIA_Hyglas_GOTRUNE_14_01");	//Хорошо, хорошо. Я думаю, ты прошел этот тест. Впрочем, это было не так уж и сложно.
-	AI_Output(self,other,"DIA_Hyglas_GOTRUNE_14_02");	//Теперь иди к Ультару и покажи ему плоды своего труда.
-	B_LogEntry(TOPIC_Rune,"Я создал руну 'Огненная стрела'.");
+	AI_Output (other, self, "DIA_Hyglas_GOTRUNE_15_00");	//I've created the rune.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01");	//Well, well. You seem to have passed this test. That wasn't so hard, after all.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02");	//Then go to Ulthar now and show him your work.
+	B_LogEntry (TOPIC_Rune, "I have created a Fire Arrow rune.");
 };
 
 
@@ -293,7 +293,7 @@ instance DIA_Hyglas_TEACH(C_Info)
 	condition = DIA_Hyglas_TEACH_Condition;
 	information = DIA_Hyglas_TEACH_Info;
 	permanent = TRUE;
-	description = "Я хочу изучить новые заклинания.";
+	description = "Teach me.";
 };
 
 
@@ -389,7 +389,7 @@ instance DIA_Hyglas_BringBook(C_Info)
 	condition = DIA_Hyglas_BringBook_Condition;
 	information = DIA_Hyglas_BringBook_Info;
 	permanent = FALSE;
-	description = "Есть какие-нибудь новости?";
+	description = "Any news?";
 };
 
 
@@ -403,48 +403,48 @@ func int DIA_Hyglas_BringBook_Condition()
 
 func void DIA_Hyglas_BringBook_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_BringBook_15_00");	//Есть какие-нибудь новости?
-	AI_Output(self,other,"DIA_Hyglas_BringBook_14_01");	//Хмм, да. Ну, ты, вероятно, заметил эти фигуры в черных робах.
-	AI_Output(other,self,"DIA_Hyglas_BringBook_15_02");	//Я встречал их.
-	AI_Output(self,other,"DIA_Hyglas_BringBook_14_03");	//Вот! А теперь перейдем к сути дела. В настоящий момент, мы наблюдаем очень редкое созвездие.
-	AI_Output(self,other,"DIA_Hyglas_BringBook_14_04");	//Если быть более точным, созвездие Быка сейчас находится в прямой взаимосвязи с созвездием Воина. Я полагаю, ты знаешь, что это означает.
-	AI_Output(other,self,"DIA_Hyglas_BringBook_15_05");	//Хмм. Ну, если быть честным...
-	AI_Output(self,other,"DIA_Hyglas_BringBook_14_06");	//Да, хорошо, я понимаю. Ну, я не могу объяснить тебе сейчас все детали, но это, определенно, предвещает великие перемены. А я не люблю перемены.
-	AI_Output(self,other,"DIA_Hyglas_BringBook_14_07");	//Поэтому я хочу, чтобы ты принес мне из города книгу. Она называется 'Божественная сила звезд'. Тебе, возможно, придется поискать ее, но я уверен, что ты справишься с этим.
-	Info_ClearChoices(DIA_Hyglas_BringBook);
-	Info_AddChoice(DIA_Hyglas_BringBook,"Достань эту книгу сам.",DIA_Hyglas_BringBook_GetItYourself);
-	Info_AddChoice(DIA_Hyglas_BringBook,"И что я за это получу?",DIA_Hyglas_BringBook_GetForIt);
-	Info_AddChoice(DIA_Hyglas_BringBook,"Я попробую найти ее.",DIA_Hyglas_BringBook_Yes);
+	AI_Output (other, self, "DIA_Hyglas_BringBook_15_00");	//Any news?
+	AI_Output (self, other, "DIA_Hyglas_BringBook_14_01");	//Hm, yes. Well, you have probably noticed those black-robed figures.
+	AI_Output (other, self, "DIA_Hyglas_BringBook_15_02");	//I've met them.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_14_03");	//This brings us to the core of the matter. At the moment, we are observing a very rare constellation of stars.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_14_04");	//To be more exact, the sign of the Ox currently stands in direct correlation with the sign of the Warrior. I suppose that you know what that means.
+	AI_Output (other, self, "DIA_Hyglas_BringBook_15_05");	//Hmm. Well, to be honest ...
+	AI_Output (self, other, "DIA_Hyglas_BringBook_14_06");	//Yes, right, I see. Well, I cannot explain the entire background to you now, but it definitely signifies great changes. And I do not like changes.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_14_07");	//Therefore, I want you to get me a book from town. It is called 'The divine power of the stars'. You may have to rummage around for it a bit, but I'm sure that you can find it.
+	Info_ClearChoices (DIA_Hyglas_BringBook);
+	Info_AddChoice (DIA_Hyglas_BringBook, "Get the book yourself.", DIA_Hyglas_BringBook_GetItYourself);
+	Info_AddChoice (DIA_Hyglas_BringBook, "What's in it for me?", DIA_Hyglas_BringBook_GetForIt);
+	Info_AddChoice (DIA_Hyglas_BringBook, "I'll see whether I can find it.", DIA_Hyglas_BringBook_Yes);
 };
 
 func void DIA_Hyglas_BringBook_GetItYourself()
 {
-	AI_Output(other,self,"DIA_Hyglas_BringBook_GetItYourself_15_00");	//Достань эту книгу сам.
-	AI_Output(self,other,"DIA_Hyglas_BringBook_GetItYourself_14_01");	//Как ты смеешь говорить со мной в таком тоне?! Твое поведение недопустимо, ты обязан проявлять уважение ко мне!
-	AI_Output(self,other,"DIA_Hyglas_BringBook_GetItYourself_14_02");	//Убирайся с глаз моих и подумай о своем поведении.
+	AI_Output (other, self, "DIA_Hyglas_BringBook_GetItYourself_15_00");	//Get the book yourself.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_GetItYourself_14_01");	//You dare speak to me in such a tone? Your behavior does not show the respect that is due to me.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_GetItYourself_14_02");	//Get out of my sight and think about your behavior.
 	MIS_HyglasBringBook = LOG_OBSOLETE;
 	Info_ClearChoices(DIA_Hyglas_BringBook);
 };
 
 func void DIA_Hyglas_BringBook_GetForIt()
 {
-	AI_Output(other,self,"DIA_Hyglas_BringBook_GetForIt_15_00");	//И что я за это получу?
-	AI_Output(self,other,"DIA_Hyglas_BringBook_GetForIt_14_01");	//Что ты имеешь в виду?
-	AI_Output(other,self,"DIA_Hyglas_BringBook_GetForIt_15_02");	//Ну, я бы хотел знать, что ты дашь мне, если я принесу эту книгу.
-	AI_Output(self,other,"DIA_Hyglas_BringBook_GetForIt_14_03");	//Ничего. А что ты ожидал получить? Если у тебя есть время, чтобы выполнить для меня задание в городе, это твоя обязанность помочь мне.
-	Info_ClearChoices(DIA_Hyglas_BringBook);
+	AI_Output (other, self, "DIA_Hyglas_BringBook_GetForIt_15_00");	//What's in it for me?
+	AI_Output (self, other, "DIA_Hyglas_BringBook_GetForIt_14_01");	//What do you mean?
+	AI_Output (other, self, "DIA_Hyglas_BringBook_GetForIt_15_02");	//I'd like to know what you'll give me if I bring you the book.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_GetForIt_14_03");	//Nothing. What were you expecting to get? If you have time to run an errand in town for me, it is even your duty to help me.
+	Info_ClearChoices (DIA_Hyglas_BringBook);
 };
 
 func void DIA_Hyglas_BringBook_Yes()
 {
-	AI_Output(other,self,"DIA_Hyglas_BringBook_Yes_15_00");	//Я попробую найти ее.
-	AI_Output(self,other,"DIA_Hyglas_BringBook_Yes_14_01");	//Хорошо - это сэкономит мое время, и я смогу заняться другими делами.
-	AI_Output(self,other,"DIA_Hyglas_BringBook_Yes_14_02");	//Но не трать на это слишком много времени. Как раз времени-то, боюсь, у нас очень мало.
+	AI_Output (other, self, "DIA_Hyglas_BringBook_Yes_15_00");	//I'll see whether I can find it.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_Yes_14_01");	//That's good - it frees up my time so I can follow some other trails as well.
+	AI_Output (self, other, "DIA_Hyglas_BringBook_Yes_14_02");	//But don't take too much time. Time, I'm afraid, is what we have the least of.
 	MIS_HyglasBringBook = LOG_Running;
-	Info_ClearChoices(DIA_Hyglas_BringBook);
-	Log_CreateTopic(TOPIC_HyglasBringBook,LOG_MISSION);
-	Log_SetTopicStatus(TOPIC_HyglasBringBook,LOG_Running);
-	B_LogEntry(TOPIC_HyglasBringBook,"Хиглас хочет, чтобы я принес ему книгу 'Божественная сила звезд'. Она может быть у одного из торговцев в городе.");
+	Info_ClearChoices (DIA_Hyglas_BringBook);
+	Log_CreateTopic (TOPIC_HyglasBringBook, LOG_MISSION);
+	Log_SetTopicStatus (TOPIC_HyglasBringBook, LOG_Running);
+	B_LogEntry (TOPIC_HyglasBringBook, "Hyglas wants me to get him the book 'The Divine Power of the Stars'. I'm to look for it among the merchants in town.");
 };
 
 
@@ -455,7 +455,7 @@ instance DIA_Hyglas_HaveBook(C_Info)
 	condition = DIA_Hyglas_HaveBook_Condition;
 	information = DIA_Hyglas_HaveBook_Info;
 	permanent = FALSE;
-	description = "Я принес тебе книгу.";
+	description = "I've got the book for you.";
 };
 
 
@@ -469,19 +469,19 @@ func int DIA_Hyglas_HaveBook_Condition()
 
 func void DIA_Hyglas_HaveBook_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_HaveBook_15_00");	//Я принес тебе книгу.
-	if(MIS_HyglasBringBook == LOG_Running)
+	AI_Output (other, self, "DIA_Hyglas_HaveBook_15_00");	//I've got the book for you.
+	if (MIS_HyglasBringBook == LOG_Running)
 	{
-		AI_Output(self,other,"DIA_Hyglas_HaveBook_14_01");	//Очень хорошо, давай ее сюда.
+		AI_Output (self, other, "DIA_Hyglas_HaveBook_14_01");	//Very good, give here.
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Hyglas_HaveBook_14_02");	//Ты все же передумал. Очень хорошо. Так где же эта книга?
+		AI_Output (self, other, "DIA_Hyglas_HaveBook_14_02");	//So you changed your mind after all. Very good. So where do you have the book?
 	};
 	B_GiveInvItems(other,self,ItWr_Astronomy_Mis,1);
 	MIS_HyglasBringBook = LOG_SUCCESS;
 	B_GivePlayerXP(XP_HyglasBringBook);
-	AI_Output(self,other,"DIA_Hyglas_HaveBook_14_03");	//Теперь ты можешь удалиться. А я должен уединиться и заняться ее изучением.
+	AI_Output(self,other,"DIA_Hyglas_HaveBook_14_03");	//You may withdraw now. I shall retire and study.
 };
 
 
@@ -492,7 +492,7 @@ instance DIA_Hyglas_Kap4_PERM(C_Info)
 	condition = DIA_Hyglas_Kap4_PERM_Condition;
 	information = DIA_Hyglas_Kap4_PERM_Info;
 	permanent = TRUE;
-	description = "Ничего пока не нашел?";
+	description = "Found anything out yet?";
 };
 
 
@@ -506,22 +506,22 @@ func int DIA_Hyglas_Kap4_PERM_Condition()
 
 func void DIA_Hyglas_Kap4_PERM_Info()
 {
-	AI_Output(other,self,"DIA_Hyglas_Kap4_PERM_15_00");	//Ничего пока не нашел?
-	if(MIS_HyglasBringBook == LOG_SUCCESS)
+	AI_Output (other, self, "DIA_Hyglas_Kap4_PERM_15_00");	//Found anything out yet?
+	if (MIS_HyglasBringBook == LOG_SUCCESS)
 	{
-		AI_Output(self,other,"DIA_Hyglas_Kap4_PERM_14_01");	//Ну, я не совсем уверен, но текущее расположение звезд, похоже, сулит многие опасности.
-		AI_Output(other,self,"DIA_Hyglas_Kap4_PERM_15_02");	//Какого рода опасности?
-		AI_Output(self,other,"DIA_Hyglas_Kap4_PERM_14_03");	//Ну, материя между мирами, похоже, очень слаба. Нужна только небольшая часть силы, которая потребовалась бы в обычное время, чтобы прорвать брешь в этой материи.
-		AI_Output(self,other,"DIA_Hyglas_Kap4_PERM_14_04");	//Демоны могут использовать эти порталы, чтобы войти в наш мир, не встретив сопротивления.
-//		Hyglas_SendsToKarras = TRUE;
+		AI_Output (self, other, "DIA_Hyglas_Kap4_PERM_14_01");	//Well, I cannot be completely sure, but the current constellation of the stars seems to indicate many dangers.
+		AI_Output (other, self, "DIA_Hyglas_Kap4_PERM_15_02");	//What kind of dangers?
+		AI_Output (self, other, "DIA_Hyglas_Kap4_PERM_14_03");	//Well, the structure between the worlds seems to be very weak. It only takes a small portion of the power that would be necessary otherwise to tear a hole into this structure.
+		AI_Output (self, other, "DIA_Hyglas_Kap4_PERM_14_04");	//Demons could use those portals to enter our world without encountering resistance.
+		Hyglas_SendsToKarras = TRUE;
 	}
 	else if(MIS_HyglasBringBook == LOG_Running)
 	{
-		AI_Output(self,other,"DIA_Hyglas_Kap4_PERM_14_05");	//Нет, я все еще жду эту книгу.
+		AI_Output (self, other, "DIA_Hyglas_Kap4_PERM_14_05");	//No, I am still waiting for that book.
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Hyglas_Kap4_PERM_14_06");	//Я говорил тебе, что все равно продолжаю свои исследования, но на них, конечно же, потребуется больше времени, если у меня не будет необходимых материалов.
+		AI_Output (self, other, "DIA_Hyglas_Kap4_PERM_14_06");	//I told you that I am still doing some research, but of course that will take longer if I do not have the necessary materials.
 	};
 };
 

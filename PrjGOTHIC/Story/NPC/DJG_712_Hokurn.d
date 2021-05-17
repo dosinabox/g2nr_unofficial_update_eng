@@ -1,7 +1,7 @@
 
 instance DJG_712_Hokurn(Npc_Default)
 {
-	name[0] = "Хокарн";
+	name[0] = "Hokurn";
 	guild = GIL_DJG;
 	id = 712;
 	voice = 1;

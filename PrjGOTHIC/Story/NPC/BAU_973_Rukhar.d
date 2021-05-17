@@ -1,7 +1,7 @@
 
 instance BAU_973_Rukhar(Npc_Default)
 {
-	name[0] = "Рухар";
+	name[0] = "Rukhar";
 	guild = GIL_OUT;
 	id = 973;
 	voice = 12;

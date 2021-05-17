@@ -383,8 +383,8 @@ func void DIA_Neoras_BrewForMe_Speed()
 		AI_Output(other,self,"DIA_Neoras_BrewForMe_Speed_15_02");	//Yes, here.
 		Npc_RemoveInvItems(other,ItPl_Speed_Herb_01,1);
 		Npc_RemoveInvItems(other,ItPl_Temp_Herb,1);
-		AI_PrintScreen("Снеппер-трава отдано",-1,31,FONT_ScreenSmall,2);
-		AI_PrintScreen("Луговой горец отдано",-1,28,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Snapperweed",-1,31,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Meadow Knotweed",-1,28,FONT_ScreenSmall,2);
 		B_GiveInvItems(other,self,ItMi_Gold,10);
 		AI_Output(self,other,"DIA_Neoras_BrewForMe_Speed_01_03");	//Good, thanks. I shall give you a potion now, then you won't have to wait so long.
 		B_GiveInvItems(self,other,ItPo_Speed,1);
@@ -419,8 +419,8 @@ func void DIA_Neoras_BrewForMe_Mana()
 		AI_Output(other,self,"DIA_Neoras_BrewForMe_Mana_15_02");	//Yes, here.
 		Npc_RemoveInvItems(other,ItPl_Mana_Herb_02,2);
 		Npc_RemoveInvItems(other,ItPl_Temp_Herb,1);
-		AI_PrintScreen("2 предметов отдано (Огненная трава)",-1,31,FONT_ScreenSmall,2);
-		AI_PrintScreen("Луговой горец отдано",-1,28,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: 2 fire weeds",-1,31,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Meadow Knotweed",-1,28,FONT_ScreenSmall,2);
 		B_GiveInvItems(other,self,ItMi_Gold,10);
 		AI_Output(self,other,"DIA_Neoras_BrewForMe_Mana_01_03");	//Good. I shall give you a potion now, then you won't have to wait so long.
 		B_GiveInvItems(self,other,ItPo_Mana_02,1);
@@ -455,8 +455,8 @@ func void DIA_Neoras_BrewForMe_Health()
 		AI_Output(other,self,"DIA_Neoras_BrewForMe_Health_15_02");	//Yes, here.
 		Npc_RemoveInvItems(other,ItPl_Health_Herb_02,2);
 		Npc_RemoveInvItems(other,ItPl_Temp_Herb,1);
-		AI_PrintScreen("2 предметов отдано (Лечебное растение)",-1,31,FONT_ScreenSmall,2);
-		AI_PrintScreen("Луговой горец отдано",-1,28,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: 2 healing herbs",-1,31,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Meadow Knotweed",-1,28,FONT_ScreenSmall,2);
 		B_GiveInvItems(other,self,ItMi_Gold,10);
 		AI_Output(self,other,"DIA_Neoras_BrewForMe_Health_01_03");	//Good. I shall give you a potion now, then you won't have to wait so long.
 		B_GiveInvItems(self,other,ItPo_Health_02,1);
@@ -575,7 +575,7 @@ func void DIA_Neoras_FOUNDDRAGONEGG_Info()
 	AI_Output (other, self, "DIA_Neoras_FOUNDDRAGONEGG_15_00");	//Here, I've got a dragon egg for you.
 	AI_Output (self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_01");	//You're trying to pull my leg.
 //	B_GiveInvItems(other,self,ItAt_DragonEgg_MIS,1);
-	AI_PrintScreen("Драконье яйцо отдано",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("Given: Dragon Egg",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 	Npc_RemoveInvItem(other,ItAt_DragonEgg_MIS);
 	AI_Output (self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_02");	//It's real! I hadn't thought it possible. Where did you find it?
 	AI_Output (other, self, "DIA_Neoras_FOUNDDRAGONEGG_15_03");	//I'd rather keep that to myself.

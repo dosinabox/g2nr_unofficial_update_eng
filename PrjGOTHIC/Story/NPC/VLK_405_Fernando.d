@@ -1,7 +1,7 @@
 
 instance VLK_405_Fernando(Npc_Default)
 {
-	name[0] = "Фернандо";
+	name[0] = "Fernando";
 	guild = GIL_VLK;
 	id = 405;
 	voice = 14;

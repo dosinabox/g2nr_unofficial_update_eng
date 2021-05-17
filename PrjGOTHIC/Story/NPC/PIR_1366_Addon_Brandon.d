@@ -1,7 +1,7 @@
 
 instance PIR_1366_Addon_Brandon(Npc_Default)
 {
-	name[0] = "Брэндон";
+	name[0] = "Brandon";
 	guild = GIL_PIR;
 	id = 1366;
 	voice = 4;

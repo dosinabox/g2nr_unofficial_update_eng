@@ -1,7 +1,7 @@
 
 instance NONE_110_Urshak(Mst_Default_OrcShaman)
 {
-	name[0] = "г№-иръ";
+	name[0] = "Ur-Shak";
 	guild = GIL_FRIENDLY_ORC;
 	id = 110;
 	voice = 18;

@@ -1,7 +1,7 @@
 
 instance SLD_806_Sylvio(Npc_Default)
 {
-	name[0] = "Сильвио";
+	name[0] = "Sylvio";
 	guild = GIL_SLD;
 	id = 806;
 	voice = 9;

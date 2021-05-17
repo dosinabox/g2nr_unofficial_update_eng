@@ -1,7 +1,7 @@
 
 instance VLK_438_Alrik(Npc_Default)
 {
-	name[0] = "Альрик";
+	name[0] = "Alrik";
 	guild = GIL_VLK;
 	id = 438;
 	voice = 9;

@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Gobbo_Green(C_Npc)
 {
-	name[0] = "Гоблин";
+	name[0] = "Goblin";
 	guild = GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID] = ID_GOBBO_GREEN;
 	level = 4;
@@ -45,7 +45,7 @@ instance Gobbo_Green(Mst_Default_Gobbo_Green)
 
 instance YGobbo_Green(Mst_Default_Gobbo_Green)
 {
-	name[0] = "Молодой гоблин";
+	name[0] = "Young Goblin";
 	level = 3;
 	attribute[ATR_STRENGTH] = 5;
 	attribute[ATR_DEXTERITY] = 5;

@@ -188,7 +188,7 @@ func int DIA_Gerold_Stuff_Condition()
 
 func void DIA_Gerold_Stuff_Info()
 {
-	AI_Output(other,self,"DIA_Gerold_Stuff_15_00");	//я принес тебе кое-что. ¬от еда, как ты и просил.
+	AI_Output(other,self,"DIA_Gerold_Stuff_15_00");	//I've got something for you. The food you wanted.
 	if(Npc_HasItems(other,ItFo_Honey) && Npc_HasItems(other,ItFo_Bread) && Npc_HasItems(other,ItFo_Wine) && Npc_HasItems(other,ItFo_Sausage))
 	{
 		Npc_RemoveInvItem(other,ItFo_Honey);

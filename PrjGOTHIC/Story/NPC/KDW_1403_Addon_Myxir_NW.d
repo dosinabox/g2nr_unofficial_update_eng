@@ -1,7 +1,7 @@
 
 instance KDW_1403_Addon_Myxir_NW(Npc_Default)
 {
-	name[0] = "Миксир";
+	name[0] = "Myxir";
 	guild = GIL_KDW;
 	id = 1403;
 	voice = 12;

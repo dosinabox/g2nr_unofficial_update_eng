@@ -182,7 +182,7 @@ instance DIA_Addon_Garvell_MissingPeopleMore(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Garvell_MissingPeopleMore_Condition;
 	information = DIA_Addon_Garvell_MissingPeopleMore_Info;
-	description = "Я слышал, что пропадали и другие люди.";
+	description = "I've heard that other people have gone missing, too.";
 };
 
 

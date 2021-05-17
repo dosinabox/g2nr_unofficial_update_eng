@@ -133,7 +133,7 @@ func int DIA_Jora_Bestohlen_Condition()
 {
 	if(JoraToldAboutRobbery == FALSE)
 	{
-		DIA_Jora_Bestohlen.description = "Как дела?";
+		DIA_Jora_Bestohlen.description = "How's it going?";
 	};
 	return TRUE;
 };
@@ -250,7 +250,7 @@ func void DIA_Jora_HolDeinGold_DoIt()
 	Jora_Dieb = LOG_Running;
 	Log_CreateTopic(TOPIC_JoraDieb,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_JoraDieb,LOG_Running);
-	B_LogEntries(TOPIC_JoraDieb,"Ренгару ограбил торговца Джору. Если я поймаю его, мне за это полагается награда.");
+	B_LogEntries(TOPIC_JoraDieb,"Rengaru robbed the merchant Jora. I can expect a reward when I catch him.");
 	Jora_Gold = LOG_Running;
 	Log_CreateTopic(TOPIC_Jora,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Jora,LOG_Running);
@@ -451,7 +451,7 @@ func void DIA_Jora_Belohnung_Info()
 
 func void B_Jora_GivesAlriksSchwert()
 {
-	AI_Output(self,other,"DIA_Jora_AlriksSchwert_08_06");	//А, ладно! Забирай его так. Ведь ты помог мне вернуть мое золото...
+	AI_Output(self,other,"DIA_Jora_AlriksSchwert_08_06");	//Ah, so what! Here, take it. After all, you did help me get my gold back...
 	B_GiveInvItems(self,other,ItMw_AlriksSword_Mis,1);
 };
 

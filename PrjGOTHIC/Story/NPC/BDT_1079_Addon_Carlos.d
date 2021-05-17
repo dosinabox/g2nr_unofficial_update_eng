@@ -1,7 +1,7 @@
 
 instance BDT_1079_Addon_Carlos(Npc_Default)
 {
-	name[0] = "Карлос";
+	name[0] = "Carlos";
 	guild = GIL_BDT;
 	id = 1079;
 	voice = 12;

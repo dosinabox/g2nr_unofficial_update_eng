@@ -1,7 +1,7 @@
 
 instance VLK_432_Moe(Npc_Default)
 {
-	name[0] = "Мо";
+	name[0] = "Moe";
 	guild = GIL_NONE;
 	id = 432;
 	voice = 1;

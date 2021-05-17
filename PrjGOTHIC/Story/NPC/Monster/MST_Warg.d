@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Warg(C_Npc)
 {
-	name[0] = "Варг";
+	name[0] = "Warg";
 	guild = GIL_WOLF;
 	aivar[AIV_MM_REAL_ID] = ID_WARG;
 	level = 30;
@@ -51,7 +51,7 @@ instance Warg(Mst_Default_Warg)
 
 instance BlackWolf(Mst_Default_Warg)
 {
-	name[0] = "Черный волк";
+	name[0] = "Black Wolf";
 	level = 6;
 	aivar[AIV_MM_REAL_ID] = ID_WOLF;
 	attribute[ATR_STRENGTH] = 15;

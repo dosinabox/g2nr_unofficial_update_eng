@@ -1,7 +1,7 @@
 
 instance VLK_4131_Engrom(Npc_Default)
 {
-	name[0] = "Ёнгром";
+	name[0] = "ENGROM";
 	guild = GIL_OUT;
 	id = 4131;
 	voice = 12;

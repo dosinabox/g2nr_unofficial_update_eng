@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Swarm(C_Npc)
 {
-	name[0] = "Рой саранчи";
+	name[0] = "Locust Swarm";
 	guild = GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID] = ID_BLOODFLY;
 	level = 6;

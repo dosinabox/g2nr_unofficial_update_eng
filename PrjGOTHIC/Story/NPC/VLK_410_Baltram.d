@@ -1,7 +1,7 @@
 
 instance VLK_410_Baltram(Npc_Default)
 {
-	name[0] = "Áאכüענאל";
+	name[0] = "Baltram";
 	guild = GIL_VLK;
 	id = 410;
 	voice = 1;

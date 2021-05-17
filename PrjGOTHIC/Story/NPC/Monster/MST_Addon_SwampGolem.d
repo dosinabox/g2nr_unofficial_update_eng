@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Addon_SwampGolem(C_Npc)
 {
-	name[0] = "Болотный голем";
+	name[0] = "Swamp Golem";
 	guild = GIL_SWAMPGOLEM;
 	aivar[AIV_MM_REAL_ID] = ID_Swampgolem;
 	level = 25;

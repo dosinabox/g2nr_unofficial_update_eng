@@ -79,7 +79,7 @@ instance ItAm_Addon_Greg(C_Item)
 	on_unequip = UnEquip_ItAm_Addon_Greg;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет капитана";
+	description = "Captain's amulet.";
 	text[2] = NAME_Prot_Edge;
 	count[2] = 5;
 	text[3] = NAME_Prot_Point;

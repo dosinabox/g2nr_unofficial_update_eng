@@ -190,8 +190,8 @@ func void DIA_Bullco_DailyCheck_Info()
 	if(Npc_KnowsInfo(other,DIA_Onar_WegenPepe) || Npc_KnowsInfo(other,DIA_Lee_WegenBullco))
 	{
 		Info_ClearChoices(DIA_Bullco_DailyCheck);
-		Info_AddChoice(DIA_Bullco_DailyCheck,"Тебе имя Пепе говорит о чем-нибудь?",DIA_Bullco_DailyCheck_AboutPepe);
-		Info_AddChoice(DIA_Bullco_DailyCheck,"Я НЕ СОБИРАЮСЬ уходить отсюда!",DIA_Bullco_DailyCheck_WontLeave);
+		Info_AddChoice(DIA_Bullco_DailyCheck,"Does the name Pepe ring a bell?",DIA_Bullco_DailyCheck_AboutPepe);
+		Info_AddChoice(DIA_Bullco_DailyCheck,"I'm NOT going to leave here!",DIA_Bullco_DailyCheck_WontLeave);
 	}
 	else
 	{

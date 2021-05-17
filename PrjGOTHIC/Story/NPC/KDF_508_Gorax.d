@@ -1,7 +1,7 @@
 
 instance KDF_508_Gorax(Npc_Default)
 {
-	name[0] = "Горакс";
+	name[0] = "Gorax";
 	guild = GIL_KDF;
 	id = 508;
 	voice = 14;

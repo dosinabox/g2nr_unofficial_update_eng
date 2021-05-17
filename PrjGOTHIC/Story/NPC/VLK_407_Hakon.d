@@ -1,7 +1,7 @@
 
 instance VLK_407_Hakon(Npc_Default)
 {
-	name[0] = "Хакон";
+	name[0] = "Hakon";
 	guild = GIL_VLK;
 	id = 407;
 	voice = 12;

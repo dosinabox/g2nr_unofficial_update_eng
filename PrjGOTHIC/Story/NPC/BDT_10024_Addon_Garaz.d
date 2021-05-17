@@ -1,7 +1,7 @@
 
 instance BDT_10024_Addon_Garaz(Npc_Default)
 {
-	name[0] = "Гараз";
+	name[0] = "Garaz";
 	guild = GIL_BDT;
 	id = 10024;
 	voice = 8;

@@ -84,7 +84,7 @@ func void DIA_DiegoNW_NeedHelp_Info()
 	Info_ClearChoices(DIA_DiegoNW_NeedHelp);
 	if(!Npc_KnowsInfo(other,DIA_DiegoOW_Hallo))
 	{
-		Info_AddChoice(DIA_DiegoNW_NeedHelp,"Кто ты?",DIA_DiegoNW_NeedHelp_WhoAreYou);
+		Info_AddChoice(DIA_DiegoNW_NeedHelp,"Who are you?",DIA_DiegoNW_NeedHelp_WhoAreYou);
 	};
 	Info_AddChoice(DIA_DiegoNW_NeedHelp,"What kind of clothes are these?",DIA_DiegoNW_NeedHelp_Clothes);
 	Info_AddChoice(DIA_DiegoNW_NeedHelp,"What are you doing here?",DIA_DiegoNW_NeedHelp_Plan);
@@ -499,7 +499,7 @@ func void DIA_DiegoNW_Teach_BACK()
 	};
 	if(DiegoNW_Merke_STR < other.aivar[REAL_STRENGTH])
 	{
-		AI_Output(self,other,"DIA_Addon_DiegoOw_Teach_11_03");	//(оценивающе) Очень хорошо. Твоя сила увеличилась.
+		AI_Output(self,other,"DIA_Addon_DiegoOw_Teach_11_03");	//(appraisingly) Good. Your strength has increased.
 	};
 	Info_ClearChoices(DIA_DiegoNW_Teach);
 };
@@ -586,7 +586,7 @@ func void DIA_DiegoNW_KnowWhereEnemy_Yes()
 	AI_Output (self, other, "DIA_DiegoNW_KnowWhereEnemy_Yes_11_01");	//Mmh. You're right, Khorinis is a dump. I'm coming with you.
 	if(Hlp_StrCmp(Npc_GetNearestWP(self),"NW_CITY_UPTOWN_PATH_23") && !ArmorEquipped(self,ITAR_Diego))
 	{
-		AI_Output(self,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02");	//Подожди, я буду готов через минуту.
+		AI_Output(self,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02");	//Wait, I'll be ready in a second.
 		AI_SetWalkMode(self,NPC_RUN);
 		AI_GotoWP(self,"NW_CITY_UPTOWN_HUT_01_01");
 		if(!Npc_HasItems(self,ITAR_Diego))

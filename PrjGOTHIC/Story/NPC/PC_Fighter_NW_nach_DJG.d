@@ -1,7 +1,7 @@
 
 instance PC_Fighter_NW_nach_DJG(Npc_Default)
 {
-	name[0] = "Горн";
+	name[0] = "Gorn";
 	guild = GIL_DJG;
 	id = 706;
 	voice = 12;

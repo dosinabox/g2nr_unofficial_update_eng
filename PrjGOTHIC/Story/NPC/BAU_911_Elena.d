@@ -1,7 +1,7 @@
 
 instance BAU_911_Elena(Npc_Default)
 {
-	name[0] = "Елена";
+	name[0] = "Elena";
 	guild = GIL_BAU;
 	id = 911;
 	voice = 16;

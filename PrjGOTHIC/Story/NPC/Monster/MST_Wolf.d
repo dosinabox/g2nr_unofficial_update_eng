@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Wolf(C_Npc)
 {
-	name[0] = "Волк";
+	name[0] = "Wolf";
 	guild = GIL_WOLF;
 	aivar[AIV_MM_REAL_ID] = ID_WOLF;
 	level = 6;
@@ -45,7 +45,7 @@ instance Wolf(Mst_Default_Wolf)
 
 instance Summoned_Wolf(Mst_Default_Wolf)
 {
-	name[0] = "Вызванный волк";
+	name[0] = "Summoned Wolf";
 	guild = GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID] = ID_SUMMONED_WOLF;
 	level = 0;

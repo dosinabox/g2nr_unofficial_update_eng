@@ -1,7 +1,7 @@
 
 instance VLK_434_Borka(Npc_Default)
 {
-	name[0] = "Борка";
+	name[0] = "Borka";
 	guild = GIL_VLK;
 	id = 434;
 	voice = 11;

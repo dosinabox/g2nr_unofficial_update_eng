@@ -1,12 +1,12 @@
 
 func void B_DIA_BDT_10XX_Fluechtling_Stimme7()
 {
-	AI_Output(self,other,"DIA_B_DIA_BDT_10XX_Fluechtling_07_00");	//Забудь об этом, я не вернусь назад в тюрьму.
+	AI_Output (self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_07_00");	//Forget it. I'm not going back to jail.
 };
 
 func void B_DIA_BDT_10XX_Fluechtling_Stimme6()
 {
-	AI_Output(self,other,"DIA_B_DIA_BDT_10XX_Fluechtling_06_00");	//Ты же пришел не затем, чтобы вернуть нас назад в тюрьму, правда?
+	AI_Output (self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_06_00");	//You haven't come to take us back to jail, have you?
 };
 
 
@@ -52,50 +52,50 @@ func int DIA_BDT_1031_Fluechtling_Tip1_Condition()
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Info()
 {
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_07_00");	//Тебе лучше держаться от меня подальше, если не хочешь попасть в тюрьму.
+	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_07_00");	//You'd better stay away from me if you don't want to land in jail.
 	B_GivePlayerXP(150);
 	if(SCFoundMorgahard == FALSE)
 	{
-		Info_ClearChoices(DIA_BDT_1031_Fluechtling_Tip1);
-		Info_AddChoice(DIA_BDT_1031_Fluechtling_Tip1,"Я не собираюсь убивать тебя.",DIA_BDT_1031_Fluechtling_Tip1_frei);
-		Info_AddChoice(DIA_BDT_1031_Fluechtling_Tip1,"Я пришел арестовать тебя.",DIA_BDT_1031_Fluechtling_Tip1_Knast);
-		Info_AddChoice(DIA_BDT_1031_Fluechtling_Tip1,"Где Моргахард, ваш главарь?",DIA_BDT_1031_Fluechtling_Tip1_Morgahard);
+		Info_ClearChoices (DIA_BDT_1031_Fluechtling_Tip1);
+		Info_AddChoice (DIA_BDT_1031_Fluechtling_Tip1, "I'm not planning on ratting on you.", DIA_BDT_1031_Fluechtling_Tip1_frei);
+		Info_AddChoice (DIA_BDT_1031_Fluechtling_Tip1, "I have come to arrest you.", DIA_BDT_1031_Fluechtling_Tip1_Knast);
+		Info_AddChoice (DIA_BDT_1031_Fluechtling_Tip1, "Where is Morgahard, your leader?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard);
 	};
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard()
 {
-	AI_Output(other,self,"DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00");	//Где Моргахард, ваш главарь?
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01");	//Мы разделились, чтобы нас не поймали слишком быстро. Понятия не имею, где сейчас остальные.
-	Info_AddChoice(DIA_BDT_1031_Fluechtling_Tip1,"Жаль. Тогда, пожалуй, мне придется доставить тебя к судье.",DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen);
+	AI_Output (other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00");	//Where is Morgahard, your leader?
+	AI_Output (self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01");	//We split up, so we wouldn't get caught so quickly. No idea where the others are.
+	Info_AddChoice (DIA_BDT_1031_Fluechtling_Tip1, "Too bad. Then I guess I'll have to get the judge.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen()
 {
-	AI_Output(other,self,"DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00");	//Жаль. Тогда, пожалуй, мне придется доставить тебя к судье.
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01");	//Хорошо, хорошо. Я думаю, некоторые из нас направились в таверну. Но ты не слышал этого от меня, хорошо?
-	AI_StopProcessInfos(self);
+	AI_Output (other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00");	//Too bad. Then I guess I'll have to get the judge.
+	AI_Output (self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01");	//Okay, okay. I suppose some of us have made off to the tavern. But you didn't hear that from me, OK?
+	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Knast()
 {
-	AI_Output(other,self,"DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00");	//Я пришел арестовать тебя.
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_Knast_07_01");	//Только через мой труп.
-	AI_StopProcessInfos(self);
-	B_Attack(self,other,AR_SuddenEnemyInferno,1);
+	AI_Output (other, self, "DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00");	//I have come to arrest you.
+	AI_Output (self, other, "DIA_BDT_1031_Fluechtling_Tip1_Knast_07_01");	//Over my dead body.
+	AI_StopProcessInfos (self);
+	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_frei()
 {
-	AI_Output(other,self,"DIA_BDT_1031_Fluechtling_Tip1_frei_15_00");	//Я не собираюсь убивать тебя.
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_frei_07_01");	//Если тебя послал судья, скажи ему, чтобы он отстал от нас.
-	Info_AddChoice(DIA_BDT_1031_Fluechtling_Tip1,"Так в каком преступлении ты обвиняешься?",DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen);
+	AI_Output (other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_15_00");	//I'm not planning on ratting on you.
+	AI_Output (self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_07_01");	//If the judge sent you, then you can tell him from us that he can get stuffed.
+	Info_AddChoice (DIA_BDT_1031_Fluechtling_Tip1, "So what's your crime?", DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen()
 {
-	AI_Output(other,self,"DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_15_00");	//Так в каком преступлении ты обвиняешься?
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_07_01");	//Это не твое дело.
+	AI_Output (other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_15_00");	//So what's your crime?
+	AI_Output (self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_07_01");	//That's none of your business.
 };
 
 
@@ -215,43 +215,43 @@ func int DIA_BDT_1033_Fluechtling_Tip2_Condition()
 
 func void DIA_BDT_1033_Fluechtling_Tip2_Info()
 {
-	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_07_00");	//(испуганно) Что тебе нужно от меня?
+	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_07_00");	//(scared) What do you want from me?
 	B_GivePlayerXP(150);
 	if(SCFoundMorgahard == FALSE)
 	{
-		Info_ClearChoices(DIA_BDT_1033_Fluechtling_Tip2);
-		Info_AddChoice(DIA_BDT_1033_Fluechtling_Tip2,"Расслабься. Я просто хочу поговорить.",DIA_BDT_1033_Fluechtling_Tip2_frei);
-		Info_AddChoice(DIA_BDT_1033_Fluechtling_Tip2,"Меня послал судья, чтобы я вернул тебя назад.",DIA_BDT_1033_Fluechtling_Tip2_Knast);
-		Info_AddChoice(DIA_BDT_1033_Fluechtling_Tip2,"Где Моргахард, ваш главарь?",DIA_BDT_1033_Fluechtling_Tip2_Morgahard);
+		Info_ClearChoices (DIA_BDT_1033_Fluechtling_Tip2);
+		Info_AddChoice (DIA_BDT_1033_Fluechtling_Tip2, "Relax. I only want to talk.", DIA_BDT_1033_Fluechtling_Tip2_frei);
+		Info_AddChoice (DIA_BDT_1033_Fluechtling_Tip2, "The judge has sent me to bring you back.", DIA_BDT_1033_Fluechtling_Tip2_Knast);
+		Info_AddChoice (DIA_BDT_1033_Fluechtling_Tip2, "Where is Morgahard, your leader?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard);
 	};
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_Morgahard()
 {
-	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00");	//Где Моргахард, ваш главарь?
-	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01");	//(испуганно) Мне не нужны проблемы. Иди к лендлорду. Он хотел спрятаться среди наемников. А меня оставь в покое.
-	AI_StopProcessInfos(self);
+	AI_Output (other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00");	//Where is Morgahard, your leader?
+	AI_Output (self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01");	//(scared) I don't want any trouble. Go to the landowner. He wanted to hide himself with the mercenaries. And now leave me alone.
+	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_Knast()
 {
-	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00");	//Меня послал судья, чтобы я вернул тебя назад.
-	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01");	//(вопит) НЕЕТ!
-	AI_StopProcessInfos(self);
-	B_Attack(self,other,AR_SuddenEnemyInferno,1);
+	AI_Output (other, self, "DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00");	//The judge has sent me to bring you back.
+	AI_Output (self, other, "DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01");	//(screams) NO.
+	AI_StopProcessInfos (self);
+	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_frei()
 {
-	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_frei_15_00");	//Расслабься. Я просто хочу поговорить.
-	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_frei_07_01");	//Но я не хочу говорить с тобой. Проваливай!
-	Info_AddChoice(DIA_BDT_1033_Fluechtling_Tip2,"Ты ведь напуган до смерти, нет?",DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen);
+	AI_Output (other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00");	//Relax. I only want to talk.
+	AI_Output (self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01");	//But I don't want to talk to you. Beat it, man.
+	Info_AddChoice (DIA_BDT_1033_Fluechtling_Tip2, "You're really scared shitless, aren't you?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen()
 {
-	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00");	//Ты ведь напуган до смерти, нет?
-	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01");	//Тебе легко говорить. Тебя не ждет виселица, если тебя поймают.
+	AI_Output (other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00");	//You're really scared shitless, aren't you?
+	AI_Output (self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01");	//You can talk. The gallows isn't waiting for you if you get caught.
 };
 
 

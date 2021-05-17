@@ -246,7 +246,7 @@ instance DIA_Rupert_YourOffer(C_Info)
 	condition = DIA_Rupert_YourOffer_Condition;
 	information = DIA_Rupert_YourOffer_Info;
 	permanent = FALSE;
-	description = "Что ты можешь мне предложить?";
+	description = "What can you offer me?";
 };
 
 

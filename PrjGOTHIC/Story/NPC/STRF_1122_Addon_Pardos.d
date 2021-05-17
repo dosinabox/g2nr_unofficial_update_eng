@@ -1,7 +1,7 @@
 
 instance STRF_1122_Addon_Pardos(Npc_Default)
 {
-	name[0] = "Пардос";
+	name[0] = "Pardos";
 	guild = GIL_STRF;
 	id = 1122;
 	voice = 3;

@@ -1,7 +1,7 @@
 
 instance VLK_447_Cassia(Npc_Default)
 {
-	name[0] = "Кассия";
+	name[0] = "Cassia";
 	guild = GIL_OUT;
 	id = 447;
 	voice = 16;

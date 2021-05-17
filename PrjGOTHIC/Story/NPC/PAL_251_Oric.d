@@ -1,7 +1,7 @@
 
 instance PAL_251_Oric(Npc_Default)
 {
-	name[0] = "Орик";
+	name[0] = "Oric";
 	guild = GIL_PAL;
 	id = 251;
 	voice = 11;

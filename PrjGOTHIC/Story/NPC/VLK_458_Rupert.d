@@ -1,7 +1,7 @@
 
 instance VLK_458_Rupert(Npc_Default)
 {
-	name[0] = "Руперт";
+	name[0] = "Rupert";
 	guild = GIL_VLK;
 	id = 458;
 	voice = 3;

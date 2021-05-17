@@ -44,15 +44,15 @@ func void DIA_Skalven_3_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_Addon_Sklaven_3_STANDARD_03_00");	//(испуганно) Что ты хочешь от меня? Уйди прочь!
+		AI_Output (self, other, "DIA_Addon_Sklaven_3_STANDARD_03_00");	//(scared) What do you want from me? Go away!
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_Addon_Sklaven_3_STANDARD_03_01");	//(нервно) Я ничего не делал! Оставь меня.
+		AI_Output (self, other, "DIA_Addon_Sklaven_3_STANDARD_03_01");	//(nervous) I didn't do anything! Leave me alone.
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_Addon_Sklaven_3_STANDARD_03_02");	//(испуганно) Пожалуйста, не трогай меня!
+		AI_Output (self, other, "DIA_Addon_Sklaven_3_STANDARD_03_02");	//(scared) Please don't hit me!
 	};
 	AI_StopProcessInfos(self);
 };

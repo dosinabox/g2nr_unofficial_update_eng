@@ -20,7 +20,7 @@ func void enter_di_firsttime_trigger()
 			{
 				Wld_InsertItem(ItSe_XardasNotfallBeutel_MIS,"FP_ITEM_SHIP_12");
 				SC_InnosEyeVergessen_DI = TRUE;
-				B_LogEntry(TOPIC_HallenVonIrdorath,"Прошлой ночью мне приснился сон. Со мной говорил Ксардас, он попросил меня подойти к алхимическому столу на корабле, чтобы забрать кое-что с него. Это очень странно, но я ничего не пил вчера вечером.");
+				B_LogEntry(TOPIC_HallenVonIrdorath,""Last night I had a dream. Xardas was talking to me, he asked me to go to the alchemist's bench on the ship to collect something there. This was very strange, but I actually hadn't drunk anything last night.");
 			};
 			Wld_InsertItem(ItMi_Flask,"FP_ITEM_SHIP_06");
 			if(!Npc_HasItems(hero,ItAt_IcedragonHeart) && !Npc_HasItems(hero,ItAt_RockdragonHeart) && !Npc_HasItems(hero,ItAt_FiredragonHeart) && !Npc_HasItems(hero,ItAt_SwampdragonHeart))
@@ -36,81 +36,81 @@ func void enter_di_firsttime_trigger()
 		Log_SetTopicStatus(TOPIC_MyCrew,LOG_Running);
 		if(JorgenIsCaptain == TRUE)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Йорген, мой капитан, будет ждать на корабле моего возвращения.");
+			Log_AddEntry(TOPIC_MyCrew,"Jorgen, my captain, will wait here on the ship until I get back.");
 		};
 		if(TorlofIsCaptain == TRUE)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Торлоф, мой капитан, будет ждать на корабле и оборонять его во время моего отсутствия. Он также может помочь мне повысить мою силу и ловкость.");
+			Log_AddEntry(TOPIC_MyCrew,"Torlof, my captain, will remain here on the ship to defend it as long as I am on the island. With him I can improve my dexterity and strength.");
 		};
 		if(JackIsCaptain == TRUE)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Джек, мой капитан, будет ждать на корабле моего возвращения. Похоже, он немного испуган. Надеюсь, он возьмет себя в руки. Он нужен мне.");
+			Log_AddEntry(TOPIC_MyCrew,"Jack, my captain, will wait here on the ship until I get back. He seems a little bit scared. I hope he'll calm down in time. I need him.");
 		};
 		if(Lee_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Ли будет командовать кораблем в мое отсутствие. Он также может помочь мне научиться лучше владеть двуручным и одноручным оружием.");
+			Log_AddEntry(TOPIC_MyCrew,"Lee will take command of the ship during my absence. With his help I can improve my abilities with one and two-handed-weapons.");
 		};
 		if(MiltenNW_IsOnBoard == LOG_SUCCESS)
 		{
 			if(hero.guild == GIL_KDF)
 			{
-				Log_AddEntry(TOPIC_MyCrew,"Милтен может помочь мне с повышением маны и созданием новых рун.");
+				Log_AddEntry(TOPIC_MyCrew,"With Milten I can increase my mana and learn new magic formulas.");
 			}
 			else
 			{
-				Log_AddEntry(TOPIC_MyCrew,"Милтен может помочь мне повысить мою ману.");
+				Log_AddEntry(TOPIC_MyCrew,"Milten can help increase my mana..");
 			};
 		};
 		if(Lester_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"У меня такое впечатление, что состояние Лестера только ухудшилось на этом странном острове.");
+			Log_AddEntry (TOPIC_MyCrew, "I get the impression Lester's state has gotten even worse on the strange island.");
 		};
 		if(Mario_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Марио ведет себя немного странно. Он просто сидит на корме и уже давно от него никто не слышал ни слова.");
+			Log_AddEntry (TOPIC_MyCrew, "Mario is a little bit strange. He just sat in the stern throughout the crossing and hasn't said a word since.");
 		};
 		if(Wolf_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Вольф может обучить меня стрельбе из арбалета и лука.");
+			Log_AddEntry (TOPIC_MyCrew, "Wolf can teach me to shoot the crossbow and bow.");
 		};
 		if(Vatras_IsOnBoard == LOG_SUCCESS)
 		{
 			if(hero.guild == GIL_KDF)
 			{
-				Log_AddEntry(TOPIC_MyCrew,"Ватрас удалился в каюту магов. Он может лечить меня и знает множество рецептов приготовления зелий. Также с его помощью я смогу повысить свой Круг магии.");
+				Log_AddEntry(TOPIC_MyCrew,"Vatras has retired into the Magicians' cabin. He can heal me and teach me a lot about brewing potions. He can increase my Magic Circle as well.");
 			}
 			else
 			{
-				Log_AddEntry(TOPIC_MyCrew,"Ватрас удалился в каюту магов. Он может лечить меня и знает множество рецептов приготовления зелий.");
+				Log_AddEntry(TOPIC_MyCrew,"Vatras has retired into the Magicians' cabin. He can heal me and teach me a lot about brewing potions");
 			};
 		};
 		if(Bennet_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Беннет обучит меня кузнечному делу, если я захочу.");
+			Log_AddEntry (TOPIC_MyCrew, "Bennet will teach me to forge if I want him to.");
 		};
 		if(Diego_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Диего поможет мне, если я не знаю, что делать, также у него есть амуниция для меня. Он может научить меня пользоваться отмычками и метко стрелять из лука и арбалета.");
+			Log_AddEntry (TOPIC_MyCrew, "Diego will help me on if I don't know what to do, and he's got ammunition for me. From him I can learn how to pick locks or to shoot bows or crossbows.");
 		};
 		if(Gorn_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Горн ни разу не прилег за время нашего путешествия. Он будет присматривать за кораблем. Я думаю, корабль будет в надежных руках. Также Горн может помочь мне научиться лучше владеть двуручным оружием.");
+			Log_AddEntry(TOPIC_MyCrew,"Gorn has not slept on our trip at all. He will look after the ship. I think it will be in good hands with him. He can also help me improve my abilities with two-handed weapons.");
 		};
 		if(Lares_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Ларес обещал научить меня красться и сражаться одноручным оружием. Кроме этого он может повысить мою ловкость.");
+			Log_AddEntry (TOPIC_MyCrew, "Lares has promised to teach me sneaking and one-handed combat. Apart from that he can improve my dexterity.");
 		};
 		if(Biff_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Бифф слишком жаден до денег, это огорчает. Его тяжело контролировать.");
+			Log_AddEntry (TOPIC_MyCrew, "Biff is so keen on money that it hurts. It will be hard to control him.");
 		};
 		if(Angar_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Ангар очень беспокоен. Мне кажется, что еще немного, и он побежит куда-нибудь сражаться без приказа.");
+			Log_AddEntry (TOPIC_MyCrew, "Angar appears very restless. I get the impression that it won't be much longer before he goes to battle on his own.");
 		};
 		if(Girion_IsOnBoard == LOG_SUCCESS)
 		{
-			Log_AddEntry(TOPIC_MyCrew,"Гирион невозмутим. Его спокойствие поражает. И он превосходный инструктор боя. Это может пригодиться мне.");
+			Log_AddEntry (TOPIC_MyCrew, "Girion is holding back a lot. His patience is admirable. And he's a fighting instructor. That might benefit me in the end.");
 		};
 		IntroduceChapter(KapWechsel_6,KapWechsel_6_Text,"chapter6.tga","chapter_01.wav",6000);
 		EnterDI_Kapitel6 = TRUE;

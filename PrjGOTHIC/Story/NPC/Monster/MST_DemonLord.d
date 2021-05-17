@@ -1,7 +1,7 @@
 
 prototype Mst_Default_DemonLord(C_Npc)
 {
-	name[0] = "Демон-лорд";
+	name[0] = "Demon Lord";
 	guild = GIL_DEMON;
 	aivar[AIV_MM_REAL_ID] = ID_DEMON_LORD;
 	level = 60;

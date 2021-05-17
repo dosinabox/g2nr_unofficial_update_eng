@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Demon(C_Npc)
 {
-	name[0] = "Демон";
+	name[0] = "Demon";
 	guild = GIL_DEMON;
 	aivar[AIV_MM_REAL_ID] = ID_DEMON;
 	level = 50;
@@ -43,7 +43,7 @@ instance Demon(Mst_Default_Demon)
 
 instance Summoned_Demon(Mst_Default_Demon)
 {
-	name[0] = "Вызванный демон";
+	name[0] = "Summoned Demon";
 	guild = GIL_SUMMONED_DEMON;
 	aivar[AIV_MM_REAL_ID] = ID_SUMMONED_DEMON;
 	level = 0;

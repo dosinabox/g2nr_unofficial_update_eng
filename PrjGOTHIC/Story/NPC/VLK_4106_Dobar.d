@@ -1,7 +1,7 @@
 
 instance VLK_4106_Dobar(Npc_Default)
 {
-	name[0] = "Добар";
+	name[0] = "Dobar";
 	guild = GIL_MIL;
 	id = 4106;
 	voice = 8;

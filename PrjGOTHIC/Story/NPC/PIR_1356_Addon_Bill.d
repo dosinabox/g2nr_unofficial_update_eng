@@ -1,7 +1,7 @@
 
 instance PIR_1356_Addon_Bill(Npc_Default)
 {
-	name[0] = "Билл";
+	name[0] = "Bill";
 	guild = GIL_PIR;
 	id = 1356;
 	voice = 3;

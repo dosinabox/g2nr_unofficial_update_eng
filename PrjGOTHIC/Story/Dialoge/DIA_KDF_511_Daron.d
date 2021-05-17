@@ -479,7 +479,7 @@ instance DIA_Addon_Daron_FoundStatue(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Daron_FoundStatue_Condition;
 	information = DIA_Addon_Daron_FoundStatue_Info;
-	description = "Я нашел статуэтку.";
+	description = "I found your statuette.";
 };
 
 

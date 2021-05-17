@@ -207,7 +207,7 @@ instance DIA_Salandril_Minenanteil(C_Info)
 	nr = 3;
 	condition = DIA_Salandril_Minenanteil_Condition;
 	information = DIA_Salandril_Minenanteil_Info;
-	description = "Ты продаешь поддельные акции!";
+	description = "You're selling illegal mining shares!";
 };
 
 

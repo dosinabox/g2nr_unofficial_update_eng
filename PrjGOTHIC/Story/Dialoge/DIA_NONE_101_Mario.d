@@ -103,7 +103,7 @@ func void DIA_None_101_Mario_WhyNeedYou_Info()
 	AI_Output (self, other, "DIA_None_101_Mario_WhyNeedYou_07_03");	//I've served as a marine on the King Rhobar and the Pride of Myrtana.
 	AI_Output (self, other, "DIA_None_101_Mario_WhyNeedYou_07_04");	//In the Battle of the Eastern Archipelago, I single-handedly sent two dozen orcs back to Beliar's realm.
 	AI_Output (self, other, "DIA_None_101_Mario_WhyNeedYou_07_05");	//Unfortunately, there were too few of us after our flagship sank, and we were forced to retreat.
-	B_LogEntry(Topic_Crew,"Марио - бывший моряк королевского флота.");
+	B_LogEntry(Topic_Crew,"Mario claims he's a former sailor from the royal navy.");
 };
 
 

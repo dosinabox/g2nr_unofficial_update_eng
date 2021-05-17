@@ -1,7 +1,7 @@
 
 instance VLK_462_Thorben(Npc_Default)
 {
-	name[0] = "Торбен";
+	name[0] = "Thorben";
 	guild = GIL_VLK;
 	id = 462;
 	voice = 6;

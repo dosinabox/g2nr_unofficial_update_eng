@@ -32,7 +32,7 @@ func void evt_archoldead_func()
 	};
 	if(EVT_ARCHOLDEAD_FUNC_OneTime == FALSE)
 	{
-		B_LogEntry(TOPIC_HallenVonIrdorath,"Я нашел здесь что-то вроде храма. Его населяют толпы нежити. Это все напоминает мне проклятый храм Спящего. Но на этот раз, я не подведу. Только не на этот раз!");
+		B_LogEntry (TOPIC_HallenVonIrdorath, "I've found something like a temple here. It is inhabited by a lot of undead beings. This all reminds me a lot of the damned orc temple of the Sleeper. This time I will not fail. Not this time!");
 		EVT_ARCHOLDEAD_FUNC_OneTime = TRUE;
 	};
 };

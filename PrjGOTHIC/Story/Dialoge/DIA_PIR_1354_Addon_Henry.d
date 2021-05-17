@@ -611,7 +611,7 @@ func void DIA_Addon_Henry_Turmbanditen_WhatFor_Info()
 			Npc_ExchangeRoutine(HammerPirate,"START");
 		};
 		MIS_Henry_FreeBDTTower = LOG_SUCCESS;
-		B_LogEntry(TOPIC_Addon_BanditsTower,"Бандиты из башни убиты.");
+		B_LogEntry(TOPIC_Addon_BanditsTower,"The bandits in the tower are dead.");
 		B_GivePlayerXP(XP_Addon_Henry_FreeBDTTower);
 	}
 	else if(MIS_Henry_FreeBDTTower == LOG_Running)

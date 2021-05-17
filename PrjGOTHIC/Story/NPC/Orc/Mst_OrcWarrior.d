@@ -1,7 +1,7 @@
 
 prototype Mst_Default_OrcWarrior(C_Npc)
 {
-	name[0] = "Орк-воин";
+	name[0] = "Orc Warrior";
 	guild = GIL_ORC;
 	aivar[AIV_MM_REAL_ID] = ID_ORCWARRIOR;
 	voice = 18;
@@ -68,7 +68,7 @@ instance OrcWarrior_Sit(Mst_Default_OrcWarrior)
 
 instance OrcWarrior_Harad(Mst_Default_OrcWarrior)
 {
-	name[0] = "Орк-разведчик";
+	name[0] = "Orc Scout";
 	level = 15;
 	attribute[ATR_STRENGTH] = 75;
 	attribute[ATR_DEXTERITY] = 75;

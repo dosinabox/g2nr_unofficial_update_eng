@@ -1,7 +1,7 @@
 
 instance MIL_337_Mika(Npc_Default)
 {
-	name[0] = "Мика";
+	name[0] = "Mika";
 	guild = GIL_MIL;
 	id = 337;
 	voice = 14;

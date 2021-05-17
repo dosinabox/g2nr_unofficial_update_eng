@@ -44,15 +44,15 @@ func void DIA_OUT_13_STANDARD_Info()
 	randy = Hlp_Random(3);
 	if(randy == 0)
 	{
-		AI_Output(self,other,"DIA_OUT_1_STANDARD_13_00");	//Раньше нам удавалось не подпускать орков близко. Но последнее время их становится все больше и больше.
+		AI_Output (self, other, "DIA_OUT_1_STANDARD_13_00");	//Until now, we've been able to keep the orcs off our backs. But recently there's been more and more of them.
 	};
 	if(randy == 1)
 	{
-		AI_Output(self,other,"DIA_OUT_1_STANDARD_13_01");	//От ополчения тоже мало толку. Они приходят из города только, чтобы забрать наш урожай и скот.
+		AI_Output (self, other, "DIA_OUT_1_STANDARD_13_01");	//The militia don't come and help us either. They only come from the city to take away our harvest and livestock.
 	};
 	if(randy == 2)
 	{
-		AI_Output(self,other,"DIA_OUT_1_STANDARD_13_02");	//Онар, наверное, выжил из ума, раз решился на конфликт с городом как раз тогда, когда прибыли паладины.
+		AI_Output (self, other, "DIA_OUT_1_STANDARD_13_02");	//Onar is out of his mind to pick a fight with the city just when the paladins are there.
 	};
 	AI_StopProcessInfos(self);
 };

@@ -235,7 +235,7 @@ instance ITAR_Vlk_L(C_Item)
 
 instance ITAR_Vlk_M(C_Item)
 {
-	name = "Citizen's Clothing";
+	name = "Decent Citizen's Clothing";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 15;
@@ -320,7 +320,7 @@ instance ITAR_VlkBabe_L(C_Item)
 
 instance ITAR_VlkBabe_M(C_Item)
 {
-	name = "Citizen's Dress";
+	name = "Decent Citizen's Dress";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 15;
@@ -1249,7 +1249,7 @@ instance ITAR_Prisoner(C_Item)
 
 instance ITAR_BlackMage(C_Item)
 {
-	name = "Мантия черного мага";
+	name = "Black Magician's Robe";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 100;

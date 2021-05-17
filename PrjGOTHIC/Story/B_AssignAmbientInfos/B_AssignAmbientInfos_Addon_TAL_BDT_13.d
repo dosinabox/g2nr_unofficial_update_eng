@@ -26,7 +26,7 @@ instance DIA_Addon_TAL_BDT_13_Hi(C_Info)
 	condition = DIA_Addon_TAL_BDT_13_Hi_Condition;
 	information = DIA_Addon_TAL_BDT_13_Hi_Info;
 	permanent = TRUE;
-	description = "Как дела?";
+	description = "How's it going?";
 };
 
 
@@ -37,15 +37,15 @@ func int DIA_Addon_TAL_BDT_13_Hi_Condition()
 
 func void DIA_Addon_TAL_BDT_13_Hi_Info()
 {
-	AI_Output(other,self,"DIA_Addon_TAL_BDT_13_Hi_15_00");	//Как дела?
+	AI_Output(other,self,"DIA_Addon_TAL_BDT_13_Hi_15_00");	//How's it going?
 	if(Wld_IsRaining())
 	{
 		B_Say(self,other,"$WEATHER");
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_TAL_BDT_13_Hi_13_01");	//Или тебя съест монстр... или тебя съест монстр...
-		AI_Output(self,other,"DIA_Addon_TAL_BDT_13_Hi_13_02");	//Это болото станет нам могилой...
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");	//Either you'll get eaten by a beast or you'll get eaten by a beast.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");	//This swamp will be our grave...
 	};
 };
 
@@ -56,7 +56,7 @@ instance DIA_Addon_TAL_BDT_13_Tal(C_Info)
 	condition = DIA_Addon_TAL_BDT_13_Tal_Condition;
 	information = DIA_Addon_TAL_BDT_13_Tal_Info;
 	permanent = TRUE;
-	description = "Что ты знаешь про эту долину?";
+	description = "What do you know about this valley?";
 };
 
 
@@ -67,9 +67,9 @@ func int DIA_Addon_TAL_BDT_13_Tal_Condition()
 
 func void DIA_Addon_TAL_BDT_13_Tal_Info()
 {
-	AI_Output(other,self,"DIA_Addon_TAL_BDT_13_Tal_15_00");	//Что ты знаешь про эту долину?
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_13_Tal_13_01");	//Здесь множество вещей, оставшихся с древних времен. Ворон велел нам собирать их все.
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_13_Tal_13_02");	//Не знаю, зачем они ему нужны, но ни один нормальный человек не будет рисковать собственной жизнью за несколько старых камней...
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");	//What do you know about this valley?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");	//There's loads of old stuff here. Raven's ordered us to gather up everything.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");	//No idea what he wants with it, but nobody in his right mind would risk his neck for a few old rocks...
 };
 
 
@@ -79,7 +79,7 @@ instance DIA_Addon_TAL_BDT_13_News(C_Info)
 	condition = DIA_Addon_TAL_BDT_13_News_Condition;
 	information = DIA_Addon_TAL_BDT_13_News_Info;
 	permanent = TRUE;
-	description = "Есть какие-нибудь новости?";
+	description = "Is there anything new?";
 };
 
 
@@ -90,12 +90,12 @@ func int DIA_Addon_TAL_BDT_13_News_Condition()
 
 func void DIA_Addon_TAL_BDT_13_News_Info()
 {
-	AI_Output(other,self,"DIA_Addon_TAL_BDT_13_News_15_00");	//Есть какие-нибудь новости?
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_13_News_13_01");	//Мы действительно довели этих пиратов.
-	AI_Output(self,other,"DIA_Addon_TAL_BDT_13_News_13_02");	//Они привозили нам пленников, но ни разу не получили и монеты. Ничего удивительного, что они разозлились.
-	if(BDT_13_einmal == FALSE)
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");	//Is there anything new?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");	//We really put one over on those pirates.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");	//They provided us with prisoners, but never saw a coin for it. No wonder they're angry.
+	if (BDT_13_einmal == FALSE)
 	{
-		AI_Output(self,other,"DIA_Addon_TAL_BDT_13_News_13_03");	//Но что они могут сделать? Напасть на лагерь? (смеется)
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");	//But what can they do? Attack the camp? (laughs) HAHAHA.
 		BDT_13_einmal = TRUE;
 	};
 };

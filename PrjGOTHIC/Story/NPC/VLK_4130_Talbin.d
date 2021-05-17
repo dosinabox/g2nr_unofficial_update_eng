@@ -1,7 +1,7 @@
 
 instance VLK_4130_Talbin(Npc_Default)
 {
-	name[0] = "Талбин";
+	name[0] = "Talbin";
 	guild = GIL_OUT;
 	id = 4130;
 	voice = 7;

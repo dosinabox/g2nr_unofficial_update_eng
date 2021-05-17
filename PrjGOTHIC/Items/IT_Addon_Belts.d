@@ -41,7 +41,7 @@ instance ItBE_Addon_Leather_01(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBE_Addon_Leather_01;
 	on_unequip = UnEquip_ItBE_Addon_Leather_01;
-	description = "Кожаный пояс";
+	description = "Leather Belt";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Belt_Prot_01;
 	text[2] = NAME_Prot_Point;
@@ -97,7 +97,7 @@ instance ItBE_Addon_SLD_01(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBE_Addon_SLD_01;
 	on_unequip = UnEquip_ItBE_Addon_SLD_01;
-	description = "Пояс наемника";
+	description = "Mercenary's Belt";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Belt_Prot_01;
 	text[2] = NAME_Prot_Point;
@@ -147,7 +147,7 @@ instance ItBE_Addon_NOV_01(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBE_Addon_NOV_01;
 	on_unequip = UnEquip_ItBE_Addon_NOV_01;
-	description = "Кушак готовности";
+	description = "Sash of Preparedness";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Belt_Prot_01;
 	text[2] = NAME_Prot_Point;
@@ -197,7 +197,7 @@ instance ItBE_Addon_MIL_01(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBE_Addon_MIL_01;
 	on_unequip = UnEquip_ItBE_Addon_MIL_01;
-	description = "Пояс ополчения";
+	description = "Militia Belt";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Belt_Prot_01;
 	text[2] = NAME_Prot_Point;
@@ -247,7 +247,7 @@ instance ItBE_Addon_KDF_01(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBE_Addon_KDF_01;
 	on_unequip = UnEquip_ItBE_Addon_KDF_01;
-	description = "Кушак огня";
+	description = "Sash of Fire";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Belt_Prot_01;
 	text[2] = NAME_Prot_Point;
@@ -297,7 +297,7 @@ instance ItBE_Addon_MC(C_Item)
 	material = MAT_WOOD;
 	on_equip = Equip_ItBE_Addon_MC;
 	on_unequip = UnEquip_ItBE_Addon_MC;
-	description = "Пояс из панциря краулера";
+	description = "Minecrawler Belt";
 	text[1] = NAME_Prot_Edge;
 	count[1] = Belt_Prot_01;
 	text[2] = NAME_Prot_Point;
@@ -347,7 +347,7 @@ instance ItBe_Addon_STR_5(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_STR_5;
 	on_unequip = UnEquip_ItBe_Addon_STR_5;
-	description = "Пояс могущества";
+	description = "Belt of Force";
 	text[2] = NAME_Bonus_Str;
 	count[2] = BeltBonus_STR01;
 	text[5] = NAME_Value;
@@ -379,7 +379,7 @@ instance ItBe_Addon_STR_10(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_STR_10;
 	on_unequip = UnEquip_ItBe_Addon_STR_10;
-	description = "Пояс силы";
+	description = "Belt of Strength";
 	text[2] = NAME_Bonus_Str;
 	count[2] = BeltBonus_STR02;
 	text[5] = NAME_Value;
@@ -411,7 +411,7 @@ instance ItBe_Addon_DEX_5(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_DEX_5;
 	on_unequip = UnEquip_ItBe_Addon_DEX_5;
-	description = "Пояс мастерства";
+	description = "Belt of Skill";
 	text[2] = NAME_Bonus_Dex;
 	count[2] = BeltBonus_DEX01;
 	text[5] = NAME_Value;
@@ -443,7 +443,7 @@ instance ItBe_Addon_DEX_10(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_DEX_10;
 	on_unequip = UnEquip_ItBe_Addon_DEX_10;
-	description = "Пояс ловкости";
+	description = "Belt of Dexterity";
 	text[2] = NAME_Bonus_Dex;
 	count[2] = BeltBonus_DEX02;
 	text[5] = NAME_Value;
@@ -475,7 +475,7 @@ instance ItBe_Addon_Prot_EDGE(C_Item)
 	material = MAT_METAL;
 	on_equip = Equip_ItBe_Addon_Prot_EDGE;
 	on_unequip = UnEquip_ItBe_Addon_Prot_EDGE;
-	description = "Пояс брони";
+	description = "Belt of Protection";
 	text[2] = NAME_Prot_Edge;
 	count[2] = BeltBonus_ProtEdge;
 	text[5] = NAME_Value;
@@ -510,7 +510,7 @@ instance ItBe_Addon_Prot_Point(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_Prot_Point;
 	on_unequip = UnEquip_ItBe_Addon_Prot_Point;
-	description = "Пояс обороны";
+	description = "Belt of Defense";
 	text[2] = NAME_Prot_Point;
 	count[2] = BeltBonus_ProtPoint;
 	text[5] = NAME_Value;
@@ -542,7 +542,7 @@ instance ItBe_Addon_Prot_MAGIC(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_Prot_MAGIC;
 	on_unequip = UnEquip_ItBe_Addon_Prot_MAGIC;
-	description = "Пояс магической защиты";
+	description = "Belt of Magic Defense";
 	text[2] = NAME_Prot_Magic;
 	count[2] = BeltBonus_ProtMagic;
 	text[5] = NAME_Value;
@@ -574,7 +574,7 @@ instance ItBe_Addon_Prot_FIRE(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_Prot_FIRE;
 	on_unequip = UnEquip_ItBe_Addon_Prot_FIRE;
-	description = "Пояс огненного человека";
+	description = "Belt of the Firewalker";
 	text[2] = NAME_Prot_Fire;
 	count[2] = BeltBonus_ProtFire;
 	text[5] = NAME_Value;
@@ -607,7 +607,7 @@ instance ItBe_Addon_Prot_EdgPoi(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_Prot_EdgPoi;
 	on_unequip = UnEquip_ItBe_Addon_Prot_EdgPoi;
-	description = "Пояс защиты";
+	description = "Belt of Protection";
 	text[1] = NAME_Prot_Edge;
 	count[1] = BeltBonus_ProtEdgPoi;
 	text[2] = NAME_Prot_Point;
@@ -645,7 +645,7 @@ instance ItBe_Addon_Prot_TOTAL(C_Item)
 	material = MAT_LEATHER;
 	on_equip = Equip_ItBe_Addon_Prot_TOTAL;
 	on_unequip = UnEquip_ItBe_Addon_Prot_TOTAL;
-	description = "Пояс защитника";
+	description = "Protector's Belt";
 	text[1] = NAME_Prot_Edge;
 	count[1] = BeltBonus_ProtTotal;
 	text[2] = NAME_Prot_Point;

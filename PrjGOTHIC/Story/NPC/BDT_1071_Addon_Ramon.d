@@ -1,7 +1,7 @@
 
 instance BDT_1071_Addon_Ramon(Npc_Default)
 {
-	name[0] = "Рамон";
+	name[0] = "Ramon";
 	guild = GIL_BDT;
 	id = 1071;
 	voice = 7;

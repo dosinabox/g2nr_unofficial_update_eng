@@ -1,7 +1,7 @@
 
 instance KDF_507_Talamon(Npc_Default)
 {
-	name[0] = "Таламон";
+	name[0] = "Talamon";
 	guild = GIL_KDF;
 	id = 507;
 	voice = 4;

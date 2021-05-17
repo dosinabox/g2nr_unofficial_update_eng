@@ -1,7 +1,7 @@
 
 instance PIR_1390_Addon_InExtremo_DrPymonte(Npc_Default)
 {
-	name[0] = "Доктор Пимонте";
+	name[0] = "Dr. Pymonte";
 	npcType = npctype_main;
 	guild = GIL_NONE;
 	level = 4;

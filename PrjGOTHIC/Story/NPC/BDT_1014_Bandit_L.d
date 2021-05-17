@@ -1,7 +1,7 @@
 
 instance BDT_1014_Bandit_L(Npc_Default)
 {
-	name[0] = "Браго";
+	name[0] = "Brago";
 	guild = GIL_BDT;
 	id = 1014;
 	voice = 6;

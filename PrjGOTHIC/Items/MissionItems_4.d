@@ -15,8 +15,8 @@ instance ItAm_Mana_Angar_MIS(C_Item)
 	on_unequip = UnEquip_ItAm_Mana_01;
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Амулет магии";
-	text[0] = "Этот амулет принадлежит Ангару.";
+	description = "Amulet of Magic";
+	text[0] = "Belongs to Angar.";
 	text[2] = NAME_Bonus_ManaMax;
 	count[2] = Am_Mana;
 	text[5] = NAME_Value;
@@ -26,7 +26,7 @@ instance ItAm_Mana_Angar_MIS(C_Item)
 
 instance ItMW_1H_FerrosSword_Mis(C_Item)
 {
-	name = "Меч Ферроса";
+	name = "Fero's Sword";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD | ITEM_MISSION;
 	material = MAT_METAL;
@@ -60,7 +60,7 @@ instance ItMi_KerolothsGeldbeutel_MIS(C_Item)
 	on_state[0] = UseKerolothsGeldbeutel;
 	description = name;
 	text[0] = PRINT_Pocket_MIS;
-	text[1] = "с именем 'Керолот'.";
+	text[1] = "Keroloth' satchel.";
 	text[2] = PRINT_Pocket_300;
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -76,20 +76,20 @@ func void UseKerolothsGeldbeutel()
 
 instance ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 {
-	name = "Кошелек Керолота";
+	name = "Keroloth's Leather Satchel";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MISSION;
 	value = 0;
 	visual = "ItMi_Pocket_Empty.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "Этот кошелек пуст.";
+	text[0] = "It's empty.";
 	inv_zbias = 190;
 };
 
 instance ItRw_SengrathsArmbrust_MIS(C_Item)
 {
-	name = "Арбалет Сенграта";
+	name = "Sengrath's Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -111,29 +111,29 @@ instance ItRw_SengrathsArmbrust_MIS(C_Item)
 
 instance ItAt_TalbinsLurkerSkin(C_Item)
 {
-	name = "Кожа луркера";
+	name = "Lurker Skin";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_ReptileSkin;
 	visual = "ItAt_LurkerSkin.3DS";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "На внутренней стороне клеймо - 'Талбин'.";
+	text[0] = "The name Talbin's been branded on the inside.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 instance ItAt_DragonEgg_MIS(C_Item)
 {
-	name = "Драконье яйцо";
+	name = "Dragon Egg";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = Value_Dragonegg;
 	visual = "ItAt_DragonEgg.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "Это яйцо теплое, и изнутри";
-	text[1] = "доносится скребущийся звук.";
+	text[0] = "The egg is warm, and there's";
+	text[1] = "a scratching noise on the inside.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -149,9 +149,9 @@ instance ItRi_OrcEliteRing(C_Item)
 	material = MAT_METAL;
 	on_equip = Equip_OrcEliteRing;
 	on_unequip = UnEquip_OrcEliteRing;
-	description = "Кольцо предводителей орков";
-	text[0] = "Это грубое кольцо кажется";
-	text[1] = "странно холодным.";
+	description = "Ring of the Orcish Warlords";
+	text[0] = "The ring is rough and seems";
+	text[1] = "strangely cold.";
 	text[5] = NAME_Value;
 	count[5] = value;
 	wear = WEAR_EFFECT;
@@ -198,7 +198,7 @@ instance ItPo_DragonEggDrinkNeoras_MIS(C_Item)
 	scemeName = "POTIONFAST";
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_ITEMGLIMMER";
-	description = "Зелье из драконьего яйца";
+	description = "Potion of Dragon Egg Secretion";
 	text[1] = PRINT_UnknownEffect;
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -216,7 +216,7 @@ func void Use_DragonEggDrinkNeoras()
 
 instance ItWr_Map_Orcelite_MIS(C_Item)
 {
-	name = "Военная карта орков";
+	name = "Orcish War Map";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = 350;
@@ -250,7 +250,7 @@ func void Use_Map_NewWorld_Orcelite_MIS()
 	Doc_Show(Document);
 	if((Use_Map_NewWorld_Orcelite_MIS_OneTime == FALSE) && (MIS_KillOrkOberst != FALSE))
 	{
-		B_LogEntry(TOPIC_OrcElite,"Я нашел необычную карту у полковника орков. Похоже на стратегические военные планы.");
+		B_LogEntry(TOPIC_OrcElite,"I found a strange map on the orcish colonel. It looks like the orcs' strategic war map.");
 		Use_Map_NewWorld_Orcelite_MIS_OneTime = TRUE;
 	};
 };
@@ -258,7 +258,7 @@ func void Use_Map_NewWorld_Orcelite_MIS()
 
 instance ItWr_Map_Caves_MIS(C_Item)
 {
-	name = "Пещеры Хориниса";
+	name = "The Caves of Khorinis";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION | ITEM_MULTI;
 	value = 200;

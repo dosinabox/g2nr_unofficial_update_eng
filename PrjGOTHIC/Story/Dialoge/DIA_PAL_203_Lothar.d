@@ -50,8 +50,8 @@ func void DIA_Lothar_FirstEXIT_Info()
 	DIA_Common_IHaveToGo_v1();
 	if((Lothar_Regeln == FALSE) && (Mil_305_schonmalreingelassen == FALSE))
 	{
-		AI_Output(self,other,"DIA_Lothar_FirstEXIT_01_01");	//Подожди! Ты даже не знаешь новых законов города!
-		AI_Output(other,self,"DIA_Lothar_FirstEXIT_15_02");	//Позже.
+		AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_01");	//Wait! You don't know the new laws of the city yet!
+		AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_02");	//Later.
 	}
 	else
 	{
@@ -683,7 +683,7 @@ func void B_Lothar_Blubb()
 	AI_Output (self, other, "DIA_Lothar_Add_01_13");	//You're quite serious about this, aren't you?
 	AI_Output (self, other, "DIA_Lothar_Add_01_01");	//You must obey the rules, just like everybody else!
 	AI_Output (self, other, "DIA_Lothar_Add_01_02");	//Lord Hagen is not available.
-	AI_Output (self, other, "DIA_Lothar_Add_01_03");	//If you have something IMPORTANT to say, go to Lord Andre. He will help you! Он поможет тебе!
+	AI_Output (self, other, "DIA_Lothar_Add_01_03");	//If you have something IMPORTANT to say, go to Lord Andre. He will help you!
 };
 */
 
@@ -734,7 +734,7 @@ func void DIA_Lothar_HelloAgain_Info()
 {
 	if(self.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output(self,other,"DIA_Lothar_HelloAgain_01_00");	//Ах! Опять ты!
+		AI_Output(self,other,"DIA_Lothar_HelloAgain_01_00");	//Ah! You again!
 		if((Player_IsApprentice > APP_NONE) && ((other.guild == GIL_NONE) || (other.guild == GIL_NOV)))
 		{
 			AI_Output(other,self,"DIA_Lothar_Add_15_08");	//I am now an apprentice with one of the masters!
@@ -802,7 +802,7 @@ func void DIA_Lothar_HelloAgain_Info()
 	};
 	if(!Npc_KnowsInfo(other,DIA_Lothar_Hallo))
 	{
-		AI_Output(self,other,"DIA_Lothar_Hallo_01_07");	//Я Лотар. Паладин короля и преданный слуга Инноса.
+		AI_Output(self,other,"DIA_Lothar_Hallo_01_07");	//I am Lothar. Paladin of the King and humble servant of Innos, your Lord.
 	};
 	AI_Output(self,other,"DIA_Lothar_HelloAgain_01_02");	//There are some things you must heed here, otherwise you will wind up outside as fast as you got in here.
 	AI_Output(self,other,"DIA_Lothar_HelloAgain_01_03");	//You are only allowed to enter the merchants' buildings. You can recognize them by the signs over the door - just so there are no misunderstandings.

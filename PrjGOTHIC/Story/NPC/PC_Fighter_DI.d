@@ -1,7 +1,7 @@
 
 instance PC_Fighter_DI(Npc_Default)
 {
-	name[0] = "Горн";
+	name[0] = "Gorn";
 	guild = GIL_DJG;
 	id = 23;
 	voice = 12;

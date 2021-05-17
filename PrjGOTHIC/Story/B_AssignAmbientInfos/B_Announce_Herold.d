@@ -7,71 +7,71 @@ func void B_Announce_Herold()
 		AI_Standup(self);
 		B_TurnToNpc(self,hero);
 	};
-	AI_RemoveWeapon(self);
-	CreateInvItem(self,Fakescroll);
-	AI_UseItemToState(self,Fakescroll,1);
-	AI_Output(self,self,"DIA_Herold_Announce_04_00");	//Слушайте, жители Хориниса! По прямому указанию достопочтимого лорда Хагена, сегодня вступает в силу следующий декрет.
-	if(Kapitel <= 2)
+	AI_RemoveWeapon (self);
+	CreateInvItem (self, Fakescroll);
+	AI_UseItemToState (self, Fakescroll, 1);
+	AI_Output (self, self, "DIA_Herold_Announce_04_00");	//Hear ye, inhabitants of Khorinis! By the explicit order of the honorable Lord Hagen, the following decree is hereby enacted.
+	if (Kapitel <= 2)
 	{
 		randy = Hlp_Random(5);
 		if(randy == 0)
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_01");	//Учитывая общую ситуацию, леса и пустоши около города следует избегать ради вашей собственной же безопасности.
-			AI_Output(self,self,"DIA_Herold_Announce_04_02");	//Кроме того, любые контакты с восставшими крестьянами в прилежащих землях строжайше запрещены.
+			AI_Output (self, self, "DIA_Herold_Announce_04_01");	//Due to the general situation, the forests and wilderness near the city are to be avoided for your own protection.
+			AI_Output (self, self, "DIA_Herold_Announce_04_02");	//Furthermore, any contact with the rebelling peasantry in the surrounding areas is strictly forbidden.
 		}
 		else if(randy == 1)
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_03");	//С этого момента лорд Андрэ назначается главнокомандующим нашим ополчением.
-			AI_Output(self,self,"DIA_Herold_Announce_04_04");	//Все граждане этого города, имеющие военные навыки, обязаны вступить в королевское ополчение.
+			AI_Output (self, self, "DIA_Herold_Announce_04_03");	//From this moment onward, Lord Andre will take the supreme command of our militia.
+			AI_Output (self, self, "DIA_Herold_Announce_04_04");	//All citizens of this city who have martial skills at their disposal are herewith urged to join the royal militia.
 		}
 		else if(randy == 2)
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_05");	//Меры безопасности по защите верхнего квартала будут еще усилены.
-			AI_Output(self,self,"DIA_Herold_Announce_04_06");	//Охране у ворот приказано применять закон самым строжайшим образом, чтобы предотвратить несанкционированный доступ к кварталу.
+			AI_Output (self, self, "DIA_Herold_Announce_04_05");	//The security measures for the protection of the upper quarter will be further strengthened.
+			AI_Output (self, self, "DIA_Herold_Announce_04_06");	//The guards on the gates are ordered to interpret the law in the strictest sense in order to prevent unauthorized entry.
 		}
 		else if(randy == 3)
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_07");	//Во всех городах и провинциях королевства объявляется военное положение.
-			AI_Output(self,self,"DIA_Herold_Announce_04_08");	//Все гражданские судьи должны сложить свои обязанности и передать их королевским паладинам.
-			AI_Output(self,self,"DIA_Herold_Announce_04_09");	//Высокочтимому лорду Андрэ приказано карать любое преступление или акт сопротивления королевской страже самым жестоким образом.
-			AI_Output(self,self,"DIA_Herold_Announce_04_10");	//Все жители Хориниса, виновные в преступлении, должны немедленно прибыть к лорду Андрэ.
+			AI_Output (self, self, "DIA_Herold_Announce_04_07");	//Martial law is immediately declared in all cities and regions of the realm.
+			AI_Output (self, self, "DIA_Herold_Announce_04_08");	//All civilian judges are to hand over their duties to the royal paladins, effective immediately.
+			AI_Output (self, self, "DIA_Herold_Announce_04_09");	//The honorable Lord Andre is commanded to punish every crime or act of resistance against the king's guards most severely.
+			AI_Output (self, self, "DIA_Herold_Announce_04_10");	//Every inhabitant of Khorinis who is guilty of a crime is to report immediately to Lord Andre.
 		}
 		else
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_11");	//Учитывая опасность нападения на город орков, все жители города должны соответствующим образом подготовиться.
-			AI_Output(self,self,"DIA_Herold_Announce_04_12");	//Все должны немедленно приступить к обучению боевым навыкам и должным образом вооружиться.
+			AI_Output (self, self, "DIA_Herold_Announce_04_11");	//By reason of the imminent danger of an attack by orcs, each inhabitant of the city is to prepare himself accordingly.
+			AI_Output (self, self, "DIA_Herold_Announce_04_12");	//Everyone is to begin training in the skills of combat immediately, and to arm himself appropriately.
 		};
 	}
 	else if(Kapitel == 3)
 	{
 		if(MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_13");	//Кузнец-наемник Беннет, вероломно убивший паладина Лотара, объявляется проклятым от имени Инноса.
-			AI_Output(self,self,"DIA_Herold_Announce_04_14");	//Он приговорен к смерти через повешение. Приговор будет приведен в исполнение в ближайшие дни.
+			AI_Output (self, self, "DIA_Herold_Announce_04_13");	//The mercenary smith Bennet, who treacherously murdered the paladin Lothar, has been condemned in the name of Innos.
+			AI_Output (self, self, "DIA_Herold_Announce_04_14");	//The sentence is death by hanging. The execution will take place in a few days.
 		}
 		else
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_15");	//С кузнеца Беннета были сняты все обвинения вследствие его невиновности, которая была доказана советником лорда Хагена.
+			AI_Output (self, self, "DIA_Herold_Announce_04_15");	//The smith Bennet has been declared free of guilt because his innocence was proven by a clever adviser of Lord Hagen.
 		};
 	}
 	else if(Kapitel == 4)
 	{
-		AI_Output(self,self,"DIA_Herold_Announce_04_16");	//Слухи о появлении драконов в Долине Рудников Хориниса являются ложными.
-		AI_Output(self,self,"DIA_Herold_Announce_04_17");	//Эти слухи распространяются врагом с целью посеять страх и ужас в душах мужественных жителей Миртаны.
-		AI_Output(self,self,"DIA_Herold_Announce_04_18");	//Чтобы развеять эти нелепые слухи, в Долину Рудников был отправлен отряд бравых паладинов под командованием человека, хорошо знакомого с этой местностью.
+		AI_Output (self, self, "DIA_Herold_Announce_04_16");	//The rumors which have arisen concerning the appearance of dragons in the Valley of Mines of Khorinis are not to be believed.
+		AI_Output (self, self, "DIA_Herold_Announce_04_17");	//The rumors are spread by the enemy in order to promote fear and terror among the brave people of Myrtana.
+		AI_Output (self, self, "DIA_Herold_Announce_04_18");	//In order to refute the ridiculous assertions, a troop of brave paladins under the command of one familiar with the place has set out for the Valley of Mines.
 	}
 	else
 	{
 		randy = Hlp_Random(2);
 		if(randy == 0)
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_19");	//Драконы, угрожавшие спокойствию нашей земли, были уничтожены мужественным воином под командованием лорда Хагена.
-			AI_Output(self,self,"DIA_Herold_Announce_04_20");	//Скоро король Робар освободит наши земли от орков, и королевство опять станет цветущим и преуспевающим.
+			AI_Output (self, self, "DIA_Herold_Announce_04_19");	//The dragons which threatened the land have been defeated by brave men under the command of Lord Hagen.
+			AI_Output (self, self, "DIA_Herold_Announce_04_20");	//Soon, King Rhobar will have freed the land of orcs and the kingdom will blossom with a new splendor.
 		}
 		else
 		{
-			AI_Output(self,self,"DIA_Herold_Announce_04_21");	//Лорд Андрэ назначается верховным командующим города Хориниса. Он вступает в эту должность немедленно.
-			AI_Output(self,self,"DIA_Herold_Announce_04_22");	//Лорд Хаген объявил, что лично направляется в Долину Рудников, чтобы обеспечить загрузку корабля магической рудой.
+			AI_Output (self, self, "DIA_Herold_Announce_04_21");	//Lord Andre will take supreme command of the city of Khorinis, effective immediately.
+			AI_Output (self, self, "DIA_Herold_Announce_04_22");	//Lord Hagen has announced that he will personally go to the Valley of Mines in order to ensure that his ship can be laden with magic ore.
 		};
 	};
 	AI_UseItemToState(self,Fakescroll,-1);

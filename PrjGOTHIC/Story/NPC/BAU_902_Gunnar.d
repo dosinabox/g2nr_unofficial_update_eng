@@ -1,7 +1,7 @@
 
 instance BAU_902_Gunnar(Npc_Default)
 {
-	name[0] = "Гуннар";
+	name[0] = "Gunnar";
 	guild = GIL_BAU;
 	id = 902;
 	voice = 10;

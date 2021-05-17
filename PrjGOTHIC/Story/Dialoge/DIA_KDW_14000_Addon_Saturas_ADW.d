@@ -927,35 +927,35 @@ func void DIA_Addon_Saturas_RelictsBack_Info()
 		{
 			Npc_RemoveInvItems(self,ItMi_Addon_Stone_01,1);
 			CreateInvItems(hero,ItMi_Addon_Stone_01,1);
-			AI_PrintScreen("Red Stone Tablet received",-1,info_ypos,FONT_ScreenSmall,3);
+			AI_PrintScreen("Received: Red Stone Tablet",-1,info_ypos,FONT_ScreenSmall,3);
 			info_ypos += 3;
 		};
 		if(Npc_HasItems(self,ItMi_Addon_Stone_02) && (Saturas_SCFound_ItMi_Addon_Stone_02 == TRUE))
 		{
 			Npc_RemoveInvItems(self,ItMi_Addon_Stone_02,1);
 			CreateInvItems(hero,ItMi_Addon_Stone_02,1);
-			AI_PrintScreen("Purple Stone Tablet received",-1,info_ypos,FONT_ScreenSmall,3);
+			AI_PrintScreen("Received: Purple Stone Tablet",-1,info_ypos,FONT_ScreenSmall,3);
 			info_ypos += 3;
 		};
 		if(Npc_HasItems(self,ItMi_Addon_Stone_03) && (Saturas_SCFound_ItMi_Addon_Stone_03 == TRUE))
 		{
 			Npc_RemoveInvItems(self,ItMi_Addon_Stone_03,1);
 			CreateInvItems(hero,ItMi_Addon_Stone_03,1);
-			AI_PrintScreen("Blue Stone Tablet received",-1,info_ypos,FONT_ScreenSmall,3);
+			AI_PrintScreen("Received: Blue Stone Tablet",-1,info_ypos,FONT_ScreenSmall,3);
 			info_ypos += 3;
 		};
 		if(Npc_HasItems(self,ItMi_Addon_Stone_04) && (Saturas_SCFound_ItMi_Addon_Stone_04 == TRUE))
 		{
 			Npc_RemoveInvItems(self,ItMi_Addon_Stone_04,1);
 			CreateInvItems(hero,ItMi_Addon_Stone_04,1);
-			AI_PrintScreen("Green Stone Tablet received",-1,info_ypos,FONT_ScreenSmall,3);
+			AI_PrintScreen("Received: Green Stone Tablet",-1,info_ypos,FONT_ScreenSmall,3);
 			info_ypos += 3;
 		};
 		if(Npc_HasItems(self,ItMi_Addon_Stone_05) && (Saturas_SCFound_ItMi_Addon_Stone_05 == TRUE))
 		{
 			Npc_RemoveInvItems(self,ItMi_Addon_Stone_05,1);
 			CreateInvItems(hero,ItMi_Addon_Stone_05,1);
-			AI_PrintScreen("Yellow Stone Tablet received",-1,info_ypos,FONT_ScreenSmall,3);
+			AI_PrintScreen("Received: Yellow Stone Tablet",-1,info_ypos,FONT_ScreenSmall,3);
 		};
 	};
 	AI_Output (self, other, "DIA_Addon_Saturas_RelictsBack_14_07");	//May Adanos be merciful and protect us all.

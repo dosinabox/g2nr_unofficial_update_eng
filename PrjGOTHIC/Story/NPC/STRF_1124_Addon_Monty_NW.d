@@ -1,7 +1,7 @@
 
 instance STRF_1124_Addon_Monty_NW(Npc_Default)
 {
-	name[0] = "Монти";
+	name[0] = "Monty";
 	guild = GIL_VLK;
 	id = 1124;
 	voice = 8;

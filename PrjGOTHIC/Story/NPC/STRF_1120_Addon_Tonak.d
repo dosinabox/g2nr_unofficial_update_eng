@@ -1,7 +1,7 @@
 
 instance STRF_1120_Addon_Tonak(Npc_Default)
 {
-	name[0] = "Тонак";
+	name[0] = "Tonak";
 	guild = GIL_STRF;
 	id = 1120;
 	voice = 3;

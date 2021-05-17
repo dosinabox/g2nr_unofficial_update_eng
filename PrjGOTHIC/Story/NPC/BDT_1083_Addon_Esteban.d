@@ -1,7 +1,7 @@
 
 instance BDT_1083_Addon_Esteban(Npc_Default)
 {
-	name[0] = "Ёстебан";
+	name[0] = "Esteban";
 	guild = GIL_BDT;
 	id = 1083;
 	voice = 7;

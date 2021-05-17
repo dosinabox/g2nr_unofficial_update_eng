@@ -26,7 +26,7 @@ instance DIA_MIL_6_JOIN(C_Info)
 	condition = DIA_MIL_6_JOIN_Condition;
 	information = DIA_MIL_6_JOIN_Info;
 	permanent = TRUE;
-	description = "Что мне нужно сделать, чтобы вступить в ополчение?";
+	description = "What do I have to do to join the militia?";
 };
 
 
@@ -40,12 +40,12 @@ func int DIA_MIL_6_JOIN_Condition()
 
 func void DIA_MIL_6_JOIN_Info()
 {
-	AI_Output(other,self,"DIA_MIL_6_JOIN_15_00");	//Что мне нужно сделать, чтобы вступить в ополчение?
-	AI_Output(self,other,"DIA_MIL_6_JOIN_06_01");	//Иди к лорду Андрэ и поговори с ним. С тех пор, как паладины пришли в город, он командует всем ополчением.
+	AI_Output (other, self, "DIA_MIL_6_JOIN_15_00");	//What do I have to do to join the militia?
+	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01");	//Go to Lord Andre and talk to him. Since the paladins have come to town, he's had the command over the entire militia.
 	if((C_NpcIsInQuarter(self) != Q_KASERNE) && (Andre.aivar[AIV_TalkedToPlayer] == FALSE))
 	{
-		AI_Output(other,self,"DIA_Lothar_Add_15_66");	//Где мне найти командира ополчения?
-		AI_Output(self,other,"DIA_MIL_6_JOIN_06_02");	//Ты найдешь его в казармах. Он практически всегда там.
+		AI_Output(other,self,"DIA_Lothar_Add_15_66");	//Where do I find the commander of the militia?
+		AI_Output(self,other,"DIA_MIL_6_JOIN_06_02");	//You can find him in the barracks. He's practically always there.
 	};
 };
 
@@ -56,7 +56,7 @@ instance DIA_Addon_MIL_6_MissingPeople(C_Info)
 	condition = DIA_Addon_MIL_6_MissingPeople_Condition;
 	information = DIA_Addon_MIL_6_MissingPeople_Info;
 	permanent = TRUE;
-	description = "Я слышал, что исчезли несколько горожан.";
+	description = "I heard some citizens have disappeared.";
 };
 
 
@@ -70,10 +70,10 @@ func int DIA_Addon_MIL_6_MissingPeople_Condition()
 
 func void DIA_Addon_MIL_6_MissingPeople_Info()
 {
-	AI_Output(other,self,"DIA_Addon_MIL_6_MissingPeople_15_00");	//Я слышал, что исчезли несколько горожан.
-	AI_Output(self,other,"DIA_Addon_MIL_6_MissingPeople_06_01");	//И я недавно слышал слухи об исчезновении людей.
-	AI_Output(self,other,"DIA_Addon_MIL_6_MissingPeople_06_02");	//Не могу даже представить, чем это можно объяснить.
-	AI_Output(self,other,"DIA_Addon_MIL_6_MissingPeople_06_03");	//И мы не можем сделать ничего, кроме того, чтобы смотреть в оба и исполнять свой долг стражников.
+	AI_Output (other, self, "DIA_Addon_MIL_6_MissingPeople_15_00");	//I heard some citizens have disappeared.
+	AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_01");	//I've actually heard quite a few rumors of missing people lately.
+	AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_02");	//I can't for the life of me explain it.
+	AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_03");	//But we can't do more than keep our eyes open and do our sentry duty.
 };
 
 
@@ -83,7 +83,7 @@ instance DIA_MIL_6_PEOPLE(C_Info)
 	condition = DIA_MIL_6_PEOPLE_Condition;
 	information = DIA_MIL_6_PEOPLE_Info;
 	permanent = TRUE;
-	description = "Расскажи мне об этих паладинах.";
+	description = "Tell me about these paladins.";
 };
 
 
@@ -97,10 +97,10 @@ func int DIA_MIL_6_PEOPLE_Condition()
 
 func void DIA_MIL_6_PEOPLE_Info()
 {
-	AI_Output(other,self,"DIA_MIL_6_PEOPLE_15_00");	//Расскажи мне об этих паладинах.
-	AI_Output(self,other,"DIA_MIL_6_PEOPLE_06_01");	//С тех пор, как паладины прибыли в Хоринис, они остановились в верхнем квартале города.
-	AI_Output(self,other,"DIA_MIL_6_PEOPLE_06_02");	//Они никого туда больше не пускают. За исключением граждан города и ополчения, конечно же.
-	AI_Output(self,other,"DIA_MIL_6_PEOPLE_06_03");	//Также несколько паладинов охраняет их корабль в гавани. Но они не особенно склонны к разговорам.
+	AI_Output (other, self, "DIA_MIL_6_PEOPLE_15_00");	//Tell me about these paladins.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01");	//Since the paladins have arrived in Khorinis, they have retreated to the upper end of town.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02");	//They're not letting anyone in there any more. Except for the citizens of the town and the militia, of course.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03");	//There are also some paladins who guard the ship down at the harbor. But those are far from talkative.
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_MIL_6_LOCATION(C_Info)
 	condition = DIA_MIL_6_LOCATION_Condition;
 	information = DIA_MIL_6_LOCATION_Info;
 	permanent = TRUE;
-	description = "Что мне нужно знать об этом городе?";
+	description = "What is there to know about this town?";
 };
 
 
@@ -121,11 +121,11 @@ func int DIA_MIL_6_LOCATION_Condition()
 
 func void DIA_MIL_6_LOCATION_Info()
 {
-	AI_Output(other,self,"DIA_MIL_6_LOCATION_15_00");	//Что мне нужно знать об этом городе?
-	AI_Output(self,other,"DIA_MIL_6_LOCATION_06_01");	//Паладины контролируют весь город. Ополчение полностью подчиняется им.
-	AI_Output(self,other,"DIA_MIL_6_LOCATION_06_02");	//Лорд Андрэ командует ополчением, и в то же время он выступает в роли судьи.
-	AI_Output(self,other,"DIA_MIL_6_LOCATION_06_03");	//Если тебе случится нарушить закон, тебе придется предстать перед ним.
-	AI_Output(self,other,"DIA_MIL_6_LOCATION_06_04");	//Но он довольно снисходительный судья, насколько я знаю. Обычно провинившиеся отделываются лишь штрафом.
+	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00");	//What is there to know about this town?
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01");	//The paladins now have control over the whole city. The entire militia reports to them.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02");	//Lord Andre is commander of the militia - at the same time, he acts as the judge.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03");	//If you should ever run afoul of the law, you'll have to justify yourself to him.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04");	//But he is pretty lenient for all one hears. He usually lets people get away with a fine.
 };
 
 
@@ -135,7 +135,7 @@ instance DIA_MIL_6_STANDARD(C_Info)
 	condition = DIA_MIL_6_STANDARD_Condition;
 	information = DIA_MIL_6_STANDARD_Info;
 	permanent = TRUE;
-	description = "Что новенького?";
+	description = "What's new?";
 };
 
 
@@ -146,32 +146,32 @@ func int DIA_MIL_6_STANDARD_Condition()
 
 func void DIA_MIL_6_STANDARD_Info()
 {
-	AI_Output(other,self,"DIA_MIL_6_STANDARD_15_00");	//Что новенького?
-	if(Kapitel == 1)
+	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00");	//What's new?
+	if (Kapitel == 1)
 	{
-		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_01");	//В последнее время город просто наводнен всяким сбродом.
+		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_01");	//More and more riffraff have been pouring into town lately.
 		if((Andre_FoundThieves_KilledByMilitia == FALSE) && (MIS_Andre_GuildOfThieves != LOG_SUCCESS))
 		{
-			AI_Output(self,other,"DIA_MIL_6_STANDARD_06_02");	//Воровство стало просто невыносимым. Лорд Андрэ подозревает, что это дело рук банды.
-			AI_Output(self,other,"DIA_MIL_6_STANDARD_06_03");	//Не так давно мы перевернули вверх дном весь портовый квартал, но ничего не нашли.
+			AI_Output (self, other, "DIA_MIL_6_STANDARD_06_02");	//Thefts are on the rise, and Lord Andre suspects that it's the work of a gang.
+			AI_Output (self, other, "DIA_MIL_6_STANDARD_06_03");	//Not long ago, we turned the entire harbor district upside down, but we still haven't found a thing.
 		};
 	};
 	if(Kapitel == 2)
 	{
-		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_04");	//Похоже, мы взяли проблему с бандитами под контроль. Набеги случаются все реже и реже.
+		AI_Output (self, other, "DIA_MIL_6_STANDARD_06_04");	//It looks like we now have the bandit problem more or less under control. The raids have all but died off lately.
 	};
 	if(Kapitel == 3)
 	{
-		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_05");	//Ситуация в городе становится все хуже и хуже. И все из-за этого сброда, наводнившего город. Прошлой ночью я следил в верхнем квартале за человеком в черной рясе.
-		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_06");	//Я уверен, что он задумал что-то худое. Но когда я приблизился к нему у дома губернатора, он просто исчез. Очень подозрительная личность...
+		AI_Output (self, other, "DIA_MIL_6_STANDARD_06_05");	//It's getting worse and worse, what with all that riffraff coming to town. Last night I trailed a man in a black robe through the upper end of town.
+		AI_Output (self, other, "DIA_MIL_6_STANDARD_06_06");	//I'm sure he was up to no good. But when I followed him around the governor's house, he had simply disappeared. A strange character, that was ...
 	};
 	if(Kapitel == 4)
 	{
-		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_07");	//Говорят, что лорд Хаген нанял наемников, чтобы те сражались против драконов. Мне-то все равно, хотя я сам был бы не прочь сразиться с драконом.
+		AI_Output (self, other, "DIA_MIL_6_STANDARD_06_07");	//They say that Lord Hagen has hired mercenaries to fight against the dragons. I'm fine with that, I wouldn't want to fight a dragon myself.
 	};
 	if(Kapitel >= 5)
 	{
-		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_08");	//Говорят, что все драконы уничтожены! Лорд Хаген собирает свои войска, чтобы изгнать оставшихся тварей из Долины Рудников.
+		AI_Output (self, other, "DIA_MIL_6_STANDARD_06_08");	//They say the dragons have been vanquished! Lord Hagen is collecting his forces to drive the remaining creatures from the Valley of Mines as well.
 	};
 };
 

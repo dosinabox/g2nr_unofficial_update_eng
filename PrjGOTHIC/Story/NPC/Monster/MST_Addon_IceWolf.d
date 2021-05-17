@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Icewolf(C_Npc)
 {
-	name[0] = "Ледяной волк";
+	name[0] = "Ice Wolf";
 	guild = GIL_WOLF;
 	aivar[AIV_MM_REAL_ID] = ID_Icewolf;
 	level = 15;

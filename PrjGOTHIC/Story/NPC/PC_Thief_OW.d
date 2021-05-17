@@ -1,7 +1,7 @@
 
 instance PC_ThiefOW(Npc_Default)
 {
-	name[0] = "Диего";
+	name[0] = "Diego";
 	guild = GIL_NONE;
 	id = 1;
 	voice = 11;

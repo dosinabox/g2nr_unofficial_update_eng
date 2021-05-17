@@ -1,7 +1,7 @@
 
 instance STRF_1106_Fed(Npc_Default)
 {
-	name[0] = "‘ед";
+	name[0] = "Fed";
 	guild = GIL_STRF;
 	id = 1106;
 	voice = 8;

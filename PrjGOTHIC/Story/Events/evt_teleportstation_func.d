@@ -14,7 +14,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsNW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsNW,"“елепорт в пещере к востоку от города ведет к таверне 'ћертва€ гарпи€'.");
+				B_LogEntry(TOPIC_Addon_TeleportsNW,"The teleporter stone in the cave east of the seaport leads to the 'Dead Harpy' tavern.");
 				SCUsed_NW_TELEPORTSTATION_CITY = TRUE;
 			};
 		}
@@ -25,7 +25,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsNW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsNW,"“елепорт у таверны 'ћертва€ гарпи€' ведет к порталу таинственных зодчих.");
+				B_LogEntry(TOPIC_Addon_TeleportsNW,"The teleporter stone near the 'Dead Harpy' tavern leads to the portal of the mysterious builders.");
 				SCUsed_NW_TELEPORTSTATION_TAVERNE = TRUE;
 			};
 		}
@@ -36,7 +36,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsNW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsNW,"“елепорт у портала таинственных зодчих ведет к пещере к востоку от города.");
+				B_LogEntry(TOPIC_Addon_TeleportsNW,"The teleporter stone near the portal of the mysterious builders leads to the cave east of the seaport.");
 				SCUsed_NW_TELEPORTSTATION_MAYA = TRUE;
 			};
 		}
@@ -59,7 +59,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsADW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsADW,"я активировал телепорт, который находитс€ р€дом с порталом, ведущим в ’оринис.");
+				B_LogEntry(TOPIC_Addon_TeleportsADW,"I activated a teleporter stone near the portal which leads to Khorinis.");
 				B_GivePlayerXP(XP_Ambient);
 				SCUsed_ADW_TELEPORTSTATION_PORTALTEMPEL = TRUE;
 			};
@@ -71,7 +71,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsADW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsADW,"ћне удалось активировать телепорт, наход€щийс€ в верхней части лагер€ бандитов.");
+				B_LogEntry(TOPIC_Addon_TeleportsADW,""I managed to activate a teleporter stone in the upper part of the bandit camp.");
 				B_GivePlayerXP(XP_Ambient);
 				SCUsed_ADW_TELEPORTSTATION_ADANOSTEMPEL = TRUE;
 			};
@@ -83,7 +83,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsADW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsADW,"я активировал телепорт, который находитс€ на болоте, к югу от лагер€ бандитов.");
+				B_LogEntry(TOPIC_Addon_TeleportsADW,"I activated a teleporter stone in the swamp south of the bandit camp.");
 				B_GivePlayerXP(XP_Ambient);
 				SCUsed_ADW_TELEPORTSTATION_SOUTHEAST = TRUE;
 			};
@@ -95,7 +95,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsADW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsADW,"я нашел телепорт на юго-западе.");
+				B_LogEntry(TOPIC_Addon_TeleportsADW,"I found a teleporter stone in the southwest.");
 				B_GivePlayerXP(XP_Ambient);
 				SCUsed_ADW_TELEPORTSTATION_SOUTHWEST = TRUE;
 			};
@@ -107,7 +107,7 @@ func void evt_teleportstation_func()
 			{
 				Log_CreateTopic(TOPIC_Addon_TeleportsADW,LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW,LOG_Running);
-				B_LogEntry(TOPIC_Addon_TeleportsADW,"¬ небольшой пещере в каньоне есть телепорт. я активировал его.");
+				B_LogEntry(TOPIC_Addon_TeleportsADW,"There's a teleporter stone in a cave in the canyon. I activated it.");
 				SCUsed_ADW_TELEPORTSTATION_PIRATES = TRUE;
 				B_GivePlayerXP(XP_Ambient);
 			};

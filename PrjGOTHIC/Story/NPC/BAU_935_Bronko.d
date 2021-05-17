@@ -1,7 +1,7 @@
 
 instance BAU_935_Bronko(Npc_Default)
 {
-	name[0] = "Бронко";
+	name[0] = "Bronko";
 	guild = GIL_NONE;
 	id = 935;
 	voice = 6;

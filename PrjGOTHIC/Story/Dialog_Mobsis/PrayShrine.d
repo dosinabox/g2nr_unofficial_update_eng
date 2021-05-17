@@ -103,7 +103,7 @@ func string B_BuildBlessString(var int gold)
 	var string concatText;
 	concatText = ConcatStrings(NAME_ADDON_PRAYIDOL_GIVE,IntToString(gold));
 	concatText = ConcatStrings(concatText,PRINT_Gold);
-	concatText = ConcatStrings(concatText," монет.");
+	concatText = ConcatStrings(concatText," gold.");
 	return concatText;
 };
 
@@ -183,7 +183,7 @@ instance PC_PrayShrine_HEALSHRINE(C_Info)
 	condition = PC_PrayShrine_HEALSHRINE_Condition;
 	information = PC_PrayShrine_HEALSHRINE_Info;
 	permanent = TRUE;
-	description = "Очистить алтарь";
+	description = "Purify shrine";
 };
 
 
@@ -270,7 +270,7 @@ instance PC_PrayShrine_Paladine(C_Info)
 	condition = PC_PrayShrine_Paladine_Condition;
 	information = PC_PrayShrine_Paladine_Info;
 	permanent = FALSE;
-	description = "Помолиться за паладинов";
+	description = "Say a prayer for the paladins.";
 };
 
 

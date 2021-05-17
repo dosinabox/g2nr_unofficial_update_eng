@@ -54,12 +54,12 @@ func void DIA_Bartok_PICKPOCKET_DoIt()
 		B_GiveInvItems(self,other,ItRw_Arrow,40);
 		self.aivar[AIV_PlayerHasPickedMyPocket] = TRUE;
 		B_GiveThiefXP();
-		B_LogEntry(Topic_PickPocket,ConcatStrings("Барток",PRINT_PickPocketSuccess));
+		B_LogEntry(Topic_PickPocket,ConcatStrings("Bartok",PRINT_PickPocketSuccess));
 	}
 	else
 	{
 		B_ResetThiefLevel();
-		B_LogEntry(Topic_PickPocket,ConcatStrings("Барток",PRINT_PickPocketFailed));
+		B_LogEntry(Topic_PickPocket,ConcatStrings("Bartok",PRINT_PickPocketFailed));
 		AI_StopProcessInfos(self);
 		B_Attack(self,other,AR_Theft,1);
 	};
@@ -367,7 +367,7 @@ instance DIA_Bartok_Zusammen(C_Info)
 	condition = DIA_Bartok_Zusammen_Condition;
 	information = DIA_Bartok_Zusammen_Info;
 	permanent = TRUE;
-	description = "Почему бы нам не поохотиться вместе?";
+	description = "Why don't we go hunting together?";
 };
 
 

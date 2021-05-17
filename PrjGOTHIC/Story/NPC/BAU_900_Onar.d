@@ -1,7 +1,7 @@
 
 instance BAU_900_Onar(Npc_Default)
 {
-	name[0] = "Онар";
+	name[0] = "Onar";
 	guild = GIL_BAU;
 	id = 900;
 	voice = 14;

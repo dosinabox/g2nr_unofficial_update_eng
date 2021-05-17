@@ -153,7 +153,7 @@ instance PC_Goldhacken_Addon_Hour(C_Info)
 	condition = PC_Goldhacken_Addon_Hour_Condition;
 	information = PC_Goldhacken_Addon_Hour_Info;
 	permanent = TRUE;
-	description = "(ударить несильно)";
+	description = "(just chop a little)";
 };
 
 
@@ -208,14 +208,14 @@ func void PC_Goldhacken_Addon_Hour_Info()
 			{
 				CreateInvItems(hero,ItMi_GoldNugget_Addon,3);
 				Snd_Play("Geldbeutel");
-				PrintScreen("Добыто 3 золотых самородка!",-1,-1,FONT_ScreenSmall,1);
+				PrintScreen("3 gold nuggets mined!",-1,-1,FONT_ScreenSmall,1);
 				Truemmer_Count = 0;
 			}
 			else if((GoldCounter >= 7) && (MultiNugget >= 5))
 			{
 				CreateInvItems(hero,ItMi_GoldNugget_Addon,2);
 				Snd_Play("Geldbeutel");
-				PrintScreen("Добыто 2 золотых самородка!",-1,-1,FONT_ScreenSmall,1);
+				PrintScreen("2 gold nuggets mined!",-1,-1,FONT_ScreenSmall,1);
 				Truemmer_Count = 0;
 				GoldCounter += 1;
 			}
@@ -223,14 +223,14 @@ func void PC_Goldhacken_Addon_Hour_Info()
 			{
 				CreateInvItems(hero,ItMi_GoldNugget_Addon,1);
 				Snd_Play("Geldbeutel");
-				PrintScreen("Добыт 1 золотой самородок!",-1,-1,FONT_ScreenSmall,1);
+				PrintScreen("1 gold nugget mined!",-1,-1,FONT_ScreenSmall,1);
 				Truemmer_Count = 0;
 				GoldCounter += 1;
 			};
 		}
 		else
 		{
-			PrintScreen("Золотые осколки разлетаются во все стороны...",-1,53,FONT_ScreenSmall,1);
+			PrintScreen("Gold splinters fly everywhere...",-1,53,FONT_ScreenSmall,1);
 			Truemmer_Count += 1;
 		};
 	}
@@ -249,7 +249,7 @@ instance PC_Goldhacken_Addon_TSchlag(C_Info)
 	condition = PC_Goldhacken_Addon_TSchlag_Condition;
 	information = PC_Goldhacken_Addon_TSchlag_Info;
 	permanent = TRUE;
-	description = "(ударить изо всех сил)";
+	description = "(give it a really good whack)";
 };
 
 
@@ -267,7 +267,7 @@ func void PC_Goldhacken_Addon_TSchlag_Info()
 	TruemmerChance = Hlp_Random(100);
 	if(TruemmerChance < 5)
 	{
-		PrintScreen("Ничего...",-1,53,FONT_ScreenSmall,1);
+		PrintScreen("Nothing...",-1,53,FONT_ScreenSmall,1);
 	}
 	else
 	{
@@ -277,19 +277,19 @@ func void PC_Goldhacken_Addon_TSchlag_Info()
 		{
 			CreateInvItems(hero,ItMi_GoldNugget_Addon,3);
 			Snd_Play("Geldbeutel");
-			PrintScreen("Добыто 3 золотых самородка!",-1,-1,FONT_ScreenSmall,1);
+			PrintScreen("3 gold nuggets mined!",-1,-1,FONT_ScreenSmall,1);
 		}
 		else if(TruemmerChance >= 50)
 		{
 			CreateInvItems(hero,ItMi_GoldNugget_Addon,2);
 			Snd_Play("Geldbeutel");
-			PrintScreen("Добыто 2 золотых самородка!",-1,-1,FONT_ScreenSmall,1);
+			PrintScreen("2 gold nuggets mined!",-1,-1,FONT_ScreenSmall,1);
 		}
 		else
 		{
 			CreateInvItems(hero,ItMi_GoldNugget_Addon,1);
 			Snd_Play("Geldbeutel");
-			PrintScreen("Добыт 1 золотой самородок!",-1,-1,FONT_ScreenSmall,1);
+			PrintScreen("1 gold nuggets mined!",-1,-1,FONT_ScreenSmall,1);
 		};
 	};
 	Truemmer_Count = 0;
@@ -303,7 +303,7 @@ instance PC_Goldhacken_Addon_Chance(C_Info)
 	condition = PC_Goldhacken_Addon_Chance_Condition;
 	information = PC_Goldhacken_Addon_Chance_Info;
 	permanent = TRUE;
-	description = "(проверить свой навык)";
+	description = "(assess own ability)";
 };
 
 
@@ -320,33 +320,33 @@ func void PC_Goldhacken_Addon_Chance_Info()
 	var string concatText;
 	if(Hero_HackChance < 20)
 	{
-		concatText = ConcatStrings("Полный новичок (",IntToString(Hero_HackChance));
+		concatText = ConcatStrings("Novice (",IntToString(Hero_HackChance));
 	}
 	else if(Hero_HackChance < 40)
 	{
-		concatText = ConcatStrings("Вполне сносный работник (",IntToString(Hero_HackChance));
+		concatText = ConcatStrings("Quite decent digger (",IntToString(Hero_HackChance));
 	}
 	else if(Hero_HackChance < 55)
 	{
-		concatText = ConcatStrings("Опытный золотоискатель (",IntToString(Hero_HackChance));
+		concatText = ConcatStrings("Experienced digger (",IntToString(Hero_HackChance));
 	}
 	else if(Hero_HackChance < 75)
 	{
-		concatText = ConcatStrings("Настоящий рудокоп (",IntToString(Hero_HackChance));
+		concatText = ConcatStrings("True digger (",IntToString(Hero_HackChance));
 	}
 	else if(Hero_HackChance < 90)
 	{
-		concatText = ConcatStrings("Чертовски хороший рудокоп (",IntToString(Hero_HackChance));
+		concatText = ConcatStrings("Damn good digger (",IntToString(Hero_HackChance));
 	}
 	else if(Hero_HackChance < 98)
 	{
-		concatText = ConcatStrings("Великий рудокоп (",IntToString(Hero_HackChance));
+		concatText = ConcatStrings("Great digger (",IntToString(Hero_HackChance));
 	}
 	else
 	{
-		concatText = ConcatStrings("Гуру среди рудокопов (",IntToString(Hero_HackChance));
+		concatText = ConcatStrings("Guru among diggers (",IntToString(Hero_HackChance));
 	};
-	concatText = ConcatStrings(concatText," процентов)");
+	concatText = ConcatStrings(concatText," percent)");
 	PrintScreen(concatText,-1,34,FONT_ScreenSmall,2);
 };
 

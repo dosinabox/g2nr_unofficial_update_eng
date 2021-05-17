@@ -1,7 +1,7 @@
 
 instance PIR_1350_Addon_Francis(Npc_Default)
 {
-	name[0] = "Фрэнсис";
+	name[0] = "Francis";
 	guild = GIL_PIR;
 	id = 1350;
 	voice = 13;

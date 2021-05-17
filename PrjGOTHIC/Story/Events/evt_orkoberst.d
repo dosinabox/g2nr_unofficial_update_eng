@@ -51,7 +51,7 @@ func void evt_orkoberst()
 			Wld_InsertNpc(UndeadOrcWarrior,"FP_ROAM_DI_MARIOSSKELETONS_04");
 		};
 		OrkSturmDI = TRUE;
-		B_LogEntry(TOPIC_HallenVonIrdorath,"Полковник орков - крепкий орешек. Где-то в его тронном зале должен быть какой-то секрет.");
+		B_LogEntry (TOPIC_HallenVonIrdorath, "The orc colonel is a really tough cookie. Somewhere in his throne room there must be a way to get on.");
 		EVT_ORKOBERST_OneTime = TRUE;
 	};
 };

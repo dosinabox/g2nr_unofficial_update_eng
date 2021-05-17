@@ -26,7 +26,7 @@ var int Hagen_LastPetzCrime;
 
 func void B_Hagen_CityLaws()
 {
-	AI_Output(self,other,"DIA_Hagen_PMSchulden_04_01");	//Ты не очень-то серьезно относишься к законам города, да?
+	AI_Output(self,other,"DIA_Hagen_PMSchulden_04_01");	//You don't take the city laws very seriously, do you?
 };
 
 instance DIA_Hagen_PMSchulden(C_Info)
@@ -271,7 +271,7 @@ func void DIA_Lord_Hagen_Hallo_Info()
 	};
 	if(((Npc_KnowsInfo(other,DIA_Lothar_MESSAGE) || Npc_KnowsInfo(other,DIA_Lothar_Hagen)) && (Lothar_Day < Wld_GetDay())) || Npc_KnowsInfo(other,DIA_Lothar_EyeInnos) || (Andre_EyeInnos == TRUE))
 	{
-		AI_Output(self,other,"DIA_Lord_Hagen_Hallo_04_00");	//Я уже слышал о тебе.
+		AI_Output(self,other,"DIA_Lord_Hagen_Hallo_04_00");	//I have already heard of you.
 		if(Npc_KnowsInfo(other,DIA_Lothar_MESSAGE) || Npc_KnowsInfo(other,DIA_Lothar_Hagen))
 		{
 			if(Lothar_Day < Wld_GetDay())

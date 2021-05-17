@@ -120,7 +120,7 @@ instance DIA_Randolph_Baltram(C_Info)
 	condition = DIA_Randolph_Baltram_Condition;
 	information = DIA_Randolph_Baltram_Info;
 	permanent = FALSE;
-	description = "Baltram sent me ...";
+	description = "Baltram sent me...";
 };
 
 
@@ -467,7 +467,7 @@ instance DIA_Randolph_PAYME(C_Info)
 	nr = 56;
 	condition = DIA_Randolph_PAYME_Condition;
 	information = DIA_Randolph_PAYME_Info;
-	description = "Ты послал меня, не дав денег...";
+	description = "You sent me there without money...";
 };
 
 
@@ -481,7 +481,7 @@ func int DIA_Randolph_PAYME_Condition()
 
 func void DIA_Randolph_PAYME_Info()
 {
-	AI_Output(other,self,"DIA_Randolph_PERM_15_01");	///You send me off without a coin and don't bother telling me that the stuff is this expensive?
+	AI_Output(other,self,"DIA_Randolph_PERM_15_01");	//You send me off without a coin and don't bother telling me that the stuff is this expensive?
 	AI_Output(other,self,"DIA_Randolph_PERM_15_02");	//Sagitta wants 300 gold coins from me.
 	AI_Output(self,other,"DIA_Randolph_PERM_06_03");	//I can't give you more than 150 gold coins. Please. You've got to help me. Please.
 	CreateInvItems(self,ItMi_Gold,150);

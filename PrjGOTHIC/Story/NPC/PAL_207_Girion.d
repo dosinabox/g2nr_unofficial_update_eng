@@ -1,7 +1,7 @@
 
 instance PAL_207_Girion(Npc_Default)
 {
-	name[0] = "Гирион";
+	name[0] = "Girion";
 	guild = GIL_PAL;
 	id = 207;
 	voice = 8;

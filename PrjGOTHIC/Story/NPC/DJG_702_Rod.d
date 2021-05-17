@@ -1,7 +1,7 @@
 
 instance DJG_702_Rod(Npc_Default)
 {
-	name[0] = "Род";
+	name[0] = "Rod";
 	guild = GIL_DJG;
 	id = 702;
 	voice = 6;

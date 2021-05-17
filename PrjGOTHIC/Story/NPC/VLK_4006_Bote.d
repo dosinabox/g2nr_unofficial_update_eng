@@ -1,7 +1,7 @@
 
 instance VLK_4006_Bote(Npc_Default)
 {
-	name[0] = "Посыльный";
+	name[0] = "Errand-Boy";
 	guild = GIL_VLK;
 	id = 4006;
 	voice = 9;

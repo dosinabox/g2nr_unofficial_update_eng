@@ -1,5 +1,5 @@
 
-const string StPl_MagicAuraText = "Эта каменная табличка излучает магическую ауру.";
+const string StPl_MagicAuraText = "The stone tablet has a magical aura.";
 const int STR_StPlLevel1 = 2;
 const int STR_StPlLevel2 = 4;
 const int STR_StPlLevel3 = 6;
@@ -288,7 +288,7 @@ func void Use_StonePlate()
 
 prototype Prototype_StonePlate(C_Item)
 {
-	name = "Каменная табличка";
+	name = "Stone Tablet";
 //	mainflag = ITEM_KAT_DOCS;
 	mainflag = ITEM_KAT_RUNE;
 	flags = ITEM_MISSION | ITEM_MULTI;
@@ -308,7 +308,7 @@ prototype Prototype_StonePlate(C_Item)
 
 instance ItWr_StrStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка силы I";
+	description = "Stone tablet of Strength I";
 	on_state[0] = Use_StrStonePlate1;
 	visual = "ItMi_StonePlate_PowerUp_01.3DS";
 };
@@ -329,7 +329,7 @@ func void Use_StrStonePlate1()
 
 instance ItWr_StrStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка силы II";
+	description = "Stone tablet of Strength II";
 	on_state[0] = Use_StrStonePlate2;
 	visual = "ItMi_StonePlate_PowerUp_01.3DS";
 };
@@ -350,7 +350,7 @@ func void Use_StrStonePlate2()
 
 instance ItWr_StrStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка силы III";
+	description = "Stone tablet of Strength III";
 	on_state[0] = Use_StrStonePlate3;
 	visual = "ItMi_StonePlate_PowerUp_01.3DS";
 };
@@ -371,7 +371,7 @@ func void Use_StrStonePlate3()
 
 instance ItWr_DexStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка ловкости I";
+	description = "Stone tablet of Dexterity I";
 	on_state[0] = Use_DexStonePlate1;
 	visual = "ItMi_StonePlate_PowerUp_02.3DS";
 };
@@ -392,7 +392,7 @@ func void Use_DexStonePlate1()
 
 instance ItWr_DexStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка ловкости II";
+	description = "Stone tablet of Dexterity II";
 	on_state[0] = Use_DexStonePlate2;
 	visual = "ItMi_StonePlate_PowerUp_02.3DS";
 };
@@ -413,7 +413,7 @@ func void Use_DexStonePlate2()
 
 instance ItWr_DexStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка ловкости III";
+	description = "Stone tablet of Dexterity III";
 	on_state[0] = Use_DexStonePlate3;
 	visual = "ItMi_StonePlate_PowerUp_02.3DS";
 };
@@ -434,7 +434,7 @@ func void Use_DexStonePlate3()
 
 instance ItWr_HitPointStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка жизненной силы I";
+	description = "Stone tablet of Life Energy I";
 	on_state[0] = Use_HitPointStonePlate1;
 //	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 	visual = "ItMi_StonePlate_PowerUp_06.3DS";
@@ -456,7 +456,7 @@ func void Use_HitPointStonePlate1()
 
 instance ItWr_HitPointStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка жизненной силы II";
+	description = "Stone tablet of Life Energy II";
 	on_state[0] = Use_HitPointStonePlate2;
 //	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 	visual = "ItMi_StonePlate_PowerUp_06.3DS";
@@ -478,7 +478,7 @@ func void Use_HitPointStonePlate2()
 
 instance ItWr_HitPointStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка жизненной силы III";
+	description = "Stone tablet of Life Energy III";
 	on_state[0] = Use_HitPointStonePlate3;
 //	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 	visual = "ItMi_StonePlate_PowerUp_06.3DS";
@@ -500,7 +500,7 @@ func void Use_HitPointStonePlate3()
 
 instance ItWr_ManaStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка магии I";
+	description = "Stone tablet of Magic I";
 	on_state[0] = Use_ManaStonePlate1;
 	visual = "ItMi_StonePlate_PowerUp_05.3DS";
 };
@@ -521,7 +521,7 @@ func void Use_ManaStonePlate1()
 
 instance ItWr_ManaStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка магии II";
+	description = "Stone tablet of Magic II";
 	on_state[0] = Use_ManaStonePlate2;
 	visual = "ItMi_StonePlate_PowerUp_05.3DS";
 };
@@ -542,7 +542,7 @@ func void Use_ManaStonePlate2()
 
 instance ItWr_ManaStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка магии III";
+	description = "Stone tablet of Magic III";
 	on_state[0] = Use_ManaStonePlate3;
 	visual = "ItMi_StonePlate_PowerUp_05.3DS";
 };
@@ -563,7 +563,7 @@ func void Use_ManaStonePlate3()
 
 instance ItWr_OneHStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка одноручного оружия I";
+	description = "Stone tablet of One-Handed Combat I";
 	on_state[0] = Use_OneHStonePlate1;
 	visual = "ItMi_StonePlate_PowerUp_04.3DS";
 };
@@ -584,7 +584,7 @@ func void Use_OneHStonePlate1()
 
 instance ItWr_OneHStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка одноручного оружия II";
+	description = "Stone tablet of One-Handed Combat II";
 	on_state[0] = Use_OneHStonePlate2;
 	visual = "ItMi_StonePlate_PowerUp_04.3DS";
 };
@@ -605,7 +605,7 @@ func void Use_OneHStonePlate2()
 
 instance ItWr_OneHStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка одноручного оружия III";
+	description = "Stone tablet of One-Handed Combat III";
 	on_state[0] = Use_OneHStonePlate3;
 	visual = "ItMi_StonePlate_PowerUp_04.3DS";
 };
@@ -626,7 +626,7 @@ func void Use_OneHStonePlate3()
 
 instance ItWr_TwoHStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка двуручного оружия I";
+	description = "Stone tablet of Two-Handed Combat I";
 	on_state[0] = Use_TwoHStonePlate1;
 	visual = "ItMi_StonePlate_PowerUp_04.3DS";
 };
@@ -647,7 +647,7 @@ func void Use_TwoHStonePlate1()
 
 instance ItWr_TwoHStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка двуручного оружия II";
+	description = "Stone tablet of Two-Handed Combat II";
 	on_state[0] = Use_TwoHStonePlate2;
 	visual = "ItMi_StonePlate_PowerUp_04.3DS";
 };
@@ -668,7 +668,7 @@ func void Use_TwoHStonePlate2()
 
 instance ItWr_TwoHStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка двуручного оружия III";
+	description = "Stone tablet of Two-Handed Combat III";
 	on_state[0] = Use_TwoHStonePlate3;
 	visual = "ItMi_StonePlate_PowerUp_04.3DS";
 };
@@ -689,7 +689,7 @@ func void Use_TwoHStonePlate3()
 
 instance ItWr_BowStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка стрельбы из лука I";
+	description = "Stone tablet of Archery I";
 	on_state[0] = Use_BowStonePlate1;
 	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 };
@@ -710,7 +710,7 @@ func void Use_BowStonePlate1()
 
 instance ItWr_BowStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка стрельбы из лука II";
+	description = "Stone tablet of Archery II";
 	on_state[0] = Use_BowStonePlate2;
 	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 };
@@ -731,7 +731,7 @@ func void Use_BowStonePlate2()
 
 instance ItWr_BowStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка стрельбы из лука III";
+	description = "Stone tablet of Archery III";
 	on_state[0] = Use_BowStonePlate3;
 	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 };
@@ -752,7 +752,7 @@ func void Use_BowStonePlate3()
 
 instance ItWr_CrsBowStonePlate1_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка стрельбы из арбалета I";
+	description = "Stone tablet of Crossbow I";
 	on_state[0] = Use_CrsBowStonePlate1;
 	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 };
@@ -773,7 +773,7 @@ func void Use_CrsBowStonePlate1()
 
 instance ItWr_CrsBowStonePlate2_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка стрельбы из арбалета II";
+	description = "Stone tablet of Crossbow II";
 	on_state[0] = Use_CrsBowStonePlate2;
 	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 };
@@ -794,7 +794,7 @@ func void Use_CrsBowStonePlate2()
 
 instance ItWr_CrsBowStonePlate3_Addon(Prototype_StonePlate)
 {
-	description = "Каменная табличка стрельбы из арбалета III";
+	description = "Stone tablet of Crossbow III";
 	on_state[0] = Use_CrsBowStonePlate3;
 	visual = "ItMi_StonePlate_PowerUp_03.3DS";
 };

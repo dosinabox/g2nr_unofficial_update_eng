@@ -1,7 +1,7 @@
 
 instance VLK_409_Zuris(Npc_Default)
 {
-	name[0] = "«урис";
+	name[0] = "Zuris";
 	guild = GIL_VLK;
 	id = 409;
 	voice = 14;

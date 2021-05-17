@@ -1,7 +1,7 @@
 
 instance BAU_945_Egill(Npc_Default)
 {
-	name[0] = "Ёгилл";
+	name[0] = "Egill";
 	guild = GIL_NONE;
 	id = 945;
 	voice = 8;

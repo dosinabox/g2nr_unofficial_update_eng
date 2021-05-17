@@ -1,7 +1,7 @@
 
 instance PIR_1352_Addon_AlligatorJack(Npc_Default)
 {
-	name[0] = "Аллигатор Джек";
+	name[0] = "Alligator Jack";
 	guild = GIL_PIR;
 	id = 1352;
 	voice = 12;

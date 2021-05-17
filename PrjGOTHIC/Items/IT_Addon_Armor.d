@@ -11,7 +11,7 @@ const int VALUE_ITAR_Bloodwyn_Addon = 1300;
 
 instance ITAR_PIR_L_Addon(C_Item)
 {
-	name = "Одежда пирата";
+	name = "Pirate Clothes";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 40;
@@ -42,7 +42,7 @@ instance ITAR_PIR_L_Addon(C_Item)
 
 instance ITAR_PIR_M_Addon(C_Item)
 {
-	name = "Доспехи пирата";
+	name = "Pirate Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 55;
@@ -73,7 +73,7 @@ instance ITAR_PIR_M_Addon(C_Item)
 
 instance ITAR_PIR_H_Addon(C_Item)
 {
-	name = "Одежда капитана";
+	name = "Captain's Clothes";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 60;
@@ -103,7 +103,7 @@ instance ITAR_PIR_H_Addon(C_Item)
 
 instance ITAR_Thorus_Addon(C_Item)
 {
-	name = "Доспехи стражи Ворона";
+	name = "Guard's Heavy Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 70;
@@ -117,7 +117,7 @@ instance ITAR_Thorus_Addon(C_Item)
 	visual_change = "Armor_Thorus_ADDON.asc";
 	visual_skin = 0;
 	material = MAT_METAL;
-	description = name;
+	description = "Armor for Raven's guard";
 	text[0] = PRINT_Addon_BDTArmor;
 	text[1] = NAME_Prot_Edge;
 	count[1] = protection[PROT_EDGE];
@@ -133,7 +133,7 @@ instance ITAR_Thorus_Addon(C_Item)
 
 instance ITAR_Raven_Addon(C_Item)
 {
-	name = "Доспехи Ворона";
+	name = "Raven's Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 100;
@@ -162,7 +162,7 @@ instance ITAR_Raven_Addon(C_Item)
 
 instance ITAR_OreBaron_Addon(C_Item)
 {
-	name = "Доспехи рудного барона";
+	name = "Ore Baron Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 80;
@@ -192,7 +192,7 @@ instance ITAR_OreBaron_Addon(C_Item)
 
 instance ITAR_RANGER_Addon(C_Item)
 {
-	name = "Доспехи 'Кольца Воды'";
+	name = "Armor of the 'Ring of Water'";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 50;
@@ -221,7 +221,7 @@ instance ITAR_RANGER_Addon(C_Item)
 
 instance ITAR_Fake_RANGER(C_Item)
 {
-	name = "Разбитые доспехи";
+	name = "Broken armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 50;
@@ -242,7 +242,7 @@ instance ITAR_Fake_RANGER(C_Item)
 
 instance ITAR_KDW_L_Addon(C_Item)
 {
-	name = "Легкая мантия мага Воды";
+	name = "Light Robe of Water";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 50;
@@ -271,7 +271,7 @@ instance ITAR_KDW_L_Addon(C_Item)
 
 instance ITAR_Bloodwyn_Addon(C_Item)
 {
-	name = "Средние доспехи стражника";
+	name = "Bloodwyn's Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 70;
@@ -301,7 +301,7 @@ instance ITAR_Bloodwyn_Addon(C_Item)
 
 instance ITAR_MayaZombie_Addon(C_Item)
 {
-	name = "Доспехи древного воина";
+	name = "Old Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 50;
@@ -330,7 +330,7 @@ instance ITAR_MayaZombie_Addon(C_Item)
 
 instance ITAR_FireArmor_Addon(C_Item)
 {
-	name = "Магическая мантия";
+	name = "Magic Armor";
 	mainflag = ITEM_KAT_ARMOR;
 	flags = 0;
 	protection[PROT_EDGE] = 100;

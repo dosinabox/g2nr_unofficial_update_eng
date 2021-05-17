@@ -1,7 +1,7 @@
 
 prototype Mst_Addon_Stoneguardian(C_Npc)
 {
-	name[0] = "Каменный страж";
+	name[0] = "Stone Sentinel";
 	guild = GIL_Stoneguardian;
 	aivar[AIV_MM_REAL_ID] = ID_Stoneguardian;
 	level = 18;

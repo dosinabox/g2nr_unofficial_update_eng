@@ -598,9 +598,9 @@ instance ItRu_Windfist(C_Item)
 	count[1] = STEP_WindFist;
 	text[2] = NAME_ManakostenMax;
 	count[2] = SPL_Cost_WindFist;
-	text[3] = "Урон ветром (мин.):";
+	text[3] = "Wind damage (min.):";
 	count[3] = SPL_Damage_Windfist;
-	text[4] = "Урон ветром (макс.):";
+	text[4] = "Wind damage (max.):";
 	count[4] = SPL_Damage_Windfist * 4;
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -771,7 +771,7 @@ instance ItRu_IceCube(C_Item)
 	count[2] = 60;
 	text[3] = NAME_Sec_Duration;
 	count[3] = SPL_TIME_FREEZE;
-	text[4] = "Чистый урон в секунду:";
+	text[4] = "Damage/sec:";
 	count[4] = SPL_FREEZE_DAMAGE;
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -796,9 +796,9 @@ instance ItRu_ThunderBall(C_Item)
 	count[1] = STEP_ChargeZap;
 	text[2] = NAME_ManakostenMax;
 	count[2] = SPL_COST_ChargeZap;
-	text[3] = "Урон магией (мин.):";
+	text[3] = "Magic damage (min.):";
 	count[3] = SPL_Damage_ChargeZap;
-	text[4] = "Урон магией (макс.):";
+	text[4] = "Magic damage (max.):";
 	count[4] = SPL_Damage_ChargeZap * 4;
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -920,7 +920,7 @@ instance ItRu_IceWave(C_Item)
 	count[2] = 60;
 	text[3] = NAME_Sec_Duration;
 	count[3] = SPL_TIME_FREEZE;
-	text[4] = "Чистый урон в секунду:";
+	text[4] = "Damage/sec:";
 	count[4] = SPL_FREEZE_DAMAGE;
 	text[5] = NAME_Value;
 	count[5] = value;

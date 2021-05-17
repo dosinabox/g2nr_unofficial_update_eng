@@ -1,7 +1,7 @@
 
 prototype Mst_Default_Wisp(C_Npc)
 {
-	name[0] = "Блуждающий огонек";
+	name[0] = "Ghost Light";
 	guild = GIL_WISP;
 	aivar[AIV_MM_REAL_ID] = ID_WISP;
 	level = 4;

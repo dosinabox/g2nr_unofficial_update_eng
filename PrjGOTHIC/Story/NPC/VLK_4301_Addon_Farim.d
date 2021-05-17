@@ -1,7 +1,7 @@
 
 instance VLK_4301_Addon_Farim(Npc_Default)
 {
-	name[0] = "Фарим";
+	name[0] = "Farim";
 	guild = GIL_VLK;
 	id = 4301;
 	voice = 11;

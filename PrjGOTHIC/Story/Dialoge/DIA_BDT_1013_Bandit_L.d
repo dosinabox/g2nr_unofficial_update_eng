@@ -451,7 +451,7 @@ func void DIA_1013_BANDIT_PERM_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_1013_BANDIT_PERM_01_03");	//Я сказал тебе все, что мог.
+		AI_Output(self,other,"DIA_1013_BANDIT_PERM_01_03");	//I've told you everything I can.
 	};
 };
 

@@ -1,7 +1,7 @@
 
 instance PAL_217_Marcos(Npc_Default)
 {
-	name[0] = "Маркос";
+	name[0] = "Marcos";
 	guild = GIL_PAL;
 	id = 217;
 	voice = 4;

@@ -1,7 +1,7 @@
 
 instance ItRw_Arrow(C_Item)
 {
-	name = "Стрела";
+	name = "Arrow";
 	mainflag = ITEM_KAT_MUN;
 	flags = ITEM_BOW | ITEM_MULTI;
 	value = Value_Pfeil;
@@ -14,7 +14,7 @@ instance ItRw_Arrow(C_Item)
 
 instance ItRw_Bolt(C_Item)
 {
-	name = "Болт";
+	name = "Bolt";
 	mainflag = ITEM_KAT_MUN;
 	flags = ITEM_CROSSBOW | ITEM_MULTI;
 	value = Value_Bolzen;
@@ -28,7 +28,7 @@ instance ItRw_Bolt(C_Item)
 
 instance ItRw_Mil_Crossbow(C_Item)
 {
-	name = "Арбалет ополчения";
+	name = "Militia Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -50,7 +50,7 @@ instance ItRw_Mil_Crossbow(C_Item)
 
 instance ItRw_Sld_Bow(C_Item)
 {
-	name = "Лук наемника";
+	name = "Mercenary Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -72,7 +72,7 @@ instance ItRw_Sld_Bow(C_Item)
 
 instance ItRw_Bow_L_01(C_Item)
 {
-	name = "Короткий лук";
+	name = "Shortbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -94,7 +94,7 @@ instance ItRw_Bow_L_01(C_Item)
 
 instance ItRw_Bow_L_02(C_Item)
 {
-	name = "Ивовый лук";
+	name = "Willow Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -116,7 +116,7 @@ instance ItRw_Bow_L_02(C_Item)
 
 instance ItRw_Bow_L_03(C_Item)
 {
-	name = "Охотничий лук";
+	name = "Hunting Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -138,7 +138,7 @@ instance ItRw_Bow_L_03(C_Item)
 
 instance ItRw_Bow_L_04(C_Item)
 {
-	name = "Вязовый лук";
+	name = "Elm Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -160,7 +160,7 @@ instance ItRw_Bow_L_04(C_Item)
 
 instance ItRw_Bow_M_01(C_Item)
 {
-	name = "Композитный лук";
+	name = "Composite Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -182,7 +182,7 @@ instance ItRw_Bow_M_01(C_Item)
 
 instance ItRw_Bow_M_02(C_Item)
 {
-	name = "Ясеневый лук";
+	name = "Ash Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -204,7 +204,7 @@ instance ItRw_Bow_M_02(C_Item)
 
 instance ItRw_Bow_M_03(C_Item)
 {
-	name = "Длинный лук";
+	name = "Longbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -226,7 +226,7 @@ instance ItRw_Bow_M_03(C_Item)
 
 instance ItRw_Bow_M_04(C_Item)
 {
-	name = "Буковый лук";
+	name = "Beech Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -248,7 +248,7 @@ instance ItRw_Bow_M_04(C_Item)
 
 instance ItRw_Bow_H_01(C_Item)
 {
-	name = "Костяной лук";
+	name = "Bone Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -270,7 +270,7 @@ instance ItRw_Bow_H_01(C_Item)
 
 instance ItRw_Bow_H_02(C_Item)
 {
-	name = "Дубовый лук";
+	name = "Oak Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -292,7 +292,7 @@ instance ItRw_Bow_H_02(C_Item)
 
 instance ItRw_Bow_H_03(C_Item)
 {
-	name = "Военный лук";
+	name = "War Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -314,7 +314,7 @@ instance ItRw_Bow_H_03(C_Item)
 
 instance ItRw_Bow_H_04(C_Item)
 {
-	name = "Драконий лук";
+	name = "Dragon Bow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_BOW;
 	material = MAT_WOOD;
@@ -336,7 +336,7 @@ instance ItRw_Bow_H_04(C_Item)
 
 instance ItRw_Crossbow_L_01(C_Item)
 {
-	name = "Охотничий арбалет";
+	name = "Hunting Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -358,7 +358,7 @@ instance ItRw_Crossbow_L_01(C_Item)
 
 instance ItRw_Crossbow_L_02(C_Item)
 {
-	name = "Легкий арбалет";
+	name = "Light Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -380,7 +380,7 @@ instance ItRw_Crossbow_L_02(C_Item)
 
 instance ItRw_Crossbow_M_01(C_Item)
 {
-	name = "Штурмовой арбалет";
+	name = "Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -402,7 +402,7 @@ instance ItRw_Crossbow_M_01(C_Item)
 
 instance ItRw_Crossbow_M_02(C_Item)
 {
-	name = "Военный арбалет";
+	name = "War Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -424,7 +424,7 @@ instance ItRw_Crossbow_M_02(C_Item)
 
 instance ItRw_Crossbow_H_01(C_Item)
 {
-	name = "Тяжелый арбалет";
+	name = "Heavy Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;
@@ -446,7 +446,7 @@ instance ItRw_Crossbow_H_01(C_Item)
 
 instance ItRw_Crossbow_H_02(C_Item)
 {
-	name = "Арбалет охотника на драконов";
+	name = "Dragon Hunter's Crossbow";
 	mainflag = ITEM_KAT_FF;
 	flags = ITEM_CROSSBOW;
 	material = MAT_WOOD;

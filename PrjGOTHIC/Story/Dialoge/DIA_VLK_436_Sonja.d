@@ -105,7 +105,7 @@ instance DIA_Sonja_WEED(C_Info)
 	condition = DIA_Sonja_WEED_Condition;
 	information = DIA_Sonja_WEED_Info;
 	permanent = TRUE;
-	description = "“ы не знаешь, где мне купить травки?";
+	description = "Do you know where I can buy some weed?";
 };
 
 
@@ -119,8 +119,8 @@ func int DIA_Sonja_WEED_Condition()
 
 func void DIA_Sonja_WEED_Info()
 {
-	AI_Output(other,self,"DIA_Meldor_Smoke_15_00");	//“ы не знаешь, где мне купить травки?
-	AI_Output(self,other,"DIA_Babera_DUSTOERST_16_01");	//я зан€та.
+	AI_Output(other,self,"DIA_Meldor_Smoke_15_00");	//Do you know where I can buy some weed?
+	AI_Output(self,other,"DIA_Babera_DUSTOERST_16_01");	//I'm busy.
 	AI_StopProcessInfos(self);
 };
 

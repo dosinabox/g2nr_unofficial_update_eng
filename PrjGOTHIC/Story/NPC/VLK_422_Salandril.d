@@ -1,7 +1,7 @@
 
 instance VLK_422_Salandril(Npc_Default)
 {
-	name[0] = "Саландрил";
+	name[0] = "Salandril";
 	guild = GIL_VLK;
 	id = 422;
 	voice = 13;

@@ -28,7 +28,7 @@ instance DIA_Liesel_Hallo(C_Info)
 	condition = DIA_Liesel_Hallo_Condition;
 	information = DIA_Liesel_Hallo_Info;
 	permanent = FALSE;
-	description = "Здравствуй, овечка.";
+	description = "Hello!";
 };
 
 
@@ -42,8 +42,8 @@ func int DIA_Liesel_Hallo_Condition()
 
 func void DIA_Liesel_Hallo_Info()
 {
-	AI_Output(other,self,"DIA_Liesel_Hallo_15_00");	//Здравствуй... (прочищает горло) овечка.
-	B_LieselMaeh();
+	AI_Output (other, self, "DIA_Liesel_Hallo_15_00");	//Hello... (clears his throat) ... sheep.
+	B_LieselMaeh ();
 };
 
 
@@ -54,7 +54,7 @@ instance DIA_Liesel_KommMit(C_Info)
 	condition = DIA_Liesel_KommMit_Condition;
 	information = DIA_Liesel_KommMit_Info;
 	permanent = TRUE;
-	description = "Пойдем со мной!";
+	description = "Come with me!";
 };
 
 
@@ -68,7 +68,7 @@ func int DIA_Liesel_KommMit_Condition()
 
 func void DIA_Liesel_KommMit_Info()
 {
-	AI_Output(other,self,"DIA_Liesel_KommMit_15_00");	//Пойдем со мной!
+	AI_Output(other,self,"DIA_Liesel_KommMit_15_00");	//Come with me!
 	B_LieselMaeh();
 	Npc_ExchangeRoutine(self,"Follow");
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -83,7 +83,7 @@ instance DIA_Liesel_WarteHier(C_Info)
 	condition = DIA_Liesel_WarteHier_Condition;
 	information = DIA_Liesel_WarteHier_Info;
 	permanent = TRUE;
-	description = "Подожди здесь!";
+	description = "Wait here!";
 };
 
 
@@ -97,7 +97,7 @@ func int DIA_Liesel_WarteHier_Condition()
 
 func void DIA_Liesel_WarteHier_Info()
 {
-	AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Подожди здесь!
+	AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Wait here!
 	B_LieselMaeh();
 	Npc_ExchangeRoutine(self,"Start");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

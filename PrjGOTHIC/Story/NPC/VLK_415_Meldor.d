@@ -1,7 +1,7 @@
 
 instance VLK_415_Meldor(Npc_Default)
 {
-	name[0] = "Ìוכהמנ";
+	name[0] = "Meldor";
 	guild = GIL_VLK;
 	id = 415;
 	voice = 7;

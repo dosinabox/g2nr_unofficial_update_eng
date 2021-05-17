@@ -1,7 +1,7 @@
 
 instance PIR_1391_Addon_InExtremo_TheFlail(Npc_Default)
 {
-	name[0] = "Моргенштерн";
+	name[0] = "The Flail";
 	npcType = npctype_main;
 	guild = GIL_NONE;
 	level = 4;

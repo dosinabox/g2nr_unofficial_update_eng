@@ -1,7 +1,7 @@
 
 instance KDF_501_Serpentes(Npc_Default)
 {
-	name[0] = "Серпентес";
+	name[0] = "Serpentes";
 	guild = GIL_KDF;
 	id = 501;
 	voice = 10;

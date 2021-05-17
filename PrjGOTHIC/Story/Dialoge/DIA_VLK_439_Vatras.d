@@ -417,7 +417,7 @@ func void DIA_Addon_Vatras_TellMe_OtherKdW()
 		B_LogEntry(TOPIC_Addon_KDW,"The other Water Mages are exploring the ruins of an old culture north-east of Khorinis. There might be an entry to an uncharted part of Khorinis.");
 	};
 	Vatras_ToldAboutOtherKDW = TRUE;
-	Info_AddChoice(DIA_Addon_Vatras_TellMe,"Расскажи мне об этом.",DIA_Addon_Vatras_TellMe_Unexplored);
+	Info_AddChoice(DIA_Addon_Vatras_TellMe,"Tell me more about that uncharted area.",DIA_Addon_Vatras_TellMe_Unexplored);
 };
 
 func void DIA_Addon_Vatras_TellMe_Unexplored()
@@ -447,7 +447,7 @@ instance DIA_Addon_Vatras_Bandittrader(C_Info)
 	nr = 2;
 	condition = DIA_Addon_Vatras_Bandittrader_Condition;
 	information = DIA_Addon_Vatras_Bandittrader_Info;
-	description = "И что это значит для меня?";
+	description = "And what does that mean?";
 };
 
 
@@ -591,13 +591,13 @@ func void B_Vatras_Second_Lie()
 
 func void B_Vatras_Third_Truth()
 {
-	AI_Output(other,self,"DIA_Vatras_INFLUENCE_THIRD_TRUTH_15_00");	//Я бывший заключенный колонии Хориниса.
+	AI_Output(other,self,"DIA_Vatras_INFLUENCE_THIRD_TRUTH_15_00");	//I'm a former convict from the penal colony of Khorinis.
 	Vatras_Third = TRUE;
 };
 
 func void B_Vatras_Third_Lie()
 {
-	AI_Output(other,self,"DIA_Vatras_INFLUENCE_THIRD_LIE_15_00");	//Я искатель приключений с юга...
+	AI_Output(other,self,"DIA_Vatras_INFLUENCE_THIRD_LIE_15_00");	//I'm just an adventurer from down south...
 	Vatras_Third = FALSE;
 };
 
@@ -670,15 +670,15 @@ func void DIA_Vatras_INFLUENCE_FIRST_TRUTH()
 {
 	B_Vatras_First_Truth();
 	Info_ClearChoices(DIA_Addon_Vatras_WannaBeRanger);
-	Info_AddChoice(DIA_Addon_Vatras_WannaBeRanger,"Ох, я где-то слышал об этом...",DIA_Vatras_INFLUENCE_SECOND_LIE);
-	Info_AddChoice(DIA_Addon_Vatras_WannaBeRanger,"Мне сказал об этом маг Ксардас. Он послал меня предупредить паладинов.",DIA_Vatras_INFLUENCE_SECOND_TRUTH);
+	Info_AddChoice(DIA_Addon_Vatras_WannaBeRanger,"Oh, I heard rumors somewhere...",DIA_Vatras_INFLUENCE_SECOND_LIE);
+	Info_AddChoice(DIA_Addon_Vatras_WannaBeRanger,"Xardas the magician told me.",DIA_Vatras_INFLUENCE_SECOND_TRUTH);
 };
 
 func void DIA_Vatras_INFLUENCE_FIRST_LIE()
 {
 	B_Vatras_First_Lie();
 	Info_ClearChoices(DIA_Addon_Vatras_WannaBeRanger);
-	Info_AddChoice(DIA_Addon_Vatras_WannaBeRanger,"Oh, I heard rumors somewhere ...",DIA_Vatras_INFLUENCE_SECOND_LIE);
+	Info_AddChoice(DIA_Addon_Vatras_WannaBeRanger,"Oh, I heard rumors somewhere...",DIA_Vatras_INFLUENCE_SECOND_LIE);
 	Info_AddChoice(DIA_Addon_Vatras_WannaBeRanger,"Xardas the magician told me. He sent me to warn the paladins.",DIA_Vatras_INFLUENCE_SECOND_TRUTH);
 };
 
@@ -1611,7 +1611,7 @@ func void B_Vatras_BLESSING_REPEAT()
 	B_Vatras_REPEAT();
 	if((Vatras_First == TRUE) && (Vatras_Second == TRUE) && (Vatras_Third == TRUE))
 	{
-		AI_Output(other,self,"DIA_Vatras_INFLUENCE_REPEAT_15_00");	//Так ты дашь мне свое благословение?
+		AI_Output(other,self,"DIA_Vatras_INFLUENCE_REPEAT_15_00");	//And will you give me your blessing now?
 		B_Vatras_Blessing();
 	}
 	else if(Vatras_Chance == FALSE)
@@ -2324,7 +2324,7 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge()
 	}
 	else
 	{
-		Info_AddChoice(DIA_Vatras_INNOSEYEKAPUTT,"И что нам делать дальше?",DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein);
+		Info_AddChoice(DIA_Vatras_INNOSEYEKAPUTT,"So what shall we do next?",DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein);
 	};
 };
 
@@ -2332,7 +2332,7 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein()
 {
 	if(Npc_HasItems(other,ItMi_InnosEye_Broken_Mis))
 	{
-		AI_Output(other,self,"DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_15_00");	//Как можно восстановить силу камня?
+		AI_Output(other,self,"DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_15_00");	//How can the gem get its power back?
 	}
 	else
 	{
@@ -2478,7 +2478,7 @@ instance DIA_Vatras_BEGINN(C_Info)
 	nr = 31;
 	condition = DIA_Vatras_BEGINN_Condition;
 	information = DIA_Vatras_BEGINN_Info;
-	description = "Я сделал все, как ты сказал мне. Вот починенный Глаз.";
+	description = "I did everything you told me to do.";
 };
 
 

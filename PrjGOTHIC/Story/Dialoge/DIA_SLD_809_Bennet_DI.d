@@ -272,7 +272,7 @@ instance DIA_Bennet_DI_DragonEgg(C_Info)
 	nr = 99;
 	condition = DIA_Bennet_DI_DragonEgg_Condition;
 	information = DIA_Bennet_DI_DragonEgg_Info;
-	description = "У меня есть драконье яйцо.";
+	description = "I've got a dragon egg here.";
 };
 
 
@@ -288,7 +288,7 @@ func void DIA_Bennet_DI_DragonEgg_Info()
 {
 	AI_Output (other, self, "DIA_Bennet_DI_DragonEgg_15_00");	//I've got a dragon egg here.
 	AI_Output (self, other, "DIA_Bennet_DI_DragonEgg_06_01");	//Well?
-	AI_Output (other, self, "DIA_Bennet_DI_DragonEgg_15_02");	//Well. I thought ...
+	AI_Output (other, self, "DIA_Bennet_DI_DragonEgg_15_02");	//Well. I thought...
 	AI_Output (self, other, "DIA_Bennet_DI_DragonEgg_06_03");	//I know what you're thinking. Forget it, keep the thing. I don't want it.
 	B_GivePlayerXP(XP_AmbientKap6);
 };

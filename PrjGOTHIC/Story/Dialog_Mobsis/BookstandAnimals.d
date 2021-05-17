@@ -14,24 +14,24 @@ func void Use_BookstandAnimals1_S1()
 		Doc_SetPage(nDocID,1,"Book_Wood_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Охота и трофеи");
+		Doc_PrintLine(nDocID,0,"Hunt and Prey");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"С каждого зверя или животного можно получить трофеи, приумножающие славу и богатство опытного охотника.");
+		Doc_PrintLines(nDocID,0,"Every beast or creature has certain trophies that improve the wealth and glory of experienced hunters.");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Опытный охотник знает все о трофеях жертвы и их добыче.");
+		Doc_PrintLines(nDocID,0,"An experienced hunter knows all about the trophies of the prey and how to gut them.");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLine(nDocID,0,"Изъятие зубов");
-		Doc_PrintLines(nDocID,0,"Зубы - оружие многих зверей и животных. Если вы знаете, как изъять их, то волков, снепперов, мракорисов, болотных акул и троллей можно считать лучшими целями.");
+		Doc_PrintLine(nDocID,0,"Extract Teeth");
+		Doc_PrintLines(nDocID,0,"Teeth are the weapons of many beasts and creatures. If you know how to extract them from your prey, wolves, snappers, shadowbeasts, swampsharks and trolls are the best targets.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLine(nDocID,1,"Снятие шкур");
-		Doc_PrintLines(nDocID,1,"Талантливые и опытные охотники высоко ценятся, у них всегда много шкур - например, овец, волков и мракорисов.");
-		Doc_PrintLines(nDocID,1,"Очень опытные охотники также могут снимать кожу с болотных акул и различных рептилий.");
+		Doc_PrintLine (nDocID, 1, "Skinning");
+		Doc_PrintLines (nDocID, 1, "A talent experienced hunters value greatly, for many animals have pelts - sheep, wolves and shadowbeats, for example.");
+		Doc_PrintLines (nDocID, 1, "A hunter with this skill can also skin swampsharks and lurkers.");;
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLine(nDocID,1,"Изъятие когтей");
-		Doc_PrintLines(nDocID,1,"Это искусство применимо ко всем типам ящеров, снепперам, луркерам и мракорисам.");
+		Doc_PrintLine(nDocID,1,"Extract Claws");
+		Doc_PrintLines(nDocID,1,"An art to be used on all kinds of lizards, snappers, lurkers and shadowbeats.");
 		Doc_Show(nDocID);
 		if(Animals_1_permanent == FALSE)
 		{
@@ -52,19 +52,19 @@ func void Use_BookstandAnimals2_S1()
 		Doc_SetPage(nDocID,1,"Book_Wood_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Охота и трофеи");
+		Doc_PrintLine(nDocID,0,"Hunt and Prey");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"С каждого зверя или животного можно получить трофеи, приумножающие славу и богатство опытного охотника.");
+		Doc_PrintLines(nDocID,0,"Every beast or creature has certain trophies that improve the wealth and glory of experienced hunters.");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLine(nDocID,0,"Кровавые мухи");
-		Doc_PrintLines(nDocID,0,"Чтобы выпотрошить этих летающих дьяволов, необходимо обладать двумя навыками: у них можно вырезать крылья и жала.");
-		Doc_PrintLines(nDocID,0,"Оба этих навыка используются опытными охотниками для добывания трофеев.");
+		Doc_PrintLine(nDocID,0,"Bloodflies");
+		Doc_PrintLines(nDocID,0,"Two special skills are required to gut these flying devils - removing wings and their stingers.");
+		Doc_PrintLines(nDocID,0,"Both arts should be used by experienced hunters to claim their trophies.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Полевые хищники и краулеры атакуют при помощи мандибул. Мандибулы краулеров особенно ценятся, так как они содержат железы, повышающие магическую силу.");
-		Doc_PrintLines(nDocID,1,"Однако, их следует использовать аккуратно, так как человеческий организм постепенно становится невосприимчив к ним.");
-		Doc_PrintLines(nDocID,1,"Панцири краулеров также весьма популярны. Из них можно изготавливать доспехи.");
+		Doc_PrintLines(nDocID,1,"Field raiders and minecrawlers use mandibles to attack. Minecrawler mandibles are particularly valuable, as they contain a secretion that increases magic powers.");
+		Doc_PrintLines(nDocID,1,"However, it should be used sparingly, as the human body ceases to react to it over time.");
+		Doc_PrintLines(nDocID,1,"Minecrawler plates are also popular. They can be used to make armor.");
 		Doc_Show(nDocID);
 		if(Animals_2_permanent == FALSE)
 		{
@@ -85,21 +85,21 @@ func void Use_BookstandAnimals3_S1()
 		Doc_SetPage(nDocID,1,"Book_Wood_R.tga",0);
 		Doc_SetFont(nDocID,-1,FONT_Book);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
-		Doc_PrintLine(nDocID,0,"Охота и трофеи");
+		Doc_PrintLine(nDocID,0,"Hunt and Prey");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"С каждого зверя или животного можно получить трофеи, приумножающие славу и богатство опытного охотника.");
+		Doc_PrintLines(nDocID,0,"Every beast or creature has certain trophies that improve the wealth and glory of experience hunters.");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLine(nDocID,0,"Огненный ящер");
-		Doc_PrintLines(nDocID,0,"Этот зверь - ящер, изрыгающий огонь, который может убить любого в пределах нескольких шагов от этой твари.");
-		Doc_PrintLines(nDocID,0,"Только те, кто обладает защитой от огня, могут охотиться на этих созданий и добывать их ценные языки.");
+		Doc_PrintLine (nDocID, 0, "Fire Lizard");
+		Doc_PrintLines (nDocID, 0, "This beast is a lizard, but it can spit fire that will kill anyone venturing within a few paces of it.");
+		Doc_PrintLines (nDocID, 0, "Only those who have protection from fire can fight these beasts and take their valued tongues.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLine(nDocID,1,"Мракорис");
-		Doc_PrintLines(nDocID,1,"Мракорис - это древний зверь, предпочитающий уединение и живущий под покровом леса.");
-		Doc_PrintLines(nDocID,1,"Этих созданий осталось очень мало, и поэтому они не представляют особой опасности для людей, если только те не забредут на территорию их охоты.");
-		Doc_PrintLines(nDocID,1,"Рог мракориса считается ценным охотничьим трофеем. Но чтобы заполучить его, охотник");
-		Doc_PrintLines(nDocID,1,"должен уметь правильно вырезать рог.");
+		Doc_PrintLine(nDocID,1,"The Shadowbeast");
+		Doc_PrintLines(nDocID,1,"The shadowbeast is an ancient loner and lives hidden in the woods.");
+		Doc_PrintLines(nDocID,1,"There are very few of these creatures left, therefore they are no danger to humans unless they venture into their hunting grounds.");
+		Doc_PrintLines(nDocID,1,"The horn on a shadowbeast's head is regarded as a valuable hunting trophy. A hunter must learn how to remove it properly");
+		Doc_PrintLines(nDocID,1,"in order to claim this prize.");
 		Doc_Show(nDocID);
 		if(Animals_3_permanent == FALSE)
 		{

@@ -1,7 +1,7 @@
 
 instance DJG_703_Cipher(Npc_Default)
 {
-	name[0] = "Сифер";
+	name[0] = "Cipher";
 	guild = GIL_DJG;
 	id = 703;
 	voice = 7;

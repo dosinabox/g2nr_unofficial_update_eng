@@ -196,12 +196,12 @@ func void DIA_Opolos_rezept_Info()
 	{
 		AI_Output (other, self, "DIA_Opolos_rezept_15_00");	//I've got the recipe you wanted.
 		AI_Output (self, other, "DIA_Opolos_rezept_12_01");	//Good, then let me read it.
-		AI_PrintScreen("Рецепт магических зелий отдано",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+		AI_PrintScreen("Given: Recipe for Magical Potions",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 		B_UseFakeScroll();
 		AI_Output(self,other,"DIA_Opolos_rezept_12_02");	//Aha... hm... yes... I see... well, well...
 		B_UseFakeScroll();
 		AI_Output(self,other,"DIA_Opolos_rezept_12_03");	//Good, thanks a lot. If you want, you can train with me.
-		AI_PrintScreen("Рецепт магических зелий получено",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
+		AI_PrintScreen("Received: Recipe for Magical Potions",-1,YPOS_ItemTaken,FONT_ScreenSmall,2);
 		Opolos_Rezept = LOG_SUCCESS;
 		B_GivePlayerXP(XP_Ambient);
 		DIA_Opolos_rezept_permanent = TRUE;

@@ -194,7 +194,7 @@ instance DIA_Talbin_AskTeacher(C_Info)
 	nr = 10;
 	condition = DIA_Talbin_AskTeacher_Condition;
 	information = DIA_Talbin_AskTeacher_Info;
-	description = "Ты можешь научить меня охотиться?";
+	description = "Can you teach me about hunting?";
 };
 
 
@@ -258,7 +258,7 @@ instance DIA_Talbin_PayTeacher_NoCheese(C_Info)
 	condition = DIA_Talbin_PayTeacher_NoCheese_Condition;
 	information = DIA_Talbin_PayTeacher_NoCheese_Info;
 	permanent = TRUE;
-	description = "У меня сейчас нет сыра!";
+	description = "I don't have any cheese at the moment!";
 };
 
 

@@ -248,8 +248,8 @@ func void DIA_PC_Thief_DI_Training_Talente_BACK()
 
 func void B_PC_Thief_JustLucky()
 {
-	AI_Output(other,self,"DIA_PC_Thief_DI_UndeadDragonDead_15_03");	//Мне просто повезло, я думаю.
-	AI_Output(self,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_04");	//(смеется) Ну, если ты так думаешь...
+	AI_Output(other,self,"DIA_PC_Thief_DI_UndeadDragonDead_15_03");	//I was lucky, I suppose.
+	AI_Output(self,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_04");	//(laughs) If you say so.
 };
 
 var int DIA_PC_Thief_DI_UndeadDragonDead_OneTime;

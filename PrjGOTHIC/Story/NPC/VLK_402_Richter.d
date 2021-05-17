@@ -1,7 +1,7 @@
 
 instance VLK_402_Richter(Npc_Default)
 {
-	name[0] = "Судья";
+	name[0] = "Judge";
 	guild = GIL_VLK;
 	id = 402;
 	voice = 10;

@@ -1,7 +1,7 @@
 
 instance SLD_841_Engardo(Npc_Default)
 {
-	name[0] = "Ёнгардо";
+	name[0] = "Engardo";
 	guild = GIL_BDT;
 	id = 841;
 	voice = 13;

@@ -1,7 +1,7 @@
 
 instance VLK_421_Valentino(Npc_Default)
 {
-	name[0] = "Валентино";
+	name[0] = "Valentino";
 	guild = GIL_VLK;
 	id = 421;
 	voice = 3;

@@ -5,15 +5,15 @@ func void B_AssignSchiffswachenGuard(var C_Npc Schiffswache)
 	{
 		if(Schiffswache.voice == 4)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_04_00");	//Мы следим за тобой. Помни об этом.
+			AI_Output (self, other, "DIA_Pal_Schiffswache_Ambient_04_00");	//We are watching you. Remember that.
 		};
 		if(Schiffswache.voice == 9)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_09_01");	//Не создавай здесь проблем, хорошо?
+			AI_Output (self, other, "DIA_Pal_Schiffswache_Ambient_09_01");	//Don't get into trouble while you're here.
 		};
 		if(Schiffswache.voice == 12)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_Ambient_12_02");	//Даже не думай воровать здесь, понял?
+			AI_Output (self, other, "DIA_Pal_Schiffswache_Ambient_12_02");	//Don't even think of stealing anything here, got it?
 		};
 		AI_StopProcessInfos(Schiffswache);
 		Npc_SetRefuseTalk(Schiffswache,60);
@@ -51,30 +51,30 @@ func void B_AssignSchiffswachenInfos(var C_Npc Schiffswache)
 	{
 		if(Schiffswache.voice == 4)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00");	//Эти проклятые орки штурмуют замок Гаронда. Мы должны действовать немедленно.
+			AI_Output (self, other, "DIA_Pal_Schiffswache_AmbientKap5_04_00");	//The damned orcs have stormed Garond's castle. We must act at once.
 		};
 		if(Schiffswache.voice == 9)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01");	//Если бы нам удалось найти этого предателя, что открыл главные ворота замка, мы бы ему показали!
+			AI_Output (self, other, "DIA_Pal_Schiffswache_AmbientKap5_09_01");	//If we ever get hold of that traitor who opened the main gate to the castle, we'll make short work of him.
 		};
 		if(Schiffswache.voice == 12)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02");	//Мы не можем ждать дольше. Нашим парням в Долине Рудников нужна помощь, чтобы справиться со следующей волной орков.
+			AI_Output (self, other, "DIA_Pal_Schiffswache_AmbientKap5_12_02");	//We can't wait much longer. Our boys in the Valley of Mines need our help before the next wave of orcs attacks.
 		};
 	}
 	else
 	{
 		if(Schiffswache.voice == 4)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03");	//Гаронд объявил всеобщую мобилизацию. Мы скоро отправляемся в Долину Рудников.
+			AI_Output (self, other, "DIA_Pal_Schiffswache_AmbientKap5_04_03");	//Garond has called for a general mobilization. We'll set out for the Valley of Mines soon.
 		};
 		if(Schiffswache.voice == 9)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04");	//Оркам нужно преподнести урок.
+			AI_Output (self, other, "DIA_Pal_Schiffswache_AmbientKap5_09_04");	//The orcs must finally be taught a lesson.
 		};
 		if(Schiffswache.voice == 12)
 		{
-			AI_Output(self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05");	//Я не могу дождаться, когда мы, наконец, покажем этим оркам. Ну ничего, скоро мы начнем теснить их.
+			AI_Output (self, other, "DIA_Pal_Schiffswache_AmbientKap5_12_05");	//I can barely wait to give those orcs what for. We'll get started soon.
 		};
 	};
 	AI_StopProcessInfos(Schiffswache);

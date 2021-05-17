@@ -1,7 +1,7 @@
 
 prototype Mst_Default_SwampDrone(C_Npc)
 {
-	name[0] = "Болотный дрон";
+	name[0] = "Swampgas Drone";
 	guild = GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID] = ID_SWAMPDRONE;
 	level = 10;

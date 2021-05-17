@@ -1,7 +1,7 @@
 
 instance BDT_1020_Bandit_L(Npc_Default)
 {
-	name[0] = "Разбойник";
+	name[0] = "Highwayman";
 	guild = GIL_BDT;
 	id = 1020;
 	voice = 6;

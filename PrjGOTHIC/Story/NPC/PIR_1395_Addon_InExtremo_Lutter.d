@@ -1,7 +1,7 @@
 
 instance PIR_1395_Addon_InExtremo_Lutter(Npc_Default)
 {
-	name[0] = "Люттер";
+	name[0] = "Lutter";
 	npcType = npctype_main;
 	guild = GIL_NONE;
 	level = 4;

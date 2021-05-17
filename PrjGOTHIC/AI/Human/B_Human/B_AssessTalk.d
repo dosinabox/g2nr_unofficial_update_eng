@@ -16,8 +16,8 @@ func void B_AssessTalk()
 	{
 		if(C_NpcIsLevelinspektor(other) || C_NpcIsRockefeller(other))
 		{
-			PrintScreen(ConcatStrings("Голос: ",IntToString(self.voice)),-1,70,FONT_Screen,2);
-			PrintScreen("Нет героя!",-1,-1,FONT_Screen,2);
+			PrintScreen(ConcatStrings("Voice: ",IntToString(self.voice)),-1,70,FONT_Screen,2);
+			PrintScreen("No hero!",-1,-1,FONT_Screen,2);
 			PrintScreen(IntToString(self.aivar[AIV_FollowDist]),-1,65,FONT_Screen,2);
 			if(C_NpcIsInQuarter(self) == Q_KASERNE)
 			{

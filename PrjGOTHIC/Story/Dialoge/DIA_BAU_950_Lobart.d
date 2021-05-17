@@ -69,7 +69,7 @@ func void DIA_Lobart_STOLENCLOTHS_Info()
 	else
 	{
 		Info_AddChoice(DIA_Lobart_STOLENCLOTHS,"I don't have them any more.",DIA_Lobart_STOLENCLOTHS_DontHaveIt);
-		Info_AddChoice(DIA_Lobart_STOLENCLOTHS,"Сколько стоит эта рабочая одежда?",DIA_Lobart_STOLENCLOTHS_HowMuch);
+		Info_AddChoice(DIA_Lobart_STOLENCLOTHS,"How much for the work clothes?",DIA_Lobart_STOLENCLOTHS_HowMuch);
 	};
 };
 
@@ -756,7 +756,7 @@ instance DIA_Lobart_BUGALIVE(C_Info)
 	condition = DIA_Lobart_BUGALIVE_Condition;
 	information = DIA_Lobart_BUGALIVE_Info;
 	permanent = TRUE;
-	description = "Я думаю, я разделался со всеми тварями!";
+	description = "I think I've done away with the things!";
 };
 
 
