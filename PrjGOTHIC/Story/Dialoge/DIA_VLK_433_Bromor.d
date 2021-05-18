@@ -191,7 +191,7 @@ func void DIA_Addon_Bromor_LuciaGold_lohn()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_Bromor_LuciaGold_lohn_07_01_add");	//50 gold pieces. What do you say?
+		AI_Output(self,other,"DIA_Addon_Bromor_LuciaGold_lohn_07_01_add");	//50 gold pieces. What do you say?@@@
 	};
 	Info_ClearChoices(DIA_Addon_Bromor_LuciaGold);
 	if(DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
@@ -241,7 +241,7 @@ func void DIA_Addon_Bromor_LuciaGold_geben()
 
 func void B_Bromor_NoServiceForYou()
 {
-	AI_Output(self,other,"DIA_Addon_Bromor_LuciaGold_mehr_07_01_add");	//You needn't show your face around here again!
+	AI_Output(self,other,"DIA_Addon_Bromor_LuciaGold_mehr_07_01_add");	//You needn't show your face around here again!@@@
 };
 
 var int DIA_Bromor_Pay_OneTime;
@@ -325,7 +325,7 @@ func void DIA_Bromor_DOPE_Info()
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Bromor_DOPE_07_01_add");	//(evasively) All my girls are very special...
+			AI_Output(self,other,"DIA_Bromor_DOPE_07_01_add");	//(evasively) All my girls are very special...@@@
 		};
 	}
 	else

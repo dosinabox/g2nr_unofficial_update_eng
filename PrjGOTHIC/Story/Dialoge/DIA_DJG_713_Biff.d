@@ -760,8 +760,6 @@ func void DIA_Biff_DRACHENTOT_Info()
 };
 
 
-var int Biff_ToldLaterOnce;
-
 instance DIA_Biff_KnowWhereEnemy(C_Info)
 {
 	npc = DJG_713_Biff;
@@ -794,14 +792,7 @@ func void DIA_Biff_KnowWhereEnemy_Info()
 	{
 		AI_Output(other,self,"DIA_Biff_KnowWhereEnemy_15_04");	//I'm going to leave Khorinis and go to an island to look for new opponents.
 		Info_ClearChoices(DIA_Biff_KnowWhereEnemy);
-		if(Biff_ToldLaterOnce == TRUE)
-		{
-			Info_AddChoice(DIA_Biff_KnowWhereEnemy,"I just thought I'd mention it.",DIA_Biff_KnowWhereEnemy_No);
-		}
-		else
-		{
-			Info_AddChoice(DIA_Biff_KnowWhereEnemy,"We'll get back to it later...",DIA_Biff_KnowWhereEnemy_No);
-		};
+		Info_AddChoice(DIA_Biff_KnowWhereEnemy,"I just thought I'd mention it.",DIA_Biff_KnowWhereEnemy_No);
 		Info_AddChoice(DIA_Biff_KnowWhereEnemy,"Won't you come along?",DIA_Biff_KnowWhereEnemy_Yes);
 	};
 };
@@ -820,16 +811,8 @@ func void DIA_Biff_KnowWhereEnemy_Yes()
 
 func void DIA_Biff_KnowWhereEnemy_No()
 {
-	if(Biff_ToldLaterOnce == TRUE)
-	{
-		AI_Output(other,self,"DIA_Biff_KnowWhereEnemy_No_15_00");	//I just thought I'd mention it.
-	}
-	else
-	{
-		DIA_Common_WeWillGetToThatLater();
-	};
+	AI_Output(other,self,"DIA_Biff_KnowWhereEnemy_No_15_00");	//I just thought I'd mention it.
 	AI_Output(self,other,"DIA_Biff_KnowWhereEnemy_No_07_01");	//Well, well. Have fun, then.
-	Biff_ToldLaterOnce = TRUE;
 	Biff_IsOnBoard = LOG_OBSOLETE;
 	Info_ClearChoices(DIA_Biff_KnowWhereEnemy);
 };

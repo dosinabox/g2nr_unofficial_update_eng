@@ -88,7 +88,7 @@ func void DIA_Gunnar_Hallo_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Gunnar_Hallo_10_03_add");	//Times are tough...
+		AI_Output(self,other,"DIA_Gunnar_Hallo_10_03_add");	//Times are tough...@@@
 	};
 	Gunnar_HalloGesagt = TRUE;
 };

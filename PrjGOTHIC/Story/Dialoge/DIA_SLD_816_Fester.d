@@ -381,7 +381,7 @@ func void DIA_Fester_PERMPruegel_Info()
 	}
 	else
 	{
-		AI_Output(other,self,"DIA_Fester_PERMPruegel_15_00_add");	//I think your hide could do with tanning.
+		AI_Output(other,self,"DIA_Fester_PERMPruegel_15_00_add");	//I think your hide could do with tanning.@@@
 	};
 	if(Fester_Duell_Day < Wld_GetDay())
 	{

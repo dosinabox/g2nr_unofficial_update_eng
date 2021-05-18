@@ -47,11 +47,11 @@ func void Use_StatsBook()
 	}
 	else if(hero.guild == GIL_KDF)
 	{
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(AlmanachCounter)," альманахов Пирокару"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(AlmanachCounter)," almanacs to Pyrokar"));
 	}
 	else if(hero.guild == GIL_PAL)
 	{
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(OrkRingCounter)," колец Хагену"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(OrkRingCounter)," rings to Hagen"));
 	};
 	Doc_PrintLine(nDocID,0,"");
 	if(Player_IsApprentice == APP_Constantino)

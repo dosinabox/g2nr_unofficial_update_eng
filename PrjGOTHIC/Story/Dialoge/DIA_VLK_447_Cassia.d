@@ -158,7 +158,7 @@ func void DIA_Cassia_News_Info()
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Cassia_News_16_04_add");	//Just look who found his way here.
+			AI_Output(self,other,"DIA_Cassia_News_16_04_add");	//Just look who found his way here.@@@
 		};
 		AI_Output (self, other, "DIA_Cassia_News_16_07");	//Your presence here, however, opens up a new option ...
 		AI_Output (other, self, "DIA_Cassia_News_15_08");	//... what do you want to offer me?
@@ -752,11 +752,11 @@ func void DIA_Cassia_Blutkelche_Info()
 	{
 		if(PETZCOUNTER_City_Theft > 0)
 		{
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_01");	//Not as long as you're wanted in town as a thief.
+			AI_Output (self, other, "DIA_Cassia_Blutkelche_16_01");	//Not as long as you're wanted in town as a thief.
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Cassia_Blutkelche_16_01_add");	//Not as long as you're wanted in town.
+			AI_Output(self,other,"DIA_Cassia_Blutkelche_16_01_add");	//Not as long as you're wanted in town.@@@
 		};
 		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_02");	//Clear that up - pay your penalty or get rid of the witnesses, I don't care, just as long as you clear it up.
 		AI_StopProcessInfos(self);

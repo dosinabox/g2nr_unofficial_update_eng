@@ -447,7 +447,7 @@ func void DIA_Rod_Wette_GiveBack()
 	B_GiveInvItems(other,self,ItMw_2h_Rod,1);
 	if(Rod_WetteGewonnen == FALSE)
 	{
-		AI_Output(self,other,"DIA_Rod_Wette_GiveBack_06_01_add");	//You're nothing but a wimp after all!
+		AI_Output(self,other,"DIA_Rod_Wette_GiveBack_06_01_add");	//You're nothing but a wimp after all!@@@
 	};
 	Info_ClearChoices(DIA_Rod_Wette);
 };

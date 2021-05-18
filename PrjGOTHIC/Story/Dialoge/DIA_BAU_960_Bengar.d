@@ -603,7 +603,7 @@ func void DIA_Bengar_BALTHASARDARFAUFWEIDE_Info()
 	}
 	else
 	{
-		AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00_add");	//Balthasar can use your land again.
+		AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00_add");	//Balthasar can use your land again.@@@
 	};
 	AI_Output(self,other,"DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01");	//Why?
 	AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02");	//(threatening) Because I said so.

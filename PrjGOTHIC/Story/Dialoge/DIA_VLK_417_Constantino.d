@@ -1070,6 +1070,7 @@ func void DIA_Constantino_TEACH_Health03()
 	if(B_TeachPlayerTalentAlchemy(self,other,POTION_Health_03))
 	{
 		AI_Output(self,other,"DIA_Constantino_TEACH_Health03_10_00");	//Creating an elixir of healing takes quite a bit of experience.
+		AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_15_00");	//What ingredients do I need for an elixir of healing?
 		AI_Output(self,other,"DIA_Constantino_TEACH_Health03_10_01");	//You need healing roots and meadow knotweed. Take special care when heating it this time.
 	};
 };

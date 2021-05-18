@@ -352,7 +352,7 @@ func void DIA_Addon_Greg_AboutCanyon_Compadres()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_Greg_NW_Bigcross_01_07_add");	//It can't be all that difficult.
+		AI_Output(self,other,"DIA_Addon_Greg_NW_Bigcross_01_07_add");	//It can't be all that difficult.@@@
 	};
 	Info_ClearChoices(DIA_Addon_Greg_AboutCanyon);
 };

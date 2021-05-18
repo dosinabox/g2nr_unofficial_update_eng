@@ -931,7 +931,7 @@ func void DIA_Bosper_Minenanteil_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Bosper_Minenanteil_11_01_add");	//Ahem. I know nothing about that.
+		AI_Output(self,other,"DIA_Bosper_Minenanteil_11_01_add");	//Ahem. I know nothing about that.@@@
 	};
 	B_GivePlayerXP(XP_Ambient);
 };

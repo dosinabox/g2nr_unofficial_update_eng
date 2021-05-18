@@ -43,7 +43,7 @@ func void DIA_SLD_7_JOIN_Info()
 	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00");	//I want to join you!
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output(self,other,"DIA_SLD_7_JOIN_07_01_add");	//We could use someone like you here!
+		AI_Output(self,other,"DIA_SLD_7_JOIN_07_01_add");	//We could use someone like you here!@@@
 	}
 	else if(MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{

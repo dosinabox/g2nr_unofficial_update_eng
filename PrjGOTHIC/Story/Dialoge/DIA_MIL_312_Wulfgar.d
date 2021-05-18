@@ -151,7 +151,7 @@ func void DIA_Wulfgar_CanYouTrain_Info()
 		{
 			if((other.guild == GIL_PAL) || (other.guild == GIL_KDF))
 			{
-				AI_Output(self,other,"DIA_Wulfgar_CanYouTrain_04_03_add");	//But that's only true for combat training.
+				AI_Output(self,other,"DIA_Wulfgar_CanYouTrain_04_03_add");	//But that's only true for combat training.@@@
 			}
 			else
 			{

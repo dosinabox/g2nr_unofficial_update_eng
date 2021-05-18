@@ -381,7 +381,7 @@ func void DIA_Pyrokar_SUCCESS_Info()
 {
 	AI_Output(other,self,"DIA_Pyrokar_SUCCESS_15_00");	//I found the runestone.
 //	AI_Output(self,other,"DIA_Pyrokar_SUCCESS_11_01");	//(incredulously) You... did it?! You followed the signs and discovered the hidden portal...
-	AI_Output(self,other,"DIA_Pyrokar_SUCCESS_11_01_add");	//(недоверчиво) Ты... сделал это?! Ты следовал знакам и нашел скрытый проход...@@
+	AI_Output(self,other,"DIA_Pyrokar_SUCCESS_11_01_add");	//(недоверчиво) Ты... сделал это?! Ты следовал знакам и нашел скрытый проход...@@@
 	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_02");	//... and I defeated all those monsters who had already marked me down as a snack.
 	AI_Output (self, other, "DIA_Pyrokar_SUCCESS_11_03");	//And the other novices, then? What about Agon? Did they not succeed before you?
 	AI_Output (other, self, "DIA_Pyrokar_SUCCESS_15_04");	//They have failed. I suppose they weren't destined to pass the test.

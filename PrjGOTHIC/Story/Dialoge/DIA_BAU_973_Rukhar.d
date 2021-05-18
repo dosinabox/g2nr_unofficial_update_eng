@@ -333,7 +333,7 @@ func void DIA_Rukhar_NoRandolph_Info()
 			AI_Output(other,self,"DIA_Talbin_FOUNDENGROM_15_03");	//I don't think you'll see him ever again.
 		};
 		AI_Output(other,self,"DIA_Rukhar_GELDZURUECK_15_00");	//I want my money back.
-		AI_Output(self,other,"DIA_Rukhar_NORANDOLPH_12_01_add");	//Very funny. You should have thought it over before.
+		AI_Output(self,other,"DIA_Rukhar_NORANDOLPH_12_01_add");	//Very funny. You should have thought it over before.@@@
 	};
 	MIS_Rukhar_Wettkampf = LOG_FAILED;
 	B_CheckLog();

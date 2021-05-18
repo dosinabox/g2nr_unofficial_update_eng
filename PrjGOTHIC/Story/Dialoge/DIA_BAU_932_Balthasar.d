@@ -118,7 +118,7 @@ func void B_BalthasarLostHisSheeps()
 {
 	AI_WaitTillEnd(self,other);
 	AI_PlayAni(self,"T_SEARCH");
-	AI_Output(self,other,"DIA_Balthasar_PERMKAP1_05_02_add");	//I can't find my sheep!
+	AI_Output(self,other,"DIA_Balthasar_PERMKAP1_05_02_add");	//I can't find my sheep!@@@
 	AI_StopProcessInfos(self);
 	MIS_Balthasar_BengarsWeide = LOG_OBSOLETE;
 	B_CheckLog();

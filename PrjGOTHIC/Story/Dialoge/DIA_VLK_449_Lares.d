@@ -223,7 +223,7 @@ func void DIA_Lares_HALLO_Info()
 	}
 	else if((other.guild == GIL_NOV) || (other.guild == GIL_KDF))
 	{
-		AI_Output(self,other,"DIA_Lares_OtherGuild_09_06_add");	//I heard you entered the monastery.
+		AI_Output(self,other,"DIA_Lares_OtherGuild_09_06_add");	//I heard you entered the monastery.@@@
 	}
 	else if(other.guild == GIL_SLD)
 	{
@@ -599,7 +599,7 @@ func void DIA_Addon_Lares_GetRangerArmor_Info()
 	AI_Output (self, other, "DIA_Addon_Lares_GetRangerArmor_09_04");	//Here, take the armor of our community.
 	if(Lares_ArmorComment == FALSE)
 	{
-		AI_Output(self,other,"DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03_add");	//The members of the Ring of Water have been wearing such armor since before the orc wars.
+		AI_Output(self,other,"DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03_add");	//The members of the Ring of Water have been wearing such armor since before the orc wars.@@@
 		Lares_ArmorComment = TRUE;
 	};
 	AI_WaitTillEnd(other,self);
@@ -1087,7 +1087,7 @@ func void DIA_Lares_Paladine_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Lares_Paladine_09_03_add");	//And you think they'll give it to you?
+		AI_Output(self,other,"DIA_Lares_Paladine_09_03_add");	//And you think they'll give it to you?@@@
 	};
 	if(!Npc_KnowsInfo(other,DIA_Addon_Lares_Vatras))
 	{
@@ -1098,7 +1098,7 @@ func void DIA_Lares_Paladine_Info()
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Addon_Lares_RangerHelp_waffe_09_01_add");	//There's nothing I can do about that, I'm afraid.
+			AI_Output(self,other,"DIA_Addon_Lares_RangerHelp_waffe_09_01_add");	//There's nothing I can do about that, I'm afraid.@@@
 		};
 	};
 };
@@ -1196,7 +1196,7 @@ func void DIA_Addon_Lares_Gilde_SLD()
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_03");	//Tell him that you 'reside beneath my wing'. He'll understand.
 	if(Npc_KnowsInfo(other,DIA_Addon_Cord_YouAreRanger))
 	{
-		AI_Output(other,self,"DIA_Addon_Lares_Gilde_SLD_15_00_add");	//I've talked to him.
+		AI_Output(other,self,"DIA_Addon_Lares_Gilde_SLD_15_00_add");	//I've talked to him.@@@
 		AI_Output(self,other,"DIA_Lares_OtherGuild_09_03");	//(mischievously) Only you could pull something like that...
 		B_GivePlayerXP(100);
 	}

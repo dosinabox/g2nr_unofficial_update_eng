@@ -48,7 +48,7 @@ func void DIA_Neoras_Hallo_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Neoras_Hallo_01_00_add");	//What ... what's wrong? Why are you bothering me?
+		AI_Output(self,other,"DIA_Neoras_Hallo_01_00_add");	//What ... what's wrong? Why are you bothering me?@@@
 	};
 	AI_Output(other,self,"DIA_Neoras_Hallo_15_01");	//I didn't mean to disturb you.
 	AI_Output(self,other,"DIA_Neoras_Hallo_01_02");	//You already have. -sigh- Well, what do you want?
@@ -453,7 +453,7 @@ func void DIA_Neoras_BrewForMe_Mana()
 
 func void DIA_Neoras_BrewForMe_Health()
 {
-	AI_Output(other,self,"DIA_Neoras_BrewForMe_Health_15_00");	//Brew me an elixir of healing.
+	AI_Output(other,self,"DIA_Neoras_BrewForMe_Health_15_00");	//Brew me an elixir of healing.@@@should be an extract!
 	if((Npc_HasItems(other,ItPl_Health_Herb_02) >= 2) && Npc_HasItems(other,ItPl_Temp_Herb) && (Npc_HasItems(other,ItMi_Gold) >= 10))
 	{
 		AI_Output(self,other,"DIA_Neoras_BrewForMe_Health_01_01");	//All right, do you have the ingredients and the gold?
@@ -475,7 +475,7 @@ func void DIA_Neoras_BrewForMe_Health()
 		AI_Output (self, other, "DIA_Neoras_BrewForMe_Health_01_04");	//You don't have the necessary ingredients. Come back when you've got them all together.
 		if(Neoras_Ingrediences_Advice == FALSE)
 		{
-			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_15_00");	//What ingredients do I need for an elixir of healing?
+			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_15_00_add");	//What ingredients do I need for an extract of healing?@@@
 			AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_01_01");	//A potion like that is not especially complicated.
 			//AI_Output(other,self,"DIA_Neoras_INGREDIENCES_Health_01_02");	//You only need to bring me five healing herbs and one Meadow Knotweed.
 			AI_Output(self,other,"DIA_Hyglas_FIREBOLT_14_01");	//Read up on it - it's right there in the books.
