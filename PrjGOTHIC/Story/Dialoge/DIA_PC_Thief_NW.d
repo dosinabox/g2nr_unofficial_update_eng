@@ -118,7 +118,7 @@ func void DIA_DiegoNW_NeedHelp_Clothes()
 	AI_Output (other, self, "DIA_DiegoNW_NeedHelp_Clothes_15_03");	//You've got a point there.
 	AI_Output (self, other, "DIA_DiegoNW_NeedHelp_Clothes_11_04");	//That's the way I see it. But even though I have doffed my Shadow garb, I'm still who I always was.
 	AI_Output (self, other, "DIA_DiegoNW_NeedHelp_Clothes_11_05");	//And I have big plans for this city.
-	Info_AddChoice(DIA_DiegoNW_NeedHelp,"Какие планы?",DIA_DiegoNW_NeedHelp_Problem);
+	Info_AddChoice(DIA_DiegoNW_NeedHelp,"What plans?",DIA_DiegoNW_NeedHelp_Problem);
 };
 
 func void DIA_DiegoNW_NeedHelp_Problem()

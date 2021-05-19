@@ -510,7 +510,7 @@ instance DIA_Addon_Cavalorn_AUSRUESTUNG(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Cavalorn_AUSRUESTUNG_Condition;
 	information = DIA_Addon_Cavalorn_AUSRUESTUNG_Info;
-	description = "Мне нужна экипировка получше.";
+	description = "I need better equipment.";
 };
 
 
@@ -978,7 +978,7 @@ func void DIA_Addon_Cavalorn_WannaLearn_Info()
 	AI_Output(other,self,"DIA_Addon_Cavalorn_WannaLearn_15_00");	//Can you teach me something?
 	if((CavalornWeakComment == FALSE) && (SC_ForgotAboutCavalorn == FALSE))
 	{
-		AI_Output(self,other,"DIA_Addon_Cavalorn_WannaLearn_08_01_add");	//Sure. You know that.@@@
+		AI_Output(self,other,"DIA_Addon_Cavalorn_WannaLearn_08_01_add");	//Sure. You know that.
 	};
 	if(CavalornWeakComment == TRUE)
 	{
@@ -1112,7 +1112,7 @@ func void DIA_Addon_Cavalorn_Teach_Back()
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Addon_Cavalorn_Teach_BACK_08_00_add");	//That's better.@@@
+			AI_Output(self,other,"DIA_Addon_Cavalorn_Teach_BACK_08_00_add");	//That's better.
 		};
 	};
 	Info_ClearChoices(DIA_Addon_Cavalorn_TEACH);

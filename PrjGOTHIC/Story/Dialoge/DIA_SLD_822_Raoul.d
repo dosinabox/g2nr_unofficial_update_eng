@@ -198,7 +198,7 @@ func void DIA_Raoul_AboutSylvio_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Raoul_AboutSylvio_01_01_add");	//Our next leader, if you ask me.@@@
+		AI_Output(self,other,"DIA_Raoul_AboutSylvio_01_01_add");	//Our next leader, if you ask me.
 	};
 };
 

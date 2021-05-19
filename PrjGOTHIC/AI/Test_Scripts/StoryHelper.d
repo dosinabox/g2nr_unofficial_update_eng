@@ -23,7 +23,7 @@ func void UseItPo_Story()
 
 instance SH(Npc_Default)
 {
-	name[0] = "Помощник по сюжету";
+	name[0] = "Story Helper";
 	guild = GIL_NONE;
 	id = 9999;
 	voice = 15;
@@ -79,7 +79,7 @@ instance StoryHelper_PatchSettings(C_Info)
 	information = StoryHelper_PatchSettings_Info;
 	important = FALSE;
 	permanent = TRUE;
-	description = "(настройки неофициального обновления)";
+	description = "(Script-Patch settings)";
 };
 
 
@@ -115,8 +115,8 @@ func void StoryHelper_INFO1_Info()
 	Info_ClearChoices(StoryHelper_INFO1);
 	Info_AddChoice(StoryHelper_INFO1,Dialog_Back,StoryHelper_BACK1);
 	Info_AddChoice(StoryHelper_INFO1,KapAnfang,StoryHelper_KAPITEL1ANFANG);
-	Info_AddChoice(StoryHelper_INFO1,"АДДОН Готов к первой встрече с Сатурасом (забыть о Ларесе)",StoryHelper_SATURAS);
-	Info_AddChoice(StoryHelper_INFO1,"АДДОН Баг с Кавалорном",StoryHelper_Cavalorn);
+	Info_AddChoice(StoryHelper_INFO1,"ADDON Ready for first meeting with Saturas (Forget about Lares)",StoryHelper_SATURAS);
+	Info_AddChoice(StoryHelper_INFO1,"ADDON Bug with Cavalorn",StoryHelper_Cavalorn);
 };
 
 func void StoryHelper_SATURAS()

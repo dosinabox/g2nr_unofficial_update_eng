@@ -324,7 +324,7 @@ func void Use_DementorObsessionBook()
 		if((Kapitel == 6) && (Mario_IsOnBoard == LOG_SUCCESS) && (OrkSturmDI == TRUE))
 		{
 			Doc_PrintLine(nDocID,1,"");
-			Doc_PrintLine(nDocID,1,"МАРИО");
+			Doc_PrintLine(nDocID,1,"Mario");
 		};
 		Doc_Show(nDocID);
 	};
@@ -590,7 +590,7 @@ func void Use_BabosDocs()
 {
 	Snd_Play("MOB_BOOK_TURNPAGE_A1");
 	BabosDocsOpen = TRUE;
-	AI_PrintScreen("Получено письмо и рисунок",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("Received: Letter and a sketch",-1,YPOS_ItemGiven,FONT_ScreenSmall,2);
 	CreateInvItems(self,ItWr_BabosLetter_MIS,1);
 	CreateInvItems(self,ItWr_BabosPinUp_MIS,1);
 };
@@ -707,8 +707,8 @@ instance ItSe_Golemchest_Mis(C_Item)
 	on_state[0] = Use_GolemChest;
 	description = name;
 	text[0] = PRINT_Pocket_50;
-	text[1] = "It seems that it contains something";
-	text[1] = "besides gold.";
+	text[1] = "It contains something else inside.";
+	text[2] = "";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -858,7 +858,7 @@ func void Use_MinenAnteil_Mis()
 	Doc_SetPage(nDocID,0,"letters.TGA",0);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
-	Doc_PrintLine(nDocID,0,"Акция рудника");
+	Doc_PrintLine(nDocID,0,"Ore Mine Share");
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines (nDocID, 0, "By the King's Bill of Property gained from Royal Lands, the bearer of this document is granted prospecting rights on the King's land.");

@@ -244,7 +244,7 @@ func void Use_Bookstand_Kreise_04_S1()
 		Doc_PrintLine(nDocID,0,"");
 		Doc_PrintLine(nDocID,0,"Large Fireball:");
 		Doc_PrintLine(nDocID,0,"- Sulfur");
-		Doc_PrintLine(nDocID,0,"- смола");
+		Doc_PrintLine(nDocID,0,"- Pitch");
 		Doc_PrintLine(nDocID,0,"");
 		Doc_PrintLine(nDocID,0,"Sulfur:");
 		Doc_PrintLine(nDocID,0,"- Rock Crystal");

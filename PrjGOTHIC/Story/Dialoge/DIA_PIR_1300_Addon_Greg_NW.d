@@ -775,7 +775,7 @@ func int DIA_Addon_Greg_NW_Bigcross_Condition()
 
 func void DIA_Addon_Greg_NW_Bigcross_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Greg_NW_Bigcross_15_01");	//Как дела?
+	AI_Output(other,self,"DIA_Addon_Greg_NW_Bigcross_15_01");	//How are things?
 	if((MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED) || (MIS_Addon_Greg_RakeCave == LOG_FAILED))
 	{
 		AI_Output (self, other, "DIA_Addon_Greg_NW_Bigcross_01_00");	//Look, if it ain't Mr. Unreliable.

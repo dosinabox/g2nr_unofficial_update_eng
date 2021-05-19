@@ -134,7 +134,7 @@ instance DIA_Babera_Rosi(C_Info)
 	nr = 3;
 	condition = DIA_Babera_Rosi_Condition;
 	information = DIA_Babera_Rosi_Info;
-	description = "А где Рози?";
+	description = "Where's Rosi?";
 };
 
 

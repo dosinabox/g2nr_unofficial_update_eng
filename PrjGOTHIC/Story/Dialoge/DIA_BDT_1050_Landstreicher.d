@@ -60,7 +60,7 @@ func void DIA_Landstreicher_HALLO_wer()
 	AI_Output (self, other, "DIA_Landstreicher_HALLO_wer_09_02");	//You can say what you like, but somehow those guys aren't quite right in the head.
 	if(hero.guild == GIL_NOV)
 	{
-		Info_AddChoice(DIA_Landstreicher_HALLO,"Придержи язык.",DIA_Landstreicher_HALLO_wer_vorsicht);
+		Info_AddChoice(DIA_Landstreicher_HALLO,"Mind your language.",DIA_Landstreicher_HALLO_wer_vorsicht);
 	};
 	if(hero.guild == GIL_KDF)
 	{

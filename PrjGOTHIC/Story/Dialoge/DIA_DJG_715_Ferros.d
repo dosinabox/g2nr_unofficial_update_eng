@@ -157,7 +157,7 @@ func void DIA_DJG_715_Ferros_OldCamp_Yes()
 	AI_Output (self, other, "DIA_DJG_715_Ferros_OldCamp_Yes_01_02");	//I probably lost it there, near the orc tents.
 	Log_CreateTopic(TOPIC_FerrosSword,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FerrosSword,LOG_Running);
-	B_LogEntry(TOPIC_FerrosSword,"It seems Feros lost his sword on the tall cliff in the south, where the orc tents are.Как безрассудно.");
+	B_LogEntry(TOPIC_FerrosSword,"It seems Feros lost his sword on the tall cliff in the south, where the orc tents are. How reckless.");
 	Info_ClearChoices(DIA_DJG_715_Ferros_OldCamp);
 };
 

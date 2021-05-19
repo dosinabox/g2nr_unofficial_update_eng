@@ -193,7 +193,7 @@ func void DIA_Sagitta_TeachAlchemyRequest_Info()
 	if(Npc_HasItems(self,ItPl_Sagitta_Herb_MIS))
 	{
 		Npc_RemoveInvItem(self,ItPl_Sagitta_Herb_MIS);
-		AI_Output(self,other,"DIA_Sagitta_Sagitta_Herb_17_01_add");	//Ask me whatever you want to know about brewing potions.@@@
+		AI_Output(self,other,"DIA_Sagitta_Sagitta_Herb_17_01_add");	//Ask me whatever you want to know about brewing potions.
 		Sagitta_TeachAlchemy = TRUE;
 		MIS_Sagitta_Herb = LOG_SUCCESS;
 		B_CheckLog();

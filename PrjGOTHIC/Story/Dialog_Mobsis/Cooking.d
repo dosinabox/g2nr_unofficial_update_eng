@@ -90,7 +90,7 @@ func void pc_pan_1_info()
 	};
 	CreateInvItems(hero,ItFoMutton,Npc_HasItems(hero,ItFoMuttonRaw));
 	Npc_RemoveInvItems(hero,ItFoMuttonRaw,Npc_HasItems(hero,ItFoMuttonRaw));
-	AI_PrintScreen("ћ€со пожарено",-1,YPOS_GoldGiven,FONT_ScreenSmall,2);
+	AI_PrintScreen("Meat fried!",-1,YPOS_GoldGiven,FONT_ScreenSmall,2);
 	b_endproductiondialog();
 };
 

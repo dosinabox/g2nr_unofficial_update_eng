@@ -120,7 +120,7 @@ instance DIA_Halvor_TRADE(C_Info)
 	information = DIA_Halvor_TRADE_Info;
 	permanent = TRUE;
 	trade = TRUE;
-	description = "Покажи мне свою рыбу.";
+	description = "Show me your fish.";
 };
 
 

@@ -429,7 +429,7 @@ instance DIA_Mil_305_Torwache_PERM(C_Info)
 	condition = DIA_Mil_305_Torwache_PERM_Condition;
 	information = DIA_Mil_305_Torwache_PERM_Info;
 	permanent = TRUE;
-	description = "Как дела?";
+	description = "How's it going?";
 };
 
 

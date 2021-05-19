@@ -39,7 +39,7 @@ const int HP_Perm_Herb = 5;
 
 instance ItPl_Weed(C_Item)
 {
-	name = "Сорняки";
+	name = "Weeds";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Weed;

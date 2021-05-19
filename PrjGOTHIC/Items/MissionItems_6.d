@@ -272,7 +272,7 @@ instance ItWr_Diary_BlackNovice_MIS(C_Item)
 	material = MAT_LEATHER;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Дневник послушника черного мага.";
+	text[0] = "Diary of the Black Magician's apprentice.";
 	on_state[0] = Use_Diary_BlackNovice;
 };
 
@@ -318,7 +318,7 @@ instance ItWr_ZugBruecke_MIS(C_Item)
 	on_state[0] = Use_ZugBruecke;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "from the huge cave in on the Isle of Irdorath";
+	text[0] = "From the huge cave in on the Isle of Irdorath.";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;

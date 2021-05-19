@@ -322,7 +322,7 @@ func void DIA_Addon_Logan_tot_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Addon_Logan_tot_10_02_add");	//Do that.@@@
+		AI_Output(self,other,"DIA_Addon_Logan_tot_10_02_add");	//Do that.
 	};
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	MIS_HlpLogan = LOG_SUCCESS;

@@ -2119,7 +2119,7 @@ func void DIA_Vatras_MESSAGE_SUCCESS_Info()
 
 func void DIA_Vatras_MESSAGE_SUCCESS_Plant()
 {
-	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Plant_add");	//Give me king's sorrel.@@@
+	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Plant_add");	//Give me king's sorrel.
 	AI_WaitTillEnd(self,other);
 	B_GiveInvItems(self,other,ItPl_Perm_Herb,1);
 	Info_ClearChoices(DIA_Vatras_MESSAGE_SUCCESS);
@@ -2135,7 +2135,7 @@ func void DIA_Vatras_MESSAGE_SUCCESS_Ring()
 
 func void DIA_Vatras_MESSAGE_SUCCESS_Ore()
 {
-	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Ore_add");	//Give me the ore.@@@
+	AI_Output(other,self,"DIA_Vatras_MESSAGE_SUCCESS_15_00_Ore_add");	//Give me the ore.
 	AI_WaitTillEnd(self,other);
 	B_GiveInvItems(self,other,ItMi_Nugget,1);
 	Info_ClearChoices(DIA_Vatras_MESSAGE_SUCCESS);

@@ -120,7 +120,7 @@ instance ItKe_OC_Store(C_Item)
 
 instance ITKE_ErzBaronFlur(C_Item)
 {
-	name = "Key for the first door.";
+	name = "Key for the first door";
 	mainflag = ITEM_KAT_KEYS;
 	flags = 0;
 	value = 0;
@@ -137,7 +137,7 @@ instance ITKE_ErzBaronFlur(C_Item)
 
 instance ITKE_ErzBaronRaum(C_Item)
 {
-	name = "Key for the second door.";
+	name = "Key for the second door.;
 	mainflag = ITEM_KAT_KEYS;
 	flags = 0;
 	value = 0;
@@ -145,7 +145,7 @@ instance ITKE_ErzBaronRaum(C_Item)
 	material = MAT_METAL;
 	description = name;
 	text[0] = "There is a name engraved on it:";
-	text[1] = "Gomez.";
+	text[1] = "'Gomez'";
 	inv_rotz = -45;
 	inv_rotx = -25;
 	inv_roty = 0;
@@ -479,7 +479,7 @@ var int Manowar_Once;
 
 instance ItWr_Manowar(C_Item)
 {
-	name = "Song lyrics.";
+	name = "Song lyrics";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;

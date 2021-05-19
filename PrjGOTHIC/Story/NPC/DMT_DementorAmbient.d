@@ -495,7 +495,7 @@ instance CastlemineDMT(Default_AmbientDementor)
 
 instance DragonIsle_Keymaster(Default_AmbientDementor)
 {
-	name[0] = "Ключник";
+	name[0] = "The Keymaster";
 	id = 1236;
 	aivar[AIV_EnemyOverride] = TRUE;
 	CreateInvItem(self,ItKe_EVT_UNDEAD_02);

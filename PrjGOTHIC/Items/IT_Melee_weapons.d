@@ -301,7 +301,7 @@ instance ItMw_Sense(C_Item)
 
 instance ItMw_BattleSense(C_Item)
 {
-	name = "Боевая коса";
+	name = "Battle Scythe";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_AXE;
 	material = MAT_WOOD;

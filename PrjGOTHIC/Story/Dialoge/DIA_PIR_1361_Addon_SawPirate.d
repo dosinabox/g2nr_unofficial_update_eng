@@ -28,7 +28,7 @@ instance DIA_Addon_SawPirate_Hello(C_Info)
 	condition = DIA_Addon_SawPirate_Hello_Condition;
 	information = DIA_Addon_SawPirate_Hello_Info;
 	permanent = TRUE;
-	description = "Как дела?";
+	description = "How's it going?";
 };
 
 

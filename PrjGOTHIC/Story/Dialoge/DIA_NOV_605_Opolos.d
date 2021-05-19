@@ -502,7 +502,7 @@ func void DIA_Opolos_Kap3_PERM_Info()
 		};
 		if(((MIS_NovizenChase == LOG_Running) || (MIS_NovizenChase == LOG_SUCCESS)) && (Opolos_Pedro == FALSE))
 		{
-			Info_AddChoice(DIA_Opolos_Kap3_PERM,"Педро предал нас.",DIA_Opolos_Kap3_PERM_PEDRO);
+			Info_AddChoice(DIA_Opolos_Kap3_PERM,"Pedro betrayed us.",DIA_Opolos_Kap3_PERM_PEDRO);
 		};
 	}
 	else

@@ -42,7 +42,7 @@ func void Use_Shellflesh()
 
 instance ItFo_Addon_Rum(C_Item)
 {
-	name = "Ром";
+	name = "Rum";
 	mainflag = ITEM_KAT_FOOD;
 	flags = ITEM_MULTI;
 	value = Value_Rum;

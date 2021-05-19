@@ -603,7 +603,7 @@ func void DIA_Bengar_BALTHASARDARFAUFWEIDE_Info()
 	}
 	else
 	{
-		AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00_add");	//Balthasar can use your land again.@@@
+		AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00_add");	//Balthasar can use your land again.
 	};
 	AI_Output(self,other,"DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01");	//Why?
 	AI_Output(other,self,"DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02");	//(threatening) Because I said so.
@@ -665,7 +665,7 @@ func void DIA_Bengar_ALLEIN_Info()
 	MIS_BengarsHelpingSLD = LOG_Running;
 	Log_CreateTopic(TOPIC_BengarALLEIN,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BengarALLEIN,LOG_Running);
-	B_LogEntry(TOPIC_BengarALLEIN,"Ферма Бенгара абсолютно беззащитна. Ему нужна помощь. Он говорит что-то о наемнике, которого зовут Вольф. Может быть, я знаю этого парня?!");
+	B_LogEntry(TOPIC_BengarALLEIN,"His farm is totally unprotected now. He needs help. He said something about a mercenary who goes by the name of Wolf. Don't I know that guy?!");
 	if((Malak_isAlive_Kap3 == TRUE) && (Npc_GetDistToWP(Malak,"FARM3") >= 3000))
 	{
 		AI_Output (self, other, "DIA_Bengar_ALLEIN_10_01");	//Malak has disappeared and taken everything and everybody who would work for me with him. He said he was headed for the mountains.

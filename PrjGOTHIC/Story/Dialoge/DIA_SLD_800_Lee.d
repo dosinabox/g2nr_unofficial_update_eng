@@ -405,7 +405,7 @@ func void DIA_Lee_LeesPlan_Info()
 			}
 			else
 			{
-				AI_Output(self,other,"DIA_Lee_LeesPlan_04_07_add");	//Essentially, it will be about our pardons and free passage to the mainland.@@@
+				AI_Output(self,other,"DIA_Lee_LeesPlan_04_07_add");	//Essentially, it will be about our pardons and free passage to the mainland.
 			};
 		};
 	};
@@ -1906,4 +1906,3 @@ func void DIA_Lee_StillNeedYou_Info()
 	};
 	B_CheckLog();
 };
-//@@@Lee would not turn it down just like this, it's out of character for him.

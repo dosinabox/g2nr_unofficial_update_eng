@@ -997,7 +997,7 @@ func void DIA_Andre_Auslieferung_Nagur()
 	}
 	else
 	{
-		AI_Output(other,self,"DIA_Andre_Auslieferung_Nagur_15_00_add");	//Nagur tried to use me as his new messenger in order to intercept Akil's shipment.@@@
+		AI_Output(other,self,"DIA_Andre_Auslieferung_Nagur_15_00_add");	//Nagur tried to use me as his new messenger in order to intercept Akil's shipment.
 	};
 	AI_Output(self,other,"DIA_Andre_Auslieferung_Nagur_08_01");	//That fellow will get his just punishment. I shall have him locked up immediately.
 	AI_Output(self,other,"DIA_Andre_Auslieferung_Nagur_08_02");	//Here, take the bounty that you are entitled to.

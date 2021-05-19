@@ -1,7 +1,7 @@
 
 /*instance Aya_Testmodell(Npc_Default)
 {
-	name[0] = "Эйя";
+	name[0] = "Aya";
 	guild = GIL_NONE;
 	id = 55555;
 	voice = 16;
@@ -53,7 +53,7 @@ instance DIA_Aya_KommMit(C_Info)
 	condition = DIA_Aya_KommMit_Condition;
 	information = DIA_Aya_KommMit_Info;
 	permanent = TRUE;
-	description = "Хорошо, пошли.";
+	description = "Okay, let's go.";
 };
 
 
@@ -68,7 +68,7 @@ func int DIA_Aya_KommMit_Condition()
 func void DIA_Aya_KommMit_Info()
 {
 	var int AyaGoldAmount;
-	AI_Output(other,self,"DIA_Lares_GoNow_15_00");	//Хорошо, пошли.
+	AI_Output(other,self,"DIA_Lares_GoNow_15_00");	//Okay, let's go.
 	AyaGoldAmount = Npc_HasItems(other,ItMi_Gold);
 	if(AyaGoldAmount > 1000)
 	{
@@ -100,7 +100,7 @@ instance DIA_Aya_WarteHier(C_Info)
 	condition = DIA_Aya_WarteHier_Condition;
 	information = DIA_Aya_WarteHier_Info;
 	permanent = TRUE;
-	description = "Боюсь, дальше наши пути расходятся.";
+	description = "We must part ways now, I'm afraid.";
 };
 
 
@@ -114,7 +114,7 @@ func int DIA_Aya_WarteHier_Condition()
 
 func void DIA_Aya_WarteHier_Info()
 {
-	AI_Output(other,self,"DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");	//Боюсь, дальше наши пути расходятся.
+	AI_Output(other,self,"DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");	//We must part ways now, I'm afraid.
 	B_Say(self,other,"$YESGOOUTOFHERE");
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self,"Start");

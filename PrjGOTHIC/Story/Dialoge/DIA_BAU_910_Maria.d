@@ -209,11 +209,11 @@ func void DIA_Maria_Belohnung_Info()
 			}
 			else if(Onar_SOLD_Gold == 40)
 			{
-				AI_Output(other,self,"DIA_Maria_Belohnung_15_03_40_add");	//40 gold coins.@@@
+				AI_Output(other,self,"DIA_Maria_Belohnung_15_03_40_add");	//40 gold coins.
 			}
 			else if(Onar_SOLD_Gold == 30)
 			{
-				AI_Output(other,self,"DIA_Maria_Belohnung_15_03_30_add");	//30 gold pieces.@@@
+				AI_Output(other,self,"DIA_Maria_Belohnung_15_03_30_add");	//30 gold pieces.
 			}
 			else if(Onar_SOLD_Gold == 20)
 			{

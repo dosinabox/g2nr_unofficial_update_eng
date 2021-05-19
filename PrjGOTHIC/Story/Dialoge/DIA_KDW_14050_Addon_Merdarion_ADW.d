@@ -37,7 +37,7 @@ instance DIA_Addon_Merdarion_ADWHello(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Merdarion_ADWHello_Condition;
 	information = DIA_Addon_Merdarion_ADWHello_Info;
-	description = "Как дела?";
+	description = "How's it going?";
 };
 
 

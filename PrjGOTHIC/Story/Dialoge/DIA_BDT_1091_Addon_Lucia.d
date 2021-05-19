@@ -158,7 +158,7 @@ instance DIA_Addon_Lucia_SadElvrich(C_Info)
 	condition = DIA_Addon_Lucia_SadElvrich_Condition;
 	information = DIA_Addon_Lucia_SadElvrich_Info;
 	permanent = FALSE;
-	description = "А как же Элврих?@@@";
+	description = "What about Elvrich?";
 };
 
 
@@ -172,7 +172,7 @@ func int DIA_Addon_Lucia_SadElvrich_Condition()
 
 func void DIA_Addon_Lucia_SadElvrich_Info()
 {
-	AI_Output(other,self,"DIA_Addon_Lucia_Khorinis_15_04_add");	//А как же Элврих?@@@
+	AI_Output(other,self,"DIA_Addon_Lucia_Khorinis_15_04_add");	//What about Elvrich?
 	AI_Output(self,other,"DIA_Addon_Lucia_Khorinis_16_06");	//I'm finished with Elvrich!
 	AI_Output(other,self,"DIA_Addon_Lucia_Khorinis_15_04");	//Why?
 	AI_Output(self,other,"DIA_Addon_Lucia_Khorinis_16_05");	//He's a wimp! When the bandits dragged me off, he didn't lift a finger to help me.

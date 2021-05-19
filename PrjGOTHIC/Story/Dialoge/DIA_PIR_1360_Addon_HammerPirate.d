@@ -28,7 +28,7 @@ instance DIA_Addon_HammerPirate_Hello(C_Info)
 	condition = DIA_Addon_HammerPirate_Hello_Condition;
 	information = DIA_Addon_HammerPirate_Hello_Info;
 	permanent = TRUE;
-	description = "Все в порядке?";
+	description = "Everything alright?";
 };
 
 
@@ -97,7 +97,7 @@ instance DIA_Addon_HammerPirate_ComeOn(C_Info)
 	condition = DIA_Addon_HammerPirate_ComeOn_Condition;
 	information = DIA_Addon_HammerPirate_ComeOn_Info;
 	permanent = TRUE;
-	description = "Пойдем со мной.";
+	description = "Come with me.";
 };
 
 

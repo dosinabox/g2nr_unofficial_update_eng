@@ -205,7 +205,7 @@ instance ItWr_Kraeuterliste(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = Use_Kraeuterliste;
 	scemeName = "MAP";
-	description = "Constantino's list of herbs.";
+	description = "Constantino's list of herbs";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;

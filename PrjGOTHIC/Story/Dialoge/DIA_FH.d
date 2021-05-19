@@ -16,12 +16,12 @@ func void Change_FH_Visual()
 	if(FH_SkinTexture < 0)
 	{
 		FH_SkinTexture = 0;
-		PrintScreen("Нет лиц с отрицательными номерами!",-1,-1,FONT_ScreenSmall,2);
+		PrintScreen("No faces with nevative numbers!",-1,-1,FONT_ScreenSmall,2);
 	};
 	B_SetNpcVisual(self,sex,FH_HeadMesh,FH_SkinTexture,BodyTex_N,NO_ARMOR);
-	PrintScreen("Текстура лица:",-1,10,FONT_ScreenSmall,2);
+	PrintScreen("Skin texture:",-1,10,FONT_ScreenSmall,2);
 	PrintScreen(IntToString(FH_SkinTexture),-1,12,FONT_ScreenSmall,2);
-	PrintScreen("Меш головы:",-1,20,FONT_ScreenSmall,2);
+	PrintScreen("Head mesh:",-1,20,FONT_ScreenSmall,2);
 	PrintScreen(FH_HeadMesh,-1,22,FONT_ScreenSmall,2);
 };
 
@@ -55,7 +55,7 @@ instance DIA_FH_NextFace(C_Info)
 	condition = DIA_FH_NextFace_Condition;
 	information = DIA_FH_NextFace_Info;
 	permanent = TRUE;
-	description = "Следующее лицо";
+	description = "Next Face";
 };
 
 
@@ -78,7 +78,7 @@ instance DIA_FH_NextFace10(C_Info)
 	condition = DIA_FH_NextFace10_Condition;
 	information = DIA_FH_NextFace10_Info;
 	permanent = TRUE;
-	description = "10 лиц вперед";
+	description = "Next Face 10 step";
 };
 
 
@@ -101,7 +101,7 @@ instance DIA_FH_PreviousFace(C_Info)
 	condition = DIA_FH_PreviousFace_Condition;
 	information = DIA_FH_PreviousFace_Info;
 	permanent = TRUE;
-	description = "Предыдущее лицо";
+	description = "Previous Face";
 };
 
 
@@ -124,7 +124,7 @@ instance DIA_FH_PreviousFace10(C_Info)
 	condition = DIA_FH_PreviousFace10_Condition;
 	information = DIA_FH_PreviousFace10_Info;
 	permanent = TRUE;
-	description = "10 лиц назад";
+	description = "Previous Face 10 step";
 };
 
 
@@ -147,7 +147,7 @@ instance DIA_FH_ResetFace(C_Info)
 	condition = DIA_FH_ResetFace_Condition;
 	information = DIA_FH_ResetFace_Info;
 	permanent = TRUE;
-	description = "Сброс";
+	description = "Reset Face";
 };
 
 
@@ -172,7 +172,7 @@ instance DIA_FH_WomanFace(C_Info)
 	condition = DIA_FH_WomanFace_Condition;
 	information = DIA_FH_WomanFace_Info;
 	permanent = TRUE;
-	description = "Перейти к женским лицам";
+	description = "Go to Women's Faces";
 };
 
 
@@ -195,7 +195,7 @@ instance DIA_FH_Repeat(C_Info)
 	condition = DIA_FH_Repeat_Condition;
 	information = DIA_FH_Repeat_Info;
 	permanent = TRUE;
-	description = "Повторить";
+	description = "Repeat Output";
 };
 
 
@@ -217,7 +217,7 @@ instance DIA_FH_Sex(C_Info)
 	condition = DIA_FH_Sex_Condition;
 	information = DIA_FH_Sex_Info;
 	permanent = TRUE;
-	description = "Изменить пол";
+	description = "Sex";
 };
 
 
@@ -247,7 +247,7 @@ instance DIA_FH_Choose_HeadMesh(C_Info)
 	condition = DIA_FH_Choose_HeadMesh_Condition;
 	information = DIA_FH_Choose_HeadMesh_Info;
 	permanent = TRUE;
-	description = "Выбор формы головы";
+	description = "Choose Head Mesh";
 };
 
 

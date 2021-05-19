@@ -1,7 +1,7 @@
 
 /*instance J1(C_Item)
 {
-	name = "Руна Яркендара";
+	name = "Rune of Jarkendar";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -10,7 +10,7 @@
 	on_state[0] = UseJOLY_Storyhelpletter;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Заселить мир аддона.";
+	text[0] = "Fill addon world.";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;
@@ -21,7 +21,7 @@ var int UseJOLY_Storyhelpletter_OneTime;
 
 func void UseJOLY_Storyhelpletter()
 {
-	PrintScreen("Заселяем...",-1,-1,FONT_Screen,1);
+	PrintScreen("Filling with monsters...",-1,-1,FONT_Screen,1);
 	Wld_InsertNpc(Giant_DesertRat,"ADW_CANYON_TELEPORT_PATH_03");
 	Wld_InsertNpc(Giant_DesertRat,"ADW_CANYON_TELEPORT_PATH_03");
 	Wld_InsertNpc(Giant_DesertRat,"ADW_CANYON_TELEPORT_PATH_04");
@@ -166,7 +166,7 @@ func void UseJOLY_Storyhelpletter()
 
 instance J2(C_Item)
 {
-	name = "Грег идет в таверну";
+	name = "Greg comes to the tavern";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -218,7 +218,7 @@ func void UseJ3()
 
 instance J4(C_Item)
 {
-	name = "ADW_PIRATES_RemovedFocus и последнее";
+	name = "ADW_PIRATES_RemovedFocus and previous";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -240,7 +240,7 @@ func void UseJ4()
 
 instance DJG_inserten(C_Item)
 {
-	name = "JOLY Руна помощника по сюжету";
+	name = "JOLY Rune of Story Helper";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -271,7 +271,7 @@ func void UseDJG_inserten()
 
 instance SH_Oldworld(Npc_Default)
 {
-	name[0] = "Помощник по сюжету в старом мире";
+	name[0] = "Old World Story Helper";
 	guild = GIL_NONE;
 	id = 9998;
 	voice = 15;
@@ -623,8 +623,8 @@ func int DIA_Dragon_Testmodell_Hello_Condition()
 
 func void DIA_Dragon_Testmodell_Hello_Info()
 {
-	AI_Output(other,self,"DIA_Dragon_Fire_Island_Hello_15_06");	//Хватит попусту сотрясать воздух. Давай перейдем к делу.
-	AI_Output(self,other,"DIA_Dragon_Fire_Island_Hello_20_07");	//Ты зашел слишком далеко, жалкий человечишка, но тебе не уйти отсюда живым.
+	AI_Output(other,self,"DIA_Dragon_Fire_Island_Hello_15_06");	//Stop making so much noise. Let's get down to business.
+	AI_Output(self,other,"DIA_Dragon_Fire_Island_Hello_20_07");	//You have come far, little human, but you will never leave these halls alive.
 	AI_StopProcessInfos(self);
 	DragonTalk_Exit_Free = FALSE;
 	self.flags = 0;
@@ -640,7 +640,7 @@ func void DIA_Dragon_Testmodell_Hello_Info()
 	on_state[0] = usejoly_item1;
 	scemeName = "MAP";
 	description = name;
-	text[2] = "Компиляция визуала фиктивного предмета";
+	text[2] = "Compiling Visual Dummy item";
 	text[5] = NAME_Value;
 	count[5] = value_StonePlateCommon;
 	inv_zbias = INVCAM_ENTF_MISC5_STANDARD;

@@ -176,7 +176,7 @@ instance DIA_JAN_Parcival(C_Info)
 	condition = DIA_Jan_Parcival_Condition;
 	information = DIA_Jan_Parcival_Info;
 	permanent = FALSE;
-	description = "Я поговорил с Парсивалем.";
+	description = "I talked to Parcival.";
 };
 
 

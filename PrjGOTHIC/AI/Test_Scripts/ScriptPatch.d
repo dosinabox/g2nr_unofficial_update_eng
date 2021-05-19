@@ -42,8 +42,8 @@ func void Use_StatsBook()
 	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(OldCoinCounter)," coins to Wasili"));
 	if((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(BusterTrophyCounter)," рогов Бастеру"));
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(DragonEggCounter)," яиц Беннету"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(BusterTrophyCounter)," horns to Buster"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(DragonEggCounter)," eggs to Bennet"));
 	}
 	else if(hero.guild == GIL_KDF)
 	{
@@ -57,51 +57,51 @@ func void Use_StatsBook()
 	if(Player_IsApprentice == APP_Constantino)
 	{
 		Doc_PrintLine(nDocID,0,"Ремесло (Константино):");
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Constantino_DunkelpilzCounter)," черных грибов продано"));
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Constantino_BigMushroomsCounter)," пищи рудокопа продано"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Constantino_DunkelpilzCounter)," black mushrooms sold"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Constantino_BigMushroomsCounter)," digger's meat sold"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(ApprenticeGoldCounter),PRINT_GoldTaken));
 	}
 	else if(Player_IsApprentice == APP_Bosper)
 	{
 		Doc_PrintLine(nDocID,0,"Ремесло (Боспер):");
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(BosperFurCounter)," шкур продано"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(BosperFurCounter)," furs sold"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(ApprenticeGoldCounter),PRINT_GoldTaken));
 	}
 	else if(Player_IsApprentice == APP_Harad)
 	{
 		Doc_PrintLine(nDocID,0,"Ремесло (Гарад):");
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(AnyAnvilUsed)," мечей выковано"));
-		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(HaradSwordsCounter)," мечей продано"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(AnyAnvilUsed)," swords forged"));
+		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(HaradSwordsCounter)," swords sold"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(ApprenticeGoldCounter),PRINT_GoldTaken));
 	};
 	Doc_SetMargins(nDocID,-1,10,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"Молитвы Инносу:");
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_GoldGiven),PRINT_GoldGiven));
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_Str)," силы получено"));
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_Dex)," ловкости получено"));
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_MaxHp)," макс. здоровья получено"));
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_MaxMana)," макс. маны получено"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_Str)," strength received"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_Dex)," dexterity received"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_MaxHp)," max health received"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_MaxMana)," max mana received"));
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"Молитвы Белиару:");
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_HpGiven)," макс. здоровья отдано"));
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_ManaGiven)," макс. маны отдано"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_HpGiven)," manx health given"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_ManaGiven)," max mana given"));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_GoldTaken),PRINT_GoldTaken));
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"Улучшения Когтя:");
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_ClawMaxHp)," макс. здоровья отдано"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_ClawMaxHp)," max health given"));
 	if(Saturas_KlaueInsMeer == FALSE)
 	{
-		Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(BeliarWeapCurrentLvL)," уровень"));
+		Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(BeliarWeapCurrentLvL)," level"));
 	}
 	else
 	{
-		Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(BeliarWeapCurrentLvL)," уровень (уничтожен)"));
+		Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(BeliarWeapCurrentLvL)," level (destroyed)"));
 	};
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLine(nDocID,1,"Кражи:");
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalThefts)," успешных краж"));
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalTheftXP)," опыта получено"));
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalTheftGold)," золотых украдено"));
+	Doc_PrintLine(nDocID,1,"Thefts:");
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalThefts)," successfull thefts"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalTheftXP)," experience received"));
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalTheftGold)," gold stolen"));
 	Doc_PrintLine(nDocID,1,"");
 	if(UnionActivated == TRUE)
 	{
@@ -149,8 +149,8 @@ instance Helmets(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = UseHelmets;
 	description = name;
-	text[0] = "Мешок наполнен экспериментальными";
-	text[1] = "доспехами и шлемами!";
+	text[0] = "Bag filled with experimental";
+	text[1] = "armors and helmets!";
 };
 
 
@@ -168,12 +168,12 @@ func void UseHelmets()
 	CreateInvItem(self,ITHE_PAL_H);
 	CreateInvItem(self,ITHE_OHT);
 	CreateInvItem(self,ITHE_DHT);
-	Print("Найдено много разных доспехов и шлемов!");
+	Print("I've got a bunch of armors and helmets!");
 };
 
 instance WastelandRune(C_Item)
 {
-	name = "Руна Wasteland";
+	name = "Wasteland Rune";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;

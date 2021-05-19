@@ -336,7 +336,7 @@ var int Malak_DementorCommentLog;
 
 func void B_Malak_DementorComment()
 {
-	AI_Output(self,other,"DIA_Malak_BACKTOBENGAR_08_01_add");	//I'm not budging an inch from here!@@@
+	AI_Output(self,other,"DIA_Malak_BACKTOBENGAR_08_01_add");	//I'm not budging an inch from here!
 	if(Malak_DementorCommentLog == FALSE)
 	{
 		if(MIS_GetMalakBack != LOG_Running)

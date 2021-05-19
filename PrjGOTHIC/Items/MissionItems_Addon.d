@@ -446,7 +446,7 @@ instance ItMi_LostInnosStatue_Daron(C_Item)
 	visual = "ItMi_InnosStatue.3DS";
 	material = MAT_METAL;
 	description = name;
-	text[0] = "Bottom part is engraved with";
+	text[0] = "Bottom part is engraved";
 	text[1] = "with the symbol of fire mages.";
 	text[5] = NAME_Value;
 	count[5] = value;

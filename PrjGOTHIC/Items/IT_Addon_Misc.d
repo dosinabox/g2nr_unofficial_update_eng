@@ -97,8 +97,8 @@ instance ItMi_Packet_Baltram4Skip_Addon(C_Item)
 	visual = "ItMi_Packet.3ds";
 	material = MAT_LEATHER;
 	description = name;
-	text[0] = "This heavy package";
-	text[1] = "good things.";
+	text[0] = "Heavy package";
+	text[1] = "full of good things.";
 	text[2] = "Is meant for the pirate Skip.";
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -342,7 +342,7 @@ func void Use_Grog_Crate()
 
 instance ItMi_Zeitspalt_Addon(C_Item)
 {
-	name = "Черная руда";
+	name = "Black Ore";
 	mainflag = ITEM_KAT_POTIONS;
 	flags = ITEM_MULTI;
 	value = 100;

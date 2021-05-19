@@ -900,7 +900,7 @@ instance Itemhoshi(Npc_Default)
 
 /*instance Hoshi_Testmodell(Npc_Default)
 {
-	name[0] = "Хоша";
+	name[0] = "Hoshi";
 	guild = GIL_MIL;
 	id = 20000;
 	voice = 6;
@@ -1031,7 +1031,7 @@ instance Info_TA_Testmodell_GuideStart(C_Info)
 	condition = DIA_TA_Testmodell_GuideStart_Condition;
 	information = DIA_TA_Testmodell_GuideStart_Info;
 	permanent = TRUE;
-	description = "Покажи мне Guide_Player!";
+	description = "Show me Guide_Player!";
 };
 
 
@@ -1059,7 +1059,7 @@ instance Info_TA_Testmodell_GuideEnd(C_Info)
 	condition = DIA_TA_Testmodell_GuideEnd_Condition;
 	information = DIA_TA_Testmodell_GuideEnd_Info;
 	permanent = TRUE;
-	description = "Закончить Guide_Player!";
+	description = "Finish Guide_Player!";
 };
 
 
@@ -1087,7 +1087,7 @@ instance Info_TA_Testmodell_FollowStart(C_Info)
 	condition = DIA_TA_Testmodell_FollowStart_Condition;
 	information = DIA_TA_Testmodell_FollowStart_Info;
 	permanent = TRUE;
-	description = "Иди за мной!";
+	description = "Follow me!";
 };
 
 
@@ -1115,7 +1115,7 @@ instance Info_TA_Testmodell_FollowEnd(C_Info)
 	condition = DIA_TA_Testmodell_FollowEnd_Condition;
 	information = DIA_TA_Testmodell_FollowEnd_Info;
 	permanent = TRUE;
-	description = "Хватит ходить за мной!";
+	description = "Stop following me!";
 };
 
 
@@ -1138,7 +1138,7 @@ func void DIA_TA_Testmodell_FollowEnd_Info()
 
 instance TA_Smalltalkpartner(Npc_Default)
 {
-	name[0] = "Партнер для короткого разговора";
+	name[0] = "Smalltalk partner";
 	guild = GIL_NONE;
 	id = 1501;
 	voice = 1;
@@ -1201,14 +1201,14 @@ instance Armor(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = UseArmor;
 	description = name;
-	text[0] = "Мешок наполнен доспехами!";
+	text[0] = "Bag full of armors!";
 };
 
 
 func void UseArmor()
 {
 	Snd_Play("Geldbeutel");
-	Print("Найдено много разных доспехов!");
+	Print("I've bot a bunch of armors!");
 	CreateInvItem(self,ITAR_Governor);
 	CreateInvItem(self,ITAR_Smith);
 	CreateInvItem(self,ITAR_Barkeeper);
@@ -1266,7 +1266,7 @@ func void UseArmor()
 
 instance Runenbrief(C_Item)
 {
-	name = "Новые руны";
+	name = "New Runes";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -1275,7 +1275,7 @@ instance Runenbrief(C_Item)
 	on_state[0] = UseHosh1;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Все руны аддона!";
+	text[0] = "All runes from the addon!";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;
@@ -1306,7 +1306,7 @@ func void UseHosh1()
 
 instance EnterBanditCamp(C_Item)
 {
-	name = "Пришли в бандитский лагерь";
+	name = "Enter Bandit Camp";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -1315,7 +1315,7 @@ instance EnterBanditCamp(C_Item)
 	on_state[0] = UseHosh2;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Задать Player_HasTalkedToBanditCamp!";
+	text[0] = "Set Player_HasTalkedToBanditCamp!";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;
@@ -1330,7 +1330,7 @@ func void UseHosh2()
 
 instance PH(C_Item)
 {
-	name = "Дай мне магию";
+	name = "Give me magic";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -1339,7 +1339,7 @@ instance PH(C_Item)
 	on_state[0] = UsePatrickHelper;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Небольшой тест магии!";
+	text[0] = "Minor magic test!";
 	inv_rotz = 180;
 	inv_rotx = 90;
 	inv_roty = 180;
@@ -1436,7 +1436,7 @@ func void UsePatrickHelper()
 
 instance Hosh4(C_Item)
 {
-	name = "Грег вернулся";
+	name = "Greg came back";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -1444,7 +1444,7 @@ instance Hosh4(C_Item)
 	material = MAT_STONE;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Вернуть Грега в лагерь пиратов.";
+	text[0] = "Bring Greg back into the Pirate Camp.";
 	on_state[0] = UseHoshiTagebuch;
 	inv_rotz = 180;
 	inv_rotx = 90;
@@ -1461,7 +1461,7 @@ var int TimeDemoStarted;
 
 instance TimeDemo(C_Item)
 {
-	name = "Руна TimeDemo";
+	name = "TimeDemo Rune";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
@@ -1469,7 +1469,7 @@ instance TimeDemo(C_Item)
 	material = MAT_STONE;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Запустить камеру TimeDemo.";
+	text[0] = "Start TimeDemo.";
 	on_state[0] = UseTimeDemo;
 	inv_rotz = 180;
 	inv_rotx = 90;

@@ -213,7 +213,7 @@ instance DIA_Udar_Perm(C_Info)
 	condition = DIA_Udar_Perm_Condition;
 	information = DIA_Udar_Perm_Info;
 	permanent = TRUE;
-	description = "Как дела в замке?";
+	description = "How are things in the castle?";
 };
 
 

@@ -44,7 +44,7 @@ instance Bloodfly(Mst_Default_Bloodfly)
 
 instance YBloodfly(Mst_Default_Bloodfly)
 {
-	name[0] = "Малая кровавая муха";
+	name[0] = "Young Bloodfly";
 	level = 3;
 	attribute[ATR_STRENGTH] = 5;
 	attribute[ATR_DEXTERITY] = 5;

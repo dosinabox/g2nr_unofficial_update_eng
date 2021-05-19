@@ -320,7 +320,7 @@ func void DIA_Parlan_WELCOME_Info()
 	AI_Output (other, self, "DIA_Parlan_WELCOME_15_05");	//And now?
 	AI_Output (self, other, "DIA_Parlan_WELCOME_05_06");	//First you will fulfill the duties of a novice. You will work and serve the Brotherhood.
 	B_GrantAbsolution(LOC_ALL);
-//@@@ Why is it disabled?	Snd_Play("LEVELUP");
+	Snd_Play("LEVELUP");
 	Log_CreateTopic(Topic_Gemeinschaft,LOG_MISSION);
 	Log_SetTopicStatus(Topic_Gemeinschaft,LOG_Running);
 	B_LogEntry(Topic_Gemeinschaft,"It is my duty as a novice to perform tasks to serve the community.");

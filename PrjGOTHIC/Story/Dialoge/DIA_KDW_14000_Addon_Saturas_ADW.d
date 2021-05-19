@@ -1248,7 +1248,7 @@ func int DIA_Addon_Saturas_ADW_CIRCLE_Condition()
 	if((Npc_GetTalentSkill(hero,NPC_TALENT_MAGE) < 6) && (Saturas_Addon_TeachCircle == TRUE) && (DIA_Addon_Saturas_ADW_CIRCLE_NoPerm == FALSE))
 	{
 //		DIA_Addon_Saturas_ADW_CIRCLE.description = B_BuildLearnString("Я хочу перейти на следующий уровень магии",kosten);
-		DIA_Addon_Saturas_ADW_CIRCLE.description = B_BuildLearnString("Следующий Круг магии",kosten);
+		DIA_Addon_Saturas_ADW_CIRCLE.description = B_BuildLearnString("Next Circle of Magic",kosten);
 		return TRUE;
 	};
 };

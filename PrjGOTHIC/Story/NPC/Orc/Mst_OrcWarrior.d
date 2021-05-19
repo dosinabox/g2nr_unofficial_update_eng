@@ -87,7 +87,7 @@ instance OrcWarrior_Harad(Mst_Default_OrcWarrior)
 
 instance OrcWarrior_Scout(Mst_Default_OrcWarrior)
 {
-	name[0] = "Орк-разведчик";
+	name[0] = "Orc Scout";
 	level = 15;
 	attribute[ATR_STRENGTH] = 75;
 	attribute[ATR_DEXTERITY] = 75;

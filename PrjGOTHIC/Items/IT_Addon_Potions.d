@@ -70,7 +70,7 @@ instance ItPo_Health_Addon_04(C_Item)
 	wear = WEAR_EFFECT;
 	effect = "SPELLFX_HEALTHPOTION";
 	description = NAME_HP_Full;
-	text[1] = "Complete regeneration.";
+	text[1] = "Complete health regeneration.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
