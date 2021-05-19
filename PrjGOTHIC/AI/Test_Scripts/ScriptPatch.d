@@ -56,38 +56,38 @@ func void Use_StatsBook()
 	Doc_PrintLine(nDocID,0,"");
 	if(Player_IsApprentice == APP_Constantino)
 	{
-		Doc_PrintLine(nDocID,0,"Ремесло (Константино):");
+		Doc_PrintLine(nDocID,0,"Profession (Constantino):");
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Constantino_DunkelpilzCounter)," black mushrooms sold"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Constantino_BigMushroomsCounter)," digger's meat sold"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(ApprenticeGoldCounter),PRINT_GoldTaken));
 	}
 	else if(Player_IsApprentice == APP_Bosper)
 	{
-		Doc_PrintLine(nDocID,0,"Ремесло (Боспер):");
+		Doc_PrintLine(nDocID,0,"Profession (Bosper):");
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(BosperFurCounter)," furs sold"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(ApprenticeGoldCounter),PRINT_GoldTaken));
 	}
 	else if(Player_IsApprentice == APP_Harad)
 	{
-		Doc_PrintLine(nDocID,0,"Ремесло (Гарад):");
+		Doc_PrintLine(nDocID,0,"Profession (Harad):");
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(AnyAnvilUsed)," swords forged"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(HaradSwordsCounter)," swords sold"));
 		Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(ApprenticeGoldCounter),PRINT_GoldTaken));
 	};
 	Doc_SetMargins(nDocID,-1,10,20,275,20,1);
-	Doc_PrintLine(nDocID,1,"Молитвы Инносу:");
+	Doc_PrintLine(nDocID,1,"Innos blessings:");
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_GoldGiven),PRINT_GoldGiven));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_Str)," strength received"));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_Dex)," dexterity received"));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_MaxHp)," max health received"));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Blessings_MaxMana)," max mana received"));
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLine(nDocID,1,"Молитвы Белиару:");
-	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_HpGiven)," manx health given"));
+	Doc_PrintLine(nDocID,1,"Beliar blessings:");
+	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_HpGiven)," max health given"));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_ManaGiven)," max mana given"));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_GoldTaken),PRINT_GoldTaken));
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLine(nDocID,1,"Улучшения Когтя:");
+	Doc_PrintLine(nDocID,1,"Claw upgrades:");
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(Stats_Beliar_ClawMaxHp)," max health given"));
 	if(Saturas_KlaueInsMeer == FALSE)
 	{
@@ -105,35 +105,35 @@ func void Use_StatsBook()
 	Doc_PrintLine(nDocID,1,"");
 	if(UnionActivated == TRUE)
 	{
-		Doc_PrintLine(nDocID,1,"Информация о сборке:");
+		Doc_PrintLine(nDocID,1,"Build info:");
 	}
 	else
 	{
-		Doc_PrintLine(nDocID,1,"Сборка (без Union):");
+		Doc_PrintLine(nDocID,1,"Build (no Union):");
 	};
-	Doc_PrintLine(nDocID,1,ConcatStrings(ConcatStrings(IntToString(FIX_VERSION_START)," версия от "),FIX_VERSION_DATE));
+	Doc_PrintLine(nDocID,1,ConcatStrings(ConcatStrings(IntToString(FIX_VERSION_START)," version at "),FIX_VERSION_DATE));
 	if(FIX_VERSION_SAVE == FALSE)
 	{
 		if(Addon_zuerst == TRUE)
 		{
-			Doc_PrintLine(nDocID,1,"Игра начата в оригинале");
+			Doc_PrintLine(nDocID,1,"Game started in original");
 		}
 		else
 		{
-			Doc_PrintLine(nDocID,1,"Игра начата без аддона");
+			Doc_PrintLine(nDocID,1,"Game started without addon");
 		};
 	}
 	else
 	{
-		Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(FIX_VERSION_SAVE)," версия в сохранении"));
+		Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(FIX_VERSION_SAVE)," version in save"));
 	};
 	if(Wasteland_Seeded == TRUE)
 	{
-		Doc_PrintLine(nDocID,1,"Мир Wasteland заселен");
+		Doc_PrintLine(nDocID,1,"Wasteland world seeded");
 	};
 	if(HardModeEnabled == TRUE)
 	{
-		Doc_PrintLine(nDocID,1,ConcatStrings(ConcatStrings("Опыт снижен на ",IntToString(HardModeXPModifier)),"%"));
+		Doc_PrintLine(nDocID,1,ConcatStrings(ConcatStrings("Exp lowered by ",IntToString(HardModeXPModifier)),"%"));
 	};
 	Doc_Show(nDocID);
 };
@@ -181,7 +181,7 @@ instance WastelandRune(C_Item)
 	material = MAT_STONE;
 	scemeName = "MAP";
 	description = name;
-	text[0] = "Заселить мир мода Wasteland.";
+	text[0] = "Seed Wasteland world.";
 	on_state[0] = UseWastelandRune;
 	inv_rotz = 180;
 	inv_rotx = 90;
@@ -193,7 +193,7 @@ func void UseWastelandRune()
 {
 	if(CurrentLevel == OLDWORLD_ZEN)
 	{
-		PrintScreen("Заселяем...",-1,-1,FONT_Screen,1);
+		PrintScreen("Seeding...",-1,-1,FONT_Screen,1);
 		B_Seed_Wasteland_World_Main();
 		B_Seed_Wasteland_World_Psicamp();
 		B_Seed_Wasteland_World_Freeminecamp();

@@ -137,7 +137,7 @@ instance ITKE_ErzBaronFlur(C_Item)
 
 instance ITKE_ErzBaronRaum(C_Item)
 {
-	name = "Key for the second door.;
+	name = "Key for the second door";
 	mainflag = ITEM_KAT_KEYS;
 	flags = 0;
 	value = 0;

@@ -90,7 +90,7 @@ func void B_SetHeroExp(var int levels)
 	{
 		B_LevelUp(levels);
 	};
-	hero.exp = B_GetGothicLevelExp(hero);
+	hero.exp = B_GetCurrentLevelExp(hero);
 	PrintScreen(ConcatStrings("Hit points: ",IntToString(hero.attribute[ATR_HITPOINTS_MAX])),-1,55,FONT_Screen,2);
 	PrintScreen(ConcatStrings("Learning Points: ",IntToString(hero.lp)),-1,60,FONT_Screen,2);
 };
@@ -730,7 +730,7 @@ func void CH_Apprentice_Info()
 	};
 	if(Player_IsApprentice == APP_Bosper)
 	{
-		Info_AddChoice(CH_Apprentice,ConcatStrings(NAME_TROPHY_Fur,": Bosper (Gothic)"),ch_apprentice_bosper);
+		Info_AddChoice(CH_Apprentice,ConcatStrings(NAME_TROPHY_Fur,": Bosper (active)"),ch_apprentice_bosper);
 	}
 	else
 	{
@@ -738,7 +738,7 @@ func void CH_Apprentice_Info()
 	};
 	if(Player_IsApprentice == APP_Harad)
 	{
-		Info_AddChoice(CH_Apprentice,ConcatStrings(NAME_Skill_Smith,": Harad (Gothic)"),ch_apprentice_harad);
+		Info_AddChoice(CH_Apprentice,ConcatStrings(NAME_Skill_Smith,": Harad (active)"),ch_apprentice_harad);
 	}
 	else
 	{
@@ -746,7 +746,7 @@ func void CH_Apprentice_Info()
 	};
 	if(Player_IsApprentice == APP_Constantino)
 	{
-		Info_AddChoice(CH_Apprentice,ConcatStrings(NAME_Skill_Alchemy,": Constantino (Gothic)"),ch_apprentice_constantino);
+		Info_AddChoice(CH_Apprentice,ConcatStrings(NAME_Skill_Alchemy,": Constantino (active)"),ch_apprentice_constantino);
 	}
 	else
 	{

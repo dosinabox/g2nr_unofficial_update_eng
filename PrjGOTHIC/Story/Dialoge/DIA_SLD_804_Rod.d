@@ -447,7 +447,7 @@ func void DIA_Rod_Wette_GiveBack()
 	B_GiveInvItems(other,self,ItMw_2h_Rod,1);
 	if(Rod_WetteGewonnen == FALSE)
 	{
-		AI_Output(self,other,"DIA_Rod_Wette_GiveBack_06_01_add");	//You're nothing but a wimp after all!
+		AI_Output(self,other,"DIA_Rod_Wette_GiveBack_06_01");	//You're nothing but a wimp after all!
 	};
 	Info_ClearChoices(DIA_Rod_Wette);
 };
@@ -461,7 +461,6 @@ func void DIA_Rod_Wette_KeepIt()
 	DIA_Common_IThinkNo();
 	AI_Output(self,other,"DIA_Rod_Wette_KeepIt_06_01");	//(threatening) What was that?
 	AI_Output(other,self,"DIA_Rod_Wette_KeepIt_15_02");	//I think I'm going to keep it a little longer.
-	AI_Output(self,other,"DIA_Rod_Wette_GiveBack_06_01");	//You're nothing but a wimp after all!
 	AI_Output(self,other,"DIA_Rod_Wette_KeepIt_06_03");	//Just you wait, you bastard!
 	Info_ClearChoices(DIA_Rod_Wette);
 	AI_StopProcessInfos(self);
