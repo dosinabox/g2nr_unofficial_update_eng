@@ -216,7 +216,7 @@ func void b_build_settings_diag()
 	{
 		Info_AddChoice(StoryHelper_PatchSettings,"Выключить влияние штрафов на стоимость обучения",StoryHelper_Penalties);
 	};*/
-	Info_AddChoice(StoryHelper_PatchSettings,"Изменить магию ледяного дракона",StoryHelper_IceDragonSpell);
+	Info_AddChoice(StoryHelper_PatchSettings,"Change ice dragon magic",StoryHelper_IceDragonSpell);
 	if(FullNPCRemoval == FALSE)
 	{
 		Info_AddChoice(StoryHelper_PatchSettings,"Включить полное удаление NPC из мира",StoryHelper_FullNPCRemoval);
@@ -844,7 +844,7 @@ func void StoryHelper_IceDragonSpell()
 	Info_AddChoice(StoryHelper_PatchSettings,Dialog_Back,StoryHelper_IceDragonSpell_BACK);
 	if(IceDragonSpell == SPL_InstantFireball)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_InstantFireball," (используется)"),StoryHelper_IceDragonSpell_InstantFireball);
+		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_InstantFireball," (active)"),StoryHelper_IceDragonSpell_InstantFireball);
 	}
 	else
 	{
@@ -852,7 +852,7 @@ func void StoryHelper_IceDragonSpell()
 	};
 	if(IceDragonSpell == SPL_IceLance)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_IceLance," (используется)"),StoryHelper_IceDragonSpell_IceLance);
+		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_IceLance," (active)"),StoryHelper_IceDragonSpell_IceLance);
 	}
 	else
 	{
@@ -860,7 +860,7 @@ func void StoryHelper_IceDragonSpell()
 	};
 	if(IceDragonSpell == SPL_ChargeZap)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_ChargeZap," (используется)"),StoryHelper_IceDragonSpell_ChargeZap);
+		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_ChargeZap," (active)"),StoryHelper_IceDragonSpell_ChargeZap);
 	}
 	else
 	{
@@ -868,7 +868,7 @@ func void StoryHelper_IceDragonSpell()
 	};
 	if(IceDragonSpell == SPL_Icebolt)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_Icebolt," (используется)"),StoryHelper_IceDragonSpell_Icebolt);
+		Info_AddChoice(StoryHelper_PatchSettings,ConcatStrings(NAME_SPL_Icebolt," (active)"),StoryHelper_IceDragonSpell_Icebolt);
 	}
 	else
 	{
@@ -879,28 +879,28 @@ func void StoryHelper_IceDragonSpell()
 func void StoryHelper_IceDragonSpell_InstantFireball()
 {
 	IceDragonSpell = SPL_InstantFireball;
-	PrintScreen(ConcatStrings("Магия ледяного дракона: ",NAME_SPL_InstantFireball),-1,-1,FONT_Screen,3);
+	PrintScreen(ConcatStrings("Ice dragon magic: ",NAME_SPL_InstantFireball),-1,-1,FONT_Screen,3);
 	StoryHelper_IceDragonSpell();
 };
 
 func void StoryHelper_IceDragonSpell_IceLance()
 {
 	IceDragonSpell = SPL_IceLance;
-	PrintScreen(ConcatStrings("Магия ледяного дракона: ",NAME_SPL_IceLance),-1,-1,FONT_Screen,3);
+	PrintScreen(ConcatStrings("Ice dragon magic: ",NAME_SPL_IceLance),-1,-1,FONT_Screen,3);
 	StoryHelper_IceDragonSpell();
 };
 
 func void StoryHelper_IceDragonSpell_ChargeZap()
 {
 	IceDragonSpell = SPL_ChargeZap;
-	PrintScreen(ConcatStrings("Магия ледяного дракона: ",NAME_SPL_ChargeZap),-1,-1,FONT_Screen,3);
+	PrintScreen(ConcatStrings("Ice dragon magic: ",NAME_SPL_ChargeZap),-1,-1,FONT_Screen,3);
 	StoryHelper_IceDragonSpell();
 };
 
 func void StoryHelper_IceDragonSpell_Icebolt()
 {
 	IceDragonSpell = SPL_Icebolt;
-	PrintScreen(ConcatStrings("Магия ледяного дракона: ",NAME_SPL_Icebolt),-1,-1,FONT_Screen,3);
+	PrintScreen(ConcatStrings("Ice dragon magic: ",NAME_SPL_Icebolt),-1,-1,FONT_Screen,3);
 	StoryHelper_IceDragonSpell();
 };
 

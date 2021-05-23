@@ -116,8 +116,8 @@ instance MENUITEM_GRA_TEXQUAL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic = MENU_ITEM_BACK_PIC;
-	text[0] = "Качество моделей";
-	text[1] = "Уровень детализации моделей";
+	text[0] = "Model detail";
+	text[1] = "Select model level of detail";
 	posx = 1000;
 	posy = MENU_START_Y + (MENU_STEP_Y * 3);
 	dimx = 4000;
@@ -145,8 +145,8 @@ instance MENUITEM_GRA_MODEL_DETAIL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic = MENU_ITEM_BACK_PIC;
-	text[0] = "Дистанция обзора";
-	text[1] = "Дистанция общей прорисовки";
+	text[0] = "Draw distance";
+	text[1] = "Overall draw distance";
 	posx = 1000;
 	posy = MENU_START_Y + (MENU_STEP_Y * 4);
 	dimx = 4000;
@@ -174,8 +174,8 @@ instance MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VOB_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic = MENU_ITEM_BACK_PIC;
-	text[0] = "Model detail";
-	text[1] = "Select model level of detail";
+	text[0] = "Object distance";
+	text[1] = "Object draw distance";
 	posx = 1000;
 	posy = MENU_START_Y + (MENU_STEP_Y * 5);
 	dimx = 4200;

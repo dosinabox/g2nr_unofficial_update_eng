@@ -51,7 +51,14 @@ func void DIA_Edda_Hallo_Info()
 
 func void B_Edda_AboutStolenStatue()
 {
-	AI_Output(self,other,"DIA_Edda_Stadt_17_02");	//But if you're looking for a place to stay overnight, you're welcome to sleep in my hut. There's an extra bed that you can have.
+	if(Wld_IsTime(8,0,22,0))
+	{
+		AI_Output(self,other,"DIA_Edda_Stadt_17_02");	//But if you're looking for a place to stay overnight, you're welcome to sleep in my hut. There's an extra bed that you can have.
+	}
+	else
+	{
+		AI_Output(self,other,"DIA_Edda_Stadt_17_02_add");	//If you're looking for a place to stay overnight, you're welcome to sleep in my hut. There's an extra bed that you can have.@@@
+	};
 	AI_Output (other, self, "DIA_Edda_Stadt_15_03");	//Aren't you afraid of thieves?
 	AI_Output (self, other, "DIA_Edda_Stadt_17_04");	//The only valuable thing I ever owned has already been taken.
 	AI_Output (self, other, "DIA_Edda_Stadt_17_05");	//Someone stole my statue of Innos.
@@ -90,7 +97,7 @@ instance DIA_Edda_Stadt(C_Info)
 	condition = DIA_Edda_Stadt_Condition;
 	information = DIA_Edda_Stadt_Info;
 	permanent = FALSE;
-	description = "Could you cook me some soup?";
+	description = "What can you tell me about the city?";
 };
 
 
@@ -101,8 +108,8 @@ func int DIA_Edda_Stadt_Condition()
 
 func void DIA_Edda_Stadt_Info()
 {
-	AI_Output (other, self, "DIA_Edda_Kochen_15_00");	//Could you cook me some soup?
-	AI_Output (self, other, "DIA_Edda_Kochen_17_01");	//I cook for everybody. For you, too, if you want. All you need to do is bring me a fish.
+	AI_Output(other,self,"DIA_Edda_Stadt_15_00");	//What can you tell me about the city?
+	AI_Output(self,other,"DIA_Edda_Stadt_17_01");	//Most citizens in this town are afraid of thieves. Therefore, it is not a good idea to enter strange houses.
 	if(Edda_Schlafplatz == FALSE)
 	{
 		B_Edda_AboutStolenStatue();

@@ -231,7 +231,7 @@ instance ItMw_Nagelknueppel(C_Item)
 
 instance ItMw_1H_Sword_L_03(C_Item)
 {
-	name = "Wolf balde";
+	name = "Wolf blade";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_SWD;
 	material = MAT_METAL;

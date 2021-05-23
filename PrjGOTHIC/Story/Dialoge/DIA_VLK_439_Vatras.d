@@ -2046,9 +2046,6 @@ func void DIA_Vatras_MISSION_YES()
 	Log_SetTopicStatus(TOPIC_Botschaft,LOG_Running);
 	B_LogEntry(TOPIC_Botschaft,"Vatras has given me a message for Master Isgaroth. He is at the shrine in front of the monastery.");
 	Info_ClearChoices(DIA_Vatras_MISSION);
-/*	Info_AddChoice(DIA_Vatras_MISSION,"Я возьму заклинание света.",DIA_Vatras_MISSION_LIGHT);
-	Info_AddChoice(DIA_Vatras_MISSION,"Я выбираю лечебное заклинание.",DIA_Vatras_MISSION_HEAL);
-	Info_AddChoice(DIA_Vatras_MISSION,"Дай мне 'Ледяную стрелу'.",DIA_Vatras_MISSION_ICE);*/
 	Info_AddChoice(DIA_Vatras_MISSION,"I'll take the spell of light.",DIA_Vatras_MISSION_LIGHT);
 	Info_AddChoice(DIA_Vatras_MISSION,"I choose the healing spell.",DIA_Vatras_MISSION_HEAL);
 	Info_AddChoice(DIA_Vatras_MISSION,"Give me the Ice Arrow.",DIA_Vatras_MISSION_ICE);

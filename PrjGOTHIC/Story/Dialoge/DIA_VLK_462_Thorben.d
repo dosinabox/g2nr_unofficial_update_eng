@@ -402,7 +402,7 @@ func void DIA_Thorben_PleaseTeach_Info()
 		AI_Output (self, other, "DIA_Thorben_PleaseTeach_06_05");	//If I cannot pay back my debt to Lehmar soon, he's going to send his thugs after me.
 		AI_Output (self, other, "DIA_Thorben_PleaseTeach_06_06");	//Give me another 100 gold pieces, and I shall instruct you.
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "How much do you charge?", DIA_Thorben_PleaseTeach_Later);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "Maybe later...", DIA_Thorben_PleaseTeach_Later);
 		Info_AddChoice (DIA_Thorben_PleaseTeach, "Fine. Here are 100 gold pieces.", DIA_Thorben_PleaseTeach_Pay100);
 	}
 	else if((MIS_Matteo_Gold == LOG_SUCCESS) && ((Gritta_GoldGiven == TRUE) || ((Gritta_WantPay == TRUE) && (Npc_HasItems(Gritta,ItMi_Gold) >= 80))) && (Gritta.aivar[AIV_LastFightAgainstPlayer] == FIGHT_NONE))
@@ -412,7 +412,7 @@ func void DIA_Thorben_PleaseTeach_Info()
 		AI_Output (other, self, "DIA_Thorben_PleaseTeach_15_09");	//How much do you charge?
 		AI_Output (self, other, "DIA_Thorben_PleaseTeach_06_10");	//200 gold pieces.
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "How much do you charge?", DIA_Thorben_PleaseTeach_Later);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "Maybe later...", DIA_Thorben_PleaseTeach_Later);
 		Info_AddChoice (DIA_Thorben_PleaseTeach, "Fine. Here are 200 gold pieces.", DIA_Thorben_PleaseTeach_Pay200);
 	}
 	else
