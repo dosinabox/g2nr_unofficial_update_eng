@@ -1561,7 +1561,7 @@ func void DIA_Lares_GoNow_GoingConditions()
 
 func void DIA_Lares_GoNow_Info()
 {
-	AI_Output (other, self, "DIA_Lares_GoNow_15_00");	//Okay, lass uns gehen.
+	AI_Output (other, self, "DIA_Lares_GoNow_15_00");	//OK, let's go.
 	if (Lares_CanBringScToPlaces == FALSE)
 	{
 		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03");	//I cannot leave here until we know more about the missing people, or someone else takes over my duties.

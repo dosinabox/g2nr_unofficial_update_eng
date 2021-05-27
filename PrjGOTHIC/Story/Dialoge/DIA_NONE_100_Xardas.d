@@ -90,7 +90,7 @@ func void DIA_Xardas_Hello_Info()
 	AI_Output (self, other, "DIA_Addon_Xardas_Hello_14_04");	//But enough of that. You're here now.
 	AI_Output (self, other, "DIA_Addon_Xardas_Hello_14_05");	//There's a NEW threat that we have to deal with.
 	Info_ClearChoices (DIA_Xardas_Hello);
-	Info_AddChoice (DIA_Xardas_Hello, "We've got plenty of time now. The Sleeper has been vanquished.", DIA_Addon_Xardas_Hello_Dragons);
+	Info_AddChoice (DIA_Xardas_Hello, "At least we have enough time now. I did it. The Sleeper has been vanquished.", DIA_Addon_Xardas_Hello_Dragons);
 	Info_AddChoice (DIA_Xardas_Hello, "What NEW threat are you talking about?", DIA_Addon_Xardas_Hello_Man);
 };
 
@@ -108,7 +108,7 @@ func void DIA_Addon_Xardas_Hello_Man()
 
 func void DIA_Addon_Xardas_Hello_Dragons()
 {
-	AI_Output(other,self,"DIA_Xardas_Hello_15_03");	//t least we have enough time now. I did it. The Sleeper...
+	AI_Output(other,self,"DIA_Xardas_Hello_15_03");	//At least we have enough time now. I did it. The Sleeper...
 	AI_Output(self,other,"DIA_Xardas_Hello_14_04");	//...has been banned. You vanquished him, so much is true - but it is not within our power to stop the war that ensues now.
 	AI_Output(other,self,"DIA_Xardas_Hello_15_05");	//You're talking about the orcs?
 	AI_Output(self,other,"DIA_Xardas_Hello_14_06");	//I'm talking about much more terrible creatures?
@@ -128,7 +128,7 @@ func void DIA_Addon_Xardas_Hello_Dragons()
 	{
 		AI_Output (self, other, "DIA_Addon_Xardas_Hello_Dragons_14_06");	//But that's not all. There is yet ANOTHER threat of which I have learned only recently.
 		Info_ClearChoices (DIA_Xardas_Hello);
-		Info_AddChoice (DIA_Xardas_Hello, "What OTHER threat are you talking about?", DIA_Addon_Xardas_Hello_Man);
+		Info_AddChoice (DIA_Xardas_Hello, "What ANOTHER threat are you talking about?", DIA_Addon_Xardas_Hello_Man);
 	};
 };
 

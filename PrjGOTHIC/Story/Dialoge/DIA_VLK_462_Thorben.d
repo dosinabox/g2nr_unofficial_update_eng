@@ -327,7 +327,7 @@ instance DIA_Thorben_GiveBook(C_Info)
 	condition = DIA_Thorben_GiveBook_Condition;
 	information = DIA_Thorben_GiveBook_Info;
 	permanent = FALSE;
-	description = "Can you teach me how to pick locks?";
+	description = "Here is your book.";
 };
 
 

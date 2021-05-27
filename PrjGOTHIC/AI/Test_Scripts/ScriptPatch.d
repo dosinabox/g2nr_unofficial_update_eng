@@ -210,159 +210,159 @@ func void b_build_settings_diag()
 	Info_AddChoice(StoryHelper_PatchSettings,Dialog_Back,StoryHelper_PatchSettings_BACK);
 	/*if(PenaltiesAffectLearnCost == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить влияние штрафов на стоимость обучения",StoryHelper_Penalties);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable penalties affect learn cost",StoryHelper_Penalties);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить влияние штрафов на стоимость обучения",StoryHelper_Penalties);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable вpenalties affect learn cost",StoryHelper_Penalties);
 	};*/
 	Info_AddChoice(StoryHelper_PatchSettings,"Change ice dragon magic",StoryHelper_IceDragonSpell);
 	if(FullNPCRemoval == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить полное удаление NPC из мира",StoryHelper_FullNPCRemoval);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable full NPCs removal",StoryHelper_FullNPCRemoval);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить полное удаление NPC из мира",StoryHelper_FullNPCRemoval);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable full NPCs removal",StoryHelper_FullNPCRemoval);
 	};
 	if(AlternativeSmithing == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить альтернативное обучение у Беннета",StoryHelper_AlternativeSmithing);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable Bennet's alternative smithing skills tree",StoryHelper_AlternativeSmithing);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить альтернативное обучение у Беннета",StoryHelper_AlternativeSmithing);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable Bennet's alternative smithing skills tree",StoryHelper_AlternativeSmithing);
 	};
 	if(HardModeEnabled == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить повышенный уровень сложности",StoryHelper_HardMode);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable increased difficulty",StoryHelper_HardMode);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить повышенный уровень сложности",StoryHelper_HardMode);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable increased difficulty",StoryHelper_HardMode);
 	};
 	if(ClassicAlchemy == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить алхимию из Готики 2 без аддона",StoryHelper_ClassicAlchemy);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable pre-addon G2 alchemy",StoryHelper_ClassicAlchemy);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить алхимию из Готики 2 без аддона",StoryHelper_ClassicAlchemy);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable pre-addon G2 alchemy",StoryHelper_ClassicAlchemy);
 	};
 	if(Helmets_Enabled == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Отделить шлемы от доспехов",StoryHelper_Helmets);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable separate helmets and armors",StoryHelper_Helmets);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Соединить шлемы и доспехи",StoryHelper_Helmets);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable separate helmets and armors",StoryHelper_Helmets);
 	};
 	if(HonestStatCalculation == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить честный расчет стоимости обучения",StoryHelper_HonestStatCalculation);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable honest learn cost calculation",StoryHelper_HonestStatCalculation);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить честный расчет стоимости обучения",StoryHelper_HonestStatCalculation);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable honest learn cost calculation",StoryHelper_HonestStatCalculation);
 	};
 	if(AddonDisabled == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить возможность прохождения без аддона",StoryHelper_Addon);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable walkthrough without addon",StoryHelper_Addon);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить возможность прохождения без аддона",StoryHelper_Addon);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable walkthrough without addon",StoryHelper_Addon);
 	};
 	if(GuildlessMode == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить возможность прохождения без гильдии",StoryHelper_Guildless);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable walkthrough without guild",StoryHelper_Guildless);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить возможность прохождения без гильдии",StoryHelper_Guildless);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable walkthrough without guild",StoryHelper_Guildless);
 	};
 	if(!Npc_KnowsInfo(other,DIA_Coragon_GiveBook) && !Npc_KnowsInfo(other,DIA_Thorben_GiveBook))
 	{
 		if(ClassicLehmarBook == FALSE)
 		{
-			Info_AddChoice(StoryHelper_PatchSettings,"Включить выкуп гроссбуха у Торбена и Корагона",StoryHelper_LehmarBook);
+			Info_AddChoice(StoryHelper_PatchSettings,"Enable Lehmar's book buyback from Thorben and Coragon",StoryHelper_LehmarBook);
 		}
 		else
 		{
-			Info_AddChoice(StoryHelper_PatchSettings,"Выключить выкуп гроссбуха у Торбена и Корагона",StoryHelper_LehmarBook);
+			Info_AddChoice(StoryHelper_PatchSettings,"Disable Lehmar's book buyback from Thorben and Coragon",StoryHelper_LehmarBook);
 		};
 	};
 	if(TradersHaveLimitedAmmo == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить лимит запаса стрел и болтов у торговцев",StoryHelper_Limit);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable arrows and bolts daily traders limit",StoryHelper_Limit);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить лимит запаса стрел и болтов у торговцев",StoryHelper_Limit);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable arrows and bolts daily traders limit",StoryHelper_Limit);
 	};
 	if(Dont_Fix_Unlim == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить бесконечную сталь и мензурки у торговцев",StoryHelper_Unlimfix);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable infinite steel and flasks from traders",StoryHelper_Unlimfix);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить бесконечную сталь и мензурки у торговцев",StoryHelper_Unlimfix);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable infinite steel and flasks from traders",StoryHelper_Unlimfix);
 	};
 	if(NpcWantToFlee == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить режим трусости у людей и животных",StoryHelper_Flee);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable coward mode for humans and animals",StoryHelper_Flee);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить режим трусости у людей и животных",StoryHelper_Flee);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable coward mode for humans and animals",StoryHelper_Flee);
 	};
 	if(IgnoreBonuses == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить игнорирование бонусов при прокачке",StoryHelper_Bonuses);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable ignore bonuses when learning attributes",StoryHelper_Bonuses);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить игнорирование бонусов при прокачке",StoryHelper_Bonuses);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable ignore bonuses when learning attributes",StoryHelper_Bonuses);
 	};
 	if(RandomGoblinBerries == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить рандомные гоблинские ягоды у паладинов",StoryHelper_GoblinBerries);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable random Goblin Berries from dead paladins",StoryHelper_GoblinBerries);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить рандомные гоблинские ягоды у паладинов",StoryHelper_GoblinBerries);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable random Goblin Berries from dead paladins",StoryHelper_GoblinBerries);
 	};
 	if(InfiniteApples == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить выбивание бесконечных яблок",StoryHelper_Apples);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable infinite apples from unconscious NPCs",StoryHelper_Apples);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить выбивание бесконечных яблок",StoryHelper_Apples);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable infinite apples from unconscious NPCs",StoryHelper_Apples);
 	};
 	if(XP_Static == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить фиксированный опыт по главам",StoryHelper_XP);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable static XP",StoryHelper_XP);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить фиксированный опыт по главам",StoryHelper_XP);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable static XP",StoryHelper_XP);
 	};
 	if(NoXPFromSummonedSkeletons == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить опыт с бесконечно призываемых скелетов",StoryHelper_Skeletons);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable XP from infinite summoned skeletons",StoryHelper_Skeletons);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить опыт с бесконечно призываемых скелетов",StoryHelper_Skeletons);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable XP from infinite summoned skeletons",StoryHelper_Skeletons);
 	};
 	if(NewLogEnabled == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Включить показ заголовков при обновлении дневника",StoryHelper_Log);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable quests titles when updating diary",StoryHelper_Log);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Выключить показ заголовков при обновлении дневника",StoryHelper_Log);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable quests titles when updating diary",StoryHelper_Log);
 	};
 };
 
@@ -371,12 +371,12 @@ func void StoryHelper_Limit()
 	if(TradersHaveLimitedAmmo == TRUE)
 	{
 		TradersHaveLimitedAmmo = FALSE;
-		PrintScreen("Лимит выключен",-1,-1,FONT_Screen,2);
+		PrintScreen("Limit disabled",-1,-1,FONT_Screen,2);
 	}
 	else
 	{
 		TradersHaveLimitedAmmo = TRUE;
-		PrintScreen("Лимит включен",-1,-1,FONT_Screen,2);
+		PrintScreen("Limit enabled",-1,-1,FONT_Screen,2);
 	};
 	b_build_settings_diag();
 };
@@ -386,12 +386,12 @@ func void StoryHelper_Flee()
 	if(NpcWantToFlee == TRUE)
 	{
 		NpcWantToFlee = FALSE;
-		PrintScreen("Режим трусости выключен",-1,-1,FONT_Screen,2);
+		PrintScreen("Coward mode disabled",-1,-1,FONT_Screen,2);
 	}
 	else
 	{
 		NpcWantToFlee = TRUE;
-		PrintScreen("Режим трусости включен",-1,-1,FONT_Screen,2);
+		PrintScreen("Coward mode enabled",-1,-1,FONT_Screen,2);
 	};
 	b_build_settings_diag();
 };
@@ -401,12 +401,12 @@ func void StoryHelper_Unlimfix()
 	if(Dont_Fix_Unlim == TRUE)
 	{
 		Dont_Fix_Unlim = FALSE;
-		PrintScreen("Сталь и мензурки ограничены",-1,-1,FONT_Screen,2);
+		PrintScreen("Steel and flasks are limited now",-1,-1,FONT_Screen,2);
 	}
 	else
 	{
 		Dont_Fix_Unlim = TRUE;
-		PrintScreen("Сталь и мензурки бесконечны",-1,-1,FONT_Screen,2);
+		PrintScreen("Steel and flasks are unlimited now",-1,-1,FONT_Screen,2);
 	};
 	b_build_settings_diag();
 };
@@ -417,13 +417,13 @@ func void StoryHelper_Bonuses()
 	{
 		IgnoreBonuses = FALSE;
 		TAL_CostFlags_TS_PermBonus = 1;
-		PrintScreen("Оригинал: бонусы нужно копить",-1,-1,FONT_Screen,2);
+		PrintScreen("Original bonuses enabled",-1,-1,FONT_Screen,2);
 	}
 	else
 	{
 		IgnoreBonuses = TRUE;
 		TAL_CostFlags_TS_PermBonus = 0;
-		PrintScreen("Теперь бонусы можно не копить",-1,-1,FONT_Screen,2);
+		PrintScreen("You can stop bonuses hoarding now",-1,-1,FONT_Screen,2);
 	};
 	b_build_settings_diag();
 };
@@ -433,12 +433,12 @@ func void StoryHelper_GoblinBerries()
 	if(RandomGoblinBerries == TRUE)
 	{
 		RandomGoblinBerries = FALSE;
-		PrintScreen("Фиксированное количество ягод у продавцов",-1,-1,FONT_Screen,3);
+		PrintScreen("Traders have static berries amount now",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		RandomGoblinBerries = TRUE;
-		PrintScreen("Рандомное количество ягод у паладинов",-1,-1,FONT_Screen,3);
+		PrintScreen("Paladins have random berries now",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -448,12 +448,12 @@ func void StoryHelper_Apples()
 	if(InfiniteApples == TRUE)
 	{
 		InfiniteApples = FALSE;
-		PrintScreen("Бесконечные яблоки исправлены",-1,-1,FONT_Screen,2);
+		PrintScreen("No more infinite apples",-1,-1,FONT_Screen,2);
 	}
 	else
 	{
 		InfiniteApples = TRUE;
-		PrintScreen("Яблоки бесконечны",-1,-1,FONT_Screen,2);
+		PrintScreen("Apples are infinite now",-1,-1,FONT_Screen,2);
 	};
 	b_build_settings_diag();
 };
@@ -462,7 +462,7 @@ func void StoryHelper_Helmets()
 {
 	if(Helmets_Enabled == TRUE)
 	{
-		PrintScreen("Шлемы и доспехи одной моделью (оригинал)",-1,-1,FONT_Screen,3);
+		PrintScreen("Helmets and armors are combined now",-1,-1,FONT_Screen,3);
 		Npc_RemoveInvItem(hero,ITHE_PAL_M);
 		Npc_RemoveInvItem(hero,ITHE_PAL_H);
 		Npc_RemoveInvItem(hero,ITHE_DJG_M);
@@ -491,7 +491,7 @@ func void StoryHelper_Helmets()
 	}
 	else
 	{
-		PrintScreen("Шлемы и доспехи разделены",-1,-1,FONT_Screen,2);
+		PrintScreen("Helmets and armors are separated now",-1,-1,FONT_Screen,2);
 		if(Npc_HasItems(hero,ITAR_PAL_M))
 		{
 			Npc_RemoveInvItem(hero,ITAR_PAL_M);
@@ -526,12 +526,12 @@ func void StoryHelper_ClassicAlchemy()
 	if(ClassicAlchemy == TRUE)
 	{
 		ClassicAlchemy = FALSE;
-		PrintScreen("Алхимия из Готики 2 без аддона выключена",-1,-1,FONT_Screen,3);
+		PrintScreen("Pre-addon G2 alchemy disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		ClassicAlchemy = TRUE;
-		PrintScreen("Алхимия из Готики 2 без аддона включена",-1,-1,FONT_Screen,3);
+		PrintScreen("Pre-addon G2 alchemy enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -541,12 +541,12 @@ func void StoryHelper_AlternativeSmithing()
 	if(AlternativeSmithing == TRUE)
 	{
 		AlternativeSmithing = FALSE;
-		PrintScreen("Альтернативное обучение у Беннета выключено",-1,-1,FONT_Screen,3);
+		PrintScreen("Bennet's alternative smithing skills tree disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		AlternativeSmithing = TRUE;
-		PrintScreen("Альтернативное обучение у Беннета включено",-1,-1,FONT_Screen,3);
+		PrintScreen("Bennet's alternative smithing skills tree enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -556,12 +556,12 @@ func void StoryHelper_Log()
 	if(NewLogEnabled == TRUE)
 	{
 		NewLogEnabled = FALSE;
-		PrintScreen("Показ заголовков выключен",-1,-1,FONT_Screen,3);
+		PrintScreen("Diary titles disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		NewLogEnabled = TRUE;
-		PrintScreen("Показ заголовков включен",-1,-1,FONT_Screen,3);
+		PrintScreen("Diary titles enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -571,12 +571,12 @@ func void StoryHelper_Skeletons()
 	if(NoXPFromSummonedSkeletons == TRUE)
 	{
 		NoXPFromSummonedSkeletons = FALSE;
-		PrintScreen("Опыт за бесконечных скелетов включен",-1,-1,FONT_Screen,3);
+		PrintScreen("XP for infinite skeletons enabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		NoXPFromSummonedSkeletons = TRUE;
-		PrintScreen("Опыт за бесконечных скелетов выключен",-1,-1,FONT_Screen,3);
+		PrintScreen("XP for infinite skeletons disabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -586,54 +586,54 @@ func void StoryHelper_HardMode()
 	if(HardModeEnabled == TRUE)
 	{
 		HardModeEnabled = FALSE;
-		PrintScreen("Повышенный уровень сложности выключен",-1,-1,FONT_Screen,3);
+		PrintScreen("Increased difficulty disabled",-1,-1,FONT_Screen,3);
 		b_build_settings_diag();
 	}
 	else
 	{
 		HardModeEnabled = TRUE;
-		PrintScreen("Повышенный уровень сложности включен",-1,-1,FONT_Screen,3);
+		PrintScreen("Increased difficulty enabled",-1,-1,FONT_Screen,3);
 		Info_ClearChoices(StoryHelper_PatchSettings);
-		Info_AddChoice(StoryHelper_PatchSettings,"-50% опыта",StoryHelper_HardMode_50);
-		Info_AddChoice(StoryHelper_PatchSettings,"-40% опыта",StoryHelper_HardMode_40);
-		Info_AddChoice(StoryHelper_PatchSettings,"-30% опыта",StoryHelper_HardMode_30);
-		Info_AddChoice(StoryHelper_PatchSettings,"-20% опыта",StoryHelper_HardMode_20);
-		Info_AddChoice(StoryHelper_PatchSettings,"-10% опыта",StoryHelper_HardMode_10);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP -50%",StoryHelper_HardMode_50);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP -40%",StoryHelper_HardMode_40);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP -30%",StoryHelper_HardMode_30);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP -20%",StoryHelper_HardMode_20);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP -10%",StoryHelper_HardMode_10);
 	};
 };
 
 func void StoryHelper_HardMode_10()
 {
 	HardModeXPModifier = 10;
-	PrintScreen("Получаемый опыт снижен на 10%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
+	PrintScreen("XP decreased by 10%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
 	b_build_settings_diag();
 };
 
 func void StoryHelper_HardMode_20()
 {
 	HardModeXPModifier = 20;
-	PrintScreen("Получаемый опыт снижен на 20%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
+	PrintScreen("XP decreased by 20%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
 	b_build_settings_diag();
 };
 
 func void StoryHelper_HardMode_30()
 {
 	HardModeXPModifier = 30;
-	PrintScreen("Получаемый опыт снижен на 30%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
+	PrintScreen("XP decreased by 30%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
 	b_build_settings_diag();
 };
 
 func void StoryHelper_HardMode_40()
 {
 	HardModeXPModifier = 40;
-	PrintScreen("Получаемый опыт снижен на 40%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
+	PrintScreen("XP decreased by 40%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
 	b_build_settings_diag();
 };
 
 func void StoryHelper_HardMode_50()
 {
 	HardModeXPModifier = 50;
-	PrintScreen("Получаемый опыт снижен на 50%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
+	PrintScreen("XP decreased by 50%",-1,YPOS_LOGENTRY,FONT_ScreenSmall,3);
 	b_build_settings_diag();
 };
 
@@ -642,12 +642,12 @@ func void StoryHelper_Penalties()
 	if(PenaltiesAffectLearnCost == TRUE)
 	{
 		PenaltiesAffectLearnCost = FALSE;
-		PrintScreen("Влияние штрафов на стоимость обучения выключено",-1,-1,FONT_Screen,3);
+		PrintScreen("Penalties affect learn cost disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		PenaltiesAffectLearnCost = TRUE;
-		PrintScreen("Влияние штрафов на стоимость обучения включено",-1,-1,FONT_Screen,3);
+		PrintScreen("Penalties affect learn cost enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -657,12 +657,12 @@ func void StoryHelper_LehmarBook()
 	if(ClassicLehmarBook == TRUE)
 	{
 		ClassicLehmarBook = FALSE;
-		PrintScreen("Выкуп гроссбуха выключен",-1,-1,FONT_Screen,3);
+		PrintScreen("Book buyback disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		ClassicLehmarBook = TRUE;
-		PrintScreen("Выкуп гроссбуха как в оригинале",-1,-1,FONT_Screen,3);
+		PrintScreen("Book buyback enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -672,12 +672,12 @@ func void StoryHelper_Guildless()
 	if(GuildlessMode == TRUE)
 	{
 		GuildlessMode = FALSE;
-		PrintScreen("Прохождение без гильдии выключено",-1,-1,FONT_Screen,3);
+		PrintScreen("Walkthrough without guild disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		GuildlessMode = TRUE;
-		PrintScreen("Прохождение без гильдии включено",-1,-1,FONT_Screen,3);
+		PrintScreen("Walkthrough without guild enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -687,12 +687,12 @@ func void StoryHelper_Addon()
 	if(AddonDisabled == TRUE)
 	{
 		AddonDisabled = FALSE;
-		PrintScreen("Прохождение без аддона выключено",-1,-1,FONT_Screen,3);
+		PrintScreen("Walkthrough without addon disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		AddonDisabled = TRUE;
-		PrintScreen("Прохождение без аддона включено",-1,-1,FONT_Screen,3);
+		PrintScreen("Walkthrough without addon enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -726,19 +726,19 @@ func void StoryHelper_XP()
 		{
 			XP_Ambient = XP_AmbientKap6;
 		};
-		PrintScreen("Оригинал: динамический опыт по главам",-1,-1,FONT_Screen,3);
+		PrintScreen("Original ambient dynamic XP enabled",-1,-1,FONT_Screen,3);
 		b_build_settings_diag();
 	}
 	else
 	{
 		Info_ClearChoices(StoryHelper_PatchSettings);
 		Info_AddChoice(StoryHelper_PatchSettings,Dialog_Back,StoryHelper_XP_Back);
-		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 300 (глава 6)",StoryHelper_XP_6);
-		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 250 (глава 5)",StoryHelper_XP_5);
-		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 200 (глава 4)",StoryHelper_XP_4);
-		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 150 (глава 3)",StoryHelper_XP_3);
-		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 100 (глава 2)",StoryHelper_XP_2);
-		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 50  (глава 1)",StoryHelper_XP_1);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 300 (chapter 6)",StoryHelper_XP_6);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 250 (chapter 5)",StoryHelper_XP_5);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 200 (chapter 4)",StoryHelper_XP_4);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 150 (chapter 3)",StoryHelper_XP_3);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 100 (chapter 2)",StoryHelper_XP_2);
+		Info_AddChoice(StoryHelper_PatchSettings,"XP_Ambient = 50  (chapter 1)",StoryHelper_XP_1);
 	};
 };
 
@@ -752,8 +752,7 @@ func void StoryHelper_XP_6()
 {
 	XP_Static = TRUE;
 	XP_Ambient = XP_AmbientKap6;
-	PrintScreen("Теперь квесты можно не откладывать",-1,40,FONT_Screen,3);
-	PrintScreen("XP_Ambient = 300 (глава 6)",-1,45,FONT_Screen,3);
+	PrintScreen("XP_Ambient = 300 (chapter 6)",-1,-1,FONT_Screen,3);
 	Info_ClearChoices(StoryHelper_PatchSettings);
 	b_build_settings_diag();
 };
@@ -762,8 +761,7 @@ func void StoryHelper_XP_5()
 {
 	XP_Static = TRUE;
 	XP_Ambient = XP_AmbientKap5;
-	PrintScreen("Теперь квесты можно не откладывать",-1,40,FONT_Screen,3);
-	PrintScreen("XP_Ambient = 250 (глава 5)",-1,45,FONT_Screen,3);
+	PrintScreen("XP_Ambient = 250 (chapter 5)",-1,-1,FONT_Screen,3);
 	Info_ClearChoices(StoryHelper_PatchSettings);
 	b_build_settings_diag();
 };
@@ -772,8 +770,7 @@ func void StoryHelper_XP_4()
 {
 	XP_Static = TRUE;
 	XP_Ambient = XP_AmbientKap4;
-	PrintScreen("Теперь квесты можно не откладывать",-1,40,FONT_Screen,3);
-	PrintScreen("XP_Ambient = 200 (глава 4)",-1,45,FONT_Screen,3);
+	PrintScreen("XP_Ambient = 200 (chapter 4)",-1,-1,FONT_Screen,3);
 	Info_ClearChoices(StoryHelper_PatchSettings);
 	b_build_settings_diag();
 };
@@ -782,8 +779,7 @@ func void StoryHelper_XP_3()
 {
 	XP_Static = TRUE;
 	XP_Ambient = XP_AmbientKap3;
-	PrintScreen("Теперь квесты можно не откладывать",-1,40,FONT_Screen,3);
-	PrintScreen("XP_Ambient = 150 (глава 3)",-1,45,FONT_Screen,3);
+	PrintScreen("XP_Ambient = 150 (chapter 3)",-1,-1,FONT_Screen,3);
 	Info_ClearChoices(StoryHelper_PatchSettings);
 	b_build_settings_diag();
 };
@@ -792,8 +788,7 @@ func void StoryHelper_XP_2()
 {
 	XP_Static = TRUE;
 	XP_Ambient = XP_AmbientKap2;
-	PrintScreen("Теперь квесты можно не откладывать",-1,40,FONT_Screen,3);
-	PrintScreen("XP_Ambient = 100 (глава 2)",-1,45,FONT_Screen,3);
+	PrintScreen("XP_Ambient = 100 (chapter 2)",-1,-1,FONT_Screen,3);
 	Info_ClearChoices(StoryHelper_PatchSettings);
 	b_build_settings_diag();
 };
@@ -802,8 +797,7 @@ func void StoryHelper_XP_1()
 {
 	XP_Static = TRUE;
 	XP_Ambient = XP_AmbientKap1;
-	PrintScreen("Теперь квесты можно не откладывать",-1,40,FONT_Screen,3);
-	PrintScreen("XP_Ambient = 50 (глава 1)",-1,45,FONT_Screen,3);
+	PrintScreen("XP_Ambient = 50 (chapter 1)",-1,-1,FONT_Screen,3);
 	Info_ClearChoices(StoryHelper_PatchSettings);
 	b_build_settings_diag();
 };
@@ -813,12 +807,12 @@ func void StoryHelper_HonestStatCalculation()
 	if(HonestStatCalculation == TRUE)
 	{
 		HonestStatCalculation = FALSE;
-		PrintScreen("Расчет стоимости обучения как в оригинале",-1,-1,FONT_Screen,3);
+		PrintScreen("Honest learn cost calculation disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		HonestStatCalculation = TRUE;
-		PrintScreen("Честный расчет стоимости обучения включен",-1,-1,FONT_Screen,3);
+		PrintScreen("Honest learn cost calculation enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };
@@ -828,12 +822,12 @@ func void StoryHelper_FullNPCRemoval()
 	if(FullNPCRemoval == TRUE)
 	{
 		FullNPCRemoval = FALSE;
-		PrintScreen("Полное удаление NPC из мира выключено",-1,-1,FONT_Screen,3);
+		PrintScreen("Full NPCs removal disabled",-1,-1,FONT_Screen,3);
 	}
 	else
 	{
 		FullNPCRemoval = TRUE;
-		PrintScreen("Полное удаление NPC из мира включено",-1,-1,FONT_Screen,3);
+		PrintScreen("Full NPCs removal enabled",-1,-1,FONT_Screen,3);
 	};
 	b_build_settings_diag();
 };

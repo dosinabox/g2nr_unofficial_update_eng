@@ -172,8 +172,6 @@ func void DIA_Ignaz_teilnehmen_Info()
 	MIS_Ignaz_Charm = LOG_Running;
 	Log_CreateTopic(TOPIC_Ignaz,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Ignaz,LOG_Running);
-//	B_LogEntry(TOPIC_Ignaz,"я должен испытать новое заклинание »гнаца. Ёто заклинание называетс€ «абвение. »ногда кто-нибудь выходит из себ€ в результате драки или по другой причине и больше не хочет говорить со мной. Ёто идеальный момент дл€ использовани€ этого заклинани€.");
-//	B_LogEntry(TOPIC_Ignaz,"Ёто идеальна€ возможность испытать заклинание. ѕодопытный также забудет доложить о произошедшем власт€м. я не думаю, что кто-либо в портовом квартале сильно обидитс€, если € вырублю его.");
 	B_LogEntry(TOPIC_Ignaz,"I'm to test a new spell for Ignaz. It's an Oblivion spell. When anyone gets angry about a fight or for some other reason, he won't want to speak to me any more. This would be an ideal point to cast this spell.");
 	Log_AddEntry(TOPIC_Ignaz,"This is the ideal opportunity for testing that spell. Then he'll forget he reported the matter too. I don't think anyone in the harbor district will get cross if I knock him down.");
 	AI_StopProcessInfos(self);
