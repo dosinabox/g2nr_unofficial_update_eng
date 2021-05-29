@@ -44,7 +44,7 @@ func void DIA_MIL_7_JOIN_Info()
 	if (Player_IsApprentice == APP_NONE)
 	{
 		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01");	//You're not even a citizen of Khorinis! Why do you think Lord Andre should accept you?
-		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02");	//Anyone could come along  - get issued a weapon and some armor in passing, and then disappear with it!
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02");	//Anyone could come along - get issued a weapon and some armor in passing, and then disappear with it!
 		AI_Output(other,self,"DIA_MIL_7_JOIN_15_03");	//But I'm serious!
 	};
 	AI_Output(self,other,"DIA_MIL_7_JOIN_07_04");	//Don't explain that to me, explain it to Lord Andre. You'll find him in the barracks.

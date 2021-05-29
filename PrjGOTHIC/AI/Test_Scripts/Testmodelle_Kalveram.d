@@ -510,7 +510,7 @@ instance Itemhoshi(Npc_Default)
 	CreateInvItems(self,ItMi_GoldRing,1);
 	CreateInvItems(self,ItMi_GoldPlate,1);
 	CreateInvItems(self,ItMi_SilverChalice,1);
-	CreateInvItems(self,ItMi_GregsSilverPlate,1);
+//	CreateInvItems(self,ItMi_GregsSilverPlate,1);
 	CreateInvItems(self,ItMi_JeweleryChest,1);
 	CreateInvItems(self,ItMi_InnosStatue,1);
 	CreateInvItems(self,ItMi_SilverRing,1);

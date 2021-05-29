@@ -24,32 +24,32 @@ func int B_TeachPlayerTalentSmith(var C_Npc slf,var C_Npc oth,var int waffe)
 	if(waffe == WEAPON_1H_Special_01)
 	{
 		PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] = TRUE;
-		B_LogEntry (TOPIC_TalentSmith, "I need 1 ore nugget to forge an Ore Longsword.                              ");
+		B_LogEntry (TOPIC_TalentSmith, "I need 1 ore nugget to forge an Ore Longsword.");
 	};
 	if(waffe == WEAPON_2H_Special_01)
 	{
 		PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] = TRUE;
-		B_LogEntry (TOPIC_TalentSmith, "I need 2 ore nuggets to forge an Ore Two-Hander.                            ");
+		B_LogEntry (TOPIC_TalentSmith, "I need 2 ore nuggets to forge an Ore Two-Hander.");
 	};
 	if(waffe == WEAPON_1H_Special_02)
 	{
 		PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] = TRUE;
-		B_LogEntry (TOPIC_TalentSmith, "I need 2 ore nuggets to forge an Ore Bastard Sword.                         ");
+		B_LogEntry (TOPIC_TalentSmith, "I need 2 ore nuggets to forge an Ore Bastard Sword.");
 	};
 	if(waffe == WEAPON_2H_Special_02)
 	{
 		PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] = TRUE;
-		B_LogEntry (TOPIC_TalentSmith, "I need 3 ore nuggets to forge a Heavy Ore Two-Hander.                       ");
+		B_LogEntry (TOPIC_TalentSmith, "I need 3 ore nuggets to forge a Heavy Ore Two-Hander.");
 	};
 	if(waffe == WEAPON_1H_Special_03)
 	{
 		PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] = TRUE;
-		B_LogEntry (TOPIC_TalentSmith, "I need 3 ore nuggets to forge an Ore Battle Blade´.                          ");
+		B_LogEntry (TOPIC_TalentSmith, "I need 3 ore nuggets to forge an Ore Battle Blade.");
 	};
 	if(waffe == WEAPON_2H_Special_03)
 	{
 		PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] = TRUE;
-		B_LogEntry (TOPIC_TalentSmith, "I need 4 ore nuggets to forge an Heavy Ore Battle Blade. ");
+		B_LogEntry (TOPIC_TalentSmith, "I need 4 ore nuggets to forge an Heavy Ore Battle Blade.");
 	};
 	if(waffe == WEAPON_1H_Special_04)
 	{

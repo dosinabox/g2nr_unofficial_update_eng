@@ -25,7 +25,7 @@ func int B_TeachPlayerTalentAlchemy(var C_Npc slf,var C_Npc oth,var int potion)
 	if(potion == POTION_Health_03)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Health_03] = TRUE;
-		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'ELIXIR OF HEALING´:2 Healing Roots and 1 Meadow Knotweed.");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'ELIXIR OF HEALING':2 Healing Roots and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Mana_01)
 	{

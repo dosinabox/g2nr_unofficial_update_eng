@@ -322,7 +322,7 @@ instance ItMi_Pocket(C_Item)
 	on_state[0] = UsePocket;
 	description = name;
 	text[0] = "A narrow bag,";
-	text[1] =  "not very heavy.";
+	text[1] = "not very heavy.";
 	text[5] = NAME_Value;
 	count[5] = value;
 };

@@ -61,7 +61,7 @@ func void DIA_Addon_Rhademes_First_Info()
 	{
 		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_07");	//(strained) Ghanima en Kandra Adanos?!
 		B_Say (other, self, "$CANTUNDERSTANDTHIS");
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_08");	//(angry)  Bengla anthani!
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_08");	//(angry) Bengla anthani!
 		AI_StopProcessInfos (self);
 	};
 };

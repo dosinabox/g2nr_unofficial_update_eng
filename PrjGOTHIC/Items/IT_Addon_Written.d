@@ -32,7 +32,7 @@ func void Use_Hinweis_02()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"Hey people,");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Lou has disappeared in the swamp.  He's probably been eaten by swampsharks.");
+	Doc_PrintLines(nDocID,0,"Lou has disappeared in the swamp. He's probably been eaten by swampsharks.");
 	Doc_PrintLines(nDocID,0,"Even worse - the key to the door disappeared with him.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Find it and you can keep Lou's stuff.");

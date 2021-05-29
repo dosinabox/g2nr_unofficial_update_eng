@@ -327,7 +327,7 @@ func void DIA_Lee_Paladine_Info()
 	AI_Output (self, other, "DIA_Lee_Paladine_04_01");	//(distrustful) What's your business with the paladins?
 	AI_Output (other, self, "DIA_Lee_Paladine_15_02");	//That's a long story ...
 	AI_Output (self, other, "DIA_Lee_Paladine_04_03");	//I've got time.
-	AI_Output (other, self, "DIA_Lee_Paladine_15_04");	//(sighs) Xardas sent me on a mission. He wants me to obtain  a powerful amulet, the Eye of Innos.
+	AI_Output (other, self, "DIA_Lee_Paladine_15_04");	//(sighs) Xardas sent me on a mission. He wants me to obtain a powerful amulet, the Eye of Innos.
 	AI_Output (self, other, "DIA_Lee_Paladine_04_05");	//So you're still allied with that necromancer. I see. And the paladins have this amulet?
 	AI_Output (other, self, "DIA_Lee_Paladine_15_06");	//As far as I know - yes.
 	AI_Output (self, other, "DIA_Lee_Paladine_04_07");	//I can help you get to the paladins. But first you need to become one of us.

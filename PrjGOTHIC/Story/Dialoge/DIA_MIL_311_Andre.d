@@ -744,7 +744,7 @@ func void B_Andre_StartGuildOfThievesQuest()
 {
 	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_01");	//Recently there have been a number of thefts in the city. Thus far, we have not been able to capture anyone, the thieves are simply too skillful.
 	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_02");	//The scum know their business. I am sure that we're dealing with an organized gang.
-	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_03");	//It would not amaze me if there were a thieves' guild in Khorinis. Find the  leaders of the gang and hunt them down.
+	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_03");	//It would not amaze me if there were a thieves' guild in Khorinis. Find the leaders of the gang and hunt them down.
 	MIS_Andre_GuildOfThieves = LOG_Running;
 };
 

@@ -1115,6 +1115,15 @@ func void DIA_Addon_Greg_NW_Skip_Info()
 	B_GivePlayerXP(XP_Ambient);
 };
 
+func int C_SCHasGregItems()
+{
+	if((Npc_HasItems(other,ItSe_GoldPocket100) || (Npc_HasItems(other,ItMi_Gold) >= 100)) && Npc_HasItems(other,ItMi_GoldCup) && Npc_HasItems(other,ItMi_SilverChalice) && Npc_HasItems(other,ItAm_Addon_Greg))
+	{
+		return TRUE;
+	};
+	return FALSE;
+};
+
 func void B_GiveGregItems()
 {
 	AI_Output(other,self,"DIA_Addon_Greg_NW_FoundTreasure_ja_15_00");	//Here's your stuff.
@@ -1126,9 +1135,9 @@ func void B_GiveGregItems()
 	{
 		AI_Output(other,self,"DIA_Addon_Greg_NW_FoundTreasure_ja_15_02");	//100 gold coins.
 	};
-	B_GiveInvItems(other,self,ItMi_GoldChalice,1);
+	B_GiveInvItems(other,self,ItMi_GoldCup,1);
 	AI_Output(other,self,"DIA_Addon_Greg_NW_FoundTreasure_ja_15_03");	//A golden chalice.
-	B_GiveInvItems(other,self,ItMi_GregsSilverPlate,1);
+	B_GiveInvItems(other,self,ItMi_SilverChalice,1);
 	AI_Output(other,self,"DIA_Addon_Greg_NW_FoundTreasure_ja_15_04");	//A silver dish.
 	B_GiveInvItems(other,self,ItAm_Addon_Greg,1);
 	AI_Output(other,self,"DIA_Addon_Greg_NW_FoundTreasure_ja_15_05");	//And an amulet.
@@ -1162,7 +1171,7 @@ func void DIA_Addon_Greg_NW_FoundTreasure_Info()
 	AI_Output (self, other, "DIA_Addon_Greg_NW_FoundTreasure_01_01");	//Then you should be carrying about 100 gold coins, a golden chalice, a silver dish and an amulet, and they're all mine. Give them here.
 	Info_ClearChoices (DIA_Addon_Greg_NW_FoundTreasure);
 	Info_AddChoice (DIA_Addon_Greg_NW_FoundTreasure, "I don't happen to have it on me.", DIA_Addon_Greg_NW_FoundTreasure_not);
-	if ((Npc_HasItems (other, ItSe_GoldPocket100) || (Npc_HasItems (other, ItMi_Gold) >= 100)) && Npc_HasItems (other, ItMi_GoldCup) && Npc_HasItems (other, ItMi_SilverChalice) && Npc_HasItems (other, ItAm_Prot_Point_01))
+	if(C_SCHasGregItems())
 	{
 		Info_AddChoice (DIA_Addon_Greg_NW_FoundTreasure, "Here's your stuff.", DIA_Addon_Greg_NW_FoundTreasure_ja);
 	};

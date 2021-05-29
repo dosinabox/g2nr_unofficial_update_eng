@@ -136,7 +136,7 @@ func void DIA_Addon_Saturas_ADWStart_wastun2()
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_03");	//If that is the only way to stop him, then in Adanos' name...YES!
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_04");	//On your way, collect all the ancient relics and inscriptions of the builders you can find and bring them to us.
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_05");	//We must know more about these people and their demise.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_06");	//Only when we see through Raven's plans can we  thwart them.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_06");	//Only when we see through Raven's plans can we thwart them.
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_07");	//Furthermore, you must find a way to free the slaves.
 	AI_Output (other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_08");	//(cynically) Is that all? I can do that left-handed.
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_09");	//(annoyed) I know that it is much to ask. Regard it as a chance to regain my trust.

@@ -329,7 +329,7 @@ func int DIA_Addon_Lares_Vatras_Condition()
 func void DIA_Addon_Lares_Vatras_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lares_Vatras_15_00");	//Vatras sent me. He told me to come to you when I needed help.
-	AI_Output (self, other, "DIA_Addon_Lares_Vatras_09_01");	//(astonished)  So you've already been to see Vatras. You must have made a lasting impression on him.
+	AI_Output (self, other, "DIA_Addon_Lares_Vatras_09_01");	//(astonished) So you've already been to see Vatras. You must have made a lasting impression on him.
 	AI_Output (self, other, "DIA_Addon_Lares_Vatras_09_02");	//Otherwise he certainly wouldn't have volunteered my name. Especially not since the matter with those missing people still hasn't been resolved.
 	AI_Output (self, other, "DIA_Addon_Lares_Vatras_09_03");	//Tell me what you need.
 	Lares_RangerHelp = TRUE;

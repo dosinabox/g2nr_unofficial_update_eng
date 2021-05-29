@@ -173,7 +173,7 @@ func void B_ClearJunkTradeInv(var C_Npc slf)
 		};
 		if(MIS_Addon_Greg_RakeCave == LOG_SUCCESS)
 		{
-			Npc_RemoveInvItem(slf,ItMi_GregsSilverPlate);
+//			Npc_RemoveInvItem(slf,ItMi_GregsSilverPlate);
 			Npc_RemoveInvItem(slf,ItAm_Addon_Greg);
 		};
 	};

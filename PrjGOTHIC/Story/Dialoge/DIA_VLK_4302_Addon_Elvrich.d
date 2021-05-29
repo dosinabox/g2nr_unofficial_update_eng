@@ -175,8 +175,8 @@ func void DIA_Addon_Elvrich_WhatExactly_Info()
 	AI_Output (self, other, "DIA_Addon_Elvrich_WhatExactly_04_04");	//I put up a fight, of course, but to no avail. There were just too many of them. You didn't happen to see them?
 	LuciaMentionedInKhorinis = TRUE;
 	Info_ClearChoices(DIA_Addon_Elvrich_WhatExactly);
-	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly,"What did the bandits want with you?",DIA_Addon_Elvrich_WhatExactly_lucia);
-	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly,"Tell me about Lucia.",DIA_Addon_Elvrich_WhatExactly_Want);
+	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly,"Tell me about Lucia.",DIA_Addon_Elvrich_WhatExactly_lucia);
+	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly,"What did the bandits want with you?",DIA_Addon_Elvrich_WhatExactly_Want);
 };
 
 func void DIA_Addon_Elvrich_WhatExactly_Want()

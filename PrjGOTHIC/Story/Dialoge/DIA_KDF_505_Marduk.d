@@ -469,7 +469,7 @@ func void DIA_Marduk_SwordBlessing_Info()
 	AI_Output (self, other, "DIA_Marduk_SwordBlessing_05_01");	//If you are determined to take this step, you will first need a magic blade.
 	AI_Output (self, other, "DIA_Marduk_SwordBlessing_05_02");	//With this, you should then retreat to the chapel and pray.
 	AI_Output (self, other, "DIA_Marduk_SwordBlessing_05_03");	//During the prayer, and after a reasonable donation to our Lord Innos, you should ask Innos for his grace and guidance in the battle against Evil.
-	AI_Output (self, other, "DIA_Marduk_SwordBlessing_05_04");	//If Innos is well disposed toward you, your sword will be  consecrated to our Lord from that moment on.
+	AI_Output (self, other, "DIA_Marduk_SwordBlessing_05_04");	//If Innos is well disposed toward you, your sword will be consecrated to our Lord from that moment on.
 	Info_ClearChoices(DIA_Marduk_SwordBlessing);
 	Info_AddChoice(DIA_Marduk_SwordBlessing,Dialog_Back,DIA_Marduk_SwordBlessing_Back);
 	Info_AddChoice(DIA_Marduk_SwordBlessing,"What kind of a donation?",DIA_Marduk_SwordBlessing_Donation);

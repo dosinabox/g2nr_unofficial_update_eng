@@ -60,14 +60,14 @@ func void B_SCGetTreasure_S1()
 		}
 		else if((Npc_GetDistToWP(self,RAKEPLACE_WP_03) < RAKE_BUDDEL_DIST_MIN) && (RAKEPLACE[3] == FALSE))
 		{
-			Wld_InsertItem(ItMi_GoldChalice,RAKEPLACE_WP_03);
-			RakeTreasureSuccess(ItMi_GoldChalice);
+			Wld_InsertItem(ItMi_GoldCup,RAKEPLACE_WP_03);
+			RakeTreasureSuccess(ItMi_GoldCup);
 			RAKEPLACE[3] = TRUE;
 		}
 		else if((Npc_GetDistToWP(self,RAKEPLACE_WP_04) < RAKE_BUDDEL_DIST_MIN) && (RAKEPLACE[4] == FALSE))
 		{
-			Wld_InsertItem(ItMi_GregsSilverPlate,RAKEPLACE_WP_04);
-			RakeTreasureSuccess(ItMi_GregsSilverPlate);
+			Wld_InsertItem(ItMi_SilverChalice,RAKEPLACE_WP_04);
+			RakeTreasureSuccess(ItMi_SilverChalice);
 			RAKEPLACE[4] = TRUE;
 		}
 		else if((Npc_GetDistToWP(self,RAKEPLACE_WP_05) < RAKE_BUDDEL_DIST_MIN) && (RAKEPLACE[5] == FALSE))
