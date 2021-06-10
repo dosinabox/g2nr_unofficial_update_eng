@@ -202,7 +202,7 @@ func void DIA_Addon_Dexter_missingPeople_Raven()
 	AI_Output (self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_02");	//(unsure) He was a miserable swine even back then, but these days...
 	AI_Output (self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_03");	//He has changed since the fall of the Barrier. There's a black shadow across his face.
 	AI_Output (self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_04");	//(intimidated) His fierce glance will pierce you like the claws of a raptor if you look into his eyes for too long.
-	AI_Output(self,other,"DIA_Dexter_Hallo_09_04");	//But you're right. I distributed those wanted posters. And, lo and behold - here you are.
+	AI_Output(self,other,"DIA_Dexter_Hallo_09_04");	//But it's true. I gave my boys the wanted posters. I didn't have any other choice.
 	AI_Output(self,other,"DIA_Addon_Dexter_missingPeople_Raven_09_05");	//My only advice to you is: Leave Khorinis as fast as you can, before it's too late.
 	AI_Output(self,other,"DIA_Addon_Dexter_missingPeople_Raven_09_06");	//(somberly) There's nothing here for you. Except for certain death.
 	Log_CreateTopic(TOPIC_Addon_WhoStolePeople,LOG_MISSION);

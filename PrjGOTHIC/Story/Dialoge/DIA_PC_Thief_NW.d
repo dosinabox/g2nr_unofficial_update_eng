@@ -485,7 +485,7 @@ func int DIA_DiegoNW_Teach_Condition()
 func void DIA_DiegoNW_Teach_Info()
 {
 	AI_Output(other,self,"DIA_DiegoNW_Teach_15_00");	//Teach me.
-	AI_Output(self,other,"DIA_Addon_DiegoOw_Teach_11_01");	//I can teach you to become more dexterous.
+	AI_Output(self,other,"DIA_Addon_DiegoOw_Teach_11_01");	//Sure, what would you like to know?
 	DiegoNW_Merke_DEX = other.aivar[REAL_DEXTERITY];
 	DiegoNW_Merke_STR = other.aivar[REAL_STRENGTH];
 	B_BuildLearnDialog_Diego_NW();

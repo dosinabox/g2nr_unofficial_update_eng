@@ -54,7 +54,7 @@ func void DIA_Khaled_Hallo_Info()
 		}
 		else if(Npc_KnowsInfo(other,DIA_Lee_KeinSld) || (Lee_IsOnBoard == TRUE))
 		{
-			AI_Output(self,other,"DIA_Bosper_PERM_11_05");	//If it's something important, go talk to Lee. Otherwise, leave me alone.
+			AI_Output(self,other,"DIA_Bosper_PERM_11_05");	//There's nothing new so far. Drop in again later.
 		};
 		if(!Npc_KnowsInfo(other,DIA_Bennet_HALLO))
 		{
