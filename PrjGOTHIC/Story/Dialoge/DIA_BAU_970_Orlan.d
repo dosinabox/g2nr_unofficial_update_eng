@@ -504,9 +504,9 @@ func void DIA_Orlan_HotelZimmer_Info()
 
 func void DIA_Orlan_HotelZimmer_ja()
 {
+	AI_Output (other, self, "DIA_Orlan_HotelZimmer_ja_15_00");	//All right. Here's the dough.
 	if(B_GiveInvItems(other,self,ItMi_Gold,50))
 	{
-		AI_Output (other, self, "DIA_Orlan_HotelZimmer_ja_15_00");	//All right. Here's the dough.
 		AI_Output (self, other, "DIA_Orlan_HotelZimmer_ja_05_01");	//Here's the key. The rooms are upstairs. But don't get everything dirty and pay your rent on time, understand?
 		CreateInvItems(self,ItKe_Orlan_HotelZimmer,1);
 		B_GiveInvItems(self,other,ItKe_Orlan_HotelZimmer,1);

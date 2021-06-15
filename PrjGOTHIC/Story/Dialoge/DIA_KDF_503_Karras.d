@@ -185,7 +185,7 @@ instance DIA_Karras_JOB(C_Info)
 	condition = DIA_Karras_JOB_Condition;
 	information = DIA_Karras_JOB_Info;
 	permanent = FALSE;
-	description = "Show me your wares.";
+	description = "What exactly is your job?";
 };
 
 

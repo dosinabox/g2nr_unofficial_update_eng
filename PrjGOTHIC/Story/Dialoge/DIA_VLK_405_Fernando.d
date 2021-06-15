@@ -216,7 +216,7 @@ func void DIA_Addon_Fernando_BanditTrader_Info()
 	if(FernandoMajorEvidenceCount < 2)
 	{
 		DIA_Cord_And();
-		AI_Output(other,self,"DIA_Addon_Cavalorn_Banditen_15_02");	//Ý-ý...
+		AI_Output(other,self,"DIA_Addon_Cavalorn_Banditen_15_02");	//Eh...
 		if((other.guild == GIL_MIL) || (other.guild == GIL_PAL) || (other.guild == GIL_KDF))
 		{
 			B_Say(self,other,"$SPAREME");
