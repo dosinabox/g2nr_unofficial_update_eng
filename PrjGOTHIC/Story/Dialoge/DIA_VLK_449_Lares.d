@@ -2384,7 +2384,7 @@ func void DIA_Lares_AnyNews_Info()
 			AI_Output(self,other,"DIA_Lares_AnyNews_09_01");	//You're responsible for the best news yourself. They've let Bennet go again, he's back at the farm.
 			if(!Npc_KnowsInfo(other,DIA_Bennet_Present))
 			{
-				AI_Output(self,other,"DIA_Lares_AnyNews_09_02");	//You could say so. The paladins have arrested Bennet, our smith.
+				AI_Output(self,other,"DIA_Lares_AnyNews_09_02");	//Go to him, I think he'd like to thank you himself.
 			};
 			Lares_AnyNews_OneTime = TRUE;
 		}
