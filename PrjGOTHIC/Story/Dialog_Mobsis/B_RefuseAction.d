@@ -18,7 +18,7 @@ func void player_mob_missing_key()
 	};
 	if(rnd == 1)
 	{
-		Print("I need a key for this...");
+		Print("I need a key for that...");
 		B_Say_Overlay(self,self,"$NEEDKEY");
 	};
 };

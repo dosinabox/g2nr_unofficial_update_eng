@@ -139,9 +139,9 @@ func int DIA_Addon_Pyrokar_MissingPeople_Condition()
 func void DIA_Addon_Pyrokar_MissingPeople_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Pyrokar_MissingPeople_15_00");	//Some citizens of Khorinis have mysteriously disappeared.
-	AI_Output (self, other, "DIA_Addon_Pyrokar_MissingPeople_11_01");	//That fact is known to me, and very regrettable. But we have agreed with the Water Mages that they shall handle this matter.
-	AI_Output (self, other, "DIA_Addon_Pyrokar_MissingPeople_11_02");	//The same is true for the investigation of the unusual earthquakes in the north-eastern regions of Khorinis.
+//	AI_Output (self, other, "DIA_Addon_Pyrokar_MissingPeople_11_01");	//That fact is known to me, and very regrettable. But we have agreed with the Water Mages that they shall handle this matter.
 	AI_Output (self, other, "DIA_Addon_Pyrokar_MissingPeople_11_03");	//So far, I have not received notice that our intervention would be required. Therefore, we are not going to take any steps in this matter.
+	AI_Output (self, other, "DIA_Addon_Pyrokar_MissingPeople_11_02");	//The same is true for the investigation of the unusual earthquakes in the north-eastern regions of Khorinis.
 	AI_Output (other, self, "DIA_Addon_Pyrokar_MissingPeople_15_04");	//Yes, but ...
 	AI_Output (self, other, "DIA_Addon_Pyrokar_MissingPeople_11_05");	//No buts! We shall proceed as we see fit, and I hope even YOU are going to respect that.
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);

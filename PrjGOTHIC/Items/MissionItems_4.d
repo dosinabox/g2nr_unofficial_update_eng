@@ -59,9 +59,9 @@ instance ItMi_KerolothsGeldbeutel_MIS(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = UseKerolothsGeldbeutel;
 	description = name;
-	text[0] = PRINT_Pocket_MIS;
-	text[1] = "Keroloth' satchel.";
-	text[2] = PRINT_Pocket_300;
+//	text[0] = PRINT_Pocket_MIS;
+	text[0] = "Keroloth' satchel.";
+	text[1] = PRINT_Pocket_300;
 	text[5] = NAME_Value;
 	count[5] = value;
 };

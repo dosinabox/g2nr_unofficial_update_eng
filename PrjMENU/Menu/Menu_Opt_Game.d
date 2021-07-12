@@ -149,8 +149,8 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic = MENU_ITEM_BACK_PIC;
-	text[0] = "Mouse on/off";
-	text[1] = "Toggle mouse controls";
+	text[0] = "Mouse smoothing";
+	text[1] = "Set mouse smoothing level";
 	posx = 1000;
 	posy = MENU_START_Y + (MENU_STEP_Y * 4);
 	dimx = 4000;

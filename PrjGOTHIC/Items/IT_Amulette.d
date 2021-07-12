@@ -414,3 +414,79 @@ func void UnEquip_ItAm_Hp_Mana_01()
 };
 
 
+instance ItAm_Hp_Regen(C_Item)
+{
+	name = NAME_Amulett;
+	mainflag = ITEM_KAT_MAGIC;
+	flags = ITEM_AMULET;
+	value = 5000;
+	visual = "ItAm_Hp_Regen.3ds";
+	visual_skin = 0;
+	material = MAT_METAL;
+	on_equip = Equip_ItAm_Hp_Regen;
+	on_unequip = UnEquip_ItAm_Hp_Regen;
+	wear = WEAR_EFFECT;
+	effect = "SPELLFX_ITEMGLIMMER";
+	description = "Amulet of Healing";
+	text[2] = "Hitpoints regeneration.";
+	text[5] = NAME_Value;
+	count[5] = value;
+	inv_zbias = INVCAM_ENTF_AMULETTE_STANDARD;
+};
+
+
+func void Equip_ItAm_Hp_Regen()
+{
+	if(self.attribute[ATR_REGENERATEHP] == 0)
+	{
+		self.attribute[ATR_REGENERATEHP] = 1;
+	};
+};
+
+func void UnEquip_ItAm_Hp_Regen()
+{
+	if(self.attribute[ATR_REGENERATEHP] == 1)
+	{
+		self.attribute[ATR_REGENERATEHP] = 0;
+	};
+};
+
+
+instance ItAm_Mana_Regen(C_Item)
+{
+	name = NAME_Amulett;
+	mainflag = ITEM_KAT_MAGIC;
+	flags = ITEM_AMULET;
+	value = 5000;
+	visual = "ItAm_Mana_Regen.3ds";
+	visual_skin = 0;
+	material = MAT_METAL;
+	on_equip = Equip_ItAm_Mana_Regen;
+	on_unequip = UnEquip_ItAm_Mana_Regen;
+	wear = WEAR_EFFECT;
+	effect = "SPELLFX_ITEMGLIMMER";
+	description = "Amulet of Meditation";
+	text[2] = "Mana regeneration.";
+	text[5] = NAME_Value;
+	count[5] = value;
+	inv_zbias = INVCAM_ENTF_AMULETTE_STANDARD;
+};
+
+
+func void Equip_ItAm_Mana_Regen()
+{
+	if(self.attribute[ATR_REGENERATEMANA] == 0)
+	{
+		self.attribute[ATR_REGENERATEMANA] = 1;
+	};
+};
+
+func void UnEquip_ItAm_Mana_Regen()
+{
+	if(self.attribute[ATR_REGENERATEMANA] == 1)
+	{
+		self.attribute[ATR_REGENERATEMANA] = 0;
+	};
+};
+
+

@@ -425,7 +425,7 @@ const string TXT_TALENTS[22] =
 	"Create Runes",
 	"Alchemy",
 	"Take fur",
-	"Read foreign language",
+	"Builders' language",
 	"Will-o'-the-wisp abilities",
 	"Take Trophies",
 	"",
@@ -439,9 +439,9 @@ const string TXT_TALENTS_SKILLS[22] =
 	"Rookie|Fighter|Master",
 	"Rookie|Marksman|Master",
 	"Rookie|Marksman|Master",
-	"-|Learned|-",
+	"-|Learned",
 	"",
-	"-|1|2|3|4|5|6",
+	"-|First|Second|Third|Fourth|Fifth|Sixth",
 	"-|Learned",
 	"-|Learned",
 	"",
@@ -794,7 +794,7 @@ const string PRINT_BloodLeft = "Blood vials left: ";
 const string PRINT_MinenAnteilLeft = "Mining shares left: ";
 const string PRINT_AllMinenAnteil = "All mining shares collected!";
 
-const string PRINT_NovizenLeft = "novices left: ";
+const string PRINT_NovizenLeft = "Novices left: ";
 const string PRINT_AllNovizen = "All novices fed!";
 const string PRINT_ShrinesLeft = "Shrines left: ";
 const string PRINT_AllShrines = "All shrines purified!";

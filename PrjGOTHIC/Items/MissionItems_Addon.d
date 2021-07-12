@@ -906,7 +906,7 @@ func void Use_Addon_Stone_01()
 
 instance ItMi_Addon_Stone_02(C_Item)
 {
-	name = "Yellow Stone Tablet";
+	name = "Purple Stone Tablet";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_MISSION;
 	value = 0;
@@ -1035,7 +1035,7 @@ func void Use_Addon_Stone_04()
 
 instance ItMi_Addon_Stone_05(C_Item)
 {
-	name = "Purple Stone Tablet";
+	name = "Yellow Stone Tablet";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI | ITEM_MISSION;
 	value = 0;

@@ -804,9 +804,9 @@ instance ItSe_DiegosTreasure_Mis(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = Use_DiegosTreasure;
 	description = name;
-	text[0] = PRINT_Pocket_MIS;
-	text[1] = "Diego's old leather bag.";
-	text[2] = "It's full of gold!";
+//	text[0] = PRINT_Pocket_MIS;
+	text[0] = "Diego's old leather bag.";
+	text[1] = "It's full of gold!";
 	text[5] = NAME_Value;
 	count[5] = value;
 };

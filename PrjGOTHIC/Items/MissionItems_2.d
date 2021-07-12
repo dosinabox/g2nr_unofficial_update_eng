@@ -163,9 +163,9 @@ instance ItMi_GornsTreasure_MIS(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = UseGornsTreasure;
 	description = name;
-	text[0] = PRINT_Pocket_MIS;
-	text[1] = "Gorn's leather bag.";
-	text[2] = PRINT_Pocket_300;
+//	text[0] = PRINT_Pocket_MIS;
+	text[0] = "Gorn's leather bag.";
+	text[1] = PRINT_Pocket_300;
 	text[5] = NAME_Value;
 	count[5] = value;
 };
@@ -248,9 +248,9 @@ instance ItSe_Olav(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = UseOlav;
 	description = name;
-	text[0] = PRINT_Pocket_MIS;
-	text[1] = "Olav's bag.";
-	text[2] = PRINT_Pocket_25;
+//	text[0] = PRINT_Pocket_MIS;
+	text[0] = "Olav's bag.";
+	text[1] = PRINT_Pocket_25;
 	text[5] = NAME_Value;
 	count[5] = value;
 };

@@ -420,7 +420,7 @@ instance DIA_Addon_Thorus_Answer(C_Info)
 	condition = DIA_Addon_Thorus_Answer_Condition;
 	information = DIA_Addon_Thorus_Answer_Info;
 	permanent = FALSE;
-	description = "I did it. Raven is finished.";
+	description = "Oh, yes, and make sure that the prisoners can leave the camp in peace.";
 };
 
 

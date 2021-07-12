@@ -288,7 +288,8 @@ func void B_DIA_Parlan_WELCOME_GoForTribute()
 
 func void B_DIA_Parlan_WELCOME_BringTribute2Gorax()
 {
-	AI_Output(self,other,"DIA_Addon_Parlan_WELCOME_05_00");	//Take your tribute to Gorax at the monastery at once. He will handle it further.
+//	AI_Output(self,other,"DIA_Addon_Parlan_WELCOME_05_00");	//Take your tribute to Gorax at the monastery at once. He will handle it further.
+	AI_Output(self,other,"DIA_Addon_Pyrokar_MissingPeople_11_01");	//Take your tribute to Gorax at the monastery at once. He will handle it further.
 };
 
 instance DIA_Parlan_WELCOME(C_Info)

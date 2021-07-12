@@ -1,7 +1,7 @@
 
 instance VLK_433_Bromor(Npc_Default)
 {
-	name[0] = "BROMOR";
+	name[0] = "Bromor";
 	guild = GIL_VLK;
 	id = 433;
 	voice = 7;

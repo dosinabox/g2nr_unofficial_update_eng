@@ -19,7 +19,7 @@ func void DIA_Fenia_EXIT_Info()
 {
 	if((VisibleGuild(other) == GIL_KDF) || (VisibleGuild(other) == GIL_KDW))
 	{
-		AI_Output (self, other, "DIA_Fenia_EXIT_17_00");	//Have a nice day, Mr. Paladin.
+		AI_Output (self, other, "DIA_Fenia_EXIT_17_01");	//Have a safe trip, honorable magician.
 	};
 	B_EquipTrader(self);
 	AI_StopProcessInfos(self);

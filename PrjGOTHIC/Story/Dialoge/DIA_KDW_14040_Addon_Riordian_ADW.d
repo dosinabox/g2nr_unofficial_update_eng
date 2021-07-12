@@ -377,7 +377,7 @@ instance DIA_Addon_Riordian_FoundAllHouses(C_Info)
 	nr = 2;
 	condition = DIA_Addon_Riordian_FoundAllHouses_Condition;
 	information = DIA_Addon_Riordian_FoundAllHouses_Info;
-	description = "The orcs will soon lose interest in this area.";
+	description = "I found all of the mansions.";
 };
 
 
@@ -407,7 +407,7 @@ instance DIA_Addon_Riordian_OrksWeg(C_Info)
 	nr = 3;
 	condition = DIA_Addon_Riordian_OrksWeg_Condition;
 	information = DIA_Addon_Riordian_OrksWeg_Info;
-	description = "I found all of the mansions.";
+	description = "The orcs will soon lose interest in this area.";
 };
 
 

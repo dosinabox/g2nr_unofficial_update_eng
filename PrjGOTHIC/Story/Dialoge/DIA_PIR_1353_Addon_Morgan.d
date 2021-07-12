@@ -408,7 +408,7 @@ func void DIA_Addon_Morgan_FOUNDTHEM_Info()
 	if (Morgan_AngusStory == FALSE)
 	{
 		AI_Output (self, other, "DIA_Addon_Morgan_FOUNDTHEM_07_01");	//Don't remind me of THEM.
-		AI_Output (self, other, "DIA_Addon_Morgan_FOUNDTHEM_07_02");	//They probably got themselves killed by pirates.
+		AI_Output (self, other, "DIA_Addon_Morgan_FOUNDTHEM_07_02");	//They probably got themselves killed by bandits.
 		AI_Output (self, other, "DIA_Addon_Morgan_FOUNDTHEM_07_03");	//And Angus had my ring on him.
 		AI_Output (self, other, "DIA_Addon_Morgan_FOUNDTHEM_07_04");	//Well, sure, it was HIS ring in a way. He won it from me playing dice.
 		AI_Output (self, other, "DIA_Addon_Morgan_FOUNDTHEM_07_05");	//But I would have gotten it back, and now it's GONE!

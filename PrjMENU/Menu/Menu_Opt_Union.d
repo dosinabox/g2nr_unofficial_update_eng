@@ -166,7 +166,7 @@ instance MENUITEM_UNION_JUMPBACKNOTURN_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_UNION_STRAFENOTURN(C_MENU_ITEM_DEF)
 {
 	backpic = MENU_ITEM_BACK_PIC;
-	text[0] = "Strage focus";
+	text[0] = "Strafe focus";
 	text[1] = "Strafe only around nearest target";
 	posx = 700;
 	posy = MENU_START_Y + (MENU_STEP_Y * 5);
