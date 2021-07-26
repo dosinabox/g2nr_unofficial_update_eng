@@ -2026,8 +2026,8 @@ func void DIA_Vatras_MISSION_Info()
 	AI_Output (self, other, "DIA_Vatras_Add_05_10");	//I have a message for Master Isgaroth. He guards the shrine in front of the monastery.
 	AI_Output (self, other, "DIA_Vatras_MISSION_05_01");	//If you run this errand for me, you get to choose your own reward.
 	Info_ClearChoices (DIA_Vatras_MISSION);
-	Info_AddChoice (DIA_Vatras_MISSION, "Not now.", DIA_Vatras_MISSION_NO);
-	Info_AddChoice (DIA_Vatras_MISSION, "Sure.", DIA_Vatras_MISSION_YES);
+	Info_AddChoice (DIA_Vatras_MISSION, "Not now!", DIA_Vatras_MISSION_NO);
+	Info_AddChoice (DIA_Vatras_MISSION, "I'll do it.", DIA_Vatras_MISSION_YES);
 };
 
 func void B_SayVatrasGo()
@@ -2241,10 +2241,9 @@ func void DIA_Addon_Vatras_AddonSolved_Info()
 	{
 		DIA_Common_ImBack();
 	};
-	AI_Output (other, self, "DIA_Addon_Vatras_AddonSolved_15_00");	//Someone's here to relieve you.
 	AI_Output (self, other, "DIA_Addon_Vatras_AddonSolved_05_01");	//Have the matters beyond the north-eastern mountains been settled?
 	AI_Output (other, self, "DIA_Addon_Vatras_AddonSolved_15_02");	//Yes, they have. Raven is dead, and the threat has been averted.
-	AI_Output (self, other, "DIA_Addon_Vatras_AddonSolved_05_03");	//That is good news indeed. Now let us hope that such things will not happen again.
+	AI_Output (self, other, "DIA_Addon_Vatras_AddonSolved_05_03");	//Ah, that is good news indeed. Now let us hope that such things will not happen again.
 	if(Npc_KnowsInfo(other,DIA_Addon_Vatras_AbloesePre))
 	{
 		AI_Output (self, other, "DIA_Addon_Vatras_AddonSolved_05_04");	//NOW I can help you with your little problem.
@@ -2799,7 +2798,7 @@ func int DIA_Vatras_StillNeedYou_Condition()
 
 func void DIA_Vatras_StillNeedYou_Info()
 {
-	AI_Output(other,self,"DIA_Vatras_StillNeedYou_15_00");	//ome with me to the enemy's island.
+	AI_Output(other,self,"DIA_Vatras_StillNeedYou_15_00");	//Come with me to the enemy's island.
 	if(Vatras_WasOnBoard == TRUE)
 	{
 		AI_Output(self,other,"DIA_Vatras_StillNeedYou_05_01");	//A wise decision. I hope you are going to stick with it now.

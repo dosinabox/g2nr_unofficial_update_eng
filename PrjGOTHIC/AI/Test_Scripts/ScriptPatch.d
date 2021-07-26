@@ -23,10 +23,10 @@ func void Use_StatsBook()
 	Doc_SetFont(nDocID,-1,FONT_Book);
 	Doc_SetMargins(nDocID,0,270,20,30,20,1);
 	Doc_PrintLine(nDocID,0,"Killed:");
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Draconian)," Lizard Men"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Dementor)," Seekers"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcElite)," Orc Elites"));
-	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcCommander)," Orc Commanders"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Draconian)," lizard men"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_Dementor)," seekers"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcElite)," orc elites"));
+	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(Stats_Killed_OrcCommander)," orc commanders"));
 	Doc_PrintLine(nDocID,0,ConcatStrings(IntToString(MadKillerCount)," innocent people"));
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"Used:");

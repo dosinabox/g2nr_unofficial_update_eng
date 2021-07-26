@@ -2243,7 +2243,7 @@ func void DIA_Pyrokar_PotionofDeath_Potion()
 	AI_Output (other, self, "DIA_Pyrokar_PotionofDeath_Potion_15_02");	//What's the matter?
 	AI_Output (self, other, "DIA_Pyrokar_PotionofDeath_Potion_11_03");	//If these are really the genuine Tears of Innos, then ...
 	AI_Output (other, self, "DIA_Pyrokar_PotionofDeath_Potion_15_04");	//(interrupts) Hardly.
-	AI_Output (self, other, "DIA_Pyrokar_PotionofDeath_Potion_11_05");	//Do not interrupt me. If these are the real Tears of Innos, then we have a powerful weapon against the enemy.
+	AI_Output (self, other, "DIA_Pyrokar_PotionofDeath_Potion_11_05");	//Do not interrupt me! If these are the real Tears of Innos, then we have a powerful weapon against the enemy.
 	Info_ClearChoices (DIA_Pyrokar_PotionofDeath);
 	Info_AddChoice (DIA_Pyrokar_PotionofDeath, Dialog_Back, DIA_Pyrokar_PotionofDeath_BACK);
 	Info_AddChoice (DIA_Pyrokar_PotionofDeath, "So what are the Tears of Innos?", DIA_Pyrokar_PotionofDeath_Teardrops);

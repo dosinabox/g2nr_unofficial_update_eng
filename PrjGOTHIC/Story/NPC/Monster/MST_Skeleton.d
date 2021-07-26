@@ -90,7 +90,7 @@ instance Summoned_Skeleton(Mst_Default_Skeleton)
 
 instance Lesser_Skeleton(Mst_Default_Skeleton)
 {
-	name[0] = "Skeleton Scout";
+	name[0] = "Skeleton";
 	level = 15;
 	attribute[ATR_STRENGTH] = 45;
 	attribute[ATR_DEXTERITY] = 75;
@@ -106,7 +106,7 @@ instance Lesser_Skeleton(Mst_Default_Skeleton)
 
 instance SkeletonScout(Mst_Default_Skeleton)
 {
-	name[0] = "Skeleton-scout";
+	name[0] = "Skeleton Scout";
 	level = 20;
 	attribute[ATR_STRENGTH] = 80;
 	attribute[ATR_DEXTERITY] = 90;

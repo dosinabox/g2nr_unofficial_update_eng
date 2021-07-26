@@ -53,11 +53,11 @@ func void DIA_Garond_PMSchulden_Info()
 		AI_Output (self, other, "DIA_Garond_PMSchulden_10_02");	//You seem to have gotten into even more trouble.
 		if (Garond_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_03");	//But I hope you're going to pay for everything now! All in all, this comes to ...
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_03");	//But I hope you're going to pay for everything now! All in all, this comes to...
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_04");	//I am very disappointed in you. Your penalty amounts to ...
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_04");	//I am very disappointed in you. Your penalty amounts to...
 		};
 		diff = B_GetTotalPetzCounter(self) - Garond_LastPetzCounter;
 		if(diff > 0)
@@ -482,7 +482,7 @@ func void DIA_Garond_Fajeth_Info()
 	AI_Output (other, self, "DIA_Garond_Fajeth_15_00");	//I talked to Fajeth.
 	AI_Output (self, other, "DIA_Garond_Fajeth_10_01");	//What has he got to tell me?
 	AI_Output (other, self, "DIA_Garond_Fajeth_15_02");	//His people have mined two chests of ore.
-	AI_Output (self, other, "DIA_Garond_Fajeth_10_03");	//Hmm ... two chests? I don't need two chests - I need TWO HUNDRED.
+	AI_Output (self, other, "DIA_Garond_Fajeth_10_03");	//Hmm... two chests? I don't need two chests - I need TWO HUNDRED.
 	AI_Output (other, self, "DIA_Garond_Fajeth_15_04");	//He wants me to tell you that he needs more men.
 	AI_Output (self, other, "DIA_Garond_Fajeth_10_05");	//What? I'm supposed to send even more men to certain death? He can forget it.
 	Ore_Counter += 1;
@@ -501,7 +501,7 @@ instance DIA_Garond_Silvestro(C_Info)
 	condition = DIA_Garond_Silvestro_Condition;
 	information = DIA_Garond_Silvestro_Info;
 	permanent = FALSE;
-	description = "About Silvestro's mining site ...";
+	description = "About Silvestro's mining site...";
 };
 
 
@@ -885,7 +885,7 @@ instance DIA_Garond_DragonPlettBericht(C_Info)
 	condition = DIA_Garond_DragonPlettBericht_Condition;
 	information = DIA_Garond_DragonPlettBericht_Info;
 	permanent = TRUE;
-	description = "About the dragons ...";
+	description = "I've got news about the dragons.";
 };
 
 
@@ -955,7 +955,7 @@ instance DIA_Garond_OricExperte(C_Info)
 	condition = DIA_Garond_OricExperte_Condition;
 	information = DIA_Garond_OricExperte_Info;
 	permanent = FALSE;
-	description = "All the dragons are dead.";
+	description = "Can you give me more information about the dragons?";
 };
 
 
@@ -990,7 +990,7 @@ instance DIA_Garond_AllDragonDead(C_Info)
 	condition = DIA_Garond_AllDragonDead_Condition;
 	information = DIA_Garond_AllDragonDead_Info;
 	permanent = FALSE;
-	description = "There is a problem with the smith.";
+	description = "All the dragons are dead.";
 };
 
 
@@ -1090,7 +1090,7 @@ instance DIA_Garond_PERM5(C_Info)
 	condition = DIA_Garond_PERM5_Condition;
 	information = DIA_Garond_PERM5_Info;
 	permanent = TRUE;
-	description = "How are things?";
+	description = "How's the situation?";
 };
 
 
