@@ -100,7 +100,7 @@ func void DIA_Angar_DI_ORKS_no()
 
 func void B_AngarStays()
 {
-	AI_Output(other,self,"DIA_Angar_DI_FOLLOW_15_00");	//So help me and stop complaining.
+	AI_Output(other,self,"DIA_Angar_DI_FOLLOW_15_00");	//Stay back now.
 	if(Npc_GetDistToWP(self,"SKELETTE") < 4000)
 	{
 		AI_Output(other,self,"DIA_Angar_DI_FOLLOW_15_01");	//I'll have to take care of the rest by myself.
@@ -115,7 +115,7 @@ func void B_AngarStays()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Angar_DI_FOLLOW_04_03");	//Sure thing..
+		AI_Output(self,other,"DIA_Angar_DI_FOLLOW_04_03");	//Sure thing.
 		AI_StopProcessInfos(self);
 		if(Npc_GetDistToWP(self,"SHIP") < 10000)
 		{

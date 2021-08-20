@@ -312,7 +312,7 @@ func void DIA_Addon_Cavalorn_Beutel_jaerz()
 func void DIA_Addon_Cavalorn_Beutel_ja()
 {
 	AI_Output(other,self,"DIA_Addon_Cavalorn_Beutel_ja_15_00");	//Sure.
-	AI_Output(self,other,"DIA_Addon_Cavalorn_Triggered_OBack_08_01");	//Terrific.
+	AI_Output(self,other,"DIA_Addon_Cavalorn_Beutel_ja_08_01");	//Terrific.
 	Info_ClearChoices(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice(DIA_Addon_Cavalorn_Beutel,Dialog_Back,DIA_Addon_Cavalorn_Beutel_back);
 	Info_AddChoice(DIA_Addon_Cavalorn_Beutel,"Why did you leave it there in the first place?",DIA_Addon_Cavalorn_Beutel_why);
@@ -877,7 +877,6 @@ func int DIA_Addon_Cavalorn_Triggered_Condition()
 func void DIA_Addon_Cavalorn_Triggered_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Cavalorn_Triggered_15_00");	//I tried the mechanism. It doesn't do anything at all.
-	AI_Output(self,other,"DIA_Addon_Cavalorn_Beutel_ja_08_01");	//Terrific.
 	AI_Output (self, other, "DIA_Addon_Cavalorn_Triggered_08_01");	//Then Lobart's farmers were right.
 	AI_Output (self, other, "DIA_Addon_Cavalorn_Triggered_08_02");	//They said that one of them had already played around with the stones here.
 	AI_Output (self, other, "DIA_Addon_Cavalorn_Triggered_08_03");	//A stone sentinel appeared out of nowhere and attacked them.
