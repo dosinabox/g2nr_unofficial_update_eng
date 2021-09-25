@@ -838,7 +838,7 @@ instance DIA_Pyrokar_TEACH(C_Info)
 	information = DIA_Pyrokar_TEACH_Info;
 	permanent = TRUE;
 //	description = B_BuildLearnString("Teach me the last Circle of Magic.",B_GetLearnCostTalent(other,NPC_TALENT_MAGE,6));
-	description = B_BuildLearnString("Sixth Circle of Magic",B_GetLearnCostTalent(other,NPC_TALENT_MAGE,6));//@@@
+	description = B_BuildLearnString("Sixth Circle of Magic",B_GetLearnCostTalent(other,NPC_TALENT_MAGE,6));
 };
 
 

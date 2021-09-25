@@ -252,7 +252,7 @@ func void DIA_MiltenNW_FourFriends_Info()
 			}
 			else
 			{
-				AI_Output(other,self,"DIA_MiltenOW_Hello_Friends_15_03_add");	//Я встретил Лестера. Он в порядке.@@@
+				AI_Output(other,self,"DIA_MiltenOW_Hello_Friends_15_03_add");	//I've met Lester - he's fine.
 			};
 			AI_Output(self,other,"DIA_MiltenOW_Hello_Friends_03_04");	//One bit of good news, at least.
 		}

@@ -78,7 +78,7 @@ class C_SVM
 	var string abs_commander;
 	var string abs_monastery;
 	var string abs_farm;
-	var string abs_city;
+//	var string abs_city;
 	var string abs_good;
 	var string sheepkiller_crime;
 	var string attack_crime;
@@ -320,7 +320,7 @@ MILGreetings = "SVM_1_MILGreetings";	//For the King!
 	abs_commander = "SVM_1_ABS_COMMANDER";	//I hear you went to the commander and set matters right.
 	abs_monastery = "SVM_1_ABS_MONASTERY";	//I hear you went to Father Parlan and repented your sins.
 	abs_farm = "SVM_1_ABS_FARM";	//They say you went to see Lee and settled that matter.
-	abs_city = "SVM_1_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_1_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_1_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_1_SHEEPKILLER_CRIME";	//Slaughtering our sheep just like that! Beat it, buster!
 	attack_crime = "SVM_1_ATTACK_CRIME";	//I don't talk to filthy thugs!
@@ -512,7 +512,7 @@ instance SVM_3(C_SVM)
 	abs_commander = "SVM_3_ABS_COMMANDER";	//So you went to the commander and set matters right.
 	abs_monastery = "SVM_3_ABS_MONASTERY";	//So you went to Father Parlan to atone for your sins.
 	abs_farm = "SVM_3_ABS_FARM";	//So you went to see Lee and put the matter in order.
-	abs_city = "SVM_3_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_3_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_3_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_3_SHEEPKILLER_CRIME";	//Slaughtering our sheep just like that!
 	attack_crime = "SVM_3_ATTACK_CRIME";	//Leave me alone, you filthy brute!
@@ -700,7 +700,7 @@ instance SVM_4(C_SVM)
 	abs_commander = "SVM_4_ABS_COMMANDER";	//So the commander put matters right for you.
 	abs_monastery = "SVM_4_ABS_MONASTERY";	//So you have done penance for your deeds with Father Parlan.
 	abs_farm = "SVM_4_ABS_FARM";	//I heard that Lee managed to patch it up for you.
-	abs_city = "SVM_4_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_4_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_4_ABS_GOOD";	//Good.
 	sheepkiller_crime = "SVM_4_SHEEPKILLER_CRIME";	//Slaughtering sheep is just too much! Get lost!
 	attack_crime = "SVM_4_ATTACK_CRIME";	//You're a thug - get lost!
@@ -888,7 +888,7 @@ instance SVM_5(C_SVM)
 	abs_commander = "SVM_5_ABS_COMMANDER";	//I hear you went to the commander and set matters right.
 	abs_monastery = "SVM_5_ABS_MONASTERY";	//I heard you went to Father Parlan and did penance.
 	abs_farm = "SVM_5_ABS_FARM";	//I heard you went to Lee and straightened things out.
-	abs_city = "SVM_5_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_5_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_5_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_5_SHEEPKILLER_CRIME";	//Slaughtering our sheep just like that! Beat it, buster!
 	attack_crime = "SVM_5_ATTACK_CRIME";	//I don't talk to filthy thugs!
@@ -1076,7 +1076,7 @@ instance SVM_6(C_SVM)
 	abs_commander = "SVM_6_ABS_COMMANDER";	//So the commander patched up things with you.
 	abs_monastery = "SVM_6_ABS_MONASTERY";	//Father Parlan has relieved you of your guilt.
 	abs_farm = "SVM_6_ABS_FARM";	//So you went to see Lee and took care of that business.
-	abs_city = "SVM_6_ABS_CITY";	//Значит, ты утряс все проблемы.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_6_ABS_CITY";	//Значит, ты утряс все проблемы.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_6_ABS_GOOD";	//Good.
 	sheepkiller_crime = "SVM_6_SHEEPKILLER_CRIME";	//You're assaulting sheep? I suppose you couldn't find a more defenseless victim?
 	attack_crime = "SVM_6_ATTACK_CRIME";	//I'll have nothing to do with nasty thugs!
@@ -1264,7 +1264,7 @@ instance SVM_7(C_SVM)
 	abs_commander = "SVM_7_ABS_COMMANDER";	//So the commander put matters right for you.
 	abs_monastery = "SVM_7_ABS_MONASTERY";	//So you have done penance for your deeds with Father Parlan.
 	abs_farm = "SVM_7_ABS_FARM";	//I heard that Lee managed to patch it up for you.
-	abs_city = "SVM_7_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_7_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_7_ABS_GOOD";	//Good.
 	sheepkiller_crime = "SVM_7_SHEEPKILLER_CRIME";	//Slaughtering sheep is just too much! Get lost!
 	attack_crime = "SVM_7_ATTACK_CRIME";	//You're a thug - get lost!
@@ -1452,7 +1452,7 @@ instance SVM_8(C_SVM)
 	abs_commander = "SVM_8_ABS_COMMANDER";	//So you went to the commander and set matters right.
 	abs_monastery = "SVM_8_ABS_MONASTERY";	//So you went to Father Parlan to atone for your sins.
 	abs_farm = "SVM_8_ABS_FARM";	//So you went to see Lee and put the matter in order.
-	abs_city = "SVM_8_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_8_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_8_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_8_SHEEPKILLER_CRIME";	//Slaughtering our sheep just like that!
 	attack_crime = "SVM_8_ATTACK_CRIME";	//Leave me alone, you filthy brute!
@@ -1643,7 +1643,7 @@ instance SVM_9(C_SVM)
 	abs_commander = "SVM_9_ABS_COMMANDER";	//So the commander patched up things with you.
 	abs_monastery = "SVM_9_ABS_MONASTERY";	//Father Parlan has freed you of your guilt.
 	abs_farm = "SVM_9_ABS_FARM";	//So you saw Lee and took care of that business.
-	abs_city = "SVM_9_ABS_CITY";	//Так ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_9_ABS_CITY";	//Так ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_9_ABS_GOOD";	//Good.
 	sheepkiller_crime = "SVM_9_SHEEPKILLER_CRIME";	//You're assaulting sheep? I suppose you couldn't find a more defenseless victim?
 	attack_crime = "SVM_9_ATTACK_CRIME";	//I'll have nothing to do with nasty thugs!
@@ -1831,7 +1831,7 @@ instance SVM_10(C_SVM)
 	abs_commander = "SVM_10_ABS_COMMANDER";	//So the commander put matters right for you.
 	abs_monastery = "SVM_10_ABS_MONASTERY";	//So you have done penance for your deeds with Father Parlan.
 	abs_farm = "SVM_10_ABS_FARM";	//I heard that Lee managed to patch it up for you.
-	abs_city = "SVM_10_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_10_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_10_ABS_GOOD";	//Fair enough.
 	sheepkiller_crime = "SVM_10_SHEEPKILLER_CRIME";	//Slaughtering sheep is just too much! Get lost!
 	attack_crime = "SVM_10_ATTACK_CRIME";	//You're a thug - get lost!
@@ -2020,7 +2020,7 @@ instance SVM_11(C_SVM)
 	abs_commander = "SVM_11_ABS_COMMANDER";	//I hear you went to the commander and set matters right.
 	abs_monastery = "SVM_11_ABS_MONASTERY";	//I hear you went to Father Parlan and repented your sins.
 	abs_farm = "SVM_11_ABS_FARM";	//They say you went to see Lee and settled that matter.
-	abs_city = "SVM_11_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_11_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_11_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_11_SHEEPKILLER_CRIME";	//Slaughtering our sheep just like that! Beat it, buster!
 	attack_crime = "SVM_11_ATTACK_CRIME";	//I don't talk to filthy thugs!
@@ -2209,7 +2209,7 @@ instance SVM_12(C_SVM)
 	abs_commander = "SVM_12_ABS_COMMANDER";	//So the commander patched up things with you.
 	abs_monastery = "SVM_12_ABS_MONASTERY";	//So Father Parlan has freed you of your guilt.
 	abs_farm = "SVM_12_ABS_FARM";	//So you saw Lee and took care of that business.
-	abs_city = "SVM_12_ABS_CITY";	//Так ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_12_ABS_CITY";	//Так ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_12_ABS_GOOD";	//Good.
 	sheepkiller_crime = "SVM_12_SHEEPKILLER_CRIME";	//You're assaulting sheep? I suppose you couldn't find a more defenseless victim?
 	attack_crime = "SVM_12_ATTACK_CRIME";	//I'll have nothing to do with nasty thugs!
@@ -2397,7 +2397,7 @@ instance SVM_13(C_SVM)
 	abs_commander = "SVM_13_ABS_COMMANDER";	//So you went to the commander and set matters right.
 	abs_monastery = "SVM_13_ABS_MONASTERY";	//So you went to Father Parlan to atone for your sins.
 	abs_farm = "SVM_13_ABS_FARM";	//So you went to see Lee and put the matter in order.
-	abs_city = "SVM_13_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_13_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_13_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_13_SHEEPKILLER_CRIME";	//Slaughtering our sheep just like that!
 	attack_crime = "SVM_13_ATTACK_CRIME";	//Leave me alone, you filthy brute!
@@ -2585,7 +2585,7 @@ instance SVM_14(C_SVM)
 	abs_commander = "SVM_14_ABS_COMMANDER";	//I hear you went to the commander and set matters right.
 	abs_monastery = "SVM_14_ABS_MONASTERY";	//I hear you went to Father Parlan and repented your sins.
 	abs_farm = "SVM_14_ABS_FARM";	//They say you went to see Lee and settled that matter.
-	abs_city = "SVM_14_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_14_ABS_CITY";	//Я слышал, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_14_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_14_SHEEPKILLER_CRIME";	//Slaughtering our sheep just like that! Beat it, buster!
 	attack_crime = "SVM_14_ATTACK_CRIME";	//I don't talk to filthy thugs!
@@ -2717,8 +2717,8 @@ instance SVM_15(C_SVM)
 	picklockmissing = "SVM_15_PICKLOCKMISSING";	//A few lock picks would be helpful!
 	neveropen = "SVM_15_NEVEROPEN";	//I'll never be able to open this thing!
 	missingitem = "SVM_15_MISSINGITEM";	//What with?
-	dontknow = "SVM_15_DONTKNOW";	//Hmm... No ...
-//	SC_CantUseItem = "SVM_15_DONTKNOW";	//Хм... Нет...
+	dontknow = "SVM_15_DONTKNOW";	//Hmm... No...
+//	SC_CantUseItem = "SVM_15_DONTKNOW";	//Hmm... No...
 	nothingtoget = "SVM_15_NOTHINGTOGET";	//Nothing to be had there...
 	nothingtoget02 = "SVM_15_NOTHINGTOGET02";	//Nothing there...
 	nothingtoget03 = "SVM_15_NOTHINGTOGET03";	//Nothing to plunder...
@@ -2729,7 +2729,6 @@ instance SVM_15(C_SVM)
 	Awake = "SVM_15_Awake";	//(wakes up)
 	irdoraththereyouare = "SVM_15_IRDORATHTHEREYOUARE";	//Mmh. So that's where you're hiding out. Damn far away. Mmh. I'll need a ship to get there.
 	healshrine = "SVM_15_HEALSHRINE";	//Innos, grant me your aid and purify this shrine.
-//	heallastshrine = "SVM_15_HEALLASTSHRINE";	//Innos, grant me your aid and all that... There. That ought to be the last time.
 	heallastshrine = "SVM_15_HEALLASTSHRINE";	//Innos, grant me your aid and all that... There. That ought to be the last time.
 	scopensirdorathbook = "SVM_15_SCOPENSIRDORATHBOOK";	//XARAK BENDARDO! Ah. The book's open. There's a letter and a key hidden inside.
 	scopenslastdoor = "SVM_15_SCOPENSLASTDOOR";	//HADOSH EMEM KADAR! Open!
@@ -2832,7 +2831,7 @@ instance SVM_16(C_SVM)
 	abs_commander = "SVM_16_ABS_COMMANDER";	//So you went to the commander and cleared your name.
 	abs_monastery = "SVM_16_ABS_MONASTERY";	//So you went to Father Parlan and atoned for your sins.
 	abs_farm = "SVM_16_ABS_FARM";	//Lee straightened out that matter for you.
-	abs_city = "SVM_16_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_16_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_16_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_16_SHEEPKILLER_CRIME";	//You can't just kill our sheep like that! Go away!
 	attack_crime = "SVM_16_ATTACK_CRIME";	//You're a brutal thug, I want nothing to do with you.
@@ -3007,7 +3006,7 @@ instance SVM_17(C_SVM)
 	abs_commander = "SVM_17_ABS_COMMANDER";	//So you went to the commander and cleared your name.
 	abs_monastery = "SVM_17_ABS_MONASTERY";	//So you went to Father Parlan and atoned for your sins.
 	abs_farm = "SVM_17_ABS_FARM";	//Lee straightened out that matter for you.
-	abs_city = "SVM_17_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//	abs_city = "SVM_17_ABS_CITY";	//Говорят, ты все уладил.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	abs_good = "SVM_17_ABS_GOOD";	//That's good.
 	sheepkiller_crime = "SVM_17_SHEEPKILLER_CRIME";	//You can't just kill our sheep like that! Go away!
 	attack_crime = "SVM_17_ATTACK_CRIME";	//You're a brutal thug, I want nothing to do with you.

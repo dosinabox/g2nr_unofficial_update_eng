@@ -94,7 +94,7 @@ func void DIA_Ambient_NEWS_Info()
 	{
 		if(C_NpcBelongsToCity(self))
 		{
-			B_Say(self,other,"$ABS_CITY");
+			B_Say(self,other,"$ABS_COMMANDER");
 		}
 		else if(C_NpcBelongsToMonastery(self))
 		{

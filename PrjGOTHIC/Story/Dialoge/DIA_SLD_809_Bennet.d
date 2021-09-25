@@ -631,7 +631,7 @@ func void DIA_Bennet_TeachSmith_Info()
 	{
 		if(Kapitel == 1)
 		{
-			AI_Output(self,other,"DIA_Bennet_TeachSmith_06_06_add");	//Пока мне нечему учить тебя.@@@
+			AI_Output(self,other,"DIA_Bennet_TeachSmith_06_06_add");	//There is nothing I can teach you for now.
 		}
 		else if(!C_Bennet_HaveNewWeapons())
 		{

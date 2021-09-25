@@ -942,7 +942,7 @@ func void DIA_Constantino_NewRecipes_Info()
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Constantino_NewRecipes_10_04_add");	//Ты должен стать учеником в нижней части этого города.@@@
+			AI_Output(self,other,"DIA_Constantino_NewRecipes_10_04_add");	//You need to start an apprenticeship in the lower part of town.
 			AI_StopProcessInfos(self);
 		};
 	}

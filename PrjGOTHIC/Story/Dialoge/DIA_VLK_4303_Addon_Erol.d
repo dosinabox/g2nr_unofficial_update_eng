@@ -417,7 +417,7 @@ func void DIA_Addon_Erol_PreTeach_Info()
 	}
 	else
 	{ 
-		AI_Output(self,other,"DIA_Addon_Erol_PreTeach_10_01");	//Yes. But I'm sure they're still up there on the bridge.@@@
+		AI_Output(self,other,"DIA_Addon_Erol_PreTeach_10_01");	//Yes. But I'm sure they're still up there on the bridge.
 	};
 	AI_Output (other, self, "DIA_Addon_Erol_PreTeach_15_02");	//Can you teach me how to hit hard like that?
 	AI_Output (self, other, "DIA_Addon_Erol_PreTeach_10_03");	//Of course I can.

@@ -106,7 +106,7 @@ func void DIA_Mika_WOHIN_Info()
 {
 	if(VisibleGuild(other) == GIL_MIL)
 	{
-		AI_Output(self,other,"DIA_Mika_WOHIN_Bauern_12_01_add");	//Strolling about alone out here is dangerous. If you need my help, you know where to find me.@@@
+		AI_Output(self,other,"DIA_Mika_WOHIN_Bauern_12_01_add");	//Strolling about alone out here is dangerous... If you need my help, you know where to find me.
 	}
 	else
 	{
