@@ -140,7 +140,7 @@ instance DIA_Engrom_B_NpcObsessedByDMT(C_Info)
 	nr = 32;
 	condition = DIA_Engrom_B_NpcObsessedByDMT_Condition;
 	information = DIA_Engrom_B_NpcObsessedByDMT_Info;
-	description = "Everything all right?";
+	description = "Are you all right?";
 };
 
 

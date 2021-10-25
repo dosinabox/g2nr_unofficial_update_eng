@@ -384,7 +384,7 @@ instance DIA_Brutus_PERM4(C_Info)
 	condition = DIA_Brutus_PERM4_Condition;
 	information = DIA_Brutus_PERM4_Info;
 	permanent = TRUE;
-	description = "Are you crazy?";
+	description = "Are you all right?";
 };
 
 

@@ -436,7 +436,7 @@ instance DIA_Addon_Elvrich_PERM(C_Info)
 	information = DIA_Addon_Elvrich_PERM_Info;
 	permanent = TRUE;
 //	important = TRUE;
-	description = "Everything allright?";
+	description = "Are you all right?";
 };
 
 

@@ -131,7 +131,7 @@ instance DIA_Hilda_BringBeet(C_Info)
 	nr = 1;
 	condition = DIA_Hilda_BringBeet_Condition;
 	information = DIA_Hilda_BringBeet_Info;
-	permanent = FALSE;
+	permanent = TRUE;
 	description = "I've got a few turnips here for you...";
 };
 
