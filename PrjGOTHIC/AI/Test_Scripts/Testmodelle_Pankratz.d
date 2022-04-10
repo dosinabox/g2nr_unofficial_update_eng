@@ -1,7 +1,7 @@
 
 /*instance J1(C_Item)
 {
-	name = "Rune of Jarkendar";
+	name = "Rune of Jharkendar";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
