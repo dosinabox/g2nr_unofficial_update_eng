@@ -300,7 +300,7 @@ func int DIA_Garond_NeedProof_Condition()
 func void DIA_Garond_NeedProof_Info()
 {
 	AI_Output (other, self, "DIA_Garond_NeedProof_15_00");	//I come from Lord Hagen. He wants me to bring him proof of the presence of the dragons.
-	AI_Output (self, other, "DIA_Garond_NeedProof_10_01");	//And you've come here just to fetch it and then disappear again?
+	AI_Output (self, other, "DIA_Garond_NeedProof_10_01");	//And you've just come here to get it and then disappear again?
 	AI_Output (other, self, "DIA_Garond_NeedProof_15_02");	//That's what I had in mind.
 	AI_Output (self, other, "DIA_Garond_NeedProof_10_03");	//So he wants proof? He can have it. But I can't send you back to Lord Hagen without giving him information about the ore.
 	AI_Output (self, other, "DIA_Garond_NeedProof_10_04");	//Listen - Lord Hagen absolutely must learn what the situation is here and how much ore we've mined up to now.
@@ -308,7 +308,7 @@ func void DIA_Garond_NeedProof_Info()
 	AI_Output (self, other, "DIA_Garond_NeedProof_10_06");	//I've got three troops of scrapers out there, but they haven't sent me a single nugget.
 	AI_Output (self, other, "DIA_Garond_NeedProof_10_07");	//Visit the mining sites and report back to me how much ore they have stored.
 	AI_Output (self, other, "DIA_Garond_NeedProof_10_08");	//Then I'll write you a letter that you are going to take back to Lord Hagen.
-	AI_Output (other, self, "DIA_Garond_NeedProof_15_09");	//Of well - I guess I have no choice.
+	AI_Output (other, self, "DIA_Garond_NeedProof_15_09");	//Oh well - I guess I have no choice.
 	MIS_ScoutMine = LOG_Running;
 	B_StartOtherRoutine(Jergan,"FAJETH");
 	if(!Npc_IsDead(Jergan))
@@ -441,6 +441,7 @@ func int DIA_Garond_Wo_Condition()
 
 func void DIA_Garond_Wo_Info()
 {
+	AI_Output(other,self,"DIA_Garond_Wo_15_00");	//Where can I find the mining sites?
 	AI_Output (self, other, "DIA_Garond_Wo_10_01");	//Here, take this map. It shows the two areas where the mining sites are located.
 //	CreateInvItems(self,ItWr_Map_OldWorld_Oremines_MIS,1);
 //	B_GiveInvItems(self,other,ItWr_Map_OldWorld_Oremines_MIS,1);

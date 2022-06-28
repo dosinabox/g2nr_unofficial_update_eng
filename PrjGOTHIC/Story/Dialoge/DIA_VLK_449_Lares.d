@@ -262,7 +262,7 @@ func void B_Lares_AboutLee()
 		AI_Output(self,other,"B_Lares_AboutLee_09_01");	//He and his boys are now on the farm of Onar the landowner.
 		AI_Output(self,other,"B_Lares_AboutLee_09_02");	//He made a deal with the farmer. He and his boys defend the farm, and Onar feeds them in return.
 	};
-	AI_Output(self,other,"DIA_Lares_WhyInCity_09_03");	//Why did you com to the city?
+	AI_Output(self,other,"DIA_Lares_WhyInCity_09_03");	//Why did YOU come to the city?
 	AI_Output(other,self,"DIA_Lares_Alternative_15_00");	//Do I have a choice?
 };
 

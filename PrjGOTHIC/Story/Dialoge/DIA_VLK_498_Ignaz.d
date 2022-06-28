@@ -132,11 +132,11 @@ func int DIA_Ignaz_Experiment_Condition()
 func void DIA_Ignaz_Experiment_Info()
 {
 	AI_Output (other, self, "DIA_Ignaz_Experiment_15_00");	//Tell me more about the experiment and the spell.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_01");	//The spell serves to make somebody disremember various events.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_01");	//The spell serves to make somebody forget various events.
 	AI_Output (self, other, "DIA_Ignaz_Experiment_14_02");	//So far, I have only found it to work when the person in question is angry - for instance, if he has just been knocked down, or robbed.
 	AI_Output (self, other, "DIA_Ignaz_Experiment_14_03");	//Even if he has only witnessed such a deed, he will scratch it from his memory.
 	AI_Output (other, self, "DIA_Ignaz_Experiment_15_04");	//So I'm supposed to knock somebody down and then put a spell on him?
-	AI_Output (other, self, "DIA_Ignaz_Add_15_00");	//That would only make sense if that person were REALLY mad after beating him up.
+	AI_Output (other, self, "DIA_Ignaz_Add_15_00");	//(to himself) That would only make sense if that person were REALLY mad after beating him up.
 	AI_Output (other, self, "DIA_Ignaz_Add_15_01");	//(to himself) But fistfights are nothing out of the ordinary in the harbor district. I guess I'd have to find a victim elsewhere...
 	AI_Output (self, other, "DIA_Ignaz_Experiment_14_05");	//Yes, I think you get the point. But to make somebody angry, it is enough to attack him - you don't have to knock him down.
 	AI_Output (self, other, "DIA_Ignaz_Experiment_14_06");	//So you should pick somebody who's by himself - if there are other people around, you'll just get into trouble with Lord Andre.

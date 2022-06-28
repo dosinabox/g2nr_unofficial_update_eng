@@ -139,7 +139,7 @@ func void DIA_Addon_Hakon_MissingPeople_Info()
 	AI_Output (self, other, "DIA_Addon_Hakon_MissingPeople_12_04");	//There was this fellow who came here - I think his name is Joe. He bragged that he would soon come into some serious money.
 	AI_Output (self, other, "DIA_Addon_Hakon_MissingPeople_12_05");	//He claimed that he knew how to get into one of the city towers where the militia keep their arms.
 	AI_Output (self, other, "DIA_Addon_Hakon_MissingPeople_12_06");	//I haven't seen him since, even though I used to bump into him around the same time every day.
-	AI_Output (self, other, "DIA_Addon_Hakon_MissingPeople_12_07");	//I reported this to the militia. I thought that maybe he'd been caught and throughn into the dungeon.
+	AI_Output (self, other, "DIA_Addon_Hakon_MissingPeople_12_07");	//I reported this to the militia. I thought that maybe he'd been caught and thrown into the dungeon.
 	AI_Output (self, other, "DIA_Addon_Hakon_MissingPeople_12_08");	//But Lord Andre had no idea what I was talking about. He didn't even know the fellow.
 	Log_CreateTopic (TOPIC_Addon_Joe, LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_Joe, LOG_Running);

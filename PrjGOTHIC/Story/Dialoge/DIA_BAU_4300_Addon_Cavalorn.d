@@ -218,7 +218,7 @@ instance DIA_Addon_Cavalorn_ImGoingToMineValley(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Cavalorn_ImGoingToMineValley_Condition;
 	information = DIA_Addon_Cavalorn_ImGoingToMineValley_Info;
-	description = "I was at your hut in the Valley of Mines.";
+	description = "I'm going to head for the Valley of Mines.";
 };
 
 

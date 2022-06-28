@@ -150,7 +150,7 @@ func void DIA_Addon_Saturas_ADWStart_wastun2()
 	Log_CreateTopic(TOPIC_Addon_Relicts,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Relicts,LOG_Running);
 	B_LogNextEntry(TOPIC_Addon_Relicts,"Saturas wants me to bring him anything that could provide more information about the old people of the builders.");
-	Info_AddChoice(DIA_Addon_Saturas_ADWStart,"What should I do?",DIA_Addon_Saturas_ADWStart_back);
+	Info_AddChoice(DIA_Addon_Saturas_ADWStart,"I'll get going then.",DIA_Addon_Saturas_ADWStart_back);
 };
 
 func void DIA_Addon_Saturas_ADWStart_back()
@@ -1135,7 +1135,7 @@ func void DIA_Addon_Saturas_PermENDE_ADDON_Info()
 		AI_Output (self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_04");	//I am glad to see that I was not mistaken about you. You are the Preserver of the Balance. There is no longer any doubt about that.
 		AI_Output (self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_05");	//Without your courage and strength, the island of Khorinis would have drowned. We thank you and will honor you in our thoughts.
 		AI_Output (self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_06");	//Devote yourself now to the other tasks that lie before you and return this world to balance and peace.
-		AI_Output (self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_07");	//No go and fulfill your destiny, Preserver. Our prayers will go with you.
+		AI_Output (self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_07");	//Now go and fulfill your destiny, Preserver. Our prayers will go with you.
 		DIA_Addon_Saturas_PermENDE_ADDON_OneTime = TRUE;
 	};
 };

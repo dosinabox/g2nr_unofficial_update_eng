@@ -403,7 +403,7 @@ func void DIA_Coragon_News_Info()
 	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_36");	//Then he put his hand in his pocket and made a funny face. He said he had been robbed...
 	AI_Output(other,self,"DIA_Coragon_Add_15_37");	//And? What did you do?
 	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_38");	//Well, I gave him a good thrashing, what else?
-	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_34");	//Then he put his hand in his pocket and made a funny face. He said he had been robbed...
+	AI_Output(self,other,"DIA_ADDON_NEW_Coragon_Add_09_34");	//He was blathering something about having being robbed, and paying me later... Really!
 	if(Npc_HasItems(Valentino,ItMi_Gold) > 0)
 	{
 		Npc_RemoveInvItems(Valentino,ItMi_Gold,Npc_HasItems(Valentino,ItMi_Gold));

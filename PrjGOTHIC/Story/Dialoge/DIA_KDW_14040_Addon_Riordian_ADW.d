@@ -394,7 +394,7 @@ func void DIA_Addon_Riordian_FoundAllHouses_Info()
 	AI_Output(other,self,"DIA_Addon_Riordian_FoundAllHouses_15_00");	//I found all of the mansions.
 	AI_Output(self,other,"DIA_Addon_Riordian_FoundAllHouses_10_01");	//Were they all where I said they would be?
 	AI_Output(other,self,"DIA_Addon_Riordian_FoundAllHouses_15_02");	//More or less.
-	AI_Output(self,other,"DIA_Addon_Riordian_FoundAllHouses_10_03");	//ery good. Then my work WAS worth it.
+	AI_Output(self,other,"DIA_Addon_Riordian_FoundAllHouses_10_03");	//Very good. Then my work WAS worth it.
 	AI_Output(self,other,"DIA_Addon_Riordian_FoundAllHouses_10_04");	//Thank you.
 	MIS_Riordian_HousesOfRulers = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Addon_FoundAllHouses);

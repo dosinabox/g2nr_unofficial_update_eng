@@ -561,7 +561,7 @@ func int DIA_Bengar_BALTHASAR_Condition()
 func void DIA_Bengar_BALTHASAR_Info()
 {
 	AI_Output (other, self, "DIA_Bengar_BALTHASAR_15_00");	//Balthasar the shepherd isn't allowed on your pasture?
-	AI_Output (self, other, "DIA_Bengar_BALTHASAR_10_01");	//Oh, yes. The story. I told him Sekob should pay me money if he wanted to lead the sheep to my pasture.
+	AI_Output (self, other, "DIA_Bengar_BALTHASAR_10_01");	//Oh, yes. That story. I told him Sekob should pay me money if he wanted to lead the sheep to my pasture.
 	AI_Output (self, other, "DIA_Bengar_BALTHASAR_10_02");	//To tell the truth, that's only harassment. I just can't stand Balthasar.
 	B_LogEntry (TOPIC_BalthasarsSchafe, "If I want to persuade Bengar to let Balthasar back on his pastures, I'm going to have to do him a favor. I'm sure an opportunity will present itself.");
 	B_GivePlayerXP (XP_Ambient);

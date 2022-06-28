@@ -228,7 +228,7 @@ func int DIA_Jack_BANDITENWEG_Condition()
 
 func void DIA_Jack_BANDITENWEG_Info()
 {
-	AI_Output (other, self, "DIA_Jack_BANDITENWEG_15_00");	//The bandits that were haunting your lighthouse are gone.
+	AI_Output (other, self, "DIA_Jack_BANDITENWEG_15_00");	//The bandits that were occupying your lighthouse are gone.
 	AI_Output (self, other, "DIA_Jack_BANDITENWEG_14_01");	//Is that really true? Finally I can get back to my work.
 	AI_Output (self, other, "DIA_Jack_BANDITENWEG_14_02");	//Come with me to the lighthouse. You get an incredible view of the sea up there.
 	if(C_BodyStateContains(self,BS_SIT))

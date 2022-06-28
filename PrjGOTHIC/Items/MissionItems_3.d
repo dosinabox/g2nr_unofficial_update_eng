@@ -565,7 +565,7 @@ func void Use_BabosPinUp()
 	var int nDocID;
 	nDocID = Doc_Create();
 	Doc_SetPages(nDocID,1);
-	Doc_SetPage(nDocID,0,"Map_Pinup.TGA",0);
+	Doc_SetPage(nDocID,0,"Map_Pinup.TGA",TRUE);
 	Doc_Show(nDocID);
 };
 

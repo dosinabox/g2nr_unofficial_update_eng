@@ -539,7 +539,7 @@ instance DIA_Addon_Skip_Grog(C_Info)
 	condition = DIA_Addon_Skip_Grog_Condition;
 	information = DIA_Addon_Skip_Grog_Info;
 	permanent = TRUE;
-	description = "Here's your 20 bottles.";
+	description = "About that grog...";
 };
 
 

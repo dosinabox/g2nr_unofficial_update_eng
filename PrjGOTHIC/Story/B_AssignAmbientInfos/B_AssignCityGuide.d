@@ -51,7 +51,7 @@ func int DIA_CITYGUIDE_Condition()
 
 func void DIA_CITYGUIDE_Info()
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_15_00");	//What's new?
+	AI_Output (other, self, "DIA_CITYGUIDE_15_00");	//What can you tell me about this area?
 	if (C_NpcIsInQuarter (self) == Q_UNTERSTADT)
 	{
 		B_Say(self,other,"$UNTERSTADT");

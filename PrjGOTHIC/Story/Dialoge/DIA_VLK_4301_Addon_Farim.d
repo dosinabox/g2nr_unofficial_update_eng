@@ -279,7 +279,7 @@ func void DIA_Addon_Farim_William_Info()
 		Info_AddChoice(DIA_Addon_Farim_William,"He's dead.",DIA_Addon_Farim_WilliamReport_Dead);
 		FoundDeadWilliam = TRUE;
 	};
-	Info_AddChoice(DIA_Addon_Farim_William,"What's he been up to",DIA_Addon_Farim_William_WasGemacht);
+	Info_AddChoice(DIA_Addon_Farim_William,"What's he been up to?",DIA_Addon_Farim_William_WasGemacht);
 	Info_AddChoice(DIA_Addon_Farim_William,"When did you last see him?",DIA_Addon_Farim_William_WannWeg);
 };
 
