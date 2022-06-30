@@ -2288,8 +2288,8 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Info()
 	};
 	MIS_SCKnowsInnosEyeIsBroken = TRUE;
 	B_GivePlayerXP(XP_AmbientKap3);
-	AI_Output(self,other,"DIA_Vatras_INNOSEYEKAPUTT_05_03");	//The Eye of Innos is broken.
-	AI_Output(self,other,"DIA_Vatras_INNOSEYEKAPUTT_05_04");	//I know. I have already learned of it from some very upset novices.
+	AI_Output(self,other,"DIA_Vatras_INNOSEYEKAPUTT_05_03");	//I know. I have already learned of it from some very upset novices.
+	AI_Output(self,other,"DIA_Vatras_INNOSEYEKAPUTT_05_04");	//The Seekers have used the Fire Magicians' Circle of the Sun to destroy the Eye.
 	AI_Output(self,other,"DIA_Vatras_INNOSEYEKAPUTT_05_05");	//I would call that an inspired move by the enemy.
 	Info_ClearChoices(DIA_Vatras_INNOSEYEKAPUTT);
 	Info_AddChoice(DIA_Vatras_INNOSEYEKAPUTT,"News spreads fast in this city.",DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten);
@@ -2334,7 +2334,6 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein()
 	{
 		AI_Output(other,self,"DIA_Xardas_Weiter_15_00");	//So what shall we do next?
 	};
-	AI_Output (other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_15_00");	//How can the gem get its power back?
 	AI_Output (self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_01");	//I see only one way. A union of the three reigning divinities should achieve the desired effect.
 	AI_Output (self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_02");	//A well prepared ritual of reversal in the place of its destruction will give the gem back its fire.
 	AI_Output (self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_03");	//However, the problem is that you must bring an earthly representative of each of the three gods to this place.
