@@ -1310,6 +1310,7 @@ var int TotalMushroomsEaten;
 var int TotalDexEaten;
 var int TotalStrEaten;
 var int TotalPermEaten;
+var int TotalLocksPicked;
 var int BosperFurCounter;
 var int HaradSwordsCounter;
 var int ApprenticeGoldCounter;

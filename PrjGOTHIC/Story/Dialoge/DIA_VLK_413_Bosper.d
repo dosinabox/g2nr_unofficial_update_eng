@@ -874,7 +874,7 @@ func void DIA_Bosper_SellFur_Info()
 				AI_Output (self, other, "DIA_Bosper_SellFur_11_06");	//What the hell is THIS skin?
 				AI_Output (other, self, "DIA_Bosper_SellFur_15_07");	//I ripped a troll off for that one.
 				AI_Output (self, other, "DIA_Bosper_SellFur_11_08");	//That... that is worth a small fortune.
-				Bosper_TrollFurSold == TRUE;
+				Bosper_TrollFurSold = TRUE;
 			}
 			else
 			{

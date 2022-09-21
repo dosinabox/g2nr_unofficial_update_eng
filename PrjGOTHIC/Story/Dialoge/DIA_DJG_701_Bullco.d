@@ -27,7 +27,7 @@ instance DIA_BullcoDJG_HALLO(C_Info)
 	nr = 5;
 	condition = DIA_BullcoDJG_HALLO_Condition;
 	information = DIA_BullcoDJG_HALLO_Info;
-	description = "What's the matter??";
+	description = "What's the matter?";
 };
 
 
@@ -41,7 +41,7 @@ func int DIA_BullcoDJG_HALLO_Condition()
 
 func void DIA_BullcoDJG_HALLO_Info()
 {
-	AI_Output (other, self, "DIA_BullcoDJG_HALLO_15_00");	//What's the matter??
+	AI_Output (other, self, "DIA_BullcoDJG_HALLO_15_00");	//What's the matter?
 	AI_Output (self, other, "DIA_BullcoDJG_HALLO_06_01");	//It's so damn cold here, man! I don't see why Sylvio insisted on coming here of all places.
 	AI_Output (self, other, "DIA_BullcoDJG_HALLO_06_02");	//There's plenty of other places around where there's something to be had!
 	AI_StopProcessInfos (self);

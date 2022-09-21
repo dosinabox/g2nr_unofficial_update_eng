@@ -192,7 +192,7 @@ const string TXT_GUILDS[66] =
 	"GIL_EMPTY_B",
 	"GIL_EMPTY_C",
 	"GIL_SEPERATOR_ORC",
-	"Îðê",
+	"Orc",
 	"Friendly Orc",
 	"Undead Orc",
 	"Lizard Man",

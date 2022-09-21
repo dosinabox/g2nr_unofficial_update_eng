@@ -709,7 +709,7 @@ func void DIA_Addon_Henry_Entercrew_Info()
 			AI_Output(self,other,"DIA_Addon_Henry_Entercrew_Add_04_05");	//Get rid of those bandits in the tower for us!
 			if(Npc_IsDead(SawPirate) && Npc_IsDead(HammerPirate))
 			{
-				AI_Output(self,other,"DIA_Addon_Henry_Entercrew_Add_04_04");	//ÎWell, my men are both dead. So you'll have to go it alone after all.
+				AI_Output(self,other,"DIA_Addon_Henry_Entercrew_Add_04_04");	//Well, my men are both dead. So you'll have to go it alone after all.
 				B_LogEntry(TOPIC_Addon_BanditsTower,"Henry wants me to drive the bandits out of the tower. He can't give me any support.");
 			}
 			else

@@ -413,7 +413,7 @@ func void DIA_SylvioDJG_WHATNEXT_ATTACK()
 	Npc_SetRefuseTalk(self,60);
 	Npc_ExchangeRoutine(self,"Start");
 	B_StartOtherRoutine(DJG_Bullco,"Start");
-	B_LogEntry(TOPIC_Dragonhunter,"That dirty pig Sylvio was after claiming my victory over the ice dragons. There was a bit of an argument.");
+	B_LogEntry(TOPIC_Dragonhunter,"That dirty pig Sylvio was after claiming my victory over the ice dragon. There was a bit of an argument.");
 	B_Attack(self,other,AR_KILL,1);
 	B_Attack(DJG_Bullco,other,AR_NONE,1);
 	if(Biff.aivar[AIV_PARTYMEMBER] == TRUE)

@@ -114,3 +114,20 @@ func void B_NPC_IsAliveCheck(var int Zen)
 	};
 };
 
+func int C_TowerBanditsDead()
+{
+	if(!Npc_IsDead(TowerBandit1))
+	{
+		return FALSE;
+	};
+	if(!Npc_IsDead(TowerBandit2))
+	{
+		return FALSE;
+	};
+	if(!Npc_IsDead(TowerBandit3))
+	{
+		return FALSE;
+	};
+	return TRUE;
+};
+
