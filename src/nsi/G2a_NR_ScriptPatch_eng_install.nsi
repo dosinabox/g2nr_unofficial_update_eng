@@ -9,8 +9,8 @@
 ##            Main               ##
 ###################################
 
-!define MOD_VERSION "26_eng"
-!define MOD_DATE "9.19"
+!define MOD_VERSION "26_en"
+!define MOD_DATE "9.30"
 !define MOD_NAME "G2a_NR_ScriptPatch_v${MOD_VERSION}"
 !define MOD_NAME_RU "G2 NotR Script-Patch"
 !define MOD_DETAILED_VERSION "1.26.${MOD_DATE}"
@@ -38,14 +38,14 @@ SetCompressor lzma
 !define MUI_ICON "${MOD_NAME}.ico"
 !define MUI_UNICON "${MOD_NAME}.ico"
 !define MUI_HEADERIMAGE
-!define MUI_HEADERIMAGE_BITMAP "logo_eng.bmp"
-!define MUI_HEADERIMAGE_UNBITMAP "logo_eng.bmp"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "pic_eng.bmp"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "pic_eng.bmp"
+!define MUI_HEADERIMAGE_BITMAP "logo_en.bmp"
+!define MUI_HEADERIMAGE_UNBITMAP "logo_en.bmp"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "pic_en.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "pic_en.bmp"
 
 Caption "${MOD_NAME_RU} (v${MOD_VERSION}) - install"
 !define MUI_TEXT_WELCOME_INFO_TITLE " "
-!define MUI_TEXT_WELCOME_INFO_TEXT "Script-Patch fixes a large of bugs and shortcomings of the original game while adding quality of life features. You need SystemPack/Union + PlayerKit in order to play. Old save files are not supported - new game is required!"
+!define MUI_TEXT_WELCOME_INFO_TEXT "Script-Patch fixes a large amount of bugs and shortcomings of the original game while adding quality of life features. You need SystemPack/Union + PlayerKit in order to play. Old save files are not supported - new game is required!"
 
 !define MUI_TEXT_DIRECTORY_SUBTITLE " "
 DirText "Script-Patch will be installed in the following folder. \
@@ -108,9 +108,7 @@ Section "Main files" SecMain
 	CreateDirectory "$INSTDIR\saves_${MOD_NAME}\current"
 
 	SetOutPath "$INSTDIR\Data\ModVDF"
-	File "g2a_nr_scriptpatch_v${MOD_VERSION}.mod"
-	File "g2a_nr_scriptpatch_v${MOD_VERSION}_scripts.mod"
-	File "g2a_nr_scriptpatch_v${MOD_VERSION}_plugins.mod"
+	File "scriptpatch_v${MOD_VERSION}.mod"
 
 	SetOutPath "$INSTDIR\system"
 	File "${MOD_NAME}.ico"
@@ -129,7 +127,7 @@ Section "Main files" SecMain
 	WriteRegStr HKLM "${REGISTRY_PATH}" "DisplayVersion" "${MOD_DETAILED_VERSION}" 
 	WriteRegStr HKLM "${REGISTRY_PATH}" "InstallLocation" $INSTDIR
 	WriteRegStr HKLM "${REGISTRY_PATH}" "UninstallString" "$INSTDIR\${UNINSTALLER_NAME}.exe"
-	WriteRegStr HKLM "${REGISTRY_PATH}" "HelpLink" "https://worldofplayers.ru/threads/36817"
+	WriteRegStr HKLM "${REGISTRY_PATH}" "HelpLink" "https://forum.worldofplayers.de/forum/threads/1583819-Release-Gothic-II-Script-Patch"
 	WriteRegStr HKLM "${REGISTRY_PATH}" "Publisher" "${MOD_AUTHOR}"
 	WriteRegStr HKLM "${REGISTRY_PATH}" "DisplayIcon" "$INSTDIR\system\${MOD_NAME}.ico"
 	WriteRegDWORD HKLM "${REGISTRY_PATH}" "EstimatedSize" "255700"
@@ -137,12 +135,12 @@ SectionEnd
 
 Section "Additional english speech files" SecAdditional_1
 	SetOutPath "$INSTDIR\Data\ModVDF"
-	File "g2a_nr_scriptpatch_v${MOD_VERSION}_speech_add.mod"
+	File "scriptpatch_v${MOD_VERSION}_speech_add.mod"
 SectionEnd
 
 Section /o "Extended Valley of Mines" SecAdditional_2
 	SetOutPath "$INSTDIR\Data\ModVDF"
-	File "g2a_nr_scriptpatch_v${MOD_VERSION}_wasteland.mod"
+	File "scriptpatch_v${MOD_VERSION}_wasteland.mod"
 SectionEnd
 
 ###################################
@@ -155,12 +153,10 @@ Section "Un.Unistall modification" SecUninstall_Main
 	Delete "$INSTDIR\system\${MOD_NAME}.ini"
 	Delete "$INSTDIR\system\${MOD_NAME}.rtf"
 	Delete "$INSTDIR\_work\Data\Music\newworld\KAS_Loop_DayStd.sgt"
-	Delete "$INSTDIR\Data\ModVDF\g2a_nr_scriptpatch_v${MOD_VERSION}.mod"
-	Delete "$INSTDIR\Data\ModVDF\g2a_nr_scriptpatch_v${MOD_VERSION}_scripts.mod"
-	Delete "$INSTDIR\Data\ModVDF\g2a_nr_scriptpatch_v${MOD_VERSION}_plugins.mod"
-	Delete "$INSTDIR\Data\ModVDF\g2a_nr_scriptpatch_v${MOD_VERSION}_speech_add.mod"
-	Delete "$INSTDIR\Data\ModVDF\g2a_nr_scriptpatch_v${MOD_VERSION}_wasteland.mod"
-	Delete "$INSTDIR\Data\ModVDF\g2a_nr_scriptpatch_v${MOD_VERSION}_hotfix.mod"
+	Delete "$INSTDIR\Data\ModVDF\scriptpatch_v${MOD_VERSION}.mod"
+	Delete "$INSTDIR\Data\ModVDF\scriptpatch_v${MOD_VERSION}_speech_add.mod"
+	Delete "$INSTDIR\Data\ModVDF\scriptpatch_v${MOD_VERSION}_wasteland.mod"
+	Delete "$INSTDIR\Data\ModVDF\scriptpatch_v${MOD_VERSION}_hotfix.mod"
 	Delete "$INSTDIR\Changelog_${MOD_NAME}.txt"
 	Delete "$INSTDIR\${UNINSTALLER_NAME}.exe"
 	DeleteRegKey HKLM "${REGISTRY_PATH}"
@@ -175,7 +171,7 @@ SectionEnd
 ###################################
 
 LangString DESC_SecMain ${LANG_ENGLISH} "Main files."
-LangString DESC_SecAdditional_1 ${LANG_ENGLISH} "Uncheck if you want to play without english speech."
+LangString DESC_SecAdditional_1 ${LANG_ENGLISH} "Uncheck if you want to play with non-english speech."
 LangString DESC_SecAdditional_2 ${LANG_ENGLISH} "Wasteland Mod - restores Valley of Mines areas from Gothic 1."
 
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN

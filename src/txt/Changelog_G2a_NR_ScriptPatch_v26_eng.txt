@@ -2,7 +2,7 @@
 [this document is auto-translated from russian]
 
 ================================================
-Unofficial update for the game Gothic 2: Night of the Raven (version 26 from 03/12/2021)
+Unofficial update for the game Gothic 2: Night of the Raven (version 26 from 30/09/2022)
 ================================================
 Comrad Efectivo (aka Nefarius) Russified the patch from Fizzban and made several additional corrections (so it turned out not Russification, but an independent product based on it).
 In an unofficial update, comrade Dimus has significantly expanded the list of fixes and added some improvements. Further work on the update is continued by D36.
@@ -12,7 +12,7 @@ This update does not include new quests or global balance changes and is recomme
 Attention: For all changes and fixes to take effect, the start of a new game is strictly required! It is not recommended to use the Program Files folder to install the game, as the mod starter may be blocked in it.
 
 Suggestions and comments are accepted by the authors in the thread on the World of Players forum:
-http://worldofplayers.ru/threads/36817
+https://forum.worldofplayers.de/forum/threads/1583819-Release-Gothic-II-Script-Patch
 
 Full list of changes and fixes:
 
