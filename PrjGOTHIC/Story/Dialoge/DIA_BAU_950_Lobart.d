@@ -85,7 +85,7 @@ func void DIA_Lobart_STOLENCLOTHS_HereYouGo()
 func void DIA_Lobart_STOLENCLOTHS_DontHaveIt()
 {
 	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_15_00");	//I don't have them any more.
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01");	//You already sold them, huh? (ranting) I'll teach you, laddie!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01");	//You already sold them, huh? (ranting) I'll teach you, buddy!
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos(self);
 	B_Attack(self,other,AR_Theft,1);
@@ -94,7 +94,7 @@ func void DIA_Lobart_STOLENCLOTHS_DontHaveIt()
 func void DIA_Lobart_STOLENCLOTHS_ForgetIt()
 {
 	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_ForgetIt_15_00");	//Forget it!
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01");	//(ranting) I'll teach you, laddie!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01");	//(ranting) I'll teach you, buddy!
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos(self);
 	B_Attack(self,other,AR_Theft,1);
@@ -420,7 +420,7 @@ func int DIA_Lobart_SldInfo_Condition()
 func void DIA_Lobart_SldInfo_Info()
 {
 	AI_Output (other, self, "DIA_Lobart_SldInfo_15_00");	//Who are those mercenaries that Onar hired?
-	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01");	//I don't know much about the fellows. Supposedly, a lot of them are former prisoners from the mining colony.
+	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01");	//I don't know much about the guys. Supposedly, a lot of them are former prisoners from the mining colony.
 	if((other.guild != GIL_SLD) && (other.guild != GIL_DJG))
 	{
 		AI_Output(self,other,"DIA_Lobart_SldInfo_05_02");	//(scornful) Everybody knows what you can expect from them...
@@ -621,7 +621,7 @@ func void DIA_Lobart_RuebenRunning_Info()
 		AI_Output(self,other,"DIA_Lobart_RuebenRunning_05_06");	//But that's not even 20 of them!
 		if((other.guild == GIL_NONE) || (other.guild == GIL_NOV))
 		{
-			AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_07");	//Did you eat the rest?! I hope not, my boy, otherwise you can forget your pay!
+			AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_07");	//Did you eat the rest?! I hope not buddy, otherwise you can forget your pay!
 			AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_08");	//Get out there, and get more! Go back to work or I'll make you!
 		};
 		AI_StopProcessInfos(self);

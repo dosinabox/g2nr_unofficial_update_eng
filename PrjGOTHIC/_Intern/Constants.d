@@ -5,6 +5,7 @@ const string FONT_Book = "FONT_10_BOOK.TGA";
 const string FONT_BookHeadline = "FONT_20_BOOK.TGA";
 
 const int SPL_Cost_Scroll = 5;
+const int SPL_Charge_Frames = 32;
 const int ATR_HITPOINTS = 0;
 const int ATR_HITPOINTS_MAX = 1;
 const int ATR_MANA = 2;
@@ -765,7 +766,7 @@ const int INVCAM_Z_RING_STANDARD = 45;
 
 const int UnionActivated = 0;
 
-const string FIX_VERSION_DATE = "30/09/2022";
+const string FIX_VERSION_DATE = "10/11/2022";
 const int FIX_VERSION_START = 26;
 const int LEAST_SUPPORTED = 24;
 var int FIX_VERSION_SAVE;

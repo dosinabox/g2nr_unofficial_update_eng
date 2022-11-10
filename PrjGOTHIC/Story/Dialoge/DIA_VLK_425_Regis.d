@@ -167,7 +167,7 @@ func int DIA_Regis_Valentino_Condition()
 func void DIA_Regis_Valentino_Info()
 {
 	AI_Output (other, self, "DIA_Regis_Add_15_12");	//Who did you fight with?
-	AI_Output (self, other, "DIA_Regis_Add_13_13");	//With a fellow named Valentino. He often hangs out in the pub near the temple.
+	AI_Output (self, other, "DIA_Regis_Add_13_13");	//With a fellow named Valentino. He often hangs out in the tavern near the temple.
 	AI_Output (self, other, "DIA_Regis_Add_13_14");	//I'm not usually a violent person. But THAT guy needed his face rearranged in the worst way ...
 };
 
@@ -208,10 +208,10 @@ func void DIA_Regis_ValDefeat_Info()
 
 func void B_Regis_AboutThief()
 {
-		AI_Output (self, other, "DIA_Regis_PERM_13_01");	//You could say that.
-		AI_Output (self, other, "DIA_Regis_PERM_13_02");	//They robbed Bosper the bowyer. What a brazen thing to do, I tell you!
-		AI_Output (self, other, "DIA_Regis_PERM_13_03");	//The fellow just ambled into the shop in broad daylight and grabbed himself a bow.
-		AI_Output (self, other, "DIA_Regis_PERM_13_04");	//And Bosper right after him, hollering 'Stop right there, you rogue!' But the thief was too fast.
+	AI_Output (self, other, "DIA_Regis_PERM_13_01");	//You could say that.
+	AI_Output (self, other, "DIA_Regis_PERM_13_02");	//They robbed Bosper the bow maker. What a brazen thing to do, I tell you!
+	AI_Output (self, other, "DIA_Regis_PERM_13_03");	//The fellow just ambled into the shop in broad daylight and grabbed himself a bow.
+	AI_Output (self, other, "DIA_Regis_PERM_13_04");	//And Bosper right after him, hollering 'Stop right there, you rogue!' But the thief was too fast.
 };
 
 var int Regis_Bogendieb;
@@ -249,7 +249,7 @@ func void DIA_Regis_PERM_Info()
 		}
 		else
 		{
-			AI_Output(self,other,"DIA_Regis_PERM_13_02");	//They robbed Bosper the bowyer. What a brazen thing to do, I tell you!
+			AI_Output(self,other,"DIA_Regis_PERM_13_02");	//They robbed Bosper the bow maker. What a brazen thing to do, I tell you!
 		};
 		AI_Output(self,other,"DIA_Regis_PERM_13_05");	//And then an honest finder actually brought that stolen bow back to Bosper.
 		AI_Output(self,other,"DIA_Regis_PERM_13_06");	//That's odd - you'd think it's everyone for himself in times like these, but this man just drops in and returns that bow.

@@ -144,7 +144,7 @@ instance DIA_Addon_Cavalorn_HALLO(C_Info)
 	nr = 5;
 	condition = DIA_Addon_Cavalorn_HALLO_Condition;
 	information = DIA_Addon_Cavalorn_HALLO_Info;
-	description = "Are you in trouble?";
+	description = "Trouble?";
 };
 
 
@@ -166,7 +166,7 @@ func void DIA_Addon_Cavalorn_HALLO_Info()
 func void DIA_Addon_Cavalorn_HALLO_weissNicht()
 {
 	AI_Output (other, self, "DIA_Addon_Cavalorn_HALLO_weissNicht_15_00");	//I can barely remember...?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01");	//Oh, come on. Back then in my hut outside the Old Camp, I taught you how to shoot a bow and how to sneak. Ring a bell?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01");	//Oh, come on. Back then in my hut outside the Old Camp, I taught you how to shoot a bow and how to sneak around. Ring a bell?
 	SC_ForgotAboutCavalorn = TRUE;
 };
 
@@ -431,7 +431,7 @@ func void DIA_Addon_Cavalorn_Banditen_Info()
 	AI_Output(other,self,"DIA_Addon_Cavalorn_Banditen_15_00");	//What was that about bandits?
 	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_01");	//Have you slept through the last few weeks?
 	AI_Output(other,self,"DIA_Addon_Cavalorn_Banditen_15_02");	//Eh...
-	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_03");	//I'm talking about all the riff-raff from the penal colony that are making themselves at home here in the area. Plundering and murdering for all
+	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_03");	//I'm talking about all the riff-raff from the penal colony that are making themselves at home here in the area. Plundering and murdering for all their worth.
 	AI_Output(self,other,"DIA_Addon_Cavalorn_Banditen_08_04");	//(sighs) I guess I'm lucky they didn't kill me. I let down my guard for one moment, and they clubbed me from behind.
 	if(!C_BragoBanditsDead())
 	{

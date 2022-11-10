@@ -47,8 +47,8 @@ func void DIA_Mil_309_Stadtwache_Hallo_Info()
 	else if((Stadtwache_310.aivar[AIV_PASSGATE] == FALSE) && (Mil_309_News < 1))
 	{
 		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02");	//Now listen. We can't let you into the city.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03");	//But I'll give you a tip, and it's completely free of charge.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04");	//Stay well away from this forest in front of us - it's haunted by ferocious monsters.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03");	//But I'll give you a tip, it's completely free of charge.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04");	//Stay well away from the forest in front of us - it's haunted by ferocious monsters.
 		Mil_309_News = 1;
 	}
 	else if((Stadtwache_310.aivar[AIV_PASSGATE] == FALSE) && (Mil_309_News == 1))

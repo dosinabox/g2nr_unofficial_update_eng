@@ -28,6 +28,10 @@ func int Spell_Logic_TrfSheep(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfSheep)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(1);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfSheep;
 		Npc_SetActiveSpellInfo(self,sheeptransform);
@@ -40,6 +44,10 @@ func int Spell_Logic_TrfScavenger(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfScavenger)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(7);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfScavenger;
 		Npc_SetActiveSpellInfo(self,scavengertransform);
@@ -52,6 +60,10 @@ func int Spell_Logic_TrfGiantRat(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfGiantRat)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(3);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfGiantRat;
 		Npc_SetActiveSpellInfo(self,giant_rattransform);
@@ -64,6 +76,10 @@ func int Spell_Logic_TrfGiantBug(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfGiantBug)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(8);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfGiantBug;
 		Npc_SetActiveSpellInfo(self,giant_bugtransform);
@@ -76,6 +92,10 @@ func int Spell_Logic_TrfWolf(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfWolf)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(6);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfWolf;
 		Npc_SetActiveSpellInfo(self,wolftransform);
@@ -88,6 +108,10 @@ func int Spell_Logic_TrfWaran(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfWaran)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(12);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfWaran;
 		Npc_SetActiveSpellInfo(self,warantransform);
@@ -100,6 +124,10 @@ func int Spell_Logic_TrfSnapper(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfSnapper)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(12);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfSnapper;
 		Npc_SetActiveSpellInfo(self,snappertransform);
@@ -112,6 +140,10 @@ func int Spell_Logic_TrfWarg(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfWarg)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(30);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfWarg;
 		Npc_SetActiveSpellInfo(self,wargtransform);
@@ -124,6 +156,10 @@ func int Spell_Logic_TrfFireWaran(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfFireWaran)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(30);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfFireWaran;
 		Npc_SetActiveSpellInfo(self,firewarantransform);
@@ -136,6 +172,10 @@ func int Spell_Logic_TrfLurker(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfLurker)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(12);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfLurker;
 		Npc_SetActiveSpellInfo(self,lurkertransform);
@@ -148,6 +188,10 @@ func int Spell_Logic_TrfShadowbeast(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfShadowbeast)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(30);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfShadowbeast;
 		Npc_SetActiveSpellInfo(self,shadowbeasttransform);
@@ -160,6 +204,10 @@ func int Spell_Logic_TrfDragonSnapper(var int manaInvested)
 {
 	if(self.attribute[ATR_MANA] >= SPL_Cost_TrfDragonSnapper)
 	{
+		if(manaInvested < SPL_Charge_Frames)
+		{
+			return SPL_NEXTLEVEL;
+		};
 		b_startmagictransform(40);
 		self.attribute[ATR_MANA] -= SPL_Cost_TrfDragonSnapper;
 		Npc_SetActiveSpellInfo(self,dragonsnappertransform);

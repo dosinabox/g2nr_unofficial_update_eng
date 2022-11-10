@@ -232,6 +232,7 @@ func void DIA_Addon_Ramon_Lie_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Ramon_Lie_15_00");	//Franco sent me...
 	AI_Output (self, other, "DIA_Addon_Ramon_Lie_07_01");	//He did not. So beat it, otherwise I'll break your bones...
+	AI_PlayAni(self,"T_GETLOST");
 	AI_StopProcessInfos (self);
 };
 

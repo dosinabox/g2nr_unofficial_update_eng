@@ -61,7 +61,7 @@ func void DIA_Addon_Greg_NW_Hallo_Info()
 	};
 //	SC_MeetsGregTime = 1;
 	Info_ClearChoices(DIA_Addon_Greg_NW_Hallo);
-	Info_AddChoice (DIA_Addon_Greg_NW_Hallo, "About the city guards ...", DIA_Addon_Greg_NW_Hallo_weg);
+	Info_AddChoice (DIA_Addon_Greg_NW_Hallo, "I've got to be going.", DIA_Addon_Greg_NW_Hallo_weg);
 	Info_AddChoice (DIA_Addon_Greg_NW_Hallo, "Cut the crap. Tell me what you want.", DIA_Addon_Greg_NW_Hallo_schleim);
 	Info_AddChoice (DIA_Addon_Greg_NW_Hallo, "You don't look like someone who has gold.", DIA_Addon_Greg_NW_Hallo_vorsicht);
 	Info_AddChoice (DIA_Addon_Greg_NW_Hallo, "Are you hiding from someone?", DIA_Addon_Greg_NW_Hallo_hide);

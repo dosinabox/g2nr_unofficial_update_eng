@@ -91,7 +91,7 @@ func void DIA_BDT_1013_BANDIT_WHERE_Mountain()
 func void DIA_BDT_1013_BANDIT_WHERE_Xardas()
 {
 	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_15_00");	//I've come from Xardas...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01");	//Is that the old sorcerer? He's called Xardas ... Brago will be interested ...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01");	//Is that the old sorcerer? He's called Xardas? Hmm, Brago will be interested ...
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
 };
@@ -134,13 +134,13 @@ func void DIA_BDT_1013_BANDIT_WHERE_NoTrap()
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_02");	//You come with me NOW or you forget about it, see?
 	Info_ClearChoices(DIA_BDT_1013_BANDIT_WHERE);
 	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,"Maybe later...",DIA_BDT_1013_BANDIT_WHERE_Later);
-	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,"Someone else has already tried to trick me...",DIA_BDT_1013_BANDIT_WHERE_Damals);
+	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,"Easy, my friend! Someone else already tried to trick me...",DIA_BDT_1013_BANDIT_WHERE_Damals);
 	Info_AddChoice(DIA_BDT_1013_BANDIT_WHERE,"Fine! You go first!",DIA_BDT_1013_BANDIT_WHERE_Yes);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_Damals()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00");	//Easy, my friend! Someone has already tried to trick me...
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00");	//Easy, my friend! Someone else already tried to trick me...
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_01");	//Oh?
 	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_02");	//This guy suggested that we should get an amulet together, and share the profit.
 	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_03");	//Once we had reached our goal, he and his friends attacked me.
@@ -180,7 +180,7 @@ func void DIA_BDT_1013_BANDIT_WHERE_NotImportant()
 
 func void DIA_BDT_1013_BANDIT_WHERE_later()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00");	//Maybe later ...
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00");	//Maybe later...
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_LATER_01_01");	//There won't be a later for you, pal!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);

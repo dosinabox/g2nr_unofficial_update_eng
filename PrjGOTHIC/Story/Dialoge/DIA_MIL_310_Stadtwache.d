@@ -93,7 +93,7 @@ func void DIA_Mil_310_Stadtwache_FirstWarn_Info()
 			AI_Output (other, self, "DIA_Mil_310_Stadtwache_FirstWarn_15_07");	//What is it?
 			AI_Output (self, other, "DIA_Mil_310_Stadtwache_FirstWarn_07_08");	//YOU aren't getting in here, my boy!
 			AI_Output (other, self, "DIA_Mil_310_Stadtwache_FirstWarn_15_09");	//Why not?
-			AI_Output (self, other, "DIA_Mil_310_Stadtwache_FirstWarn_07_10");	//As ragged as you look, you're sure to cause nothing but trouble here!
+			AI_Output (self, other, "DIA_Mil_310_Stadtwache_FirstWarn_07_10");	//Looking the way you do, you're sure to cause nothing but trouble here, boy!
 			AI_Output (self, other, "DIA_Mil_310_Stadtwache_FirstWarn_07_11");	//We've got enough rabble in the city. We have no use for people without money.
 			if((self.aivar[AIV_Guardpassage_Status] == GP_NONE) && (Mil_333_schonmalreingelassen == FALSE) && (PlayerEnteredCity == FALSE))
 			{
@@ -582,6 +582,7 @@ func void DIA_Mil_310_Stadtwache_Paladine_DepecheDragons()
 	AI_Output (self, other, "DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_01");	//What? That can't be true. And I came that close to letting you in.
 	AI_Output (self, other, "DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_02");	//If you served up THAT story to Lord Hagen, he'd have handed me my head.
 	AI_Output (self, other, "DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_03");	//Scram!
+	AI_PlayAni(self,"T_GETLOST");
 	Player_KnowsLordHagen = TRUE;
 	AI_StopProcessInfos(self);
 };

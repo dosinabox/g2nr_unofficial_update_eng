@@ -49,7 +49,7 @@ func void DIA_Lester_Hello_Info()
 	};
 	AI_Output (self, other, "DIA_Lester_Hello_13_00");	//Is that YOU? - Really! Man, am I glad to see you!
 	Info_ClearChoices (DIA_Lester_Hello);
-	Info_AddChoice (DIA_Lester_Hello, "Do I know you?", DIA_Lester_Hello_YouKnowMe);
+	Info_AddChoice (DIA_Lester_Hello, "Am I supposed to know you?", DIA_Lester_Hello_YouKnowMe);
 	Info_AddChoice (DIA_Lester_Hello, "Lester! How did you get here?", DIA_Lester_Hello_Lester);
 };
 

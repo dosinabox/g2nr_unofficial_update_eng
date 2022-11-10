@@ -154,7 +154,7 @@ func int DIA_Xardas_AWAY_Condition()
 
 func void DIA_Xardas_AWAY_Info()
 {
-	AI_Output (other, self, "DIA_Xardas_AWAY_15_00");	//Then let's hurry to get out of here!
+	AI_Output (other, self, "DIA_Xardas_AWAY_15_00");	//Well then let's hurry to get out of here!
 	AI_Output (self, other, "DIA_Xardas_AWAY_14_01");	//If we flee now, then it's only to face the dragons later.
 	AI_Output (self, other, "DIA_Xardas_AWAY_14_02");	//With the help of the soldiers and the magicians who live around here, we can stop them before their army is completely formed.
 	AI_Output (self, other, "DIA_Xardas_AWAY_14_03");	//We're not going to get a better chance.
