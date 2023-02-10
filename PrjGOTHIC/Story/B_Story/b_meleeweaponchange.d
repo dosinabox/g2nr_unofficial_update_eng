@@ -241,7 +241,15 @@ func void b_stopmagictransform()
 		{
 			hero.attribute[ATR_MANA_MAX] = ManaMaxBackup + ChangedManaHero;
 		};*/
-		AI_UnequipWeapons(hero);
+		if(UnionActivated == TRUE)
+		{
+			Npc_StopAni(hero,"S_RUN");
+			AI_PlayAni(hero,"T_TRFSHOOT_2_STAND");
+		}
+		else
+		{
+			AI_UnequipWeapons(hero);
+		};
 		//bugfix: отменить экипировку ГГ арбалетом в дополнение к луку
 		//AI_UnequipWeapons(hero);
 		//bugfix: после возврата ГГ в облик человека удалить из его инвентаря дополнительные свитки
