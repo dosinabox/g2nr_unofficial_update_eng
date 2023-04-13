@@ -42,6 +42,8 @@ func void DIA_Addon_Pardos_NW_Hi_Info()
 	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");	//How's it going with you?
 	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");	//(grins) Hey, if it isn't my rescuer. Thanks again, now I can just relax all day.
 	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");	//All right, I'll be moving on, then.
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");	//How are you holding up?
+	AI_Output (other, self, "OUTRO_Schiff_15_11");	//Relax! Everything will turn out all right!
 };
 
 
