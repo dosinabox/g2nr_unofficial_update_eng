@@ -364,7 +364,7 @@ func int B_TeachPlayerTalentRunes(var C_Npc slf,var C_Npc oth,var int spell)
 		{
 			CreateInvItems(ScrollTrader,ItSc_Thunderstorm,1);
 		};
-		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_Thunderstorm,"1 Rock Crystal and 1 wing from a Bloodfly."));
+		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_Thunderstorm,"1 Glacier Quartz and 1 wing from a Bloodfly."));
 	};
 	PrintScreen(PRINT_LearnRunes,-1,-1,FONT_Screen,2);
 	return TRUE;

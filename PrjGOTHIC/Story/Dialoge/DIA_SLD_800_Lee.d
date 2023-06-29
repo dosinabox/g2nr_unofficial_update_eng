@@ -875,7 +875,7 @@ instance DIA_Lee_AboutGorn(C_Info)
 	condition = DIA_Lee_AboutGorn_Condition;
 	information = DIA_Lee_AboutGorn_Info;
 	permanent = FALSE;
-	description = "Gorn told you about me?? What happened to him?";
+	description = "Gorn told you about me? What happened to him?";
 };
 
 
@@ -889,7 +889,7 @@ func int DIA_Lee_AboutGorn_Condition()
 
 func void DIA_Lee_AboutGorn_Info()
 {
-	AI_Output (other, self, "DIA_Lee_AboutGorn_15_00");	//Gorn told you about me?? What happened to him?
+	AI_Output (other, self, "DIA_Lee_AboutGorn_15_00");	//Gorn told you about me? What happened to him?
 	AI_Output (self, other, "DIA_Lee_AboutGorn_04_01");	//You remember him, don't you?
 	Info_ClearChoices (DIA_Lee_AboutGorn);
 	Info_AddChoice (DIA_Lee_AboutGorn, "Let me think ...", DIA_Lee_AboutGorn_Who);

@@ -99,7 +99,7 @@ func void DIA_Hilda_WasZuEssen_Info()
 				else if(Hilda_Stew_Day != Wld_GetDay())
 				{
 					B_GiveInvItems(self,other,ItFo_Stew,1);
-					AI_Output(self,other,"DIA_Hilda_WasZuEssen_17_01");	//Here, take this. You're a good lad..
+					AI_Output(self,other,"DIA_Hilda_WasZuEssen_17_01");	//Here, take this. You're a good lad.
 					Hilda_Stew_Day = Wld_GetDay();
 				}
 				else
@@ -192,7 +192,7 @@ func int DIA_Hilda_Einkaufen_Condition()
 
 func void DIA_Hilda_Einkaufen_Info()
 {
-	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00");	//Give me the gold, and I'll go see the merchant for you ...
+	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00");	//Give me the gold, and I'll go see the merchant for you...
 	if (hero.guild == GIL_NONE)
 	{
 		AI_Output(self,other,"DIA_Hilda_Einkaufen_17_01");	//Are you saying I can trust you? Just don't spend the money on booze, do you hear?!

@@ -111,7 +111,7 @@ func int DIA_Gunnar_Everywhere_Condition()
 	{
 		if(Gunnar_ToldAboutSLD == TRUE)
 		{
-			DIA_Gunnar_Everywhere.description = "The mercenaries came from everywhere??";
+			DIA_Gunnar_Everywhere.description = "The mercenaries came from everywhere?";
 		}
 		else
 		{
