@@ -47,8 +47,9 @@ func void evt_orkoberst()
 		if(!Npc_IsDead(Mario_DI))
 		{
 			CreateInvItem(Mario_DI,ITWR_DementorObsessionBook_MIS);
-			B_StartOtherRoutine(Mario_DI,"OrkSturmDI");
+			Npc_ExchangeRoutine(Mario_DI,"OrkSturmDI");
 			B_SetGuild(Mario_DI,GIL_DMT);
+			Mario_DI.aivar[AIV_PARTYMEMBER] = FALSE;
 			Wld_InsertNpc(Skeleton_Mario1,"FP_ROAM_DI_MARIOSSKELETONS_01");
 			Wld_InsertNpc(Skeleton_Mario2,"FP_ROAM_DI_MARIOSSKELETONS_02");
 			Wld_InsertNpc(Skeleton_Mario3,"FP_ROAM_DI_MARIOSSKELETONS_03");

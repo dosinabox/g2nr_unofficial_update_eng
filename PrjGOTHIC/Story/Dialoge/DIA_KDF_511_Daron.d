@@ -158,8 +158,6 @@ func int DIA_Daron_AboutSegen_Condition()
 func void DIA_Daron_AboutSegen_Info()
 {
 	AI_Output (other, self, "DIA_Daron_AboutSegen_15_00");	//I've come to get your blessing!
-	AI_Output (self, other, "DIA_Daron_AboutSegen_10_01");	//That's good, that's good - then you will probably want to donate gold to the holy church of Innos, won't you?
-	AI_Output (other, self, "DIA_Daron_AboutSegen_15_02");	//Actually, I wanted your blessing so I can sign on as an apprentice in the lower part of town ...
 	if (Daron_Segen == TRUE)
 	{
 		AI_Output (self, other, "DIA_Daron_AboutSegen_10_03");	//But I have already given you my blessing, my son.
@@ -167,6 +165,8 @@ func void DIA_Daron_AboutSegen_Info()
 	}
 	else
 	{
+		AI_Output (self, other, "DIA_Daron_AboutSegen_10_01");	//That's good, that's good - then you will probably want to donate gold to the holy church of Innos, won't you?
+		AI_Output (other, self, "DIA_Daron_AboutSegen_15_02");	//Actually, I wanted your blessing so I can sign on as an apprentice in the lower part of town ...
 		AI_Output (self, other, "DIA_Daron_AboutSegen_10_05");	//But, my son! Without a modest donation to the church, it is impossible for me to bless you.
 		AI_Output (self, other, "DIA_Daron_AboutSegen_10_06");	//How else can I be certain of your good intentions towards the holy church of Innos?
 	};

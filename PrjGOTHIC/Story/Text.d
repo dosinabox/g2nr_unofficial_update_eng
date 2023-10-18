@@ -736,6 +736,7 @@ const string PRINT_NeverOpen = "It will never open.";
 const string PRINT_Toofar_Away = "It's too far away.";
 const string PRINT_WrongSide = "That's the wrong side.";
 const string PRINT_MissingItem = "I don't have the right item.";
+const string PRINT_MissingSomething = "Something is missing...";
 const string PRINT_AnotherUser = "It's in use.";
 const string PRINT_NoPicklockTalent = "I don't have that skill.";
 const string PRINT_NOTHINGTOGET = "Nothing to be had there ...";

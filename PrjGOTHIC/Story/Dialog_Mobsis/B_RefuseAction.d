@@ -63,6 +63,13 @@ func void player_mob_missing_item()
 	B_Say_Overlay(self,self,"$MISSINGITEM");
 };
 
+func void Player_Mob_Missing_Something()
+{
+	AI_PlayAni(self,"T_DONTKNOW");
+	Print(PRINT_MissingSomething);
+	B_Say_Overlay(self,self,"$DOESNTWORK");
+};
+
 func void player_mob_another_is_using()
 {
 	Print(PRINT_AnotherUser);

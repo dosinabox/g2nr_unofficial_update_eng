@@ -196,7 +196,14 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS()
 	Doc_Show(nDocID);
 	if(Read_LastDoorToUndeadDrgDI_MIS == FALSE)
 	{
-		B_LogEntry(TOPIC_HallenVonIrdorath,"The black magician's scroll contained the words KHADOSH EMEM KADAR. It sounds like some kind of magic formula, but what is it used for - and what is the Eye of Power?");
+		if(!Npc_HasItems(hero,ItMi_PowerEye))
+		{
+			B_LogEntry(TOPIC_HallenVonIrdorath,"The black magician's scroll contained the words KHADOSH EMEM KADAR. It sounds like some kind of magic formula, but what is it used for - and what is the Eye of Power?");
+		}
+		else
+		{
+			B_LogEntry(TOPIC_HallenVonIrdorath,"The black magician's scroll contained the words KHADOSH EMEM KADAR. It sounds like some kind of magic formula, but what is it used for?");
+		};
 		Read_LastDoorToUndeadDrgDI_MIS = TRUE;
 	};
 };

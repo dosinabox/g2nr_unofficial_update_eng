@@ -1355,6 +1355,7 @@ func int DIA_Bennet_DRACHENEIER_Condition()
 
 
 var int BennetsDragonEggOffer;
+var int DragonEggCounter;
 var int DRACHENEIER_angebotenXP_OneTime;
 
 func void DIA_Bennet_DRACHENEIER_Info()
@@ -1396,6 +1397,7 @@ func void DIA_Bennet_DRACHENEIER_ok()
 	AI_Output (other, self, "DIA_Bennet_DRACHENEIER_ok_15_00");	//It's a deal.
 	AI_Output (self, other, "DIA_Bennet_DRACHENEIER_ok_06_01");	//Right-o.
 	AI_Output (self, other, "DIA_Bennet_DRACHENEIER_ok_06_02");	//Then keep those things coming if you can get them.
+	DragonEggCounter += 1;
 	if (BennetsDragonEggOffer != 350)
 	{
 		BennetsDragonEggOffer = 300;
@@ -1463,8 +1465,6 @@ func int DIA_Bennet_EierBringen_Condition()
 };
 
 
-var int DragonEggCounter;
-
 func void DIA_Bennet_EierBringen_Info()
 {
 	var int DragonEggCount;
@@ -1496,7 +1496,7 @@ func void DIA_Bennet_EierBringen_Info()
 	{
 		AI_Output (self, other, "DIA_Bennet_EierBringen_06_04");	//Great. Give here. Have you looked everywhere, then? Surely there must be more.
 	}
-	else if(DragonEggCounter <= 11)
+	else if(DragonEggCounter <= 13)
 	{
 		AI_Output (self, other, "DIA_Bennet_EierBringen_06_05");	//Just where do you dig up those things? There can't be many more now.
 	}

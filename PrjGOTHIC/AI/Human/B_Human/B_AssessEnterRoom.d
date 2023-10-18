@@ -92,20 +92,31 @@ func int B_AssessEnterRoom()
 func void B_AssessPortalCollision()
 {
 	var int formerportalguild;
-	formerportalguild = Wld_GetFormerPlayerPortalGuild();
 	if(B_AssessEnterRoom())
 	{
 		return;
 	};
-	if(!Npc_CanSeeNpc(self,other) && (C_BodyStateContains(other,BS_SNEAK) || C_BodyStateContains(other,BS_STAND)))
+	if(!Npc_CanSeeNpc(self,other))
 	{
-		return;
+		if(Npc_GetDistToNpc(self,other) > PERC_DIST_DIALOG)
+		{
+			return;
+		};
+		if(C_BodyStateContains(other,BS_SNEAK))
+		{
+			return;
+		};
+		if(C_BodyStateContains(other,BS_STAND))
+		{
+			return;
+		};
 	};
 	Npc_PerceiveAll(self);
 	if(Wld_DetectNpcEx(self,-1,ZS_ClearRoom,-1,FALSE))
 	{
 		return;
 	};
+	formerportalguild = Wld_GetFormerPlayerPortalGuild();
 	if((self.guild == formerportalguild) || (Wld_GetGuildAttitude(self.guild,formerportalguild) == ATT_FRIENDLY))
 	{
 		if(C_IsNpc(self,KDF_507_Talamon))
