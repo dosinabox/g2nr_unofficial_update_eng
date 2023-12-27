@@ -16,7 +16,7 @@ func void enter_addonworld_firsttime_trigger_func()
 		B_KillNpc(STRF_1135_Addon_Sklave);
 		B_KillNpc(STRF_1142_Addon_Sklave);
 		B_KillNpc(STRF_1144_Addon_Sklave);
-		if(C_WorldIsFixed(ADDONWORLD_ZEN))
+		if(C_WorldIsFixed())
 		{
 			Wld_InsertNpc(STRF_1141_Addon_Sklave,"BANDIT");
 			B_KillNpc(STRF_1141_Addon_Sklave);

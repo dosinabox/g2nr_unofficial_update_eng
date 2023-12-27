@@ -877,7 +877,7 @@ instance PC_ItPo_Perm_Mana(C_Info)
 	condition = PC_ItPo_Perm_Mana_Condition;
 	information = PC_ItPo_Perm_Mana_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_ManaMax_Elixier," (1 healing root, 1 king's sorrel)");
+	description = ConcatStrings(NAME_ManaMax_Elixier," (1 fire root, 1 king's sorrel)");
 };
 
 

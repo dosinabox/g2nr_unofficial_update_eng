@@ -1727,9 +1727,58 @@ func void STARTUP_NewWorld_Part_City_01()
 
 func void INIT_SUB_NewWorld_Part_City_01()
 {
-	Wld_SetMobRoutine(0,0,"FIREPLACE",1);
-	Wld_SetMobRoutine(20,0,"FIREPLACE",1);
-	Wld_SetMobRoutine(5,0,"FIREPLACE",0);
+	if(C_WorldIsFixed())
+	{
+		B_SetObjectRoutine("CITYLAMP_01");
+		B_SetObjectRoutine("CITYLAMP_02");
+		B_SetObjectRoutine("CITYLAMP_03");
+		B_SetObjectRoutine("CITYLAMP_04");
+		B_SetObjectRoutine("CITYLAMP_05");
+		B_SetObjectRoutine("CITYLAMP_06");
+		B_SetObjectRoutine("CITYLAMP_07");
+		B_SetObjectRoutine("CITYLAMP_08");
+		B_SetObjectRoutine("CITYLAMP_09");
+		B_SetObjectRoutine("CITYLAMP_10");
+		B_SetObjectRoutine("CITYLAMP_11");
+		B_SetObjectRoutine("CITYLAMP_12");
+		B_SetObjectRoutine("CITYLAMP_13");
+		B_SetObjectRoutine("CITYLAMP_14");
+		B_SetObjectRoutine("CITYLAMP_15");
+		B_SetObjectRoutine("CITYLAMP_16");
+		B_SetObjectRoutine("CITYLAMP_17");
+		B_SetObjectRoutine("CITYLAMP_18");
+		B_SetObjectRoutine("CITYLAMP_19");
+		B_SetObjectRoutine("CITYLAMP_20");
+		B_SetObjectRoutine("CITYLAMP_21");
+		B_SetObjectRoutine("CITYLAMP_22");
+		B_SetObjectRoutine("CITYLAMP_23");
+		B_SetObjectRoutine("CITYLAMP_24");
+		B_SetObjectRoutine("CITYLAMP_25");
+		B_SetObjectRoutine("CITYLAMP_26");
+		B_SetObjectRoutine("CITYLAMP_27");
+		B_SetObjectRoutine("CITYLAMP_28");
+		B_SetObjectRoutine("CITYLAMP_29");
+		B_SetObjectRoutine("CITYLAMP_30");
+		B_SetObjectRoutine("CITYLAMP_31");
+		B_SetObjectRoutine("CITYLAMP_32");
+		B_SetObjectRoutine("CITYLAMP_33");
+		B_SetObjectRoutine("CITYLAMP_34");
+		B_SetObjectRoutine("CITYLAMP_35");
+		B_SetObjectRoutine("CITYLAMP_36");
+		B_SetObjectRoutine("CITYLAMP_37");
+		B_SetObjectRoutine("CITYLAMP_38");
+		B_SetObjectRoutine("CITYLAMP_39");
+		B_SetObjectRoutine("CITYLAMP_40");
+		B_SetObjectRoutine("CITYLAMP_41");
+		B_SetObjectRoutine("CITYLAMP_42");
+		B_SetObjectRoutine("CITYLAMP_43");
+	}
+	else
+	{
+		Wld_SetMobRoutine(0,0,"FIREPLACE",1);
+		Wld_SetMobRoutine(20,0,"FIREPLACE",1);
+		Wld_SetMobRoutine(5,0,"FIREPLACE",0);
+	};
 	Wld_AssignRoomToGuild("hafen01",GIL_VLK);
 	Wld_AssignRoomToGuild("hafen02",GIL_VLK);
 	Wld_AssignRoomToGuild("hafen03",GIL_VLK);
@@ -2857,7 +2906,7 @@ func void STARTUP_NewWorld()
 	STARTUP_NewWorld_Part_TrollArea_01();
 	STARTUP_NewWorld_Part_Forest_01();
 	STARTUP_NewWorld_Part_Pass_To_OW_01();
-	if(C_WorldIsFixed(NEWWORLD_ZEN))
+	if(C_WorldIsFixed())
 	{
 		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_017");
 		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_018");

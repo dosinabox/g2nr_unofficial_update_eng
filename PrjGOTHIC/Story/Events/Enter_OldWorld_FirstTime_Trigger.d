@@ -5,7 +5,7 @@ func void enter_oldworld_firsttime_trigger()
 {
 	if(Enter_OldWorld_FirstTime_Trigger_OneTime == FALSE)
 	{
-		if(C_WorldIsFixed(OLDWORLD_ZEN))
+		if(C_WorldIsFixed())
 		{
 			Wld_InsertItem(ItRu_TeleportPassOW,"OW_ITEM_ICEREGION_RUNE");
 		};

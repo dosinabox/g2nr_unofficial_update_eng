@@ -85,7 +85,7 @@ func void DIA_Pedro_Wurst_JA()
 	AI_Output(other,self,"DIA_Pedro_Wurst_JA_15_00");	//Okay, have another sausage.
 	B_GiveInvItems(other,self,ItFo_Schafswurst,1);
 	AI_Output(self,other,"DIA_Pedro_Wurst_JA_09_01");	//All right. Some fire nettles are growing to the left and right on the other side of the bridge.
-	if(C_WorldIsFixed(NEWWORLD_ZEN))
+	if(C_WorldIsFixed())
 	{
 		Wld_InsertItem(ItPl_Mana_Herb_01,"FP_ITEM_KLOSTER_HERB_01");
 	};

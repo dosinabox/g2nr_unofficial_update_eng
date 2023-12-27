@@ -2,9 +2,8 @@
 func void B_Say_Smalltalk()
 {
 	var int random;
-	var int Choice;
+	var int choice;
 	random = Hlp_Random(120);
-	Choice = Hlp_Random(1);
 	if(random < 5)
 	{
 		B_Say(self,self,"$SMALLTALK01");
@@ -93,7 +92,8 @@ func void B_Say_Smalltalk()
 	{
 		if((self.guild == GIL_NOV) || (self.guild == GIL_PAL) || (self.guild == GIL_KDF))
 		{
-			if(Choice == 0)
+			choice = Hlp_Random(2);
+			if(choice == 0)
 			{
 				B_Say(self,self,"$SMALLTALK28");
 			}
@@ -104,7 +104,8 @@ func void B_Say_Smalltalk()
 		}
 		else if((self.guild == GIL_BDT) || (self.guild == GIL_SLD) || (self.guild == GIL_DJG) || (self.guild == GIL_PIR))
 		{
-			if(Choice == 0)
+			choice = Hlp_Random(2);
+			if(choice == 0)
 			{
 				B_Say(self,self,"$SMALLTALK25");
 			}
@@ -122,7 +123,8 @@ func void B_Say_Smalltalk()
 	{
 		if((self.guild == GIL_NOV) || (self.guild == GIL_PAL) || (self.guild == GIL_KDF))
 		{
-			if(Choice == 0)
+			choice = Hlp_Random(2);
+			if(choice == 0)
 			{
 				B_Say(self,self,"$SMALLTALK29");
 			}
@@ -133,7 +135,8 @@ func void B_Say_Smalltalk()
 		}
 		else if((self.guild == GIL_BDT) || (self.guild == GIL_SLD) || (self.guild == GIL_DJG) || (self.guild == GIL_PIR))
 		{
-			if(Choice == 0)
+			choice = Hlp_Random(2);
+			if(choice == 0)
 			{
 				B_Say(self,self,"$SMALLTALK26");
 			}
@@ -147,11 +150,12 @@ func void B_Say_Smalltalk()
 			B_Say(self,self,"$SMALLTALK23");
 		};
 	}
-	else if(random <= 120)
+	else
 	{
 		if((self.guild == GIL_NOV) || (self.guild == GIL_PAL) || (self.guild == GIL_KDF))
 		{
-			if(Choice == 0)
+			choice = Hlp_Random(2);
+			if(choice == 0)
 			{
 				B_Say(self,self,"$SMALLTALK30");
 			}
@@ -162,7 +166,8 @@ func void B_Say_Smalltalk()
 		}
 		else if((self.guild == GIL_BDT) || (self.guild == GIL_SLD) || (self.guild == GIL_DJG) || (self.guild == GIL_PIR))
 		{
-			if(Choice == 0)
+			choice = Hlp_Random(2);
+			if(choice == 0)
 			{
 				B_Say(self,self,"$SMALLTALK27");
 			}
