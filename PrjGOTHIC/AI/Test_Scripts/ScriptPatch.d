@@ -103,15 +103,7 @@ func void Use_StatsBook()
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalTheftXP)," experience received"));
 	Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(TotalTheftGold)," gold stolen"));
 	Doc_PrintLine(nDocID,1,"");
-	if(UnionActivated == TRUE)
-	{
-		Doc_PrintLine(nDocID,1,"Build info:");
-	}
-	else
-	{
-		Doc_PrintLine(nDocID,1,"Build (no Union):");
-	};
-	Doc_PrintLine(nDocID,1,ConcatStrings(ConcatStrings(IntToString(FIX_VERSION_START)," version at "),FIX_VERSION_DATE));
+	Doc_PrintLine(nDocID,1,ConcatStrings("Build: ",B_BuildFullVersionString(FIX_VERSION,FIX_DATE_DAY,FIX_DATE_MONTH,FIX_DATE_YEAR)));
 	if(FIX_VERSION_SAVE == FALSE)
 	{
 		if(Addon_zuerst == TRUE)
@@ -125,7 +117,11 @@ func void Use_StatsBook()
 	}
 	else
 	{
-		Doc_PrintLine(nDocID,1,ConcatStrings(IntToString(FIX_VERSION_SAVE)," version in save"));
+		Doc_PrintLine(nDocID,1,ConcatStrings("Save: ",B_BuildFullVersionString(FIX_VERSION_SAVE,FIX_DATE_DAY_SAVE,FIX_DATE_MONTH_SAVE,FIX_DATE_YEAR_SAVE)));
+	};
+	if(UnionActivated == FALSE)
+	{
+		Doc_PrintLine(nDocID,1,"Union not active");
 	};
 	if(Wasteland_Seeded == TRUE)
 	{
@@ -261,11 +257,11 @@ func void b_build_settings_diag()
 	};
 	if(TradersHaveLimitedAmmo == FALSE)
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Enable arrows and bolts daily traders limit",StoryHelper_Limit);
+		Info_AddChoice(StoryHelper_PatchSettings,"Enable arrows and bolts daily traders limit",StoryHelper_LimitedAmmo);
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Disable arrows and bolts daily traders limit",StoryHelper_Limit);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable arrows and bolts daily traders limit",StoryHelper_LimitedAmmo);
 	};
 	if(Dont_Fix_Unlim == FALSE)
 	{
@@ -333,7 +329,7 @@ func void b_build_settings_diag()
 	};
 };
 
-func void StoryHelper_Limit()
+func void StoryHelper_LimitedAmmo()
 {
 	if(TradersHaveLimitedAmmo == TRUE)
 	{

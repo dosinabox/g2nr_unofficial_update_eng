@@ -1224,10 +1224,13 @@ instance ITWR_Addon_GregsLogbuch_Mis(C_Item)
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 0;
-	visual = "ItWr_Book_01.3ds";
+	visual = "ItWr_GregsLogbuch_MIS.3ds";
 	material = MAT_LEATHER;
 	scemeName = "MAP";
 	description = name;
+	inv_rotz = 180;
+	inv_rotx = 90;
+	inv_roty = 180;
 	on_state[0] = UseGregsLogbuch;
 };
 

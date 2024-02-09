@@ -381,15 +381,20 @@ func void DIA_Vatras_DI_Talente_Circle_4()
 
 func void DIA_Vatras_DI_Talente_Circle_5()
 {
-	B_TeachMagicCircle(self,other,5);
-	AI_Output(self,other,"DIA_Vatras_DI_Talente_Circle_5_05_00");	//You are now a magician of the fifth Circle. Use the magic spells you have learned prudently.
+	if(B_TeachMagicCircle(self,other,5))
+	{
+		AI_Output(self,other,"DIA_Vatras_DI_Talente_Circle_5_05_00");	//You are now a magician of the fifth Circle. Use the magic spells you have learned prudently.
+	};
+	DIA_Vatras_DI_Talente_CIRCLES();
 };
 
 func void DIA_Vatras_DI_Talente_Circle_6()
 {
-	B_TeachMagicCircle(self,other,6);
-	AI_Output (self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00");	//You now have access to the highest knowledge of magic.
-	AI_Output (self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01");	//Be guided by reason and control your human weaknesses. They can cloud your sight.
+	if(B_TeachMagicCircle(self,other,6))
+	{
+		AI_Output (self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00");	//You now have access to the highest knowledge of magic.
+		AI_Output (self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01");	//Be guided by reason and control your human weaknesses. They can cloud your sight.
+	};
 	Info_ClearChoices(DIA_Vatras_DI_Talente);
 };
 

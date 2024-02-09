@@ -166,6 +166,7 @@ func void Equip_OrcEliteRing()
 {
 	if(self.attribute[ATR_STRENGTH] >= OrcRingPenalty)
 	{
+		B_RaiseAttributeByTempBonus(self,ATR_STRENGTH,-OrcRingPenalty);
 		Npc_ChangeAttribute(self,ATR_STRENGTH,-OrcRingPenalty);
 		Print(PRINT_OrcEliteRingEquip);
 		OrcRingCurrentPenalty = OrcRingPenalty;
@@ -176,6 +177,7 @@ func void UnEquip_OrcEliteRing()
 {
 	if(OrcRingCurrentPenalty != 0)
 	{
+		B_RaiseAttributeByTempBonus(self,ATR_STRENGTH,OrcRingPenalty);
 		Npc_ChangeAttribute(self,ATR_STRENGTH,OrcRingPenalty);
 		Print(PRINT_Eat3);
 		OrcRingCurrentPenalty = 0;
@@ -209,6 +211,7 @@ func void Use_DragonEggDrinkNeoras()
 {
 	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_Elixier);
 	B_RaiseAttribute(self,ATR_STRENGTH,3);
+	B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,3);
 	Snd_Play("DEM_Warn");
 	Neoras_SCUsedDragonEggDrink = TRUE;
 };

@@ -116,6 +116,7 @@ func void UseLouHammer()
 	if(Hammer_Once == FALSE)
 	{
 		B_RaiseAttribute(self,ATR_MANA_MAX,Mana_LousHammer);
+		B_RaiseAttributeByPermBonus(self,ATR_MANA_MAX,Mana_LousHammer);
 		TEXT_LousHammer_Setting = PRINT_LousHammerNoEffect;
 		Hammer_Once = TRUE;
 	};
@@ -257,6 +258,8 @@ func void Use_FireStew()
 {
 	var string concatText;
 	B_RaiseAttribute(self,ATR_HITPOINTS_MAX,HP_FireStew);
+	B_RaiseAttributeByPermBonus(self,ATR_HITPOINTS_MAX,HP_FireStew);
+	B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,STR_FireStew);
 	self.attribute[ATR_STRENGTH] += STR_FireStew;
 	if(IgnoreBonuses == FALSE)
 	{
@@ -293,6 +296,7 @@ func void Use_MeatSoup()
 	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_Stew);
 	if(Npc_IsPlayer(self))
 	{
+		B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,STR_MeatSoup);
 		B_RaiseAttribute(self,ATR_STRENGTH,STR_MeatSoup);
 	};
 };

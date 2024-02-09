@@ -206,6 +206,7 @@ instance ItPo_Perm_STR(C_Item)
 func void UseItPo_Perm_STR()
 {
 	B_RaiseAttribute(self,ATR_STRENGTH,STR_Elixier);
+	B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,STR_Elixier);
 };
 
 
@@ -232,6 +233,7 @@ instance ItPo_Perm_DEX(C_Item)
 func void UseItPo_Perm_DEX()
 {
 	B_RaiseAttribute(self,ATR_DEXTERITY,DEX_Elixier);
+	B_RaiseAttributeByPermBonus(self,ATR_DEXTERITY,DEX_Elixier);
 };
 
 
@@ -258,6 +260,7 @@ instance ItPo_Perm_Health(C_Item)
 func void UseItPo_Perm_Health()
 {
 	B_RaiseAttribute(self,ATR_HITPOINTS_MAX,HPMax_Elixier);
+	B_RaiseAttributeByPermBonus(self,ATR_HITPOINTS_MAX,HPMax_Elixier);
 };
 
 
@@ -284,6 +287,7 @@ instance ItPo_Perm_Mana(C_Item)
 func void UseItPo_Perm_Mana()
 {
 	B_RaiseAttribute(self,ATR_MANA_MAX,ManaMax_Elixier);
+	B_RaiseAttributeByPermBonus(self,ATR_MANA_MAX,ManaMax_Elixier);
 };
 
 
@@ -340,10 +344,12 @@ func void UseItPo_MegaDrink()
 	if(self.attribute[ATR_STRENGTH] < self.attribute[ATR_DEXTERITY])
 	{
 		B_RaiseAttribute(self,ATR_DEXTERITY,STRorDEX_MegaDrink);
+		B_RaiseAttributeByPermBonus(self,ATR_DEXTERITY,STRorDEX_MegaDrink);
 	}
 	else
 	{
 		B_RaiseAttribute(self,ATR_STRENGTH,STRorDEX_MegaDrink);
+		B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,STRorDEX_MegaDrink);
 	};
 //	Npc_ChangeAttribute(self,ATR_MANA,-ATR_MANA);
 	self.attribute[ATR_MANA] = 0;
@@ -378,6 +384,7 @@ instance ItPo_Perm_MushroomMana(C_Item)
 func void UseItPo_MushroomMana()
 {
 	B_RaiseAttribute(self,ATR_MANA_MAX,ManaMax_Mushrooms);
+	B_RaiseAttributeByPermBonus(self,ATR_MANA_MAX,ManaMax_Mushrooms);
 	self.attribute[ATR_MANA] = self.attribute[ATR_MANA_MAX];
 };
 

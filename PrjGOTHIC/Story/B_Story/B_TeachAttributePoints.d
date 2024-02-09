@@ -51,6 +51,7 @@ func int B_TeachAttributePoints(var C_Npc slf,var C_Npc oth,var int attrib,var i
 	{
 		B_RaiseRealAttributeLearnCounter(oth,attrib,points);
 	};
+	B_RaiseAttributeByTraining(oth,attrib,points);
 	return TRUE;
 };
 

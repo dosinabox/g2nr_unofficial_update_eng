@@ -14,6 +14,10 @@ func void B_DragonKillCounter(var C_Npc current_dragon)
 			RavenIsDead = TRUE;
 			Saturas_KnowsHow2GetInTempel = TRUE;
 			B_RemoveNpc(KDW_14030_Addon_Myxir_ADW);
+			if(FullNPCRemoval == TRUE)
+			{
+				ADW_Myxir_Removed_Forever = TRUE;
+			};
 			B_CheckLog();
 		};
 	};

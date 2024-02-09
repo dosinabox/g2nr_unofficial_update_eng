@@ -271,6 +271,7 @@ func void Use_Dex_Herb_01()
 {
 	TotalDexEaten += 1;
 	B_RaiseAttribute(self,ATR_DEXTERITY,1);
+	B_RaiseAttributeByPermBonus(self,ATR_DEXTERITY,1);
 };
 
 
@@ -296,6 +297,7 @@ func void Use_Strength_Herb_01()
 {
 	TotalStrEaten += 1;
 	B_RaiseAttribute(self,ATR_STRENGTH,1);
+	B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,1);
 };
 
 
@@ -352,6 +354,7 @@ func void Use_Mushroom_01()
 		if(Dunkelpilz_Bonus == 50)
 		{
 			B_RaiseAttribute(self,ATR_MANA_MAX,ManaMax_Mushrooms);
+			B_RaiseAttributeByPermBonus(self,ATR_MANA_MAX,ManaMax_Mushrooms);
 			Snd_Play("LEVELUP");
 			Dunkelpilz_Bonus = 0;
 		};

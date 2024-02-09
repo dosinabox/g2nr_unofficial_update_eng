@@ -87,6 +87,7 @@ func void Use_Apple()
 		{
 			Print(PRINT_Eat3);
 			B_RaiseAttribute(self,ATR_STRENGTH,1);
+			B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,1);
 			Snd_Play("LEVELUP");
 			Apple_Bonus = 0;
 		};
@@ -334,6 +335,7 @@ func void Use_XPStew()
 {
 	Npc_ChangeAttribute(self,ATR_HITPOINTS,HP_Stew);
 	B_RaiseAttribute(self,ATR_STRENGTH,STR_Stew);
+	B_RaiseAttributeByPermBonus(self,ATR_STRENGTH,STR_Stew);
 };
 
 
@@ -363,6 +365,8 @@ func void Use_CoragonsBeer()
 	B_NpcSetDrunk(10);
 	var string concatText;
 	B_RaiseAttribute(self,ATR_HITPOINTS_MAX,HP_CoragonsBeer);
+	B_RaiseAttributeByPermBonus(self,ATR_HITPOINTS_MAX,HP_CoragonsBeer);
+	B_RaiseAttributeByPermBonus(self,ATR_MANA_MAX,Mana_CoragonsBeer);
 	Npc_ChangeAttribute(self,ATR_MANA_MAX,Mana_CoragonsBeer);
 	Npc_ChangeAttribute(self,ATR_MANA,Mana_CoragonsBeer);
 	concatText = ConcatStrings(PRINT_LearnMANA_MAX,IntToString(Mana_CoragonsBeer));

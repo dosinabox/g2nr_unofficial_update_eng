@@ -652,6 +652,7 @@ func void Use_Astronomy()
 	if(Astronomy_Once == FALSE)
 	{
 		B_RaiseAttribute(self,ATR_MANA_MAX,2);
+		B_RaiseAttributeByPermBonus(self,ATR_MANA_MAX,2);
 		Print(Print_ReadAstronomy);
 		Snd_Play("LEVELUP");
 		Astronomy_Once = TRUE;

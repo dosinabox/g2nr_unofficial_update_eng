@@ -26,6 +26,7 @@ Story\B_Story\C_NpcIsInQuarter.d
 Story\B_Story\C_DiegoTooFar.d
 Story\B_Story\B_ArmorChecks.d
 Story\B_Story\B_NewTalentSystem.d
+Story\B_Story\B_NewAttributeSystem.d
 Story\B_Story\B_AddFightSkill.d
 Story\B_Story\B_RaiseFightTalent.d
 Story\NPC_Scripts\B_SetFightSkills.d
@@ -417,6 +418,8 @@ AI\Human\TA_Human\ZS_Study_WP.d
 AI\Human\TA_Human\ZS_Sweep_FP.d
 AI\Human\TA_Human\ZS_Wash_FP.d
 Story\B_Story\b_endproductiondialog.d
+Story\B_Story\B_BuildDateString.d
+Story\B_Story\B_BuildFullVersionString.d
 Story\Dialog_Mobsis\Bookstand.d
 Story\Dialog_Mobsis\BookstandAlchemy.d
 Story\Dialog_Mobsis\BookstandAnimals.d

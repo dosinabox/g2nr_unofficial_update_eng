@@ -16,6 +16,7 @@ func void B_DaronSegen()
 	else if((Daron_Spende < 250) && (Bonus_1 == FALSE))
 	{
 		B_RaiseAttribute(other,ATR_MANA_MAX,2);
+		B_RaiseAttributeByPermBonus(other,ATR_MANA_MAX,2);
 		other.attribute[ATR_MANA] = other.attribute[ATR_MANA_MAX];
 		Bonus_1 = TRUE;
 	}

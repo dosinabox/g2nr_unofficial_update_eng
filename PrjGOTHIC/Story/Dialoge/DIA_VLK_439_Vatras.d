@@ -1425,6 +1425,7 @@ func void DIA_Addon_Vatras_SellStonplate_Info()
 	{
 		AI_Output(self,other,"DIA_Addon_Vatras_SellStonplate_05_02");	//I shall increase your magical power!
 		B_RaiseAttribute(other,ATR_MANA_MAX,anzahl);
+		B_RaiseAttributeByPermBonus(other,ATR_MANA_MAX,anzahl);
 	}
 	else if(anzahl >= 5)
 	{
@@ -2819,26 +2820,26 @@ func void DIA_Vatras_StillNeedYou_Info()
 };
 
 
-instance DIA_Addon_Vatras_PISSOFFFOREVVER(C_Info)
+instance DIA_Addon_Vatras_PissOffForever(C_Info)
 {
 	npc = VLK_439_Vatras;
 	nr = 1;
-	condition = DIA_Addon_Vatras_PISSOFFFOREVVER_Condition;
-	information = DIA_Addon_Vatras_PISSOFFFOREVVER_Info;
+	condition = DIA_Addon_Vatras_PissOffForever_Condition;
+	information = DIA_Addon_Vatras_PissOffForever_Info;
 	important = TRUE;
 	permanent = TRUE;
 };
 
 
-func int DIA_Addon_Vatras_PISSOFFFOREVVER_Condition()
+func int DIA_Addon_Vatras_PissOffForever_Condition()
 {
-	if((VatrasPissedOffForever == TRUE) && (Kapitel >= 5))
+	if((VatrasPissedOffForever == TRUE) && (Kapitel >= 5) && Npc_IsInState(self,ZS_Talk))
 	{
 		return TRUE;
 	};
 };
 
-func void DIA_Addon_Vatras_PISSOFFFOREVVER_Info()
+func void DIA_Addon_Vatras_PissOffForever_Info()
 {
 	B_VatrasPissedOff();
 //	AI_StopProcessInfos(self);

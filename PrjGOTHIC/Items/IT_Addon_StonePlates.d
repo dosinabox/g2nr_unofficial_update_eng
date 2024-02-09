@@ -64,6 +64,7 @@ func void B_RaiseAttributeByStonePlate(var int talent,var int value)
 	{
 		text = PRINT_LearnMANA_MAX;
 	};
+	B_RaiseAttributeByPermBonus(self,talent,value);
 	B_RaiseAttribute(self,talent,value);
 	PrintScreen(ConcatStrings(text,IntToString(value)),-1,-1,FONT_Screen,2);
 	Wld_PlayEffect("spellFX_LIGHTSTAR_ORANGE",self,self,0,0,0,FALSE);

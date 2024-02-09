@@ -3942,6 +3942,7 @@ func void DIA_CH_Misc_Regenerate_Mana()
 	{
 		other.lp -= cost;
 		B_RaiseAttribute(other,ATR_REGENERATEMANA,1);
+		B_RaiseAttributeByTraining(other,ATR_REGENERATEMANA,1);
 	}
 	else
 	{
@@ -3958,6 +3959,7 @@ func void DIA_CH_Misc_Regenerate_HP()
 	{
 		other.lp -= cost;
 		B_RaiseAttribute(other,ATR_REGENERATEHP,1);
+		B_RaiseAttributeByTraining(other,ATR_REGENERATEHP,1);
 	}
 	else
 	{

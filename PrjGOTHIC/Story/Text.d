@@ -1008,4 +1008,4 @@ const string PRINT_OldSave1 = "Save file not supported!";
 const string PRINT_OldSave2 = "Please, start a new game.";
 
 const string PRINT_WrongParameter = "*** Error: Wrong parameter ***";
-
+const string PRINT_Error = "*** ERROR ***";
