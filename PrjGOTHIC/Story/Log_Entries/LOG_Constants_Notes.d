@@ -1,14 +1,14 @@
 
-const string TOPIC_Trader_OC = "Trade in the castle.";
-const string TOPIC_CityTrader = "Trade in Khorinis.";
-const string TOPIC_OutTrader = "Trade in the outer world.";
-const string TOPIC_SoldierTrader = "Trade on Onar's farm.";
-const string TOPIC_Addon_KDWTrader = "Trade with Magicians of Water.";
+const string TOPIC_Trader_OC = "Trade in the castle";
+const string TOPIC_CityTrader = "Trade in Khorinis";
+const string TOPIC_OutTrader = "Trade in the outer world";
+const string TOPIC_SoldierTrader = "Trade on Onar's farm";
+const string TOPIC_Addon_KDWTrader = "Trade with Magicians of Water";
 
-const string TOPIC_Teacher_OC = "Learning in the castle.";
-const string TOPIC_CityTeacher = "Learning in Khorinis.";
-const string TOPIC_OutTeacher = "Learning in the outer world.";
-const string TOPIC_SoldierTeacher = "Learning on Onar's farm.";
+const string TOPIC_Teacher_OC = "Learning in the castle";
+const string TOPIC_CityTeacher = "Learning in Khorinis";
+const string TOPIC_OutTeacher = "Learning in the outer world";
+const string TOPIC_SoldierTeacher = "Learning on Onar's farm";
 const string TOPIC_Addon_KDWTeacher = "Learning from the Water Mages";
 
 const string TOPIC_TalentSmith = "Forging";

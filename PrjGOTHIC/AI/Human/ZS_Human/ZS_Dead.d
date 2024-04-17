@@ -18,14 +18,6 @@ func void ZS_Dead()
 				B_CountCanyonRazor();
 			};
 		}
-		else if(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Stoneguardian_NailedValleyShowcase_01))
-		{
-			if((MayaScrollGiven == FALSE) && !Npc_GetTalentSkill(hero,NPC_TALENT_ACROBAT) && (VALLEY_SHOWCASE_TRIGGERSCRIPT_FUNC_OneTime == FALSE))
-			{
-				CreateInvItems(self,ItSc_Teleport_Maya,1);
-				MayaScrollGiven = TRUE;
-			};
-		}
 		else if(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(GoldMinecrawler))
 		{
 			Minecrawler_Killed += 1;

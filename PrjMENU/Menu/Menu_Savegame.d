@@ -5,6 +5,7 @@ const string WORLDNAME_OLDWORLD = "Valley of Mines";
 const string WORLDNAME_DRAGONISLAND = "Isle of Irdorath";
 const string WORLDNAME_FREEMINE = "Free mine";
 const string WORLDNAME_ORCGRAVEYARD = "Orc graveyard";
+const string WORLDNAME_ABANDONEDMINE = "Abandoned mine";
 
 instance MENU_SAVEGAME_LOAD(C_MENU_DEF)
 {

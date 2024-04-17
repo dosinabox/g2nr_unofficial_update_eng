@@ -1516,8 +1516,8 @@ func void DIA_Addon_Lares_Forest_Info()
 	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_03");	//One of the places where I'm supposed to look is in the middle of the woods.
 	if(Kapitel < 3)
 	{
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04");	//I see. And that's still too dangerous for you alone, right?
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_05");	//No problem. Let me know when you want to leave.
+		AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04");	//I see. And that's still too dangerous for you alone, right?
+		AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_05");	//No problem. Let me know when you want to leave.
 		RangerHelp_OrnamentForest = TRUE;
 	}
 	else
@@ -1553,7 +1553,7 @@ func void DIA_Lares_GoNow_GoingConditions()
 	Lares_Guide = Wld_GetDay();
 	Lares_Distracted = FALSE;
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
-	if(!Npc_KnowsInfo(other,DIA_Moe_Hallo))
+	if(!Npc_KnowsInfo(other,DIA_Moe_Hallo) && !Npc_IsDead(Moe))
 	{
 		Npc_SetRefuseTalk(Moe,30);
 	};
