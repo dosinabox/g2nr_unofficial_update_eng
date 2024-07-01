@@ -190,6 +190,50 @@ func void DIA_Xardas_TODO_Info()
 	AI_Output (self, other, "DIA_Xardas_TODO_14_05");	//Tell the paladins about the threat. You MUST convince their leader to support us!
 	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_07");	//And once you have talked to him, you need to find the artifact of Beliar.
 	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_08");	//It is the counterpiece to the Eye of Innos. It must not fall into the hands of Evil.
+	if(C_WorldIsFixed())
+	{
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_017");
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_018");
+		Wld_InsertNpc(Waran_Rest,"SOME_NW_WAYPOINT_019");
+		Wld_InsertNpc(Waran_Rest,"SOME_NW_WAYPOINT_019");
+		Wld_InsertNpc(Waran_Rest,"SOME_NW_WAYPOINT_021");
+		Wld_InsertNpc(Waran_Rest,"SOME_NW_WAYPOINT_021");
+		Wld_InsertNpc(Keiler,"SOME_NW_WAYPOINT_029");
+		Wld_InsertNpc(Keiler,"SOME_NW_WAYPOINT_029");
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_054");
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_054");
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_061");
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_061");
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_041");
+		Wld_InsertNpc(Waran,"SOME_NW_WAYPOINT_041");
+		Wld_InsertNpc(Giant_Rat,"SOME_NW_WAYPOINT_049");
+		Wld_InsertNpc(Giant_Rat,"SOME_NW_WAYPOINT_049");
+		Wld_InsertNpc(Meatbug,"SOME_NW_WAYPOINT_037");
+		Wld_InsertNpc(Meatbug,"SOME_NW_WAYPOINT_037");
+		Wld_InsertNpc(YGiant_Bug,"NW_XARDAS_TOWER_WATERFALL_CAVE_SIDE_03");
+	}
+	else
+	{
+		Wld_InsertNpc(Waran,"FP_ROAM_INSEL_02");
+		Wld_InsertNpc(Waran,"FP_ROAM_INSEL_01");
+		Wld_InsertNpc(Waran_Rest,"FP_ROAM_INSEL_07");
+		Wld_InsertNpc(Waran_Rest,"FP_ROAM_INSEL_08");
+		Wld_InsertNpc(Waran_Rest,"FP_ROAM_INSEL_09");
+		Wld_InsertNpc(Waran_Rest,"FP_ROAM_INSEL_10");
+		Wld_InsertNpc(Keiler,"FP_ROAM_XARDAS_SECRET_23");
+		Wld_InsertNpc(Keiler,"FP_ROAM_XARDAS_SECRET_23");
+		Wld_InsertNpc(Waran,"FP_ROAM_XARDAS_SECRET_08");
+		Wld_InsertNpc(Waran,"FP_ROAM_XARDAS_SECRET_08");
+		Wld_InsertNpc(Waran,"FP_ROAM_XARDAS_SECRET_15");
+		Wld_InsertNpc(Waran,"FP_ROAM_XARDAS_SECRET_15");
+		Wld_InsertNpc(Waran,"FP_ROAM_XARDAS_SECRET_04");
+		Wld_InsertNpc(Waran,"FP_ROAM_XARDAS_SECRET_04");
+		Wld_InsertNpc(Giant_Rat,"FP_ROAM_XARDAS_SECRET_27");
+		Wld_InsertNpc(Giant_Rat,"FP_ROAM_XARDAS_SECRET_27");
+		Wld_InsertNpc(Meatbug,"FP_ROAM_XARDAS_SECRET_01");
+		Wld_InsertNpc(Meatbug,"FP_ROAM_XARDAS_SECRET_01");
+		Wld_InsertNpc(YGiant_Bug,"NW_XARDAS_TOWER_WATERFALL_CAVE_SIDE_02");
+	};
 	Log_CreateTopic (TOPIC_INNOSEYE, LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_INNOSEYE, LOG_Running);
 	B_LogEntry (TOPIC_INNOSEYE, "There's a group of paladins camping out in the city of Khorinis. They have a powerful artifact with them: The Eye of Innos. Its power should help us fend off the dragon threat. I'm going to have to persuade the paladins to rally to our cause.");
