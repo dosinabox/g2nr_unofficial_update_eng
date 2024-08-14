@@ -231,7 +231,7 @@ func void DIA_Pedro_DI_PERM_Info()
 			B_GivePlayerXP(XP_AmbientKap6);
 			PedroDI_Flee = LOG_SUCCESS;
 		}
-		else if(Npc_IsDead(Dragon_Undead))
+		else if(Npc_IsDead(UndeadDragon))
 		{
 			AI_Output (self, other, "DIA_Pedro_DI_PERM_09_04");	//I'm completely done in.
 			AI_Output (other, self, "DIA_Pedro_DI_PERM_15_05");	//Go hit the sack. We'll soon be at sea again.

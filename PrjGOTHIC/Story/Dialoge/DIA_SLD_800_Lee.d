@@ -1690,8 +1690,8 @@ func void DIA_Lee_GetShip_torlof()
 {
 	AI_Output (other, self, "DIA_Lee_GetShip_torlof_15_00");	//Do you know anyone who could navigate the ship?
 	AI_Output (self, other, "DIA_Lee_GetShip_torlof_04_01");	//As far as I know, Torlof used to go to sea. He knows what's what.
-	TorlofIsSailor = TRUE;	
-B_LogEntry (Topic_Captain, "Torlof is an old sailor, maybe he wants to be my captain.");
+	TorlofIsSailor = TRUE;
+	B_LogEntry (Topic_Captain, "Torlof is an old sailor, maybe he wants to be my captain.");
 };
 
 func void DIA_Lee_GetShip_crew()
@@ -1706,7 +1706,7 @@ func void DIA_Lee_GetShip_crew()
 	else
 	{
 		B_LogEntry(Topic_Crew,"As for my crew, there wasn't much Lee could do for me there. But he did say I should only take people I can trust.");
-	};	
+	};
 };
 
 func void DIA_Lee_GetShip_back()

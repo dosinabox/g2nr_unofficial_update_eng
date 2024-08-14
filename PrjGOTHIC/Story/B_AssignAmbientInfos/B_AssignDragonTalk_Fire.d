@@ -52,7 +52,7 @@ func void DIA_Dragon_Fire_Hello_Info()
 	AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_02");	//I haven't just come to see you. I rather had something more radical in mind, I'm afraid.
 	AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_03");	//You do not mean to say that you wish to challenge me?
 	AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_04");	//Ha ha ha. I shall break your scrawny neck.
-	AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_05");	//Not so fast, my friend. I carry the Eye of Innos with me. You cannot resist my will. Answer my questions, or the agony will be unbearable for you. 
+	AI_Output(other,self,"DIA_Dragon_Fire_Hello_15_05");	//Not so fast, my friend. I carry the Eye of Innos with me. You cannot resist my will. Answer my questions, or the agony will be unbearable for you.
 	AI_Output(self,other,"DIA_Dragon_Fire_Hello_20_06");	//(bellows) Arrh. Then pose your ridiculous questions while you still can. Your power will not last long.
 };
 
@@ -76,9 +76,9 @@ func int DIA_Dragon_Fire_WerBistDu_Condition()
 
 func void DIA_Dragon_Fire_WerBistDu_Info()
 {
-	AI_Output (other, self, "DIA_Dragon_Fire_WerBistDu_15_00");	//Who are you?
-	AI_Output (self, other, "DIA_Dragon_Fire_WerBistDu_20_01");	//My name is Feomathar, and that is all that you will learn about me.
-	AI_Output (self, other, "DIA_Dragon_Fire_WerBistDu_20_02");	//Once I can escape the spell of the Eye, you will go up in flames.
+	AI_Output(other,self,"DIA_Dragon_Fire_WerBistDu_15_00");	//Who are you?
+	AI_Output(self,other,"DIA_Dragon_Fire_WerBistDu_20_01");	//My name is Feomathar, and that is all that you will learn about me.
+	AI_Output(self,other,"DIA_Dragon_Fire_WerBistDu_20_02");	//Once I can escape the spell of the Eye, you will go up in flames.
 };
 
 
@@ -101,9 +101,9 @@ func int DIA_Dragon_Fire_HORT_Condition()
 
 func void DIA_Dragon_Fire_HORT_Info()
 {
-	AI_Output (other, self, "DIA_Dragon_Fire_HORT_15_00");	//Every dragon has a hoard where he stores his collected treasures. So where's your hoard?
-	AI_Output (self, other, "DIA_Dragon_Fire_HORT_20_01");	//In a place that will be inaccessible to you, once I am finally free of the chains of the Eye.
-	AI_Output (self, other, "DIA_Dragon_Fire_HORT_20_02");	//I keep my treasure high up on the hot cliffs, which should be all but impossible to reach for a wingless human such as you.
+	AI_Output(other,self,"DIA_Dragon_Fire_HORT_15_00");	//Every dragon has a hoard where he stores his collected treasures. So where's your hoard?
+	AI_Output(self,other,"DIA_Dragon_Fire_HORT_20_01");	//In a place that will be inaccessible to you, once I am finally free of the chains of the Eye.
+	AI_Output(self,other,"DIA_Dragon_Fire_HORT_20_02");	//I keep my treasure high up on the hot cliffs, which should be all but impossible to reach for a wingless human such as you.
 };
 
 func void B_AssignDragonTalk_Fire(var C_Npc slf)

@@ -21,23 +21,27 @@ jobs:
 
     - name: Find and check d files
       run: |
-        # Define regex patterns
-        patterns=(
-          '[^\r\n]\r\n\r\n\z' # Only two new lines at the end of every file
-          ' \r\n'             # No spaces at the end of line
-          '\t\r\n'            # No tabs at the end of line
-          'if\(.*\s=\s'       # No assignments in conditions
-        )
+        # Initialize error counter
+        errors=0
 
-        # Find all text files that were changed
-        d_files=$(git diff --name-only HEAD^ HEAD | grep '\.d$')
+        # Find all d files
+        d_files=$(git ls-files '*.d')
 
         for file in $d_files; do
-          echo "Checking $file"
-          for pattern in "${patterns[@]}"; do
-            if grep -qP "$pattern" "$file"; then
-              echo "::error file=$file::File $file matches the invalid pattern: $pattern"
-              exit 1
-            fi
-          done
+          # Check for trailing spaces and tabs at the end of lines
+          if grep -Pan '[[:blank:]]$' "${file}"; then
+            echo "::error file=$file::File $file has trailing spaces or tabs at the end of lines"
+            errors=$((errors+1))
+          fi
+
+          # Check for assignments in conditions
+          if grep -Pan 'if\(.*\s=\s' "${file}"; then
+            echo "::error file=$file::File $file has assignment in condition"
+            errors=$((errors+1))
+          fi
         done
+
+        if [ $errors -gt 0 ]; then
+          echo "$errors invalid files found!"
+          exit 1
+        fi
