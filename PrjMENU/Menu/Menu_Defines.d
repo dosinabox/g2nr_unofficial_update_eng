@@ -41,5 +41,6 @@ const string MENU_TEXT_ONOFF = "off|on";
 const string MENU_TEXT_OFFON = "on|off";
 const string MENU_TEXT_UNKNOWN = "unknown";
 const string MENU_TEXT_KEYS_HINT = "Up/Down - select, ENTER - define a key, DELETE - clear";
+const string MENU_TEXT_CHAPTER = "Chapter:";
 const string NEEDS_RESTART = "You need to restart to make changes take effect.";
 const string PRESSNOW = "Press a key to apply or ESCAPE to back off.";
