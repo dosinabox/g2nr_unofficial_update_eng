@@ -1,0 +1,43 @@
+name: Check Syntax in D Files
+
+on:
+  push:
+    paths:
+      - '**/*.d'
+  pull_request:
+    paths:
+      - '**/*.d'
+
+jobs:
+  check_regex:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: sudo apt-get install -y grep
+
+    - name: Find and check d files
+      run: |
+        # Define regex patterns
+        patterns=(
+          '[^\r\n]\r\n\r\n\z' # Only two new lines at the end of every file
+          ' \r\n'             # No spaces at the end of line
+          '\t\r\n'            # No tabs at the end of line
+          'if\(.*\s=\s'       # No assignments in conditions
+        )
+
+        # Find all text files that were changed
+        d_files=$(git diff --name-only HEAD^ HEAD | grep '\.d$')
+
+        for file in $d_files; do
+          echo "Checking $file"
+          for pattern in "${patterns[@]}"; do
+            if grep -qP "$pattern" "$file"; then
+              echo "::error file=$file::File $file matches the invalid pattern: $pattern"
+              exit 1
+            fi
+          done
+        done
