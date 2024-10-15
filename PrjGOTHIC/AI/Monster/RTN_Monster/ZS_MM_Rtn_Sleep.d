@@ -25,8 +25,14 @@ func void ZS_MM_Rtn_Sleep()
 	{
 		AI_GotoFP(self,"FP_ROAM");
 	};
-	AI_PlayAni(self,"T_PERCEPTION");
-	AI_PlayAniBS(self,"T_STAND_2_SLEEP",BS_LIE);
+	if(self.guild != GIL_BLOODFLY)
+	{
+		if((self.guild != GIL_SHADOWBEAST) && (self.guild != GIL_Gargoyle) && (self.guild != GIL_SHADOWBEAST_SKELETON))
+		{
+			AI_PlayAni(self,"T_PERCEPTION");
+		};
+		AI_PlayAniBS(self,"T_STAND_2_SLEEP",BS_LIE);
+	};
 	self.aivar[AIV_StateTime] = Hlp_Random(100) % 8 + 1;
 };
 
@@ -42,6 +48,9 @@ func int ZS_MM_Rtn_Sleep_Loop()
 
 func void ZS_MM_Rtn_Sleep_End()
 {
-	AI_PlayAniBS(self,"T_SLEEP_2_STAND",BS_STAND);
+	if(self.guild != GIL_BLOODFLY)
+	{
+		AI_PlayAniBS(self,"T_SLEEP_2_STAND",BS_STAND);
+	};
 };
 
