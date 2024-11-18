@@ -181,7 +181,7 @@ func int B_SelectSpell(var C_Npc slf,var C_Npc oth)
 			}
 			else
 			{
-				if(oth.protection[PROT_FIRE] > SPL_DAMAGE_InstantFireball)
+				if(oth.protection[PROT_MAGIC] > SPL_DAMAGE_InstantFireball)
 				{
 					B_ReadySpell(slf,SPL_Firestorm,SPL_Cost_FireStorm);
 				}

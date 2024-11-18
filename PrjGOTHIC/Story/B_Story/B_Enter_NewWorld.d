@@ -74,7 +74,6 @@ func void B_ENTER_NEWWORLD_Kapitel_1()
 		B_SendMilitiaToHotel();
 	};
 	B_KillThievesGuild();
-	B_ResetSergio();
 };
 
 
@@ -204,6 +203,7 @@ func void B_ENTER_NEWWORLD_Kapitel_3()
 			};
 			B_StartOtherRoutine(Lares,"START");
 		};
+		B_ResetSergio();
 		Wld_InsertNpc(PC_Fighter_NW_vor_DJG,"BIGFARM");
 		Wld_InsertNpc(PC_Thief_NW,"NW_CITY_ENTRANCE_01");
 		Wld_InsertNpc(DMT_DementorAmbientSpeaker,"NW_PASS_GATE_02");
