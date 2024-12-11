@@ -71,8 +71,6 @@ func int DIA_Addon_MIL_6_MissingPeople_Condition()
 func void DIA_Addon_MIL_6_MissingPeople_Info()
 {
 	AI_Output (other, self, "DIA_Addon_MIL_6_MissingPeople_15_00");	//I heard some citizens have disappeared.
-	AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_01");	//I've actually heard quite a few rumors of missing people lately.
-	AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_02");	//I can't for the life of me explain it.
 	AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_03");	//But we can't do more than keep our eyes open and do our sentry duty.
 };
 
@@ -147,7 +145,16 @@ func int DIA_MIL_6_STANDARD_Condition()
 func void DIA_MIL_6_STANDARD_Info()
 {
 	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00");	//What's new?
-	if (Kapitel == 1)
+	if((SC_HearedAboutMissingPeople == FALSE) && (MissingPeopleReturnedHome == FALSE))
+	{
+		AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_01");	//I've actually heard quite a few rumors of missing people lately.
+		AI_Output (self, other, "DIA_Addon_MIL_6_MissingPeople_06_02");	//I can't for the life of me explain it.
+		Log_CreateTopic(TOPIC_Addon_WhoStolePeople,LOG_MISSION);
+		Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople,LOG_Running);
+		B_LogEntry(TOPIC_Addon_WhoStolePeople,LogText_Addon_SCKnowsMisspeapl);
+		SC_HearedAboutMissingPeople = TRUE;
+	}
+	else if (Kapitel == 1)
 	{
 		AI_Output(self,other,"DIA_MIL_6_STANDARD_06_01");	//More and more riffraff have been pouring into town lately.
 		if((Andre_FoundThieves_KilledByMilitia == FALSE) && (MIS_Andre_GuildOfThieves != LOG_SUCCESS))
@@ -179,6 +186,7 @@ func void B_AssignAmbientInfos_MIL_6(var C_Npc slf)
 {
 	dia_mil_6_exit.npc = Hlp_GetInstanceID(slf);
 	dia_mil_6_join.npc = Hlp_GetInstanceID(slf);
+	DIA_Addon_MIL_6_MissingPeople.npc = Hlp_GetInstanceID(slf);
 	dia_mil_6_people.npc = Hlp_GetInstanceID(slf);
 	dia_mil_6_location.npc = Hlp_GetInstanceID(slf);
 	dia_mil_6_standard.npc = Hlp_GetInstanceID(slf);

@@ -357,7 +357,7 @@ func void DIA_Onar_HowMuch_More()
 	AI_Output(self,other,"DIA_Onar_HowMuch_More_14_01");	//Of course, you're welcome to work for me for free instead.
 	AI_Output(self,other,"DIA_Onar_HowMuch_More_14_02");	//Anyway, this is all you'll get!
 	Log_CreateTopic(Topic_Bonus,LOG_NOTE);
-	B_LogEntry(Topic_Bonus,"I can collect my pay from Onar every day");
+	B_LogEntry(Topic_Bonus,"I can collect my pay from Onar every day.");
 	Info_ClearChoices(DIA_Onar_HowMuch);
 };
 

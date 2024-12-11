@@ -777,8 +777,8 @@ const int INVCAM_Z_RING_STANDARD = 45;
 const int UnionActivated = 0;
 
 const int FIX_DATE_YEAR = 2024;
-const int FIX_DATE_MONTH = 11;
-const int FIX_DATE_DAY = 18;
+const int FIX_DATE_MONTH = 12;
+const int FIX_DATE_DAY = 11;
 
 var int FIX_DATE_YEAR_SAVE;
 var int FIX_DATE_MONTH_SAVE;
