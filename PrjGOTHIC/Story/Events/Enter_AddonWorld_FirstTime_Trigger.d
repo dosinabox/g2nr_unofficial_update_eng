@@ -23,6 +23,7 @@ func void enter_addonworld_firsttime_trigger_func()
 			Wld_InsertNpc(STRF_1143_Addon_Sklave,"BANDIT");
 			B_KillNpc(STRF_1143_Addon_Sklave);
 			Wld_InsertItem(ItRu_FireBolt,"FP_ITEM_SWAMP_RUNE_01");
+			Wld_InsertItem(ItRu_MediumHeal,"FP_ITEM_CANYON_RUNE_01");
 		};
 		Enter_AddonWorld_FirstTime_Trigger_OneTime = TRUE;
 	};

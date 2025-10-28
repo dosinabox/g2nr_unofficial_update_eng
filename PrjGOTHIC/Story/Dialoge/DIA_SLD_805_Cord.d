@@ -458,6 +458,11 @@ func void B_Cord_IDoItForYou()
 	AI_Output (self, other, "DIA_Addon_Cord_IDoItForYou_14_06");	//Well. I told him it was a rotten idea. But that idiot wouldn't listen to me.
 	AI_Output (self, other, "DIA_Addon_Cord_IDoItForYou_14_07");	//I assume they've made short work of him. But I don't know for sure.
 	AI_Output (self, other, "DIA_Addon_Cord_IDoItForYou_14_08");	//You're going to find out for me.
+	if(RangerHelp_gildeSLD == FALSE)
+	{
+		Log_CreateTopic(TOPIC_Addon_RangerHelpSLD,LOG_MISSION);
+		Log_SetTopicStatus(TOPIC_Addon_RangerHelpSLD,LOG_RUNNING);
+	};
 	B_LogEntry (TOPIC_Addon_RangerHelpSLD, "Cord is going to take care of Torlof's test. Cord's buddy Patrick has disappeared. He wants me to go to the bandits' small mountain camp to the south-east and find out whether Patrick is there.");
 	Info_ClearChoices (DIA_Addon_Cord_RangerHelp2GetSLD);
 	Info_AddChoice (DIA_Addon_Cord_RangerHelp2GetSLD, "Forget it. That's much harder than Torlof's task.", B_Cord_IDoItForYou_mist);

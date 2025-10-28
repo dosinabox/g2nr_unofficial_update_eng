@@ -510,6 +510,7 @@ func void DIA_Biff_BIFFLOSWERDEN_Info()
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	DJG_Biff_HalbeHalbe = FALSE;
 	DJG_BiffParty = FALSE;
+	DJG_Biff_Stay = FALSE;
 	DJG_BiffParty_nomore += 1;
 	if(Biff_IsOnBoard == LOG_SUCCESS)
 	{

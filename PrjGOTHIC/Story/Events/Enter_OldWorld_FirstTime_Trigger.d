@@ -8,6 +8,13 @@ func void enter_oldworld_firsttime_trigger()
 		if(C_WorldIsFixed())
 		{
 			Wld_InsertItem(ItRu_TeleportPassOW,"OW_ITEM_ICEREGION_RUNE");
+			Wld_InsertItem(ItRu_Icebolt,"OW_ITEM_STONES_RUNE");
+			Wld_InsertItem(ItRu_Fear,"OW_ITEM_WOLFHUT_RUNE");
+			Wld_InsertItem(ItWr_HitPointStonePlate1_Addon,"OW_ITEM_WOLFHUT_STONEPLATE");
+		}
+		else
+		{
+			Wld_InsertItem(ItWr_HitPointStonePlate1_Addon,"FP_ROAM_ORC_04");
 		};
 		B_KillNpc(PAL_2004_Bruder);
 		B_KillNpc(VLK_4150_Leiche);
