@@ -29,7 +29,7 @@ VIAddVersionKey "FileDescription" "${MOD_NAME_RU}"
 VIAddVersionKey "ProductVersion" "1.${MOD_VERSION}"
 
 Unicode true
-SetCompressor lzma
+SetCompressor /SOLID /FINAL lzma
 
 ###################################
 ##      Interface                ##
@@ -74,7 +74,7 @@ UninstallCaption "${MOD_NAME_RU} (v${MOD_VERSION}) - uninstall"
 BrandingText " "
 
 ###################################
-##     Страницы  инсталлятора    ##
+##     Installer pages           ##
 ###################################
 
 !insertmacro MUI_PAGE_WELCOME
@@ -84,7 +84,7 @@ BrandingText " "
 !insertmacro MUI_PAGE_FINISH
 
 ###################################
-##    Страницы  деинсталлятора   ##
+##    Uninstaller pages          ##
 ###################################
 
 !define MUI_COMPONENTSPAGE_TEXT_TOP "Select Script-Patch components that you wish to remove. Click 'Remove' to continue."
@@ -100,7 +100,7 @@ BrandingText " "
 !insertmacro MUI_LANGUAGE "English"
 
 ###################################
-##          Инсталляция          ##
+##          Install              ##
 ###################################
 
 Section "Main files" SecMain
@@ -144,7 +144,7 @@ Section /o "Extended Valley of Mines" SecAdditional_2
 SectionEnd
 
 ###################################
-##         Деинсталляция         ##
+##         Uninstall             ##
 ###################################
 
 Section "Un.Unistall modification" SecUninstall_Main
@@ -167,7 +167,7 @@ Section /o "Un.Delete saves" SecUninstall_Saves
 SectionEnd
 
 ###################################
-##     Описание компонентов      ##
+##     Components description    ##
 ###################################
 
 LangString DESC_SecMain ${LANG_ENGLISH} "Main files."
@@ -185,8 +185,6 @@ LangString DESC_SecAdditional_2 ${LANG_ENGLISH} "Wasteland Mod - restores Valley
 ###################################
 
 Function .onInit
-	SetSilent normal
-	!insertmacro MUI_LANGDLL_DISPLAY
 	ReadRegStr $INSTDIR HKCU "Software\${MOD_NAME}" "InstallLocation"
 	StrCmp $INSTDIR "" "" InstallPathIsFound
 	StrCpy $INSTDIR "$PROGRAMFILES\JoWooD\Gothic II"
