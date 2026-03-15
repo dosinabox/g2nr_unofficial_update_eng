@@ -1175,3 +1175,21 @@ instance ItRu_Concussionbolt(C_Item)
 	count[5] = value;*/
 };
 
+instance ItRu_Teleport_Maya(C_Item)
+{
+	name = NAME_Rune;
+	mainflag = ITEM_KAT_RUNE;
+	flags = 0;
+	value = 500;
+	visual = "ItRu_Teleport_3.3ds";
+	material = MAT_STONE;
+	spell = SPL_Teleport_Maya;
+	wear = WEAR_EFFECT;
+	effect = "SPELLFX_WEAKGLIMMER";
+	description = NAME_SPL_Teleport_Maya;
+	text[1] = NAME_Manakosten;
+	count[1] = SPL_Cost_Teleport;
+	text[5] = NAME_Value;
+	count[5] = value;
+};
+
