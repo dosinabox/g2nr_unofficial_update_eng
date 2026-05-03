@@ -2414,7 +2414,7 @@ func void DIA_Lares_AnyNews_Info()
 			{
 				Log_AddEntry(TOPIC_RescueBennet,"I can learn the details from Hodges, his apprentice.");
 			};
- 		};
+		};
 	};
 };
 
