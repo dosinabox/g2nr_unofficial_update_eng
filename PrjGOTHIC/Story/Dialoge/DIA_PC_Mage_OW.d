@@ -225,7 +225,7 @@ func void DIA_MiltenOW_Gorn_Info()
 	AI_Output (self, other, "DIA_MiltenOW_Gorn_03_04");	//Keep me in the picture.
 	Log_CreateTopic (TOPIC_RescueGorn, LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_RescueGorn, LOG_Running);
-	B_LogEntry (TOPIC_RescueGorn, "Comander Garond has had Gorn locked up. Maybe he'll enter into a little arrangement, so we can bail him out.");
+	B_LogEntry (TOPIC_RescueGorn, "Commander Garond has had Gorn locked up. Maybe he'll enter into a little arrangement, so we can bail him out.");
 };
 
 

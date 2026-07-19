@@ -405,7 +405,7 @@ const string NAME_SPL_Reserved_97 = "NAME_SPL_RESERVED_97";
 const string NAME_SPL_Reserved_98 = "NAME_SPL_RESERVED_98";
 const string NAME_SPL_Reserved_99 = "NAME_SPL_RESERVED_99";
 
-const string TXT_TALENTS[22] =
+const string TXT_TALENTS[NPC_TALENT_MAX] =
 {
 	"",
 	"One-Handed",
@@ -431,7 +431,7 @@ const string TXT_TALENTS[22] =
 	""
 };
 
-const string TXT_TALENTS_SKILLS[22] =
+const string TXT_TALENTS_SKILLS[NPC_TALENT_MAX] =
 {
 	"",
 	"Rookie|Fighter|Master",

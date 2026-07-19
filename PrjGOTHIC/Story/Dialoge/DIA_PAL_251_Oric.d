@@ -373,7 +373,7 @@ func void DIA_Oric_WillHelp_Info()
 	AI_Output (self, other, "DIA_Oric_WillHelp_11_03");	//It is not far from the path to our mine. Directly in the shadow of the big mountain.
 	Log_CreateTopic (TOPIC_KillHoshPak, LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_KillHoshPak, LOG_Running);
-	B_LogEntry (TOPIC_KillHoshPak, "Oric wants me to eliminate the orc shaman Hosh-Pak. His tent is on a small clif not far from the back of the castle.");
+	B_LogEntry (TOPIC_KillHoshPak, "Oric wants me to eliminate the orc shaman Hosh-Pak. His tent is on a small cliff not far from the back of the castle.");
 	MIS_KillHoshPak = LOG_Running;
 };
 

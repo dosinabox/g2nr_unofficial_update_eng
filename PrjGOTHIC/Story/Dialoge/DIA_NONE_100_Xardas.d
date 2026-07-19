@@ -879,7 +879,7 @@ func void DIA_Xardas_DMTSINDDA_DMT_WhatToDo()
 	AI_Output (self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_02");	//Then go to the monastery and talk to Pyrokar. He must give you the Eye.
 	AI_Output (self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_03");	//Nothing is more important than getting this artifact away to safety.
 	AI_Output (self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_04");	//Go now before it is too late. The enemy will also try to lay his hands on it.
-	B_LogEntry (TOPIC_INNOSEYE, "The Eye is the the monastery of the Fire Magicians. Hopefully, Lord Hagen will grant me access to it when I give him Lord Garond's message. The head Fire Magician Pyrokar won't let me near the amulet without Hagen's approval.");
+	B_LogEntry (TOPIC_INNOSEYE, "The Eye is in the monastery of the Fire Magicians. Hopefully, Lord Hagen will grant me access to it when I give him Lord Garond's message. The head Fire Magician Pyrokar won't let me near the amulet without Hagen's approval.");
 };
 
 

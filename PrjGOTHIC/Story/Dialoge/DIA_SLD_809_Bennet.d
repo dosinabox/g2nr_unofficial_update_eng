@@ -578,7 +578,7 @@ instance DIA_Bennet_BringOre(C_Info)
 	condition = DIA_Bennet_BringOre_Condition;
 	information = DIA_Bennet_BringOre_Info;
 	permanent = FALSE;
-	description = "Here you are - 5 ore nuggets.";
+	description = "Here you are. (Give 5 ore nuggets)";
 };
 
 
@@ -592,7 +592,7 @@ func int DIA_Bennet_BringOre_Condition()
 
 func void DIA_Bennet_BringOre_Info()
 {
-	AI_Output (other, self, "DIA_Bennet_BringOre_15_00");	//Here you are - 5 ore nuggets.
+	AI_Output (other, self, "DIA_Bennet_BringOre_15_00");	//Here you are.
 	AI_Output (self, other, "DIA_Bennet_BringOre_06_01");	//(laughs) Show me!
 	B_GiveInvItems(other,self,ItMi_Nugget,5);
 	AI_Output (self, other, "DIA_Bennet_BringOre_06_02");	//Really! Knock me down with a feather!
