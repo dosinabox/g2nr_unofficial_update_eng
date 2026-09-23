@@ -79,7 +79,7 @@ func void DIA_Jorgen_DI_UndeadDragonDead_Info()
 	AI_Output (other, self, "DIA_Jorgen_DI_UndeadDragonDead_15_00");	//The enemy is dead.
 	AI_Output (self, other, "DIA_Jorgen_DI_UndeadDragonDead_07_01");	//That's good news. Is that all we needed to do on this island?
 	Info_ClearChoices (DIA_Jorgen_DI_UndeadDragonDead);
-	Info_AddChoice (DIA_Jorgen_DI_UndeadDragonDead, "One more minute.", DIA_Jorgen_DI_UndeadDragonDead_moment);
+	Info_AddChoice (DIA_Jorgen_DI_UndeadDragonDead, "One more minute. I've still got to take care of something.", DIA_Jorgen_DI_UndeadDragonDead_moment);
 	Info_AddChoice (DIA_Jorgen_DI_UndeadDragonDead, "Yes, That's it. Let's go.", DIA_Jorgen_DI_UndeadDragonDead_over);
 };
 

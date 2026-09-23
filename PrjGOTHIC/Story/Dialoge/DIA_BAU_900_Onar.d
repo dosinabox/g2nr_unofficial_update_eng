@@ -546,8 +546,8 @@ func void DIA_Onar_BuyLiesel_Info()
 	{
 		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01");	//You can get yourself one from the pasture.
 		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02");	//One or the other of those sheep is bound to follow you. Most of them answer to the name of Betsy.
-		Wld_InsertNpc(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 		AI_StopProcessInfos(self);
+		Wld_InsertNpc(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 	}
 	else
 	{

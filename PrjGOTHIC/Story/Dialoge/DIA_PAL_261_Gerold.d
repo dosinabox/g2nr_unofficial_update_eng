@@ -467,11 +467,11 @@ func void DIA_Gerold_FOOD_nichts()
 {
 	AI_Output (other, self, "DIA_Gerold_FOOD_nichts_15_00");	//I don't have anything right now.
 	AI_Output (self, other, "DIA_Gerold_FOOD_nichts_12_01");	//First you make such a big deal out of it and now you want to trick me?
-	AI_StopProcessInfos (self);
-	B_Attack (self, other, AR_NONE, 1);
-	Npc_ExchangeRoutine (self, "Start");
 	MIS_GeroldGiveFood = LOG_FAILED;
 	B_GivePlayerXP(100);
+	AI_StopProcessInfos(self);
+	Npc_ExchangeRoutine(self,"Start");
+	B_Attack(self,other,AR_NONE,1);
 };
 
 func void DIA_Gerold_FOOD_kaese_nichtmehr()
@@ -481,8 +481,6 @@ func void DIA_Gerold_FOOD_kaese_nichtmehr()
 	CreateInvItems (self, ItMi_Gold, 50);
 	B_GiveInvItems (self, other, ItMi_Gold, 50);
 	AI_Output (self, other, "DIA_Gerold_FOOD_kaese_nichtmehr_12_02");	//Well. I need to get back to my post.
-	AI_StopProcessInfos(self);
-	Npc_ExchangeRoutine(self,"Start");
 	MIS_GeroldGiveFood = LOG_OBSOLETE;
 	if(Gerold_FoodCounter < 4)
 	{
@@ -492,6 +490,8 @@ func void DIA_Gerold_FOOD_kaese_nichtmehr()
 	{
 		B_GivePlayerXP(XP_GeroldGiveFood / 2);
 	};
+	AI_StopProcessInfos(self);
+	Npc_ExchangeRoutine(self,"Start");
 };
 
 func void DIA_Gerold_FOOD_kaese()

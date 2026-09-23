@@ -576,7 +576,7 @@ func void DIA_DiegoNW_KnowWhereEnemy_Info()
 	{
 		Info_ClearChoices (DIA_DiegoNW_KnowWhereEnemy);
 		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy, "Maybe I'll let you know when the time comes.", DIA_DiegoNW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy, "Won't you come along?", DIA_DiegoNW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy, "Why don't you come with me? We'll meet at the harbor.", DIA_DiegoNW_KnowWhereEnemy_Yes);
 	};
 };
 

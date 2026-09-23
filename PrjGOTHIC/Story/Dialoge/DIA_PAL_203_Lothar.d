@@ -52,6 +52,7 @@ func void DIA_Lothar_FirstEXIT_Info()
 	{
 		AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_01");	//Wait! You don't know the new laws of the city yet!
 		AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_02");	//Later.
+		AI_StopProcessInfos(self);
 	}
 	else
 	{
@@ -68,9 +69,9 @@ func void DIA_Lothar_FirstEXIT_Info()
 			};
 		};
 		Lothar_ImOV = TRUE;
+		AI_StopProcessInfos(self);
 		Npc_ExchangeRoutine(self,"START");
 	};
-	AI_StopProcessInfos(self);
 };
 
 

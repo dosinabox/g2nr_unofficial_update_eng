@@ -98,7 +98,7 @@ func void DIA_Jack_DI_UndeadDragonDead_Info()
 	AI_Output (self, other, "DIA_Jack_DI_UndeadDragonDead_14_01");	//I had hoped that everything would turn out well. But I must admit that, during those last few hours, I haven't been so sure.
 	AI_Output (self, other, "DIA_Jack_DI_UndeadDragonDead_14_02");	//Can we finally set sail again now?
 	Info_ClearChoices (DIA_Jack_DI_UndeadDragonDead);
-	Info_AddChoice (DIA_Jack_DI_UndeadDragonDead, "One more minute.", DIA_Jack_DI_UndeadDragonDead_moment);
+	Info_AddChoice (DIA_Jack_DI_UndeadDragonDead, "Just a moment, now. There's something else I need to do.", DIA_Jack_DI_UndeadDragonDead_moment);
 	Info_AddChoice (DIA_Jack_DI_UndeadDragonDead, "Yes. Let us end it.", DIA_Jack_DI_UndeadDragonDead_over);
 };
 

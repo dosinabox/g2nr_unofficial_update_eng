@@ -183,8 +183,8 @@ func void DIA_Addon_Paul_HunoArbeit_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Paul_HunoArbeit_15_00");	//But you work for Huno! So you do know something!
 	AI_Output (self, other, "DIA_Addon_Paul_HunoArbeit_03_01");	//(despairingly) I know nothing - honest! I have to go now!
-	Npc_ExchangeRoutine (self, "AWAY");
 	AI_StopProcessInfos (self);
+	Npc_ExchangeRoutine(self,"AWAY");
 };
 
 
@@ -211,8 +211,8 @@ func void DIA_Addon_Paul_FearEsteban_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Paul_FearEsteban_15_00");	//Do you know what Esteban will do to you when he finds out you're covering for Huno?
 	AI_Output (self, other, "DIA_Addon_Paul_FearEsteban_03_01");	//Man! Leave me alone. I don't have anything to do with that business.
-	Npc_ExchangeRoutine (self, "PRESTART");
 	AI_StopProcessInfos (self);
+	Npc_ExchangeRoutine(self,"PRESTART");
 };
 
 

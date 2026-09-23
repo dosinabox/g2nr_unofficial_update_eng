@@ -44,7 +44,6 @@ func void DIA_AkilsSchaf_KommMit_Info()
 {
 	B_KommMit();
 	B_LieselMaeh();
-	Npc_ExchangeRoutine(self,"Follow");
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	if(!Npc_IsDead(BDT_1025_Bandit_H))
 	{
@@ -62,6 +61,7 @@ func void DIA_AkilsSchaf_KommMit_Info()
 		BDT_1027_Bandit_H.aivar[AIV_IgnoresArmor] = TRUE;
 	};
 	AI_StopProcessInfos(self);
+	Npc_ExchangeRoutine(self,"Follow");
 };
 
 
@@ -88,8 +88,8 @@ func void DIA_AkilsSchaf_WarteHier_Info()
 {
 	AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Wait here!
 	B_LieselMaeh();
-	Npc_ExchangeRoutine(self,"Cave");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	AI_StopProcessInfos(self);
+	Npc_ExchangeRoutine(self,"Cave");
 };
 

@@ -269,7 +269,7 @@ func void DIA_Halvor_MESSAGE_OFFER()
 	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_01");	//All right. I'll tell you something. I can sell you more than just fish.
 	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_03");	//If you hand me this ridiculous piece of paper and, er ... forget about the matter, you and I can become the best of trading partners.
 	Info_ClearChoices (DIA_Halvor_MESSAGE);
-	Info_AddChoice (DIA_Halvor_MESSAGE, "All right, agreed.", DIA_Halvor_MESSAGE_Okay);
+	Info_AddChoice (DIA_Halvor_MESSAGE, "All right, it's a deal. I think we can keep this little matter between ourselves.", DIA_Halvor_MESSAGE_Okay);
 	Info_AddChoice (DIA_Halvor_MESSAGE, "Looks like it's the slammer for you.", DIA_Halvor_MESSAGE_PRISON);
 	Info_AddChoice (DIA_Halvor_MESSAGE, "Oh really? What kind of goods would those be?", DIA_Halvor_MESSAGE_DEAL);
 };

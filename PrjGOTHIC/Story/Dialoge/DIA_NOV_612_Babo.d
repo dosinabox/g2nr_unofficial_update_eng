@@ -434,6 +434,7 @@ func void DIA_Babo_Windfaust_Info()
 	{
 		AI_Output (other, self, "DIA_Babo_Windfaust_15_02");	//Here's the spell scroll you wanted.
 		AI_Output (self, other, "DIA_Babo_Windfaust_03_03");	//That's good. Then I'll help you clean the chambers.
+		B_LogEntry(Topic_ParlanFegen,"Babo will help me sweep the novices' chambers now.");
 		NOV_Helfer += 1;
 		DIA_Babo_Windfaust_permanent = TRUE;
 		B_GivePlayerXP(XP_Feger);
@@ -443,14 +444,13 @@ func void DIA_Babo_Windfaust_Info()
 		{
 			B_StartOtherRoutine(Sergio,"START");
 		};
-		B_LogEntry(Topic_ParlanFegen,"Babo will help me sweep the novices' chambers now.");
 	}
 	else
 	{
 		AI_Output (other, self, "DIA_Babo_Windfaust_15_04");	//No, not so far.
 		AI_Output (self, other, "DIA_Babo_Windfaust_03_05");	//Then I'll wait until you do.
+		AI_StopProcessInfos(self);
 	};
-	AI_StopProcessInfos(self);
 };
 
 

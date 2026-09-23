@@ -540,7 +540,7 @@ func void DIA_Marduk_Kap3_PERM_Info()
 	Info_AddChoice(DIA_Marduk_Kap3_PERM,"What's going to happen now?",DIA_Marduk_Kap3_PERM_AndNow);
 	if((RescueBennet_KnowsCornelius == TRUE) && (Cornelius_IsLiar == TRUE))
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_PERM, "Bennet is innocent.", DIA_Marduk_Kap3_PERM_BennetisNotGuilty);
+		Info_AddChoice (DIA_Marduk_Kap3_PERM, "Bennet is innocent. The witness lied.", DIA_Marduk_Kap3_PERM_BennetisNotGuilty);
 	}
 	else
 	{

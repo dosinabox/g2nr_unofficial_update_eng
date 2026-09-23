@@ -70,9 +70,9 @@ func void DIA_Liesel_KommMit_Info()
 {
 	AI_Output(other,self,"DIA_Liesel_KommMit_15_00");	//Come with me!
 	B_LieselMaeh();
-	Npc_ExchangeRoutine(self,"Follow");
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	AI_StopProcessInfos(self);
+	Npc_ExchangeRoutine(self,"Follow");
 };
 
 
@@ -99,8 +99,8 @@ func void DIA_Liesel_WarteHier_Info()
 {
 	AI_Output(other,self,"DIA_Liesel_WarteHier_15_00");	//Wait here!
 	B_LieselMaeh();
-	Npc_ExchangeRoutine(self,"Start");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	AI_StopProcessInfos(self);
+	Npc_ExchangeRoutine(self,"Start");
 };
 

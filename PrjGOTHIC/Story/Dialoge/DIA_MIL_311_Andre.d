@@ -1742,6 +1742,10 @@ func void DIA_Andre_HILFBAUERLOBART_Info()
 		Log_SetTopicStatus(TOPIC_Feldraeuber,LOG_Running);
 		B_LogEntry(TOPIC_Feldraeuber,"Andre's sent me to Lobart's farm. I've got to help Lobart get his farm sorted out again.");
 		MIS_AndreHelpLobart = LOG_Running;
+		B_StartOtherRoutine(Vino,"BUGSTHERE");
+		B_StartOtherRoutine(LobartsBauer1,"BUGSTHERE");
+		B_StartOtherRoutine(LobartsBauer2,"BUGSTHERE");
+		AI_StopProcessInfos(self);
 		Wld_InsertNpc(Lobarts_Giant_Bug1,"NW_FARM1_FIELD_06");
 		Wld_InsertNpc(Lobarts_Giant_Bug2,"NW_FARM1_FIELD_06");
 		Wld_InsertNpc(Lobarts_Giant_Bug3,"NW_FARM1_FIELD_05");
@@ -1749,15 +1753,12 @@ func void DIA_Andre_HILFBAUERLOBART_Info()
 		Wld_InsertNpc(Lobarts_Giant_Bug5,"NW_FARM1_FIELD_04");
 		Wld_InsertNpc(Lobarts_Giant_Bug6,"NW_FARM1_FIELD_04");
 		Wld_InsertNpc(Lobarts_Giant_Bug7,"NW_FARM1_FIELD_03");
-		B_StartOtherRoutine(Vino,"BUGSTHERE");
-		B_StartOtherRoutine(LobartsBauer1,"BUGSTHERE");
-		B_StartOtherRoutine(LobartsBauer2,"BUGSTHERE");
 	}
 	else if(other.guild == GIL_PAL)
 	{
 		B_ReportToHagenNow();
+		AI_StopProcessInfos(self);
 	};
-	AI_StopProcessInfos(self);
 };
 
 

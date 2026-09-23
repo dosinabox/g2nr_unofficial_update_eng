@@ -113,8 +113,7 @@ func int DIA_CipherDJG_GOTOGETHERAGAIN_Condition()
 func void DIA_CipherDJG_GOTOGETHERAGAIN_Info()
 {
 	AI_Output(other,self,"DIA_CipherDJG_GOTOGETHERAGAIN_15_00");	//I changed my mind! Let's go together!
-//	AI_Output(self,other,"DIA_CipherDJG_GOTOGETHERAGAIN_07_01");	//Just give the word!
-	AI_Output(self,other,"DIA_Biff_KnowWhereEnemy_No_07_01");	//Well, well. Have fun, then.
+	AI_Output(self,other,"DIA_CipherDJG_GOTOGETHERAGAIN_07_01");	//Just give the word!
 	DJG_SwampParty = TRUE;
 };
 

@@ -354,8 +354,8 @@ func void DIA_Pepe_BuyLiesel_Info()
 		};
 		Npc_RemoveInvItems(self,ItMi_Gold,100);
 		Pepe_SchafGekauft += 1;
-		Wld_InsertNpc(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 		AI_StopProcessInfos(self);
+		Wld_InsertNpc(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 	}
 	else
 	{

@@ -44,7 +44,8 @@ func void DIA_Biff_NW_HAfen_Info()
 {
 	AI_Output (other, self, "DIA_Biff_NW_HAfen_15_00");	//OK. Not much longer now.
 	AI_Output (self, other, "DIA_Biff_NW_HAfen_07_01");	//I can't wait.
-	if (MIS_ReadyforChapter6 == TRUE)
+	AI_StopProcessInfos(self);
+	if(MIS_ReadyforChapter6 == TRUE)
 	{
 		Npc_ExchangeRoutine(self,"SHIP");
 	}
@@ -52,7 +53,6 @@ func void DIA_Biff_NW_HAfen_Info()
 	{
 		Npc_ExchangeRoutine(self,"WAITFORSHIP");
 	};
-	AI_StopProcessInfos(self);
 };
 
 

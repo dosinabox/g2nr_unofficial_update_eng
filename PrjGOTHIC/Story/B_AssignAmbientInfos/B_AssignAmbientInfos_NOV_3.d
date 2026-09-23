@@ -88,7 +88,7 @@ func void DIA_NOV_3_Fegen_Info()
 				Feger2_Once = TRUE;
 			};
 			Info_ClearChoices(DIA_NOV_3_Fegen);
-			Info_AddChoice(DIA_NOV_3_Fegen,"Maybe later...",DIA_NOV_3_Fegen_Nein);
+			Info_AddChoice(DIA_NOV_3_Fegen,"Maybe later. Right now, I can't afford it.",DIA_NOV_3_Fegen_Nein);
 			if(Npc_HasItems(other,ItMi_Gold) >= 50)
 			{
 				Info_AddChoice(DIA_NOV_3_Fegen,"All right. I'll pay.",DIA_NOV_3_Fegen_Ja);

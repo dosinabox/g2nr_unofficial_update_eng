@@ -111,7 +111,7 @@ func void DIA_Moe_Hallo_Witz()
 	AI_Output (other, self, "DIA_Moe_Hallo_Witz_15_00");	//Oh, so this is the harbor watering hole. And there I was, taking it for the governor's palace.
 	AI_Output (self, other, "DIA_Moe_Hallo_Witz_01_01");	//Hey - cut out the bad jokes, runt, otherwise you'll be chewing the cobblestones.
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice (DIA_Moe_Hallo, "I see, I'll be forced to tan your hide ...", DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice (DIA_Moe_Hallo, "I see, I'll be forced to tan your hide in order to make any progress.", DIA_Moe_Hallo_Pruegel);
 	Info_AddChoice (DIA_Moe_Hallo, "Are you trying to make trouble for me?", DIA_Moe_Hallo_Aerger);
 	Info_AddChoice (DIA_Moe_Hallo, "Calm down, all I want to do is drink a beer.", DIA_Moe_Hallo_Ruhig);
 	Info_AddChoice (DIA_Moe_Hallo, "But I don't want to go to the tavern!", DIA_Moe_Hallo_Kneipe);
@@ -122,7 +122,7 @@ func void DIA_Moe_Hallo_Reizen()
 	AI_Output (other, self, "DIA_Moe_Hallo_Reizen_15_00");	//Yes, do you mind?
 	AI_Output (self, other, "DIA_Moe_Hallo_Reizen_01_01");	//You've got no business here, runt.
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice (DIA_Moe_Hallo, "I see, I'll be forced to tan your hide ...", DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice (DIA_Moe_Hallo, "I see, I'll be forced to tan your hide in order to make any progress.", DIA_Moe_Hallo_Pruegel);
 	Info_AddChoice (DIA_Moe_Hallo, "Are you trying to make trouble for me?", DIA_Moe_Hallo_Aerger);
 	Info_AddChoice (DIA_Moe_Hallo, "Calm down, all I want to do is drink a beer.", DIA_Moe_Hallo_Ruhig);
 };

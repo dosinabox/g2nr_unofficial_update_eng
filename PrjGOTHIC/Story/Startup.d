@@ -1528,13 +1528,13 @@ func void INIT_OldWorld()
 
 func void STARTUP_OldWorld()
 {
-	Startup_Oldcamp();
-	Startup_Demontower();
-	Startup_Surface();
 	if(Wld_IsTime(4,0,21,0))
 	{
 		Wld_SetTime(23,59);
 	};
+	Startup_Oldcamp();
+	Startup_Demontower();
+	Startup_Surface();
 };
 
 func void STARTUP_NewWorld_Part_City_01()

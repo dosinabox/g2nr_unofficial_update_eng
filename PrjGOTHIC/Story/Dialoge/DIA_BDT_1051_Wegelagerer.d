@@ -82,7 +82,7 @@ func void DIA_Wegelagerer_Novice_Info()
 	AI_Output (other, self, "DIA_1051_Wegelagerer_Novice_15_00");	//I'm looking for a novice.
 	AI_Output (self, other, "DIA_1051_Wegelagerer_Novice_07_01");	//That's very interesting. We're looking for someone, too.
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Novice, "Who are you looking for?", DIA_1051_Wegelagerer_Question_Novice_Who);
+	Info_AddChoice (DIA_1051_Wegelagerer_Novice, "And who would that be?", DIA_1051_Wegelagerer_Question_Novice_Who);
 };
 
 
@@ -124,7 +124,7 @@ func void DIA_1051_Wegelagerer_Question_Novice()
 	AI_Output (other, self, "DIA_1051_Wegelagerer_Question_Novice_15_00");	//I'm looking for a novice.
 	AI_Output (self, other, "DIA_1051_Wegelagerer_Question_Novice_07_01");	//That's very interesting. We're looking for someone, too.
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question, "Who are you looking for?", DIA_1051_Wegelagerer_Question_Novice_Who);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question, "And who would that be?", DIA_1051_Wegelagerer_Question_Novice_Who);
 };
 
 func void DIA_1051_Wegelagerer_Question_Novice_Who()

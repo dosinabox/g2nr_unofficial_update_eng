@@ -90,7 +90,7 @@ func void DIA_Jesper_Hallo_Info()
 		}
 		else if(Npc_IsDead(Attila))
 		{
-			Info_AddChoice(DIA_Jesper_Hallo,"I've done in Attila. He had the key to the sewers on him..",DIA_Jesper_Hallo_Umgelegt);
+			Info_AddChoice(DIA_Jesper_Hallo,"I've done in Attila. He had the key to the sewers on him.",DIA_Jesper_Hallo_Umgelegt);
 		};
 	};
 };
