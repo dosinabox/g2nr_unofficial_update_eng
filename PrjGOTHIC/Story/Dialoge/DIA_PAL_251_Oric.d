@@ -233,7 +233,7 @@ func void DIA_Oric_CanHelp_WhatYouMean()
 	};
 	if(hero.guild == GIL_PAL)
 	{
-		AI_Output(self,other,"DIA_Oric_CanHelp_WhatYouMean_11_06");	///You are the only one that we can spare. All the other knights are needed here.
+		AI_Output(self,other,"DIA_Oric_CanHelp_WhatYouMean_11_06");	//You are the only one that we can spare. All the other knights are needed here.
 	}
 	else if(hero.guild == GIL_KDF)
 	{

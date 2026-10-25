@@ -178,7 +178,7 @@ func void DIA_Rengaru_GOTYOU_YouThief()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Rengaru_GOTYOU_Anteil_alles_07_03");	//But why am I telling you that? You've robbed me already!
+		AI_Output(self,other,"DIA_Rengaru_GOTYOU_Anteil_alles_07_03");	//I would give you the gold, but I don't have it any more.
 		B_Rengaru_NoGoldReason();
 	};
 	Info_ClearChoices(DIA_Rengaru_GOTYOU);

@@ -210,7 +210,7 @@ instance DIA_Mortis_Teach(C_Info)
 	condition = DIA_Mortis_Teach_Condition;
 	information = DIA_Mortis_Teach_Info;
 	permanent = TRUE;
-	description = "I want to get stronger.";
+	description = "Let's begin.";
 };
 
 
@@ -224,7 +224,7 @@ func int DIA_Mortis_Teach_Condition()
 
 func void DIA_Mortis_Teach_Info()
 {
-	AI_Output(other,self,"DIA_Keroloth_Teach_15_00");	//I want to get stronger.
+	AI_Output(other,self,"DIA_Keroloth_Teach_15_00");	//Let's begin.
 	B_BuildLearnDialog_Mortis();
 };
 

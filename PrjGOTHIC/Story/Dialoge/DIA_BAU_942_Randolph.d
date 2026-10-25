@@ -424,7 +424,7 @@ func void DIA_Randolph_PERM_Info()
 	{
 		if(MIS_HealRandolph == LOG_SUCCESS)
 		{
-			AI_Output(self,other,"DIA_Randolph_PERM_06_07");	///I'm still a bit wobbly on my legs, but apart from that I'm better.
+			AI_Output(self,other,"DIA_Randolph_PERM_06_07");	//I'm still a bit wobbly on my legs, but apart from that I'm better.
 		}
 		else if(MIS_HealRandolph == LOG_RUNNING)
 		{

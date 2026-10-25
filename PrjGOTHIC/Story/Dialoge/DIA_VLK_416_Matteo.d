@@ -402,7 +402,7 @@ func int DIA_Matteo_LehrlingLater_Condition()
 
 func void DIA_Matteo_LehrlingLater_Info()
 {
-	AI_Output (other, self, "DIA_Matteo_LehrlingLater_15_00");	//So can you help me get into the upper quarter?
+	AI_Output (other, self, "DIA_Matteo_LehrlingLater_15_00");	//Help me to become an apprentice to one of the masters.
 	B_Matteo_Preis ();
 };
 

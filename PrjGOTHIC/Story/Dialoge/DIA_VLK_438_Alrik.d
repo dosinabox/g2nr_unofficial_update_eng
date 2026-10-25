@@ -274,7 +274,7 @@ func void DIA_Alrik_WannaFight_Info()
 		AI_Output(self,other,"DIA_Alrik_Add_09_00");	//I think that should be enough for now...
 		if(Wld_IsTime(11,0,19,0))
 		{
-			AI_Output(self,other,"DIA_Alrik_Add_09_02");	//Let me have a short break.
+			AI_Output(self,other,"DIA_Alrik_Add_09_02");	//Come back again later. In the meantime, I'll train ...
 		}
 		else
 		{

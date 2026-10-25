@@ -520,8 +520,8 @@ func void DIA_Garond_Silvestro_Info()
 	AI_Output (self, other, "DIA_Garond_Silvestro_10_01");	//Did you go see him? Did you talk to him?
 	if(!Npc_HasItems(Silvestro,ItWr_Silvestro_MIS) || Npc_KnowsInfo(other,DIA_DiegoOw_Mine))
 	{
-	AI_Output (other, self, "DIA_Garond_Silvestro_15_02");	//Everyone's dead there. They were surprised by minecrawlers.
-	AI_Output (self, other, "DIA_Garond_Silvestro_10_05");	//What about the ore? Do you know how much they have mined?
+		AI_Output (other, self, "DIA_Garond_Silvestro_15_02");	//Everyone's dead there. They were surprised by minecrawlers.
+		AI_Output (self, other, "DIA_Garond_Silvestro_10_05");	//Damn! Those were a lot of good men - may Innos have mercy on their souls.
 	}
 	else
 	{

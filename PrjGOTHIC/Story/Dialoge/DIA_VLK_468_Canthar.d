@@ -187,7 +187,7 @@ func void DIA_Canthar_Hallo_Info()
 {
 	if(!Npc_HasEquippedArmor(other))
 	{
-		AI_Output(self,other,"DIA_Canthar_Hallo_09_00");	//v
+		AI_Output(self,other,"DIA_Canthar_Hallo_09_00");	//Who do we have here?
 		if(PlayerEnteredCity == FALSE)
 		{
 		AI_Output (self, other, "DIA_Canthar_Hallo_09_01");	//You are on your way to the city - am I not right?

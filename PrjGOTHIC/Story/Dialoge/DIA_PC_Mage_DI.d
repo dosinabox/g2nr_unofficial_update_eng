@@ -191,7 +191,7 @@ func void B_BuildLearnDialog_Milten_DI()
 
 func void DIA_Milten_RunesComment_01()
 {
-	AI_Output(self,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00");	///Oh, no! That's really not my specialty, but we'll manage somehow.
+	AI_Output(self,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00");	//Oh, no! That's really not my specialty, but we'll manage somehow.
 };
 
 func void DIA_Milten_RunesComment_02()

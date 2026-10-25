@@ -210,7 +210,7 @@ func void DIA_Addon_Pedro_Statuette_Info()
 	AI_Output(other,self,"DIA_Addon_Pedro_Statuette_15_00");	//I've got this statuette here. I think they're missing it in the monastery.
 	if(Npc_KnowsInfo(other,DIA_Pedro_TEMPEL) && (other.guild != GIL_NOV) && (other.guild != GIL_KDF))
 	{
-		AI_Output(other,self,"DIA_Addon_Pedro_Statuette_15_01");	///Can I come in now?
+		AI_Output(other,self,"DIA_Addon_Pedro_Statuette_15_01");	//Can I come in now?
 	};
 	if((other.guild == GIL_NONE) || ((other.guild == GIL_NOV) && (DIA_Gorax_GOLD_perm == FALSE)))
 	{

@@ -229,7 +229,7 @@ func void DIA_Nagur_Auftrag_Info()
 		if(!Npc_IsDead(Bote))
 		{
 			AI_Output(self,other,"DIA_Nagur_Auftrag_08_02");	//This Baltram has a messenger who supplies him with goods from Akil's farm.
-			AI_Output(self,other,"DIA_Nagur_Auftrag_08_03");	///That is, he HAD a messenger, until I cut his throat. And now Baltram has to get a new one. And that will be you.
+			AI_Output(self,other,"DIA_Nagur_Auftrag_08_03");	//That is, he HAD a messenger, until I cut his throat. And now Baltram has to get a new one. And that will be you.
 			AI_Teleport(Bote,"NW_CITY_HABOUR_KASERN_05_01");
 			B_StartOtherRoutine(Bote,"Dead");
 			B_KillNpc(VLK_4006_Bote);

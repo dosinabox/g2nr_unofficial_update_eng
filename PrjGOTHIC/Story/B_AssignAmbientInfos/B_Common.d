@@ -21,7 +21,7 @@ func void DIA_Common_TakeIt()
 
 func void DIA_Common_IWillThinkAboutIt()
 {
-	AI_Output(other,self,"DIA_Lehmar_GELDLEIHEN_back_15_00");	///I'll think about it.
+	AI_Output(other,self,"DIA_Lehmar_GELDLEIHEN_back_15_00");	//I'll think about it.
 };
 
 func void DIA_Common_IHaveToGo_v1()
@@ -31,7 +31,7 @@ func void DIA_Common_IHaveToGo_v1()
 
 func void DIA_Common_IHaveToGo_v2()
 {
-	AI_Output(other,self,"DIA_Landstreicher_HALLO_weg_15_00");	///I need to get going.
+	AI_Output(other,self,"DIA_Landstreicher_HALLO_weg_15_00");	//I need to get going.
 };
 
 func void DIA_Common_SeeYou()
