@@ -16,7 +16,7 @@ func void Change_FH_Visual()
 	if(FH_SkinTexture < 0)
 	{
 		FH_SkinTexture = 0;
-		PrintScreen("No faces with nevative numbers!",-1,-1,FONT_ScreenSmall,2);
+		PrintScreen("No faces with negative numbers!",-1,-1,FONT_ScreenSmall,2);
 	};
 	B_SetNpcVisual(self,sex,FH_HeadMesh,FH_SkinTexture,BodyTex_N,NO_ARMOR);
 	PrintScreen("Skin texture:",-1,10,FONT_ScreenSmall,2);

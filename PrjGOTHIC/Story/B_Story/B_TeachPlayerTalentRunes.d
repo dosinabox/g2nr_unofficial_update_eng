@@ -2,7 +2,7 @@
 func string B_BuildRunesIngredientsText(var string spell,var string ingredients)
 {
 	var string text;
-	text = ConcatStrings("Ingretients for the rune '",spell);
+	text = ConcatStrings("Ingredients for the rune '",spell);
 	text = ConcatStrings(text,"': ");
 	text = ConcatStrings(text,ingredients);
 	return text;
@@ -252,7 +252,7 @@ func int B_TeachPlayerTalentRunes(var C_Npc slf,var C_Npc oth,var int spell)
 		{
 			CreateInvItems(ScrollTrader,ItSc_IceWave,1);
 		};
-		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_IceWave,"1 Glacier Quartz and 1 Aquamarine"));
+		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_IceWave,"1 Glacier Quartz and 1 Aquamarine."));
 	};
 	if(spell == SPL_SummonDemon)
 	{
@@ -288,7 +288,7 @@ func int B_TeachPlayerTalentRunes(var C_Npc slf,var C_Npc oth,var int spell)
 		{
 			CreateInvItems(ScrollTrader,ItSc_BreathOfDeath,1);
 		};
-		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_BreathOfDeath,"1 Skeletonbone and 1 Black Perl"));
+		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_BreathOfDeath,"1 Skeletonbone and 1 Black Pearl."));
 	};
 	if(spell == SPL_MassDeath)
 	{
@@ -297,7 +297,7 @@ func int B_TeachPlayerTalentRunes(var C_Npc slf,var C_Npc oth,var int spell)
 		{
 			CreateInvItems(ScrollTrader,ItSc_MassDeath,1);
 		};
-		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_MassDeath,"1 Skeletonbone and 1 Black Perl"));
+		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_MassDeath,"1 Skeletonbone and 1 Black Pearl."));
 	};
 	if(spell == SPL_ArmyOfDarkness)
 	{
@@ -306,7 +306,7 @@ func int B_TeachPlayerTalentRunes(var C_Npc slf,var C_Npc oth,var int spell)
 		{
 			CreateInvItems(ScrollTrader,ItSc_ArmyOfDarkness,1);
 		};
-		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_ArmyOfDarkness,"1 Skeletonbone and 1 Black Perl, 1 Heart of a Stone Golem and 1 Demon Heart."));
+		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_ArmyOfDarkness,"1 Skeletonbone and 1 Black Pearl, 1 Heart of a Stone Golem and 1 Demon Heart."));
 	};
 	if(spell == SPL_Shrink)
 	{
@@ -319,7 +319,7 @@ func int B_TeachPlayerTalentRunes(var C_Npc slf,var C_Npc oth,var int spell)
 		{
 			CreateInvItems(Constantino,ItAt_GoblinBone,1);
 		};
-		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_Shrink,"1 Goblinbone and 1 Trolltooth"));
+		B_LogEntry(TOPIC_TalentRunes,B_BuildRunesIngredientsText(NAME_SPL_Shrink,"1 Goblinbone and 1 Trolltooth."));
 	};
 	if(spell == SPL_Whirlwind)
 	{

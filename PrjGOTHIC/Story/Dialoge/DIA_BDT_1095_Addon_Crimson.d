@@ -131,7 +131,7 @@ func int DIA_Addon_Crimson_Feilsch_Condition()
 func void DIA_Addon_Crimson_Feilsch_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_00");	//Let's haggle!
-	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");	//Hmm...no. That's the standard price EVERYONE gets.
+	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");	//Hmm... No. That's the standard price EVERYONE gets.
 	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");	//I thought that was a special price.
 	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");	//It is. Everyone here is special to me.
 };

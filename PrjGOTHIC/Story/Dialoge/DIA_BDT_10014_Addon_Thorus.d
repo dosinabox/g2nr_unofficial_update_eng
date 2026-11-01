@@ -384,6 +384,8 @@ func void DIA_Addon_Thorus_Speech_Info()
 		AI_Output(other,self,"DIA_Addon_Thorus_Speech_15_01");	//What???
 		AI_Output(self,other,"DIA_Addon_Thorus_Speech_12_02");	//Now you've cleared Bloodwyn out of the way, too. I'm just asking myself who's next. Raven? Or me?
 	};
+	AI_Output(other,self,"DIA_Addon_Thorus_Speech_15_03");	//Are you afraid?
+	AI_Output(self,other,"DIA_Addon_Thorus_Speech_12_04");	//I'm not afraid of a fight. But I AM afraid of the consequences of your actions.
 	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_05");	//This camp is the only thing we have left.
 	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_06");	//It may not have always run to perfection, but it DOES run.
 	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_07");	//And with every person you kill, another piece of our community breaks up.

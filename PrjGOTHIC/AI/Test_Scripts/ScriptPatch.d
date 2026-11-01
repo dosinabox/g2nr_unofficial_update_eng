@@ -177,7 +177,7 @@ func void b_build_settings_diag()
 	}
 	else
 	{
-		Info_AddChoice(StoryHelper_PatchSettings,"Disable âpenalties affect learn cost",StoryHelper_Penalties);
+		Info_AddChoice(StoryHelper_PatchSettings,"Disable penalties affect learn cost",StoryHelper_Penalties);
 	};*/
 	Info_AddChoice(StoryHelper_PatchSettings,"Change ice dragon magic",StoryHelper_IceDragonSpell);
 	if(FullNPCRemoval == FALSE)

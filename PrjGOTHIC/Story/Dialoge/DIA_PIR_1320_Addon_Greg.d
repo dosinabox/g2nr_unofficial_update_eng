@@ -359,8 +359,8 @@ func void DIA_Addon_Greg_AboutCanyon_Compadres()
 
 func void DIA_Addon_Greg_AboutCanyon_Job()
 {
-	AI_Output (other, self, "DIA_Addon_Greg_AboutCanyon_RazorsDead_15_00");	//I killed all the razors.
-	AI_Output (self, other, "DIA_Addon_Greg_AboutCanyon_RazorsDead_01_01");	//Good. You seem to be a useful fellow.
+	AI_Output (other, self, "DIA_Addon_Greg_AboutCanyon_Job_15_00");	//What beasts am I supposed to kill?
+	AI_Output (self, other, "DIA_Addon_Greg_AboutCanyon_Job_01_01");	//Get rid of the razors! The other creatures are harmless.
 	B_GregHints_Razors();
 	Info_ClearChoices(DIA_Addon_Greg_AboutCanyon);
 };

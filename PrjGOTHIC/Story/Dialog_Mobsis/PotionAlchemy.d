@@ -388,7 +388,7 @@ instance PC_ItPo_Mana_01(C_Info)
 	condition = PC_ItPo_Mana_01_Condition;
 	information = PC_ItPo_Mana_01_Info;
 	permanent = TRUE;
-	description = ConcatStrings(NAME_Mana_Essenz," (2 fire nettles, 1 meadow knotweed");
+	description = ConcatStrings(NAME_Mana_Essenz," (2 fire nettles, 1 meadow knotweed)");
 };
 
 

@@ -63,7 +63,7 @@ func void Use_FINALDRAGONEQUIPMENT_S1()
 				PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] = TRUE;
 				PrintScreen(PRINT_LearnRunes,-1,-1,FONT_Screen,4);
 				Log_CreateTopic(TOPIC_TalentRunes,LOG_NOTE);
-				B_LogEntry(TOPIC_TalentRunes,"Ingredients for the rune 'Holy Missile': 1 holy water, no spell scroll");
+				B_LogEntry(TOPIC_TalentRunes,"Ingredients for the rune 'Holy Missile': 1 holy water. No scroll.");
 			};
 		}
 		else if(hero.guild == GIL_PAL)
@@ -80,7 +80,7 @@ func void Use_FINALDRAGONEQUIPMENT_S1()
 				PrintScreen(PRINT_LearnPalTeleportSecret,-1,-1,FONT_Screen,4);
 				Log_CreateTopic(TOPIC_TalentRunes,LOG_NOTE);
 				B_LogEntry(TOPIC_TalentRunes,"To create a rune I need certain ingredients for each one. Using those ingredients and a blank runestone I can create the desired rune at a rune table.");
-				Log_AddEntry(TOPIC_TalentRunes,"Ingredients for the rune 'Secret teleport': 1 holy water");
+				Log_AddEntry(TOPIC_TalentRunes,"Ingredients for the rune 'Secret teleport': 1 holy water. No scroll.");
 			};
 		}
 		else

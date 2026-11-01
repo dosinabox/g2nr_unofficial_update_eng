@@ -184,7 +184,7 @@ func void DIA_Hyglas_TALENT_FIREBOLT_Info()
 		{
 			if(!Npc_HasItems(other,ItSc_Firebolt))
 			{
-				B_LogEntry(TOPIC_Rune,"I don't have a fire arrow scroll, Hyglas will not teach me until I get one.+");
+				B_LogEntry(TOPIC_Rune,"I don't have a fire arrow scroll, Hyglas will not teach me until I get one.");
 				if(!Npc_IsDead(Gorax))
 				{
 					CreateInvItem(Gorax,ItSc_Firebolt);
