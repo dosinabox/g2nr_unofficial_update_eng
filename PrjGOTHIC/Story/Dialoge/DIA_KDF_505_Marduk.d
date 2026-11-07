@@ -408,10 +408,10 @@ func void DIA_Marduk_TrainPals_Info()
 {
 	AI_Output (other, self, "DIA_Marduk_TrainPals_15_00");	//What can you teach me?
 	AI_Output (self, other, "DIA_Marduk_TrainPals_05_01");	//Naturally, I cannot teach you your combat skills.
+	AI_Output(self,other,"DIA_Marduk_TrainPals_05_02");	//I can, however, bring the essence of Innos and his gifts closer to you.
+	AI_Output(self,other,"DIA_Marduk_TrainPals_05_03");	//Besides, it is my task to prepare you for the Consecration of the Sword.
 	AI_Output(other,self,"DIA_Marduk_TrainPals_15_04");	//And the magic?
 	AI_Output(self,other,"DIA_Marduk_TrainPals_05_05");	//Here we teach only our magic. You must learn the magic of the paladins in the city.
-	AI_Output (self, other, "DIA_Marduk_TrainPals_05_01");	//I can, however, bring the essence of Innos and his gifts closer to you.
-	AI_Output (self, other, "DIA_Marduk_TrainPals_05_02");	//Besides, it is my task to prepare you for the Consecration of the Sword.
 	Info_ClearChoices(DIA_Marduk_TrainPals);
 	Info_AddChoice (DIA_Marduk_TrainPals, "Maybe later.", DIA_Marduk_TrainPals_Later);
 	Info_AddChoice (DIA_Marduk_TrainPals, "What do you mean by that?", DIA_Marduk_TrainPals_Meaning);

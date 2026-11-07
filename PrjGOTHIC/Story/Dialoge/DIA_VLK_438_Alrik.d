@@ -263,7 +263,7 @@ func void DIA_Alrik_WannaFight_Info()
 			}
 			else
 			{
-				B_LogEntry(TOPIC_AlrikSchwert,"Alrik will only fight me if I bring it back to him. ");
+				B_LogEntry(TOPIC_AlrikSchwert,"Alrik will only fight me if I bring it back to him.");
 			};
 			Alrik_VomSchwertErzaehlt = TRUE;
 			Alrik_Sword_Once = TRUE;

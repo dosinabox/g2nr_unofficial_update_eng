@@ -1696,8 +1696,7 @@ func void DIA_Andre_REDLIGHT_SUCCESS_Info()
 		{
 			AI_Output(other,self,"DIA_Andre_REDLIGHT_SUCCESS_15_07");	//He sold me some swampweed.
 			B_GiveInvItems(other,self,ItMi_Joint,1);
-			AI_Output(self,other,"DIA_Andre_REDLIGHT_SUCCESS_08_08");	//
-		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_08");	//
+			AI_Output(self,other,"DIA_Andre_REDLIGHT_SUCCESS_08_08");	//Fine, that's enough for us. I shall have him arrested at once.
 			B_AndreSold();
 			B_NpcSetJailed(Borka);
 			B_StartOtherRoutine(Borka,"PRISON");

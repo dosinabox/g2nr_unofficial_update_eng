@@ -76,7 +76,7 @@ instance ItMi_RuneBlank(C_Item)
 
 instance ItMi_Pliers(C_Item)
 {
-	name = "Mandible";
+	name = "Pliers";
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
 	value = Value_Hammer;

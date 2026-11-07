@@ -705,6 +705,7 @@ func void DIA_Addon_Lares_Teleportstation_Info()
 	AI_Output (self, other, "DIA_Addon_Lares_Teleportstation_09_03");	//(laughs) Of course you have. You're not afraid of anything, are you?
 	AI_Output (self, other, "DIA_Addon_Lares_Teleportstation_09_04");	//Well. If you want to use the things, go ask Orlan the pub-owner whether he'll let you into his boarded-up cave.
 	AI_Output (self, other, "DIA_Addon_Lares_Teleportstation_09_05");	//I think he has hidden one of the teleporter stones for the Water Mages near his tavern.
+	AI_Output (self, other, "DIA_Addon_Lares_Teleportstation_09_06");	//Walk out of the eastern city gate and simply follow the path. You can't miss it.
 	if(!Npc_KnowsInfo(other,DIA_Addon_Orlan_Teleportstein))
 	{
 		B_LogEntry(TOPIC_Addon_TeleportsNW,"Lares told me that Orlan has hidden a teleporter stone near his tavern.");

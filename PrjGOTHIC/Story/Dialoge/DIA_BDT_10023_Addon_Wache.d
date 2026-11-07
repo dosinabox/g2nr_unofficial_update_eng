@@ -142,10 +142,10 @@ func void DIA_Addon_10023_Wache_go_Blood()
 	AI_UseItemToState(other,ItMi_FakeBloodwynHead,-1);
 	AI_Output(self,other,"DIA_Addon_10023_Wache_go_Blood_11_01");	//(gags) Put that away. I don't want to see THAT.
 	B_YouBetterLetSlavesGo();
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");	//Here, is that enough?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");	//(gags) Put that away. I don't want to see THAT.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");	//It would be better for you if you let the slaves go NOW.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");	//Wait a minute. Bloodwyn isn't the only one who has a say here. So long as I don't have an order from Thorus, no one will be set free.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_11_03");	//Wait a minute. Bloodwyn isn't the only one who has a say here. So long as I don't have an order from Thorus, no one will be set free.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_15_04");	///But you just said that the slaves belong to Bloodwyn.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_11_05");	//Yes, but I also said that I won't set anyone free without an order from Thorus.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_15_06");	//You're one of those guys who won't take a leak without orders, eh?
 	Wache_einmal = TRUE;
 	Info_ClearChoices(DIA_Addon_10023_Wache_go);
 };

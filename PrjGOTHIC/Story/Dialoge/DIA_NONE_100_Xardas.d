@@ -334,8 +334,8 @@ func void B_Xardas_ClawIsLost()
 
 func void B_Xardas_ClawReaction()
 {
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_01");	//Interesting...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_02");	//As soon as you find out something that is REALLY helpful, be sure to let me know!
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_08");	//(greedily) How very interesting.
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_09");	//This weapon can be of great use to us. But it is also extremely dangerous.
 	B_GivePlayerXP(XP_Ambient * 3);
 };
 

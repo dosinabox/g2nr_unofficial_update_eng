@@ -40,12 +40,12 @@ func int B_TeachPlayerTalentAlchemy(var C_Npc slf,var C_Npc oth,var int potion)
 	if(potion == POTION_Mana_03)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Mana_03] = TRUE;
-		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'MANA ELIXIR':2 Fire Roots and 1 Meadow Knotweed");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'MANA ELIXIR':2 Fire Roots and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Speed)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Speed] = TRUE;
-		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'SPEED POTION': 1 Snapperweed and 1 Meadow Knotweed");
+		B_LogEntry (TOPIC_TalentAlchemy, "Ingredients for 'SPEED POTION': 1 Snapperweed and 1 Meadow Knotweed.");
 	};
 	if(potion == POTION_Perm_STR)
 	{
@@ -65,7 +65,7 @@ func int B_TeachPlayerTalentAlchemy(var C_Npc slf,var C_Npc oth,var int potion)
 	if(potion == POTION_Perm_Health)
 	{
 		PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] = TRUE;
-		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'ELIXIR OF LIFE': 1 Healing Root and 1 King's Sorrel");
+		B_LogEntry(TOPIC_TalentAlchemy,"Ingredients for 'ELIXIR OF LIFE': 1 Healing Root and 1 King's Sorrel.");
 	};
 	if((Opened_LousHammer == TRUE) && (Knows_LousHammer == FALSE))
 	{

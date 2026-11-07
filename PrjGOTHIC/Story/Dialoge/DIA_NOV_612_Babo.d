@@ -851,6 +851,7 @@ func void DIA_Babo_Kap3_HaveYourDocs_IWantMore()
 func void DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough()
 {
 	AI_Output (self, other, "DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_03_01");	//But I don't have any more money. If I had know that before, I never would have entered the monastery.
+	AI_Output (other, self, "DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_15_00");	//That won't be enough.
 	BabosDocsRejected = TRUE;
 	Info_ClearChoices(DIA_Babo_Kap3_HaveYourDocs);
 };
